@@ -1,0 +1,774 @@
+# Chapters 8-12: Property and Land Rights Domain
+# Source: BWBR0037885 (Omgevingswet)
+# Extraction date: 2026-01-29
+# TRUE to the SOURCE
+
+# This extraction covers the "grondzaken" cluster:
+# - Ch8:  Populatiebeheer, schadebestrijding en jacht (fauna management)
+# - Ch9:  Voorkeursrecht (preferential purchase rights)
+# - Ch10: Gedoogplichten (obligations to tolerate)
+# - Ch11: Landinrichting (land consolidation)
+# - Ch12: Onteigening (expropriation)
+
+domain:
+  name: "Property and Land Rights"
+  chapters: [8, 9, 10, 11, 12]
+  function: "Grondbeleid instrumenten"
+  connection_to_core: "Ch5 projectbesluit triggers Ch10-12"
+
+# =============================================================================
+# CHAPTER 8 - POPULATIEBEHEER, SCHADEBESTRIJDING EN JACHT
+# =============================================================================
+
+chapter_8:
+  number: 8
+  title: "Aanvullende regels populatiebeheer, schadebestrijding en jacht"
+  type: fauna_management
+  articles: "8.1-8.5"
+
+  artikel_8_1:
+    titel: "faunabeheereenheden en faunabeheerplannen"
+    leden:
+      lid_1:
+        content: "Binnen een provincie zijn er een of meer faunabeheereenheden"
+
+      lid_2:
+        content: "Faunabeheereenheid stelt faunabeheerplan vast"
+        goedkeuring: "GS van de provincie"
+
+      lid_3:
+        content: "AMvB regels over faunabeheereenheden en -plannen"
+        doel: "transparante, samenhangende, regionaal ingebedde uitvoering"
+        scope:
+          - "duurzaam beheer populaties wilde dieren"
+          - "schadebestrijding door grondgebruikers"
+          - "uitoefening jacht door jachthouders"
+        nadere_regels: "omgevingsverordening"
+
+      lid_4:
+        bevoegd_gezag: "GS"
+
+      lid_5:
+        content: "AMvB kan gevallen aanwijzen waar Minister N&S beslist"
+        subsidiariteit: "Art. 2.3 lid 3"
+
+  artikel_8_2:
+    titel: "bijzondere bepaling over aansluitplicht bij wildbeheereenheid"
+    leden:
+      lid_1:
+        content: "Jachthouders met omgevingsvergunning jachtgeweeractiviteit organiseren zich in wildbeheereenheid"
+
+      lid_2:
+        rechtsvorm: "vereniging"
+
+      lid_3:
+        content: "Wildbeheereenheid geeft uitvoering aan faunabeheerplan"
+        taken:
+          - "duurzaam beheer populaties"
+          - "bestrijding schadeveroorzakende dieren"
+          - "jacht in samenwerking met grondgebruikers/terreinbeheerders"
+
+      lid_4:
+        content: "Grondgebruikers en terreinbeheerders kunnen lid worden"
+
+      lid_5:
+        content: "Omgevingsverordening stelt regels over wildbeheereenheden"
+        onderdelen:
+          a: "omvang en begrenzing werkgebied"
+          b: "gevallen waarin jachthouders zijn uitgezonderd van lid 1"
+
+  artikel_8_3:
+    titel: "bijzondere bepaling over de jacht"
+    leden:
+      lid_1:
+        content: "Gerechtigd tot uitoefening jacht in jachtveld (elkaar uitsluitend):"
+        onderdelen:
+          a: "eigenaar van de grond"
+          b: "erfpachter of vruchtgebruiker (tenzij eigenaar jachtrecht voorbehouden)"
+          c: "pachter (tenzij verpachter niet gerechtigd of voorbehouden)"
+          d: "huurder jachtrecht (schriftelijk, 6-12 jaar)"
+
+      lid_2:
+        content: "Huurovereenkomst: BW 7:226 van toepassing, geen optie/verlenging"
+
+      lid_3:
+        content: "AMvB kan kortere huurperiode dan 6 jaar toestaan"
+
+      lid_4:
+        content: "Jacht alleen toegestaan op:"
+        wildsoorten:
+          a:
+            categorie: "klein wild"
+            soorten: "fazanten, hazen"
+          b:
+            categorie: "waterwild"
+            soorten: "wilde eenden"
+          c:
+            categorie: "overig wild"
+            soorten: "houtduiven, konijnen"
+
+  artikel_8_4:
+    titel: "bijzondere bepaling over aansprakelijkheidsverzekering jachtgeweren"
+    leden:
+      lid_1:
+        content: "Benadeelde heeft eigen recht op schadevergoeding tegenover verzekeraar"
+        maximumbedrag: "bij AMvB"
+        pattern: "directe actie"
+
+      lid_2:
+        content: "Verzekeraar kan geen nietigheid/verweer/verval tegenwerpen"
+
+      lid_3:
+        content: "Verzekeraar die schade vergoedt zonder dekking heeft verhaal op aansprakelijke"
+
+      lid_4:
+        content: "Eigen risico-beding ontslaat verzekeraar niet tegenover benadeelde"
+
+  artikel_8_5:
+    titel: "afpalingsrecht eendenkooien"
+    leden:
+      lid_1:
+        content: "Verbod voor anderen dan kooiker: activiteiten die eenden verontrusten binnen afpalingkring"
+        historisch: "recht gold op 31 maart 1977"
+
+      lid_2:
+        uitzonderingen:
+          - "openbare werken"
+          - "gebruik/onderhoud openbare werken"
+          - "uitoefening beroep/bedrijf"
+        voorwaarde: "redelijkerwijs niet anders mogelijk"
+
+      lid_3:
+        content: "Schadevergoeding aan kooiker"
+
+  chapter_8_juridische_analyse:
+    pattern: "fauna_beheer_structuur"
+    actors:
+      - "faunabeheereenheden (rechtspersoon)"
+      - "wildbeheereenheden (vereniging)"
+      - "jachthouders"
+      - "grondgebruikers"
+    bevoegd_gezag: "GS"
+    connection_to_ch5: "omgevingsvergunning jachtgeweeractiviteit"
+
+# =============================================================================
+# CHAPTER 9 - VOORKEURSRECHT
+# =============================================================================
+
+chapter_9:
+  number: 9
+  title: "Voorkeursrecht"
+  type: preferential_purchase
+  articles: "9.1-9.22"
+
+  structure:
+    afdelingen:
+      - number: "9.1"
+        title: "Vestiging en gelding van een voorkeursrecht"
+        articles: "9.1-9.5"
+
+      - number: "9.2"
+        title: "Vervreemding na vestiging van een voorkeursrecht"
+        articles: "9.6-9.22"
+        paragrafen:
+          - "9.2.1": "Bevoegd gezag"
+          - "9.2.2": "Hoofdregel en uitzonderingen"
+          - "9.2.3": "Vervreemding aan gemeente/provincie/Staat"
+          - "9.2.4": "Vervreemding aan een derde"
+
+  afdeling_9_1:
+    titel: "Vestiging en gelding van een voorkeursrecht"
+
+    artikel_9_1:
+      titel: "grondslag en bevoegdheid vestiging voorkeursrecht"
+      leden:
+        lid_1:
+          vestigers:
+            - "gemeenteraad → gemeentelijk voorkeursrecht"
+            - "provinciale staten → provinciaal voorkeursrecht"
+            - "Minister BZK → nationaal voorkeursrecht"
+          grondslagen:
+            a: "niet-agrarische functie in omgevingsplan, gebruik wijkt af"
+            b: "niet-agrarische functie in omgevingsvisie/programma (niet in plan)"
+            c: "niet-agrarische functie in beschikking zelf (niet in visie/programma/plan)"
+
+        lid_2:
+          content: "B&W/GS kunnen voorlopig voorkeursrecht vestigen"
+          voorafgaand_aan: "lid 1 voorkeursrecht"
+
+        lid_3:
+          content: "Provinciaal voorkeursrecht alleen voor provinciaal belang"
+
+        lid_4:
+          content: "Nationaal voorkeursrecht alleen voor nationaal belang"
+
+      juridische_analyse:
+        pattern: "grondslag_hierarchie"
+        volgorde: "omgevingsplan > visie/programma > beschikking"
+
+    artikel_9_2:
+      titel: "exclusiviteit voorkeursrecht"
+      leden:
+        lid_1:
+          content: "Provinciaal voorkeursrecht blokkeert gemeentelijk"
+
+        lid_2:
+          content: "Nationaal voorkeursrecht blokkeert gemeentelijk en provinciaal"
+
+        lid_3:
+          content: "Gemeentelijk vervalt bij ingang provinciaal/nationaal"
+
+        lid_4:
+          uitzondering: "Gemeentelijk blijft buiten toepassing bij GS-voorlopig (Art. 9.1 lid 2)"
+
+        lid_5:
+          content: "Provinciaal vervalt bij ingang nationaal"
+
+      juridische_analyse:
+        pattern: "hierarchie_overheden"
+        nationaal: "overruled provinciaal overruled gemeentelijk"
+
+    artikel_9_3:
+      titel: "vestigen nieuw voorkeursrecht"
+      leden:
+        lid_1:
+          content: "Geen nieuw voorkeursrecht binnen 2 jaar na intrekking/verval op zelfde grondslag"
+
+        lid_2:
+          uitzondering: "Niet van toepassing als niet tijdig ingeschreven (Art. 16.82a)"
+
+    artikel_9_4:
+      titel: "geldingsduur voorkeursrecht"
+      leden:
+        lid_1:
+          vervaltermijnen:
+            a:
+              grondslag: "Art. 9.1 lid 1 onder c (beschikking)"
+              termijn: "3 jaar"
+              verlenging: "tenzij functie in visie/programma/plan komt"
+            b:
+              grondslag: "Art. 9.1 lid 1 onder b (visie/programma)"
+              termijn: "3 jaar"
+              verlenging: "tenzij functie in omgevingsplan komt"
+            c:
+              grondslag: "Art. 9.1 lid 1 onder a (omgevingsplan)"
+              termijn: "5 jaar (verlengbaar)"
+
+        lid_2:
+          content: "Eenmalige verlenging met max 5 jaar (voor lid 1 onder c)"
+
+        lid_3:
+          content: "Voorlopig voorkeursrecht (Art. 9.1 lid 2) vervalt na 3 maanden"
+
+        lid_4:
+          content: "Bij vernietiging omgevingsplan: voorkeursrecht blijft 2 jaar gelden"
+
+    artikel_9_5:
+      titel: "intrekking en verval"
+      leden:
+        lid_1:
+          content: "Bestuursorgaan trekt onverwijld in als niet meer aan Art. 9.1 voldaan"
+
+        lid_2:
+          content: "Doorhaling in openbare registers"
+
+        lid_3:
+          content: "Mededeling aan eigenaren en beperkt gerechtigden"
+
+  afdeling_9_2:
+    titel: "Vervreemding na vestiging van een voorkeursrecht"
+
+    paragraaf_9_2_1:
+      titel: "Bevoegd gezag"
+
+      artikel_9_6:
+        content: "Bevoegd gezag:"
+        onderdelen:
+          a: "B&W voor gemeentelijk voorkeursrecht"
+          b: "GS voor provinciaal voorkeursrecht"
+          c: "Minister BZK voor nationaal voorkeursrecht"
+
+    paragraaf_9_2_2:
+      titel: "Hoofdregel en uitzonderingen"
+
+      artikel_9_7:
+        titel: "hoofdregel bij vervreemding"
+        content: "Vervreemder stelt rechtspersoon eerst in gelegenheid te verkrijgen"
+        pattern: "aanbiedingsplicht"
+
+      artikel_9_8:
+        titel: "uitzonderingen op hoofdregel"
+        uitzonderingen:
+          a: "echtgenoot, geregistreerd partner, bloed/aanverwanten t/m 2e graad, pleegkind"
+          b: "verdeling gemeenschap"
+          c: "uiterste wilsbeschikking"
+          d: "overeenkomst met gemeente/waterschap/provincie/Staat/publiekrechtelijk lichaam"
+          e: "verkoop op grond van wet/rechterlijk bevel/executie"
+          f: "overeenkomst met pachter die voorkeursrecht had (Art. 378 BW 7)"
+
+      artikel_9_9:
+        titel: "uitzondering bij gesloten overeenkomst"
+        voorwaarden:
+          a: "met naam genoemde partij tegen bepaalde/bepaalbare prijs"
+          b: "overeenkomst ingeschreven vóór bekendmaking beschikking"
+          c: "vervreemding binnen 6 maanden na inschrijving"
+        beperking: "eenmaal per 3 jaar per onroerende zaak"
+
+      artikel_9_10:
+        titel: "uitzondering bij gewichtige redenen"
+        content: "Bevoegd gezag kan uitzondering toestaan op verzoek vervreemder"
+        voorwaarde: "aannemelijk gemaakte gewichtige redenen"
+        beperkingen: "mogelijk"
+
+    paragraaf_9_2_3:
+      titel: "Vervreemding aan gemeente/provincie/Staat"
+
+      artikel_9_12:
+        titel: "uitnodiging tot onderhandeling"
+        leden:
+          lid_1:
+            content: "Vervreemder nodigt bevoegd gezag uit tot onderhandeling"
+
+          lid_2:
+            content: "Samenhangend geheel: kan als voorwaarde stellen"
+
+          lid_3:
+            content: "Onderneming: kan in vervreemding betrekken"
+
+      artikel_9_13:
+        titel: "beslistermijn"
+        termijn: "6 weken na ontvangst uitnodiging"
+        beslissing: "bereid tot koop of andere verkrijging?"
+
+      artikel_9_14:
+        titel: "geen bereidheid of termijnoverschrijding"
+        gevolg: "vervreemder mag 3 jaar aan derden vervreemden"
+        start: "vanaf beslissing of termijnafloop"
+
+  chapter_9_juridische_analyse:
+    pattern: "voorkeursrecht_systeem"
+    significance: |
+      Het voorkeursrecht is een belangrijk grondbeleidsinstrument.
+      Bij voorgenomen verkoop moet de eigenaar eerst de overheid
+      de kans geven te kopen. Dit voorkomt speculatie en geeft
+      de overheid regie over gebiedsontwikkeling.
+
+    connection_to_ch2: "functietoedeling in omgevingsplan (Art. 2.4)"
+    connection_to_ch3: "functie in omgevingsvisie/programma"
+    connection_to_ch5: "projectbesluit kan voorkeursrecht triggeren"
+
+# =============================================================================
+# CHAPTER 10 - GEDOOGPLICHTEN
+# =============================================================================
+
+chapter_10:
+  number: 10
+  title: "Gedoogplichten"
+  type: toleration_obligations
+  articles: "10.1-10.30"
+
+  structure:
+    afdelingen:
+      - number: "10.1"
+        title: "Algemene bepalingen"
+        articles: "10.1-10.1a"
+
+      - number: "10.2"
+        title: "Gedoogplichten van rechtswege"
+        articles: "10.2-10.13"
+
+      - number: "10.3"
+        title: "Gedoogplichten bij beschikking"
+        articles: "10.14-10.25"
+        paragrafen:
+          - "10.3.1": "Algemene bepalingen"
+          - "10.3.2": "Werken en activiteiten van algemeen belang"
+          - "10.3.3": "Opleggen van gedoogplicht"
+          - "10.3.4": "Gevolgen en wijzigen gedoogplichtbeschikking"
+          - "10.3.5": "Schadevergoeding"
+
+      - number: "10.4"
+        title: "Overige bepalingen"
+        articles: "10.26-10.30"
+
+  afdeling_10_1:
+    titel: "Algemene bepalingen"
+
+    artikel_10_1:
+      titel: "begripsbepalingen"
+      begrippen:
+        initiatiefnemer: "degene onder wiens verantwoordelijkheid werk van algemeen belang tot stand wordt gebracht of opgeruimd"
+        rechthebbende: "degene die enig recht heeft op de onroerende zaak"
+        tot_stand_brengen: "aanleggen, in stand houden, wijzigen, verplaatsen of uitvoeren"
+        werk_van_algemeen_belang: "werk of activiteit als bedoeld in §10.3.2"
+
+    artikel_10_1a:
+      titel: "toegang tot de onroerende zaak"
+      content: "Initiatiefnemer heeft toegang voor zover redelijkerwijs nodig"
+
+  afdeling_10_2:
+    titel: "Gedoogplichten van rechtswege"
+    key_pattern: "automatische gedoogplicht"
+
+    artikel_10_2:
+      titel: "gedoogplichten wegen en waterstaatswerken"
+      leden:
+        lid_1:
+          content: "Rechthebbende gedoogt voor wegen en waterstaatswerken:"
+          onderdelen:
+            a: "onderhouds- en herstelwerkzaamheden"
+            b: "meetmiddelen, seinen, merken, verkeerstekens"
+            c: "graaf- of meetwerkzaamheden voor ontwerpen"
+            d: "elektrische geleidingen (niet in afgesloten tuinen/erven)"
+
+        lid_2:
+          content: "Verkeerstekens op grond van Scheepvaartverkeerswet"
+
+    artikel_10_3:
+      titel: "gedoogplichten waterbeheer"
+      leden:
+        lid_1:
+          content: "Specie of maaisel ontvangen van oppervlaktewaterlichaam"
+
+        lid_2:
+          content: "Tijdelijk opslaan meetstoffen waterkwaliteit"
+
+        lid_3:
+          content: "Meetmiddelen voor waterpeil/waterstand"
+
+        lid_4:
+          content: "Onderzoek bescherming tegen overstromingen"
+
+    artikel_10_4:
+      titel: "gedoogplichten energievoorziening"
+      content: "Kabels/leidingen voor voorzieningen van algemeen nut"
+      categorieën:
+        - "drinkwater"
+        - "elektriciteit"
+        - "gas"
+        - "warmte"
+
+    artikel_10_5:
+      titel: "gedoogplichten elektronische communicatie"
+      content: "Kabels voor openbare elektronische communicatiediensten"
+
+    # Additional articles 10.6-10.13 cover:
+    # - gedoogplichten mijnbouw
+    # - gedoogplichten defensie
+    # - gedoogplichten luchtvaart
+    # etc.
+
+  afdeling_10_3:
+    titel: "Gedoogplichten bij beschikking"
+
+    paragraaf_10_3_1:
+      titel: "Algemene bepalingen"
+
+      artikel_10_14:
+        titel: "begripsbepalingen"
+        content: "Aanvullende definities voor deze afdeling"
+
+    paragraaf_10_3_2:
+      titel: "Werken en activiteiten van algemeen belang"
+
+      artikel_10_15:
+        titel: "grondslag gedoogplicht voor werken en activiteiten van algemeen belang"
+        content: "Bij AMvB kunnen worden aangewezen:"
+        onderdelen:
+          - "werken van algemeen belang"
+          - "opruimen van die werken"
+          - "activiteiten van algemeen belang"
+        gedoogplicht_kan_worden_opgelegd: true
+
+      artikel_10_16:
+        titel: "aangewezen werken"
+        content: "Als werken van algemeen belang zijn in ieder geval aangewezen:"
+        categorieën:
+          - "openbare nutsvoorzieningen"
+          - "waterstaatswerken"
+          - "infrastructuur"
+          - "telecommunicatie"
+
+    paragraaf_10_3_3:
+      titel: "Opleggen van gedoogplicht"
+
+      artikel_10_17:
+        titel: "bevoegd gezag gedoogplichtbeschikking"
+        bevoegd_gezag:
+          - "B&W"
+          - "GS (voor provinciale werken)"
+          - "Minister (voor rijkswerken)"
+
+      artikel_10_18:
+        titel: "voorwaarden oplegging gedoogplicht"
+        voorwaarden:
+          a: "belang werk rechtvaardigt beperking eigendom"
+          b: "minnelijke overeenstemming niet bereikt"
+          c: "geen redelijk alternatief"
+
+    paragraaf_10_3_5:
+      titel: "Schadevergoeding"
+
+      artikel_10_23:
+        titel: "vergoeding van schade"
+        content: "Initiatiefnemer vergoedt schade aan rechthebbende"
+        omvang: "volledige vergoeding"
+
+  chapter_10_juridische_analyse:
+    pattern: "gedoogplicht_systeem"
+    twee_categorieën:
+      - "van rechtswege (automatisch)"
+      - "bij beschikking (opgelegd)"
+    significance: |
+      Gedoogplichten maken infrastructuurprojecten mogelijk zonder
+      dat de overheid alle grond hoeft te onteigenen. De eigenaar
+      blijft eigenaar maar moet bepaalde activiteiten toestaan.
+
+    connection_to_ch5: "projectbesluit kan gedoogplicht triggeren"
+    connection_to_ch12: "als gedoogplicht onvoldoende: onteigening"
+
+# =============================================================================
+# CHAPTER 11 - LANDINRICHTING
+# =============================================================================
+
+chapter_11:
+  number: 11
+  title: "Landinrichting"
+  type: land_consolidation
+  articles: "11.1-11.97"
+
+  structure:
+    afdelingen:
+      - number: "11.1"
+        title: "Algemene bepalingen"
+        articles: "11.1-11.7"
+
+      - number: "11.2"
+        title: "Inrichtingsprogramma en landinrichtingsplan"
+        articles: "11.8-11.30"
+
+      - number: "11.3"
+        title: "Herverkaveling"
+        articles: "11.31-11.97"
+
+  key_articles:
+
+    artikel_11_1:
+      titel: "toepassingsbereik"
+      content: "Landinrichting voor landelijk gebied"
+      doel: "inrichting landelijk gebied verbeteren"
+      instrumenten:
+        - "landinrichtingsplan"
+        - "herverkaveling"
+        - "kavelruil"
+
+    artikel_11_8:
+      titel: "inrichtingsprogramma"
+      actor: "GS"
+      content: "Vaststellen inrichtingsprogramma voor onderdeel landelijk gebied"
+      elementen:
+        - "begrenzing gebied"
+        - "voorgenomen maatregelen en voorzieningen"
+        - "tijdschema"
+
+    artikel_11_31:
+      titel: "herverkaveling - grondslag"
+      content: "GS kunnen herverkaveling vaststellen"
+      doel: "verbetering inrichting landelijk gebied door ruil van onroerende zaken"
+
+    artikel_11_69:
+      titel: "kavelruil"
+      content: "Vrijwillige ruil van kavels tussen eigenaren"
+      faciliteit: "vergoeding door overheid mogelijk"
+
+  chapter_11_juridische_analyse:
+    pattern: "landinrichting_systeem"
+    significance: |
+      Landinrichting is het ruilverkavelingsinstrument voor
+      het landelijk gebied. Door ruil van kavels kunnen betere
+      bedrijfsvormen ontstaan en kan de inrichting van het
+      landelijk gebied worden verbeterd.
+
+    connection_to_ch2: "aansluiting bij omgevingsvisie landelijk gebied"
+    connection_to_ch3: "programma kan landinrichting initiëren"
+
+# =============================================================================
+# CHAPTER 12 - ONTEIGENING
+# =============================================================================
+
+chapter_12:
+  number: 12
+  title: "Onteigening"
+  type: expropriation
+  articles: "12.1-12.41"
+
+  structure:
+    afdelingen:
+      - number: "12.1"
+        title: "Algemene bepalingen"
+        articles: "12.1-12.1"
+
+      - number: "12.2"
+        title: "Grondslag en procedure onteigening"
+        articles: "12.2-12.7"
+
+      - number: "12.3"
+        title: "Bekendmaking en verzoek om inschrijving onteigening"
+        articles: "12.8-12.12"
+
+      - number: "12.4"
+        title: "Gerechtelijke procedure"
+        articles: "12.13-12.29"
+
+      - number: "12.5"
+        title: "Schadeloosstelling"
+        articles: "12.30-12.41"
+
+  key_articles:
+
+    artikel_12_1:
+      titel: "begripsbepalingen"
+      begrippen:
+        eigenaar: "degene die als eigenaar in de openbare registers is ingeschreven"
+        onteigenaar: "het lichaam ten behoeve waarvan onteigend wordt"
+        derde_belanghebbende: "degene aan wie bij schadeloosstelling een vergoeding moet worden toegekend"
+
+    artikel_12_2:
+      titel: "grondslag onteigening"
+      content: "Onroerende zaken kunnen worden onteigend voor:"
+      grondslagen:
+        a: "uitvoering omgevingsplan"
+        b: "uitvoering omgevingsvisie"
+        c: "uitvoering projectbesluit"
+        d: "andere bij AMvB aangewezen doeleinden"
+
+      voorwaarde: "algemeen belang vereist onteigening"
+
+    artikel_12_3:
+      titel: "bevoegd gezag"
+      bevoegd_gezag:
+        a: "gemeenteraad - gemeentelijk belang"
+        b: "provinciale staten - provinciaal belang"
+        c: "Kroon - nationaal belang"
+
+    artikel_12_4:
+      titel: "onteigeningsbeschikking"
+      content: "Bevoegd gezag neemt onteigeningsbeschikking"
+      voorwaarden:
+        - "noodzaak onteigening"
+        - "urgentie"
+        - "niet kunnen bereiken door minnelijke verwerving"
+
+    artikel_12_5:
+      titel: "minnelijk overleg"
+      content: "Onteigenaar moet minnelijk overleg hebben gevoerd"
+      aanbod: "volledige schadeloosstelling"
+
+    artikel_12_13:
+      titel: "verzoekschrift rechtbank"
+      content: "Onteigenaar dient verzoekschrift bij rechtbank"
+      termijn: "binnen 2 jaar na inwerkingtreding beschikking"
+
+    artikel_12_30:
+      titel: "volledige schadeloosstelling"
+      content: "Schadeloosstelling vormt volledige vergoeding voor alle schade"
+      elementen:
+        - "waarde van het onteigende"
+        - "waardevermindering overblijvende"
+        - "bijkomende schade"
+
+    artikel_12_33:
+      titel: "werkelijke waarde"
+      content: "Schadeloosstelling gebaseerd op werkelijke waarde"
+      definitie: "prijs die bij verkoop in vrije markt zou worden bedongen"
+      eliminatie: "zonder de plannen waarvoor onteigend wordt"
+
+  chapter_12_juridische_analyse:
+    pattern: "onteigening_systeem"
+    significance: |
+      Onteigening is het ultimum remedium voor grondverwerving.
+      Alleen als minnelijke verwerving en gedoogplicht niet
+      volstaan kan tot onteigening worden overgegaan.
+
+    grondwettelijke_basis: "Art. 14 Grondwet (eigendomsrecht)"
+    connection_to_ch5: "projectbesluit kan grondslag zijn voor onteigening"
+    connection_to_ch10: "gedoogplicht als lichter alternatief"
+
+# =============================================================================
+# CROSS-CHAPTER CONNECTIONS (PROPERTY DOMAIN)
+# =============================================================================
+
+cross_chapter_links:
+
+  internal_domain:
+    - from: "Ch10 (gedoogplicht)"
+      to: "Ch12 (onteigening)"
+      relation: "gedoogplicht = lichter alternatief voor onteigening"
+
+    - from: "Ch9 (voorkeursrecht)"
+      to: "Ch12 (onteigening)"
+      relation: "voorkeursrecht voorkomt speculatie, onteigening is ultimum remedium"
+
+    - from: "Ch11 (landinrichting)"
+      to: "Ch12 (onteigening)"
+      relation: "herverkaveling kan leiden tot onteigening"
+
+  to_core_chapters:
+    - from: "Ch9 (voorkeursrecht)"
+      to: "Ch2 (omgevingsplan)"
+      relation: "functietoedeling is grondslag voor voorkeursrecht"
+
+    - from: "Ch10 (gedoogplicht)"
+      to: "Ch5 (projectbesluit)"
+      relation: "projectbesluit kan gedoogplicht triggeren"
+
+    - from: "Ch12 (onteigening)"
+      to: "Ch5 (projectbesluit)"
+      relation: "projectbesluit kan grondslag zijn voor onteigening"
+
+    - from: "Ch11 (landinrichting)"
+      to: "Ch3 (programma)"
+      relation: "programma kan landinrichting initiëren"
+
+# =============================================================================
+# DOMAIN SUMMARY
+# =============================================================================
+
+domain_summary:
+
+  hierarchy_instruments:
+    description: "Van licht naar zwaar"
+    instruments:
+      1:
+        instrument: "Voorkeursrecht (Ch9)"
+        effect: "Overheid krijgt eerste koopoptie"
+        eigendom: "blijft bij eigenaar"
+
+      2:
+        instrument: "Gedoogplicht (Ch10)"
+        effect: "Eigenaar moet activiteit toestaan"
+        eigendom: "blijft bij eigenaar"
+
+      3:
+        instrument: "Landinrichting (Ch11)"
+        effect: "Kavelruil ter verbetering inrichting"
+        eigendom: "ruil tussen eigenaren"
+
+      4:
+        instrument: "Onteigening (Ch12)"
+        effect: "Gedwongen eigendomsovergang"
+        eigendom: "gaat naar overheid"
+
+  practical_flow: |
+    Bij gebiedsontwikkeling:
+    1. Omgevingsvisie/plan wijst functie toe
+    2. Voorkeursrecht vestigen (speculatie voorkomen)
+    3. Minnelijke verwerving proberen
+    4. Als nodig: gedoogplicht voor werken
+    5. Als nodig: onteigening als ultimum remedium
+
+  chapter_8_note: |
+    Ch8 (fauna beheer) wijkt af van het property-thema.
+    Het gaat over jachtrechten en wildbeheer, wat
+    historisch verbonden is met grondeigendom maar
+    functioneel een apart domein vormt.

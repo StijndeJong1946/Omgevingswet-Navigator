@@ -1,0 +1,416 @@
+# Afdeling 4.1 - Algemene bepalingen voor regels over activiteiten
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 4
+  afdeling: "4.1"
+  titel: "Algemene bepalingen voor regels over activiteiten"
+  artikel_range: "4.1 - 4.14"
+  extraction_method: "atomic"
+  paragrafen:
+    - "§ 4.1.1: Algemene regels (4.1-4.3)"
+    - "§ 4.1.2: Inhoud (4.4-4.7)"
+    - "§ 4.1.3: Bevoegd gezag (4.8-4.14)"
+
+# ============================================================================
+# PARAGRAAF 4.1.1 - ALGEMENE REGELS
+# ============================================================================
+
+paragraaf_4.1.1:
+  titel: "Algemene regels"
+  functie: "Bepaalt WAT voor regels kunnen worden gesteld"
+
+  artikelen:
+
+    4.1:
+      titel: "(decentrale regels over activiteiten)"
+
+      leden:
+        1:
+          tekst: "Bij omgevingsplan, waterschapsverordening en omgevingsverordening kunnen met het oog op de doelen van de wet regels worden gesteld over activiteiten die gevolgen hebben of kunnen hebben voor de fysieke leefomgeving."
+        2:
+          tekst: "Bij ministeriële regeling kunnen gebieden worden aangewezen waarin de regels, bedoeld in het eerste lid, niet van toepassing zijn."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "decentrale regelstelling"
+        logica: "facultatief (kunnen)"
+
+      instrumenten:
+        - omgevingsplan: "gemeente"
+        - waterschapsverordening: "waterschap"
+        - omgevingsverordening: "provincie"
+
+      interne_refs:
+        - naar: "artikel 2.3, tweede en derde lid"
+          context: "subsidiariteitsgrenzen"
+
+    4.2:
+      titel: "(toedeling van functies aan locaties)"
+
+      leden:
+        1:
+          tekst: "Het omgevingsplan bevat voor het gehele grondgebied van de gemeente in ieder geval de regels die nodig zijn met het oog op een evenwichtige toedeling van functies aan locaties."
+        2:
+          tekst: "Bij omgevingsverordening kunnen alleen regels worden gesteld over activiteiten die provinciale belangen betreffen..."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "functietoedeling in omgevingsplan"
+        logica: "IMPERATIEF (bevat in ieder geval)"
+
+      key_concept:
+        evenwichtige_toedeling: "kernfunctie omgevingsplan"
+
+      interne_refs:
+        - naar: "artikel 2.22"
+        - naar: "artikel 2.33, eerste lid"
+
+    4.3:
+      titel: "(grondslag rijksregels)"
+
+      leden:
+        1:
+          tekst: "Bij algemene maatregel van bestuur worden regels gesteld over de volgende activiteiten die gevolgen hebben of kunnen hebben voor de fysieke leefomgeving:"
+          lijst:
+            a: "bouwactiviteiten, sloopactiviteiten en het gebruik en het in stand houden van bouwwerken"
+            b: "milieubelastende activiteiten"
+            c: "lozingsactiviteiten"
+            d: "wateronttrekkingsactiviteiten"
+            e: "mijnbouwactiviteiten"
+            f: "beperkingengebiedactiviteiten"
+            g: "het gelegenheid bieden tot zwemmen of baden"
+            h: "activiteiten die cultureel erfgoed betreffen"
+            i: "activiteiten die werelderfgoed betreffen"
+            j: "Natura 2000-activiteiten"
+            k: "flora- en fauna-activiteiten"
+            l: "houtopstanden vellen en de herplant van houtopstanden"
+
+      functie:
+        werkwoord: "delegeert"
+        object: "rijksregels over activiteiten"
+        naar: "AMvB (Bal, Bkl, Bbl)"
+        logica: "VERPLICHTE delegatie (worden gesteld)"
+
+      hub_status: "PRIMARY HUB - gateway to Bal/Bkl/Bbl"
+
+      interne_refs:
+        - naar: "artikel 2.3, derde lid"
+          context: "subsidiariteit"
+
+      delegeert:
+        - type: "bij AMvB"
+          naar: "Bal"
+          voor: "activiteitenregels"
+        - type: "bij AMvB"
+          naar: "Bkl"
+          voor: "kwaliteitsregels"
+        - type: "bij AMvB"
+          naar: "Bbl"
+          voor: "bouwregelgeving"
+
+# ============================================================================
+# PARAGRAAF 4.1.2 - INHOUD
+# ============================================================================
+
+paragraaf_4.1.2:
+  titel: "Inhoud"
+  functie: "Bepaalt HOE regels kunnen worden vormgegeven"
+
+  artikelen:
+
+    4.4:
+      titel: "(melding of omgevingsvergunning)"
+
+      leden:
+        1:
+          tekst: "Regels als bedoeld in paragraaf 4.1.1 kunnen inhouden een verbod om zonder voorafgaande melding aan het bevoegd gezag een activiteit te verrichten."
+        2:
+          tekst: "De regels in het omgevingsplan, de waterschapsverordening of de omgevingsverordening kunnen inhouden een verbod om een activiteit zonder omgevingsvergunning te verrichten."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "melding- of vergunningplicht"
+        logica: "facultatief (kunnen inhouden)"
+
+      instrumenten:
+        melding: "lid 1"
+        vergunning: "lid 2 (decentraal)"
+
+      interne_refs:
+        - naar: "paragraaf 4.1.1"
+
+    4.5:
+      titel: "(maatwerkvoorschriften of vergunningvoorschriften)"
+
+      leden:
+        1:
+          tekst: "Bij regels als bedoeld in paragraaf 4.1.1 kunnen onderwerpen worden aangewezen waarvoor het bevoegd gezag maatwerkvoorschriften kan stellen of voorschriften aan een omgevingsvergunning kan verbinden."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "maatwerkvoorschriften"
+        logica: "case-by-case afwijking door BG"
+
+      key_concept:
+        maatwerkvoorschrift: "individueel voorschrift door bevoegd gezag"
+        verschil_met_maatwerkregel: "maatwerkregel is in verordening, maatwerkvoorschrift is besluit"
+
+      interne_refs:
+        - naar: "paragraaf 4.1.1"
+        - naar: "artikel 4.3"
+        - naar: "Paragraaf 4.3.2"
+
+    4.6:
+      titel: "(maatwerkregels)"
+
+      leden:
+        1:
+          tekst: "Bij regels als bedoeld in artikel 4.1 die in de omgevingsverordening zijn opgenomen kan worden bepaald dat in het omgevingsplan of de waterschapsverordening over daarbij aangewezen onderwerpen maatwerkregels kunnen worden gesteld."
+        2:
+          tekst: "Bij regels als bedoeld in artikel 4.3 kan worden bepaald dat in het omgevingsplan, de waterschapsverordening of de omgevingsverordening over daarbij aangewezen onderwerpen maatwerkregels kunnen worden gesteld."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "maatwerkregels"
+        logica: "decentrale afwijking van hogere regels"
+
+      key_concept:
+        maatwerkregel: "regel in verordening die afwijkt van hogere regel"
+        verschil_met_maatwerkvoorschrift: "maatwerkregel is algemeen, maatwerkvoorschrift is individueel"
+
+      interne_refs:
+        - naar: "artikel 4.1"
+        - naar: "artikel 4.3"
+        - naar: "Paragraaf 4.3.2"
+
+    4.7:
+      titel: "(gelijkwaardigheid)"
+
+      leden:
+        1:
+          tekst: "Als regels als bedoeld in paragraaf 4.1.1 voorschrijven dat een maatregel moet worden getroffen, kan op aanvraag toestemming worden verleend om, in plaats daarvan, een gelijkwaardige maatregel te treffen. Met de gelijkwaardige maatregel wordt ten minste hetzelfde resultaat bereikt."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "gelijkwaardige maatregel"
+        logica: "alternatief voor voorgeschreven maatregel"
+
+      key_concept:
+        gelijkwaardigheid: "ander middel, zelfde resultaat"
+
+      interne_refs:
+        - naar: "paragraaf 4.1.1"
+
+# ============================================================================
+# PARAGRAAF 4.1.3 - BEVOEGD GEZAG
+# ============================================================================
+
+paragraaf_4.1.3:
+  titel: "Bevoegd gezag"
+  functie: "Bepaalt WIE bevoegd gezag is voor regels"
+
+  artikelen:
+
+    4.8:
+      titel: "(bevoegd gezag voor decentrale regels)"
+
+      leden:
+        1:
+          tekst: "Voor het omgevingsplan is het college van burgemeester en wethouders, voor de waterschapsverordening is het dagelijks bestuur van het waterschap en voor de omgevingsverordening zijn gedeputeerde staten: a. het bevoegd gezag waaraan een melding wordt gedaan, b. het bevoegd gezag dat een maatwerkvoorschrift kan stellen..."
+
+      functie:
+        werkwoord: "wijst aan"
+        object: "bevoegd gezag decentrale regels"
+        logica: "koppeling instrument → bestuursorgaan"
+
+      bevoegd_gezag:
+        omgevingsplan: "B&W"
+        waterschapsverordening: "dagelijks bestuur waterschap"
+        omgevingsverordening: "GS"
+
+    4.9:
+      titel: "(gemeente bevoegd gezag voor rijksregels)"
+
+      leden:
+        1:
+          tekst: "Tenzij op grond van de artikelen 4.10 tot en met 4.13 anders is bepaald, wordt op grond van artikel 4.3 het college van burgemeester en wethouders aangewezen als: a. het bevoegd gezag waaraan een melding wordt gedaan, b. het bevoegd gezag dat een maatwerkvoorschrift kan stellen..."
+
+      functie:
+        werkwoord: "wijst aan"
+        object: "bevoegd gezag rijksregels"
+        logica: "DEFAULT gemeente, TENZIJ uitzonderingen"
+
+      default_rule: true
+      pattern: "IDENTICAL TO 5.8 - default + tenzij"
+
+      interne_refs:
+        - naar: "artikel 4.3"
+        - naar: "artikelen 4.10 tot en met 4.13"
+          context: "tenzij-verwijzing"
+
+    4.10:
+      titel: "(bevoegd gezag voor rijksregels over wateractiviteiten)"
+
+      functie:
+        werkwoord: "wijst aan"
+        object: "bevoegd gezag wateractiviteiten"
+
+      actoren:
+        - "dagelijks bestuur waterschap"
+        - "GS"
+        - "Minister I&W"
+
+      interne_refs:
+        - naar: "artikel 4.3"
+
+    4.11:
+      titel: "(provincie bevoegd gezag voor rijksregels)"
+
+      leden:
+        1:
+          tekst: "Op grond van artikel 4.3 worden voor de volgende activiteiten gevallen aangewezen waarin gedeputeerde staten het bevoegd gezag zijn..."
+          lijst:
+            a: "het gelegenheid bieden tot zwemmen en baden"
+            b: "milieubelastende activiteiten die gevolgen hebben of kunnen hebben voor de omgevingswaarden..."
+
+      functie:
+        werkwoord: "wijst aan"
+        object: "bevoegd gezag provinciale gevallen"
+
+      interne_refs:
+        - naar: "artikel 4.3"
+        - naar: "artikel 2.3, tweede lid"
+          context: "subsidiariteit"
+
+    4.12:
+      titel: "(rijk bevoegd gezag voor rijksregels)"
+
+      leden:
+        1:
+          tekst: "Op grond van artikel 4.3 worden voor de volgende activiteiten gevallen aangewezen waarin een van Onze daarbij aangewezen Ministers het bevoegd gezag is..."
+          lijst:
+            a: "milieubelastende activiteiten: 1° met betrekking tot een mijnbouwwerk, 2° waarbij nationale veiligheidsbelangen in het geding zijn..."
+
+      functie:
+        werkwoord: "wijst aan"
+        object: "bevoegd gezag rijksgevallen"
+
+      interne_refs:
+        - naar: "artikel 4.3"
+        - naar: "artikel 2.3, derde lid"
+          context: "subsidiariteit"
+
+    4.13:
+      titel: "(bevoegd gezag rijksregels in combinatie met een omgevingsvergunning)"
+
+      functie:
+        werkwoord: "koppelt"
+        object: "bevoegd gezag rijksregels aan vergunning-BG"
+        logica: "wie vergunning verleent, is ook BG voor rijksregels"
+
+      interne_refs:
+        - naar: "artikel 4.3"
+
+    4.13a:
+      titel: "(flexibiliteitsregeling bevoegd gezag)"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "overdracht bevoegdheid"
+        logica: "flexibiliteit via instemming"
+
+    4.14:
+      titel: "(voorbereidingsbesluit omgevingsplan)"
+
+      leden:
+        1:
+          tekst: "De gemeenteraad kan voor een locatie een voorbereidingsbesluit nemen met het oog op de voorbereiding van in het omgevingsplan te stellen regels."
+        2:
+          tekst: "Het voorbereidingsbesluit wijzigt het omgevingsplan met voorbeschermingsregels."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "voorbereidingsbesluit"
+        logica: "tijdelijke bescherming tijdens voorbereiding omgevingsplan"
+
+      note: "Hoort eigenlijk bij Afd 4.2 (voorbereidingsbescherming)"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  structure_mirrors_ch5:
+    observation: "Afdeling 4.1 has IDENTICAL structure to Chapter 5.1"
+    mapping:
+      "4.1.1 (WAT)": "5.1.1 (WAT vergunningplichtig)"
+      "4.1.2 (HOE)": "5.1.3 (HOE beoordelen)"
+      "4.1.3 (WIE)": "5.1.2 (WIE beslist)"
+
+  default_tenzij_pattern:
+    artikel_4.9: "gemeente DEFAULT, tenzij 4.10-4.13"
+    artikel_5.8: "gemeente DEFAULT, tenzij 5.9-5.13"
+    conclusion: "IDENTICAL pattern - self-documenting exceptions"
+
+  hub_article:
+    artikel_4.3: "Gateway to Bal/Bkl/Bbl - 45 refs (most referenced in Ow)"
+    function: "All rijksregels flow through 4.3 to AMvBs"
+
+  maatwerk_hierarchy:
+    maatwerkregel:
+      wat: "regel in verordening"
+      niveau: "algemeen"
+      artikel: "4.6"
+    maatwerkvoorschrift:
+      wat: "besluit door BG"
+      niveau: "individueel"
+      artikel: "4.5"
+    gelijkwaardigheid:
+      wat: "alternatieve maatregel"
+      niveau: "individueel"
+      artikel: "4.7"
+
+  delegation_chain:
+    pattern: |
+      Omgevingswet (4.3)
+           ↓
+      AMvB (Bal/Bkl/Bbl)
+           ↓ (kan maatwerkruimte bieden)
+      Verordening (maatwerkregel via 4.6)
+           ↓ (kan individuele ruimte bieden)
+      BG-besluit (maatwerkvoorschrift via 4.5)
+
+  bevoegd_gezag_routing:
+    decentraal: "4.8 - koppeling instrument → BG"
+    rijks_default: "4.9 - gemeente DEFAULT"
+    rijks_water: "4.10 - waterschap/GS/Minister"
+    rijks_provincie: "4.11 - GS"
+    rijks_rijk: "4.12 - Minister"
+    rijks_koppeling: "4.13 - volgt vergunning-BG"
+
+# ============================================================================
+# MAPPING GUIDE UPDATE
+# ============================================================================
+
+mapping_update:
+  insight: |
+    Chapter 4 mirrors Chapter 5 structure:
+    - WAT (4.1-4.3) ↔ WAT (5.1.1)
+    - HOE (4.4-4.7) ↔ HOE (5.1.3)
+    - WIE (4.8-4.14) ↔ WIE (5.1.2)
+
+    Art. 4.3 is THE gateway article (45 refs) - all Bal/Bkl/Bbl rules
+    flow through this delegation.
+
+    Art. 4.9 uses IDENTICAL pattern to 5.8:
+    - Default: gemeente
+    - Tenzij: explicit exception articles listed
+
+  connection_to_ch5:
+    via_5.1: "5.1 lid 2 refers to activities regulated via 4.3 → Bal"
+    via_5.18: "beoordelingsregels reference activity rules from Ch4"
+
+  next_extraction: "Afdeling 4.2 (voorbereidingsbescherming) + Afdeling 4.3 (bijzondere bepalingen)"

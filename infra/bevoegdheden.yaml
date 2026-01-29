@@ -1,0 +1,316 @@
+_metadata:
+  id: ow-infra-bevoegdheden
+  title: Omgevingswet Bevoegdheden
+  description: Competent authority mappings from Chapter 2
+  source_chapter: 'Hoofdstuk 2: Taken en bevoegdheden van bestuursorganen'
+  extraction_date: '2026-01-28'
+chapter_2_structure:
+- nr: '2.1'
+  titel: Algemene bepalingen
+  path: /Hoofdstuk2/Afdeling2.1
+  artikelen:
+  - nr: '2.1'
+    titel: (uitoefening taken en bevoegdheden)
+    preview: Artikel 2.1 (uitoefening taken en bevoegdheden) 1 Een bestuursorgaan van een gemeente, een provincie of het Rijk
+      of, met inachtneming van de Waterschapswet, van een waterschap oefent zijn taken en bev
+  - nr: '2.2'
+    titel: (afstemming en samenwerking)
+    preview: Artikel 2.2 (afstemming en samenwerking) 1 Een bestuursorgaan houdt bij de uitoefening van zijn taken en bevoegdheden
+      op grond van deze wet rekening met de taken en bevoegdheden van andere bestuursorg
+  - nr: '2.3'
+    titel: (algemene criteria verdeling van taken en bevoegdheden)
+    preview: Artikel 2.3 (algemene criteria verdeling van taken en bevoegdheden) 1 De uitoefening van de taken en bevoegdheden
+      op grond van deze wet wordt overgelaten aan de bestuursorganen van een gemeente, tenzi
+- nr: '2.2'
+  titel: Omgevingsplan, waterschapsverordening en omgevingsverordening
+  path: /Hoofdstuk2/Afdeling2.2
+  artikelen:
+  - nr: '2.4'
+    titel: (omgevingsplan)
+    preview: Artikel 2.4 (omgevingsplan) De gemeenteraad stelt voor het gehele grondgebied van de gemeente één omgevingsplan
+      vast waarin regels over de fysieke leefomgeving worden opgenomen.
+  - nr: '2.5'
+    titel: (waterschapsverordening)
+    preview: Artikel 2.5 (waterschapsverordening) Het algemeen bestuur van het waterschap stelt één waterschapsverordening
+      vast waarin regels over de fysieke leefomgeving worden opgenomen.
+  - nr: '2.6'
+    titel: (omgevingsverordening)
+    preview: Artikel 2.6 (omgevingsverordening) Provinciale staten stellen één omgevingsverordening vast waarin regels over
+      de fysieke leefomgeving worden opgenomen.
+  - nr: '2.7'
+    titel: (verplicht opnemen en uitsluiten van decentrale regels)
+    preview: Artikel 2.7 (verplicht opnemen en uitsluiten van decentrale regels) 1 Bij algemene maatregel van bestuur kunnen
+      gevallen worden aangewezen waarin regels over de fysieke leefomgeving alleen in het omge
+  - nr: '2.8'
+    titel: (delegatie)
+    preview: Artikel 2.8 (delegatie) De gemeenteraad, het algemeen bestuur van een waterschap of provinciale staten kunnen
+      de bevoegdheid tot het vaststellen van delen van het omgevingsplan, de waterschapsverorden
+- nr: '2.3'
+  titel: Omgevingswaarden
+  path: /Hoofdstuk2/Afdeling2.3
+  artikelen:
+  - nr: '2.9'
+    titel: (omgevingswaarden)
+    preview: Artikel 2.9 (omgevingswaarden) 1 Op grond van deze afdeling worden omgevingswaarden vastgesteld met het oog op
+      de doelen van de wet. 2 Een omgevingswaarde bepaalt voor de fysieke leefomgeving of een o
+  - nr: '2.10'
+    titel: (aard, termijn en locaties van omgevingswaarden en onderbouwing)
+    preview: 'Artikel 2.10 (aard, termijn en locaties van omgevingswaarden en onderbouwing) 1 Bij de vaststelling van een
+      omgevingswaarde wordt bepaald: a. of deze waarde een resultaatverplichting, inspanningsverpl'
+  - nr: '2.11'
+    titel: (omgevingswaarden gemeente)
+    preview: Artikel 2.11 (omgevingswaarden gemeente) 1 Bij omgevingsplan kunnen omgevingswaarden worden vastgesteld. 2 Bij
+      omgevingsplan kunnen geen omgevingswaarden worden vastgesteld in aanvulling op of in afwi
+  - nr: 2.11a
+    titel: (verplichte omgevingswaarden gemeente voor geluidproductie industrieterreinen)
+    preview: Artikel 2.11a (verplichte omgevingswaarden gemeente voor geluidproductie industrieterreinen) Bij omgevingsplan
+      worden in ieder geval als omgevingswaarden geluidproductieplafonds vastgesteld rondom ind
+  - nr: '2.12'
+    titel: (omgevingswaarden provincie)
+    preview: Artikel 2.12 (omgevingswaarden provincie) 1 Bij omgevingsverordening kunnen, met inachtneming van de grenzen
+      van artikel 2.3, tweede lid, omgevingswaarden worden vastgesteld. 2 Bij omgevingsverordenin
+  - nr: 2.12a
+    titel: (omgevingswaarden provincie voor geluidproductie industrieterreinen)
+    preview: Artikel 2.12a (omgevingswaarden provincie voor geluidproductie industrieterreinen) 1 Bij omgevingsverordening
+      kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, industrieterreinen wo
+  - nr: '2.13'
+    titel: (verplichte omgevingswaarden provincie voor watersystemen)
+    preview: Artikel 2.13 (verplichte omgevingswaarden provincie voor watersystemen) 1 Bij omgevingsverordening worden met
+      het oog op het waarborgen van de veiligheid en het voorkomen of beperken van wateroverlast
+  - nr: 2.13a
+    titel: (verplichte omgevingswaarden provincie voor geluidproductie wegen en lokale spoorwegen)
+    preview: Artikel 2.13a (verplichte omgevingswaarden provincie voor geluidproductie wegen en lokale spoorwegen) 1 Provinciale
+      staten stellen bij besluit als omgevingswaarden geluidproductieplafonds vast aan wee
+  - nr: '2.14'
+    titel: (omgevingswaarden Rijk)
+    preview: Artikel 2.14 (omgevingswaarden Rijk) Bij algemene maatregel van bestuur kunnen, met inachtneming van de grenzen
+      van artikel 2.3, derde lid, omgevingswaarden worden vastgesteld.
+  - nr: '2.15'
+    titel: (verplichte omgevingswaarden Rijk)
+    preview: Artikel 2.15 (verplichte omgevingswaarden Rijk) 1 Bij algemene maatregel van bestuur worden met het oog op het
+      waarborgen van de veiligheid, het beschermen van de gezondheid, het beschermen van het mi
+  - nr: 2.15a
+    titel: (omgevingswaarden stikstofdepositie)
+    preview: Artikel 2.15a (omgevingswaarden stikstofdepositie) 1 Het percentage van het areaal van de voor stikstof gevoelige
+      habitats in Natura 2000-gebieden waarop de depositie van stikstof niet groter is dan d
+- nr: '2.4'
+  titel: Toedeling van taken en aanwijzing van locaties
+  path: /Hoofdstuk2/Afdeling2.4
+  artikelen:
+  - nr: '2.16'
+    titel: (gemeentelijke taken voor de fysieke leefomgeving)
+    preview: 'Artikel 2.16 (gemeentelijke taken voor de fysieke leefomgeving) 1 Bij het gemeentebestuur berusten, naast de
+      elders in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de '
+  - nr: '2.17'
+    titel: (waterschapstaken voor de fysieke leefomgeving)
+    preview: 'Artikel 2.17 (waterschapstaken voor de fysieke leefomgeving) 1 Bij het waterschapsbestuur berusten, naast de
+      elders in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de '
+  - nr: '2.18'
+    titel: (provinciale taken voor de fysieke leefomgeving)
+    preview: Artikel 2.18 (provinciale taken voor de fysieke leefomgeving) 1 Bij het provinciebestuur berusten, naast de elders
+      in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de f
+  - nr: '2.19'
+    titel: (rijkstaken voor de fysieke leefomgeving)
+    preview: Artikel 2.19 (rijkstaken voor de fysieke leefomgeving) 1 Bij Onze Minister die het aangaat berusten, naast de
+      elders in deze wet en op grond van andere wetten aan het Rijk toegedeelde taken voor de fy
+  - nr: '2.20'
+    titel: (aanwijzing en begrenzing van rijkswateren)
+    preview: Artikel 2.20 (aanwijzing en begrenzing van rijkswateren) 1 Bij algemene maatregel van bestuur worden voor de
+      toepassing van deze wet, met inachtneming van de grenzen van artikel 2.3, derde lid, de wat
+  - nr: '2.21'
+    titel: (grondslag aanwijzing en begrenzing van andere locaties)
+    preview: Artikel 2.21 (grondslag aanwijzing en begrenzing van andere locaties) 1 Bij ministeriële regeling kunnen voor
+      de toepassing van deze wet, met inachtneming van de grenzen van artikel 2.3, derde lid, an
+  - nr: 2.21a
+    titel: (aanwijzing en begrenzing van beperkingengebieden)
+    preview: Artikel 2.21a (aanwijzing en begrenzing van beperkingengebieden) 1 Op grond van artikel 2.21, eerste lid, worden
+      in ieder geval aangewezen en geometrisch begrensd de beperkingengebieden met betrekking
+- nr: '2.5'
+  titel: Instructieregels en instructies
+  path: /Hoofdstuk2/Afdeling2.5
+  artikelen:
+  - nr: '2.22'
+    titel: (grondslag algemene instructieregels provincie)
+    preview: Artikel 2.22 (grondslag algemene instructieregels provincie) Bij omgevingsverordening kunnen, met inachtneming
+      van de grenzen van artikel 2.3, tweede lid, regels worden gesteld over de uitoefening van
+  - nr: '2.23'
+    titel: (inhoud instructieregels provincie)
+    preview: 'Artikel 2.23 (inhoud instructieregels provincie) 1 Regels op grond van artikel 2.22 kunnen alleen worden gesteld
+      over: a. de inhoud of motivering van: 1°. een programma van gedeputeerde staten als bed'
+  - nr: '2.24'
+    titel: (grondslag algemene instructieregels Rijk)
+    preview: Artikel 2.24 (grondslag algemene instructieregels Rijk) 1 Bij algemene maatregel van bestuur kunnen, met inachtneming
+      van de grenzen van artikel 2.3, derde lid, regels worden gesteld over de uitoefeni
+  - nr: '2.25'
+    titel: (inhoud instructieregels Rijk)
+    preview: 'Artikel 2.25 (inhoud instructieregels Rijk) 1 Regels op grond van artikel 2.24 kunnen alleen worden gesteld
+      over: a. de inhoud of motivering van: 1°. een programma als bedoeld in paragraaf 3.2.2, arti'
+  - nr: '2.26'
+    titel: (verplichte instructieregels Rijk programma’s)
+    preview: 'Artikel 2.26 (verplichte instructieregels Rijk programma’s) 1 Regels op grond van artikel 2.24 worden met het
+      oog op het waarborgen van de veiligheid, het beschermen van de gezondheid, het beschermen '
+  - nr: '2.27'
+    titel: (verplichte instructieregels Rijk omgevingsverordening)
+    preview: 'Artikel 2.27 (verplichte instructieregels Rijk omgevingsverordening) Regels op grond van artikel 2.24 worden
+      in ieder geval gesteld over omgevingsverordeningen met het oog op: a. het behoud van cultur'
+  - nr: '2.28'
+    titel: (verplichte instructieregels Rijk omgevingsplan en projectbesluit)
+    preview: 'Artikel 2.28 (verplichte instructieregels Rijk omgevingsplan en projectbesluit) Regels op grond van artikel
+      2.24 worden in ieder geval gesteld over omgevingsplannen en projectbesluiten met het oog op:'
+  - nr: '2.29'
+    titel: (verplichte instructieregels Rijk omgevingsplan en projectbesluit voor luchthavens)
+    preview: Artikel 2.29 (verplichte instructieregels Rijk omgevingsplan en projectbesluit voor luchthavens) 1 Regels op
+      grond van artikel 2.24 worden in ieder geval gesteld over omgevingsplannen en projectbeslui
+  - nr: 2.29a
+    titel: (verplichte instructieregels Rijk geluidproductieplafonds)
+    preview: 'Artikel 2.29a (verplichte instructieregels Rijk geluidproductieplafonds) Regels op grond van artikel 2.24 worden
+      in ieder geval gesteld over besluiten tot vaststelling van geluidproductieplafonds als '
+  - nr: '2.30'
+    titel: (verplichte instructieregels Rijk zwemlocaties)
+    preview: 'Artikel 2.30 (verplichte instructieregels Rijk zwemlocaties) Regels op grond van artikel 2.24 worden met het
+      oog op het waarborgen van de veiligheid en het beschermen van de gezondheid in ieder geval '
+  - nr: '2.31'
+    titel: (verplichte instructieregels Rijk stedelijk afvalwater)
+    preview: 'Artikel 2.31 (verplichte instructieregels Rijk stedelijk afvalwater) 1 Regels op grond van artikel 2.24 worden
+      met het oog op het beschermen van de gezondheid en het beheer van watersystemen in ieder '
+  - nr: 2.31a
+    titel: (verplichte instructieregels Rijk natuurgebieden, flora en fauna)
+    preview: Artikel 2.31a (verplichte instructieregels Rijk natuurgebieden, flora en fauna) 1 Regels op grond van artikel
+      2.24 worden met het oog op de bescherming, het herstel en de ontwikkeling van natuur en la
+  - nr: '2.32'
+    titel: (ontheffing instructieregels)
+    preview: Artikel 2.32 (ontheffing instructieregels) 1 Bij een regel op grond van artikel 2.22 kan worden bepaald dat gedeputeerde
+      staten, op verzoek van een bestuursorgaan van een gemeente of waterschap, onthe
+  - nr: '2.33'
+    titel: (grondslag instructie provincie)
+    preview: Artikel 2.33 (grondslag instructie provincie) 1 Gedeputeerde staten kunnen, met inachtneming van de grenzen van
+      artikel 2.3, tweede lid, de gemeenteraad of het waterschapsbestuur waarvan het beheergeb
+  - nr: '2.34'
+    titel: (grondslag instructie Rijk)
+    preview: Artikel 2.34 (grondslag instructie Rijk) 1 Onze Minister die het aangaat, in overeenstemming met Onze Minister
+      van Binnenlandse Zaken en Koninkrijksrelaties, kan, met inachtneming van de grenzen van a
+  - nr: '2.35'
+    titel: (toepassing instructie)
+    preview: Artikel 2.35 (toepassing instructie) 1 Een instructie kan niet worden gegeven als deze is bedoeld voor herhaalde
+      uitvoering door verschillende bestuursorganen. 2 Een instructie met het oog op een bela
+  - nr: '2.36'
+    titel: (bevoegdheid tot indeplaatstreding)
+    preview: 'Artikel 2.36 (bevoegdheid tot indeplaatstreding) 1 Gedeputeerde staten kunnen namens het waterschapsbestuur
+      en ten laste van het waterschap voorzien in het gevorderde als het waterschapsbestuur: a. ni'
+  - nr: '2.37'
+    titel: (vernietiging waterschapsbeslissingen door het Rijk)
+    preview: 'Artikel 2.37 (vernietiging waterschapsbeslissingen door het Rijk) 1 Een besluit of een niet-schriftelijke beslissing
+      gericht op enig rechtsgevolg van het waterschapsbestuur kan bij koninklijk besluit '
+- nr: '2.6'
+  titel: Bijzondere taken en bevoegdheden
+  path: /Hoofdstuk2/Afdeling2.6
+  artikelen:
+  - nr: '2.38'
+    titel: (zwemverbod en negatief zwemadvies)
+    preview: Artikel 2.38 (zwemverbod en negatief zwemadvies) Gedeputeerde staten zijn bevoegd voor oppervlaktewaterlichamen
+      een negatief zwemadvies te geven of een zwemverbod in te stellen met het oog op het waar
+  - nr: '2.39'
+    titel: (legger)
+    preview: Artikel 2.39 (legger) 1 De beheerder van waterstaatswerken stelt een legger vast, waarin is omschreven waaraan
+      die waterstaatswerken naar ligging, vorm, afmeting en constructie moeten voldoen. 2 Het e
+  - nr: '2.40'
+    titel: (toegangsverbod waterstaatswerken en wegen)
+    preview: Artikel 2.40 (toegangsverbod waterstaatswerken en wegen) 1 Onze Minister van Infrastructuur en Waterstaat kan
+      de toegang tot een waterstaatswerk of een weg in beheer bij het Rijk beperken of verbieden
+  - nr: '2.41'
+    titel: (peilbesluit)
+    preview: Artikel 2.41 (peilbesluit) 1 Het waterschapsbestuur of het bevoegde bestuursorgaan van een ander openbaar lichaam
+      waarbij op grond van artikel 2.18, tweede lid, watersystemen in beheer zijn, stelt een
+  - nr: '2.42'
+    titel: (rangorde bij waterschaarste)
+    preview: Artikel 2.42 (rangorde bij waterschaarste) 1 Bij algemene maatregel van bestuur wordt de rangorde van maatschappelijke
+      en ecologische behoeften vastgesteld, die bij waterschaarste of dreigende watersc
+  - nr: '2.43'
+    titel: (geluidwerende maatregelen aan gebouwen)
+    preview: Artikel 2.43 (geluidwerende maatregelen aan gebouwen) 1 Het college van burgemeester en wethouders, het dagelijks
+      bestuur van het waterschap, gedeputeerde staten en Onze Minister van Infrastructuur en
+  - nr: '2.44'
+    titel: (aanwijzing natuurgebieden en landschappen)
+    preview: Artikel 2.44 (aanwijzing natuurgebieden en landschappen) 1 Onze Minister voor Natuur en Stikstof wijst ter uitvoering
+      van de vogelrichtlijn of de habitatrichtlijn Natura 2000-gebieden aan en stelt daa
+  - nr: '2.45'
+    titel: (toegangsbeperking natuurgebieden)
+    preview: Artikel 2.45 (toegangsbeperking natuurgebieden) 1 Gedeputeerde staten kunnen de toegang tot een Natura 2000-gebied
+      geheel of gedeeltelijk beperken of verbieden. 2 De bevoegdheid, bedoeld in het eerste
+  - nr: '2.46'
+    titel: (stikstofdepositieruimte)
+    preview: 'Artikel 2.46 (stikstofdepositieruimte) 1 Onze Minister voor Natuur en Stikstof of een door hem aangewezen bestuursorgaan,
+      kan stikstofdepositieruimte registreren die beschikbaar is voor toedeling aan '
+bevoegd_gezag:
+  gemeente:
+    id: ow-bg-gemeente
+    name: Gemeente
+    name_nl: Gemeente
+    organs:
+      gemeenteraad: Vertegenwoordigend orgaan, vaststellen omgevingsplan
+      college_bw: College van burgemeester en wethouders, dagelijks bestuur
+    core_competencies:
+    - instrument: omgevingsplan
+      article: '2.4'
+      description: Vaststellen omgevingsplan voor gehele grondgebied
+    - instrument: omgevingsvergunning
+      article: '5.1'
+      description: Verlenen omgevingsvergunning (default bevoegd gezag)
+    - instrument: omgevingsvisie
+      article: '3.1'
+      description: Vaststellen gemeentelijke omgevingsvisie
+  provincie:
+    id: ow-bg-provincie
+    name: Provincie
+    name_nl: Provincie
+    organs:
+      provinciale_staten: Vertegenwoordigend orgaan, vaststellen omgevingsverordening
+      gedeputeerde_staten: Dagelijks bestuur, uitvoering
+    core_competencies:
+    - instrument: omgevingsverordening
+      article: '2.6'
+      description: Vaststellen omgevingsverordening
+    - instrument: instructieregels
+      article: '2.22'
+      description: Stellen van instructieregels aan gemeente en waterschap
+    - instrument: projectbesluit
+      article: '5.44'
+      description: Vaststellen projectbesluit voor provinciale projecten
+    - instrument: omgevingsvisie
+      article: '3.1'
+      description: Vaststellen provinciale omgevingsvisie
+  rijk:
+    id: ow-bg-rijk
+    name: Rijk
+    name_nl: Rijk (nationaal)
+    organs:
+      minister_bzk: Minister van Binnenlandse Zaken en Koninkrijksrelaties
+      minister_ienw: Minister van Infrastructuur en Waterstaat
+      ministers: Overige betrokken ministers
+    core_competencies:
+    - instrument: amvb
+      article: '2.24'
+      description: Stellen van rijksinstructieregels bij AMvB
+    - instrument: omgevingsvisie
+      article: '3.1'
+      description: Vaststellen nationale omgevingsvisie
+    - instrument: projectbesluit
+      article: '5.44'
+      description: Vaststellen projectbesluit voor rijksprojecten
+  waterschap:
+    id: ow-bg-waterschap
+    name: Waterschap
+    name_nl: Waterschap
+    organs:
+      algemeen_bestuur: Vertegenwoordigend orgaan, vaststellen waterschapsverordening
+      dagelijks_bestuur: Dagelijks bestuur, uitvoering
+    core_competencies:
+    - instrument: waterschapsverordening
+      article: '2.5'
+      description: Vaststellen waterschapsverordening
+    - instrument: omgevingsvergunning
+      article: '5.1'
+      description: Verlenen watervergunning (lozingen, waterkeringen)
+    - instrument: projectbesluit
+      article: '5.44'
+      description: Vaststellen projectbesluit voor waterschapsprojecten

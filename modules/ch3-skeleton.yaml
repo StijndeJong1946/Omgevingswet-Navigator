@@ -1,0 +1,1181 @@
+# Chapter 3 Skeleton Map - Omgevingsvisies en programma's
+# Omgevingswet Navigator
+
+_metadata:
+  chapter: 3
+  chapter_title: "Omgevingsvisies en programma's"
+  total_articles: 20
+  afdelingen: 2
+  paragrafen: 4
+  clusters_identified: 5
+  mapping_date: "2026-01-28"
+  description: |
+    Chapter 3 establishes the strategic policy instruments for the physical
+    environment: omgevingsvisies (environmental visions) and programma's (programmes).
+    It defines who must/can adopt these instruments, what they contain, and how
+    they relate to achieving omgevingswaarden (environmental quality standards).
+
+# =============================================================================
+# AFDELING 3.1 - OMGEVINGSVISIES
+# =============================================================================
+
+skeleton:
+  artikel_3.1:
+    title: "(vaststellen omgevingsvisie)"
+    afdeling: "3.1"
+
+    roles:
+      - trigger      # Creates obligation to adopt omgevingsvisie
+      - authority    # Assigns authority to specific bodies
+
+    determines: |
+      Mandatory adoption of omgevingsvisie at three government levels:
+      - Lid 1: Gemeenteraad stelt gemeentelijke omgevingsvisie vast
+      - Lid 2: Provinciale staten stellen provinciale omgevingsvisie vast
+      - Lid 3: Minister BZK stelt nationale omgevingsvisie vast (in overeenstemming)
+
+    triggered_by:
+      - source: "artikel 2.1"
+        condition: "General duty to care for physical environment requires strategic vision"
+      - source: "external"
+        condition: "Entry into force of Omgevingswet (2024-01-01)"
+
+    routes_to:
+      - target: "artikel 3.2"
+        condition: "Content requirements for the adopted omgevingsvisie"
+      - target: "artikel 3.3"
+        condition: "Principles to be considered in omgevingsvisie"
+      - target: "artikel 3.4"
+        condition: "Omgevingsvisie may lead to programma's for implementation"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "omgevingsvisies"
+
+  artikel_3.2:
+    title: "(inhoud omgevingsvisie)"
+    afdeling: "3.1"
+
+    roles:
+      - condition    # Defines what must be included
+      - definition   # Defines content requirements
+
+    determines: |
+      Content requirements for omgevingsvisie - must contain (for art. 2.1 tasks):
+      a. Beschrijving hoofdlijnen kwaliteit fysieke leefomgeving
+      b. Hoofdlijnen voorgenomen ontwikkeling, gebruik, beheer, bescherming, behoud grondgebied
+      c. Hoofdzaken integrale beleid voor fysieke leefomgeving
+
+    triggered_by:
+      - source: "artikel 3.1"
+        condition: "When adopting an omgevingsvisie"
+
+    routes_to:
+      - target: "artikel 3.3"
+        condition: "Principles must be considered in content"
+      - target: "artikel 3.4"
+        condition: "Vision content may be elaborated in programmes"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 3
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # References artikel 2.1
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "omgevingsvisies"
+
+  artikel_3.3:
+    title: "(doorwerking beginselen)"
+    afdeling: "3.1"
+
+    roles:
+      - condition    # Adds if/then logic for content
+
+    determines: |
+      EU environmental principles must be considered in omgevingsvisie:
+      - Voorzorgsbeginsel (precautionary principle)
+      - Beginsel van preventief handelen (preventive action)
+      - Beginsel milieuaantastingen bij voorrang aan bron bestrijden (source principle)
+      - Beginsel dat vervuiler betaalt (polluter pays principle)
+
+    triggered_by:
+      - source: "artikel 3.1"
+        condition: "When adopting omgevingsvisie"
+      - source: "artikel 3.2"
+        condition: "When determining content of omgevingsvisie"
+
+    routes_to:
+      - target: "external"
+        condition: "Terminal node for omgevingsvisie workflow"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 4  # EU principles (TFEU)
+      delegation_count: 0
+
+    cluster: "omgevingsvisies"
+
+# =============================================================================
+# AFDELING 3.2 - PROGRAMMA'S
+# PARAGRAAF 3.2.1 - ALGEMENE BEPALINGEN
+# =============================================================================
+
+  artikel_3.4:
+    title: "(vaststellen programma)"
+    afdeling: "3.2"
+    paragraaf: "3.2.1"
+
+    roles:
+      - authority    # Determines who CAN adopt programmes (facultative)
+
+    determines: |
+      Facultative authority to adopt programmes (kunnen):
+      - College van burgemeester en wethouders
+      - Algemeen bestuur van het waterschap
+      - Gedeputeerde staten
+      - Onze Minister die het aangaat
+
+    triggered_by:
+      - source: "artikel 3.1"
+        condition: "Omgevingsvisie provides basis for programma's"
+      - source: "external"
+        condition: "Policy need for specific programme"
+
+    routes_to:
+      - target: "artikel 3.5"
+        condition: "Content requirements apply to adopted programme"
+      - target: "paragraaf 3.2.2"
+        condition: "Some programmes are mandatory (verplicht)"
+      - target: "paragraaf 3.2.3"
+        condition: "Optional specific programmes"
+      - target: "paragraaf 3.2.4"
+        condition: "Special regime for programmatic approach"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "programmas-algemeen"
+
+  artikel_3.5:
+    title: "(inhoud programma)"
+    afdeling: "3.2"
+    paragraaf: "3.2.1"
+
+    roles:
+      - condition    # Content requirements
+      - definition   # Defines what programme contains
+
+    determines: |
+      Content requirements for programma (for art. 2.1 tasks, per onderdeel fysieke leefomgeving):
+      a. Uitwerking te voeren beleid voor ontwikkeling, gebruik, beheer, bescherming, behoud
+      b. Maatregelen om te voldoen aan omgevingswaarden of andere doelstellingen
+
+    triggered_by:
+      - source: "artikel 3.4"
+        condition: "When adopting any programme"
+      - source: "paragraaf 3.2.2"
+        condition: "Content applies to mandatory programmes"
+
+    routes_to:
+      - target: "paragraaf 3.2.2"
+        condition: "Mandatory programmes have additional requirements"
+      - target: "paragraaf 3.2.4"
+        condition: "Programmatic approach has special content rules"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # References artikel 2.1
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "programmas-algemeen"
+
+# =============================================================================
+# PARAGRAAF 3.2.2 - VERPLICHTE PROGRAMMA'S
+# =============================================================================
+
+  artikel_3.6:
+    title: "(verplichte programma's gemeente)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates obligation
+      - authority    # Assigns to gemeente
+
+    determines: |
+      Mandatory noise action plan (actieplan) for municipalities in designated agglomerations:
+      Lid 1 - B&W must adopt actieplan for:
+        a. Wegen en daarin gelegen spoorwegen
+        b. Andere spoorwegen
+        c. Luchthavens
+        d. Activities with noise rules under art. 2.22, 2.24, or paragraaf 4.1.1
+      Lid 2 - Based on geluidbelastingkaarten (art. 20.17)
+
+    triggered_by:
+      - source: "external"
+        condition: "Municipality in designated agglomeration (richtlijn omgevingslawaai art. 3(k))"
+      - source: "artikel 20.17"
+        condition: "Availability of geluidbelastingkaarten"
+
+    routes_to:
+      - target: "artikel 3.8"
+        condition: "Reference point for provincial actieplannen (art. 3.8 lid 1)"
+      - target: "artikel 3.11"
+        condition: "Wijzigingsplicht if doelbereik not achieved"
+      - target: "artikel 3.12"
+        condition: "AMvB can set execution requirements"
+      - target: "artikel 3.13"
+        condition: "AMvB can require joint adoption"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "richtlijn omgevingslawaai"
+        for: "Definition of agglomeratie (art. 3(k)), actieplan requirements (art. 8)"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 4
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 3  # art. 2.22, 2.24, paragraaf 4.1.1
+      external_refs_count: 2  # Richtlijn omgevingslawaai
+      delegation_count: 1
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.7:
+    title: "(verplichte programma's waterschap)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates obligation
+      - authority    # Assigns to waterschap
+
+    determines: |
+      Mandatory waterbeheerprogramma for water boards:
+      - Algemeen bestuur must adopt for watersystemen in beheer
+      - Must consider regionaal waterprogramma for richtlijnen in art. 3.8 lid 2
+
+    triggered_by:
+      - source: "external"
+        condition: "Waterschap has watersystemen in beheer"
+      - source: "artikel 3.8"
+        condition: "Regionaal waterprogramma provides framework (art. 3.8 lid 2)"
+
+    routes_to:
+      - target: "artikel 3.11"
+        condition: "Wijzigingsplicht if doelbereik not achieved"
+      - target: "artikel 3.12"
+        condition: "AMvB can set execution requirements"
+      - target: "artikel 3.13"
+        condition: "AMvB can require joint adoption"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "artikel 3.8 lid 2"
+        for: "EU water directives framework"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # art. 3.8 lid 2
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.8:
+    title: "(verplichte programma's provincie)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates multiple obligations
+      - authority    # Assigns to gedeputeerde staten
+
+    determines: |
+      Three mandatory provincial programmes:
+      Lid 1 - Actieplan omgevingslawaai for:
+        a. Belangrijke wegen (provincial or gemeente/waterschap outside agglomerations)
+        b. Belangrijke spoorwegen (excluding art. 3.6 lid 1(b) and art. 3.9 lid 1(b)(2))
+        c. Burgerluchthavens van regionale betekenis
+      Lid 2 - Regionale waterprogramma's for EU water directives:
+        - Grondwaterrichtlijn, kaderrichtlijn water, richtlijn overstromingsrisico's
+        - Zwemwaterrichtlijn, andere Europese waterrichtlijnen
+      Lid 3 - Beheerplan Natura 2000 for N2000-gebied in province
+
+    triggered_by:
+      - source: "external"
+        condition: "EU directives require implementation"
+      - source: "artikel 3.6"
+        condition: "Reference for noise action plan requirements (overeenkomstig art. 3.6)"
+
+    routes_to:
+      - target: "artikel 3.7"
+        condition: "Regionaal waterprogramma provides framework for waterschap"
+      - target: "artikel 3.9 lid 3"
+        condition: "Exception for Natura 2000 beheerplan (Rijk override)"
+      - target: "artikel 3.11"
+        condition: "Wijzigingsplicht if doelbereik not achieved"
+      - target: "artikel 3.12"
+        condition: "AMvB can set execution requirements"
+      - target: "artikel 3.13"
+        condition: "AMvB can require joint adoption"
+      - target: "artikel 3.18 lid 3"
+        condition: "Uitvoeringsplicht applies to beheerplan"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "richtlijn omgevingslawaai"
+        for: "Definitions belangrijke wegen/spoorwegen/luchthavens (art. 3(n,o,p))"
+      - target: "EU water directives"
+        for: "Grondwaterrichtlijn, kaderrichtlijn water, etc."
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 6
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 3  # art. 3.6, 3.9
+      external_refs_count: 6  # Multiple EU directives
+      delegation_count: 2
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.9:
+    title: "(verplichte programma's Rijk)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates multiple obligations
+      - authority    # Assigns to various ministers
+      - exception    # Lid 3 overrides art. 3.8 lid 3
+
+    determines: |
+      Multiple mandatory national programmes:
+      Lid 1 - Minister I&W:
+        a. Nationaal nec-programma (NEC-richtlijn art. 6)
+        b. Actieplan omgevingslawaai for: Rijkswegen, hoofdspoorwegen, Schiphol + nationale luchthavens
+      Lid 2 - Minister I&W (in overeenstemming):
+        a. Stroomgebiedsbeheerplannen (Rijn, Maas, Schelde, Eems)
+        b. Overstromingsrisicobeheerplannen
+        c. Programma van maatregelen mariene strategie
+        d. Maritiem ruimtelijk plan
+        e. Nationaal waterprogramma
+      Lid 3 - Beheerplan Natura 2000 (exception to art. 3.8 lid 3) for areas:
+        - Managed by other Minister than N&S, or
+        - Owned by State
+      Lid 4 - Minister voor Natuur en Stikstof:
+        a. Stikstof reduction programme (for omgevingswaarden art. 2.15a lid 1)
+        b. Instandhoudingsdoelstellingen for habitats
+
+    triggered_by:
+      - source: "external"
+        condition: "EU directives require national implementation"
+      - source: "artikel 2.15a"
+        condition: "Stikstof omgevingswaarden require programme (lid 4)"
+
+    routes_to:
+      - target: "artikel 3.11"
+        condition: "Wijzigingsplicht if doelbereik not achieved"
+      - target: "artikel 3.12"
+        condition: "AMvB can set execution requirements"
+      - target: "artikel 3.13"
+        condition: "AMvB can require joint adoption"
+      - target: "artikel 3.18 lid 3"
+        condition: "Uitvoeringsplicht applies to beheerplan and stikstof programme"
+      - target: "artikel 3.19 lid 3"
+        condition: "Wijziging rules apply to stikstof programme"
+
+    exceptions:
+      - exception: "Beheerplan Natura 2000 by Rijk instead of province"
+        defined_in: "artikel 3.9 lid 3"
+        effect: "Minister with task art. 2.19 lid 5(b) adopts instead of GS"
+
+    delegates_to:
+      - target: "nec-richtlijn"
+        for: "Nationaal NEC-programma (art. 6)"
+      - target: "richtlijn omgevingslawaai"
+        for: "Actieplan requirements"
+      - target: "kaderrichtlijn water"
+        for: "Stroomgebiedsbeheerplannen (art. 13)"
+      - target: "richtlijn overstromingsrisico's"
+        for: "Overstromingsrisicobeheerplannen (art. 7-8)"
+      - target: "kaderrichtlijn mariene strategie"
+        for: "Maatregelen programma (art. 5 lid 2(b))"
+      - target: "kaderrichtlijn maritieme ruimtelijke planning"
+        for: "Maritiem ruimtelijk plan (art. 4)"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 12
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 3  # art. 2.15a, 2.19, 3.8
+      external_refs_count: 6  # Multiple EU directives
+      delegation_count: 6
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.10:
+    title: "(verplicht programma bij (dreigende) overschrijding van omgevingswaarde)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates obligation when condition met
+      - condition    # Triggered by aannemelijk overschrijding
+      - authority    # Default to gemeente, with exceptions
+
+    determines: |
+      Mandatory programme when omgevingswaarde (likely) not met:
+      Lid 1 - Default: B&W adopt programme aimed at meeting omgevingswaarde
+      Lid 2 - Exceptions:
+        a. Waterschap/Rijk for watersystemen in their management
+        b. AMvB/omgevingsverordening can designate other body or alternative measures
+
+    triggered_by:
+      - source: "external"
+        condition: "Aannemelijk dat niet wordt voldaan/zal worden voldaan aan omgevingswaarde"
+      - source: "artikel 20.1"
+        condition: "Monitoring reveals (threatening) exceedance"
+
+    routes_to:
+      - target: "artikel 3.11"
+        condition: "Wijzigingsplicht applies"
+      - target: "artikel 3.12"
+        condition: "AMvB can set execution requirements"
+
+    exceptions:
+      - exception: "Waterschap/Rijk for their watersystemen"
+        defined_in: "artikel 3.10 lid 2(a)"
+        effect: "Algemeen bestuur/Minister I&W adopts instead of B&W"
+      - exception: "Other body designated by AMvB/omgevingsverordening"
+        defined_in: "artikel 3.10 lid 2(b)"
+        effect: "Designated body adopts or takes measures"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of other body or alternative measures (lid 2(b))"
+      - target: "omgevingsverordening"
+        for: "Designation of other body or alternative measures (lid 2(b))"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 4
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 1  # art. 2.3
+      external_refs_count: 0
+      delegation_count: 2
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.11:
+    title: "(wijziging met oog op doelbereik)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - trigger      # Creates obligation to modify
+      - condition    # Triggered by monitoring results
+      - procedure    # Defines modification requirement
+
+    determines: |
+      Mandatory modification of verplicht programma:
+      Lid 1 - Wijzigingsplicht when monitoring (art. 20.1) shows programme cannot achieve omgevingswaarde
+      Lid 2 - Programme must be modified to achieve omgevingswaarde within passende termijn
+
+    triggered_by:
+      - source: "artikel 20.1"
+        condition: "Monitoring shows programme cannot achieve omgevingswaarde"
+      - source: "artikelen 3.6-3.10"
+        condition: "Applies to all verplichte programma's in this paragraaf"
+
+    routes_to:
+      - target: "external"
+        condition: "Terminal - modified programme continues implementation"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # art. 20.1
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.12:
+    title: "(uitvoering maatregelen)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - delegation   # Points to AMvB
+      - procedure    # Execution requirements
+
+    determines: |
+      AMvB delegation for programme execution requirements:
+      - Can require measures in programmes to be executed/operational
+      - Includes measures under art. 3.10 lid 2(b)(2) (alternative to programme)
+
+    triggered_by:
+      - source: "artikelen 3.6-3.10"
+        condition: "Programmes in this paragraaf contain measures"
+
+    routes_to:
+      - target: "external (AMvB)"
+        condition: "Execution rules set by AMvB"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Rules on when/how measures must be executed or operational"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # art. 3.10
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "verplichte-programmas"
+
+  artikel_3.13:
+    title: "(gezamenlijke vaststelling programma's)"
+    afdeling: "3.2"
+    paragraaf: "3.2.2"
+
+    roles:
+      - delegation   # Points to AMvB
+      - procedure    # Joint adoption requirement
+
+    determines: |
+      AMvB delegation for joint programme adoption:
+      - Can require bestuursorganen to jointly adopt verplichte programma's
+
+    triggered_by:
+      - source: "artikelen 3.6-3.10"
+        condition: "Multiple bodies have related obligations"
+
+    routes_to:
+      - target: "external (AMvB)"
+        condition: "Joint adoption rules set by AMvB"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Requirement for joint adoption of programmes"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "verplichte-programmas"
+
+# =============================================================================
+# PARAGRAAF 3.2.3 - ONVERPLICHTE PROGRAMMA'S
+# =============================================================================
+
+  artikel_3.14:
+    title: "(gemeentelijk rioleringsprogramma)"
+    afdeling: "3.2"
+    paragraaf: "3.2.3"
+
+    roles:
+      - authority    # Facultative authority
+
+    determines: |
+      Facultative gemeentelijk rioleringsprogramma:
+      - B&W can (kan) adopt for task art. 2.16 lid 1(a)(1-3) (water collection/discharge)
+
+    triggered_by:
+      - source: "artikel 2.16"
+        condition: "Municipality has task for stedelijk afvalwater en hemelwater"
+
+    routes_to:
+      - target: "artikel 3.5"
+        condition: "General programme content requirements apply"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # art. 2.16
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "onverplichte-programmas"
+
+  artikel_3.14a:
+    title: "(inrichtingsprogramma)"
+    afdeling: "3.2"
+    paragraaf: "3.2.3"
+
+    roles:
+      - trigger      # Creates obligation when condition met
+      - condition    # Tied to landinrichting decision
+      - authority    # Assigns to gedeputeerde staten
+
+    determines: |
+      Conditional inrichtingsprogramma:
+      - When GS proceed with landinrichting (art. 12.3 lid 1), must adopt inrichtingsprogramma
+      - Aimed at area improvement
+      - Can contain measures/voorzieningen of art. 12.3
+
+    triggered_by:
+      - source: "artikel 12.3"
+        condition: "GS besluit tot landinrichting"
+
+    routes_to:
+      - target: "artikel 12.3"
+        condition: "Programme enables landinrichting measures"
+      - target: "artikel 3.5"
+        condition: "General programme content requirements apply"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # art. 12.3
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "onverplichte-programmas"
+
+# =============================================================================
+# PARAGRAAF 3.2.4 - PROGRAMMATISCHE AANPAK
+# =============================================================================
+
+  artikel_3.15:
+    title: "(toepassingsbereik programmatische aanpak)"
+    afdeling: "3.2"
+    paragraaf: "3.2.4"
+
+    roles:
+      - trigger      # Activates programmatic approach regime
+      - condition    # Defines when PA applies
+      - delegation   # Points to instruments that designate PA programmes
+
+    determines: |
+      Scope of programmatische aanpak (PA) regime:
+      Lid 1 - Paragraaf applies to programmes in lid 2-4
+      Lid 2 - Omgevingsplan can designate PA programmes for:
+        - Gemeentelijke omgevingswaarden (paragraaf 2.3.2)
+        - Other goals with omgevingsplanactiviteit rules
+      Lid 3 - Omgevingsverordening can designate PA programmes for:
+        - Provinciale omgevingswaarden (paragraaf 2.3.3)
+        - Other goals with rules under art. 2.22, 5.19 lid 1, 5.30
+      Lid 4 - AMvB can designate PA programmes for:
+        - Rijksomgevingswaarden (paragraaf 2.3.4)
+        - Other goals with rules under art. 2.24 lid 1, 5.18
+      Lid 5 - Instrument determines which body adopts PA programme
+
+    triggered_by:
+      - source: "omgevingsplan"
+        condition: "Designation of PA programme (lid 2)"
+      - source: "omgevingsverordening"
+        condition: "Designation of PA programme (lid 3)"
+      - source: "AMvB"
+        condition: "Designation of PA programme (lid 4)"
+
+    routes_to:
+      - target: "artikel 3.16"
+        condition: "Content and effect requirements"
+      - target: "artikel 3.17"
+        condition: "Detailed programme requirements"
+      - target: "artikel 3.18"
+        condition: "Uitvoeringsplicht"
+      - target: "artikel 3.19"
+        condition: "Wijziging regime"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "omgevingsplan"
+        for: "Designation of gemeentelijke PA programmes"
+      - target: "omgevingsverordening"
+        for: "Designation of provinciale PA programmes"
+      - target: "AMvB"
+        for: "Designation of rijks PA programmes"
+
+    complexity:
+      leden_count: 5
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 7  # Multiple article references
+      external_refs_count: 0
+      delegation_count: 3
+
+    cluster: "programmatische-aanpak"
+
+  artikel_3.16:
+    title: "(inhoud en werking programmatische aanpak)"
+    afdeling: "3.2"
+    paragraaf: "3.2.4"
+
+    roles:
+      - definition   # Defines PA programme content
+      - condition    # Defines legal effect (rules buiten toepassing)
+      - delegation   # Points to designating instruments
+
+    determines: |
+      Content and legal effect of PA programme:
+      Lid 1 - Must indicate available room (ruimte) for activities considering:
+        - Omgevingswaarde or other goal
+        - Area and period
+      Lid 2 - Designating instrument determines:
+        a. How omgevingswaarde/goal is considered in tasks/bevoegdheden
+        b. Which rules (art. 2.22, 2.24 lid 1, 5.18, 5.19 lid 1, 5.30) or
+           omgevingsplanactiviteit rules may be set aside (geheel/gedeeltelijk buiten toepassing)
+
+    triggered_by:
+      - source: "artikel 3.15"
+        condition: "Paragraaf applies to designated programmes"
+
+    routes_to:
+      - target: "artikel 3.17"
+        condition: "Detailed content requirements"
+      - target: "artikel 5.18"
+        condition: "Rules that may be set aside"
+      - target: "artikel 5.19"
+        condition: "Rules that may be set aside"
+      - target: "artikel 5.30"
+        condition: "Rules that may be set aside"
+
+    exceptions: []
+
+    delegates_to:
+      - target: "omgevingsplan"
+        for: "Specification of effect on rules (lid 2)"
+      - target: "omgevingsverordening"
+        for: "Specification of effect on rules (lid 2)"
+      - target: "AMvB"
+        for: "Specification of effect on rules (lid 2)"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 5  # art. 2.22, 2.24, 5.18, 5.19, 5.30
+      external_refs_count: 0
+      delegation_count: 3
+
+    cluster: "programmatische-aanpak"
+
+  artikel_3.17:
+    title: "(eisen aan programma bij programmatische aanpak)"
+    afdeling: "3.2"
+    paragraaf: "3.2.4"
+
+    roles:
+      - condition    # Detailed content requirements
+      - definition   # Defines required descriptions
+
+    determines: |
+      Detailed content requirements for PA programme:
+      Lid 1 - Must describe (in ieder geval):
+        a. Gebied
+        b. Periode
+        c. Omgevingswaarde/doelstelling
+        d. Toestand fysieke leefomgeving
+        e. Verwachte ontwikkelingen affecting doelbereik
+        f. Expected activities (1) affecting doelbereik or (2) affecting ruimte determination/distribution
+        g. Gevolgen of developments (e) and activities (f)
+        h. Maatregelen contributing to doelbereik, expected effects, execution timeline
+      Lid 2 - Optional: when measures include vergunning wijziging/intrekking,
+              can describe timing and conditions
+
+    triggered_by:
+      - source: "artikel 3.15"
+        condition: "Paragraaf applies to designated programmes"
+      - source: "artikel 3.16"
+        condition: "PA programme adopted with ruimte indication"
+
+    routes_to:
+      - target: "artikel 3.18"
+        condition: "Measures must be executed (uitvoeringsplicht)"
+      - target: "artikel 3.19"
+        condition: "Programme may need modification"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 10
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "programmatische-aanpak"
+
+  artikel_3.18:
+    title: "(uitvoeringsplicht bij programmatische aanpak)"
+    afdeling: "3.2"
+    paragraaf: "3.2.4"
+
+    roles:
+      - procedure    # Defines execution obligation
+      - condition    # Specifies when obligation applies
+
+    determines: |
+      Execution obligation for PA programme measures:
+      Lid 1 - Designated bodies must execute measures within indicated timeline
+      Lid 2 - Uitvoeringsplicht only applies:
+        a. If body has consented to inclusion of measures, OR
+        b. If obligation follows from rules/instructies (art. 2.23, 2.25, 2.33, 2.34)
+      Lid 3 - Also applies to beheerplan (art. 3.8 lid 3) and stikstof programme (art. 3.9 lid 3-4)
+
+    triggered_by:
+      - source: "artikel 3.17"
+        condition: "Programme contains maatregelen with timeline"
+
+    routes_to:
+      - target: "artikel 3.19"
+        condition: "Bodies can request programme modification"
+      - target: "artikel 3.8 lid 3"
+        condition: "Applies to Natura 2000 beheerplan"
+      - target: "artikel 3.9 lid 3-4"
+        condition: "Applies to Rijk beheerplan and stikstof programme"
+
+    exceptions:
+      - exception: "No uitvoeringsplicht without consent or legal obligation"
+        defined_in: "artikel 3.18 lid 2"
+        effect: "Body not bound to execute measures"
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 6  # art. 2.23, 2.25, 2.33, 2.34, 3.8, 3.9
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "programmatische-aanpak"
+
+  artikel_3.19:
+    title: "(wijziging programma bij programmatische aanpak)"
+    afdeling: "3.2"
+    paragraaf: "3.2.4"
+
+    roles:
+      - procedure    # Defines modification procedures
+      - condition    # Specifies conditions for modification
+      - outcome      # Terminal node - programme modification
+
+    determines: |
+      Modification regime for PA programme:
+      Lid 1 - Designated body can modify/replace/remove measures, activities, developments
+              AND add new ones - if aannemelijk that changes fit within/not contrary to programme
+      Lid 2 - Bodies with uitvoeringsplicht (art. 3.18 lid 1) can request modification
+              Must demonstrate requirement in lid 1 is met
+      Lid 3 - Lid 1-2 apply to stikstof programme (art. 3.9 lid 4)
+      Lid 4 - MANDATORY modification when monitoring (art. 20.1 lid 1-2) shows
+              art. 3.16 lid 2 can no longer reasonably apply to programme
+
+    triggered_by:
+      - source: "artikel 3.18"
+        condition: "Bodies with uitvoeringsplicht may request modification"
+      - source: "artikel 20.1"
+        condition: "Monitoring shows programme no longer effective (lid 4)"
+
+    routes_to:
+      - target: "external"
+        condition: "Terminal - modified PA programme continues"
+
+    exceptions: []
+
+    delegates_to: []
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 4  # art. 3.9, 3.16, 3.18, 20.1
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "programmatische-aanpak"
+
+# =============================================================================
+# CLUSTER DEFINITIONS
+# =============================================================================
+
+clusters:
+  omgevingsvisies:
+    name: "Omgevingsvisie Workflow"
+    purpose: |
+      Strategic policy vision for physical environment at each government level.
+      Establishes long-term direction that programmes elaborate into concrete measures.
+    entry_points: ["3.1"]
+    exit_points: ["3.3"]
+    articles: ["3.1", "3.2", "3.3"]
+    complexity: low
+    key_characteristics:
+      - Mandatory at all three levels (gemeente, provincie, Rijk)
+      - Integrale strategic document
+      - EU principles must be considered
+      - No direct legal binding effect on citizens
+    external_connections:
+      - to: "artikel 2.1"
+        relationship: "Tasks that omgevingsvisie serves"
+      - to: "EU principles (TFEU)"
+        relationship: "Beginselen to be considered"
+
+  programmas-algemeen:
+    name: "General Programme Framework"
+    purpose: |
+      General rules for programme adoption authority and content requirements.
+      Foundation for both verplichte and onverplichte programma's.
+    entry_points: ["3.4"]
+    exit_points: ["3.5"]
+    articles: ["3.4", "3.5"]
+    complexity: low
+    key_characteristics:
+      - Facultative authority (kunnen)
+      - Content requirements for any programme
+      - Links omgevingsvisie to concrete measures
+    external_connections:
+      - to: "artikel 2.1"
+        relationship: "Tasks that programmes serve"
+
+  verplichte-programmas:
+    name: "Mandatory Programmes Workflow"
+    purpose: |
+      Obligation framework for programmes required by EU directives or for achieving
+      omgevingswaarden. Includes noise action plans, water programmes, Natura 2000
+      beheerplannen, and programmes for omgevingswaarde compliance.
+    entry_points: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+    exit_points: ["3.11", "3.12", "3.13"]
+    articles: ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+    complexity: very_high
+    key_characteristics:
+      - EU directive implementation
+      - Multiple government levels with specific responsibilities
+      - Monitoring-triggered modification obligation
+      - AMvB delegation for execution and joint adoption
+      - Stikstof programme special regime
+    external_connections:
+      - to: "EU directives"
+        relationship: "Multiple directives requiring programme implementation"
+      - to: "artikel 20.1"
+        relationship: "Monitoring triggers wijzigingsplicht"
+      - to: "artikel 2.15a"
+        relationship: "Stikstof omgevingswaarden"
+      - to: "AMvB (Bkl/Bal)"
+        relationship: "Execution and joint adoption rules"
+
+  onverplichte-programmas:
+    name: "Optional Programmes"
+    purpose: |
+      Specific facultative programmes for riolering (sewage) and landinrichting
+      (land consolidation). These elaborate on specific tasks without being mandatory.
+    entry_points: ["3.14", "3.14a"]
+    exit_points: ["3.14", "3.14a"]
+    articles: ["3.14", "3.14a"]
+    complexity: low
+    key_characteristics:
+      - Facultative but tied to specific tasks/decisions
+      - Rioleringsprogramma: fully optional
+      - Inrichtingsprogramma: mandatory when landinrichting proceeds
+    external_connections:
+      - to: "artikel 2.16"
+        relationship: "Riolering task basis"
+      - to: "artikel 12.3"
+        relationship: "Landinrichting trigger and measures"
+
+  programmatische-aanpak:
+    name: "Programmatic Approach Workflow"
+    purpose: |
+      Special regime allowing programmes to create 'room' for activities while
+      achieving omgevingswaarden. Enables rules to be set aside in exchange for
+      programmatic guarantee of goal achievement.
+    entry_points: ["3.15"]
+    exit_points: ["3.19"]
+    articles: ["3.15", "3.16", "3.17", "3.18", "3.19"]
+    complexity: very_high
+    key_characteristics:
+      - Designation required by omgevingsplan/verordening/AMvB
+      - Creates 'ruimte' for activities
+      - Can set aside assessment rules
+      - Detailed content requirements
+      - Uitvoeringsplicht with consent requirement
+      - Monitoring-triggered modification
+      - Also applies to Natura 2000 beheerplan and stikstof programme
+    external_connections:
+      - to: "omgevingsplan"
+        relationship: "Can designate PA programmes (lid 2)"
+      - to: "omgevingsverordening"
+        relationship: "Can designate PA programmes (lid 3)"
+      - to: "AMvB"
+        relationship: "Can designate PA programmes (lid 4)"
+      - to: "artikel 5.18/5.19/5.30"
+        relationship: "Beoordelingsregels that may be set aside"
+      - to: "artikel 20.1"
+        relationship: "Monitoring triggers wijziging"
+
+# =============================================================================
+# CHAPTER-LEVEL ANALYSIS
+# =============================================================================
+
+chapter_analysis:
+  legal_instrument_types:
+    omgevingsvisie:
+      nature: "Strategic policy document"
+      binding: "Not directly binding on citizens"
+      levels: ["gemeente", "provincie", "Rijk"]
+
+    programma:
+      nature: "Policy implementation document"
+      binding: "Not directly binding (except programmatische aanpak effect)"
+      subtypes:
+        - verplicht: "EU directive implementation, omgevingswaarde achievement"
+        - onverplicht: "Task-related optional programmes"
+        - programmatische_aanpak: "Special regime with rule-setting-aside effect"
+
+  key_legal_flows:
+    vision_to_programme:
+      description: "Omgevingsvisie provides strategic basis, programmes elaborate"
+      articles: ["3.1", "3.2", "3.3", "3.4", "3.5"]
+
+    eu_directive_implementation:
+      description: "EU directives require verplichte programma's at various levels"
+      articles: ["3.6", "3.7", "3.8", "3.9"]
+
+    omgevingswaarde_achievement:
+      description: "Programmes ensure omgevingswaarden are met"
+      articles: ["3.10", "3.11"]
+
+    programmatic_approach:
+      description: "PA programmes create room while guaranteeing goal achievement"
+      articles: ["3.15", "3.16", "3.17", "3.18", "3.19"]
+
+  delegation_summary:
+    to_AMvB:
+      - "Execution requirements (art. 3.12)"
+      - "Joint adoption (art. 3.13)"
+      - "PA programme designation (art. 3.15 lid 4)"
+      - "Alternative measures for omgevingswaarde (art. 3.10 lid 2(b))"
+    to_omgevingsverordening:
+      - "PA programme designation (art. 3.15 lid 3)"
+      - "Alternative authority for omgevingswaarde (art. 3.10 lid 2(b))"
+    to_omgevingsplan:
+      - "PA programme designation (art. 3.15 lid 2)"
+    to_EU_directives:
+      - "Richtlijn omgevingslawaai (noise action plans)"
+      - "Kaderrichtlijn water (water programmes)"
+      - "NEC-richtlijn (national emission ceilings)"
+      - "Multiple other water/marine directives"
+
+  monitoring_connections:
+    - artikel: "3.11"
+      trigger: "artikel 20.1"
+      effect: "Wijzigingsplicht verplichte programma's"
+    - artikel: "3.19 lid 4"
+      trigger: "artikel 20.1"
+      effect: "Wijzigingsplicht PA programma's"
+
+  cross_chapter_connections:
+    chapter_2:
+      - "artikel 2.1 (tasks)"
+      - "artikel 2.3 (limits provincial rules)"
+      - "artikel 2.15a (stikstof omgevingswaarden)"
+      - "artikel 2.16 (water tasks)"
+      - "artikel 2.19 (Natura 2000 tasks)"
+      - "artikel 2.22, 2.23, 2.24, 2.25 (instructieregels)"
+      - "artikel 2.33, 2.34 (instructies)"
+    chapter_4:
+      - "paragraaf 4.1.1 (regels activiteiten - geluid)"
+    chapter_5:
+      - "artikel 5.18, 5.19, 5.30 (beoordelingsregels)"
+    chapter_12:
+      - "artikel 12.3 (landinrichting)"
+    chapter_20:
+      - "artikel 20.1 (monitoring)"
+      - "artikel 20.17 (geluidbelastingkaarten)"

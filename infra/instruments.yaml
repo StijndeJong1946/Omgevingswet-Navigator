@@ -1,0 +1,134 @@
+_metadata:
+  id: ow-infra-instruments
+  title: Omgevingswet Instrumenten
+  description: Legal instruments defined by the Omgevingswet
+  extraction_date: '2026-01-28'
+  count: 7
+instrument_types:
+  beleidsvisie: Strategic policy vision document
+  verordening: Regulatory ordinance with binding rules
+  vergunning: Permit for specific activities
+  besluit: Administrative decision
+  programma: Program of measures
+instruments:
+  omgevingsvisie:
+    id: ow-instr-omgevingsvisie
+    name: Omgevingsvisie
+    name_nl: Omgevingsvisie
+    type: beleidsvisie
+    defining_article: '3.1'
+    article_title: (vaststellen omgevingsvisie)
+    description: Strategische visie document over de fysieke leefomgeving
+    bevoegd_gezag:
+    - gemeente
+    - provincie
+    - rijk
+    related_articles:
+    - '3.1'
+    - '3.2'
+    - '3.3'
+    source_text: De gemeenteraad stelt een gemeentelijke omgevingsvisie vast.
+  omgevingsplan:
+    id: ow-instr-omgevingsplan
+    name: Omgevingsplan
+    name_nl: Omgevingsplan
+    type: verordening
+    defining_article: '2.4'
+    article_title: (omgevingsplan)
+    description: Gemeentelijke regels over de fysieke leefomgeving
+    bevoegd_gezag:
+    - gemeente
+    related_articles:
+    - '2.4'
+    - '4.1'
+    - '4.2'
+    source_text: De gemeenteraad stelt voor het gehele grondgebied van de gemeente één omgevingsplan vast waarin regels over
+      de fysieke leefomgeving worden opgenomen.
+  waterschapsverordening:
+    id: ow-instr-waterschapsverordening
+    name: Waterschapsverordening
+    name_nl: Waterschapsverordening
+    type: verordening
+    defining_article: '2.5'
+    article_title: (waterschapsverordening)
+    description: Waterschapsregels over de fysieke leefomgeving
+    bevoegd_gezag:
+    - waterschap
+    related_articles:
+    - '2.5'
+    source_text: Het algemeen bestuur van het waterschap stelt één waterschapsverordening vast waarin regels over de fysieke
+      leefomgeving worden opgenomen.
+  omgevingsverordening:
+    id: ow-instr-omgevingsverordening
+    name: Omgevingsverordening
+    name_nl: Omgevingsverordening
+    type: verordening
+    defining_article: '2.6'
+    article_title: (omgevingsverordening)
+    description: Provinciale regels over de fysieke leefomgeving
+    bevoegd_gezag:
+    - provincie
+    related_articles:
+    - '2.6'
+    source_text: Provinciale staten stellen één omgevingsverordening vast waarin regels over de fysieke leefomgeving worden
+      opgenomen.
+  omgevingsvergunning:
+    id: ow-instr-omgevingsvergunning
+    name: Omgevingsvergunning
+    name_nl: Omgevingsvergunning
+    type: vergunning
+    defining_article: '5.1'
+    article_title: (omgevingsvergunningplichtige activiteiten wet)
+    description: Vergunning voor activiteiten in de fysieke leefomgeving
+    bevoegd_gezag:
+    - gemeente
+    - provincie
+    - rijk
+    - waterschap
+    related_articles:
+    - '5.1'
+    - '5.2'
+    - '5.3'
+    - '5.4'
+    chapter: 5
+    source_text: 'Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:'
+  projectbesluit:
+    id: ow-instr-projectbesluit
+    name: Projectbesluit
+    name_nl: Projectbesluit
+    type: besluit
+    defining_article: '5.44'
+    article_title: (bevoegd gezag projectbesluit)
+    description: Besluit voor complexe projecten met publiek belang
+    bevoegd_gezag:
+    - provincie
+    - rijk
+    - waterschap
+    related_articles:
+    - '5.44'
+    - '5.45'
+    - '5.46'
+    chapter: 5
+    source_text: Voor het uitvoeren van een project en het in werking hebben of in stand houden daarvan kan een projectbesluit
+      worden vastgesteld. Een projectbesluit wordt vastgesteld door het dagelijks bestuur van het waterschap of gedeputeerde
+      staten of door Onze Minister die het aangaat, in overeenstemming met On
+  programma:
+    id: ow-instr-programma
+    name: Programma
+    name_nl: Programma
+    type: programma
+    defining_article: '3.4'
+    article_title: (vaststellen programma)
+    description: Maatregelenpakket voor bereiken van doelstellingen
+    bevoegd_gezag:
+    - gemeente
+    - provincie
+    - rijk
+    - waterschap
+    related_articles:
+    - '3.4'
+    - '3.5'
+    - '3.6'
+    - '3.7'
+    source_text: Het college van burgemeester en wethouders, het algemeen bestuur van het waterschap, gedeputeerde staten
+      en Onze Minister die het aangaat kunnen programma’s vaststellen.

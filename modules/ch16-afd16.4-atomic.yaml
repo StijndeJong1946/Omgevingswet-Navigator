@@ -1,0 +1,953 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 16, AFDELING 16.4 - ATOMIC EXTRACTION
+# Milieueffectrapportage (Environmental Impact Assessment)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "16.4"
+  titel: "Milieueffectrapportage"
+  artikelen_range: "16.34-16.53b"
+  totaal_artikelen: 20
+  structuur:
+    paragraaf_16.4.1:
+      titel: "Milieueffectrapportage voor plannen en programma's"
+      artikelen: "16.34-16.42b"
+      count: 11
+    paragraaf_16.4.2:
+      titel: "Milieueffectrapportage voor projecten"
+      artikelen: "16.43-16.53b"
+      count: 9
+  eu_richtlijnen:
+    - id: "smb-richtlijn"
+      naam: "Richtlijn 2001/42/EG"
+      scope: "plan-mer (strategische milieubeoordeling)"
+    - id: "mer-richtlijn"
+      naam: "Richtlijn 2011/92/EU"
+      scope: "project-mer (milieueffectbeoordeling)"
+  status: "goed"
+  inwerking: "2024-01-01"
+
+# =============================================================================
+# PARAGRAAF 16.4.1 - PLAN-MER (STRATEGISCHE MILIEUBEOORDELING)
+# =============================================================================
+
+artikelen:
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.34 - REIKWIJDTE EN BEVOEGD GEZAG PLAN-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.34"
+    titel: "(reikwijdte, bevoegd gezag plan-mer)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "scope_definition"
+
+    leden:
+      - lid: 1
+        inhoud: "Deze paragraaf gaat over de milieueffectrapportage voor plannen en programma's als bedoeld in artikel 2, onder a, van de smb-richtlijn, waarvan de vaststelling is geregeld in wettelijke of bestuursrechtelijke bepalingen en waarin het voor de vaststelling van die plannen en programma's bevoegde bestuursorgaan en de procedure voor de opstelling ervan is vastgelegd."
+        type: "scope_reference"
+        externe_ref:
+          - doc: "smb-richtlijn"
+            artikel: "artikel 2, onder a"
+            type: "eu_definitie"
+
+      - lid: 2
+        inhoud: "In deze paragraaf wordt onder een plan of programma in ieder geval verstaan een omgevingsvisie, een programma, een omgevingsplan en een voorkeursbeslissing."
+        type: "definitie_concretisering"
+        instrumenten_als_plan:
+          - "omgevingsvisie"
+          - "programma"
+          - "omgevingsplan"
+          - "voorkeursbeslissing"
+
+    juridische_analyse:
+      patroon: "MINIMUMLIJST"
+      kernwoorden: ["in ieder geval"]
+      niet_uitputtend: true
+      note: "Andere instrumenten kunnen ook kwalificeren via lid 1"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.35 - UITZONDERINGEN PLAN-MER-PLICHT
+  # ---------------------------------------------------------------------------
+  - artikel: "16.35"
+    titel: "(uitzondering plan-mer-plicht)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "uitzondering"
+
+    inhoud: "Deze paragraaf is niet van toepassing op plannen of programma's die:"
+
+    onderdelen:
+      - onderdeel: "a"
+        inhoud: "alleen bestemd zijn voor nationale defensie of noodzakelijk zijn vanwege een noodtoestand als bedoeld in de Coördinatiewet uitzonderingstoestanden"
+        type: "uitzondering"
+        externe_ref:
+          - doc: "BWBR0007981"
+            naam: "Coördinatiewet uitzonderingstoestanden"
+
+      - onderdeel: "b"
+        inhoud: "betrekking hebben op de begroting of de financiën van een gemeente, een waterschap, een provincie of het Rijk"
+        type: "uitzondering"
+
+    juridische_analyse:
+      patroon: "DEFENSIE_NOOD_UITZONDERING"
+      parallel_met: "artikel 16.44"
+      note: "Standaard EU-uitzondering voor defensie en noodtoestanden"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.36 - PLAN-MER-PLICHTIGE PLANNEN (HUB)
+  # ---------------------------------------------------------------------------
+  - artikel: "16.36"
+    titel: "(plan-mer-plichtige plannen of programma's)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht_bepaling"
+    hub_functie: true
+
+    leden:
+      - lid: 1
+        inhoud: "Het bevoegd gezag voor een plan of programma maakt bij de voorbereiding daarvan een milieueffectrapport als dat plan of programma het kader vormt voor te nemen besluiten voor projecten als bedoeld in artikel 16.43, eerste lid."
+        type: "imperatief"
+        trigger: "kader voor project-mer-plichtige besluiten"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 1
+            relatie: "trigger"
+
+      - lid: 2
+        inhoud: "Het bevoegd gezag voor een plan of programma maakt bij de voorbereiding daarvan een milieueffectrapport als bij de voorbereiding van dat plan of programma op grond van artikel 16.53c een passende beoordeling moet worden gemaakt."
+        type: "imperatief"
+        trigger: "passende beoordeling vereist"
+        interne_ref:
+          - artikel: "16.53c"
+            relatie: "natura2000_koppeling"
+
+      - lid: 3
+        inhoud: "Voor een plan of programma als bedoeld in het eerste of tweede lid dat het gebruik bepaalt van kleine gebieden op lokaal niveau of voor kleine wijzigingen van een plan of programma als bedoeld in het eerste of tweede lid maakt het bevoegd gezag een milieueffectrapport als dat plan of programma of de wijzigingen daarvan aanzienlijke milieueffecten kunnen hebben."
+        type: "voorwaardelijk"
+        trigger: "kleine gebieden/wijzigingen MET aanzienlijke effecten"
+        criterium: "aanzienlijke milieueffecten"
+
+      - lid: 4
+        inhoud: "Voor een plan of programma dat het kader vormt voor te nemen besluiten voor andere projecten dan bedoeld in het eerste lid maakt het bevoegd gezag een milieueffectrapport als dat plan of programma aanzienlijke milieueffecten kan hebben."
+        type: "voorwaardelijk"
+        trigger: "kader voor andere projecten MET aanzienlijke effecten"
+        criterium: "aanzienlijke milieueffecten"
+
+      - lid: 5
+        inhoud: "Het bevoegd gezag beoordeelt of sprake is van aanzienlijke milieueffecten als bedoeld in het derde en vierde lid, tenzij het zonder een voorafgaande beoordeling een milieueffectrapport maakt. Het bevoegd gezag houdt bij het besluit over de beoordeling van de milieueffecten rekening met de criteria van bijlage II bij de smb-richtlijn."
+        type: "procedureel"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de bestuursorganen en instanties die op grond van een wettelijk voorschrift adviseren over de besluiten, bedoeld in artikel 16.43, eerste lid, waarvoor het plan of programma het kader vormt"
+            type: "raadpleging"
+          - onderdeel: "b"
+            inhoud: "Onze Minister van Infrastructuur en Waterstaat, Onze Minister voor Natuur en Stikstof, Onze Minister van Onderwijs, Cultuur en Wetenschap of in plaats van de betrokken minister een door hem aangewezen bestuursorgaan"
+            type: "raadpleging"
+        externe_ref:
+          - doc: "smb-richtlijn"
+            onderdeel: "bijlage II"
+            type: "beoordelingscriteria"
+
+      - lid: 6
+        inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over de toepassing van het derde lid."
+        type: "amvb_delegatie"
+        delegatie_type: "imperatief"
+
+    juridische_analyse:
+      patroon: "GETRAPTE_PLICHT"
+      structuur:
+        - "lid 1: automatisch als kader voor project-mer"
+        - "lid 2: automatisch als passende beoordeling"
+        - "lid 3-4: conditioneel bij aanzienlijke effecten"
+        - "lid 5: beoordelingsplicht"
+      hub_voor:
+        - artikel: "16.43"
+          relatie: "project-mer trigger"
+        - artikel: "16.53c"
+          relatie: "natura2000 koppeling"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.37 - GEBRUIK ANDERE PLAN-MERS
+  # ---------------------------------------------------------------------------
+  - artikel: "16.37"
+    titel: "(gebruik andere plan-MER'en)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "efficiency_bepaling"
+
+    inhoud: "Om overlapping van milieueffectrapporten te voorkomen:"
+
+    onderdelen:
+      - onderdeel: "a"
+        inhoud: "stemt het bevoegd gezag het milieueffectrapport, waaronder het detailniveau daarvan, af op:"
+        sub_onderdelen:
+          - nr: "1°"
+            inhoud: "de mate van gedetailleerdheid van het plan of programma"
+          - nr: "2°"
+            inhoud: "de fase van het besluitvormingsproces waarin het plan of programma zich bevindt"
+          - nr: "3°"
+            inhoud: "als het plan of programma deel uitmaakt van een rangorde van plannen of programma's, in het bijzonder op de plaats die het plan of programma inneemt in die rangorde"
+        type: "afstemming_imperatief"
+
+      - onderdeel: "b"
+        inhoud: "kan het bevoegd gezag gebruikmaken van:"
+        sub_onderdelen:
+          - nr: "1°"
+            inhoud: "andere milieueffectrapporten als die voldoen aan de bij of krachtens deze paragraaf gestelde eisen"
+          - nr: "2°"
+            inhoud: "relevante informatie over de milieueffecten van het plan of programma die op grond van verordeningen, richtlijnen en besluiten als bedoeld in artikel 288 van het Verdrag betreffende de werking van de Europese Unie is verkregen"
+        type: "facultatief"
+
+    juridische_analyse:
+      patroon: "TIERING_PRINCIPLE"
+      kernbegrip: "voorkomen overlapping"
+      note: "Implementeert EU-principe van tiering (gelaagde beoordeling)"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.38 - RAADPLEGING REIKWIJDTE EN DETAILNIVEAU
+  # ---------------------------------------------------------------------------
+  - artikel: "16.38"
+    titel: "(raadpleging reikwijdte en detailniveau)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Over de reikwijdte en het detailniveau van de informatie in het milieueffectrapport raadpleegt het bevoegd gezag de bestuursorganen en instanties, bedoeld in artikel 16.36, vijfde lid, onder a en b."
+        type: "imperatief"
+        fase: "scoping"
+        interne_ref:
+          - artikel: "16.36"
+            lid: 5
+            onderdelen: ["a", "b"]
+
+      - lid: 2
+        inhoud: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de procedure voor de raadpleging."
+        type: "amvb_delegatie"
+        delegatie_type: "facultatief"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.39 - ADVIES COMMISSIE MER (PLAN-MER)
+  # ---------------------------------------------------------------------------
+  - artikel: "16.39"
+    titel: "(advies Commissie voor de milieueffectrapportage)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "advisering"
+
+    leden:
+      - lid: 1
+        inhoud: "Het bevoegd gezag stelt de Commissie voor de milieueffectrapportage in de gelegenheid om over het milieueffectrapport te adviseren."
+        type: "imperatief"
+        adviseur: "Commissie m.e.r."
+        note: "VERPLICHT voor plan-mer (cf. art. 16.47 facultatief voor project-mer)"
+
+      - lid: 2
+        inhoud: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de procedure voor de advisering."
+        type: "amvb_delegatie"
+        delegatie_type: "facultatief"
+
+    juridische_analyse:
+      contrast_met:
+        artikel: "16.47"
+        verschil: "plan-mer = verplicht advies | project-mer = facultatief advies"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.40 - VOORBEREIDINGSPROCEDURE PLAN/PROGRAMMA
+  # ---------------------------------------------------------------------------
+  - artikel: "16.40"
+    titel: "(voorbereidingsprocedure plan of programma)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een plan of programma als bedoeld in artikel 16.36 waarvoor een milieueffectrapport moet worden gemaakt."
+        type: "procedure_aanwijzing"
+        procedure: "UOV"
+        externe_ref:
+          - doc: "BWBR0005537"
+            afdeling: "3.4"
+            naam: "Awb - Uniforme openbare voorbereidingsprocedure"
+        interne_ref:
+          - artikel: "16.36"
+
+      - lid: 2
+        inhoud: "Een milieueffectrapport dat is opgenomen in een plan of programma wordt in dat plan of programma als zodanig herkenbaar weergegeven."
+        type: "vormvereiste"
+
+      - lid: 3
+        inhoud: "Als het milieueffectrapport niet is opgenomen in het ontwerp van een plan of programma:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "wordt bij de terinzagelegging, bedoeld in artikel 3:11 van de Algemene wet bestuursrecht, ook het milieueffectrapport ter inzage gelegd"
+          - onderdeel: "b"
+            inhoud: "wordt bij de kennisgeving, bedoeld in artikel 3:12 van de Algemene wet bestuursrecht, ook kennisgegeven van het milieueffectrapport"
+          - onderdeel: "c"
+            inhoud: "kan een zienswijze als bedoeld in artikel 3:15 van de Algemene wet bestuursrecht ook betrekking hebben op het milieueffectrapport"
+        type: "procedureel"
+        externe_ref:
+          - doc: "BWBR0005537"
+            artikelen: ["3:11", "3:12", "3:15"]
+
+      - lid: 4
+        inhoud: "Het bevoegd gezag stelt het plan of programma niet eerder vast dan twee weken na afloop van de termijn, bedoeld in artikel 3:16, eerste lid, van de Algemene wet bestuursrecht."
+        type: "termijn"
+        wachttermijn: "2 weken na zienswijzentermijn"
+        externe_ref:
+          - doc: "BWBR0005537"
+            artikel: "3:16"
+            lid: 1
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.41 - MER ALS GRONDSLAG VOOR PLAN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.41"
+    titel: "(plan of programma grondslag in het plan-MER)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "materieel_vereiste"
+
+    inhoud: "Het bevoegd gezag stelt een plan of programma niet vast als het milieueffectrapport redelijkerwijs niet aan het plan of programma ten grondslag kan worden gelegd."
+    type: "verbod"
+    criterium: "redelijkerwijs"
+
+    juridische_analyse:
+      patroon: "GRONDSLAG_VEREISTE"
+      parallel_met: "artikel 16.51"
+      note: "Sluit uit dat MER achteraf wordt 'geconstrueerd'"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.42 - INHOUD PLAN-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.42"
+    titel: "(inhoud plan-MER)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over de inhoud van het milieueffectrapport."
+    delegatie_type: "imperatief"
+    delegatie_naar: "Omgevingsbesluit"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.42a - MONITORING PLAN-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.42a"
+    titel: "(monitoring plan-mer)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over:"
+    onderdelen:
+      - onderdeel: "a"
+        inhoud: "de monitoring van de mogelijk aanzienlijke milieueffecten van de uitvoering van het plan of programma"
+      - onderdeel: "b"
+        inhoud: "het treffen van passende herstellende maatregelen"
+    delegatie_type: "imperatief"
+
+    juridische_analyse:
+      patroon: "MONITORING_PLUS_HERSTEL"
+      parallel_met: "artikel 16.53a"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.42b - GRENSOVERSCHRIJDENDE EFFECTEN PLAN-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.42b"
+    titel: "(grensoverschrijdende milieueffecten plan-mer)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over een plan of programma waarvoor een milieueffectrapport moet worden gemaakt en dat mogelijk aanzienlijke grensoverschrijdende milieueffecten heeft, met inbegrip van de situatie dat Nederland deze grensoverschrijdende milieueffecten ondervindt."
+    delegatie_type: "imperatief"
+    scope: "bilateraal (NL veroorzaker EN NL ontvanger)"
+
+    juridische_analyse:
+      patroon: "ESPOO_IMPLEMENTATIE"
+      parallel_met: "artikel 16.53b"
+
+# =============================================================================
+# PARAGRAAF 16.4.2 - PROJECT-MER (MILIEUEFFECTBEOORDELING)
+# =============================================================================
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.43 - AANWIJZEN MER-PLICHTIGE PROJECTEN (CENTRALE HUB)
+  # ---------------------------------------------------------------------------
+  - artikel: "16.43"
+    titel: "(aanwijzen mer-(beoordelings)plichtige projecten en besluiten)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht_bepaling"
+    hub_functie: true
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Bij algemene maatregel van bestuur worden de projecten en de daarvoor benodigde besluiten aangewezen:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "die aanzienlijke milieueffecten kunnen hebben en waarvoor bij de voorbereiding van het besluit een milieueffectrapport moet worden gemaakt"
+            type: "mer-plicht_direct"
+          - onderdeel: "b"
+            inhoud: "waarvoor moet worden beoordeeld of die aanzienlijke milieueffecten kunnen hebben, en, als dat het geval is, waarvoor bij de voorbereiding van het besluit een milieueffectrapport moet worden gemaakt"
+            type: "mer-beoordelingsplicht"
+        delegatie_type: "imperatief"
+        delegatie_naar: "Omgevingsbesluit (Bijlage V)"
+
+      - lid: 2
+        inhoud: "Het bevoegd gezag beoordeelt of sprake is van aanzienlijke milieueffecten als bedoeld in het eerste lid, onder b, tenzij degene die voornemens is het project uit te voeren bij de voorbereiding van het besluit een milieueffectrapport maakt."
+        type: "beoordelingsplicht"
+        uitzondering: "vrijwillige MER door initiatiefnemer"
+
+      - lid: 3
+        inhoud: "Bij de beoordeling houdt het bevoegd gezag rekening met:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de relevante criteria van bijlage III bij de mer-richtlijn"
+          - onderdeel: "b"
+            inhoud: "voor zover relevant: de resultaten van eerder uitgevoerde controles of andere beoordelingen van milieueffecten die op grond van verordeningen, richtlijnen en besluiten als bedoeld in artikel 288 van het Verdrag betreffende de werking van de Europese Unie zijn verkregen"
+        type: "beoordelingskader"
+        externe_ref:
+          - doc: "mer-richtlijn"
+            onderdeel: "bijlage III"
+
+      - lid: 4
+        inhoud: "Bij de maatregel kan worden bepaald dat:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de aanwijzing van een project of besluit alleen geldt in daarbij aangewezen gevallen"
+          - onderdeel: "b"
+            inhoud: "een omgevingsvisie, programma of onderdeel van een omgevingsplan als een te nemen besluit voor een project wordt aangemerkt"
+        type: "flexibiliteit_bepaling"
+
+      - lid: 5
+        inhoud: "Degene die voornemens is het project uit te voeren maakt het milieueffectrapport."
+        type: "initiatiefnemer_verantwoordelijkheid"
+
+    juridische_analyse:
+      patroon: "GETRAPTE_PLICHT_MET_DREMPEL"
+      structuur:
+        - "lid 1a: directe MER-plicht (boven drempel)"
+        - "lid 1b: MER-beoordelingsplicht (onder drempel)"
+        - "lid 2: beoordeling OF vrijwillige MER"
+      hub_voor:
+        - artikel: "16.36"
+          relatie: "plan-mer trigger"
+        - artikel: "16.49"
+          relatie: "aanvraagvereisten"
+        - artikel: "16.50"
+          relatie: "procedure"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.44 - ONTHEFFING MER OF BEOORDELING
+  # ---------------------------------------------------------------------------
+  - artikel: "16.44"
+    titel: "(ontheffing MER of mer-beoordeling)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "uitzondering"
+
+    leden:
+      - lid: 1
+        inhoud: "Het bevoegd gezag kan op verzoek of ambtshalve ontheffing verlenen van de verplichtingen op grond van deze paragraaf voor een project of deel daarvan dat alleen is bestemd voor defensie of voor een project dat alleen noodzakelijk is vanwege een noodtoestand als bedoeld in de Coördinatiewet uitzonderingstoestanden als toepassing van de verplichtingen nadelige gevolgen heeft voor defensie of het bestrijden van de noodtoestand."
+        type: "ontheffing"
+        gronden: ["defensie", "noodtoestand"]
+        externe_ref:
+          - doc: "BWBR0007981"
+            naam: "Coördinatiewet uitzonderingstoestanden"
+
+      - lid: 2
+        inhoud: "Onze Minister van Infrastructuur en Waterstaat kan op verzoek van degene die voornemens is het project uit te voeren ontheffing verlenen van de verplichtingen op grond van deze paragraaf als de toepassing daarvan nadelige gevolgen heeft voor het doel van het project en aan de doelstellingen van de mer-richtlijn wordt voldaan, tenzij het project aanzienlijke grensoverschrijdende effecten kan hebben."
+        type: "ontheffing"
+        bevoegd_gezag: "Minister van I&W"
+        voorwaarden:
+          - "nadelige gevolgen voor projectdoel"
+          - "doelstellingen mer-richtlijn worden bereikt"
+        uitsluiting: "grensoverschrijdende effecten"
+
+      - lid: 3
+        inhoud: "Als toepassing wordt gegeven aan het tweede lid, beoordeelt Onze Minister van Infrastructuur en Waterstaat of een andere vorm van beoordeling van de milieueffecten geschikt is. Als een andere beoordeling van de milieueffecten moet worden uitgevoerd, is artikel 16.49, eerste en derde lid, van overeenkomstige toepassing."
+        type: "alternatieve_beoordeling"
+        interne_ref:
+          - artikel: "16.49"
+            leden: [1, 3]
+
+      - lid: 4
+        inhoud: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over het verstrekken van gegevens en bescheiden bij een verzoek om ontheffing."
+        type: "amvb_delegatie"
+        delegatie_type: "facultatief"
+
+    juridische_analyse:
+      patroon: "DEFENSIE_NOOD_UITZONDERING"
+      parallel_met: "artikel 16.35"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.45 - MEDEDELING VOORNEMEN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.45"
+    titel: "(mededeling voornemen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Degene die voornemens is een project als bedoeld in artikel 16.43, eerste lid, aanhef en onder b, uit te voeren, deelt dat voornemen zo spoedig mogelijk mee aan het bevoegd gezag."
+        type: "imperatief"
+        scope: "mer-beoordelingsplichtige projecten"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 1
+            onderdeel: "b"
+
+      - lid: 2
+        inhoud: "Het eerste lid is niet van toepassing als degene die voornemens is het project uit te voeren bij de voorbereiding van het besluit een milieueffectrapport maakt."
+        type: "uitzondering"
+        reden: "vrijwillige MER maakt beoordeling overbodig"
+
+      - lid: 3
+        inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over de inhoud van de mededeling."
+        type: "amvb_delegatie"
+        delegatie_type: "imperatief"
+
+    juridische_analyse:
+      patroon: "VROEGE_NOTIFICATIE"
+      note: "Initiatiefnemer moet vroegtijdig bevoegd gezag informeren"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.46 - RAADPLEGING REIKWIJDTE EN DETAILNIVEAU (PROJECT)
+  # ---------------------------------------------------------------------------
+  - artikel: "16.46"
+    titel: "(raadpleging reikwijdte en detailniveau)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Op verzoek van degene die voornemens is het project uit te voeren brengt het bevoegd gezag advies uit over de reikwijdte en het detailniveau van de informatie voor het milieueffectrapport."
+        type: "facultatief"
+        fase: "scoping"
+        trigger: "op verzoek initiatiefnemer"
+
+      - lid: 2
+        inhoud: "Het bevoegd gezag raadpleegt voor het advies de bestuursorganen en instanties, bedoeld in artikel 16.36, vijfde lid, onder a en b."
+        type: "imperatief_voorwaardelijk"
+        interne_ref:
+          - artikel: "16.36"
+            lid: 5
+            onderdelen: ["a", "b"]
+
+      - lid: 3
+        inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over de procedure voor de advisering en de raadpleging."
+        type: "amvb_delegatie"
+        delegatie_type: "imperatief"
+
+    juridische_analyse:
+      contrast_met:
+        artikel: "16.38"
+        verschil: "plan-mer = verplichte raadpleging | project-mer = op verzoek"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.47 - ADVIES COMMISSIE MER (PROJECT-MER)
+  # ---------------------------------------------------------------------------
+  - artikel: "16.47"
+    titel: "(advies Commissie voor de milieueffectrapportage)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "advisering"
+
+    leden:
+      - lid: 1
+        inhoud: "Het bevoegd gezag kan de Commissie voor de milieueffectrapportage in de gelegenheid stellen advies uit te brengen over het milieueffectrapport."
+        type: "facultatief"
+        adviseur: "Commissie m.e.r."
+        note: "FACULTATIEF voor project-mer (cf. art. 16.39 verplicht voor plan-mer)"
+
+      - lid: 2
+        inhoud: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de procedure voor de advisering."
+        type: "amvb_delegatie"
+        delegatie_type: "facultatief"
+
+    juridische_analyse:
+      contrast_met:
+        artikel: "16.39"
+        verschil: "plan-mer = verplicht advies Commissie | project-mer = facultatief advies Commissie"
+      note: "Verschil reflecteert strategisch vs operationeel niveau"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.48 - EEN MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.48"
+    titel: "(één MER)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "efficiency_bepaling"
+
+    inhoud: "Degene die het milieueffectrapport zou moeten maken, kan gebruik maken van een ander milieueffectrapport als dat voldoet aan de bij of krachtens deze afdeling gestelde eisen en het project in dat milieueffectrapport is beschreven."
+    type: "facultatief"
+
+    juridische_analyse:
+      patroon: "HERGEBRUIK_MER"
+      parallel_met: "artikel 16.37"
+      voorwaarden:
+        - "voldoet aan eisen"
+        - "project is beschreven"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.49 - AANVRAAG: AANHOUDEN/BUITEN BEHANDELING/AFWIJZEN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.49"
+    titel: "(aanhouden, buiten behandeling laten of afwijzen aanvraag)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij de aanvraag om een besluit als bedoeld in artikel 16.43, eerste lid, waarvoor een milieueffectrapport moet worden gemaakt, wordt een milieueffectrapport gevoegd."
+        type: "aanvraagvereiste"
+        scope: "mer-plichtige besluiten"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 1
+
+      - lid: 2
+        inhoud: "Bij de aanvraag om een besluit waarop artikel 16.43, tweede lid, van toepassing is, wordt de mededeling van het voornemen, bedoeld in artikel 16.45, gevoegd."
+        type: "aanvraagvereiste"
+        scope: "mer-beoordelingsplichtige besluiten"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 2
+          - artikel: "16.45"
+
+      - lid: 3
+        inhoud: "Als niet wordt voldaan aan het eerste of tweede lid, wordt de aanvraag buiten behandeling gelaten nadat de aanvrager eerst in de gelegenheid is gesteld binnen een door het bevoegd gezag gestelde termijn de aanvraag aan te vullen. Een besluit om de aanvraag niet te behandelen wordt aan de aanvrager bekendgemaakt binnen vier weken nadat de aanvraag is aangevuld of nadat de daarvoor gestelde termijn ongebruikt is verstreken."
+        type: "sanctie"
+        sanctie: "buiten behandeling"
+        herstelmogelijkheid: true
+        termijn_bekendmaking: "4 weken"
+
+      - lid: 4
+        inhoud: "Als het bevoegd gezag overeenkomstig artikel 16.43, tweede lid, na de aanvraag beslist of er een milieueffectrapport moet worden gemaakt, houdt het de beslissing op de aanvraag aan zolang die beslissing niet is genomen, tenzij het gaat om een aanvraag om een omgevingsvergunning voor een op grond van artikel 5.26, vierde lid, aangewezen geval. Als het bevoegd gezag beslist dat een milieueffectrapport gemaakt moet worden, wordt de aanvraag afgewezen."
+        type: "aanhoudingsplicht"
+        uitzondering: "artikel 5.26 lid 4 gevallen"
+        sanctie_bij_mer_besluit: "afwijzing"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 2
+          - artikel: "5.26"
+            lid: 4
+
+      - lid: 5
+        inhoud: "Als het milieueffectrapport niet voldoet aan de op grond van artikel 16.52 gestelde regels, wijst het bevoegd gezag de aanvraag af nadat de aanvrager in de gelegenheid is gesteld binnen een door het bevoegd gezag gestelde termijn het milieueffectrapport aan te vullen."
+        type: "sanctie"
+        sanctie: "afwijzing"
+        herstelmogelijkheid: true
+        interne_ref:
+          - artikel: "16.52"
+
+    juridische_analyse:
+      patroon: "ONTVANKELIJKHEID_KOPPELING"
+      note: "MER-plicht is ontvankelijkheidsvereiste voor aanvraag"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.50 - VOORBEREIDINGSPROCEDURE MER-PLICHTIG BESLUIT
+  # ---------------------------------------------------------------------------
+  - artikel: "16.50"
+    titel: "(voorbereidingsprocedure mer-plichtig besluit)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    leden:
+      - lid: 1
+        inhoud: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een besluit als bedoeld in artikel 16.43, eerste lid, waarvoor een milieueffectrapport moet worden gemaakt."
+        type: "procedure_aanwijzing"
+        procedure: "UOV"
+        externe_ref:
+          - doc: "BWBR0005537"
+            afdeling: "3.4"
+            naam: "Awb - Uniforme openbare voorbereidingsprocedure"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 1
+
+      - lid: 2
+        inhoud: "Artikel 16.40, tweede, derde en vierde lid, is van overeenkomstige toepassing."
+        type: "schakelbepaling"
+        interne_ref:
+          - artikel: "16.40"
+            leden: [2, 3, 4]
+
+    juridische_analyse:
+      patroon: "UOV_VERPLICHT"
+      note: "MER-plichtige besluiten ALTIJD via UOV"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.51 - MER ALS GRONDSLAG VOOR BESLUIT
+  # ---------------------------------------------------------------------------
+  - artikel: "16.51"
+    titel: "(project grondslag in het MER)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "materieel_vereiste"
+
+    leden:
+      - lid: 1
+        inhoud: "Het bevoegd gezag stelt een besluit niet vast als het milieueffectrapport redelijkerwijs niet aan het project ten grondslag kan worden gelegd."
+        type: "verbod"
+        criterium: "redelijkerwijs"
+
+      - lid: 2
+        inhoud: "Artikel 16.5 is niet van toepassing op het eerste lid."
+        type: "uitsluiting"
+        interne_ref:
+          - artikel: "16.5"
+        note: "Geen lex silencio bij MER-gebonden besluiten"
+
+    juridische_analyse:
+      patroon: "GRONDSLAG_VEREISTE"
+      parallel_met: "artikel 16.41"
+      extra: "Expliciete uitsluiting lex silencio"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.52 - INHOUD PROJECT-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.52"
+    titel: "(inhoud project-MER)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over de inhoud van het milieueffectrapport."
+        type: "amvb_delegatie"
+        delegatie_type: "imperatief"
+        delegatie_naar: "Omgevingsbesluit"
+
+      - lid: 2
+        inhoud: "Bij de maatregel worden ten aanzien van de in het milieueffectrapport op te nemen onderwerpen in ieder geval regels gesteld over:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de beschrijving van het project"
+          - onderdeel: "b"
+            inhoud: "de beschrijving van de redelijke alternatieven voor het project"
+        type: "minimumvereisten"
+
+      - lid: 3
+        inhoud: "Als voor het project in een plan of programma als bedoeld in artikel 16.36, eerste of tweede lid, een locatie, waaronder een tracé, is aangewezen, en voor dat plan of programma een milieueffectrapport is gemaakt, zijn de op grond van het tweede lid, aanhef en onder b, gestelde regels niet van toepassing voor zover het gaat om alternatieven voor die locatie of dat tracé."
+        type: "uitzondering"
+        reden: "tiering - alternatieven al beoordeeld in plan-mer"
+        interne_ref:
+          - artikel: "16.36"
+            leden: [1, 2]
+
+    juridische_analyse:
+      patroon: "TIERING_VOORDEEL"
+      note: "Als locatie al in plan-mer is vastgelegd, hoeven locatie-alternatieven niet opnieuw"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.53 - MILIEUGEVOLGEN VAN HET BESLUIT
+  # ---------------------------------------------------------------------------
+  - artikel: "16.53"
+    titel: "(milieugevolgen van het besluit)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "materieel_vereiste"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij het nemen van een besluit als bedoeld in artikel 16.43, eerste lid, houdt het bevoegd gezag rekening met alle gevolgen die het project, waarop het besluit betrekking heeft, voor het milieu kan hebben."
+        type: "imperatief"
+        scope: "alle milieugevolgen"
+        interne_ref:
+          - artikel: "16.43"
+            lid: 1
+
+      - lid: 2
+        inhoud: "Het bevoegd gezag kan:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "aan een besluit, ongeacht de beperkingen die in de wettelijke regeling waarop het besluit berust, zijn gesteld, de voorschriften verbinden, die nodig zijn voor het beschermen van het milieu, waaronder voorschriften over monitoring"
+            type: "bevoegdheid_verruiming"
+            note: "Doorbreekt beperkte voorschriftenbevoegdheid andere regelingen"
+          - onderdeel: "b"
+            inhoud: "beslissen dat het project niet wordt uitgevoerd als het uitvoeren van dat project kan leiden tot ontoelaatbare gevolgen voor het milieu"
+            type: "weigeringsbevoegdheid"
+        type: "facultatief"
+
+      - lid: 3
+        inhoud: "Een besluit dat op grond van een andere wettelijke regeling wordt genomen, wordt als toepassing aan het tweede lid wordt gegeven, geacht op grond van die regeling te worden genomen."
+        type: "fictie"
+        note: "Voorschriften gelden als behorend bij oorspronkelijke regeling"
+
+    juridische_analyse:
+      patroon: "MER_PLUS_BEVOEGDHEID"
+      note: "MER geeft ruimere bevoegdheid dan onderliggende regeling"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.53a - MONITORING PROJECT-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.53a"
+    titel: "(monitoring project-mer)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over:"
+    onderdelen:
+      - onderdeel: "a"
+        inhoud: "de monitoring van de mogelijk aanzienlijke milieueffecten van de uitvoering van het project"
+      - onderdeel: "b"
+        inhoud: "het treffen van passende herstellende maatregelen"
+    delegatie_type: "imperatief"
+
+    juridische_analyse:
+      patroon: "MONITORING_PLUS_HERSTEL"
+      parallel_met: "artikel 16.42a"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.53b - GRENSOVERSCHRIJDENDE EFFECTEN PROJECT-MER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.53b"
+    titel: "(grensoverschrijdende milieueffecten project-mer)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "amvb_delegatie"
+
+    inhoud: "Bij algemene maatregel van bestuur worden regels gesteld over een project waarvoor een milieueffectrapport moet worden gemaakt en dat mogelijk aanzienlijke grensoverschrijdende milieueffecten heeft, met inbegrip van de situatie dat Nederland deze grensoverschrijdende milieueffecten ondervindt."
+    delegatie_type: "imperatief"
+    scope: "bilateraal (NL veroorzaker EN NL ontvanger)"
+
+    juridische_analyse:
+      patroon: "ESPOO_IMPLEMENTATIE"
+      parallel_met: "artikel 16.42b"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 16.4
+# =============================================================================
+
+analyse:
+  patronen:
+    dual_track:
+      beschrijving: "Parallelle structuur plan-mer en project-mer"
+      plan_mer:
+        paragraaf: "16.4.1"
+        scope: "omgevingsvisie, programma, omgevingsplan, voorkeursbeslissing"
+        trigger: "kaderstellend voor project-mer-plichtige besluiten OF passende beoordeling"
+        commissie_advies: "verplicht"
+        scoping: "verplicht"
+        richtlijn: "smb-richtlijn (2001/42/EG)"
+      project_mer:
+        paragraaf: "16.4.2"
+        scope: "aangewezen projecten (Omgevingsbesluit Bijlage V)"
+        trigger: "drempelwaarde OF beoordeling"
+        commissie_advies: "facultatief"
+        scoping: "op verzoek"
+        richtlijn: "mer-richtlijn (2011/92/EU)"
+
+    getrapte_plicht:
+      beschrijving: "Plicht afhankelijk van drempel of beoordeling"
+      plan_mer:
+        - "automatisch: kader voor project-mer (16.36.1)"
+        - "automatisch: passende beoordeling (16.36.2)"
+        - "conditioneel: kleine gebieden met aanzienlijke effecten (16.36.3)"
+        - "conditioneel: andere projecten met aanzienlijke effecten (16.36.4)"
+      project_mer:
+        - "automatisch: aangewezen categorie a (16.43.1a)"
+        - "conditioneel: aangewezen categorie b na beoordeling (16.43.1b)"
+
+    tiering:
+      beschrijving: "Gelaagde beoordeling plan > project"
+      mechanismen:
+        - artikel: "16.37"
+          inhoud: "afstemming detailniveau op planfase"
+        - artikel: "16.52.3"
+          inhoud: "geen locatie-alternatieven als al in plan-mer"
+
+    monitoring_herstel:
+      beschrijving: "Verplichte monitoring en corrigerende maatregelen"
+      artikelen: ["16.42a", "16.53a"]
+
+    grensoverschrijdend:
+      beschrijving: "Espoo-verdrag implementatie - bilaterale consultatie"
+      artikelen: ["16.42b", "16.53b"]
+
+    defensie_nood_uitzondering:
+      beschrijving: "Standaard EU-uitzondering voor defensie en noodtoestand"
+      artikelen: ["16.35", "16.44"]
+
+    uov_verplicht:
+      beschrijving: "MER-plichtige besluiten altijd via UOV"
+      artikelen: ["16.40", "16.50"]
+
+    grondslag_vereiste:
+      beschrijving: "MER moet redelijkerwijs aan besluit ten grondslag kunnen liggen"
+      artikelen: ["16.41", "16.51"]
+
+    commissie_asymmetrie:
+      beschrijving: "Verschil in verplichtingsgraad Commissie m.e.r."
+      plan_mer: "verplicht advies (16.39)"
+      project_mer: "facultatief advies (16.47)"
+
+  hub_artikelen:
+    - artikel: "16.36"
+      functie: "Bepaalt plan-mer-plicht"
+      verwezen_door: ["16.37", "16.38", "16.40", "16.46", "16.52"]
+    - artikel: "16.43"
+      functie: "Centrale bepaling project-mer-plicht"
+      verwezen_door: ["16.36.1", "16.45", "16.49", "16.50", "16.53"]
+
+  externe_koppelingen:
+    - doc: "BWBR0005537"
+      afdeling: "3.4"
+      naam: "Awb UOV"
+      artikelen: ["16.40", "16.50"]
+    - doc: "smb-richtlijn"
+      naam: "Richtlijn 2001/42/EG"
+      artikelen: ["16.34", "16.36"]
+    - doc: "mer-richtlijn"
+      naam: "Richtlijn 2011/92/EU"
+      artikelen: ["16.43", "16.44"]
+    - doc: "BWBR0007981"
+      naam: "Coördinatiewet uitzonderingstoestanden"
+      artikelen: ["16.35", "16.44"]
+
+  amvb_delegaties:
+    imperatief:
+      - artikel: "16.36.6"
+        onderwerp: "toepassing kleine gebieden"
+      - artikel: "16.42"
+        onderwerp: "inhoud plan-MER"
+      - artikel: "16.42a"
+        onderwerp: "monitoring plan-mer"
+      - artikel: "16.42b"
+        onderwerp: "grensoverschrijdend plan-mer"
+      - artikel: "16.43"
+        onderwerp: "aanwijzing mer-plichtige projecten"
+      - artikel: "16.45.3"
+        onderwerp: "inhoud mededeling voornemen"
+      - artikel: "16.46.3"
+        onderwerp: "procedure scoping"
+      - artikel: "16.52"
+        onderwerp: "inhoud project-MER"
+      - artikel: "16.53a"
+        onderwerp: "monitoring project-mer"
+      - artikel: "16.53b"
+        onderwerp: "grensoverschrijdend project-mer"
+    facultatief:
+      - artikel: "16.38.2"
+        onderwerp: "procedure raadpleging"
+      - artikel: "16.39.2"
+        onderwerp: "procedure advisering plan-mer"
+      - artikel: "16.44.4"
+        onderwerp: "gegevens ontheffingsverzoek"
+      - artikel: "16.47.2"
+        onderwerp: "procedure advisering project-mer"

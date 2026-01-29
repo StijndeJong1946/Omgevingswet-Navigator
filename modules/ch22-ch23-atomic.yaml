@@ -1,0 +1,740 @@
+# Chapter 22-23: Overgangsrecht en Slotbepalingen
+# Source: BWBR0037885 (Omgevingswet)
+# Extraction date: 2026-01-29
+# TRUE to the SOURCE
+
+# Combined extraction: final chapters of the Omgevingswet
+
+chapter_22:
+  number: 22
+  title: "Overgangsrecht"
+  type: transitional
+  function: bridge_old_to_new
+
+  structure:
+    afdelingen:
+      - number: "22.1"
+        title: "Overgangsfase"
+        articles: "22.1-22.17"
+        paragrafen:
+          - "22.1.1": "Van omgevingsplan met tijdelijk deel tot omgevingsplan"
+          - "22.1.2": "De toepassing van regels in verordening of tijdelijk deel"
+          - "22.1.3": "Overige bepalingen"
+
+      - number: "22.2"
+        title: "Sanering geluid decentrale infrastructuur"
+        articles: "22.18-22.19"
+
+      - number: "22.4"
+        title: "Legalisering projecten natuur"
+        articles: "22.21-22.22"
+        note: "Afdeling 22.3 bestaat niet (springt van 22.2 naar 22.4)"
+
+# =============================================================================
+# AFDELING 22.1 - OVERGANGSFASE
+# =============================================================================
+
+afdeling_22_1:
+  titel: "Overgangsfase"
+  articles: "22.1-22.17"
+
+  paragraaf_22_1_1:
+    titel: "Van omgevingsplan met tijdelijk deel tot omgevingsplan"
+
+    artikel_22_1:
+      titel: "tijdelijk deel omgevingsplan"
+      content: "Het tijdelijke deel van het omgevingsplan bestaat uit:"
+      onderdelen:
+        a: "besluiten Art. 4.6 lid 1 Invoeringswet Omgevingswet"
+        b: "kaarten/besluiten Art. 3.5 Aanvullingswet bodem Omgevingswet"
+        c: "regels aangewezen via Art. 22.2 lid 1"
+
+      juridische_analyse:
+        core_pattern: "bruidsschat"
+        significance: |
+          Oude bestemmingsplannen, beheersverordeningen, etc. worden
+          automatisch onderdeel van het omgevingsplan als "tijdelijk deel".
+          Dit voorkomt juridisch vacuüm op transitiedatum.
+
+    artikel_22_2:
+      titel: "omgevingsplanregels van rijkswege"
+      leden:
+        lid_1:
+          content: "Bij AMvB: oude regels (al dan niet tijdelijk) in omgevingsplan"
+          pattern: "rijksregels_in_lokaal_plan"
+
+        lid_2:
+          content: "Bij vaststelling/wijziging omgevingsplan: regels kunnen worden gewijzigd"
+
+    artikel_22_3:
+      titel: "omgevingsplan als bedoeld in artikel 2.4"
+      content: "Omgevingsplan (Art. 2.4) niet eerder bekendgemaakt dan inwerkingtreding wet"
+
+    artikel_22_4:
+      titel: "regels verordeningen in omgevingsplan"
+      content: "Verplichting Art. 2.4 uiterlijk op KB-tijdstip voldaan"
+      tijdelijk:
+        - "Art. 122 Gemeentewet niet van toepassing"
+        - "Art. 28 en 34 WARH niet van toepassing"
+      nadien: "regels fysieke leefomgeving alleen nog in omgevingsplan (Art. 2.7 lid 1)"
+
+    artikel_22_5:
+      titel: "wettelijke verplichtingen omgevingsplan"
+      leden:
+        lid_1:
+          content: "Tijdelijk deel: Art. 4.2 lid 1 (evenwichtige toedeling functies) niet van toepassing"
+          deadline: "KB-tijdstip"
+
+        lid_2:
+          content: "Art. 4.17 (in overeenstemming brengen met buitenplanse OPA) niet van toepassing"
+          deadline: "KB-tijdstip"
+
+        lid_3:
+          content: "Tijdstip kan voor verschillende gevallen verschillen"
+
+        lid_4:
+          content: "AMvB kan nadere regels stellen"
+
+        lid_5:
+          content: "Tijdelijk deel (Art. 22.1 onder a): Art. 19 Bekendmakingswet (consolidatie) niet van toepassing"
+
+    artikel_22_6:
+      titel: "vervanging tijdelijk deel omgevingsplan"
+      leden:
+        lid_1:
+          content: "Oude besluiten (Art. 4.6 lid 1 onder a,b,c,g,h,i,j,k,l,m IOw) alleen ALLE TEGELIJK vervallen voor locatie"
+          pattern: "geen_cherry_picking"
+
+        lid_2:
+          content: "Bij AMvB: gevallen waar gedeeltelijk vervallen wél mag (tot KB-tijdstip)"
+
+        lid_3:
+          content: "Uiterlijk KB-tijdstip: ALLE regels in niet-tijdelijke deel"
+          deadline: true
+          critical: "eindtermijn overgangsfase"
+
+    artikel_22_7:
+      titel: "beroep"
+      content: "Geen beroepsgronden tegen regels die uitvoering geven aan onherroepelijk besluit tot aanwijzing van:"
+      onderdelen:
+        a: "monument/archeologisch monument als gemeentelijk/provinciaal monument"
+        b: "gemeentelijk/provinciaal beschermd stads- of dorpsgezicht"
+      pattern: "formele_rechtskracht_doorwerking"
+
+  paragraaf_22_1_2:
+    titel: "De toepassing van in een verordening of het tijdelijke deel van het omgevingsplan opgenomen regels"
+
+    artikel_22_8:
+      titel: "omgevingsvergunning gemeentelijke verordening"
+      content: "Vergunning/ontheffing uit gemeentelijke verordening (voor Art. 2.7 lid 1 onderwerpen) geldt als omgevingsvergunningplicht Art. 5.1 lid 1 onder a"
+      pattern: "conversie_verordening_naar_omgevingsvergunning"
+
+    artikel_22_9:
+      titel: "aanwijzing onderdelen voor verwezenlijking in de naaste toekomst"
+      content: "Art. 3.4 Wro aanwijzingen: oud recht blijft van toepassing"
+      deadline: "max 5 jaar na aanwijzingsdatum"
+      reference: "voorkeursrecht"
+
+    artikel_22_10:
+      titel: "binnenplanse bevoegdheid om af te wijken"
+      content: "Art. 3.6 lid 1 onder c Wro regels gelden als Art. 5.21 lid 2 onder a regels"
+      pattern: "binnenplanse_afwijking_conversie"
+
+    artikel_22_11:
+      titel: "binnenplanse bevoegdheid tot stellen van nadere eisen"
+      content: "Art. 3.6 lid 1 onder d Wro bevoegdheid geldt als Art. 4.5 lid 1 maatwerkvoorschriften"
+      pattern: "nadere_eisen_worden_maatwerk"
+
+    artikel_22_12:
+      titel: "uitsluiting gebruik afwijkbevoegdheid bestemmingsplan"
+      content: "Art. 3.6a Wro uitsluiting geldt als verbod activiteit voor max 10 jaar"
+
+    artikel_22_13:
+      titel: "geen schadeveroorzakend besluit"
+      leden:
+        lid_1:
+          content: "Omgevingsvergunning op grond van tijdelijk deel (Art. 22.1 onder a) is GEEN schadeveroorzakend besluit (Art. 15.1 lid 2)"
+
+        lid_2:
+          onderdelen:
+            a: "monument/archeologisch monument als gemeentelijk/provinciaal monument"
+            b: "gemeentelijk/provinciaal beschermd stads- of dorpsgezicht"
+            c: "rijksbeschermd stads- of dorpsgezicht"
+          content: "opname in omgevingsplan is GEEN schadeveroorzakend besluit (Art. 15.1 lid 1 onder d)"
+
+      juridische_analyse:
+        pattern: "planschade_uitsluiting"
+        significance: "Geen nadeelcompensatie voor monumentenaanwijzingen bij transitie"
+
+  paragraaf_22_1_3:
+    titel: "Overige bepalingen"
+
+    artikel_22_14:
+      titel: "regels waterschapsverordening van rijkswege"
+      parallel_to: "Art. 22.2"
+      leden:
+        lid_1:
+          content: "Bij AMvB: oude regels (al dan niet tijdelijk) in waterschapsverordening"
+
+        lid_2:
+          content: "Bij vaststelling/wijziging: regels kunnen worden gewijzigd"
+
+    artikel_22_15:
+      titel: "regels verordeningen in waterschapsverordening"
+      content: "Verplichting Art. 2.5 uiterlijk op KB-tijdstip voldaan"
+      tijdelijk: "Art. 59 Waterschapswet niet van toepassing"
+      nadien: "regels fysieke leefomgeving alleen nog in waterschapsverordening"
+      parallel_to: "Art. 22.4"
+
+    artikel_22_16:
+      titel: "overgangsfase projectbesluit"
+      leden:
+        lid_1:
+          content: "Tot KB-tijdstip hoeft projectbesluit niet aan Art. 5.52 lid 1 te voldoen"
+          als_strijd: "geldt als omgevingsvergunning buitenplanse OPA"
+
+        lid_2:
+          content: "Omgevingsplan niet eerder dan KB-tijdstip in overeenstemming met projectbesluit-vergunning"
+
+        lid_3:
+          content: "Geen regels in omgevingsplan in strijd met projectbesluit (lid 1)"
+          references:
+            - "Art. 4.19a lid 3-5"
+            - "Art. 5.53a lid 2-4"
+
+    artikel_22_17:
+      titel: "einde overgangsfase"
+      content: "Deze afdeling vervalt op KB-tijdstip"
+      juridische_analyse:
+        pattern: "sunset_clause"
+        significance: "Hele afdeling 22.1 verdwijnt na overgangsfase"
+
+# =============================================================================
+# AFDELING 22.2 - SANERING GELUID
+# =============================================================================
+
+afdeling_22_2:
+  titel: "Sanering geluid decentrale infrastructuur"
+  articles: "22.18-22.19"
+
+  artikel_22_18:
+    titel: "vaststellen van programma"
+    leden:
+      lid_1:
+        actor: "B&W"
+        deadline: "18 juli 2039"
+        content: "programma geluidreductie gemeentelijke wegen + lokale spoorwegen (niet Art. 2.13a lid 1 onder b)"
+
+      lid_2:
+        actor: "Algemeen bestuur waterschap"
+        deadline: "18 juli 2039"
+        content: "programma geluidreductie waterschapswegen"
+
+      lid_3:
+        actor: "GS"
+        deadline: "18 juli 2039"
+        content: "programma geluidreductie provinciale wegen + lokale spoorwegen (Art. 2.13a lid 1 onder b)"
+
+      lid_4:
+        content: "Van overeenkomstige toepassing:"
+        references:
+          - "Art. 2.25 lid 1 onder a onder 1°"
+          - "Art. 16.27"
+          - "Art. 16.77b lid 2"
+          - "Art. 16.139"
+
+    juridische_analyse:
+      pattern: "langetermijn_sanering"
+      deadline: "2039"
+      parallel_to: "EU richtlijn omgevingslawaai"
+
+  artikel_22_19:
+    titel: "einde sanering"
+    content: "Deze afdeling vervalt op KB-tijdstip"
+
+# =============================================================================
+# AFDELING 22.4 - LEGALISERING PROJECTEN NATUUR (STIKSTOF!)
+# =============================================================================
+
+afdeling_22_4:
+  titel: "Legalisering projecten natuur"
+  articles: "22.21-22.22"
+
+  artikel_22_21:
+    titel: "vaststellen van programma"
+    leden:
+      lid_1:
+        actors:
+          - "Minister voor Natuur en Stikstof"
+          - "GS provincies"
+        content: "legaliseren van PAS-projecten met geringe stikstofdepositie"
+        referentie: "Art. 2.12 Besluit natuurbescherming (zoals luidend op 28 mei 2019)"
+
+        juridische_analyse:
+          critical: true
+          context: |
+            Dit artikel is de wettelijke grondslag voor legalisatie van
+            PAS-meldingen na de vernietiging van het PAS door de Raad van State
+            (29 mei 2019). Projecten die legaal waren onder PAS moeten alsnog
+            worden gelegaliseerd.
+
+      lid_2:
+        actor: "Minister voor Natuur en Stikstof"
+        deadline: "zo spoedig mogelijk"
+        content: "programma met maatregelen om stikstofdepositie-gevolgen ongedaan te maken/beperken/compenseren"
+        doelen:
+          a: "verlening omgevingsvergunning Natura 2000-activiteit"
+          b: "aanwijzing als vergunningvrij geval (Art. 5.2 lid 1 of 3)"
+
+      lid_3:
+        content: "Alleen maatregelen die NIET in stikstofprogramma (Art. 3.9 lid 4) zitten"
+        pattern: "additionaliteit"
+
+      lid_4:
+        deadline: "binnen 3 jaar na vaststelling programma"
+        content: "maatregelen moeten zijn uitgevoerd"
+
+      lid_5:
+        content: "Compenserende maatregelen waarborgen Natura 2000-netwerk samenhang"
+        reference: "Art. 6 lid 4 habitatrichtlijn"
+
+      lid_6:
+        content: "Van overeenkomstige toepassing:"
+        references:
+          - "Art. 2.25 lid 1 onder a onder 1°"
+          - "Art. 3.12"
+          - "Art. 3.18 lid 1+2"
+          - "Art. 3.19 lid 1+2"
+          - "Art. 16.27"
+          - "Art. 16.77b lid 2"
+          - "Art. 16.139"
+
+    juridische_analyse:
+      stikstof_crisis: true
+      pattern: "PAS_legalisatie"
+      connection_to:
+        - "Art. 2.15a (omgevingswaarden stikstof)"
+        - "Art. 3.9 lid 4 (stikstofprogramma)"
+        - "Art. 16.53c (passende beoordeling)"
+
+  artikel_22_22:
+    titel: "einde legalisering"
+    content: "Deze afdeling vervalt op KB-tijdstip"
+
+# =============================================================================
+# CHAPTER 23 - OVERIGE EN SLOTBEPALINGEN
+# =============================================================================
+
+chapter_23:
+  number: 23
+  title: "Overige en slotbepalingen"
+  type: closing_provisions
+  function: meta_rules
+
+  structure:
+    afdelingen:
+      - number: "23.1"
+        title: "Implementatie internationaalrechtelijke verplichtingen"
+        articles: "23.1-23.2"
+
+      - number: "23.2"
+        title: "Experimenteerbepaling"
+        articles: "23.3"
+
+      - number: "23.3"
+        title: "Publieksparticipatie, betrokkenheid parlement, totstandkomingsvereisten uitvoeringsregelgeving en overige bepalingen"
+        articles: "23.4-23.8"
+
+      - number: "23.4"
+        title: "Evaluatie- en slotbepalingen"
+        articles: "23.9-23.11"
+
+# =============================================================================
+# AFDELING 23.1 - IMPLEMENTATIE INTERNATIONAAL
+# =============================================================================
+
+afdeling_23_1:
+  titel: "Implementatie internationaalrechtelijke verplichtingen"
+  articles: "23.1-23.2"
+
+  artikel_23_1:
+    titel: "implementatie"
+    content: "Bij/krachtens AMvB: regels ter uitvoering internationale verplichtingen"
+    voorwaarde: "voor zover deze wet niet in andere grondslag voorziet"
+    pattern: "vangnet_delegatie"
+
+  artikel_23_2:
+    titel: "doorwerking wijzigingen Europese verordeningen, richtlijnen en besluiten in Nederlands recht"
+    content: "EU-wijziging geldt vanaf implementatiedatum, tenzij ministerieel besluit ander tijdstip"
+    reference: "Art. 288 VWEU"
+    pattern: "automatische_doorwerking"
+
+# =============================================================================
+# AFDELING 23.2 - EXPERIMENTEERBEPALING
+# =============================================================================
+
+afdeling_23_2:
+  titel: "Experimenteerbepaling"
+  articles: "23.3"
+
+  artikel_23_3:
+    titel: "experimenten"
+    leden:
+      lid_1:
+        content: "Bij AMvB kan bij wijze van experiment worden afgeweken van:"
+        onderdelen:
+          a: "deze wet (Omgevingswet)"
+          b: "Energiewet (geen gevolgen energiebelasting)"
+          c: "Huisvestingswet 2014"
+          d: "Leegstandwet"
+          e: "Warmtewet"
+          f: "Wet milieubeheer"
+        voorwaarde: "met inachtneming internationale verplichtingen"
+
+      lid_2:
+        content: "Experiment alleen als bijdrage aan Art. 1.3 onder a doelen"
+        scope:
+          - "verbetering kwaliteit fysieke leefomgeving"
+          - "verbetering procedures"
+          - "verbetering besluitvorming"
+
+      lid_3:
+        content: "Bij AMvB wordt bepaald:"
+        onderdelen:
+          a: "doel experiment"
+          b: "beoogde gevolgen fysieke leefomgeving"
+          c: "verantwoordelijk bestuursorgaan"
+          d: "tijdsduur (niet langer dan nodig)"
+          e: "van welke regels mag worden afgeweken"
+          f: "welke afwijkingen zijn toegestaan"
+          g: "voor welk gebied/besluiten afwijkingen toegestaan"
+          h: "hoe lang afwijkingen toegestaan (max 10 jaar voor omgevingswaarden)"
+          i: "welke afwijkingen na afloop toegestaan blijven"
+          j: "hoe evaluatie + tussentijdse monitoring"
+
+      lid_4:
+        content: "Blijvende afwijkingen (lid 3 onder i) alleen als terugbrengen onevenredig is"
+
+      lid_5:
+        content: "Als monitoring toont dat doelen niet bereikt: maatregelen treffen"
+
+      lid_6:
+        content: "Verantwoordelijk bestuursorgaan kan aanwijzingen geven"
+        reference: "Art. 19.4 lid 3 van overeenkomstige toepassing"
+
+      lid_7:
+        actor: "Minister BZK"
+        content: "kan experiment beëindigen als maatregelen niet toereikend"
+
+      lid_8:
+        actor: "Minister BZK"
+        content: "kan tijdsduur verlengen met max 5 jaar voor aanpassing regelgeving"
+
+    juridische_analyse:
+      critical: true
+      pattern: "regulatory_sandbox"
+      significance: |
+        Dit is een vergaande bevoegdheid: bij AMvB kan worden
+        afgeweken van de WET ZELF en aanverwante wetten.
+        Belangrijke waarborg: alleen voor Art. 1.3a doelen.
+
+# =============================================================================
+# AFDELING 23.3 - PUBLIEKSPARTICIPATIE EN TOTSTANDKOMING
+# =============================================================================
+
+afdeling_23_3:
+  titel: "Publieksparticipatie, betrokkenheid parlement, totstandkomingsvereisten uitvoeringsregelgeving en overige bepalingen"
+  articles: "23.4-23.8"
+
+  artikel_23_4:
+    titel: "publieksparticipatie"
+    leden:
+      lid_1:
+        content: "Ontwerp AMvB/ministeriële regeling: ieder kan elektronisch opmerkingen maken"
+        termijn: "min 4 weken"
+
+      lid_2:
+        content: "Niet van toepassing als Art. 8 verdrag van Aarhus op andere wijze is nageleefd"
+
+      lid_3:
+        uitzonderingen:
+          a: "wijzigingen van ondergeschikte betekenis"
+          b: "alleen uitvoering internationale verplichtingen"
+          c: "onmiddellijk nodig"
+
+    juridische_analyse:
+      pattern: "Aarhus_compliance"
+      reference: "Art. 8 verdrag van Aarhus"
+
+  artikel_23_5:
+    titel: "voorhangprocedure"
+    leden:
+      lid_1:
+        content: "AMvB op grond van hoofdstukken 2,3,4,5, afd. 13.6, hoofdstukken 16,17,18,19,20 en Art. 23.3"
+        procedure: "voordracht niet eerder dan 4 weken na overlegging aan Staten-Generaal"
+
+      lid_2:
+        content: "Als ontwerp omgevingswaarden bevat: Kamer kan verzoeken om wet"
+        gevolg: "wetsvoorstel moet dan zo spoedig mogelijk worden ingediend"
+        pattern: "parlementaire_controle_omgevingswaarden"
+
+      lid_3:
+        uitzonderingen:
+          - "wijzigingen ondergeschikte betekenis zonder grotere nadelige gevolgen"
+          - "alleen uitvoering internationale verplichtingen"
+        procedure: "Minister geeft daarvan kennis aan Staten-Generaal"
+
+      lid_4:
+        content: "Kennisgeving inwerkingtreding, RvS-advies en nader rapport aan Staten-Generaal"
+
+    juridische_analyse:
+      pattern: "voorhang"
+      significance: "Parlementaire controle op AMvBs, bijzondere positie omgevingswaarden"
+
+  artikel_23_5a:
+    titel: "voorhangprocedure besluiten aanwijzing Natura 2000-gebieden in exclusieve economische zone"
+    leden:
+      lid_1:
+        content: "Voorstel Natura 2000-gebieden in EEZ: 4 weken voorhang aan Staten-Generaal"
+        reference: "Art. 4 lid 1 habitatrichtlijn"
+
+      lid_2:
+        content: "Aanwijzingsbesluit Natura 2000-gebied in EEZ (Art. 2.44 lid 1): 4 weken voorhang"
+
+  artikel_23_6:
+    titel: "doorwerking beginselen"
+    content: "Bij voorhang-AMvB: nota van toelichting motiveert rekening houden met:"
+    beginselen:
+      - "voorzorgsbeginsel"
+      - "beginsel van preventief handelen"
+      - "beginsel dat milieuaantastingen bij voorrang aan de bron dienen te worden bestreden"
+      - "beginsel dat de vervuiler betaalt"
+
+    juridische_analyse:
+      pattern: "EU_milieubeginselen"
+      reference: "Art. 191 VWEU"
+      significance: "Wettelijke verankering EU-beginselen in Nederlandse procedure"
+
+  artikel_23_6a:
+    titel: "noodregeling bodem"
+    leden:
+      lid_1:
+        content: "Als voorziening onmiddellijk geboden: ministeriële regeling over milieubelastende activiteiten"
+        afwijking: "Art. 4.3"
+        doel: "bescherming bodem"
+
+      lid_2:
+        vervaltermijn: "12 maanden (verlengbaar met max 6 maanden)"
+        vervanging: "of eerder als AMvB ter vervanging in werking treedt"
+
+  artikel_23_6b:
+    titel: "noodregeling stikstof Natura 2000"
+    leden:
+      lid_1:
+        content: "Als voorziening onmiddellijk nodig: ministeriële regeling voor stikstof/Natura 2000"
+        afwijking: "Art. 2.24 en Art. 5.18"
+        scope:
+          - "instructieregels (Art. 2.25 lid 1 onder a onder 13°)"
+          - "vergunningplicht Natura 2000-activiteit"
+
+      lid_2:
+        vervaltermijn: "12 maanden (verlengbaar met max 6 maanden)"
+
+    juridische_analyse:
+      pattern: "noodrecht_stikstof"
+      significance: "Snelle regelgeving mogelijk bij stikstofcrisis"
+
+  artikel_23_7:
+    titel: "verhouding publiek- en privaatrecht"
+    content: "Gemeente kan GEEN privaatrechtelijke rechtshandelingen verrichten over:"
+    scope:
+      - "Art. 4.21 onderwerpen (grondexploitatie)"
+      - "onderwerpen bouwen geregeld op grond van Ch5"
+    pattern: "tweewegenleer_blokkade"
+    significance: "Voorkomt dat gemeente via eigendom regelt wat publiekrechtelijk moet"
+
+  artikel_23_8:
+    titel: "Staat is eigenaar vaste stoffen EEZ"
+    content: "Staat is eigenaar van vaste stoffen + delfstoffen (<100m diep) op/in zeebodem EEZ"
+    pattern: "staatsdomein"
+
+# =============================================================================
+# AFDELING 23.4 - EVALUATIE EN SLOT
+# =============================================================================
+
+afdeling_23_4:
+  titel: "Evaluatie- en slotbepalingen"
+  articles: "23.9-23.11"
+
+  artikel_23_9:
+    titel: "evaluatie"
+    actor: "Minister BZK (in overeenstemming met andere Ministers)"
+    recipient: "beide kamers Staten-Generaal"
+    content: "verslag doeltreffendheid en effecten wet in de praktijk"
+    frequentie:
+      eerste: "binnen 5 jaar na inwerkingtreding"
+      vervolg: "elke 5 jaar"
+
+    juridische_analyse:
+      pattern: "wettelijke_evaluatie"
+      first_deadline: "voor 1 januari 2029"
+
+  artikel_23_10:
+    titel: "inwerkingtreding"
+    leden:
+      lid_1:
+        content: "Artikelen treden in werking bij KB, kan per artikel verschillen"
+
+      lid_2:
+        content: "Voordracht KB niet eerder dan 4 weken na overlegging aan Staten-Generaal"
+        blokkade: "Als Kamer niet instemt: geen voordracht, nieuw ontwerp na min 6 weken"
+
+    juridische_analyse:
+      pattern: "zware_voorhang"
+      significance: "Staten-Generaal kan inwerkingtreding blokkeren"
+
+  artikel_23_11:
+    titel: "citeertitel"
+    content: "Deze wet wordt aangehaald als: Omgevingswet"
+
+# =============================================================================
+# CROSS-CHAPTER CONNECTIONS
+# =============================================================================
+
+cross_chapter_links:
+  ch22_internal:
+    - from: "Art. 22.1"
+      to: "Art. 4.6 Invoeringswet Omgevingswet"
+      relation: "definitie tijdelijk deel"
+
+    - from: "Art. 22.5"
+      to: "Art. 4.2 lid 1"
+      relation: "vrijstelling evenwichtige toedeling"
+
+    - from: "Art. 22.21"
+      to: "Art. 2.12 Besluit natuurbescherming (oud)"
+      relation: "PAS-legalisatie basis"
+
+  ch22_to_other_chapters:
+    - from: "Art. 22.6"
+      to: "Art. 2.4"
+      relation: "tijdelijk deel moet naar permanent deel"
+
+    - from: "Art. 22.8"
+      to: "Art. 5.1 lid 1 onder a"
+      relation: "verordening-vergunning conversie"
+
+    - from: "Art. 22.13"
+      to: "Art. 15.1"
+      relation: "planschade-uitsluiting"
+
+    - from: "Art. 22.21"
+      to: "Art. 3.9 lid 4"
+      relation: "additionaliteit t.o.v. stikstofprogramma"
+
+  ch23_to_other_chapters:
+    - from: "Art. 23.3"
+      to: "Art. 1.3 onder a"
+      relation: "experimenten alleen voor wetsdoelen"
+
+    - from: "Art. 23.5"
+      to: "Ch2-5, Ch16-20"
+      relation: "voorhang voor kern-AMvBs"
+
+    - from: "Art. 23.6"
+      to: "Art. 191 VWEU"
+      relation: "EU-milieubeginselen"
+
+    - from: "Art. 23.6b"
+      to: "Art. 2.24, Art. 5.18"
+      relation: "noodrecht kan afwijken"
+
+# =============================================================================
+# KEY PATTERNS DISCOVERED
+# =============================================================================
+
+key_patterns:
+
+  tijdelijk_deel_concept:
+    articles: "Art. 22.1-22.6"
+    description: |
+      Het "tijdelijk deel" van het omgevingsplan is de centrale
+      transitieconstructie. Oude bestemmingsplannen worden automatisch
+      onderdeel van het omgevingsplan, maar moeten uiteindelijk worden
+      vervangen door "echte" omgevingsplanregels.
+
+  pas_legalisatie:
+    article: "Art. 22.21"
+    description: |
+      De wettelijke basis voor legalisatie van projecten die onder het
+      Programma Aanpak Stikstof (PAS) legaal waren, maar na 29 mei 2019
+      (vernietiging PAS door RvS) illegaal werden.
+
+  experimenteerbepaling:
+    article: "Art. 23.3"
+    description: |
+      Vergaande bevoegdheid om bij AMvB van de wet zelf af te wijken.
+      Belangrijke waarborg: alleen voor Art. 1.3a doelen (bescherming
+      en benutten fysieke leefomgeving).
+
+  voorhangprocedure:
+    article: "Art. 23.5"
+    description: |
+      Parlementaire controle op AMvBs. Bijzonder: als AMvB omgevingswaarden
+      bevat kan de Kamer eisen dat deze bij wet worden vastgesteld.
+
+  milieubeginselen:
+    article: "Art. 23.6"
+    beginselen:
+      - "voorzorg"
+      - "preventief handelen"
+      - "bronbeginsel"
+      - "vervuiler betaalt"
+    description: "Verplichte motivering in toelichting bij voorhang-AMvBs"
+
+  noodrecht:
+    articles: "Art. 23.6a, Art. 23.6b"
+    description: |
+      Snelle ministeriële regelgeving mogelijk voor bodem en stikstof
+      als onmiddellijke voorziening nodig. Vervalt na max 18 maanden.
+
+  evaluatiecyclus:
+    article: "Art. 23.9"
+    frequentie: "eerste binnen 5 jaar, dan elke 5 jaar"
+    description: "Wettelijke evaluatieplicht van de hele Omgevingswet"
+
+# =============================================================================
+# JURIDISCHE ANALYSE
+# =============================================================================
+
+juridische_analyse:
+
+  ch22_significance: |
+    Chapter 22 is cruciaal voor de transitie van het oude naar het nieuwe
+    omgevingsrecht. Het "tijdelijk deel" concept voorkomt een juridisch vacuüm
+    en geeft gemeenten tijd om hun omgevingsplannen te maken.
+
+    Bijzonder gevoelig is Art. 22.21 over PAS-legalisatie. Dit raakt
+    duizenden projecten die na de vernietiging van het PAS in een juridisch
+    schemergebied terechtkwamen.
+
+  ch23_significance: |
+    Chapter 23 bevat de "meta-regels" van de Omgevingswet:
+    - Hoe worden AMvBs gemaakt (voorhang, participatie)
+    - Welke beginselen moeten worden gemotiveerd
+    - Experimenteerbevoegdheid (regulatory sandbox)
+    - Noodrecht voor bodem en stikstof
+    - Evaluatiecyclus
+
+    De experimenteerbepaling (Art. 23.3) is uniek: afwijken van de wet
+    zelf is mogelijk, maar alleen voor de wetsdoelen.
+
+  omgevingswet_complete: |
+    Met Ch22 en Ch23 is de gehele Omgevingswet nu geëxtraheerd.
+    De wet loopt van:
+    - Ch1 (grondslagen) tot Ch23 (slot)
+    - Met gereserveerde hoofdstukken: 6, 7, 14, 21
+
+    De operationele kern is: Ch1-5, Ch16, Ch18-20
+    De transitie is: Ch22
+    De meta-regels zijn: Ch23

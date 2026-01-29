@@ -1,0 +1,313 @@
+# Paragraaf 5.1.4 & 5.1.5 - Inhoud, werking & Lifecycle
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  paragrafen: ["5.1.4", "5.1.5"]
+  titels:
+    5.1.4: "Inhoud en werking"
+    5.1.5: "Actualisering, wijziging, intrekking en revisievergunning"
+  artikel_range: "5.34 - 5.43"
+  extraction_method: "atomic"
+
+# ============================================================================
+# PARAGRAAF 5.1.4 - INHOUD EN WERKING
+# ============================================================================
+
+paragraaf_5.1.4:
+  titel: "Inhoud en werking"
+  functie: "Bepaalt WAT de vergunning bevat en voor WIE deze geldt"
+
+  artikelen:
+
+    5.34:
+      titel: "(voorschriften omgevingsvergunning)"
+
+      leden:
+        1:
+          tekst: "Aan een omgevingsvergunning worden de voorschriften verbonden die nodig zijn voor de regels, bedoeld in de artikelen 5.18, 5.19, 5.30 en 5.31."
+        2:
+          tekst: "Onverminderd de artikelen 13.5 en 13.6 worden bij of krachtens algemene maatregel van bestuur regels gesteld over andere voorschriften die aan een omgevingsvergunning worden verbonden."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "voorschriften in vergunning"
+        logica: "beoordelingsregels → voorschriften"
+
+      interne_refs:
+        - naar: "artikelen 5.18, 5.19, 5.30, 5.31"
+          context: "voorschriften volgen uit beoordelingsregels"
+        - naar: "artikelen 13.5, 13.6"
+          context: "financiële zekerheid"
+        - naar: "artikel 5.3"
+          context: "waterschapsverordening"
+        - naar: "artikel 5.4"
+          context: "omgevingsverordening"
+
+      delegeert:
+        - type: "bij AMvB"
+          voor: "andere voorschriften"
+
+      connection: "Koppelt 5.1.3 (beoordeling) aan permit content"
+
+    5.35:
+      status: "ingetrokken"
+      note: "Stb. 2020/172"
+
+    5.36:
+      titel: "(termijnstelling in omgevingsvergunning)"
+
+      leden:
+        1:
+          tekst: "In een omgevingsvergunning voor een voortdurende activiteit kan worden bepaald dat die vergunning geldt voor een daarbij gestelde termijn."
+        2:
+          tekst: "In een omgevingsvergunning voor een aflopende activiteit kan worden bepaald dat de vergunninghouder na afloop van de activiteit bepaalde handelingen moet verrichten."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "termijnstelling"
+        logica: "facultatief (kan)"
+
+      key_distinction:
+        voortdurende_activiteit: "termijn voor vergunning zelf"
+        aflopende_activiteit: "verplichtingen na afloop"
+
+    5.36a:
+      titel: "(termijnstelling seizoensgebonden en drijvende bouwwerken)"
+
+      functie:
+        werkwoord: "regelt"
+        object: "specifieke termijnstelling"
+        voor: "seizoensgebonden bouwwerken, drijvende bouwwerken"
+
+    5.37:
+      titel: "(normadressaat omgevingsvergunning en aanwijzing vergunninghouder)"
+
+      leden:
+        1:
+          tekst: "Een omgevingsvergunning geldt voor degene die de activiteit verricht waarop zij betrekking heeft. Diegene is vergunninghouder en draagt zorg voor de naleving van de vergunningvoorschriften."
+        2:
+          tekst: "Als een aangevraagde of verleende omgevingsvergunning op naam van een andere persoon moet worden gesteld, doet de vergunninghouder daarvan zo spoedig mogelijk mededeling aan het bevoegd gezag."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "wie vergunninghouder is"
+        logica: "zaaksgebonden (activiteit-volgend)"
+
+      key_concept:
+        normadressaat: "degene die activiteit verricht"
+        zorgplicht: "vergunninghouder draagt zorg voor naleving"
+
+    5.37a:
+      titel: "(verantwoordelijkheidsverdeling vergunninghouders)"
+
+      leden:
+        1:
+          tekst: "In afwijking van artikel 5.37, eerste lid, kan het bevoegd gezag in de omgevingsvergunning bepalen dat een vergunninghouder alleen zorg draagt voor de naleving van de vergunningvoorschriften voor de activiteit die of het deel van de activiteit dat hij verricht."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "splitsing verantwoordelijkheid"
+        logica: "afwijking van default (in afwijking van)"
+
+      interne_refs:
+        - naar: "artikel 5.37, eerste lid"
+          relatie: "afwijking van"
+
+# ============================================================================
+# PARAGRAAF 5.1.5 - ACTUALISERING, WIJZIGING, INTREKKING
+# ============================================================================
+
+paragraaf_5.1.5:
+  titel: "Actualisering, wijziging, intrekking en revisievergunning"
+  functie: "Regelt LIFECYCLE van de vergunning na verlening"
+
+  artikelen:
+
+    5.38:
+      titel: "(actualisering omgevingsvergunning)"
+
+      leden:
+        1:
+          tekst: "Voor zover een omgevingsvergunning betrekking heeft op [bepaalde activiteiten], beziet het bevoegd gezag regelmatig of de voorschriften van de omgevingsvergunning nog toereikend zijn."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "periodieke review"
+        logica: "proactieve actualisering"
+
+      scope:
+        activiteiten:
+          - "stortingsactiviteit op zee"
+          - "milieubelastende activiteit"
+          - "lozingsactiviteit"
+
+    5.39:
+      titel: "(verplichting tot wijziging voorschriften en intrekking)"
+
+      leden:
+        1:
+          tekst: "Het bevoegd gezag wijzigt de voorschriften van een omgevingsvergunning of trekt een omgevingsvergunning in: [in bepaalde gevallen]"
+
+      functie:
+        werkwoord: "verplicht"
+        object: "wijziging of intrekking"
+        logica: "IMPERATIEF (wijzigt... of trekt in)"
+
+      delegeert:
+        - type: "bij AMvB"
+          voor: "gevallen waarin verplichting geldt"
+
+      interne_refs:
+        - naar: "artikel 5.3, 5.4"
+          context: "decentrale gronden"
+
+    5.40:
+      titel: "(bevoegdheid tot wijziging voorschriften en intrekking)"
+
+      leden:
+        1:
+          tekst: "Het bevoegd gezag kan de voorschriften van een omgevingsvergunning wijzigen: [in bepaalde gevallen]"
+        2:
+          tekst: "Het bevoegd gezag kan een omgevingsvergunning intrekken: [in bepaalde gevallen]"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "wijziging of intrekking"
+        logica: "FACULTATIEF (kan)"
+
+      interne_refs:
+        - naar: "artikel 5.31, eerste lid"
+          context: "Wet bibob grond"
+        - naar: "artikel 18.10"
+          context: "handhaving-koppeling"
+
+      key_distinction:
+        5.39: "verplichting (moet)"
+        5.40: "bevoegdheid (kan)"
+
+    5.41:
+      titel: "(toepassing op verzoek instemmingsorgaan)"
+
+      functie:
+        werkwoord: "regelt"
+        object: "verzoek instemmingsorgaan"
+        logica: "instemmingsorgaan kan wijziging/intrekking initiëren"
+
+      interne_refs:
+        - naar: "artikelen 5.39, 5.40"
+        - naar: "artikel 16.16, eerste lid"
+          context: "instemmingsvereiste"
+
+    5.42:
+      titel: "(invulling AMvB artikelen 5.39 en 5.40)"
+
+      functie:
+        werkwoord: "structureert"
+        object: "AMvB-delegatie"
+        logica: "kader voor AMvB-invulling"
+
+      interne_refs:
+        - naar: "artikel 5.1"
+        - naar: "artikelen 5.39, 5.40"
+
+    5.43:
+      titel: "(revisievergunning)"
+
+      leden:
+        1:
+          tekst: "Als voor een of meer activiteiten verschillende omgevingsvergunningen van kracht zijn, kan het bevoegd gezag, in het belang van een doelmatige uitvoering en handhaving, ambtshalve een omgevingsvergunning verlenen die de eerder verleende omgevingsvergunningen vervangt."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "consolidatie vergunningen"
+        logica: "ambtshalve revisie"
+
+      interne_refs:
+        - naar: "artikel 5.16"
+          context: "flexibiliteitsregeling"
+        - naar: "artikel 5.39, 5.40"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  afdeling_5.1_complete:
+    flow: |
+      5.1.1 WAT is vergunningplichtig?
+          ↓
+      5.1.2 WIE beslist?
+          ↓
+      5.1.3 HOE wordt beoordeeld?
+          ↓
+      5.1.4 WAT bevat de vergunning?
+          ↓
+      5.1.5 HOE verandert de vergunning?
+
+  structure_5.1.4:
+    - "5.34: voorschriften (link naar beoordelingsregels)"
+    - "5.36-5.36a: termijn (tijdelijke vs permanente)"
+    - "5.37-5.37a: normadressaat (wie is gebonden)"
+
+  structure_5.1.5:
+    - "5.38: actualisering (proactief)"
+    - "5.39: verplichting wijziging/intrekking (imperatief)"
+    - "5.40: bevoegdheid wijziging/intrekking (facultatief)"
+    - "5.41: op verzoek instemmingsorgaan"
+    - "5.42: AMvB-structuur"
+    - "5.43: revisievergunning (consolidatie)"
+
+  key_distinction:
+    imperatief_vs_facultatief:
+      5.39: "wijzigt... of trekt in (MOET)"
+      5.40: "kan wijzigen... kan intrekken (MAG)"
+
+  connection_to_other_paragrafen:
+    5.34_to_5.1.3: "voorschriften volgen uit beoordelingsregels (5.18, 5.19, 5.30, 5.31)"
+    5.40_to_5.31: "bibob-grond voor intrekking"
+    5.40_to_18.10: "handhaving-koppeling"
+    5.41_to_16.16: "instemmingsorgaan"
+
+  lifecycle_pattern: |
+    VERLENING (5.1.1-5.1.4)
+        │
+        ▼
+    ┌─── ACTUALISERING (5.38) ◄─── periodiek
+    │
+    ├─── WIJZIGING (5.39 verplichting / 5.40 bevoegdheid)
+    │
+    ├─── INTREKKING (5.39 verplichting / 5.40 bevoegdheid)
+    │
+    └─── REVISIE (5.43) ◄─── consolidatie
+
+# ============================================================================
+# AFDELING 5.1 SUMMARY
+# ============================================================================
+
+afdeling_5.1_summary:
+  total_artikelen: 49
+  active_artikelen: 45  # excl. ingetrokken 5.17, 5.25, 5.35
+
+  paragraaf_functions:
+    5.1.1: "TRIGGER - wat is vergunningplichtig"
+    5.1.2: "ROUTING - wie beslist"
+    5.1.3: "ASSESSMENT - hoe beoordelen"
+    5.1.4: "CONTENT - wat bevat vergunning"
+    5.1.5: "LIFECYCLE - wijziging, intrekking"
+
+  key_patterns:
+    default_tenzij: "5.8 (gemeente default, tenzij)"
+    hub_spoke: "5.18 (central hub) → 5.20-5.29a (spokes)"
+    imperatief_facultatief: "5.39 (moet) vs 5.40 (kan)"
+    delegation: "framework in Ow, details in AMvB"
+
+  external_connections:
+    naar_ch2: "2.3 (subsidiariteit), 2.22 (omgevingsplan), 2.24 (instructieregels)"
+    naar_ch13: "13.5, 13.6 (financiële zekerheid)"
+    naar_ch16: "16.16 (instemming)"
+    naar_ch18: "18.10 (handhaving)"
+    naar_amvb: "Bal, Bkl, Bbl via delegaties"

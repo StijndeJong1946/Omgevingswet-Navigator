@@ -1,0 +1,393 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 2, AFDELING 2.6 - ATOMIC EXTRACTION
+# Bijzondere taken en bevoegdheden
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "2.6"
+  titel: "Bijzondere taken en bevoegdheden"
+  artikelen_range: "2.38-2.46"
+  totaal_artikelen: 9
+  status: "goed"
+  inwerking: "2024-01-01"
+  structuur:
+    paragraaf_2.6.1:
+      titel: "Bijzondere beheertaken en -bevoegdheden water, waterstaatswerken en wegen"
+      artikelen: "2.38-2.42"
+    paragraaf_2.6.2:
+      titel: "Bijzondere bevoegdheden geluid"
+      artikelen: "2.43"
+    paragraaf_2.6.3:
+      titel: "Bijzondere bevoegdheden natuur en landschap"
+      artikelen: "2.44-2.46"
+
+# =============================================================================
+# PARAGRAAF 2.6.1 - WATER, WATERSTAATSWERKEN EN WEGEN
+# =============================================================================
+
+artikelen:
+  - artikel: "2.38"
+    titel: "(zwemverbod en negatief zwemadvies)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.6.1"
+
+    inhoud: "Gedeputeerde staten zijn bevoegd voor oppervlaktewaterlichamen een negatief zwemadvies te geven of een zwemverbod in te stellen met het oog op het waarborgen van de veiligheid of het beschermen van de gezondheid."
+    bevoegd_gezag: "GS"
+    doel:
+      - "veiligheid"
+      - "gezondheid"
+
+    juridische_analyse:
+      patroon: "BESTUURSDWANG_VEILIGHEID"
+      eu_achtergrond: "zwemwaterrichtlijn"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.39 - LEGGER
+  # ---------------------------------------------------------------------------
+  - artikel: "2.39"
+    titel: "(legger)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.6.1"
+
+    leden:
+      - lid: 1
+        inhoud: "De beheerder van waterstaatswerken stelt een legger vast, waarin is omschreven waaraan die waterstaatswerken naar ligging, vorm, afmeting en constructie moeten voldoen."
+        type: "verplicht"
+        inhoud_legger:
+          - "ligging"
+          - "vorm"
+          - "afmeting"
+          - "constructie"
+
+      - lid: 2
+        inhoud: "Het eerste lid is niet van toepassing op waterstaatswerken die op grond van artikel 2.18, tweede lid, of 2.20, derde lid, in beheer zijn bij een ander openbaar lichaam dan een waterschap of het Rijk."
+        type: "uitzondering"
+
+      - lid: 3
+        inhoud: "Als bijlage bij de legger wordt voor primaire waterkeringen of waterkeringen waarvoor omgevingswaarden zijn vastgesteld als bedoeld in artikel 2.13, eerste lid, onder a, of 2.15, eerste lid, onder e, een technisch beheerregister opgenomen, waarin de voor het behoud van het waterkerend vermogen kenmerkende gegevens van de constructie en de feitelijke toestand nader zijn omschreven."
+        type: "aanvullende_eis"
+        scope: "waterkeringen met omgevingswaarde"
+        inhoud_tbr: "gegevens waterkerend vermogen"
+
+      - lid: 4
+        inhoud: "Bij omgevingsverordening of, voor waterstaatswerken in beheer bij het Rijk, bij of krachtens algemene maatregel van bestuur, kan vrijstelling worden verleend van de in het eerste lid bedoelde verplichtingen voor waterstaatswerken die zich naar hun aard of functie niet lenen voor het omschrijven van die elementen, of die geringe afmetingen hebben."
+        type: "vrijstellingsmogelijkheid"
+
+    juridische_analyse:
+      patroon: "BEHEERDOCUMENT_VERPLICHT"
+      functie: "Basis voor handhaving en onderhoud"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.40 - TOEGANGSVERBOD
+  # ---------------------------------------------------------------------------
+  - artikel: "2.40"
+    titel: "(toegangsverbod waterstaatswerken en wegen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.6.1"
+
+    leden:
+      - lid: 1
+        inhoud: "Onze Minister van Infrastructuur en Waterstaat kan de toegang tot een waterstaatswerk of een weg in beheer bij het Rijk beperken of verbieden door dat ter plaatse, of op een andere geschikte wijze, bekend te maken."
+        bevoegd_gezag: "Minister IenW"
+        scope: "rijkswateren, rijkswegen"
+
+      - lid: 2
+        inhoud: "Het eerste lid is niet van toepassing op het gebruik door het openbaar verkeer."
+        type: "uitzondering"
+        scope: "openbaar verkeer uitgezonderd"
+
+    juridische_analyse:
+      patroon: "ORDEBEVOEGDHEID_RIJK"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.41 - PEILBESLUIT
+  # ---------------------------------------------------------------------------
+  - artikel: "2.41"
+    titel: "(peilbesluit)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "besluitverplichting"
+    paragraaf: "2.6.1"
+
+    leden:
+      - lid: 1
+        inhoud: "Het waterschapsbestuur of het bevoegde bestuursorgaan van een ander openbaar lichaam waarbij op grond van artikel 2.18, tweede lid, watersystemen in beheer zijn, stelt een of meer peilbesluiten vast voor de bij omgevingsverordening aangewezen oppervlaktewaterlichamen, grondwaterlichamen of onderdelen daarvan die deel uitmaken van die watersystemen."
+        bevoegd_gezag: "waterschapsbestuur / andere beheerder"
+        scope: "door omgevingsverordening aangewezen waterlichamen"
+
+      - lid: 2
+        inhoud: "Onze Minister van Infrastructuur en Waterstaat stelt een of meer peilbesluiten vast voor bij algemene maatregel van bestuur aangewezen oppervlaktewaterlichamen, grondwaterlichamen of onderdelen daarvan, die behoren tot de rijkswateren."
+        bevoegd_gezag: "Minister IenW"
+        scope: "rijkswateren"
+
+      - lid: 3
+        inhoud: "Een peilbesluit voorziet in de vaststelling van waterstanden of bandbreedten waarbinnen waterstanden kunnen variëren, die gedurende daarbij aangegeven perioden of omstandigheden zoveel mogelijk in stand worden gehouden."
+        inhoud_peilbesluit:
+          - "waterstanden"
+          - "bandbreedten"
+          - "perioden/omstandigheden"
+
+    juridische_analyse:
+      patroon: "PEILREGIME_VASTSTELLING"
+      functie: "Afstemming waterhuishouding op functies"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.42 - RANGORDE BIJ WATERSCHAARSTE
+  # ---------------------------------------------------------------------------
+  - artikel: "2.42"
+    titel: "(rangorde bij waterschaarste)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "verdelingsregel"
+    paragraaf: "2.6.1"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij algemene maatregel van bestuur wordt de rangorde van maatschappelijke en ecologische behoeften vastgesteld, die bij waterschaarste of dreigende waterschaarste bepalend is voor de verdeling van het beschikbare oppervlaktewater."
+        delegatie: "AMvB"
+        scope: "waterschaarste"
+        note: "Verdringingsreeks"
+
+      - lid: 2
+        inhoud: "Bij of krachtens de maatregel en, als dat bij de maatregel is bepaald, bij omgevingsverordening kunnen nadere regels over de rangorde worden gesteld. Bij die regels kan de rangorde van overeenkomstige toepassing worden verklaard op het beschikbare grondwater."
+        type: "nadere_regeling"
+        uitbreiding: "grondwater mogelijk"
+
+    juridische_analyse:
+      patroon: "VERDRINGINGSREEKS"
+      praktijk: "Kritisch bij droogte"
+      uitwerking: "Waterbesluit (oud) / Omgevingsbesluit"
+
+# =============================================================================
+# PARAGRAAF 2.6.2 - GELUID
+# =============================================================================
+
+  - artikel: "2.43"
+    titel: "(geluidwerende maatregelen aan gebouwen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.6.2"
+
+    leden:
+      - lid: 1
+        inhoud: "Het college van burgemeester en wethouders, het dagelijks bestuur van het waterschap, gedeputeerde staten en Onze Minister van Infrastructuur en Waterstaat bepalen bij besluit of, en zo ja, welke maatregelen aan een gebouw worden getroffen ter beperking van het geluid in het gebouw. De eerste zin is alleen van toepassing in bij algemene maatregel van bestuur aangewezen gevallen."
+        type: "besluitbevoegdheid"
+        bevoegd_gezag:
+          - "B&W (gemeentelijke wegen)"
+          - "DB waterschap (waterschapswegen)"
+          - "GS (provinciale wegen)"
+          - "Minister IenW (rijkswegen/spoor)"
+        delegatie: "AMvB wijst gevallen aan"
+
+      - lid: 2
+        inhoud: "Het besluit wordt ingetrokken in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald."
+        type: "intrekkingsregeling"
+
+    juridische_analyse:
+      patroon: "GELUIDWERING_BESLUIT"
+      context: "Sanering/GPP-overschrijding"
+      uitwerking: "Bkl/Omgevingsbesluit"
+
+# =============================================================================
+# PARAGRAAF 2.6.3 - NATUUR EN LANDSCHAP
+# =============================================================================
+
+  - artikel: "2.44"
+    titel: "(aanwijzing natuurgebieden en landschappen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "aanwijzingsbevoegdheid"
+    paragraaf: "2.6.3"
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Onze Minister voor Natuur en Stikstof wijst ter uitvoering van de vogelrichtlijn of de habitatrichtlijn Natura 2000-gebieden aan en stelt daarbij instandhoudingsdoelstellingen voor die gebieden vast."
+        type: "verplicht"
+        bevoegd_gezag: "Minister voor Natuur en Stikstof"
+        eu_basis: ["vogelrichtlijn", "habitatrichtlijn"]
+        scope: "Natura 2000"
+
+      - lid: 2
+        inhoud: "Onze Minister voor Natuur en Stikstof kan ter uitvoering van de vogelrichtlijn of de habitatrichtlijn bijzondere nationale natuurgebieden aanwijzen en instandhoudingsdoelstellingen voor die gebieden vaststellen."
+        type: "facultatief"
+        scope: "bijzondere nationale natuurgebieden"
+
+      - lid: 3
+        inhoud: "Onze Minister voor Natuur en Stikstof kan nationale parken aanwijzen."
+        type: "facultatief"
+        scope: "nationale parken"
+
+      - lid: 4
+        inhoud: "Bij omgevingsverordening worden de gebieden aangewezen die behoren tot het natuurnetwerk Nederland."
+        type: "verplicht"
+        bevoegd_gezag: "PS (via omgevingsverordening)"
+        scope: "NNN"
+
+      - lid: 5
+        inhoud: "Bij omgevingsverordening kunnen gebieden, met uitzondering van Natura 2000-gebieden of gebieden als bedoeld in het vierde lid, worden aangewezen als bijzondere provinciale natuurgebieden en bijzondere provinciale landschappen."
+        type: "facultatief"
+        bevoegd_gezag: "PS"
+        scope: "provinciale natuur/landschap"
+
+    juridische_analyse:
+      patroon: "GEBIEDSAANWIJZING_GELAAGD"
+      niveaus:
+        rijksniveau:
+          - "Natura 2000 (verplicht, lid 1)"
+          - "bijzondere nationale natuurgebieden (facultatief, lid 2)"
+          - "nationale parken (facultatief, lid 3)"
+        provinciaal_niveau:
+          - "NNN (verplicht, lid 4)"
+          - "bijzondere provinciale natuur/landschap (facultatief, lid 5)"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.45 - TOEGANGSBEPERKING NATUURGEBIEDEN
+  # ---------------------------------------------------------------------------
+  - artikel: "2.45"
+    titel: "(toegangsbeperking natuurgebieden)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.6.3"
+
+    leden:
+      - lid: 1
+        inhoud: "Gedeputeerde staten kunnen de toegang tot een Natura 2000-gebied geheel of gedeeltelijk beperken of verbieden."
+        bevoegd_gezag: "GS"
+        scope: "Natura 2000"
+
+      - lid: 2
+        inhoud: "De bevoegdheid, bedoeld in het eerste lid, berust bij Onze Minister voor Natuur en Stikstof als een Natura 2000-gebied geheel of gedeeltelijk wordt beheerd door een van Onze andere Ministers dan Onze Minister voor Natuur en Stikstof."
+        bevoegd_gezag: "Minister voor Natuur en Stikstof"
+        scope: "Natura 2000 in beheer bij andere minister"
+
+      - lid: 3
+        inhoud: "Onze Minister voor Natuur en Stikstof kan de toegang tot een bijzonder nationaal natuurgebied geheel of gedeeltelijk beperken of verbieden."
+        bevoegd_gezag: "Minister voor Natuur en Stikstof"
+        scope: "bijzondere nationale natuurgebieden"
+
+      - lid: 4
+        inhoud: "De bevoegdheid, bedoeld in het derde lid, berust bij gedeputeerde staten in gevallen waarin dat bij algemene maatregel van bestuur is bepaald."
+        type: "gedelegeerde_bevoegdheid"
+
+    juridische_analyse:
+      patroon: "TOEGANGSREGULERING_NATUUR"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.46 - STIKSTOFDEPOSITIERUIMTE (CENTRALE BEPALING)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.46"
+    titel: "(stikstofdepositieruimte)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.6.3"
+    centrale_bepaling: true
+    politiek_gevoelig: true
+
+    leden:
+      - lid: 1
+        inhoud: "Onze Minister voor Natuur en Stikstof of een door hem aangewezen bestuursorgaan, kan stikstofdepositieruimte registreren die beschikbaar is voor toedeling aan Natura 2000-activiteiten die stikstofdepositie veroorzaken."
+        type: "facultatief"
+        bevoegd_gezag: "Minister voor Natuur en Stikstof (of aangewezen)"
+        kernbegrip: "registratie depositieruimte"
+
+      - lid: 2
+        inhoud: "Stikstofdepositieruimte wordt alleen geregistreerd als aanvullende maatregelen zijn getroffen ten opzichte van de in het beheerplan voor het desbetreffende Natura 2000-gebied opgenomen maatregelen, die de belasting van de natuur door stikstof verminderen of de staat van instandhouding verbeteren."
+        type: "voorwaarde"
+        kernvoorwaarde: "aanvullende maatregelen boven beheerplan"
+        note: "Additionaliteit vereist"
+
+      - lid: 3
+        inhoud: "Het bestuursorgaan dat bevoegd is te beslissen op een aanvraag om een omgevingsvergunning voor een Natura 2000-activiteit die stikstofdepositie veroorzaakt, kan geregistreerde stikstofdepositieruimte toedelen aan een Natura 2000-activiteit."
+        type: "toedelingsbevoegdheid"
+        koppeling: "omgevingsvergunning Natura 2000-activiteit"
+
+      - lid: 4
+        inhoud: "Stikstofdepositieruimte wordt alleen toegedeeld als zij voor elke locatie van de voor stikstof gevoelige habitats in het Natura 2000-gebied waarop door de Natura 2000-activiteit stikstofdepositie zal worden veroorzaakt, gelijk is aan of groter is dan de door de activiteit te veroorzaken toename van de stikstofdepositie."
+        type: "toekenningsvoorwaarde"
+        kernvoorwaarde: "ruimte >= depositietoename per locatie"
+
+    juridische_analyse:
+      patroon: "STIKSTOFREGISTRATIE_TOEDELING"
+      achtergrond:
+        - "PAS-uitspraak ABRvS 2019"
+        - "Stikstofwet"
+      koppeling_art_2.15a: "stikstofomgevingswaarden"
+      koppeling_ch5: "omgevingsvergunning Natura 2000-activiteit"
+      praktijk: "Centraal in vergunningverlening stikstof-gevoelige activiteiten"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 2.6
+# =============================================================================
+
+analyse:
+  karakterisering: "Specifieke taken/bevoegdheden buiten algemeen kader"
+
+  kerninstrumenten:
+    waterbeheer:
+      legger:
+        artikel: "2.39"
+        functie: "Normering waterstaatswerken"
+      peilbesluit:
+        artikel: "2.41"
+        functie: "Waterstand-regiem"
+      verdringingsreeks:
+        artikel: "2.42"
+        functie: "Prioritering bij schaarste"
+
+    veiligheid_gezondheid:
+      zwemverbod:
+        artikel: "2.38"
+        bevoegd_gezag: "GS"
+      toegangsverbod_water:
+        artikel: "2.40"
+        bevoegd_gezag: "Minister IenW"
+
+    geluid:
+      geluidwering:
+        artikel: "2.43"
+        functie: "Maatregelen aan gebouwen"
+
+    natuur:
+      gebiedsaanwijzing:
+        artikel: "2.44"
+        niveaus: ["Natura 2000", "nationale parken", "NNN"]
+      toegangsbeperking:
+        artikel: "2.45"
+      stikstofdepositieruimte:
+        artikel: "2.46"
+        note: "Kritisch voor stikstofproblematiek"
+
+  stikstof_complex:
+    omgevingswaarden: "art. 2.15a"
+    registratie_toedeling: "art. 2.46"
+    passende_beoordeling: "art. 16.53c"
+    vergunning: "art. 5.1 lid 1 sub e (Natura 2000-activiteit)"
+
+  koppelingen:
+    naar_ch2.3:
+      - artikel: "2.15a"
+        relatie: "stikstofomgevingswaarden"
+    naar_ch3:
+      - artikel: "3.8.3"
+        relatie: "beheerplan Natura 2000"
+    naar_ch5:
+      - relatie: "omgevingsvergunning Natura 2000-activiteit"
+    naar_ch16:
+      - artikel: "16.53c"
+        relatie: "passende beoordeling"
+
+  praktijk_belang:
+    stikstof: "Art. 2.46 centraal in vergunningverlening"
+    waterbeheer: "Legger en peilbesluit basis voor handhaving"
+    klimaatadaptatie: "Verdringingsreeks (art. 2.42) bij droogte"

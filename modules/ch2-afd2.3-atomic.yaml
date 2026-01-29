@@ -1,0 +1,491 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 2, AFDELING 2.3 - ATOMIC EXTRACTION
+# Omgevingswaarden
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "2.3"
+  titel: "Omgevingswaarden"
+  artikelen_range: "2.9-2.15a"
+  totaal_artikelen: 9
+  status: "goed"
+  inwerking: "2024-01-01"
+  structuur:
+    paragraaf_2.3.1:
+      titel: "Algemene bepalingen"
+      artikelen: "2.9-2.10"
+    paragraaf_2.3.2:
+      titel: "Omgevingswaarden gemeente"
+      artikelen: "2.11-2.11a"
+    paragraaf_2.3.3:
+      titel: "Omgevingswaarden provincie"
+      artikelen: "2.12-2.13a"
+    paragraaf_2.3.4:
+      titel: "Omgevingswaarden Rijk"
+      artikelen: "2.14-2.15a"
+
+# =============================================================================
+# PARAGRAAF 2.3.1 - ALGEMENE BEPALINGEN
+# =============================================================================
+
+artikelen:
+  - artikel: "2.9"
+    titel: "(omgevingswaarden)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "definitie"
+    paragraaf: "2.3.1"
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Op grond van deze afdeling worden omgevingswaarden vastgesteld met het oog op de doelen van de wet."
+        type: "koppeling_wetsdoelen"
+        interne_ref:
+          - artikel: "1.3"
+
+      - lid: 2
+        inhoud: "Een omgevingswaarde bepaalt voor de fysieke leefomgeving of een onderdeel daarvan:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de gewenste staat of kwaliteit"
+          - onderdeel: "b"
+            inhoud: "de toelaatbare belasting door activiteiten"
+          - onderdeel: "c"
+            inhoud: "de toelaatbare concentratie of depositie van stoffen"
+        type: "drieledige_definitie"
+
+      - lid: 3
+        inhoud: "Een omgevingswaarde wordt uitgedrukt in meetbare of berekenbare eenheden of anderszins in objectieve termen."
+        type: "objectiveringsvereiste"
+
+    juridische_analyse:
+      patroon: "KWANTITATIEVE_NORM"
+      kernkenmerken:
+        - "doelgebonden (lid 1)"
+        - "drie typen: staat/belasting/concentratie (lid 2)"
+        - "objectief meetbaar (lid 3)"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.10 - AARD EN TERMIJN OMGEVINGSWAARDEN
+  # ---------------------------------------------------------------------------
+  - artikel: "2.10"
+    titel: "(aard, termijn en locaties van omgevingswaarden en onderbouwing)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "vormvereisten"
+    paragraaf: "2.3.1"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij de vaststelling van een omgevingswaarde wordt bepaald:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "of deze waarde een resultaatverplichting, inspanningsverplichting of andere, daarbij te omschrijven verplichting met zich brengt"
+            type: "verplichtingssoort"
+            kernonderscheid:
+              resultaatverplichting: "waarde MOET bereikt worden"
+              inspanningsverplichting: "INZET om waarde te bereiken"
+          - onderdeel: "b"
+            inhoud: "de locaties waarop de omgevingswaarde van toepassing is"
+            type: "ruimtelijke_scope"
+
+      - lid: 2
+        inhoud: "Bij de vaststelling van een omgevingswaarde kan een termijn worden gesteld waarbinnen aan de verplichting, bedoeld in het eerste lid, onder a, moet zijn voldaan."
+        type: "facultatief"
+        note: "Termijn niet verplicht"
+
+      - lid: 3
+        inhoud: "Bij de vaststelling van een omgevingswaarde wordt onderbouwd welke taken en bevoegdheden op grond van deze of een andere wet in ieder geval worden ingezet om de omgevingswaarde te verwezenlijken."
+        type: "verplicht"
+        note: "Instrumentarium moet worden aangegeven"
+
+      - lid: 4
+        inhoud: "In afwijking van het eerste lid, aanhef en onder a, en het tweede lid kunnen bij algemene maatregel van bestuur regels worden gesteld over de aard en de termijn als de omgevingswaarde een geluidproductieplafond is."
+        type: "uitzondering"
+        scope: "geluidproductieplafonds"
+
+    juridische_analyse:
+      patroon: "RESULTAAT_VS_INSPANNING"
+      praktijk_belang: "Onderscheid cruciaal voor rechtsgevolgen"
+      note: "Resultaatverplichting = wettelijke plicht"
+
+# =============================================================================
+# PARAGRAAF 2.3.2 - OMGEVINGSWAARDEN GEMEENTE
+# =============================================================================
+
+  - artikel: "2.11"
+    titel: "(omgevingswaarden gemeente)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.3.2"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij omgevingsplan kunnen omgevingswaarden worden vastgesteld."
+        type: "facultatief"
+        note: "Gemeente KAN omgevingswaarden vaststellen"
+
+      - lid: 2
+        inhoud: "Bij omgevingsplan kunnen geen omgevingswaarden worden vastgesteld in aanvulling op of in afwijking van omgevingswaarden die bij omgevingsverordening, bij algemene maatregel van bestuur, bij besluit als bedoeld in artikel 2.12a, eerste lid, 2.13a, eerste lid, of 2.15, tweede lid, of in deze wet zijn vastgesteld, tenzij bij de omgevingsverordening, de maatregel, het besluit of, als omgevingswaarden in deze wet zijn vastgesteld, bij algemene maatregel van bestuur anders is bepaald."
+        type: "begrenzingsregel"
+        patroon: "GEEN_AFWIJKING_TENZIJ"
+        interne_ref:
+          - artikel: "2.12a"
+            lid: 1
+          - artikel: "2.13a"
+            lid: 1
+          - artikel: "2.15"
+            lid: 2
+
+    juridische_analyse:
+      patroon: "FACULTATIEF_BEGRENSD"
+      hiërarchie: "hogere omgevingswaarde prevaleert"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.11a - VERPLICHTE GPP INDUSTRIETERREINEN
+  # ---------------------------------------------------------------------------
+  - artikel: "2.11a"
+    titel: "(verplichte omgevingswaarden gemeente voor geluidproductie industrieterreinen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.3.2"
+
+    inhoud: "Bij omgevingsplan worden in ieder geval als omgevingswaarden geluidproductieplafonds vastgesteld rondom industrieterreinen waar bij algemene maatregel van bestuur aangewezen activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroorzaken."
+    type: "verplicht"
+    scope: "grote lawaaimakers"
+    delegatie: "AMvB wijst activiteiten aan"
+
+    juridische_analyse:
+      patroon: "VERPLICHTE_OMGEVINGSWAARDE"
+      parallel_met: "IPPC/SEVESO-bedrijven"
+
+# =============================================================================
+# PARAGRAAF 2.3.3 - OMGEVINGSWAARDEN PROVINCIE
+# =============================================================================
+
+  - artikel: "2.12"
+    titel: "(omgevingswaarden provincie)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.3.3"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij omgevingsverordening kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, omgevingswaarden worden vastgesteld."
+        type: "facultatief"
+        interne_ref:
+          - artikel: "2.3"
+            lid: 2
+            relatie: "subsidiariteitsgrenzen"
+
+      - lid: 2
+        inhoud: "Bij omgevingsverordening kunnen geen omgevingswaarden worden vastgesteld in aanvulling op of in afwijking van omgevingswaarden die bij algemene maatregel van bestuur, bij besluit als bedoeld in artikel 2.15, tweede lid, of in deze wet zijn vastgesteld, tenzij bij de maatregel, het besluit of, als omgevingswaarden in deze wet zijn vastgesteld, bij algemene maatregel van bestuur anders is bepaald."
+        type: "begrenzingsregel"
+        patroon: "GEEN_AFWIJKING_TENZIJ"
+
+    juridische_analyse:
+      patroon: "FACULTATIEF_BEGRENSD_SUBSIDIARITEIT"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.12a - GPP INDUSTRIETERREINEN (PROVINCIAAL)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.12a"
+    titel: "(omgevingswaarden provincie voor geluidproductie industrieterreinen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.3.3"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij omgevingsverordening kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, industrieterreinen worden aangewezen waarvoor provinciale staten bij besluit als omgevingswaarden geluidproductieplafonds vaststellen."
+        type: "facultatief"
+        scope: "provinciale industrieterreinen"
+
+      - lid: 2
+        inhoud: "Provinciale staten kunnen de bevoegdheid tot het bij besluit als omgevingswaarden vaststellen van geluidproductieplafonds delegeren aan gedeputeerde staten."
+        type: "delegatiemogelijkheid"
+        van: "PS"
+        naar: "GS"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.13 - VERPLICHTE OMGEVINGSWAARDEN WATERSYSTEMEN
+  # ---------------------------------------------------------------------------
+  - artikel: "2.13"
+    titel: "(verplichte omgevingswaarden provincie voor watersystemen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.3.3"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij omgevingsverordening worden met het oog op het waarborgen van de veiligheid en het voorkomen of beperken van wateroverlast in ieder geval omgevingswaarden vastgesteld voor:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de veiligheid van bij de verordening aangewezen andere dan primaire waterkeringen, voor zover die niet bij het Rijk in beheer zijn"
+            scope: "regionale waterkeringen"
+          - onderdeel: "b"
+            inhoud: "de gemiddelde kans op overstroming per jaar van bij de verordening aangewezen gebieden met het oog op de bergings- en afvoercapaciteit waarop regionale wateren moeten zijn ingericht"
+            scope: "regionale wateren"
+        type: "verplicht"
+
+      - lid: 2
+        inhoud: "Bij of krachtens de verordening worden voor de toepassing van het eerste lid, onder a, voor daarbij aan te geven locaties nadere regels gesteld over de vaststelling van het waterkerend vermogen van de daar bedoelde waterkeringen."
+        type: "nadere_regels"
+
+    juridische_analyse:
+      patroon: "VERPLICHTE_OMGEVINGSWAARDE_WATER"
+      eu_achtergrond: "Overstromingsrisicobeheerrichtlijn"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.13a - VERPLICHTE GPP WEGEN/SPOOR (PROVINCIAAL)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.13a"
+    titel: "(verplichte omgevingswaarden provincie voor geluidproductie wegen en lokale spoorwegen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.3.3"
+
+    leden:
+      - lid: 1
+        inhoud: "Provinciale staten stellen bij besluit als omgevingswaarden geluidproductieplafonds vast aan weerszijden van bij omgevingsverordening aangewezen:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "wegen in beheer bij de provincie"
+          - onderdeel: "b"
+            inhoud: "lokale spoorwegen, voor zover gelegen buiten de gebieden die op grond van artikel 20, derde lid, van de Wet personenvervoer 2000 zijn aangewezen"
+        type: "verplicht"
+        externe_ref:
+          - doc: "BWBR0011470"
+            artikel: "20"
+            lid: 3
+
+      - lid: 2
+        inhoud: "Provinciale staten kunnen deze bevoegdheid delegeren aan gedeputeerde staten."
+        type: "delegatiemogelijkheid"
+
+# =============================================================================
+# PARAGRAAF 2.3.4 - OMGEVINGSWAARDEN RIJK
+# =============================================================================
+
+  - artikel: "2.14"
+    titel: "(omgevingswaarden Rijk)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "bevoegdheid"
+    paragraaf: "2.3.4"
+
+    inhoud: "Bij algemene maatregel van bestuur kunnen, met inachtneming van de grenzen van artikel 2.3, derde lid, omgevingswaarden worden vastgesteld."
+    type: "facultatief"
+    delegatie: "AMvB"
+    interne_ref:
+      - artikel: "2.3"
+        lid: 3
+        relatie: "subsidiariteitsgrenzen"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.15 - VERPLICHTE OMGEVINGSWAARDEN RIJK
+  # ---------------------------------------------------------------------------
+  - artikel: "2.15"
+    titel: "(verplichte omgevingswaarden Rijk)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.3.4"
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Bij algemene maatregel van bestuur worden met het oog op het waarborgen van de veiligheid, het beschermen van de gezondheid, het beschermen van het milieu en het beheer van natuurlijke hulpbronnen in ieder geval omgevingswaarden vastgesteld voor:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "de kwaliteit van de buitenlucht, waaronder de concentraties van verontreinigende stoffen in de buitenlucht, ook in verband met de blootstelling van de mens aan die stoffen, ter uitvoering van de richtlijn luchtkwaliteit en de richtlijn gevaarlijke stoffen in de lucht"
+            eu_basis: ["Richtlijn 2008/50/EG", "Richtlijn 2004/107/EG"]
+          - onderdeel: "b"
+            inhoud: "de chemische en ecologische kwaliteit van oppervlaktewaterlichamen en de chemische kwaliteit en kwantitatieve toestand van grondwaterlichamen, ter uitvoering van de kaderrichtlijn water, de grondwaterrichtlijn en de richtlijn prioritaire stoffen"
+            eu_basis: ["Richtlijn 2000/60/EG", "Richtlijn 2006/118/EG", "Richtlijn 2008/105/EG"]
+          - onderdeel: "c"
+            inhoud: "de kwaliteit van zwemwater, ter uitvoering van de zwemwaterrichtlijn"
+            eu_basis: "Richtlijn 2006/7/EG"
+          - onderdeel: "d"
+            inhoud: "de veiligheid van primaire waterkeringen"
+          - onderdeel: "e"
+            inhoud: "de veiligheid van andere dan primaire waterkeringen, voor zover die in beheer zijn bij het Rijk"
+        type: "verplicht"
+
+      - lid: 2
+        inhoud: "Onze Minister van Infrastructuur en Waterstaat stelt bij besluit als omgevingswaarden geluidproductieplafonds vast aan weerszijden van bij ministeriële regeling aangewezen:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "wegen in beheer bij het Rijk"
+          - onderdeel: "b"
+            inhoud: "hoofdspoorwegen"
+        type: "verplicht"
+        bevoegd_gezag: "Minister IenW"
+
+      - lid: 3
+        inhoud: "Als uitgangspunt voor het vaststellen van de omgevingswaarden, bedoeld in het eerste lid, aanhef en onder d, geldt ten minste een beschermingsniveau waarmee in 2050 de kans om te overlijden als gevolg van een overstroming achter de primaire waterkering niet groter is dan 1 op 100.000 per jaar. Een hoger beschermingsniveau wordt geboden op plaatsen waar sprake kan zijn van:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "grote groepen dodelijke slachtoffers"
+          - onderdeel: "b"
+            inhoud: "substantiële economische schade"
+          - onderdeel: "c"
+            inhoud: "ernstige schade door uitval van vitale en kwetsbare infrastructuur van nationaal belang"
+        type: "minimum_beschermingsniveau"
+        kernwaarde: "1 op 100.000 per jaar"
+        termijn: "2050"
+
+      - lid: 4
+        inhoud: "Voor de toepassing van het eerste lid, aanhef en onder d, worden bij ministeriële regeling:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "voor daarbij aan te geven locaties nadere regels gesteld over het bepalen van de overstromingskans of de faalkans van de primaire waterkering"
+          - onderdeel: "b"
+            inhoud: "de locaties begrensd waarop de omgevingswaarden van toepassing zijn"
+        delegatie: "ministeriële regeling"
+
+      - lid: 5
+        inhoud: "Voor de toepassing van het eerste lid, aanhef en onder e, worden bij ministeriële regeling:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "voor daarbij aan te geven locaties nadere regels gesteld over het bepalen van de hydraulische belasting en de sterkte van de andere dan primaire waterkeringen, voor zover die in beheer zijn bij het Rijk"
+          - onderdeel: "b"
+            inhoud: "de locaties begrensd waarop de omgevingswaarden van toepassing zijn"
+        delegatie: "ministeriële regeling"
+
+      - lid: 6
+        inhoud: "De nadere regels, bedoeld in het vierde lid, onder a, worden voor primaire waterkeringen steeds na ten hoogste twaalf jaar herzien."
+        type: "herzieningstermijn"
+        periode: "12 jaar"
+
+    juridische_analyse:
+      patroon: "VERPLICHTE_OMGEVINGSWAARDEN_EU_IMPLEMENTATIE"
+      eu_richtlijnen:
+        - "luchtkwaliteit (a)"
+        - "kaderrichtlijn water (b)"
+        - "zwemwater (c)"
+      nationaal:
+        - "waterveiligheid (d,e)"
+        - "geluid wegen/spoor (lid 2)"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.15a - STIKSTOFWAARDEN (CENTRALE BEPALING)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.15a"
+    titel: "(omgevingswaarden stikstofdepositie)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht"
+    paragraaf: "2.3.4"
+    centrale_bepaling: true
+    politiek_gevoelig: true
+
+    leden:
+      - lid: 1
+        inhoud: "Het percentage van het areaal van de voor stikstof gevoelige habitats in Natura 2000-gebieden waarop de depositie van stikstof niet groter is dan de hoeveelheid in mol per hectare per jaar waarboven verslechtering van de kwaliteit van die habitats niet op voorhand is uit te sluiten, bedraagt:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "in 2025: ten minste 40%"
+            termijn: "2025"
+            percentage: 40
+          - onderdeel: "b"
+            inhoud: "in 2030: ten minste 50%"
+            termijn: "2030"
+            percentage: 50
+          - onderdeel: "c"
+            inhoud: "in 2035: ten minste 74%"
+            termijn: "2035"
+            percentage: 74
+        type: "getrapte_doelstelling"
+        kernbegrip: "kritische depositiewaarde (KDW)"
+
+      - lid: 2
+        inhoud: "De in het eerste lid bedoelde omgevingswaarden zijn resultaatsverplichtingen."
+        type: "aard_verplichting"
+        note: "RESULTAAT, geen inspanning"
+
+      - lid: 3
+        inhoud: "In ieder geval in 2028 wordt bezien of met het programma kan worden voldaan aan de omgevingswaarde voor 2035."
+        type: "evaluatiemoment"
+        termijn: "2028"
+        betreft: "doelstelling 2035 (74%)"
+
+      - lid: 4
+        inhoud: "Uiterlijk in 2033 en vervolgens steeds uiterlijk twee jaar voor het verstrijken van de termijn waarbinnen aan de omgevingswaarde, bedoeld in het eerste lid, onder c, moet zijn voldaan, dient de regering een voorstel van wet in tot wijziging van het eerste lid ten behoeve van de vaststelling van de omgevingswaarde voor de volgende periode, zodat de depositie op termijn wordt verminderd tot een niveau dat nodig is voor een gunstige staat van instandhouding van de betrokken natuurlijke habitats en soorten op landelijk niveau."
+        type: "wettelijke_verplichting"
+        termijn: "2033"
+        cyclus: "twee jaar voor termijn"
+        einddoel: "gunstige staat van instandhouding"
+
+    juridische_analyse:
+      patroon: "RESULTAATVERPLICHTING_STIKSTOF"
+      achtergrond:
+        - "PAS-uitspraak ABRvS 2019"
+        - "Stikstofwet (Wet stikstofreductie en natuurverbetering)"
+      koppeling_habitatrichtlijn: "art. 6 lid 2"
+      koppeling_ch16: "art. 16.53c (passende beoordeling)"
+      politieke_context: "Centraal in landbouw/natuur-discussie"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 2.3
+# =============================================================================
+
+analyse:
+  karakterisering: "Kwantitatieve normen voor kwaliteit fysieke leefomgeving"
+
+  kernonderscheid:
+    resultaatverplichting:
+      beschrijving: "Waarde MOET worden bereikt"
+      voorbeeld: "stikstofwaarden art. 2.15a"
+      rechtsgevolg: "overheid moet voldoen, anders handhaving mogelijk"
+    inspanningsverplichting:
+      beschrijving: "Inzet plegen om waarde te bereiken"
+      voorbeeld: "diverse kwaliteitsdoelen"
+      rechtsgevolg: "middelen inzetten, geen absolute plicht"
+
+  hiërarchie:
+    gemeente: "facultatief, begrensd door hoger niveau"
+    provincie: "facultatief (behalve water), begrensd door Rijk"
+    Rijk: "verplicht voor EU-implementatie en veiligheid"
+
+  verplichte_omgevingswaarden:
+    gemeente:
+      - "GPP industrieterreinen (art. 2.11a)"
+    provincie:
+      - "waterveiligheid regionale keringen (art. 2.13.1.a)"
+      - "waterbergings-/afvoercapaciteit (art. 2.13.1.b)"
+      - "GPP provinciale wegen/spoor (art. 2.13a)"
+    Rijk:
+      - "luchtkwaliteit (art. 2.15.1.a)"
+      - "waterkwaliteit (art. 2.15.1.b)"
+      - "zwemwater (art. 2.15.1.c)"
+      - "primaire waterkeringen (art. 2.15.1.d)"
+      - "rijkswaterkeringen (art. 2.15.1.e)"
+      - "GPP rijkswegen/spoor (art. 2.15.2)"
+      - "stikstofdepositie (art. 2.15a)"
+
+  koppelingen:
+    naar_ch1:
+      - artikel: "1.3"
+        relatie: "doelen wet"
+    naar_ch3:
+      - artikel: "3.7"
+        relatie: "programma omgevingswaarden"
+    naar_ch16:
+      - artikel: "16.53c"
+        relatie: "passende beoordeling Natura 2000"
+    naar_bkl:
+      - relatie: "uitwerking omgevingswaarden"
+
+  praktijk_belang:
+    stikstof: "Art. 2.15a centraal in stikstofcrisis"
+    waterveiligheid: "Art. 2.15.3 norm 1:100.000"
+    luchtkwaliteit: "EU-normen in art. 2.15.1.a"

@@ -1,0 +1,408 @@
+# Afdeling 5.2 - Projectprocedure
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 5
+  afdeling: "5.2"
+  titel: "Projectprocedure"
+  artikel_range: "5.44 - 5.55"
+  extraction_method: "atomic"
+  paragrafen:
+    - "5.2.1: Algemene bepalingen voor het projectbesluit (5.44-5.46)"
+    - "5.2.2: Voornemen, verkenning en voorkeursbeslissing (5.47-5.50)"
+    - "5.2.3: Projectbesluit (5.51-5.54)"
+    - "5.2.4: Gemeentelijke projecten van publiek belang (5.55)"
+
+# ============================================================================
+# PARAGRAAF 5.2.1 - ALGEMENE BEPALINGEN PROJECTBESLUIT
+# ============================================================================
+
+paragraaf_5.2.1:
+  titel: "Algemene bepalingen voor het projectbesluit"
+
+  artikelen:
+
+    5.44:
+      titel: "(bevoegd gezag projectbesluit)"
+
+      leden:
+        1:
+          tekst: "Voor het uitvoeren van een project en het in werking hebben of in stand houden daarvan kan een projectbesluit worden vastgesteld. Een projectbesluit wordt vastgesteld door het dagelijks bestuur van het waterschap of gedeputeerde staten of door Onze Minister die het aangaat, in overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "vaststellen projectbesluit"
+        logica: "facultatief (kan), alleen hogere overheden"
+
+      actoren:
+        - actor: "waterschap (dagelijks bestuur)"
+          rol: "bevoegd gezag"
+        - actor: "provincie (GS)"
+          rol: "bevoegd gezag"
+        - actor: "rijk (Minister)"
+          rol: "bevoegd gezag"
+        - actor: "Minister BZK"
+          rol: "overeenstemming vereist"
+
+      key_observation: "GEEN gemeente - projectbesluit is voor hogere overheden"
+
+      interne_refs:
+        - naar: "artikel 5.54"
+        - naar: "artikel 2.3"
+          context: "subsidiariteit"
+        - naar: "artikel 2.17, eerste lid, aanhef en onder a"
+
+    5.44a:
+      titel: "(voorrangsregel bevoegd gezag projectbesluit)"
+
+      leden:
+        1:
+          tekst: "Gedeputeerde staten van de provincie waar het project in hoofdzaak wordt uitgevoerd, zijn bevoegd om het projectbesluit vast te stellen."
+        2:
+          tekst: "Het dagelijks bestuur van het waterschap waar het project in hoofdzaak wordt uitgevoerd, is bevoegd om het projectbesluit vast te stellen als het project uitsluitend betrekking heeft op beheer van watersystemen."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "voorrang bij bevoegdheid"
+        logica: "geografisch (in hoofdzaak) + functioneel (waterschap)"
+
+    5.44b:
+      titel: "(flexibiliteitsregeling projectbesluit Rijk)"
+
+      leden:
+        1:
+          tekst: "Onze Minister die het aangaat, in overeenstemming met Onze Minister van BZK, kan de bevoegdheid om een projectbesluit vast te stellen overdragen aan gedeputeerde staten..."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "overdracht bevoegdheid"
+        logica: "Rijk kan delegeren aan GS"
+
+    5.45:
+      titel: "(coördinatie uitvoeringsbesluiten)"
+
+      leden:
+        1:
+          tekst: "Het bevoegd gezag voor het projectbesluit kan bepalen dat artikel 16.7 van toepassing is op de coördinatie van de besluiten ter uitvoering van het projectbesluit."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "coördinatie uitvoeringsbesluiten"
+        logica: "facultatieve toepassing coördinatieregeling"
+
+      interne_refs:
+        - naar: "artikel 16.7"
+          context: "coördinatieregeling Ch16"
+        - naar: "artikel 5.46"
+        - naar: "artikel 5.44, eerste lid"
+
+    5.45a:
+      titel: "(bevoegdheid tot indeplaatstreding)"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "indeplaatstreding"
+        logica: "GS/Minister kan besluit nemen als oorspronkelijk BG in gebreke"
+
+    5.46:
+      titel: "(projectbesluit voor hoofdinfrastructuur en primaire waterkeringen)"
+
+      leden:
+        1:
+          tekst: "Onze Minister van Infrastructuur en Waterstaat, in overeenstemming met Onze Minister van BZK, stelt voor werken met een nationaal belang in ieder geval een projectbesluit vast voor de volgende projecten: [a-d lijst]"
+
+      functie:
+        werkwoord: "verplicht"
+        object: "projectbesluit voor bepaalde projecten"
+        logica: "IMPERATIEF (stelt vast) voor nationaal belang"
+
+      key_observation: "Dit is een VERPLICHTING, anders dan 5.44 (kan)"
+
+      projecten:
+        - "aanleg autosnelweg/autoweg"
+        - "aanleg landelijke spoorweg"
+        - "aanleg primaire waterkering"
+        - "versterking primaire waterkering"
+
+# ============================================================================
+# PARAGRAAF 5.2.2 - VOORNEMEN, VERKENNING EN VOORKEURSBESLISSING
+# ============================================================================
+
+paragraaf_5.2.2:
+  titel: "Voornemen, verkenning en voorkeursbeslissing"
+  functie: "Regelt VOORFASE projectbesluit"
+
+  artikelen:
+
+    5.47:
+      titel: "(voornemen)"
+
+      leden:
+        1:
+          tekst: "Het bevoegd gezag geeft kennis van zijn voornemen om een verkenning uit te voeren naar een mogelijk bestaande of toekomstige opgave in de fysieke leefomgeving..."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "kennisgeving voornemen"
+        logica: "start projectprocedure"
+
+      proces_stap: 1
+
+    5.48:
+      titel: "(verkenning)"
+
+      leden:
+        1:
+          tekst: "Bij de verkenning vergaart het bevoegd gezag de nodige kennis en inzichten over: a. de aard van de opgave, b. de voor de fysieke leefomgeving relevante ontwikkelingen, en c. de mogelijke oplossingen voor die opgave."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "verkenning uitvoeren"
+        logica: "kennisvergaring + oplossingsverkenning"
+
+      proces_stap: 2
+
+      interne_refs:
+        - naar: "artikel 5.47, derde lid"
+
+    5.49:
+      titel: "(voorkeursbeslissing)"
+
+      leden:
+        1:
+          tekst: "De voorkeursbeslissing houdt in: a. het uitvoeren van een project, b. een oplossing zonder project, c. een combinatie van a of b met andere projecten, of d. het niet uitwerken van een oplossing."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "keuze na verkenning"
+        opties:
+          a: "project uitvoeren"
+          b: "oplossing zonder project"
+          c: "combinatie"
+          d: "geen oplossing uitwerken"
+
+      proces_stap: 3
+
+    5.50:
+      titel: "(uitwerken of wijzigen projectbesluit zonder paragraaf 5.2.2)"
+
+      leden:
+        1:
+          tekst: "Deze paragraaf is niet van toepassing op een uitwerking van een projectbesluit als bedoeld in artikel 5.54 of een wijziging van een projectbesluit."
+
+      functie:
+        werkwoord: "sluit uit"
+        object: "toepasselijkheid 5.2.2"
+        logica: "voorfase niet nodig bij uitwerking/wijziging"
+
+      interne_refs:
+        - naar: "paragraaf 5.2.2"
+        - naar: "artikel 5.54"
+
+# ============================================================================
+# PARAGRAAF 5.2.3 - PROJECTBESLUIT
+# ============================================================================
+
+paragraaf_5.2.3:
+  titel: "Projectbesluit"
+  functie: "Regelt INHOUD en WERKING projectbesluit"
+
+  artikelen:
+
+    5.51:
+      titel: "(inhoud projectbesluit)"
+
+      leden:
+        1:
+          tekst: "In het projectbesluit wordt aangegeven hoe burgers, bedrijven, maatschappelijke organisaties en bestuursorganen bij de voorbereiding zijn betrokken en wat de resultaten zijn van de uitgevoerde verkenning..."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "inhoud projectbesluit"
+        vereisten:
+          - "betrokkenheid stakeholders"
+          - "resultaten verkenning"
+          - "voorgedragen oplossingen"
+
+    5.52:
+      titel: "(integraal besluit)"
+
+      leden:
+        1:
+          tekst: "Het projectbesluit wijzigt het omgevingsplan met regels die nodig zijn voor het uitvoeren en in werking hebben of in stand houden van het project."
+        2:
+          tekst: "Voor zover dat uitdrukkelijk in het projectbesluit is bepaald, geldt het projectbesluit: a. als omgevingsvergunning voor activiteiten ter uitvoering van het project..."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "integrale werking"
+        logica: "projectbesluit = omgevingsplan-wijziging + vergunning"
+
+      key_concept:
+        integraal: "combineert planwijziging + vergunning"
+        vervangt: "separate omgevingsvergunningen niet nodig"
+
+    5.53:
+      titel: "(beoordelingsregels)"
+
+      leden:
+        1:
+          tekst: "Voor de toepassing van artikel 5.52, eerste lid, zijn de artikelen 4.1 en 4.2, eerste lid, en de paragrafen 4.1.2 en 4.3.1 van overeenkomstige toepassing."
+        2:
+          tekst: "Voor de toepassing van artikel 5.52, tweede lid, onder a, zijn de paragrafen 5.1.3 tot en met 5.1.5 en de op grond daarvan gestelde regels van overeenkomstige toepassing."
+
+      functie:
+        werkwoord: "koppelt"
+        object: "beoordelingsregels aan projectbesluit"
+        logica: "maakt Ch4 en 5.1.3-5.1.5 van toepassing"
+
+      interne_refs:
+        - naar: "artikel 5.52, eerste lid"
+        - naar: "artikelen 4.1, 4.2, eerste lid"
+        - naar: "paragrafen 4.1.2, 4.3.1"
+        - naar: "artikel 5.52, tweede lid, onder a"
+        - naar: "paragrafen 5.1.3 tot en met 5.1.5"
+          context: "beoordelingsregels omgevingsvergunning"
+
+      connection: "Koppelt projectbesluit aan Afd 5.1 beoordelingslogica"
+
+    5.53a:
+      titel: "(geen belemmering projectbesluit en voorbereidingsbesluit)"
+
+      functie:
+        werkwoord: "regelt"
+        object: "verhouding tot instructieregels"
+
+      interne_refs:
+        - naar: "Artikel 4.19a"
+        - naar: "artikel 2.24"
+        - naar: "artikel 2.34"
+
+    5.54:
+      titel: "(uitwerking binnen besluit)"
+
+      leden:
+        1:
+          tekst: "Bij een projectbesluit kan worden bepaald dat het besluit met inachtneming van de daarbij gestelde randvoorwaarden door het bevoegd gezag kan worden uitgewerkt."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "uitwerking projectbesluit"
+        logica: "gefaseerde uitwerking mogelijk"
+
+# ============================================================================
+# PARAGRAAF 5.2.4 - GEMEENTELIJKE PROJECTEN
+# ============================================================================
+
+paragraaf_5.2.4:
+  titel: "Gemeentelijke projecten van publiek belang"
+
+  artikelen:
+
+    5.55:
+      titel: "(gemeentelijk project van publiek belang)"
+
+      leden:
+        1:
+          tekst: "Als het opnemen van regels in het omgevingsplan die gericht zijn op het uitvoeren en in werking hebben of in stand houden van een project van publiek belang wordt voorbereid met overeenkomstige toepassing van de artikelen 5.45, 5.47, 5.48, 5.49, 5.51..."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "gemeentelijke toepassing projectprocedure"
+        logica: "gemeente kan projectprocedure-elementen toepassen op omgevingsplan"
+
+      key_observation: |
+        Gemeente heeft GEEN projectbesluit (zie 5.44), maar kan
+        WEL de projectprocedure-stappen gebruiken voor omgevingsplan
+
+      interne_refs:
+        - naar: "artikelen 5.45, eerste en derde lid"
+        - naar: "5.47, 5.48, 5.49, 5.51"
+        - naar: "artikel 16.87"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  structure:
+    staged_process: |
+      5.47 VOORNEMEN (kennisgeving)
+           ↓
+      5.48 VERKENNING (kennisvergaring)
+           ↓
+      5.49 VOORKEURSBESLISSING (keuze)
+           ↓
+      5.51-5.54 PROJECTBESLUIT (vaststelling)
+
+    actor_exclusion:
+      projectbesluit_actors: ["waterschap", "provincie", "rijk"]
+      excluded: "gemeente"
+      gemeentelijke_route: "5.55 - via omgevingsplan met projectprocedure-elementen"
+
+  key_concepts:
+
+    integraal_besluit:
+      artikel: "5.52"
+      betekenis: |
+        Projectbesluit combineert:
+        - Wijziging omgevingsplan (lid 1)
+        - Geldt als omgevingsvergunning (lid 2)
+        Dit vervangt separate besluiten
+
+    bevoegd_gezag_hierarchie:
+      default: "5.44 - GS/Minister/Waterschap (kan)"
+      voorrang: "5.44a - waar project in hoofdzaak wordt uitgevoerd"
+      verplicht: "5.46 - hoofdinfrastructuur (moet)"
+
+    verhouding_afd_5.1:
+      via_5.53: "beoordelingsregels 5.1.3-5.1.5 van toepassing"
+      betekenis: "projectbesluit volgt zelfde beoordelingslogica als omgevingsvergunning"
+
+  delegation_pattern:
+    - "5.44: bevoegdheid bij hogere overheden"
+    - "5.44b: Rijk kan delegeren aan GS"
+    - "5.45: koppeling naar 16.7 coördinatie"
+    - "5.53: koppeling naar Ch4 en Afd 5.1"
+
+  connection_to_afdeling_5.1:
+    beoordelingsregels: "5.53 → 5.1.3-5.1.5"
+    vergunning_functie: "5.52 lid 2 - projectbesluit als vergunning"
+    logica: "Afd 5.2 bouwt voort op Afd 5.1 framework"
+
+# ============================================================================
+# CHAPTER 5 COMPLETE SUMMARY
+# ============================================================================
+
+chapter_5_summary:
+  total_artikelen: 65
+
+  afdelingen:
+    5.1:
+      titel: "De omgevingsvergunning"
+      artikelen: "5.1 - 5.43 (49 actief)"
+      functie: "Individuele vergunning voor activiteiten"
+      bevoegd_gezag: "Alle niveaus (default gemeente)"
+
+    5.2:
+      titel: "Projectprocedure"
+      artikelen: "5.44 - 5.55 (12)"
+      functie: "Integraal besluit voor grote projecten"
+      bevoegd_gezag: "Alleen hogere overheden (waterschap/GS/Rijk)"
+
+  relationship:
+    pattern: |
+      Afd 5.1 = REGULIER instrument (omgevingsvergunning)
+      Afd 5.2 = BIJZONDER instrument (projectbesluit)
+
+      Projectbesluit is INTEGRAAL:
+      - Vervangt omgevingsplan-wijziging
+      - Vervangt omgevingsvergunningen
+      - Gebruikt WEL beoordelingsregels uit Afd 5.1
+
+  connections_to_other_chapters:
+    ch2: "subsidiariteit (2.3), instructieregels (2.24, 2.34)"
+    ch4: "beoordelingsregels (4.1, 4.2, 4.1.2, 4.3.1)"
+    ch16: "coördinatie (16.7), procedures"

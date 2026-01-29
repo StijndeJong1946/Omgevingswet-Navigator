@@ -1,0 +1,800 @@
+_metadata:
+  id: ow-infra-definitions
+  title: Omgevingswet Begripsbepalingen
+  source: Bijlage bij artikel 1.1 Omgevingswet
+  source_path: /Bijlage/DivisieA
+  extraction_date: '2026-01-28'
+  count: 152
+definitions:
+- term: afvalstoffen
+  definition: afvalstoffen waarop de Wet milieubeheer van toepassing is;
+  path: /Bijlage/DivisieA/Onderdeel_1
+  id: ow-def-afvalstoffen
+- term: afvalwater
+  definition: alle water waarvan de houder zich ontdoet, voornemens is zich te ontdoen of zich moet ontdoen;
+  path: /Bijlage/DivisieA/Onderdeel_2
+  id: ow-def-afvalwater
+- term: alarmeringswaarde
+  definition: alarmeringswaarde als bedoeld in artikel 19.10;
+  path: /Bijlage/DivisieA/Onderdeel_3
+  id: ow-def-alarmeringswaarde
+- term: andere milieubelastende installatie
+  definition: vaste technische eenheid waarin een milieubelastende activiteit, anders dan een activiteit als bedoeld in bijlage
+    I bij de richtlijn industriële emissies, wordt verricht en ook andere activiteiten die worden verricht op dezelfde locatie
+    die met die activiteit rechtstreeks samenhangen, in technisch verband staan en gevolgen kunnen hebben voor de emissies
+    en verontreiniging;
+  path: /Bijlage/DivisieA/Onderdeel_4
+  id: ow-def-andere-milieubelastende-installatie
+- term: archeologisch monument
+  definition: archeologisch monument als bedoeld in artikel 1.1 van de Erfgoedwet;
+  path: /Bijlage/DivisieA/Onderdeel_5
+  id: ow-def-archeologisch-monument
+- term: archeologische toevalsvondst van algemeen belang
+  definition: onverwachte vondst in of op de bodem, anders dan bij het doen van opgravingen als bedoeld in artikel 1.1 van
+    de Erfgoedwet, voor zover evident of vermoedelijk van algemeen belang uit het oogpunt van de archeologische monumentenzorg;
+  path: /Bijlage/DivisieA/Onderdeel_6
+  id: ow-def-archeologische-toevalsvondst-van-algemeen-belang
+- term: autosnelweg
+  definition: op grond van de Wegenverkeerswet 1994 aangeduide autosnelweg;
+  path: /Bijlage/DivisieA/Onderdeel_7
+  id: ow-def-autosnelweg
+- term: autoweg
+  definition: op grond van de Wegenverkeerswet 1994 aangeduide autoweg;
+  path: /Bijlage/DivisieA/Onderdeel_8
+  id: ow-def-autoweg
+- term: beheer van afvalstoffen
+  definition: beheer van afvalstoffen als bedoeld in artikel 1.1 van de Wet milieubeheer;
+  path: /Bijlage/DivisieA/Onderdeel_9
+  id: ow-def-beheer-van-afvalstoffen
+- term: beheer van watersystemen
+  definition: samenstel van aan watersystemen verbonden taken, gericht op het voorkomen en waar nodig beperken van overstromingen,
+    wateroverlast en waterschaarste, in samenhang met het beschermen en verbeteren van de chemische en ecologische kwaliteit
+    van die watersystemen en de vervulling van de op grond van deze wet aan die watersystemen toegekende maatschappelijke
+    functies;
+  path: /Bijlage/DivisieA/Onderdeel_10
+  id: ow-def-beheer-van-watersystemen
+- term: beperkingengebied
+  definition: bij of krachtens de wet aangewezen gebied waar vanwege de aanwezigheid van een werk of object regels gelden
+    over activiteiten die gevolgen hebben of kunnen hebben voor dat werk of object;
+  path: /Bijlage/DivisieA/Onderdeel_11
+  id: ow-def-beperkingengebied
+- term: beperkingengebiedactiviteit
+  definition: activiteit binnen een beperkingengebied;
+  path: /Bijlage/DivisieA/Onderdeel_12
+  id: ow-def-beperkingengebiedactiviteit
+- term: bergingsgebied
+  definition: gebied waaraan op grond van deze wet een functie voor waterstaatkundige doeleinden is toegedeeld, niet zijnde
+    een oppervlaktewaterlichaam of onderdeel daarvan, dat dient ter verruiming van de bergingscapaciteit van een of meer watersystemen
+    en dat ook als bergingsgebied op de legger is opgenomen;
+  path: /Bijlage/DivisieA/Onderdeel_13
+  id: ow-def-bergingsgebied
+- term: beschermen van het milieu
+  definition: beschermen en verbeteren van het milieu;
+  path: /Bijlage/DivisieA/Onderdeel_14
+  id: ow-def-beschermen-van-het-milieu
+- term: besluit geldelijke regelingen
+  definition: besluit als bedoeld in artikel 12.36;
+  path: /Bijlage/DivisieA/Onderdeel_15
+  id: ow-def-besluit-geldelijke-regelingen
+- term: beste beschikbare technieken
+  definition: 'het meest doeltreffende en geavanceerde ontwikkelingsstadium van de activiteiten en exploitatiemethoden waarbij
+    de praktische bruikbaarheid van speciale technieken om het uitgangspunt voor de emissiegrenswaarden en andere vergunningsvoorwaarden
+    te vormen is aangetoond, met als doel emissies en gevolgen voor het milieu in zijn geheel te voorkomen of, wanneer dit
+    niet mogelijk is, te beperken, waarbij wordt verstaan onder:'
+  path: /Bijlage/DivisieA/Onderdeel_16
+  id: ow-def-beste-beschikbare-technieken
+  sub_definitions:
+  - nr: a.
+    text: '«technieken»: zowel de toegepaste technieken als de wijze waarop de installatie wordt ontworpen, gebouwd, onderhouden,
+      geëxploiteerd en ontmanteld,'
+  - nr: b.
+    text: '«beschikbare»: op zodanige schaal ontwikkeld dat de betrokken technieken, kosten en baten in aanmerking genomen,
+      economisch en technisch haalbaar in de betrokken industriële context kunnen worden toegepast, onafhankelijk van de vraag
+      of die technieken wel of niet binnen Nederland worden toegepast of geproduceerd, mits zij voor de exploitant op redelijke
+      voorwaarden toegankelijk zijn, en'
+  - nr: c.
+    text: '«beste»: het meest doeltreffend voor het bereiken van een hoog algemeen niveau van bescherming van het milieu in
+      zijn geheel;'
+- term: bijzonder nationaal natuurgebied
+  definition: natuurgebied als bedoeld in artikel 2.44, tweede lid;
+  path: /Bijlage/DivisieA/Onderdeel_17
+  id: ow-def-bijzonder-nationaal-natuurgebied
+- term: bijzondere spoorweg
+  definition: spoorweg die niet als hoofdspoorweg of lokale spoorweg is aangewezen;
+  path: /Bijlage/DivisieA/Onderdeel_18
+  id: ow-def-bijzondere-spoorweg
+- term: binnen of buiten het grondgebied van Nederland brengen
+  definition: activiteit die is gericht op het bewerkstelligen van het binnen of buiten het grondgebied van Nederland brengen;
+  path: /Bijlage/DivisieA/Onderdeel_19
+  id: ow-def-binnen-of-buiten-het-grondgebied-van-nederland-brengen
+- term: bodem
+  definition: het vaste deel van de aarde met de zich daarin bevindende vloeibare en gasvormige bestanddelen en organismen;
+  path: /Bijlage/DivisieA/Onderdeel_20
+  id: ow-def-bodem
+- term: bouwactiviteit
+  definition: activiteit inhoudende het bouwen van een bouwwerk;
+  path: /Bijlage/DivisieA/Onderdeel_21
+  id: ow-def-bouwactiviteit
+- term: bouwen
+  definition: plaatsen, geheel of gedeeltelijk oprichten, vernieuwen, veranderen of vergroten;
+  path: /Bijlage/DivisieA/Onderdeel_22
+  id: ow-def-bouwen
+- term: bouwwerk
+  definition: constructie van enige omvang van hout, steen, metaal of ander materiaal, die op de plaats van bestemming hetzij
+    direct of indirect met de grond verbonden is, hetzij direct of indirect steun vindt in of op de grond, bedoeld om ter
+    plaatse te functioneren, met inbegrip van de daarvan deel uitmakende bouwwerkgebonden installaties anders dan een schip
+    dat wordt gebruikt voor verblijf van personen en dat is bestemd en wordt gebruikt voor de vaart;
+  path: /Bijlage/DivisieA/Onderdeel_23
+  id: ow-def-bouwwerk
+- term: buitenplanse omgevingsplanactiviteit
+  definition: 'activiteit, inhoudende:'
+  path: /Bijlage/DivisieA/Onderdeel_24
+  id: ow-def-buitenplanse-omgevingsplanactiviteit
+  sub_definitions:
+  - nr: a.
+    text: een activiteit waarvoor in het omgevingsplan is bepaald dat het is verboden deze zonder omgevingsvergunning te verrichten
+      en die in strijd is met het omgevingsplan, of
+  - nr: b.
+    text: een andere activiteit die in strijd is met het omgevingsplan;
+- term: burgerluchthaven van regionale betekenis
+  definition: luchthaven, niet zijnde de luchthaven Schiphol, een overige burgerluchthaven van nationale betekenis of een
+    militaire luchthaven;
+  path: /Bijlage/DivisieA/Onderdeel_25
+  id: ow-def-burgerluchthaven-van-regionale-betekenis
+- term: Commissie voor de milieueffectrapportage
+  definition: het adviesorgaan, genoemd in artikel 17.5;
+  path: /Bijlage/DivisieA/Onderdeel_26
+  id: ow-def-commissie-voor-de-milieueffectrapportage
+- term: cultureel erfgoed
+  definition: monumenten, archeologische monumenten, stads- en dorpsgezichten, cultuurlandschappen en, voor zover dat voorwerp
+    is of kan zijn van een evenwichtige toedeling van functies aan locaties in het omgevingsplan, ander cultureel erfgoed
+    als bedoeld in artikel 1.1 van de Erfgoedwet;
+  path: /Bijlage/DivisieA/Onderdeel_27
+  id: ow-def-cultureel-erfgoed
+- term: delfstoffen
+  definition: delfstoffen als bedoeld in artikel 1, onder a, van de Mijnbouwwet;
+  path: /Bijlage/DivisieA/Onderdeel_28
+  id: ow-def-delfstoffen
+- term: dieren
+  definition: in ieder geval dieren in al hun ontwikkelingsstadia, levend of dood, delen van dieren, uit deze dieren verkregen
+    producten, of andere zaken voor zover uit een begeleidend document, de verpakking, een merk of etiket, of uit andere omstandigheden
+    blijkt dat het gaat om delen van dieren of daaruit verkregen producten, met uitzondering van eieren;
+  path: /Bijlage/DivisieA/Onderdeel_29
+  id: ow-def-dieren
+- term: doelen van de wet
+  definition: de doelen, bedoeld in artikel 1.3;
+  path: /Bijlage/DivisieA/Onderdeel_30
+  id: ow-def-doelen-van-de-wet
+- term: duurzame ontwikkeling
+  definition: ontwikkeling die voorziet in de behoeften van de huidige generatie zonder de mogelijkheden voor toekomstige
+    generaties om in hun eigen behoeften te voorzien in gevaar te brengen;
+  path: /Bijlage/DivisieA/Onderdeel_31
+  id: ow-def-duurzame-ontwikkeling
+- term: eieren
+  definition: eieren en schalen van eieren;
+  path: /Bijlage/DivisieA/Onderdeel_32
+  id: ow-def-eieren
+- term: emissie
+  definition: directe of indirecte uitstoot, uit puntbronnen of diffuse bronnen, van stoffen, trillingen, warmte of geluid
+    in de lucht, het water of de bodem;
+  path: /Bijlage/DivisieA/Onderdeel_33
+  id: ow-def-emissie
+- term: energie-infrastructuur
+  definition: werken, kabels of leidingen, waaronder lege buizen, ondergrondse ondersteuningswerken en beschermingswerken,
+    bestemd voor opwekking of winning, transport en opslag van elektriciteit, respectievelijk stoffen als energiedrager;
+  path: /Bijlage/DivisieA/Onderdeel_34
+  id: ow-def-energie-infrastructuur
+- term: faunabeheereenheid
+  definition: faunabeheereenheid als bedoeld in artikel 8.1;
+  path: /Bijlage/DivisieA/Onderdeel_35
+  id: ow-def-faunabeheereenheid
+- term: faunabeheerplan
+  definition: faunabeheerplan als bedoeld in artikel 8.1;
+  path: /Bijlage/DivisieA/Onderdeel_36
+  id: ow-def-faunabeheerplan
+- term: flora- en fauna-activiteit
+  definition: activiteit met mogelijke gevolgen voor van nature in het wild levende dieren of planten;
+  path: /Bijlage/DivisieA/Onderdeel_37
+  id: ow-def-flora-en-fauna-activiteit
+- term: gebouw
+  definition: bouwwerk dat een voor mensen toegankelijke overdekte geheel of gedeeltelijk met wanden omsloten ruimte vormt;
+  path: /Bijlage/DivisieA/Onderdeel_38
+  id: ow-def-gebouw
+- term: gedoogplichtbeschikking
+  definition: beschikking tot oplegging van een gedoogplicht als bedoeld in afdeling 10.3;
+  path: /Bijlage/DivisieA/Onderdeel_39
+  id: ow-def-gedoogplichtbeschikking
+- term: gelijkwaardige maatregel
+  definition: gelijkwaardige maatregel als bedoeld in artikel 4.7;
+  path: /Bijlage/DivisieA/Onderdeel_40
+  id: ow-def-gelijkwaardige-maatregel
+- term: gemeentelijk voorkeursrecht
+  definition: voorkeursrecht op naam van een gemeente;
+  path: /Bijlage/DivisieA/Onderdeel_41
+  id: ow-def-gemeentelijk-voorkeursrecht
+- term: gesloten stortplaats
+  definition: gesloten stortplaats als bedoeld in artikel 8.47, eerste lid, onder b, van de Wet milieubeheer;
+  path: /Bijlage/DivisieA/Onderdeel_42
+  id: ow-def-gesloten-stortplaats
+- term: gevaarlijke afvalstof
+  definition: gevaarlijke afvalstof als bedoeld in artikel 1.1 van de Wet milieubeheer;
+  path: /Bijlage/DivisieA/Onderdeel_43
+  id: ow-def-gevaarlijke-afvalstof
+- term: grondwater
+  definition: water dat zich onder het bodemoppervlak in de verzadigde zone bevindt en dat in direct contact met de bodem
+    of ondergrond staat;
+  path: /Bijlage/DivisieA/Onderdeel_44
+  id: ow-def-grondwater
+- term: grondwaterlichaam
+  definition: afzonderlijke grondwatermassa in een of meer watervoerende lagen;
+  path: /Bijlage/DivisieA/Onderdeel_45
+  id: ow-def-grondwaterlichaam
+- term: habitat van een soort
+  definition: door specifieke abiotische en biotische factoren bepaald milieu waarin de soort tijdens een van de fasen van
+    zijn biologische cyclus leeft;
+  path: /Bijlage/DivisieA/Onderdeel_46
+  id: ow-def-habitat-van-een-soort
+- term: herbeplanten
+  definition: door aanplant, bezaaiing of natuurlijke verjonging of op andere wijze realiseren van een nieuwe houtopstand;
+  path: /Bijlage/DivisieA/Onderdeel_47
+  id: ow-def-herbeplanten
+- term: herverkaveling
+  definition: samenvoeging van onroerende zaken in een gebied, verdeling van het gebied in kavels en toewijzing van die kavels
+    aan eigenaren;
+  path: /Bijlage/DivisieA/Onderdeel_48
+  id: ow-def-herverkaveling
+- term: herverkavelingsblok
+  definition: een geheel van in een herverkaveling opgenomen onroerende zaken;
+  path: /Bijlage/DivisieA/Onderdeel_49
+  id: ow-def-herverkavelingsblok
+- term: hoofdspoorweg
+  definition: spoorweg als bedoeld in artikel 2, tweede lid, van de Spoorwegwet;
+  path: /Bijlage/DivisieA/Onderdeel_50
+  id: ow-def-hoofdspoorweg
+- term: hoofdspoorweginfrastructuur
+  definition: hoofdspoorweginfrastructuur als bedoeld in artikel 1, eerste lid, van de Spoorwegwet;
+  path: /Bijlage/DivisieA/Onderdeel_51
+  id: ow-def-hoofdspoorweginfrastructuur
+- term: houtopstand
+  definition: zelfstandige eenheid van bomen, boomvormers, struiken, hakhout of griend;
+  path: /Bijlage/DivisieA/Onderdeel_52
+  id: ow-def-houtopstand
+- term: infrastructuur
+  definition: wegen en vaarwegen, waaronder routenetwerken voor wandelen, fietsen en varen, spoorwegen, havens, luchthavens,
+    energie-infrastructuur, telecommunicatie-infrastructuur, buisleidingen, openbare hemelwater- en ontwateringsstelsels en
+    vuilwaterriolen, infrastructuur voor watervoorzieningswerken als bedoeld in artikel 1, eerste lid, van de Drinkwaterwet
+    en andere vitale infrastructuur;
+  path: /Bijlage/DivisieA/Onderdeel_53
+  id: ow-def-infrastructuur
+- term: inrichtingsbesluit
+  definition: besluit als bedoeld in artikel 12.7;
+  path: /Bijlage/DivisieA/Onderdeel_54
+  id: ow-def-inrichtingsbesluit
+- term: inrichtingsprogramma
+  definition: programma als bedoeld in artikel 3.14a;
+  path: /Bijlage/DivisieA/Onderdeel_55
+  id: ow-def-inrichtingsprogramma
+- term: instandhoudingsdoelstellingen
+  definition: instandhoudingsdoelstellingen als bedoeld in artikel 2.44, eerste lid;
+  path: /Bijlage/DivisieA/Onderdeel_56
+  id: ow-def-instandhoudingsdoelstellingen
+- term: internationaalrechtelijke verplichting
+  definition: verplichting op grond van een voor Nederland verbindend verdrag of besluit van een volkenrechtelijke organisatie;
+  path: /Bijlage/DivisieA/Onderdeel_57
+  id: ow-def-internationaalrechtelijke-verplichting
+- term: invasieve uitheemse soort
+  definition: uitheemse soort waarvan is vastgesteld dat de introductie of verspreiding ervan een bedreiging is of nadelige
+    gevolgen heeft voor de biodiversiteit en aanverwante ecosysteemdiensten;
+  path: /Bijlage/DivisieA/Onderdeel_58
+  id: ow-def-invasieve-uitheemse-soort
+- term: ippc-installatie
+  definition: installatie als bedoeld in artikel 3, onder 3, van de richtlijn industriële emissies, voor zover daarin een
+    activiteit als bedoeld in bijlage I bij die richtlijn wordt verricht;
+  path: /Bijlage/DivisieA/Onderdeel_59
+  id: ow-def-ippc-installatie
+- term: jacht
+  definition: bemachtigen, opzettelijk doden of met het oog daarop opsporen van dieren van soorten, genoemd in artikel 8.3,
+    vierde lid, en het doen van pogingen daartoe, in een jachtveld, in overeenstemming met de regels over de uitoefening van
+    de jacht, gesteld op grond van artikel 4.3, eerste lid, onder k;
+  path: /Bijlage/DivisieA/Onderdeel_60
+  id: ow-def-jacht
+- term: jachtgeweeractiviteit
+  definition: het gebruik van een geweer om in het wild levende dieren te doden;
+  path: /Bijlage/DivisieA/Onderdeel_61
+  id: ow-def-jachtgeweeractiviteit
+- term: jachthouder
+  definition: degene die op grond van artikel 8.3 gerechtigd is tot het uitoefenen van de jacht in een jachtveld;
+  path: /Bijlage/DivisieA/Onderdeel_62
+  id: ow-def-jachthouder
+- term: jachtveld
+  definition: voor de uitoefening van de jacht bestemd of geschikt terrein;
+  path: /Bijlage/DivisieA/Onderdeel_63
+  id: ow-def-jachtveld
+- term: kavel
+  definition: een aaneengesloten oppervlakte gronden van een eigenaar, omgeven door gronden van andere eigenaren of door openbare
+    wegen of spoorwegen, of door niet overschrijdbare waterlopen;
+  path: /Bijlage/DivisieA/Onderdeel_64
+  id: ow-def-kavel
+- term: korpschef
+  definition: korpschef als bedoeld in artikel 27 van de Politiewet 2012;
+  path: /Bijlage/DivisieA/Onderdeel_65
+  id: ow-def-korpschef
+- term: landinrichtingsactiviteit
+  definition: activiteit die gevolgen heeft of kan hebben voor de uitvoering van een inrichtingsprogramma;
+  path: /Bijlage/DivisieA/Onderdeel_66
+  id: ow-def-landinrichtingsactiviteit
+- term: landschappen
+  definition: gebieden zoals die door mensen worden waargenomen, waarvan het karakter wordt bepaald door natuurlijke of menselijke
+    factoren en de interactie daartussen;
+  path: /Bijlage/DivisieA/Onderdeel_67
+  id: ow-def-landschappen
+- term: legger
+  definition: legger als bedoeld in artikel 2.39;
+  path: /Bijlage/DivisieA/Onderdeel_68
+  id: ow-def-legger
+- term: lokale spoorweg
+  definition: spoorweg die krachtens artikel 2, eerste lid, van de Wet lokaal spoor als zodanig is aangewezen;
+  path: /Bijlage/DivisieA/Onderdeel_69
+  id: ow-def-lokale-spoorweg
+- term: lokale spoorweginfrastructuur
+  definition: de elementen, bedoeld in artikel 2, vijfde lid, van de Wet lokaal spoor;
+  path: /Bijlage/DivisieA/Onderdeel_70
+  id: ow-def-lokale-spoorweginfrastructuur
+- term: lozingsactiviteit op een oppervlaktewaterlichaam
+  definition: activiteit, niet zijnde een stortingsactiviteit op zee, inhoudende het brengen van stoffen, warmte of water
+    direct op een oppervlaktewaterlichaam, voor zover het gaat om de gevolgen van die stoffen of warmte of dat water voor
+    het watersysteem;
+  path: /Bijlage/DivisieA/Onderdeel_71
+  id: ow-def-lozingsactiviteit-op-een-oppervlaktewaterlichaam
+- term: lozingsactiviteit op een zuiveringtechnisch werk
+  definition: activiteit inhoudende het brengen van stoffen, warmte of water met behulp van een werk, niet zijnde een openbaar
+    vuilwaterriool, in een zuiveringtechnisch werk in exploitatie bij een waterschap of een rechtspersoon die door het bestuur
+    van een waterschap met de zuivering van stedelijk afvalwater is belast, voor zover het gaat om de gevolgen van die stoffen
+    of warmte of dat water voor het zuiveringtechnisch werk of het watersysteem;
+  path: /Bijlage/DivisieA/Onderdeel_72
+  id: ow-def-lozingsactiviteit-op-een-zuiveringtechnisch-werk
+- term: luchthaven
+  definition: luchthaven als bedoeld in artikel 1.1, eerste lid, van de Wet luchtvaart;
+  path: /Bijlage/DivisieA/Onderdeel_73
+  id: ow-def-luchthaven
+- term: luchthavenbesluit
+  definition: luchthavenbesluit als bedoeld in artikel 1.1, eerste lid, van de Wet luchtvaart;
+  path: /Bijlage/DivisieA/Onderdeel_74
+  id: ow-def-luchthavenbesluit
+- term: maatwerkregels
+  definition: maatwerkregels als bedoeld in artikel 4.6;
+  path: /Bijlage/DivisieA/Onderdeel_75
+  id: ow-def-maatwerkregels
+- term: maatwerkvoorschriften
+  definition: maatwerkvoorschriften als bedoeld in artikel 4.5;
+  path: /Bijlage/DivisieA/Onderdeel_76
+  id: ow-def-maatwerkvoorschriften
+- term: mijnbouwinstallatie
+  definition: mijnbouwinstallatie als bedoeld in artikel 1, onder o, van de Mijnbouwwet;
+  path: /Bijlage/DivisieA/Onderdeel_77
+  id: ow-def-mijnbouwinstallatie
+- term: mijnbouwlocatieactiviteit
+  definition: 'activiteit inhoudende het gebruiken van een locatie in een oppervlaktewaterlichaam voor:'
+  path: /Bijlage/DivisieA/Onderdeel_78
+  id: ow-def-mijnbouwlocatieactiviteit
+  sub_definitions:
+  - nr: a.
+    text: een mijnbouwinstallatie, met inbegrip van het voor die installatie geldende beperkingengebied, of
+  - nr: b.
+    text: een verkenningsonderzoek, met uitzondering van het bij dat onderzoek gebruiken van ontplofbare stoffen;
+- term: mijnbouwwerk
+  definition: mijnbouwwerk als bedoeld in artikel 1, onder n, van de Mijnbouwwet;
+  path: /Bijlage/DivisieA/Onderdeel_79
+  id: ow-def-mijnbouwwerk
+- term: milieubelastende activiteit
+  definition: activiteit die nadelige gevolgen voor het milieu kan veroorzaken, niet zijnde een lozingsactiviteit op een oppervlaktewaterlichaam
+    of een lozingsactiviteit op een zuiveringtechnisch werk of een wateronttrekkingsactiviteit;
+  path: /Bijlage/DivisieA/Onderdeel_80
+  id: ow-def-milieubelastende-activiteit
+- term: milieueffectrapport
+  definition: milieueffectrapport als bedoeld in afdeling 16.4;
+  path: /Bijlage/DivisieA/Onderdeel_81
+  id: ow-def-milieueffectrapport
+- term: militaire luchthaven
+  definition: militaire luchthaven als bedoeld in artikel 10.12, eerste lid, van de Wet luchtvaart;
+  path: /Bijlage/DivisieA/Onderdeel_82
+  id: ow-def-militaire-luchthaven
+- term: monument
+  definition: monument als bedoeld in artikel 1.1 van de Erfgoedwet;
+  path: /Bijlage/DivisieA/Onderdeel_83
+  id: ow-def-monument
+- term: nationaal park
+  definition: gebied met belangrijke natuurwetenschappelijke of landschappelijke kwaliteiten;
+  path: /Bijlage/DivisieA/Onderdeel_84
+  id: ow-def-nationaal-park
+- term: nationaal voorkeursrecht
+  definition: voorkeursrecht op naam van de Staat;
+  path: /Bijlage/DivisieA/Onderdeel_85
+  id: ow-def-nationaal-voorkeursrecht
+- term: Natura 2000
+  definition: Europees ecologisch netwerk dat bestaat uit de speciale beschermingszones, bedoeld in artikel 4, eerste en tweede
+    lid, van de vogelrichtlijn en artikel 1, onder l, van de habitatrichtlijn;
+  path: /Bijlage/DivisieA/Onderdeel_86
+  id: ow-def-natura-2000
+- term: Natura 2000-activiteit
+  definition: activiteit, inhoudende het realiseren van een project als bedoeld in artikel 6, derde lid, van de habitatrichtlijn
+    dat niet direct verband houdt met of nodig is voor het beheer van een Natura 2000-gebied, maar afzonderlijk of in combinatie
+    met andere plannen of projecten significante gevolgen kan hebben voor een Natura 2000-gebied;
+  path: /Bijlage/DivisieA/Onderdeel_87
+  id: ow-def-natura-2000-activiteit
+- term: Natura 2000-gebied
+  definition: 'gebied dat:'
+  path: /Bijlage/DivisieA/Onderdeel_88
+  id: ow-def-natura-2000-gebied
+  sub_definitions:
+  - nr: a.
+    text: door de bevoegde autoriteit van het land waarin het gebied is gelegen is aangewezen als speciale beschermingszone,
+      ter uitvoering van de artikelen 3, tweede lid, onder a, en 4, eerste en tweede lid, van de vogelrichtlijn of de artikelen
+      3, tweede lid, en 4, vierde lid, van de habitatrichtlijn, of
+  - nr: b.
+    text: is opgenomen op de lijst van gebieden van communautair belang, bedoeld in artikel 4, tweede lid, van de habitatrichtlijn;
+- term: natuurlijke habitat
+  definition: geheel natuurlijke of halfnatuurlijke land- of waterzone met bijzondere geografische, abiotische en biotische
+    kenmerken;
+  path: /Bijlage/DivisieA/Onderdeel_89
+  id: ow-def-natuurlijke-habitat
+- term: natuurlijke hulpbronnen
+  definition: delfstoffen, oppervlaktedelfstoffen, water, biomassa, warmte, windenergie, zonne-energie, waterkracht en energie
+    uit een zee, voor zover die door de mens aan de fysieke leefomgeving onttrokken kunnen worden;
+  path: /Bijlage/DivisieA/Onderdeel_90
+  id: ow-def-natuurlijke-hulpbronnen
+- term: omgevingsplan
+  definition: omgevingsplan als bedoeld in artikel 2.4;
+  path: /Bijlage/DivisieA/Onderdeel_91
+  id: ow-def-omgevingsplan
+- term: omgevingsplanactiviteit
+  definition: 'activiteit, inhoudende:'
+  path: /Bijlage/DivisieA/Onderdeel_92
+  id: ow-def-omgevingsplanactiviteit
+  sub_definitions:
+  - nr: a.
+    text: een activiteit waarvoor in het omgevingsplan is bepaald dat het is verboden deze zonder omgevingsvergunning te verrichten
+      en die niet in strijd is met het omgevingsplan,
+  - nr: b.
+    text: een activiteit waarvoor in het omgevingsplan is bepaald dat het is verboden deze zonder omgevingsvergunning te verrichten
+      en die in strijd is met het omgevingsplan, of
+  - nr: c.
+    text: een andere activiteit die in strijd is met het omgevingsplan;
+- term: omgevingsvergunning
+  definition: omgevingsvergunning als bedoeld in afdeling 5.1;
+  path: /Bijlage/DivisieA/Onderdeel_93
+  id: ow-def-omgevingsvergunning
+- term: omgevingsverordening
+  definition: omgevingsverordening als bedoeld in artikel 2.6;
+  path: /Bijlage/DivisieA/Onderdeel_94
+  id: ow-def-omgevingsverordening
+- term: omgevingsvisie
+  definition: omgevingsvisie als bedoeld in afdeling 3.1;
+  path: /Bijlage/DivisieA/Onderdeel_95
+  id: ow-def-omgevingsvisie
+- term: omgevingswaarde
+  definition: omgevingswaarde als bedoeld in afdeling 2.3;
+  path: /Bijlage/DivisieA/Onderdeel_96
+  id: ow-def-omgevingswaarde
+- term: ongewoon voorval
+  definition: 'gebeurtenis, ongeacht de oorzaak daarvan, die afwijkt van het normale verloop van een activiteit, zoals een
+    storing, ongeluk, calamiteit, waardoor significante nadelige gevolgen voor de fysieke leefomgeving ontstaan of dreigen
+    te ontstaan, waaronder:'
+  path: /Bijlage/DivisieA/Onderdeel_97
+  id: ow-def-ongewoon-voorval
+  sub_definitions:
+  - nr: a.
+    text: een geval van een inbreuk op vergunningsvoorwaarden als bedoeld in artikel 8 van de richtlijn industriële emissies,
+      of
+  - nr: b.
+    text: een zwaar ongeval als bedoeld in artikel 3, onder 13, van de Seveso-richtlijn;
+- term: ontgrondingsactiviteit
+  definition: activiteit inhoudende het ontgronden;
+  path: /Bijlage/DivisieA/Onderdeel_98
+  id: ow-def-ontgrondingsactiviteit
+- term: openbaar vuilwaterriool
+  definition: voorziening voor de inzameling en het transport van stedelijk afvalwater, in beheer bij een gemeente of een
+    rechtspersoon die door een gemeente met het beheer is belast;
+  path: /Bijlage/DivisieA/Onderdeel_99
+  id: ow-def-openbaar-vuilwaterriool
+- term: openbare registers
+  definition: openbare registers als bedoeld in afdeling 2 van titel 1 van Boek 3 van het Burgerlijk Wetboek;
+  path: /Bijlage/DivisieA/Onderdeel_100
+  id: ow-def-openbare-registers
+- term: oppervlaktewaterlichaam
+  definition: samenhangend geheel van vrij aan het aardoppervlak voorkomend water, met de daarin aanwezige stoffen, en de
+    bijbehorende bodem en oevers, alsmede flora en fauna;
+  path: /Bijlage/DivisieA/Onderdeel_101
+  id: ow-def-oppervlaktewaterlichaam
+- term: overige burgerluchthaven van nationale betekenis
+  definition: luchthaven als bedoeld in artikel 8.1, tweede lid, onder a, derde of vierde lid, van de Wet luchtvaart;
+  path: /Bijlage/DivisieA/Onderdeel_102
+  id: ow-def-overige-burgerluchthaven-van-nationale-betekenis
+- term: planten
+  definition: in ieder geval planten in al hun ontwikkelingsstadia, levend of dood, delen van planten, uit planten verkregen
+    producten, geënte planten, of andere zaken voor zover uit een begeleidend document, de verpakking, een merk of etiket,
+    of uit andere omstandigheden blijkt dat het gaat om delen van planten of daaruit verkregen producten;
+  path: /Bijlage/DivisieA/Onderdeel_103
+  id: ow-def-planten
+- term: primaire waterkering
+  definition: waterkering die bescherming biedt tegen overstroming door water van een oppervlaktewaterlichaam waarvan de waterstand
+    direct invloed ondergaat van hoge stormvloed, hoog opperwater van een van de grote rivieren, hoog water van het IJsselmeer
+    of het Markermeer, of een combinatie daarvan, en van het Volkerak-Zoommeer, het Grevelingenmeer, het getijdedeel van de
+    Hollandsche IJssel en de Veluwerandmeren;
+  path: /Bijlage/DivisieA/Onderdeel_104
+  id: ow-def-primaire-waterkering
+- term: programma
+  definition: programma als bedoeld in afdeling 3.2;
+  path: /Bijlage/DivisieA/Onderdeel_105
+  id: ow-def-programma
+- term: project
+  definition: a. het bouwen van bouwwerken of de totstandbrenging van installaties of werken,; b. andere activiteiten die
+    onderdelen van de fysieke leefomgeving wijzigen, inclusief activiteiten voor de winning van delfstoffen;
+  path: /Bijlage/DivisieA/Onderdeel_106
+  id: ow-def-project
+  sub_definitions:
+  - nr: a.
+    text: het bouwen van bouwwerken of de totstandbrenging van installaties of werken,
+  - nr: b.
+    text: andere activiteiten die onderdelen van de fysieke leefomgeving wijzigen, inclusief activiteiten voor de winning
+      van delfstoffen;
+- term: projectbesluit
+  definition: projectbesluit als bedoeld in afdeling 5.2;
+  path: /Bijlage/DivisieA/Onderdeel_107
+  id: ow-def-projectbesluit
+- term: provinciaal voorkeursrecht
+  definition: voorkeursrecht op naam van een provincie;
+  path: /Bijlage/DivisieA/Onderdeel_108
+  id: ow-def-provinciaal-voorkeursrecht
+- term: regionale wateren
+  definition: watersystemen of onderdelen daarvan die niet in beheer zijn bij het Rijk;
+  path: /Bijlage/DivisieA/Onderdeel_109
+  id: ow-def-regionale-wateren
+- term: rijksmonument
+  definition: rijksmonument als bedoeld in artikel 1.1 van de Erfgoedwet;
+  path: /Bijlage/DivisieA/Onderdeel_110
+  id: ow-def-rijksmonument
+- term: rijksmonumentenactiviteit
+  definition: activiteit inhoudende het slopen, verstoren, verplaatsen of wijzigen van een rijksmonument of een voorbeschermd
+    rijksmonument of het herstellen of gebruiken daarvan waardoor het wordt ontsierd of in gevaar gebracht;
+  path: /Bijlage/DivisieA/Onderdeel_111
+  id: ow-def-rijksmonumentenactiviteit
+- term: rijkswateren
+  definition: watersystemen of onderdelen daarvan die in beheer zijn bij het Rijk;
+  path: /Bijlage/DivisieA/Onderdeel_112
+  id: ow-def-rijkswateren
+- term: ruilbesluit
+  definition: besluit als bedoeld in artikel 12.22;
+  path: /Bijlage/DivisieA/Onderdeel_113
+  id: ow-def-ruilbesluit
+- term: sloopactiviteit
+  definition: activiteit inhoudende het slopen van een bouwwerk;
+  path: /Bijlage/DivisieA/Onderdeel_114
+  id: ow-def-sloopactiviteit
+- term: slopen
+  definition: geheel of gedeeltelijk afbreken of uit elkaar nemen;
+  path: /Bijlage/DivisieA/Onderdeel_115
+  id: ow-def-slopen
+- term: staat van instandhouding van een natuurlijke habitat
+  definition: som van de invloeden die op de betrokken natuurlijke habitat en de daar voorkomende typische soorten inwerken
+    en op lange termijn een verandering kunnen bewerkstelligen in de natuurlijke verspreiding, de structuur en de functies
+    van die habitat of die van invloed kunnen zijn op het voortbestaan op lange termijn van de betrokken typische soorten
+    op het grondgebied, bedoeld in artikel 2 van de habitatrichtlijn;
+  path: /Bijlage/DivisieA/Onderdeel_116
+  id: ow-def-staat-van-instandhouding-van-een-natuurlijke-habitat
+- term: staat van instandhouding van een soort
+  definition: effect van de som van de invloeden die op de betrokken soort inwerken en op lange termijn een verandering kunnen
+    bewerkstelligen in de verspreiding en de grootte van de populaties van die soort op het grondgebied, bedoeld in artikel
+    2 van de habitatrichtlijn;
+  path: /Bijlage/DivisieA/Onderdeel_117
+  id: ow-def-staat-van-instandhouding-van-een-soort
+- term: stads- en dorpsgezichten
+  definition: groepen van onroerende zaken, van algemeen belang vanwege hun schoonheid, onderlinge ruimtelijke of structurele
+    samenhang, wetenschappelijke of cultuurhistorische waarde en in welke groepen zich een of meer monumenten bevinden;
+  path: /Bijlage/DivisieA/Onderdeel_118
+  id: ow-def-stads-en-dorpsgezichten
+- term: stedelijk afvalwater
+  definition: huishoudelijk afvalwater of een mengsel daarvan met bedrijfsafvalwater, afvloeiend hemelwater, grondwater of
+    ander afvalwater;
+  path: /Bijlage/DivisieA/Onderdeel_119
+  id: ow-def-stedelijk-afvalwater
+- term: storten
+  definition: storten als bedoeld in artikel 1.1 van de Wet milieubeheer;
+  path: /Bijlage/DivisieA/Onderdeel_120
+  id: ow-def-storten
+- term: stortingsactiviteit op zee
+  definition: 'activiteit, inhoudende:'
+  path: /Bijlage/DivisieA/Onderdeel_121
+  id: ow-def-stortingsactiviteit-op-zee
+  sub_definitions:
+  - nr: a.
+    text: 'het zich ontdoen van stoffen in de zee door deze vanaf vaartuigen, luchtvaartuigen of op de zeebodem opgerichte
+      werken in de zee te brengen of op zee te verbranden, tenzij het gaat om:'
+  - nr: b.
+    text: het zich ontdoen in de zee van vaartuigen, luchtvaartuigen of op de zeebodem opgerichte werken,
+  - nr: c.
+    text: het aan boord van een vaartuig of luchtvaartuig nemen van stoffen met het oogmerk om zich daarvan te ontdoen op
+      een wijze als bedoeld onder a of om die in zee te brengen ten behoeve van een activiteit als bedoeld onder d, of het
+      afgeven of opslaan van stoffen met een van die oogmerken, of
+  - nr: d.
+    text: het in de zee brengen van stoffen vanaf vaartuigen, luchtvaartuigen of op de zeebodem opgerichte werken ten behoeve
+      van een activiteit waarbij bewust wordt ingegrepen in het mariene milieu om natuurlijke processen te beïnvloeden en
+      die als zodanig is aangewezen in bijlage 4 bij het Londen-protocol;
+- term: stortplaats
+  definition: terrein waar afvalstoffen worden gestort, of het gedeelte van een terrein waar afvalstoffen worden gestort als
+    op het terrein niet alleen afvalstoffen worden gestort, met uitzondering van winningsafvalvoorzieningen;
+  path: /Bijlage/DivisieA/Onderdeel_122
+  id: ow-def-stortplaats
+- term: stroomgebiedsdistrict
+  definition: stroomgebiedsdistrict als bedoeld in artikel 2, onder 15, van de kaderrichtlijn water;
+  path: /Bijlage/DivisieA/Onderdeel_123
+  id: ow-def-stroomgebiedsdistrict
+- term: telecommunicatie-infrastructuur
+  definition: werken, kabels of leidingen, waaronder lege buizen, ondersteuningswerken en beschermingswerken, die onderdeel
+    zijn van een elektronisch communicatienetwerk als bedoeld in artikel 1.1 van de Telecommunicatiewet;
+  path: /Bijlage/DivisieA/Onderdeel_124
+  id: ow-def-telecommunicatie-infrastructuur
+- term: toevalsvondst van verontreiniging op of in de bodem
+  definition: onverwachte vondst van verontreiniging op of in de bodem met onaanvaardbare risico’s voor de gezondheid als
+    gevolg van blootstelling aan die verontreiniging;
+  path: /Bijlage/DivisieA/Onderdeel_125
+  id: ow-def-toevalsvondst-van-verontreiniging-op-of-in-de-bodem
+- term: uitheemse soort
+  definition: soort, ondersoort of lager taxum van dieren, planten, schimmels of micro-organismen die zijn geïntroduceerd
+    buiten hun natuurlijke verspreidingsgebied, met inbegrip van alle delen, gameten, zaadcellen, eicellen of propagulen van
+    die soort en alle kruisingen, variëteiten of rassen, die kunnen overleven en zich vervolgens kunnen voortplanten;
+  path: /Bijlage/DivisieA/Onderdeel_126
+  id: ow-def-uitheemse-soort
+- term: valkeniersactiviteit
+  definition: het gebruik van een vogel voor het vangen of doden van een dier;
+  path: /Bijlage/DivisieA/Onderdeel_127
+  id: ow-def-valkeniersactiviteit
+- term: vellen
+  definition: rooien of verrichten van andere handelingen die de dood of ernstige beschadiging van een houtopstand tot gevolg
+    kunnen hebben;
+  path: /Bijlage/DivisieA/Onderdeel_128
+  id: ow-def-vellen
+- term: verhandelen
+  definition: aankopen, te koop vragen, verwerven voor commerciële doeleinden, tentoonstellen voor commerciële doeleinden,
+    gebruik met winstoogmerk, verkopen, in bezit hebben met het oog op verkoop, ten verkoop aanbieden of vervoeren met het
+    oog op verkoop;
+  path: /Bijlage/DivisieA/Onderdeel_129
+  id: ow-def-verhandelen
+- term: verkenningsonderzoek
+  definition: verkenningsonderzoek als bedoeld in artikel 1, onder d, van de Mijnbouwwet;
+  path: /Bijlage/DivisieA/Onderdeel_130
+  id: ow-def-verkenningsonderzoek
+- term: verontreinigende stof
+  definition: een stof of groep van stoffen die, vanwege zijn eigenschappen en de introductie ervan in het milieu, schadelijk
+    kan zijn voor het milieu of de menselijke gezondheid;
+  path: /Bijlage/DivisieA/Onderdeel_131
+  id: ow-def-verontreinigende-stof
+- term: vervreemder
+  definition: a. eigenaar van een onroerende zaak waarop een voorkeursrecht is gevestigd, die tot vervreemding daarvan wil
+    overgaan,; b. rechthebbende op een recht van opstal, erfpacht, beklemming of vruchtgebruik waaraan een onroerende zaak
+    waarop een voorkeursrecht is gevestigd is onderworpen en die tot vervreemding daarvan wil overgaan, of; c. degene die
+    bij ontbinding van een gemeenschap met de vereffening is belast en die tot vervreemding van een onroerende zaak waarop
+    een voorkeursrecht is gevestigd wil overgaan;
+  path: /Bijlage/DivisieA/Onderdeel_132
+  id: ow-def-vervreemder
+  sub_definitions:
+  - nr: a.
+    text: eigenaar van een onroerende zaak waarop een voorkeursrecht is gevestigd, die tot vervreemding daarvan wil overgaan,
+  - nr: b.
+    text: rechthebbende op een recht van opstal, erfpacht, beklemming of vruchtgebruik waaraan een onroerende zaak waarop
+      een voorkeursrecht is gevestigd is onderworpen en die tot vervreemding daarvan wil overgaan, of
+  - nr: c.
+    text: degene die bij ontbinding van een gemeenschap met de vereffening is belast en die tot vervreemding van een onroerende
+      zaak waarop een voorkeursrecht is gevestigd wil overgaan;
+- term: vervreemding
+  definition: a. overdracht in eigendom of verdeling van een onroerende zaak waarop een voorkeursrecht is gevestigd,; b. overdracht,
+    verdeling of vestiging van een recht van opstal, erfpacht, beklemming of vruchtgebruik waaraan een onroerende zaak waarop
+    een voorkeursrecht is gevestigd is of wordt onderworpen;
+  path: /Bijlage/DivisieA/Onderdeel_133
+  id: ow-def-vervreemding
+  sub_definitions:
+  - nr: a.
+    text: overdracht in eigendom of verdeling van een onroerende zaak waarop een voorkeursrecht is gevestigd,
+  - nr: b.
+    text: overdracht, verdeling of vestiging van een recht van opstal, erfpacht, beklemming of vruchtgebruik waaraan een onroerende
+      zaak waarop een voorkeursrecht is gevestigd is of wordt onderworpen;
+- term: voor menselijke consumptie bestemd water
+  definition: voor menselijke consumptie bestemd water als bedoeld in artikel 2, aanhef en onder 37, van de kaderrichtlijn
+    water;
+  path: /Bijlage/DivisieA/Onderdeel_134
+  id: ow-def-voor-menselijke-consumptie-bestemd-water
+- term: voor stikstof gevoelige habitats
+  definition: voor stikstof gevoelige leefgebieden voor vogelsoorten, natuurlijke habitats en habitats van soorten waarvoor
+    een instandhoudingsdoelstelling geldt;
+  path: /Bijlage/DivisieA/Onderdeel_135
+  id: ow-def-voor-stikstof-gevoelige-habitats
+- term: voorbereidingsbesluit
+  definition: besluit als bedoeld in afdeling 4.2;
+  path: /Bijlage/DivisieA/Onderdeel_136
+  id: ow-def-voorbereidingsbesluit
+- term: voorbeschermd rijksmonument
+  definition: monument of archeologisch monument waarvoor de toezending van het ontwerpbesluit tot aanwijzing als rijksmonument
+    op grond van artikel 3:13, eerste lid, van de Algemene wet bestuursrecht heeft plaatsgevonden, vanaf de dag van die toezending
+    tot het moment van inschrijving in het rijksmonumentenregister, bedoeld in artikel 1.1 van de Erfgoedwet, of het moment
+    waarop vaststaat dat het monument of archeologisch monument niet wordt ingeschreven in dat register;
+  path: /Bijlage/DivisieA/Onderdeel_137
+  id: ow-def-voorbeschermd-rijksmonument
+- term: voorkeursbeslissing
+  definition: beslissing als bedoeld in artikel 5.49;
+  path: /Bijlage/DivisieA/Onderdeel_138
+  id: ow-def-voorkeursbeslissing
+- term: wateractiviteit
+  definition: beperkingengebiedactiviteit met betrekking tot een waterstaatswerk, beperkingengebiedactiviteit met betrekking
+    tot een installatie, niet zijnde een mijnbouwinstallatie, in een waterstaatswerk, lozingsactiviteit op een oppervlaktewaterlichaam,
+    lozingsactiviteit op een zuiveringtechnisch werk, stortingsactiviteit op zee, wateronttrekkingsactiviteit of, voor zover
+    het gaat om een waterschapsverordening, elke andere activiteit waarover die verordening regels bevat;
+  path: /Bijlage/DivisieA/Onderdeel_139
+  id: ow-def-wateractiviteit
+- term: wateronttrekkingsactiviteit
+  definition: 'activiteit inhoudende:'
+  path: /Bijlage/DivisieA/Onderdeel_140
+  id: ow-def-wateronttrekkingsactiviteit
+  sub_definitions:
+  - nr: a.
+    text: het onttrekken van water aan een oppervlaktewaterlichaam,
+  - nr: b.
+    text: het onttrekken van grondwater door een daarvoor bestemde voorziening, of
+  - nr: c.
+    text: het in de bodem brengen van water, ter aanvulling van het grondwater, in samenhang met het onttrekken van grondwater
+      door een daarvoor bestemde voorziening;
+- term: waterschapsverordening
+  definition: waterschapsverordening als bedoeld in artikel 2.5;
+  path: /Bijlage/DivisieA/Onderdeel_141
+  id: ow-def-waterschapsverordening
+- term: waterstaatswerk
+  definition: oppervlaktewaterlichaam, bergingsgebied, waterkering of ondersteunend kunstwerk;
+  path: /Bijlage/DivisieA/Onderdeel_142
+  id: ow-def-waterstaatswerk
+- term: watersysteem
+  definition: samenhangend geheel van een of meer oppervlaktewaterlichamen en grondwaterlichamen, met bijbehorende bergingsgebieden,
+    waterkeringen en ondersteunende kunstwerken;
+  path: /Bijlage/DivisieA/Onderdeel_143
+  id: ow-def-watersysteem
+- term: weg
+  definition: weg met inbegrip van de daarin gelegen kunstwerken en wat verder naar zijn aard daartoe behoort;
+  path: /Bijlage/DivisieA/Onderdeel_144
+  id: ow-def-weg
+- term: werelderfgoed
+  definition: op het grondgebied van Nederland gelegen cultureel en natuurlijk erfgoed dat op grond van het werelderfgoedverdrag
+    is opgenomen in de Lijst van het Werelderfgoed;
+  path: /Bijlage/DivisieA/Onderdeel_145
+  id: ow-def-werelderfgoed
+- term: wildbeheereenheid
+  definition: wildbeheereenheid als bedoeld in artikel 8.2;
+  path: /Bijlage/DivisieA/Onderdeel_146
+  id: ow-def-wildbeheereenheid
+- term: windpark
+  definition: samenstel van voorzieningen waarmee elektriciteit met behulp van wind wordt geproduceerd;
+  path: /Bijlage/DivisieA/Onderdeel_147
+  id: ow-def-windpark
+- term: winningsafvalstoffen
+  definition: afvalstoffen die rechtstreeks afkomstig zijn uit de prospectie, winning, behandeling en opslag van mineralen
+    en de exploitatie van groeven, met uitzondering van afvalstof afkomstig van offshore-prospectie, -winning en -behandeling
+    van mineralen;
+  path: /Bijlage/DivisieA/Onderdeel_148
+  id: ow-def-winningsafvalstoffen
+- term: winningsafvalvoorziening
+  definition: terrein waar alleen winningsafvalstoffen worden gestort of verzameld, of het gedeelte van een terrein waar winningsafvalstoffen
+    worden gestort of verzameld;
+  path: /Bijlage/DivisieA/Onderdeel_149
+  id: ow-def-winningsafvalvoorziening
+- term: zee
+  definition: mariene wateren, met uitzondering van de binnenwateren van staten, met inbegrip van de zeebodem en ondergrond
+    daarvan;
+  path: /Bijlage/DivisieA/Onderdeel_150
+  id: ow-def-zee
+- term: zuiveringtechnisch werk
+  definition: werk voor het zuiveren van stedelijk afvalwater, in exploitatie bij een waterschap of gemeente, of een rechtspersoon
+    die door het bestuur van een waterschap met de zuivering van stedelijk afvalwater is belast, met inbegrip van het bij
+    dat werk behorende werk voor het transport van stedelijk afvalwater;
+  path: /Bijlage/DivisieA/Onderdeel_151
+  id: ow-def-zuiveringtechnisch-werk
+- term: zwemlocatie
+  definition: zwemlocatie als bedoeld in artikel 2.30.
+  path: /Bijlage/DivisieA/Onderdeel_152
+  id: ow-def-zwemlocatie

@@ -1,0 +1,241 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 16, AFDELING 16.1 - ATOMIC EXTRACTION
+# Elektronisch verkeer en gebruik van gegevens en methoden
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "16.1"
+  titel: "Elektronisch verkeer en gebruik van gegevens en methoden"
+  artikelen_range: "16.1-16.6"
+  totaal_artikelen: 6
+  actieve_artikelen: 4
+  ingetrokken_artikelen: 2
+  structuur:
+    paragraaf_16.1.1:
+      titel: "Elektronisch verkeer"
+      artikelen: "16.1-16.4"
+      actief: 2
+      ingetrokken: 2
+    paragraaf_16.1.2:
+      titel: "Gebruik van gegevens en methoden"
+      artikelen: "16.5-16.6"
+      actief: 2
+  status: "goed"
+  inwerking: "2024-01-01"
+
+# =============================================================================
+# PARAGRAAF 16.1.1 - ELEKTRONISCH VERKEER
+# =============================================================================
+
+artikelen:
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.1 - ELEKTRONISCH VERKEER
+  # ---------------------------------------------------------------------------
+  - artikel: "16.1"
+    titel: "(elektronisch verkeer)"
+    status: "goed"
+    inwerking: "2026-01-01"
+    type: "procedure_aanwijzing"
+    note: "Latere inwerkingtreding dan rest wet (digitalisering)"
+
+    leden:
+      - lid: 1
+        inhoud: "Een elektronische aanvraag om een besluit of een melding op grond van deze wet wordt in bij algemene maatregel van bestuur aangewezen gevallen ingediend of gedaan via de landelijke voorziening, bedoeld in artikel 20.21, tenzij bij die maatregel anders is bepaald."
+        type: "imperatief_voorwaardelijk"
+        trigger: "bij AMvB aangewezen gevallen"
+        systeem: "landelijke voorziening (DSO)"
+        interne_ref:
+          - artikel: "20.21"
+            hoofdstuk: 20
+            relatie: "definitie landelijke voorziening"
+
+      - lid: 2
+        inhoud: "Het elektronisch voldoen aan een andere informatieverplichting dan een melding of het elektronisch verzenden van een ander bericht op grond van deze wet kan in bij algemene maatregel van bestuur aangewezen gevallen plaatsvinden op de bij die maatregel aangegeven wijze."
+        type: "facultatief_voorwaardelijk"
+        scope: "andere informatieverplichting dan melding"
+
+      - lid: 3
+        inhoud: "Bij de maatregel kunnen in afwijking van de artikelen 2:7, tweede lid, en 2:8 van de Algemene wet bestuursrecht gevallen worden aangewezen waarin het verkeer, bedoeld in het eerste en tweede lid, alleen elektronisch kan plaatsvinden."
+        type: "amvb_delegatie"
+        afwijking: true
+        externe_ref:
+          - doc: "BWBR0005537"
+            artikelen: ["2:7", "2:8"]
+            naam: "Awb - elektronisch verkeer"
+
+    juridische_analyse:
+      patroon: "DIGITAAL_VERPLICHT"
+      kernbegrip: "landelijke voorziening (DSO)"
+      note: "Mogelijk volledig digitale verplichting in afwijking van Awb"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.2 - CONSOLIDATIE OMGEVINGSPLAN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.2"
+    titel: "(totstandkoming consolidatie omgevingsplan)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+
+    inhoud: "Ter uitvoering van artikel 19 van de Bekendmakingswet rust op een bestuursorgaan dat met toepassing van artikel 4.16, 5.52 of 16.21 een omgevingsplan wijzigt ook de verplichting om deze wijziging te verwerken in een nieuwe geconsolideerde versie van het omgevingsplan."
+    type: "imperatief"
+    scope: "consolidatieplicht bij wijziging omgevingsplan"
+
+    externe_ref:
+      - doc: "BWBR0004287"
+        artikel: "19"
+        naam: "Bekendmakingswet"
+
+    interne_ref:
+      - artikel: "4.16"
+        relatie: "instructie wijziging omgevingsplan"
+      - artikel: "5.52"
+        relatie: "vergunning wijzigt omgevingsplan"
+      - artikel: "16.21"
+        relatie: "reactieve interventie"
+
+    juridische_analyse:
+      patroon: "CONSOLIDATIEPLICHT"
+      note: "Wijziging door instructie, vergunning of interventie triggert consolidatie"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.3 - INGETROKKEN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.3"
+    status: "ingetrokken"
+    redactie: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+    intrekking_bron: "Stb. 2020/172"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.4 - INGETROKKEN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.4"
+    status: "ingetrokken"
+    redactie: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+    intrekking_bron: "Stb. 2020/172"
+
+# =============================================================================
+# PARAGRAAF 16.1.2 - GEBRUIK VAN GEGEVENS EN METHODEN
+# =============================================================================
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.5 - HOUDBAARHEID ONDERZOEKSGEGEVENS
+  # ---------------------------------------------------------------------------
+  - artikel: "16.5"
+    titel: "(houdbaarheid onderzoeksgegevens)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "procedureel"
+    belangrijke_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Bij het nemen van een besluit op grond van deze wet kan in ieder geval gebruik worden gemaakt van rapporten met gegevens, onderzoeken of inventarisaties die bij het ontwerpbesluit of, bij het ontbreken daarvan, bij de aanvraag zijn gebruikt en die bij de vaststelling van het besluit niet ouder zijn dan twee jaar."
+        type: "houdbaarheidsregel"
+        termijn: "2 jaar"
+        referentiepunt: "vaststelling besluit"
+        note: "Minimum - 'in ieder geval' = ouder kan ook als actueel"
+
+      - lid: 2
+        inhoud: "Bij het nemen van besluit op grond van deze wet kan ook gebruik worden gemaakt van gegevens uit rapporten die bij de vaststelling van het besluit ouder zijn dan twee jaar als wordt onderbouwd dat de gegevens nog actueel zijn."
+        type: "uitbreiding"
+        voorwaarde: "onderbouwing actualiteit"
+        note: "Ouder dan 2 jaar toegestaan indien gemotiveerd"
+
+      - lid: 3
+        inhoud: "Het eerste lid is niet van toepassing op besluiten die betrekking hebben op een Natura 2000-activiteit of flora- en fauna-activiteit."
+        type: "uitzondering"
+        scope: "Natura 2000-activiteit, flora- en fauna-activiteit"
+        note: "Ecologische data: geen automatische 2-jaar regel"
+
+    juridische_analyse:
+      patroon: "HOUDBAARHEID_MET_UITZONDERING"
+      kernregel: "2 jaar houdbaarheid, tenzij onderbouwd OF natuur/fauna"
+      praktijk_belang: "Voorkomt vertragende heronderzoeken"
+      uitsluiting_natuur: "Europese richtlijnen vereisen actuele natuurdata"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 16.6 - BEOORDELING VAN GEVOLGEN
+  # ---------------------------------------------------------------------------
+  - artikel: "16.6"
+    titel: "(beoordeling van gevolgen)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "mr_delegatie"
+
+    inhoud: "Bij ministeriële regeling kunnen regels worden gesteld over de meet- en rekenmethoden en uitgangspunten aan de hand waarvan op het moment van het nemen van een besluit de gevolgen van dat besluit worden beoordeeld."
+    type: "delegatie"
+    delegatie_niveau: "ministeriële regeling"
+    delegatie_type: "facultatief"
+    onderwerp: "meet- en rekenmethoden"
+
+    juridische_analyse:
+      patroon: "METHODIEK_DELEGATIE"
+      note: "Uniforme beoordelingsmethoden via MR"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 16.1
+# =============================================================================
+
+analyse:
+  karakterisering: "Ondersteunende bepalingen voor besluitvorming"
+
+  kernelementen:
+    digitalisering:
+      artikel: "16.1"
+      systeem: "DSO landelijke voorziening"
+      status: "latere inwerkingtreding (2026-01-01)"
+      note: "Volledige digitalisering mogelijk in afwijking Awb"
+
+    houdbaarheid_data:
+      artikel: "16.5"
+      hoofdregel: "2 jaar houdbaarheid onderzoeksgegevens"
+      uitzonderingen:
+        - "ouder toegestaan indien actueel onderbouwd"
+        - "niet van toepassing op Natura 2000 en fauna"
+      praktijk_belang: "Voorkomt procedurele vertraging"
+
+    consolidatieplicht:
+      artikel: "16.2"
+      trigger: "wijziging omgevingsplan via art. 4.16, 5.52 of 16.21"
+      verplichting: "verwerken in geconsolideerde versie"
+
+  externe_koppelingen:
+    - doc: "BWBR0005537"
+      artikelen: ["2:7", "2:8"]
+      naam: "Awb elektronisch verkeer"
+      relatie: "afwijking mogelijk via AMvB"
+    - doc: "BWBR0004287"
+      artikel: "19"
+      naam: "Bekendmakingswet"
+      relatie: "consolidatieplicht"
+
+  interne_koppelingen:
+    - artikel: "20.21"
+      relatie: "definitie landelijke voorziening"
+    - artikel: "4.16"
+      relatie: "instructie omgevingsplan"
+    - artikel: "5.52"
+      relatie: "vergunning wijzigt omgevingsplan"
+    - artikel: "16.21"
+      relatie: "reactieve interventie"
+
+  delegaties:
+    amvb:
+      - artikel: "16.1"
+        onderwerp: "aanwijzing gevallen elektronisch verkeer"
+    mr:
+      - artikel: "16.6"
+        onderwerp: "meet- en rekenmethoden"
+
+  cross_chapter_verbanden:
+    - naar: "hoofdstuk 20"
+      via: "artikel 16.1"
+      onderwerp: "landelijke voorziening DSO"
+    - naar: "hoofdstuk 4"
+      via: "artikel 16.2"
+      onderwerp: "instructies"
+    - naar: "hoofdstuk 5"
+      via: "artikel 16.2"
+      onderwerp: "vergunning wijzigt plan"

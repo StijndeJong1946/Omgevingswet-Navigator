@@ -1,0 +1,653 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 3 - ATOMIC EXTRACTION
+# Omgevingsvisies en programma's (Strategic Instruments)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  hoofdstuk: "3"
+  titel: "Omgevingsvisies en programma's"
+  artikelen_range: "3.1-3.19"
+  totaal_artikelen: 19
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "strategische_instrumenten"
+
+# =============================================================================
+# STRUCTURE OVERVIEW
+# =============================================================================
+#
+# Afdeling 3.1 - Omgevingsvisies (Art. 3.1-3.3)
+#   - Strategische langetermijnvisie per bestuursniveau
+#
+# Afdeling 3.2 - Programma's
+#   §3.2.1: Algemene bepalingen (Art. 3.4-3.5)
+#   §3.2.2: Verplichte programma's (Art. 3.6-3.13)
+#   §3.2.3: Onverplichte programma's (Art. 3.14-3.14a)
+#   §3.2.4: Programmatische aanpak (Art. 3.15-3.19)
+#
+# =============================================================================
+
+afdelingen:
+  # ===========================================================================
+  # AFDELING 3.1 - OMGEVINGSVISIES
+  # ===========================================================================
+  - afdeling: "3.1"
+    titel: "Omgevingsvisies"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "3.1"
+        titel: "(vaststellen omgevingsvisie)"
+        status: "goed"
+        type: "bevoegdheidstoedeling"
+        centrale_bepaling: true
+
+        leden:
+          - lid: 1
+            inhoud: "De gemeenteraad stelt een gemeentelijke omgevingsvisie vast."
+            bevoegd_gezag: "gemeenteraad"
+            type: "verplicht"
+
+          - lid: 2
+            inhoud: "Provinciale staten stellen een provinciale omgevingsvisie vast."
+            bevoegd_gezag: "provinciale staten"
+            type: "verplicht"
+
+          - lid: 3
+            inhoud: "Minister BZK stelt, in overeenstemming met betrokken Ministers, een nationale omgevingsvisie vast."
+            bevoegd_gezag: "Minister BZK"
+            type: "verplicht"
+            note: "Overeenstemming met relevante vakministers"
+
+        juridische_analyse:
+          patroon: "VERPLICHT_STRATEGISCH_INSTRUMENT"
+          note: |
+            Omgevingsvisie = VERPLICHT op elk niveau
+            Opvolger van: structuurvisie (Wro), milieubeleidsplan (Wm)
+          opvolger_van:
+            - "structuurvisie (Wro)"
+            - "milieubeleidsplan (Wm)"
+            - "waterplan"
+            - "verkeer- en vervoerplan"
+
+      - artikel: "3.2"
+        titel: "(inhoud omgevingsvisie)"
+        status: "goed"
+        type: "inhoudseis"
+
+        inhoud: |
+          Een omgevingsvisie bevat, mede voor uitoefening taken/bevoegdheden (art. 2.1 lid 1):
+          a. beschrijving hoofdlijnen kwaliteit fysieke leefomgeving
+          b. hoofdlijnen voorgenomen ontwikkeling, gebruik, beheer, bescherming, behoud grondgebied
+          c. hoofdzaken integrale beleid fysieke leefomgeving
+
+        structuur:
+          onderdelen:
+            a: "kwaliteitsbeschrijving"
+            b: "ontwikkelingsrichting"
+            c: "integraal beleid"
+
+        koppelingen:
+          - naar: "2.1"
+            relatie: "doelgebondenheid"
+
+        juridische_analyse:
+          karakter: "integraal"
+          abstractieniveau: "hoofdlijnen"
+          note: "Geen directe rechtsgevolgen, wel sturend voor andere instrumenten"
+
+      - artikel: "3.3"
+        titel: "(doorwerking beginselen)"
+        status: "goed"
+        type: "procedurele_eis"
+
+        inhoud: |
+          In omgevingsvisie rekening houden met:
+          - voorzorgsbeginsel
+          - beginsel preventief handelen
+          - beginsel milieuaantastingen bij voorrang aan de bron bestrijden
+          - beginsel vervuiler betaalt
+
+        beginselen:
+          - naam: "voorzorgsbeginsel"
+            herkomst: "VWEU art. 191"
+          - naam: "preventief handelen"
+            herkomst: "VWEU art. 191"
+          - naam: "bronbeginsel"
+            herkomst: "VWEU art. 191"
+          - naam: "vervuiler betaalt"
+            herkomst: "VWEU art. 191"
+
+        juridische_analyse:
+          note: "EU-rechtelijke beginselen doorvertaald naar nationaal niveau"
+
+  # ===========================================================================
+  # AFDELING 3.2 - PROGRAMMA'S
+  # ===========================================================================
+  - afdeling: "3.2"
+    titel: "Programma's"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    paragrafen:
+      # -----------------------------------------------------------------------
+      # §3.2.1 - ALGEMENE BEPALINGEN
+      # -----------------------------------------------------------------------
+      - paragraaf: "3.2.1"
+        titel: "Algemene bepalingen"
+        artikelen:
+          - artikel: "3.4"
+            titel: "(vaststellen programma)"
+            status: "goed"
+            type: "bevoegdheidstoedeling"
+
+            inhoud: "B&W, algemeen bestuur waterschap, GS en Minister kunnen programma's vaststellen."
+
+            bevoegde_gezagen:
+              gemeente: "B&W"
+              waterschap: "algemeen bestuur"
+              provincie: "GS"
+              rijk: "Minister"
+
+            juridische_analyse:
+              type: "facultatief"
+              note: "KAN vaststellen - anders dan omgevingsvisie (STELT VAST)"
+
+          - artikel: "3.5"
+            titel: "(inhoud programma)"
+            status: "goed"
+            type: "inhoudseis"
+
+            inhoud: |
+              Programma bevat, mede voor uitoefening taken/bevoegdheden (art. 2.1 lid 1),
+              voor een of meer onderdelen fysieke leefomgeving:
+              a. uitwerking beleid (ontwikkeling, gebruik, beheer, bescherming, behoud)
+              b. maatregelen om aan omgevingswaarden te voldoen of doelstellingen te bereiken
+
+            structuur:
+              onderdelen:
+                a: "beleidsuitwerking"
+                b: "maatregelen voor doelbereik"
+
+            koppelingen:
+              - naar: "2.1"
+                relatie: "doelgebondenheid"
+
+            juridische_analyse:
+              karakter: "concreet"
+              note: "Programma = uitvoeringsgerichte uitwerking van omgevingsvisie"
+
+      # -----------------------------------------------------------------------
+      # §3.2.2 - VERPLICHTE PROGRAMMA'S
+      # -----------------------------------------------------------------------
+      - paragraaf: "3.2.2"
+        titel: "Verplichte programma's"
+        artikelen:
+          - artikel: "3.6"
+            titel: "(verplichte programma's gemeente)"
+            status: "goed"
+            type: "verplichting"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  B&W in aangewezen agglomeratie (richtlijn omgevingslawaai art. 3k):
+                  actieplan voor:
+                  a. wegen en daarin gelegen spoorwegen
+                  b. andere spoorwegen
+                  c. luchthavens
+                  d. activiteiten met geluidregels (art. 2.22/2.24/§4.1.1)
+                eu_richtlijn: "richtlijn omgevingslawaai art. 8"
+                type: "verplicht"
+
+              - lid: 2
+                inhoud: "Vaststellen aan de hand van geluidbelastingkaarten (art. 20.17)"
+                koppeling: "artikel 20.17"
+
+          - artikel: "3.7"
+            titel: "(verplichte programma's waterschap)"
+            status: "goed"
+            type: "verplichting"
+
+            inhoud: "Algemeen bestuur waterschap stelt waterbeheerprogramma vast voor watersystemen in beheer"
+            instrument: "waterbeheerprogramma"
+            type: "verplicht"
+
+            juridische_analyse:
+              note: "Rekening houden met regionaal waterprogramma (GS)"
+
+          - artikel: "3.8"
+            titel: "(verplichte programma's provincie)"
+            status: "goed"
+            type: "verplichting"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  GS: actieplan geluid (richtlijn omgevingslawaai) voor:
+                  a. belangrijke wegen (in beheer provincie of buiten agglomeratie)
+                  b. belangrijke spoorwegen
+                  c. burgerluchthavens regionale betekenis
+                eu_richtlijn: "richtlijn omgevingslawaai"
+
+              - lid: 2
+                inhoud: "GS: regionale waterprogramma's ter uitvoering EU-waterrichtlijnen"
+                eu_richtlijnen:
+                  - "grondwaterrichtlijn"
+                  - "kaderrichtlijn water"
+                  - "richtlijn overstromingsrisico's"
+                  - "zwemwaterrichtlijn"
+
+              - lid: 3
+                inhoud: "GS: beheerplan Natura 2000-gebied (waar grotendeels gelegen)"
+                instrument: "beheerplan Natura 2000"
+                type: "verplicht"
+
+          - artikel: "3.9"
+            titel: "(verplichte programma's Rijk)"
+            status: "goed"
+            type: "verplichting"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Minister IenW:
+                  a. nationaal NEC-programma (NEC-richtlijn art. 6)
+                  b. actieplan geluid voor rijkswegen, hoofdspoorwegen, Schiphol + nationale luchthavens
+                bevoegd_gezag: "Minister IenW"
+                eu_richtlijnen:
+                  - "NEC-richtlijn"
+                  - "richtlijn omgevingslawaai"
+
+              - lid: 2
+                inhoud: |
+                  Minister IenW (in overeenstemming met betrokken Ministers):
+                  a. stroomgebiedsbeheerplannen (KRW art. 13) - Rijn, Maas, Schelde, Eems
+                  b. overstromingsrisicobeheerplannen (ROR art. 7/8)
+                  c. maatregelprogramma mariene strategie (KRMS art. 5.2b)
+                  d. maritiem ruimtelijk plan (KMRP art. 4)
+                  e. nationaal waterprogramma
+                eu_richtlijnen:
+                  - "kaderrichtlijn water"
+                  - "richtlijn overstromingsrisico's"
+                  - "kaderrichtlijn mariene strategie"
+                  - "kaderrichtlijn maritieme ruimtelijke planning"
+
+              - lid: 3
+                inhoud: "Beheerplan N2000-gebieden in rijksbeheer/-eigendom: door bevoegde Minister"
+                afwijking_van: "artikel 3.8 lid 3"
+
+              - lid: 4
+                inhoud: |
+                  Minister Natuur en Stikstof:
+                  a. programma stikstofdepositievermindering (voldoen aan art. 2.15a lid 1)
+                  b. bereiken instandhoudingsdoelstellingen
+                bevoegd_gezag: "Minister voor Natuur en Stikstof"
+                koppeling: "artikel 2.15a"
+
+            juridische_analyse:
+              note: |
+                Art. 3.9 lid 4 = STIKSTOFPROGRAMMA
+                Critical: verbindt omgevingswaarde (2.15a) met maatregelen
+              stikstof_complex:
+                omgevingswaarde: "2.15a"
+                programma: "3.9 lid 4"
+                depositieruimte: "2.46"
+                beoordeling: "16.53c"
+
+          - artikel: "3.10"
+            titel: "(verplicht programma bij (dreigende) overschrijding omgevingswaarde)"
+            status: "goed"
+            type: "verplichting"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: "Bij (dreigende) niet-voldoen omgevingswaarde: B&W stelt programma vast gericht op voldoen"
+                bevoegd_gezag: "B&W"
+                type: "verplicht"
+                trigger: "aannemelijk niet voldoen aan omgevingswaarde"
+
+              - lid: 2
+                inhoud: |
+                  Afwijkingen:
+                  a. waterschap/Minister IenW als omgevingswaarde over watersysteem in beheer
+                  b. AMvB/omgevingsverordening kan ander BG aanwijzen of maatregelen i.p.v. programma
+                koppeling: "artikel 2.3"
+
+            juridische_analyse:
+              patroon: "REACTIEF_PROGRAMMA"
+              note: |
+                Art. 3.10 = vangnet bij dreigende overschrijding
+                Gemeente = default, tenzij water (ws/Rijk) of andere aanwijzing
+
+          - artikel: "3.11"
+            titel: "(wijziging met oog op doelbereik)"
+            status: "goed"
+            type: "verplichting"
+
+            leden:
+              - lid: 1
+                inhoud: "Wijzigen programma als monitoring (art. 20.1) toont onvoldoende doelbereik"
+                koppeling: "artikel 20.1"
+
+              - lid: 2
+                inhoud: "Wijziging zodat binnen passende termijn aan omgevingswaarde wordt voldaan"
+
+            juridische_analyse:
+              patroon: "ADAPTIEF_BEHEER"
+              note: "Monitoring → evaluatie → bijstelling"
+
+          - artikel: "3.12"
+            titel: "(uitvoering maatregelen)"
+            status: "goed"
+            type: "delegatiegrondslag"
+
+            inhoud: "AMvB kan bepalen dat maatregelen uitgevoerd/operationeel moeten zijn"
+            delegatie: "AMvB"
+
+          - artikel: "3.13"
+            titel: "(gezamenlijke vaststelling)"
+            status: "goed"
+            type: "delegatiegrondslag"
+
+            inhoud: "AMvB kan verplichten tot gezamenlijke vaststelling programma's"
+            delegatie: "AMvB"
+
+      # -----------------------------------------------------------------------
+      # §3.2.3 - ONVERPLICHTE PROGRAMMA'S
+      # -----------------------------------------------------------------------
+      - paragraaf: "3.2.3"
+        titel: "Onverplichte programma's"
+        artikelen:
+          - artikel: "3.14"
+            titel: "(gemeentelijk rioleringsprogramma)"
+            status: "goed"
+            type: "facultatief"
+
+            inhoud: "B&W kan rioleringsprogramma vaststellen ter invulling taak art. 2.16 lid 1a 1°-3°"
+            koppeling: "artikel 2.16"
+            type: "facultatief"
+
+            juridische_analyse:
+              note: "Opvolger van gemeentelijk rioleringsplan (Wm)"
+
+          - artikel: "3.14a"
+            titel: "(inrichtingsprogramma)"
+            status: "goed"
+            type: "facultatief"
+
+            inhoud: "GS: bij landinrichting (art. 12.3) programma voor gebiedsverbetering"
+            koppeling: "artikel 12.3"
+            type: "facultatief"
+
+      # -----------------------------------------------------------------------
+      # §3.2.4 - PROGRAMMATISCHE AANPAK
+      # -----------------------------------------------------------------------
+      - paragraaf: "3.2.4"
+        titel: "Programmatische aanpak"
+        artikelen:
+          - artikel: "3.15"
+            titel: "(toepassingsbereik programmatische aanpak)"
+            status: "goed"
+            type: "toepassingsbereik"
+
+            leden:
+              - lid: 1
+                inhoud: "Paragraaf van toepassing op programma's lid 2-4"
+
+              - lid: 2
+                inhoud: "Bij omgevingsplan: programma's voor gemeentelijke omgevingswaarden (§2.3.2) of OPA-doelstellingen"
+                grondslag: "omgevingsplan"
+
+              - lid: 3
+                inhoud: "Bij omgevingsverordening: programma's voor provinciale omgevingswaarden (§2.3.3) of art. 2.22/5.19/5.30 doelstellingen"
+                grondslag: "omgevingsverordening"
+
+              - lid: 4
+                inhoud: "Bij AMvB: programma's voor rijksomgevingswaarden (§2.3.4) of art. 2.24/5.18 doelstellingen"
+                grondslag: "AMvB"
+
+              - lid: 5
+                inhoud: "Aanwijzing welk bestuursorgaan kan vaststellen"
+
+            juridische_analyse:
+              note: "Gelaagde aanwijzing: elk niveau kan programmatische aanpak instellen"
+
+          - artikel: "3.16"
+            titel: "(inhoud en werking programmatische aanpak)"
+            status: "goed"
+            type: "inhoud"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: "Programma geeft aan welke ruimte beschikbaar is voor activiteiten in gebied/periode"
+                kernbegrip: "ontwikkelingsruimte"
+
+              - lid: 2
+                inhoud: |
+                  Bij omgevingsplan/omgevingsverordening/AMvB wordt bepaald:
+                  a. hoe omgevingswaarde/doelstelling bij taken/bevoegdheden wordt betrokken
+                  b. welke regels (art. 2.22, 2.24, 5.18, 5.19, 5.30) buiten toepassing blijven
+
+            juridische_analyse:
+              patroon: "SALDERING"
+              note: |
+                Programmatische aanpak = ontwikkelingsruimte creëren ondanks belasting
+                Maatregelen compenseren effecten activiteiten
+                Voorbeelden: PAS (oud), nu art. 3.9 lid 4 stikstofprogramma
+              werking: |
+                1. Omgevingswaarde stelt limiet
+                2. Programma definieert ruimte
+                3. Beoordelingsregels wijken voor programma
+                4. Maatregelen garanderen doelbereik
+
+          - artikel: "3.17"
+            titel: "(eisen aan programma bij programmatische aanpak)"
+            status: "goed"
+            type: "inhoudseis"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Programma bevat beschrijving van:
+                  a. gebied
+                  b. periode
+                  c. omgevingswaarde/doelstelling
+                  d. huidige toestand
+                  e. verwachte ontwikkelingen
+                  f. verwachte activiteiten met effect
+                  g. gevolgen ontwikkelingen/activiteiten
+                  h. maatregelen + verwachte gevolgen + termijn
+
+              - lid: 2
+                inhoud: "Kan ook beschrijven: moment/voorwaarden voor wijziging/intrekking vergunningen"
+
+            juridische_analyse:
+              note: "Uitgebreide motiveringseis voor programmatische aanpak"
+
+          - artikel: "3.18"
+            titel: "(uitvoeringsplicht bij programmatische aanpak)"
+            status: "goed"
+            type: "verplichting"
+
+            leden:
+              - lid: 1
+                inhoud: "Aangewezen bestuursorganen zorgen voor uitvoering maatregelen binnen termijn"
+                type: "imperatief"
+
+              - lid: 2
+                inhoud: |
+                  Uitvoeringsplicht alleen:
+                  a. als uit programma blijkt dat organen hebben ingestemd, of
+                  b. als plicht volgt uit instructieregels/instructies (art. 2.23/2.25/2.33/2.34)
+
+              - lid: 3
+                inhoud: "Overeenkomstige toepassing op beheerplannen N2000 (art. 3.8 lid 3, 3.9 lid 3/4)"
+
+            juridische_analyse:
+              patroon: "INSTEMMING_OF_INSTRUCTIE"
+              note: "Geen uitvoeringsplicht zonder instemming of hogere opdracht"
+
+          - artikel: "3.19"
+            titel: "(wijziging programma bij programmatische aanpak)"
+            status: "goed"
+            type: "wijzigingsbevoegdheid"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Aangewezen bestuursorgaan kan:
+                  a. maatregelen/activiteiten/ontwikkelingen wijzigen/vervangen/laten vervallen
+                  b. maatregelen/activiteiten/ontwikkelingen toevoegen
+                  MITS per saldo past binnen of niet in strijd met programma
+
+              - lid: 2
+                inhoud: "Art. 3.18 lid 1-bestuursorganen kunnen wijziging verzoeken"
+
+              - lid: 3
+                inhoud: "Overeenkomstige toepassing op stikstofprogramma (art. 3.9 lid 4)"
+
+              - lid: 4
+                inhoud: "Wijzigingsplicht als monitoring toont dat art. 3.16 lid 2 niet meer houdbaar"
+                koppeling: "artikel 20.1"
+
+            juridische_analyse:
+              patroon: "SALDO_NEUTRALITEIT"
+              note: "Wijzigingen toegestaan mits totaaleffect behouden blijft"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE HOOFDSTUK 3
+# =============================================================================
+
+analyse:
+  karakterisering: "Strategische sturingsinstrumenten voor lange termijn"
+
+  instrument_vergelijking:
+    omgevingsvisie:
+      karakter: "strategisch, integraal"
+      verplicht: true
+      abstractie: "hoofdlijnen"
+      rechtsgevolg: "indirect (sturend)"
+      bevoegd_gezag:
+        gemeente: "gemeenteraad"
+        provincie: "provinciale staten"
+        rijk: "Minister BZK"
+
+    programma:
+      karakter: "uitvoeringsgericht, sectoraal"
+      verplicht: "deels (§3.2.2) / deels facultatief (§3.2.3)"
+      abstractie: "maatregelen"
+      rechtsgevolg: "direct bij programmatische aanpak"
+      bevoegd_gezag:
+        gemeente: "B&W"
+        waterschap: "algemeen bestuur"
+        provincie: "GS"
+        rijk: "Minister"
+
+  hiërarchie_instrumenten:
+    niveau_1: "Omgevingsvisie (richting)"
+    niveau_2: "Programma (maatregelen)"
+    niveau_3: "Verordening/plan (regels)"
+    niveau_4: "Vergunning (individueel)"
+
+  verplichte_programma_matrix:
+    gemeente:
+      - instrument: "actieplan geluid"
+        voorwaarde: "in aangewezen agglomeratie"
+        artikel: "3.6"
+      - instrument: "programma bij overschrijding"
+        voorwaarde: "dreigende niet-naleving omgevingswaarde"
+        artikel: "3.10"
+
+    waterschap:
+      - instrument: "waterbeheerprogramma"
+        voorwaarde: "altijd"
+        artikel: "3.7"
+
+    provincie:
+      - instrument: "actieplan geluid"
+        voorwaarde: "belangrijke wegen/spoor buiten agglomeratie"
+        artikel: "3.8 lid 1"
+      - instrument: "regionaal waterprogramma"
+        voorwaarde: "EU-waterrichtlijnen"
+        artikel: "3.8 lid 2"
+      - instrument: "beheerplan Natura 2000"
+        voorwaarde: "N2000-gebied (grotendeels) in provincie"
+        artikel: "3.8 lid 3"
+
+    rijk:
+      - instrument: "NEC-programma"
+        artikel: "3.9 lid 1a"
+      - instrument: "actieplan geluid"
+        artikel: "3.9 lid 1b"
+      - instrument: "stroomgebiedsbeheerplannen"
+        artikel: "3.9 lid 2a"
+      - instrument: "overstromingsrisicobeheerplannen"
+        artikel: "3.9 lid 2b"
+      - instrument: "maatregelprogramma mariene strategie"
+        artikel: "3.9 lid 2c"
+      - instrument: "maritiem ruimtelijk plan"
+        artikel: "3.9 lid 2d"
+      - instrument: "nationaal waterprogramma"
+        artikel: "3.9 lid 2e"
+      - instrument: "stikstofprogramma"
+        artikel: "3.9 lid 4"
+
+  programmatische_aanpak:
+    kernprincipe: "saldering via programma"
+    werking: |
+      1. Omgevingswaarde stelt limiet
+      2. Programma definieert beschikbare ruimte voor activiteiten
+      3. Maatregelen compenseren effecten
+      4. Beoordelingsregels (5.18 etc.) wijken voor programma
+    toepassing:
+      - "gemeente: via omgevingsplan"
+      - "provincie: via omgevingsverordening"
+      - "Rijk: via AMvB"
+    kritieke_voorwaarde: "saldo-neutraliteit bij wijzigingen"
+
+  koppelingen:
+    naar_ch2:
+      - artikel: "2.1"
+        relatie: "doelgebondenheid (inhoud visie/programma)"
+      - artikel: "2.15a"
+        relatie: "stikstofomgevingswaarden → programma 3.9 lid 4"
+      - artikel: "2.22-2.34"
+        relatie: "instructieregels → uitvoeringsplicht programma"
+    naar_ch5:
+      - artikel: "5.18-5.19"
+        relatie: "beoordelingsregels die kunnen wijken voor programma"
+    naar_ch16:
+      - artikel: "16.26-16.27"
+        relatie: "procedure vaststelling visie/programma"
+    naar_ch20:
+      - artikel: "20.1"
+        relatie: "monitoring → wijziging programma"
+      - artikel: "20.17"
+        relatie: "geluidbelastingkaarten → actieplan"
+
+  eu_richtlijnen_doorwerking:
+    omgevingslawaai: "actieplannen geluid (3.6, 3.8 lid 1, 3.9 lid 1b)"
+    nec: "nationaal NEC-programma (3.9 lid 1a)"
+    krw: "stroomgebiedsbeheerplannen (3.9 lid 2a)"
+    ror: "overstromingsrisicobeheerplannen (3.9 lid 2b)"
+    krms: "maatregelprogramma mariene strategie (3.9 lid 2c)"
+    kmrp: "maritiem ruimtelijk plan (3.9 lid 2d)"
+    habitatrichtlijn: "beheerplannen N2000 (3.8 lid 3)"
+
+  praktijk_belang:
+    stikstof: |
+      Art. 3.9 lid 4 = fundament stikstofprogramma
+      Verbindt 2.15a (omgevingswaarden) met concrete maatregelen
+      Maakt art. 3.16 programmatische aanpak mogelijk voor stikstof
+    water: |
+      Stroomgebiedsbeheerplannen (KRW), waterprogramma's → basis waterbeheer
+      Regionaal (GS) + nationaal (IenW) + operationeel (waterschap)
+    geluid: |
+      EU-verplichte actieplannen voor grote bronnen
+      Gelaagd: gemeente (agglomeratie), provincie (buiten), Rijk (rijksinfra)

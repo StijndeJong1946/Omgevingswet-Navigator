@@ -1,0 +1,248 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 2, AFDELING 2.1 - ATOMIC EXTRACTION
+# Algemene bepalingen (taken en bevoegdheden)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "2.1"
+  titel: "Algemene bepalingen"
+  artikelen_range: "2.1-2.3"
+  totaal_artikelen: 3
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "subsidiariteitsbeginsel"
+
+# =============================================================================
+# ARTIKEL 2.1 - DOELGEBONDEN TAAKUITOEFENING (CENTRALE BEPALING)
+# =============================================================================
+
+artikelen:
+  - artikel: "2.1"
+    titel: "(uitoefening taken en bevoegdheden)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "centrale_instructienorm"
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Een bestuursorgaan van een gemeente, een provincie of het Rijk of, met inachtneming van de Waterschapswet, van een waterschap oefent zijn taken en bevoegdheden op grond van deze wet uit met het oog op de doelen van de wet, tenzij daarover specifieke regels zijn gesteld."
+        type: "imperatief"
+        externe_ref:
+          - doc: "BWBR0005108"
+            naam: "Waterschapswet"
+        patroon: "DOEL_TENZIJ_SPECIFIEK"
+        bestuurslagen:
+          - gemeente
+          - provincie
+          - Rijk
+          - waterschap
+
+      - lid: 2
+        inhoud: "Het bestuursorgaan houdt daarbij rekening met de samenhang van de relevante onderdelen en aspecten van de fysieke leefomgeving en van de rechtstreeks daarbij betrokken belangen."
+        type: "integratiebeginsel"
+        kernbegrip: "samenhang"
+
+      - lid: 3
+        inhoud: "Bij de op grond van deze wet gestelde regels kan de toepassing van het eerste en tweede lid worden uitgewerkt of begrensd. Deze uitwerking of begrenzing kan in ieder geval betrekking hebben op:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "het waarborgen van de veiligheid"
+          - onderdeel: "b"
+            inhoud: "het beschermen van de gezondheid"
+          - onderdeel: "c"
+            inhoud: "het beschermen van het milieu"
+          - onderdeel: "d"
+            inhoud: "het duurzaam veiligstellen van de openbare drinkwatervoorziening"
+          - onderdeel: "e"
+            inhoud: "het beschermen van landschappelijke of stedenbouwkundige waarden"
+          - onderdeel: "f"
+            inhoud: "het behoud van cultureel erfgoed"
+          - onderdeel: "g"
+            inhoud: "het behoud van de uitzonderlijke universele waarde van werelderfgoed"
+          - onderdeel: "h"
+            inhoud: "de natuurbescherming"
+          - onderdeel: "i"
+            inhoud: "het tegengaan van klimaatverandering"
+          - onderdeel: "j"
+            inhoud: "de kwaliteit van bouwwerken"
+          - onderdeel: "k"
+            inhoud: "een evenwichtige toedeling van functies aan locaties"
+          - onderdeel: "l"
+            inhoud: "het behoeden van de staat en werking van infrastructuur voor nadelige gevolgen van activiteiten"
+          - onderdeel: "m"
+            inhoud: "het beheer van infrastructuur"
+          - onderdeel: "n"
+            inhoud: "het beheer van watersystemen"
+          - onderdeel: "o"
+            inhoud: "het beheer van geobiologische en geothermische systemen en ecosystemen"
+          - onderdeel: "p"
+            inhoud: "het beheer van natuurlijke hulpbronnen"
+          - onderdeel: "q"
+            inhoud: "het beheer van natuurgebieden"
+          - onderdeel: "r"
+            inhoud: "het gebruik van bouwwerken"
+          - onderdeel: "s"
+            inhoud: "het bevorderen van de toegankelijkheid van de openbare buitenruimte voor personen"
+        type: "uitwerkingscatalogus"
+        note: "19 belangen die uitwerking mogelijk maken"
+
+      - lid: 4
+        inhoud: "Onverminderd het derde lid wordt bij het stellen van regels met het oog op een evenwichtige toedeling van functies aan locaties in ieder geval rekening gehouden met het belang van het beschermen van de gezondheid."
+        type: "verplicht_meewegen"
+        kernbegrip: "gezondheid"
+        note: "Gezondheid altijd meewegen bij functietoedeling"
+
+    juridische_analyse:
+      patroon: "DOELGEBONDEN_TAAKUITOEFENING"
+      kernprincipes:
+        - "doelgebondenheid (lid 1)"
+        - "integratiebeginsel (lid 2)"
+        - "begrensbaarheid (lid 3)"
+        - "gezondheid altijd meewegen (lid 4)"
+      koppeling_art_1_3: "doelen van de wet"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.2 - AFSTEMMING EN SAMENWERKING
+  # ---------------------------------------------------------------------------
+  - artikel: "2.2"
+    titel: "(afstemming en samenwerking)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "coordinatienorm"
+
+    leden:
+      - lid: 1
+        inhoud: "Een bestuursorgaan houdt bij de uitoefening van zijn taken en bevoegdheden op grond van deze wet rekening met de taken en bevoegdheden van andere bestuursorganen en stemt zonodig met deze andere bestuursorganen af."
+        type: "afstemmingsplicht"
+        scope: "horizontaal en verticaal"
+
+      - lid: 2
+        inhoud: "Bestuursorganen kunnen taken en bevoegdheden gezamenlijk uitoefenen. Daarbij wordt niet voorzien in een overdracht van taken of bevoegdheden."
+        type: "facultatief"
+        note: "Samenwerking zonder mandaat/delegatie"
+        beperking: "geen bevoegdheidsoverdracht"
+
+      - lid: 3
+        inhoud: "Een bestuursorgaan treedt bij de uitoefening van zijn taken en bevoegdheden slechts in de taken en bevoegdheden van een ander bestuursorgaan voor zover dat nodig is voor de uitoefening van zijn eigen taken en bevoegdheden."
+        type: "begrenzingsbeginsel"
+        kernbegrip: "minimale overlap"
+
+    juridische_analyse:
+      patroon: "HORIZONTALE_COORDINATIE"
+      kernprincipes:
+        - "afstemming (lid 1)"
+        - "samenwerking mogelijk, geen overdracht (lid 2)"
+        - "minimale overlap (lid 3)"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.3 - SUBSIDIARITEITSBEGINSEL (CENTRALE BEPALING)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.3"
+    titel: "(algemene criteria verdeling van taken en bevoegdheden)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "verdelingscriterium"
+    centrale_bepaling: true
+    kernbegrip: "subsidiariteit"
+
+    leden:
+      - lid: 1
+        inhoud: "De uitoefening van de taken en bevoegdheden op grond van deze wet wordt overgelaten aan de bestuursorganen van een gemeente, tenzij daarover andere regels zijn gesteld."
+        type: "hoofdregel"
+        patroon: "DEFAULT_GEMEENTE_TENZIJ"
+        note: "Subsidiariteit: gemeente is default"
+
+      - lid: 2
+        inhoud: "Een bestuursorgaan van een provincie oefent een taak of bevoegdheid, als dat bij de regeling daarvan is bepaald, alleen uit als dat nodig is:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "met het oog op een provinciaal belang en dat belang niet op een doelmatige en doeltreffende wijze door het gemeentebestuur kan worden behartigd"
+            cumulatief:
+              - "provinciaal belang"
+              - "gemeente kan niet doelmatig/doeltreffend"
+          - onderdeel: "b"
+            inhoud: "voor een doelmatige en doeltreffende uitoefening van de taken en bevoegdheden op grond van deze wet of de uitvoering van een internationaalrechtelijke verplichting"
+            type: "doelmatigheidsnorm"
+        type: "escalatiecriterium"
+        scope: "provincie"
+
+      - lid: 3
+        inhoud: "Een bestuursorgaan van het Rijk oefent een taak of bevoegdheid, als dat bij de regeling daarvan is bepaald, alleen uit als dat nodig is:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "met het oog op een nationaal belang en dat belang niet op een doelmatige en doeltreffende wijze door het provinciebestuur of gemeentebestuur kan worden behartigd"
+            cumulatief:
+              - "nationaal belang"
+              - "provincie/gemeente kan niet doelmatig/doeltreffend"
+          - onderdeel: "b"
+            inhoud: "voor een doelmatige en doeltreffende uitoefening van de taken en bevoegdheden op grond van deze wet of de uitvoering van een internationaalrechtelijke verplichting"
+            type: "doelmatigheidsnorm"
+        type: "escalatiecriterium"
+        scope: "Rijk"
+
+      - lid: 4
+        inhoud: "Bestuursorganen van het Rijk oefenen ook de taken en bevoegdheden uit voor het niet provinciaal en gemeentelijk ingedeelde gebied."
+        type: "restbevoegdheid"
+        scope: "exclusieve economische zone, continentaal plat"
+
+    juridische_analyse:
+      patroon: "SUBSIDIARITEITSLADDER"
+      structuur:
+        niveau_1:
+          default: "gemeente"
+          artikel: "2.3.1"
+        niveau_2:
+          trigger: "provinciaal belang + gemeente onvoldoende"
+          artikel: "2.3.2"
+        niveau_3:
+          trigger: "nationaal belang + provincie/gemeente onvoldoende"
+          artikel: "2.3.3"
+        niveau_4:
+          trigger: "buiten gemeentelijke/provinciale indeling"
+          artikel: "2.3.4"
+      koppeling_eu: "EU-subsidiariteitsbeginsel (art. 5 VEU)"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 2.1
+# =============================================================================
+
+analyse:
+  karakterisering: "Fundamentele verdelingsbeginselen taken/bevoegdheden"
+
+  kernpatronen:
+    doelgebondenheid:
+      beschrijving: "Taakuitoefening met het oog op wetsdoelen"
+      artikel: "2.1.1"
+      koppeling: "art. 1.3 (doelen)"
+
+    integratiebeginsel:
+      beschrijving: "Samenhang fysieke leefomgeving"
+      artikel: "2.1.2"
+      note: "Sectorale verkokering tegengaan"
+
+    subsidiariteit:
+      beschrijving: "Gemeente default, tenzij hoger niveau nodig"
+      artikel: "2.3"
+      patroon: "DEFAULT_GEMEENTE_TENZIJ"
+
+    coordinatie:
+      beschrijving: "Afstemming zonder bevoegdheidsoverdracht"
+      artikel: "2.2"
+
+  koppelingen:
+    naar_ch1:
+      - artikel: "1.3"
+        relatie: "doelen waarnaar art. 2.1 verwijst"
+    naar_ch4:
+      - artikel: "4.1-4.2"
+        relatie: "regels over fysieke leefomgeving"
+    naar_ch5:
+      - artikel: "5.1 e.v."
+        relatie: "omgevingsvergunning"
+
+  praktijk_belang:
+    subsidiariteit: "Art. 2.3 fundamenteel voor bevoegdheidsvragen"
+    doelgebondenheid: "Art. 2.1 basis voor alle taakuitoefening"
+    note: "Deze 3 artikelen vormen de constitutionele kern van de bevoegdheidsverdeling"

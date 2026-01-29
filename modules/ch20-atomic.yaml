@@ -1,0 +1,756 @@
+# Chapter 20: Monitoring en informatie
+# Source: BWBR0037885 (Omgevingswet)
+# Extraction date: 2026-01-29
+# TRUE to the SOURCE
+
+chapter:
+  number: 20
+  title: "Monitoring en informatie"
+  type: support_system
+  function: data_foundation
+
+  # Critical pattern: Monitoring creates the feedback loop
+  # Ch2/Ch3 sets targets -> Ch20 monitors -> triggers Ch3 programma or Ch19 emergency
+
+structure:
+  afdelingen:
+    - number: "20.1"
+      title: "Monitoring en verzameling van gegevens"
+      articles: "20.1-20.7a"
+      function: "monitoring_plicht"
+
+    - number: "20.2"
+      title: "Gegevensbeheer en toegang tot gegevens"
+      articles: "20.8-20.13"
+      function: "data_governance"
+
+    - number: "20.3"
+      title: "Verslagen en kaarten"
+      articles: "20.14-20.17"
+      function: "rapportage"
+
+    - number: "20.4"
+      title: "Evaluatie"
+      articles: "20.18-20.19"
+      function: "wetenschappelijk_onderzoek"
+
+    - number: "20.5"
+      title: "Digitaal stelsel Omgevingswet"
+      articles: "20.20-20.30"
+      function: "DSO_infrastructure"
+      paragrafen:
+        - "20.5.1": "Algemeen"
+        - "20.5.2": "Landelijke voorziening"
+        - "20.5.3": "Persoonsgegevens en gegevensbeheer"
+        - "20.5.4": "Beschikbaar stellen van informatie"
+        - "20.5.5": "Elektronisch indienen"
+        - "20.5.6": "Overige bepalingen"
+
+# =============================================================================
+# AFDELING 20.1 - MONITORING EN VERZAMELING VAN GEGEVENS
+# =============================================================================
+
+afdeling_20_1:
+  titel: "Monitoring en verzameling van gegevens"
+  articles: "20.1-20.7a"
+
+  artikel_20_1:
+    titel: "monitoringsplicht"
+    leden:
+      lid_1:
+        content: "Voor elke vastgestelde omgevingswaarde en alarmeringswaarde wordt de staat of kwaliteit van de fysieke leefomgeving door monitoring bewaakt"
+        onderdelen:
+          - "staat of kwaliteit"
+          - "belasting door activiteiten"
+          - "concentratie of depositie van stoffen"
+        beoordeling: "of aan waarde wordt voldaan"
+
+      lid_2:
+        content: "Voor programma's (§3.2.4) worden voortgang, uitvoering en doelbereik bewaakt"
+        reference: "Art. 3.17"
+        pattern: "programmatische_aanpak_monitoring"
+
+      lid_3:
+        content: "Bij omgevingsplan/verordening/AMvB: andere parameters aanwijzen"
+        reference: "Art. 2.3"
+        subsidiariteit: true
+
+      lid_4:
+        content: "Bij AMvB: onderdelen natuur aanwijzen voor monitoring staat van instandhouding"
+
+    juridische_analyse:
+      core_pattern: "monitoring = terugkoppeling naar doelen"
+      connection_to_ch2: "omgevingswaarden uit Art. 2.9-2.17"
+      connection_to_ch3: "programma's uit §3.2.4"
+      connection_to_ch19: "alarmeringswaarden trigger voor Art. 19.10-19.12"
+
+  artikel_20_2:
+    titel: "aanwijzing methode en bestuursorgaan"
+    leden:
+      lid_1:
+        content: "Bij instrument dat waarde/programma/parameter vaststelt: methode + uitvoerder aanwijzen"
+        delegatie: "AMvB voor wettelijke omgevingswaarden"
+
+      lid_2:
+        content: "Alarmeringswaarden: methode bij ministeriële regeling"
+
+      lid_3:
+        content: "Minister I&W uitvoerder voor alarmeringswaarden"
+
+      lid_4:
+        content: "Bij AMvB: monitoringsprogramma door aangewezen bestuursorganen"
+
+      lid_5:
+        content: "Frequentie monitoring bij instrument dat programma (3.15) aanwijst"
+
+      lid_6:
+        content: "Afwijking lid 1: geluidproductieplafonds methode+uitvoerder via AMvB"
+
+      lid_7:
+        onderdelen:
+          a: "aangewezen uitvoerders"
+          b: "Minister I&W"
+          c: "bevoegde autoriteiten andere staten"
+          d: "Europese Commissie"
+        pattern: "gegevensstromen_matrix"
+
+  artikel_20_3:
+    titel: "regels over de uitvoering"
+    leden:
+      lid_1:
+        content: "Ministeriële regeling: uitvoeringsregels voor monitoring"
+        scope:
+          - "Art. 2.11a (veiligheid primaire waterkeringen)"
+          - "Art. 2.12a lid 1"
+          - "Art. 2.13 lid 1"
+          - "Art. 2.13a lid 1"
+          - "§2.3.4 (waterkwaliteit)"
+          - "alarmeringswaarden"
+          - "bij AMvB aangewezen parameters/natuur"
+          - "Art. 2.11, 2.12 (met subsidiariteitsgrenzen)"
+
+      lid_2:
+        onderdelen:
+          a: "meten of berekenen, frequentie, verhouding, monitoringspunten"
+          b: "verificatie en gelijkwaardigheid methoden"
+          c: "beoordeling resultaten en methoden"
+          d: "trends vaststellen"
+          e: "inrichting en beheer meetnetten"
+          f: "kwaliteitsborging en coördinatie"
+          g: "wijze van opslag gegevens"
+
+      lid_3:
+        content: "Primaire waterkeringen: herziening regels ten hoogste elke 12 jaar"
+
+  artikel_20_4:
+    titel: "implementatie internationaalrechtelijke verplichtingen"
+    content: "Op grond van Art. 20.1-20.3 worden regels gesteld ter uitvoering van:"
+    eu_richtlijnen:
+      a: "drinkwaterrichtlijn"
+      b: "grondwaterrichtlijn"
+      c: "habitatrichtlijn"
+      d: "kaderrichtlijn water"
+      e: "nec-richtlijn"
+      f: "richtlijn gevaarlijke afvalstoffen in de lucht"
+      g: "richtlijn luchtkwaliteit"
+      h: "richtlijn prioritaire stoffen"
+      i: "richtlijn stedelijk afvalwater"
+      j: "verordening governance van de energie-unie"
+      k: "vogelrichtlijn"
+      l: "zwemwaterrichtlijn"
+    juridische_analyse:
+      pattern: "EU-implementatie via nationaal recht"
+      count: 12
+
+  artikel_20_5:
+    titel: "toetsing en correctie methoden door minister"
+    leden:
+      lid_1:
+        content: "Minister bevoegd tot toetsing voor Art. 2.13 en §2.3.4 waarden"
+        onderdelen:
+          a: "nauwkeurigheid meetmethode of andere methode"
+          b: "nauwkeurigheid toepassing methode"
+
+      lid_2:
+        content: "Minister kan bepalen dat toetsingsresultaten in plaats treden van eerdere resultaten"
+        pattern: "ministeriële_correctiebevoegdheid"
+
+  artikel_20_6:
+    titel: "gegevensverzameling anders dan monitoring"
+    leden:
+      lid_1:
+        content: "Bij omgevingsverordening/AMvB: regels over gegevensverzameling"
+        reference: "Art. 2.3 (subsidiariteit)"
+        onderdelen:
+          a:
+            sub_1: "bijhouden, verzamelen of berekenen gegevens"
+            sub_2: "verstrekken aan bestuursorganen, andere staten, EU"
+          b: "toetsing kwaliteit gegevens"
+
+      lid_2:
+        content: "Geheimhouding mogelijk op grond van Art. 5.1 Woo"
+
+      lid_3:
+        content: "Nadere regels bij verordening/ministeriële regeling"
+        onderdelen:
+          a: "uitvoering en bekostiging"
+          b: "berekeningsmethodiek"
+
+      lid_4:
+        content: "Niet van toepassing voor zover Art. 20.1-20.5 voorziet"
+
+  artikel_20_7:
+    titel: "implementatie internationaalrechtelijke verplichtingen (gegevensverzameling)"
+    content: "Op grond van Art. 20.6 regels ter uitvoering van:"
+    eu_verplichtingen:
+      a: "habitatrichtlijn"
+      b: "PRTR-verordening"
+      c: "richtlijn omgevingslawaai"
+      d: "richtlijn overstromingsrisico's"
+      e: "vogelrichtlijn"
+      f: "werelderfgoedverdrag"
+
+  artikel_20_7a:
+    titel: "verzamelen en verstrekken vertrouwelijke gegevens"
+    status: "nogniet"  # nog niet in werking
+    content: "Gegevens voor verduurzaming energievoorziening gebouwen"
+    onderdelen:
+      a: "naam en adres eigenaar/appartementsgerechtigde (via kadaster)"
+      b: "aansluiting op energievoorziening (Gas, Elektriciteit, Warmte)"
+    references:
+      - "Art. 10 lid 6 Gaswet"
+      - "Art. 23 lid 1 Elektriciteitswet 1998"
+      - "Art. 1 lid 1 Warmtewet"
+
+# =============================================================================
+# AFDELING 20.2 - GEGEVENSBEHEER EN TOEGANG TOT GEGEVENS
+# =============================================================================
+
+afdeling_20_2:
+  titel: "Gegevensbeheer en toegang tot gegevens"
+  articles: "20.8-20.13"
+
+  artikel_20_8:
+    titel: "verstrekking van informatie aan het publiek"
+    leden:
+      lid_1:
+        onderdelen:
+          a: "beschikbaar stellen resultaten monitoring of gegevens (Art. 20.1/20.6)"
+          b: "actieve verstrekking bij (verwachte) normoverschrijding"
+
+      lid_2:
+        content: "Resultaten zoveel mogelijk elektronisch, open formaat, machinaal leesbaar, met metadata"
+        reference: "Art. 5 lid 1 richtlijn hergebruik overheidsinformatie"
+        pattern: "open_data_standaard"
+
+      lid_3:
+        content: "Nadere regels bij ministeriële regeling"
+
+  artikel_20_9:
+    titel: "implementatie internationaalrechtelijke verplichtingen (publieksinformatie)"
+    leden:
+      lid_1:
+        content: "Milieu-informatie aan publiek ter uitvoering van:"
+        references:
+          - "verdrag van Aarhus"
+          - "richtlijn toegang tot milieu-informatie"
+
+      lid_2:
+        eu_richtlijnen:
+          a: "richtlijn gevaarlijke stoffen in de lucht"
+          b: "richtlijn luchtkwaliteit"
+          c: "zwemwaterrichtlijn"
+
+  artikel_20_10:
+    titel: "grondslag registers"
+    leden:
+      lid_1:
+        content: "Bij AMvB: regels over registers"
+        reference: "Art. 2.3 lid 3 (subsidiariteit)"
+        onderdelen:
+          a: "opnemen resultaten monitoring/gegevens in register"
+          b: "verstrekken van registergegevens"
+
+      lid_2:
+        content: "Geheimhouding mogelijk (Art. 5.1 Woo): niet toegankelijk/niet aan derden"
+
+      lid_3:
+        content: "Nadere regels ministeriële regeling"
+        onderdelen:
+          a: "op te nemen gegevens"
+          b: "vorm, inrichting, beheer, toegankelijkheid, beveiliging"
+          c: "weergave en verstrekking aan derden"
+          d: "herstellen fouten"
+
+  artikel_20_11:
+    titel: "verplichte registers"
+    content: "Op grond van Art. 20.10 lid 1 worden ingesteld:"
+    registers:
+      a:
+        naam: "PRTR"
+        content: "uitstoot en overbrenging verontreinigende stoffen"
+        eu_basis: "Pollutants Release and Transfer Register"
+
+      b:
+        naam: "Register externe veiligheidsrisico's"
+        content: "installaties, transportroutes, buisleidingen"
+        aanwijzing: "bij AMvB"
+
+      c:
+        naam: "Registers beschermde gebieden"
+        content: "als bedoeld in Art. 6 kaderrichtlijn water"
+
+    juridische_analyse:
+      pattern: "verplichte_registers_matrix"
+      eu_driven: true
+
+  artikel_20_12:
+    titel: "[ingetrokken]"
+    content: "Niet meer in werking - ingetrokken door Stb. 2020/172"
+
+  artikel_20_13:
+    titel: "ter plaatse verstrekken van informatie aan het publiek"
+    leden:
+      lid_1:
+        content: "Bij AMvB: regels over informatie ter plaatse over aangewezen locaties"
+
+      lid_2:
+        content: "Verplicht: Art. 12 lid 1 zwemwaterrichtlijn onderwerpen"
+        pattern: "fysieke_informatieborden"
+
+# =============================================================================
+# AFDELING 20.3 - VERSLAGEN EN KAARTEN
+# =============================================================================
+
+afdeling_20_3:
+  titel: "Verslagen en kaarten"
+  articles: "20.14-20.17"
+
+  artikel_20_14:
+    titel: "verslaglegging"
+    leden:
+      lid_1:
+        content: "Uitvoerder monitoring (Art. 20.2 lid 1) zorgt voor verslaglegging"
+        onderdelen:
+          a: "resultaten omgevingswaarden-monitoring + beoordeling + toetsing"
+          b: "resultaten programma-monitoring (§3.2.4): voortgang, uitvoering, doelbereik"
+
+      lid_2:
+        content: "Methode en frequentie verslaglegging bij instrument dat programma aanwijst (Art. 3.15)"
+
+      lid_3:
+        content: "Bij AMvB: verslaglegging voor alarmeringswaarden en andere parameters"
+        onderdelen:
+          a: "alarmeringswaarden en andere parameters (Art. 20.1 lid 1+3)"
+          b: "gegevens (Art. 20.6 lid 1)"
+
+      lid_4:
+        content: "Bij AMvB: regels over openbaarmaking verslagen"
+
+      lid_5:
+        onderdelen:
+          a: "toezending aan Minister of ander bestuursorgaan (voor Staten-Generaal of EU)"
+          b: "bekendmaking of mededeling aan derden"
+
+      lid_6:
+        content: "Ministeriële regeling over:"
+        onderdelen:
+          a: "op te nemen gegevens"
+          b: "vorm verslag"
+          c: "beoordeling en methoden"
+
+  artikel_20_15:
+    titel: "verslag veiligheid primaire waterkeringen"
+    content: "Als niet wordt voldaan aan Art. 2.15 lid 1 onder d:"
+    verplichting: "omschrijving maatregelen + termijn in verslag Art. 20.14"
+    juridische_analyse:
+      pattern: "normoverschrijding_trigger"
+      connection_to: "Art. 2.15 lid 1 onder d (omgevingswaarden primaire waterkeringen)"
+
+  artikel_20_16:
+    titel: "kaarten"
+    leden:
+      lid_1:
+        content: "Bij AMvB: regels over verbeelding resultaten op kaarten"
+        reference: "Art. 2.3 lid 3 (subsidiariteit)"
+
+      lid_2:
+        content: "Art. 20.14 lid 4+5 van overeenkomstige toepassing"
+
+      lid_3:
+        content: "Ministeriële regeling over:"
+        onderdelen:
+          a: "te verbeelden gegevens"
+          b: "vorm kaart"
+
+  artikel_20_17:
+    titel: "verplichte kaarten"
+    leden:
+      lid_1:
+        verplichte_kaarten:
+          a:
+            type: "geluidbelastingkaarten"
+            basis: "Art. 7 richtlijn omgevingslawaai"
+            verantwoordelijk:
+              sub_1: "B&W voor Art. 3.6 situaties (agglomeraties)"
+              sub_2: "GS voor Art. 3.8 lid 1 situaties"
+              sub_3: "Minister I&W voor Art. 3.9 lid 1 situaties"
+
+          b:
+            type: "kaarten kustlijn"
+            basis: "Art. 2.19 lid 2 onder b"
+            verantwoordelijk: "Minister I&W"
+
+          c:
+            type: "overstromingsgevaar- en risicokaarten"
+            basis: "Art. 6 richtlijn overstromingsrisico's"
+            verantwoordelijk: "GS"
+
+      lid_2:
+        content: "Ministeriële regeling verplicht voor geluidbelastingkaarten"
+
+# =============================================================================
+# AFDELING 20.4 - EVALUATIE
+# =============================================================================
+
+afdeling_20_4:
+  titel: "Evaluatie"
+  articles: "20.18-20.19"
+
+  artikel_20_18:
+    titel: "wetenschappelijk onderzoek van de fysieke leefomgeving"
+    leden:
+      lid_1:
+        actor: "Planbureau voor de Leefomgeving"
+        frequentie: "ten minste eenmaal per 4 jaar"
+        content: "wetenschappelijk rapport over kwaliteitsontwikkeling"
+        scope: "bij ministeriële regeling aangewezen onderdelen/aspecten"
+
+      lid_2:
+        actor: "Minister OCW"
+        frequentie: "ten minste eenmaal per 4 jaar"
+        content: "wetenschappelijk rapport over staat cultureel erfgoed en werelderfgoed"
+
+      lid_3:
+        actor: "Minister voor Natuur en Stikstof"
+        content: "bevordert onderzoek en wetenschappelijk werk"
+        basis:
+          - "Art. 10 lid 1 vogelrichtlijn"
+          - "Art. 18 lid 1 habitatrichtlijn"
+
+    juridische_analyse:
+      pattern: "institutionele_evaluatie"
+      actors:
+        - "PBL"
+        - "Minister OCW"
+        - "Minister N&S"
+
+  artikel_20_19:
+    titel: "effecten omgevingswaarden veiligheid primaire waterkeringen"
+    leden:
+      lid_1:
+        actor: "Minister I&W"
+        recipient: "beide kamers Staten-Generaal"
+        frequentie: "elke 12 jaar"
+        content: "verslag doeltreffendheid en effecten omgevingswaarden primaire waterkeringen"
+        reference: "Art. 2.15 lid 1 onder d"
+
+      lid_2:
+        deadline: "eerste toezending voor 1 januari 2037"
+
+    juridische_analyse:
+      pattern: "parlementaire_rapportage"
+      cycle: "12-jaarlijks"
+
+# =============================================================================
+# AFDELING 20.5 - DIGITAAL STELSEL OMGEVINGSWET (DSO)
+# =============================================================================
+
+afdeling_20_5:
+  titel: "Digitaal stelsel Omgevingswet"
+  articles: "20.20-20.30"
+
+  paragraaf_20_5_1:
+    titel: "Algemeen"
+
+    artikel_20_20:
+      titel: "digitaal stelsel doel"
+      content: "Er is een digitaal stelsel Omgevingswet"
+      doelen:
+        a: "beschikbaar stellen informatie over fysieke leefomgeving"
+        b: "faciliteren elektronisch verkeer (Art. 16.1)"
+        c: "bevorderen doelmatige en doeltreffende taakuitoefening"
+
+      juridische_analyse:
+        pattern: "DSO_triple_function"
+        connection_to_ch16: "elektronisch verkeer via Art. 16.1"
+
+  paragraaf_20_5_2:
+    titel: "Landelijke voorziening"
+
+    artikel_20_21:
+      titel: "landelijke voorziening"
+      leden:
+        lid_1:
+          content: "Er is een landelijke voorziening"
+          functies:
+            a: "elektronisch ontsluiten informatie (Art. 20.26 lid 1)"
+            b: "elektronisch indienen aanvragen, meldingen, gegevens, berichten (Art. 16.1)"
+
+        lid_2:
+          beheerder: "Minister van Binnenlandse Zaken en Koninkrijksrelaties"
+          delegatie: "ministeriële regeling kan uitsluitend recht verlenen aan rechtspersoon"
+
+        lid_3:
+          content: "Bij AMvB: aanwijzing bestuursorganen/rechtspersonen voor onderdelen"
+          taken: "inrichting, instandhouding, werking, beveiliging"
+
+        lid_4:
+          content: "Nadere regels ministeriële regeling"
+
+      juridische_analyse:
+        pattern: "centrale_voorziening_decentraal_gebruik"
+        beheer: "BZK"
+
+    artikel_20_22:
+      titel: "andere functionaliteiten van landelijke voorziening"
+      leden:
+        lid_1:
+          content: "Bij AMvB: andere functionaliteiten aanwijzen"
+          voorwaarde: "bijdragen aan Art. 20.20 doelen"
+
+        lid_2:
+          content: "Nadere regels over verplicht/onverplicht gebruiken"
+
+    artikel_20_23:
+      titel: "beperking van toegang tot informatie"
+      content: "Informatie die niet kan worden verstrekt op grond van Art. 5.1 Woo wordt niet via DSO aan ieder beschikbaar gesteld"
+      reference: "Wet open overheid"
+
+  paragraaf_20_5_3:
+    titel: "Persoonsgegevens en gegevensbeheer"
+
+    artikel_20_24:
+      titel: "gegevensbeheer"
+      leden:
+        lid_1:
+          content: "Bij AMvB: regels over beheer informatie in landelijke voorziening"
+          reference: "Art. 20.25"
+          verplicht: "bepalen wie verantwoordelijk is voor beheer aanvragen/meldingen/gegevens/berichten"
+
+        lid_2:
+          content: "Nadere regels ministeriële regeling"
+
+    artikel_20_25:
+      titel: "persoonsgegevens"
+      leden:
+        lid_1:
+          content: "Bij AMvB wordt bepaald:"
+          onderdelen:
+            a: "welke persoonsgegevens worden verwerkt"
+            b: "verwerkingsverantwoordelijke (Art. 4 AVG)"
+            c: "aan wie worden verstrekt"
+            d: "hoe lang bewaard"
+
+        lid_2:
+          content: "Nadere regels ministeriële regeling, incl. wijze van verstrekking"
+
+      juridische_analyse:
+        pattern: "AVG_compliance"
+
+  paragraaf_20_5_4:
+    titel: "Beschikbaar stellen van informatie voor ontsluiting via de landelijke voorziening"
+
+    artikel_20_26:
+      titel: "beschikbaar stellen van informatie voor ontsluiting via landelijke voorziening"
+      leden:
+        lid_1:
+          content: "Bij AMvB: informatie aanwijzen voor ontsluiting via DSO"
+          verplichting: "bepalen door en aan welke bestuursorganen/rechtspersonen"
+
+        lid_2:
+          content: "In ieder geval: informatie uit omgevingsdocumenten (bij ministeriële regeling aangeduid)"
+          pattern: "omgevingsdocument_definitie"
+
+        lid_3:
+          content: "Bepalen wie beslist over Art. 20.23 beperkingen"
+
+        lid_4:
+          content: "Informatie voldoet aan ministeriële regeling"
+
+        lid_5:
+          content: "Nadere regels over wijze van beschikbaar stellen"
+
+      juridische_analyse:
+        pattern: "verplichte_ontsluiting"
+        core: "omgevingsdocumenten moeten via DSO"
+
+    artikel_20_27:
+      titel: "kwaliteitsborging"
+      content: "Bij AMvB: regels voor borging en beoordeling kwaliteit informatie (Art. 20.26 lid 1)"
+
+  paragraaf_20_5_5:
+    titel: "Elektronisch indienen"
+
+    artikel_20_28:
+      titel: "gebruik landelijke voorziening en elektronisch formulier"
+      leden:
+        lid_1:
+          content: "Bevoegd gezag en betrokken bestuursorganen gebruiken DSO voor ingediende aanvragen/meldingen/gegevens/berichten"
+          verplichting: "verplicht gebruik DSO door overheid"
+
+        lid_2:
+          content: "Bij AMvB: regels over elektronisch formulier"
+          bepalingen:
+            - "welk bestuursorgaan stelt formulier vast"
+            - "welk bestuursorgaan levert benodigde informatie"
+
+        lid_3:
+          content: "Nadere regels ministeriële regeling"
+
+      juridische_analyse:
+        pattern: "one_stop_shop"
+        verplichting: "overheid moet DSO gebruiken"
+
+  paragraaf_20_5_6:
+    titel: "Overige bepalingen"
+
+    artikel_20_29:
+      titel: "systeembeschrijving"
+      content: "Bij ministeriële regeling: systeembeschrijving landelijke voorziening"
+      verplichte_inhoud: "beschrijving elektronische informatie-uitwisseling tussen DSO en bestuursorganen/rechtspersonen"
+
+    artikel_20_30:
+      titel: "overige ministeriële regels"
+      content: "Ministeriële regeling kan regels stellen over:"
+      onderdelen:
+        a: "afhandeling terugmeldingen mogelijke onjuistheid"
+        b: "beschikbaar stellen informatie niet aangewezen via Art. 20.26 lid 1"
+        c: "uitvoering afdeling (voor zover Art. 20.21-20.29 niet voorziet)"
+
+# =============================================================================
+# CROSS-CHAPTER CONNECTIONS
+# =============================================================================
+
+cross_chapter_links:
+  to_chapter_2:
+    - from: "Art. 20.1 lid 1"
+      to: "Art. 2.9-2.17 (omgevingswaarden)"
+      relation: "monitoring van vastgestelde waarden"
+
+    - from: "Art. 20.15"
+      to: "Art. 2.15 lid 1 onder d"
+      relation: "rapportage bij normoverschrijding waterkeringen"
+
+    - from: "Art. 20.19"
+      to: "Art. 2.15 lid 1 onder d"
+      relation: "12-jaarlijkse evaluatie waterkeringswaarden"
+
+  to_chapter_3:
+    - from: "Art. 20.1 lid 2"
+      to: "§3.2.4 (programmatische aanpak)"
+      relation: "monitoring doelbereik programma's"
+
+    - from: "Art. 20.14"
+      to: "Art. 3.15, Art. 3.17"
+      relation: "verslaglegging programma-monitoring"
+
+    - from: "Art. 20.17"
+      to: "Art. 3.6, 3.8, 3.9"
+      relation: "geluidbelastingkaarten voor actieplannen"
+
+  to_chapter_16:
+    - from: "Art. 20.20"
+      to: "Art. 16.1"
+      relation: "DSO faciliteert elektronisch verkeer"
+
+    - from: "Art. 20.21"
+      to: "Art. 16.1"
+      relation: "landelijke voorziening voor aanvragen/meldingen"
+
+  to_chapter_19:
+    - from: "Art. 20.1 lid 1"
+      to: "alarmeringswaarden"
+      relation: "monitoring triggert Art. 19.10-19.12"
+
+  external:
+    - from: "Art. 20.4"
+      to: "12 EU-richtlijnen"
+      relation: "implementatie monitoring-verplichtingen"
+
+    - from: "Art. 20.9"
+      to: "verdrag van Aarhus"
+      relation: "publieke toegang tot milieu-informatie"
+
+    - from: "Art. 20.11"
+      to: "PRTR-verordening, kaderrichtlijn water"
+      relation: "verplichte registers"
+
+# =============================================================================
+# KEY PATTERNS DISCOVERED
+# =============================================================================
+
+key_patterns:
+
+  feedback_loop:
+    description: "Monitoring sluit de beleidscyclus"
+    flow: "Ch2/Ch3 (doelen) -> Ch20 (meten) -> Ch3 (bijsturen) of Ch19 (noodmaatregelen)"
+
+  dso_triple_function:
+    article: "Art. 20.20"
+    functions:
+      - "informatie beschikbaar stellen"
+      - "elektronisch verkeer faciliteren (loket)"
+      - "doelmatigheid bevorderen"
+    beheer: "Minister BZK"
+
+  eu_implementation_hub:
+    article: "Art. 20.4, 20.7, 20.9"
+    count: "12+ EU-richtlijnen"
+    pattern: "nationale uitvoering via AMvB/ministeriële regeling"
+
+  verplichte_registers:
+    article: "Art. 20.11"
+    registers:
+      - "PRTR (emissies)"
+      - "Externe veiligheidsrisico's"
+      - "Beschermde gebieden (water)"
+
+  omgevingsdocument_concept:
+    article: "Art. 20.26 lid 2"
+    content: "besluiten en rechtsfiguren aangeduid bij ministeriële regeling"
+    verplichting: "moet via DSO ontsloten worden"
+
+  12_year_cycle_waterkeringen:
+    articles: "Art. 20.3 lid 3, Art. 20.19"
+    pattern: "herziening methoden + parlementaire evaluatie"
+    deadline: "eerste rapportage voor 1 januari 2037"
+
+# =============================================================================
+# JURIDISCHE ANALYSE
+# =============================================================================
+
+juridische_analyse:
+
+  chapter_function: "Data-infrastructuur voor evidence-based governance"
+
+  core_insight: |
+    Chapter 20 is de terugkoppeling in het Omgevingswet-systeem.
+    Zonder monitoring zijn omgevingswaarden (Ch2) en programma's (Ch3)
+    papieren tijgers. De monitoring triggert:
+    1. Programma-aanpassingen (als doelbereik niet op schema)
+    2. Alarmeringsprocedures (Ch19 als drempels overschreden)
+    3. EU-rapportages (infractieprocedures voorkomen)
+
+  dso_significance: |
+    Het Digitaal Stelsel Omgevingswet (Afd. 20.5) is niet slechts
+    een IT-systeem maar een wettelijk verankerde infrastructuur:
+    - Verplicht voor overheid (Art. 20.28 lid 1)
+    - Omgevingsdocumenten MOETEN via DSO (Art. 20.26 lid 2)
+    - Beheer centraal bij BZK maar gebruik decentraal
+
+  structural_parallel:
+    monitoring: "omgevingswaarden + alarmeringswaarden + programma's"
+    registers: "PRTR + veiligheid + beschermde gebieden"
+    rapportage: "verslagen + kaarten + evaluaties"
+    infrastructure: "DSO als one-stop-shop"

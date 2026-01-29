@@ -1,0 +1,1050 @@
+# Omgevingswet Navigator - Chapter 5 Afdeling 5.1: De omgevingsvergunning
+# Extracted from BWBR0037885 (Omgevingswet)
+# Source: source/Omgevingswet.xml
+
+_metadata:
+  module_id: "ow-mod-ch5-afd-5.1"
+  chapter: 5
+  chapter_title: "De omgevingsvergunning en het projectbesluit"
+  afdeling: "5.1"
+  afdeling_title: "De omgevingsvergunning"
+  extraction_date: "2026-01-28"
+  source_bwb_id: "BWBR0037885"
+  inwerking: "2024-01-01"
+  paragrafen:
+    - nr: "5.1.1"
+      title: "Verbodsbepalingen"
+      articles: ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"]
+    - nr: "5.1.2"
+      title: "Reikwijdte aanvraag omgevingsvergunning en aanwijzing bevoegd gezag"
+      articles: ["5.7", "5.8", "5.9", "5.9a", "5.10", "5.11", "5.12", "5.13", "5.14", "5.15", "5.16"]
+    - nr: "5.1.3"
+      title: "De beoordeling van de aanvraag"
+      articles: ["5.17", "5.18", "5.19", "5.20", "5.21", "5.22", "5.23", "5.24", "5.25", "5.26", "5.27", "5.28", "5.29", "5.29a", "5.30", "5.31", "5.32", "5.33", "5.33a"]
+    - nr: "5.1.4"
+      title: "Inhoud en werking"
+      articles: ["5.34", "5.35", "5.36", "5.36a", "5.36b", "5.37", "5.37a"]
+    - nr: "5.1.5"
+      title: "Actualisering, wijziging, intrekking en revisievergunning"
+      articles: ["5.38", "5.39", "5.40", "5.41", "5.42", "5.43"]
+
+# ==============================================================================
+# PARAGRAAF 5.1.1 - Verbodsbepalingen
+# ==============================================================================
+
+article_5.1:
+  article: "5.1"
+  paragraaf: "5.1.1"
+  title_nl: "(omgevingsvergunningplichtige activiteiten wet)"
+  text_nl: |
+    Lid 1: Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:
+    a. een omgevingsplanactiviteit,
+    b. een rijksmonumentenactiviteit,
+    c. een ontgrondingsactiviteit,
+    d. een stortingsactiviteit op zee,
+    e. een Natura 2000-activiteit,
+    f. een jachtgeweeractiviteit,
+    g. een valkeniersactiviteit,
+    tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval.
+
+    Lid 2: Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:
+    a. een bouwactiviteit,
+    b. een milieubelastende activiteit,
+    c. een lozingsactiviteit op:
+       1. een oppervlaktewaterlichaam,
+       2. een zuiveringtechnisch werk,
+    d. een wateronttrekkingsactiviteit,
+    e. een mijnbouwlocatieactiviteit,
+    f. een beperkingengebiedactiviteit met betrekking tot:
+       1. een weg,
+       2. een waterstaatswerk,
+       3. een luchthaven,
+       4. een hoofdspoorweg, lokale spoorweg of bijzondere spoorweg,
+       5. een installatie in een waterstaatswerk,
+    g. een flora- en fauna-activiteit,
+    voor zover het gaat om een bij algemene maatregel van bestuur aangewezen geval.
+  leden:
+    - lid: 1
+      text: |
+        Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:
+        a. een omgevingsplanactiviteit,
+        b. een rijksmonumentenactiviteit,
+        c. een ontgrondingsactiviteit,
+        d. een stortingsactiviteit op zee,
+        e. een Natura 2000-activiteit,
+        f. een jachtgeweeractiviteit,
+        g. een valkeniersactiviteit,
+        tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval.
+      onderdelen:
+        - onderdeel: "a"
+          text: "een omgevingsplanactiviteit"
+        - onderdeel: "b"
+          text: "een rijksmonumentenactiviteit"
+        - onderdeel: "c"
+          text: "een ontgrondingsactiviteit"
+        - onderdeel: "d"
+          text: "een stortingsactiviteit op zee"
+        - onderdeel: "e"
+          text: "een Natura 2000-activiteit"
+        - onderdeel: "f"
+          text: "een jachtgeweeractiviteit"
+        - onderdeel: "g"
+          text: "een valkeniersactiviteit"
+    - lid: 2
+      text: |
+        Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:
+        a. een bouwactiviteit,
+        b. een milieubelastende activiteit,
+        c. een lozingsactiviteit op: 1. een oppervlaktewaterlichaam, 2. een zuiveringtechnisch werk,
+        d. een wateronttrekkingsactiviteit,
+        e. een mijnbouwlocatieactiviteit,
+        f. een beperkingengebiedactiviteit met betrekking tot: 1. een weg, 2. een waterstaatswerk, 3. een luchthaven, 4. een hoofdspoorweg, lokale spoorweg of bijzondere spoorweg, 5. een installatie in een waterstaatswerk,
+        g. een flora- en fauna-activiteit,
+        voor zover het gaat om een bij algemene maatregel van bestuur aangewezen geval.
+  internal_refs:
+    - ref_article: null
+  external_refs:
+    - ref_law: "AMvB (Bkl/Bal)"
+      context: "aanwijzing gevallen vergunningplicht"
+
+article_5.2:
+  article: "5.2"
+  paragraaf: "5.1.1"
+  title_nl: "(afbakening vergunningplicht artikel 5.1)"
+  text_nl: |
+    Lid 1: Bij de aanwijzing van gevallen op grond van artikel 5.1 worden de grenzen van artikel 2.3, derde lid, in acht genomen. Daarbij kunnen voor omgevingsplanactiviteit, ontgrondingsactiviteit, milieubelastende activiteit, lozingsactiviteit, wateronttrekkingsactiviteit, beperkingengebiedactiviteit lokale spoorweg, Natura 2000-activiteit, flora- en fauna-activiteit, en jachtgeweeractiviteit gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, in het omgevingsplan, de waterschapsverordening of de omgevingsverordening van de aanwijzing kan worden afgeweken.
+
+    Lid 2: Voor een rijksmonumentenactiviteit met betrekking tot een archeologisch monument kunnen ook bij het besluit tot aanwijzing van een archeologisch moment als rijksmonument gevallen worden aangewezen waarin het verbod niet geldt.
+
+    Lid 3: Bij de aanwijzing van gevallen op grond van artikel 5.1, eerste en tweede lid, kunnen voor Natura 2000-activiteit, flora- en fauna-activiteit, jachtgeweeractiviteit, en valkeniersactiviteit gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, bij ministeriele regeling, van de aanwijzing kan worden afgeweken.
+
+    Lid 4: Bij de aanwijzing van gevallen op grond van artikel 5.1, eerste en tweede lid, kunnen voor Natura 2000-activiteit en flora- en fauna-activiteit gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, in een programma van de aanwijzing kan worden afgeweken.
+
+    Lid 5: Op grond van artikel 5.1 worden in ieder geval gevallen aangewezen ter uitvoering van: de habitatrichtlijn, de kaderrichtlijn afvalstoffen, de kaderrichtlijn water, het Londen-protocol, de mer-richtlijn, het Ospar-verdrag, de richtlijn industriele emissies, de richtlijn offshore veiligheid, de richtlijn stedelijk afvalwater, de richtlijn winningsafval, de Seveso-richtlijn, het verdrag van Aarhus, het verdrag van Bern, het verdrag van Bonn, het verdrag van Valletta, de vogelrichtlijn.
+  leden:
+    - lid: 1
+      text: "Bij de aanwijzing van gevallen op grond van artikel 5.1 worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+    - lid: 2
+      text: "Voor een rijksmonumentenactiviteit met betrekking tot een archeologisch monument kunnen ook bij het besluit tot aanwijzing van een archeologisch moment als rijksmonument gevallen worden aangewezen waarin het verbod niet geldt."
+    - lid: 3
+      text: "Bij de aanwijzing van gevallen kunnen voor Natura 2000-activiteit, flora- en fauna-activiteit, jachtgeweeractiviteit, en valkeniersactiviteit gevallen worden aangewezen waarin bij ministeriele regeling van de aanwijzing kan worden afgeweken."
+    - lid: 4
+      text: "Bij de aanwijzing van gevallen kunnen voor Natura 2000-activiteit en flora- en fauna-activiteit gevallen worden aangewezen waarin in een programma van de aanwijzing kan worden afgeweken."
+    - lid: 5
+      text: "Op grond van artikel 5.1 worden in ieder geval gevallen aangewezen ter uitvoering van EU-richtlijnen en internationale verdragen."
+  internal_refs:
+    - ref_article: "5.1"
+    - ref_article: "2.3"
+  external_refs:
+    - ref_law: "Erfgoedwet"
+      ref_article: "3.1"
+    - ref_directive: "habitatrichtlijn"
+    - ref_directive: "kaderrichtlijn afvalstoffen"
+    - ref_directive: "kaderrichtlijn water"
+    - ref_directive: "Londen-protocol"
+    - ref_directive: "mer-richtlijn"
+    - ref_directive: "Ospar-verdrag"
+    - ref_directive: "richtlijn industriele emissies"
+    - ref_directive: "richtlijn offshore veiligheid"
+    - ref_directive: "richtlijn stedelijk afvalwater"
+    - ref_directive: "richtlijn winningsafval"
+    - ref_directive: "Seveso-richtlijn"
+    - ref_directive: "verdrag van Aarhus"
+    - ref_directive: "verdrag van Bern"
+    - ref_directive: "verdrag van Bonn"
+    - ref_directive: "verdrag van Valletta"
+    - ref_directive: "vogelrichtlijn"
+
+article_5.3:
+  article: "5.3"
+  paragraaf: "5.1.1"
+  title_nl: "(omgevingsvergunningplicht waterschapsverordening)"
+  text_nl: |
+    Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de waterschapsverordening is bepaald.
+
+article_5.4:
+  article: "5.4"
+  paragraaf: "5.1.1"
+  title_nl: "(omgevingsvergunningplicht omgevingsverordening)"
+  text_nl: |
+    Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de omgevingsverordening is bepaald.
+
+article_5.5:
+  article: "5.5"
+  paragraaf: "5.1.1"
+  title_nl: "(verbod handelen in strijd met voorschriften omgevingsvergunning)"
+  text_nl: |
+    Lid 1: Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:
+    a. een omgevingsplanactiviteit, voor zover dat voorschrift is gesteld met het oog op: het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu; het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen; het beschermen van de doelmatige werking van een zuiveringtechnisch werk; het beschermen van monumenten of archeologische monumenten,
+    b. een rijksmonumentenactiviteit,
+    c. een stortingsactiviteit op zee,
+    d. een milieubelastende activiteit,
+    e. een lozingsactiviteit op een oppervlaktewaterlichaam of een zuiveringtechnisch werk,
+    f. een beperkingengebiedactiviteit,
+    g. een flora- en fauna-activiteit.
+
+    Lid 2: Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:
+    a. een omgevingsplanactiviteit: in andere gevallen dan bedoeld in het eerste lid, onder a,
+    b. een ontgrondingsactiviteit,
+    c. een bouwactiviteit,
+    d. een wateronttrekkingsactiviteit,
+    e. een mijnbouwlocatieactiviteit,
+    f. een Natura 2000-activiteit.
+
+    Lid 3: Het is verboden in strijd te handelen met een voorschrift van een omgevingsvergunning voor:
+    a. een jachtgeweeractiviteit,
+    b. een valkeniersactiviteit.
+
+    Lid 4: Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.3.
+
+    Lid 5: Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.4.
+  leden:
+    - lid: 1
+      text: "Verbod handelen in strijd met voorschriften voor omgevingsplanactiviteit (m.b.t. veiligheid, gezondheid, milieu, water, monumenten), rijksmonumentenactiviteit, stortingsactiviteit op zee, milieubelastende activiteit, lozingsactiviteit, beperkingengebiedactiviteit, flora- en fauna-activiteit."
+    - lid: 2
+      text: "Verbod handelen in strijd met voorschriften voor omgevingsplanactiviteit (andere gevallen), ontgrondingsactiviteit, bouwactiviteit, wateronttrekkingsactiviteit, mijnbouwlocatieactiviteit, Natura 2000-activiteit."
+    - lid: 3
+      text: "Verbod handelen in strijd met voorschriften voor jachtgeweeractiviteit en valkeniersactiviteit."
+    - lid: 4
+      text: "Verbod handelen in strijd met voorschriften van omgevingsvergunning waterschapsverordening (artikel 5.3)."
+    - lid: 5
+      text: "Verbod handelen in strijd met voorschriften van omgevingsvergunning omgevingsverordening (artikel 5.4)."
+  internal_refs:
+    - ref_article: "5.3"
+    - ref_article: "5.4"
+
+article_5.6:
+  article: "5.6"
+  paragraaf: "5.1.1"
+  title_nl: "(verbod in stand laten zonder vergunning gebouwd bouwwerk)"
+  text_nl: |
+    Het is verboden een bouwwerk of deel daarvan dat is gebouwd zonder de daarvoor vereiste omgevingsvergunning voor een bouwactiviteit in stand te laten.
+
+# ==============================================================================
+# PARAGRAAF 5.1.2 - Reikwijdte aanvraag en aanwijzing bevoegd gezag
+# ==============================================================================
+
+article_5.7:
+  article: "5.7"
+  paragraaf: "5.1.2"
+  title_nl: "(aanvraag los of gelijktijdig)"
+  text_nl: |
+    Lid 1: Een aanvraag om een omgevingsvergunning kan naar keuze van de aanvrager op een of meer activiteiten betrekking hebben.
+
+    Lid 2: Met het oog op een doelmatig waterbeheer wordt een omgevingsvergunning voor wateractiviteiten, in bij algemene maatregel van bestuur aangewezen gevallen, los aangevraagd van de omgevingsvergunning voor andere activiteiten als bedoeld in de artikelen 5.1 en 5.4.
+
+    Lid 3: Een omgevingsvergunning voor een activiteit waarbij de locatie van ondergeschikt belang is, wordt, in bij algemene maatregel van bestuur aangewezen gevallen, los aangevraagd van de omgevingsvergunning voor andere activiteiten.
+
+    Lid 4: Een omgevingsvergunning voor een milieubelastende activiteit en een omgevingsvergunning voor een wateractiviteit, met uitzondering van een als wateractiviteit aan te merken beperkingengebiedactiviteit, worden gelijktijdig aangevraagd als:
+    a. die activiteiten betrekking hebben op dezelfde ippc-installatie, of
+    b. op die activiteiten de Seveso-richtlijn van toepassing is.
+
+    Lid 5: Dit artikel is van overeenkomstige toepassing op aanvragen om wijziging van de voorschriften van een omgevingsvergunning.
+  leden:
+    - lid: 1
+      text: "Een aanvraag om een omgevingsvergunning kan naar keuze van de aanvrager op een of meer activiteiten betrekking hebben."
+    - lid: 2
+      text: "Wateractiviteiten worden in bij AMvB aangewezen gevallen los aangevraagd."
+    - lid: 3
+      text: "Activiteiten waarbij locatie ondergeschikt is worden in bij AMvB aangewezen gevallen los aangevraagd."
+    - lid: 4
+      text: "Milieubelastende activiteit en wateractiviteit gelijktijdig bij ippc-installatie of Seveso-richtlijn."
+    - lid: 5
+      text: "Van overeenkomstige toepassing op wijziging voorschriften."
+  internal_refs:
+    - ref_article: "5.1"
+    - ref_article: "5.4"
+  external_refs:
+    - ref_directive: "Seveso-richtlijn"
+
+article_5.8:
+  article: "5.8"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag gemeente aanvraag een activiteit)"
+  text_nl: |
+    Het college van burgemeester en wethouders beslist op de aanvraag om een omgevingsvergunning die betrekking heeft op een activiteit, tenzij op grond van artikel 5.9, 5.9a, 5.10, 5.11 of 5.13 een ander bestuursorgaan is aangewezen.
+  internal_refs:
+    - ref_article: "5.9"
+    - ref_article: "5.9a"
+    - ref_article: "5.10"
+    - ref_article: "5.11"
+    - ref_article: "5.13"
+
+article_5.9:
+  article: "5.9"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag aanvraag een wateractiviteit)"
+  text_nl: |
+    Bij algemene maatregel van bestuur worden met het oog op een doelmatig waterbeheer voor wateractiviteiten gevallen aangewezen waarin het dagelijks bestuur van het waterschap, gedeputeerde staten of Onze Minister van Infrastructuur en Waterstaat op de aanvraag beslissen.
+
+article_5.9a:
+  article: "5.9a"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag aanvraag een jachtgeweeractiviteit)"
+  text_nl: |
+    De korpschef beslist op de aanvraag om een omgevingsvergunning voor een jachtgeweeractiviteit.
+
+article_5.10:
+  article: "5.10"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag provincie aanvraag een activiteit anders dan in artikel 5.9)"
+  text_nl: |
+    Lid 1: Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin gedeputeerde staten op de aanvraag beslissen:
+    a. omgevingsplanactiviteiten van provinciaal belang,
+    b. ontgrondingsactiviteiten: 1. in het winterbed van een tot de rijkswateren behorende rivier, 2. buiten de rijkswateren,
+    c. milieubelastende activiteiten: 1. met betrekking tot een ippc-installatie, 2. met betrekking tot een andere milieubelastende installatie, 3. waarop de Seveso-richtlijn van toepassing is, 4. die gevolgen hebben of kunnen hebben voor het grondwater,
+    d. beperkingengebiedactiviteiten met betrekking tot: 1. burgerluchthavens van regionale betekenis, 2. lokale spoorwegen,
+    e. Natura 2000-activiteiten en flora- en fauna-activiteiten,
+    f. activiteiten als bedoeld in artikel 5.4.
+
+    Lid 2: Bij de aanwijzing van gevallen worden de grenzen van artikel 2.3, tweede lid, in acht genomen.
+
+    Lid 3: In afwijking van het eerste lid, aanhef en onder d, aanhef en onder 2, worden, als op grond van artikel 20, derde lid, van de Wet personenvervoer 2000 een gebied is aangewezen, bij algemene maatregel van bestuur gevallen aangewezen waarin het dagelijks bestuur van het openbaar lichaam beslist op de aanvraag om een omgevingsvergunning voor een beperkingengebiedactiviteit met betrekking tot een lokale spoorweg in dat gebied.
+  leden:
+    - lid: 1
+      text: "GS bevoegd voor omgevingsplanactiviteiten provinciaal belang, ontgrondingsactiviteiten, milieubelastende activiteiten (ippc, Seveso, grondwater), beperkingengebiedactiviteiten (luchthavens, spoorwegen), Natura 2000, flora-fauna, en artikel 5.4 activiteiten."
+    - lid: 2
+      text: "Grenzen artikel 2.3, tweede lid, in acht nemen."
+    - lid: 3
+      text: "Afwijking voor lokale spoorwegen in aangewezen gebieden (Wet personenvervoer 2000)."
+  internal_refs:
+    - ref_article: "5.4"
+    - ref_article: "2.3"
+  external_refs:
+    - ref_law: "Wet personenvervoer 2000"
+      ref_article: "20"
+    - ref_directive: "Seveso-richtlijn"
+
+article_5.11:
+  article: "5.11"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag Rijk aanvraag een activiteit anders dan in artikel 5.9)"
+  text_nl: |
+    Lid 1: Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin een van Onze daarbij aangewezen Ministers op de aanvraag beslist:
+    a. omgevingsplanactiviteiten van nationaal belang,
+    b. rijksmonumentenactiviteiten met betrekking tot een archeologisch monument,
+    c. ontgrondingsactiviteiten in de rijkswateren (met uitzondering winterbed),
+    d. milieubelastende activiteiten: 1. met betrekking tot een mijnbouwwerk, 2. waarbij nationale veiligheidsbelangen of andere vitale nationale belangen zijn betrokken, 3. als het gaat om het op of in de bodem brengen van meststoffen,
+    e. mijnbouwlocatieactiviteiten,
+    f. beperkingengebiedactiviteiten met betrekking tot: 1. wegen in beheer bij het Rijk, 2. andere luchthavens dan burgerluchthavens van regionale betekenis, 3. hoofdspoorwegen en bijzondere spoorwegen, 4. mijnbouwinstallaties in een waterstaatswerk,
+    g. Natura 2000-activiteiten en flora- en fauna-activiteiten van nationaal belang,
+    h. activiteiten die geheel of in hoofdzaak plaatsvinden in: 1. de territoriale zee buiten het provinciaal en gemeentelijk ingedeelde gebied, 2. de exclusieve economische zone,
+    i. een valkeniersactiviteit.
+
+    Lid 2: Bij de aanwijzing van gevallen worden de grenzen van artikel 2.3, derde lid, in acht genomen.
+
+    Lid 3: In afwijking kan Onze Minister van Infrastructuur en Waterstaat beslissen op een aanvraag als dat nodig is voor nationale veiligheidsbelangen of andere vitale nationale belangen.
+  leden:
+    - lid: 1
+      text: "Minister bevoegd voor activiteiten van nationaal belang, rijksmonumenten (archeologisch), ontgrondingen rijkswateren, milieubelastende activiteiten mijnbouw/nationaal belang, mijnbouwlocatieactiviteiten, beperkingengebiedactiviteiten rijksinfrastructuur, Natura 2000 nationaal belang, territoriale zee/EEZ, valkeniersactiviteit."
+    - lid: 2
+      text: "Grenzen artikel 2.3, derde lid, in acht nemen."
+    - lid: 3
+      text: "Afwijking mogelijk voor nationale veiligheidsbelangen."
+  internal_refs:
+    - ref_article: "5.10"
+    - ref_article: "5.8"
+    - ref_article: "5.13"
+    - ref_article: "2.3"
+
+article_5.12:
+  article: "5.12"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag aanvraag meer activiteiten)"
+  text_nl: |
+    Lid 1: Op de aanvraag om een omgevingsvergunning die betrekking heeft op meer dan een activiteit wordt beslist door een bestuursorgaan dat op grond van artikel 5.8, 5.9, 5.10 of 5.11, eerste lid, aanhef en onder a tot en met h, voor ten minste een van die activiteiten bevoegd zou zijn op een aanvraag te beslissen. Hierbij worden de volgende leden in acht genomen.
+
+    Lid 2: Als het college van burgemeester en wethouders een bestuursorgaan is als bedoeld in het eerste lid, beslist het college op de aanvraag, tenzij bij algemene maatregel van bestuur een ander van de betrokken bestuursorganen wordt aangewezen.
+
+    Lid 3: In andere gevallen dan bedoeld in het tweede lid, wordt op de aanvraag beslist door het betrokken bestuursorgaan dat bij algemene maatregel van bestuur wordt aangewezen.
+
+    Lid 4: In afwijking kan Onze Minister van Infrastructuur en Waterstaat op de aanvraag beslissen als dat nodig is voor nationale veiligheidsbelangen of andere vitale nationale belangen.
+  leden:
+    - lid: 1
+      text: "Bij meerdere activiteiten beslist een bevoegd bestuursorgaan voor ten minste een van die activiteiten."
+    - lid: 2
+      text: "B&W beslist tenzij AMvB anders bepaalt."
+    - lid: 3
+      text: "In andere gevallen beslist bij AMvB aangewezen bestuursorgaan."
+    - lid: 4
+      text: "Afwijking voor nationale veiligheidsbelangen."
+  internal_refs:
+    - ref_article: "5.8"
+    - ref_article: "5.9"
+    - ref_article: "5.10"
+    - ref_article: "5.11"
+    - ref_article: "5.13"
+    - ref_article: "2.3"
+
+article_5.13:
+  article: "5.13"
+  paragraaf: "5.1.2"
+  title_nl: "(eens bevoegd gezag altijd bevoegd gezag)"
+  text_nl: |
+    Lid 1: Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin gedeputeerde staten of Onze Minister die het aangaat beslissen op elke aanvraag om een omgevingsvergunning die betrekking heeft op een locatie waarvoor een door hen eerder verleende omgevingsvergunning geldt.
+
+    Lid 2: Het eerste lid is niet van toepassing als de aanvraag om een omgevingsvergunning betrekking heeft op een activiteit als bedoeld in artikel 5.9 of 5.9a.
+  leden:
+    - lid: 1
+      text: "GS of Minister blijft bevoegd voor locatie met eerder verleende vergunning."
+    - lid: 2
+      text: "Niet van toepassing op wateractiviteiten (5.9) of jachtgeweeractiviteit (5.9a)."
+  internal_refs:
+    - ref_article: "5.9"
+    - ref_article: "5.9a"
+
+article_5.14:
+  article: "5.14"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag grondgebiedoverstijgende aanvraag)"
+  text_nl: |
+    Als een aanvraag om een omgevingsvergunning betrekking heeft op een activiteit die op het grondgebied van meer dan een gemeente, waterschap of provincie plaatsvindt, wordt op die aanvraag beslist door het daarvoor op grond van artikel 5.8, 5.9, 5.10, 5.12 of 5.13 aangewezen bestuursorgaan van de gemeente, het waterschap of de provincie waar de activiteit in hoofdzaak zal worden verricht.
+  internal_refs:
+    - ref_article: "5.8"
+    - ref_article: "5.9"
+    - ref_article: "5.10"
+    - ref_article: "5.12"
+    - ref_article: "5.13"
+
+article_5.15:
+  article: "5.15"
+  paragraaf: "5.1.2"
+  title_nl: "(bevoegd gezag toepassing paragraaf 5.1.5)"
+  text_nl: |
+    Het bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen, is ook bevoegd tot toepassing van paragraaf 5.1.5.
+  internal_refs:
+    - ref_paragraaf: "5.1.5"
+
+article_5.16:
+  article: "5.16"
+  paragraaf: "5.1.2"
+  title_nl: "(flexibiliteitsregeling bevoegd gezag)"
+  text_nl: |
+    Lid 1: Een bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen of bevoegd is tot toepassing van paragraaf 5.1.5, kan die bevoegdheid aan een ander bestuursorgaan overdragen, als dat bestuursorgaan daarmee instemt.
+
+    Lid 2: Bij algemene maatregel van bestuur kunnen regels worden gesteld over de toepassing van het eerste lid.
+  leden:
+    - lid: 1
+      text: "Bevoegdheidsoverdracht aan ander bestuursorgaan met instemming mogelijk."
+    - lid: 2
+      text: "Nadere regels bij AMvB."
+  internal_refs:
+    - ref_paragraaf: "5.1.5"
+
+# ==============================================================================
+# PARAGRAAF 5.1.3 - De beoordeling van de aanvraag
+# ==============================================================================
+
+article_5.17:
+  article: "5.17"
+  paragraaf: "5.1.3"
+  title_nl: null
+  text_nl: |
+    Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172.
+  status: "ingetrokken"
+
+article_5.18:
+  article: "5.18"
+  paragraaf: "5.1.3"
+  title_nl: "(beoordelingsregels aanvraag artikel 5.1-activiteiten bij algemene maatregel van bestuur)"
+  text_nl: |
+    Lid 1: Bij algemene maatregel van bestuur worden regels gesteld over het verlenen of weigeren van een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.1.
+
+    Lid 2: Daarbij kunnen regels worden gesteld over de motivering van de beslissing tot het verlenen of weigeren.
+
+    Lid 3: Artikel 2.32, tweede tot en met zesde lid, is van overeenkomstige toepassing op die regels.
+  leden:
+    - lid: 1
+      text: "AMvB stelt regels over verlenen of weigeren omgevingsvergunning voor artikel 5.1-activiteiten."
+    - lid: 2
+      text: "Regels over motivering beslissing mogelijk."
+    - lid: 3
+      text: "Artikel 2.32, tweede tot en met zesde lid, van overeenkomstige toepassing."
+  internal_refs:
+    - ref_article: "5.1"
+    - ref_article: "2.32"
+
+article_5.19:
+  article: "5.19"
+  paragraaf: "5.1.3"
+  title_nl: "(beoordelingsregels aanvraag artikel 5.1-activiteiten in omgevingsverordening)"
+  text_nl: |
+    Lid 1: Bij omgevingsverordening kunnen regels worden gesteld over het verlenen of weigeren van een omgevingsvergunning voor een milieubelastende activiteit, tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval.
+
+    Lid 2: Bij het stellen van de regels worden de grenzen van artikel 2.3, tweede lid, in acht genomen. Artikel 2.32, eerste, vijfde en zesde lid, is van overeenkomstige toepassing op die regels.
+  leden:
+    - lid: 1
+      text: "Omgevingsverordening kan beoordelingsregels stellen voor milieubelastende activiteit (behalve 5.26 lid 4 gevallen)."
+    - lid: 2
+      text: "Grenzen artikel 2.3 lid 2 in acht nemen; artikel 2.32 van overeenkomstige toepassing."
+  internal_refs:
+    - ref_article: "5.26"
+    - ref_article: "2.3"
+    - ref_article: "2.32"
+
+article_5.20:
+  article: "5.20"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag bouwactiviteit)"
+  text_nl: |
+    Lid 1: Voor een bouwactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:
+    a. het waarborgen van de veiligheid,
+    b. het beschermen van de gezondheid,
+    c. duurzaamheid en bruikbaarheid.
+
+    Lid 2: De regels strekken ertoe dat de omgevingsvergunning alleen wordt verleend als aannemelijk is dat wordt voldaan aan de regels over bouwactiviteiten, bedoeld in artikel 4.3, eerste lid, aanhef en onder a, of daarover gestelde maatwerkregels, voor zover die regels betrekking hebben op de kwaliteit van bouwwerken.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels bouwactiviteit gericht op veiligheid, gezondheid, duurzaamheid en bruikbaarheid."
+    - lid: 2
+      text: "Vergunning alleen als aannemelijk is dat voldaan wordt aan bouwregels (artikel 4.3)."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "4.3"
+
+article_5.21:
+  article: "5.21"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag omgevingsplanactiviteit)"
+  text_nl: |
+    Lid 1: Voor een omgevingsplanactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de doelen van de wet.
+
+    Lid 2: De regels strekken er in ieder geval toe dat:
+    a. de omgevingsvergunning wordt verleend met toepassing van daarvoor in het omgevingsplan gestelde regels,
+    b. de omgevingsvergunning ook kan worden verleend met het oog op een evenwichtige toedeling van functies aan locaties,
+    c. op de beslissing instructies en rijksregels van overeenkomstige toepassing zijn.
+
+    Lid 3: De regels strekken er ook toe dat een verzoek als bedoeld in artikel 2.32, eerste lid, ook kan worden gedaan door Onze Minister die het aangaat.
+
+    Lid 4: Van het tweede lid kan worden afgeweken voor een omgevingsplanactiviteit die betrekking heeft op een maatwerkregel.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels omgevingsplanactiviteit gericht op doelen van de wet."
+    - lid: 2
+      text: "Verlening met toepassing omgevingsplanregels of voor evenwichtige toedeling functies aan locaties."
+    - lid: 3
+      text: "Ministerverzoek mogelijk conform artikel 2.32."
+    - lid: 4
+      text: "Afwijking mogelijk bij maatwerkregel."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "2.22"
+    - ref_article: "2.24"
+    - ref_article: "2.32"
+    - ref_article: "2.33"
+    - ref_article: "2.34"
+
+article_5.22:
+  article: "5.22"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag rijksmonumentenactiviteit)"
+  text_nl: |
+    Voor een rijksmonumentenactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het behoud van cultureel erfgoed en in dat kader tot:
+    a. het voorkomen van ontsiering, beschadiging, sloop of verplaatsing van monumenten en archeologische monumenten,
+    b. het bevorderen van het gebruik van monumenten, zo nodig door wijziging van die monumenten, rekening houdend met de monumentale waarden,
+    c. het conserveren en in stand houden van archeologische monumenten, bij voorkeur in situ.
+  internal_refs:
+    - ref_article: "5.18"
+
+article_5.23:
+  article: "5.23"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag ontgrondingsactiviteit)"
+  text_nl: |
+    Voor een ontgrondingsactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de doelen van de wet.
+  internal_refs:
+    - ref_article: "5.18"
+
+article_5.24:
+  article: "5.24"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag wateractiviteit)"
+  text_nl: |
+    Lid 1: Voor een wateractiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:
+    a. het voorkomen en waar nodig beperken van overstromingen, wateroverlast en waterschaarste,
+    b. het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen,
+    c. het vervullen van maatschappelijke functies door watersystemen,
+    d. het beschermen van de doelmatige werking van een zuiveringtechnisch werk.
+
+    Lid 2: Op het stellen van de regels voor lozingsactiviteiten op een oppervlaktewaterlichaam en lozingsactiviteiten op een zuiveringtechnisch werk is artikel 4.23, tweede lid, van overeenkomstige toepassing.
+
+    Lid 3: Voor een stortingsactiviteit op zee worden de regels ook gesteld ter uitvoering van het Londen-protocol en het Ospar-verdrag.
+
+    Lid 4: In afwijking van het eerste lid worden de regels voor een beperkingengebiedactiviteit met betrekking tot een waterstaatswerk, voor zover die plaatsvindt buiten het provinciaal en gemeentelijk ingedeelde gebied, gesteld met het oog op de doelen van de wet.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels wateractiviteit gericht op overstromingen, waterkwaliteit, functies watersystemen, zuiveringstechnisch werk."
+    - lid: 2
+      text: "Artikel 4.23 lid 2 van toepassing op lozingsactiviteiten."
+    - lid: 3
+      text: "Stortingsactiviteit op zee: ook uitvoering Londen-protocol en Ospar-verdrag."
+    - lid: 4
+      text: "Beperkingengebiedactiviteit waterstaatswerk buiten ingedeeld gebied: doelen van de wet."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "4.23"
+  external_refs:
+    - ref_directive: "Londen-protocol"
+    - ref_directive: "Ospar-verdrag"
+
+article_5.25:
+  article: "5.25"
+  paragraaf: "5.1.3"
+  title_nl: null
+  text_nl: |
+    Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172.
+  status: "ingetrokken"
+
+article_5.26:
+  article: "5.26"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag milieubelastende activiteit)"
+  text_nl: |
+    Lid 1: Voor een milieubelastende activiteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu.
+
+    Lid 2: Op het stellen van deze regels is artikel 4.22, tweede lid, van overeenkomstige toepassing.
+
+    Lid 3: Ook strekken deze regels ertoe dat op de beslissing of de omgevingsvergunning kan worden verleend van toepassing zijn de op grond van artikel 5.19, eerste lid, in de omgevingsverordening gestelde regels over het verlenen of weigeren van een omgevingsvergunning voor een milieubelastende activiteit.
+
+    Lid 4: In afwijking van het tweede lid strekken de regels voor daartoe bij algemene maatregel van bestuur aangewezen gevallen van milieubelastende activiteiten er alleen toe dat de beoordeling of sprake is van aanzienlijke milieueffecten, bedoeld in artikel 16.43, tweede lid, plaatsvindt.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels milieubelastende activiteit gericht op veiligheid, gezondheid, milieu."
+    - lid: 2
+      text: "Artikel 4.22 lid 2 van overeenkomstige toepassing."
+    - lid: 3
+      text: "Omgevingsverordening-regels (artikel 5.19) van toepassing op beslissing."
+    - lid: 4
+      text: "Aangewezen gevallen: alleen beoordeling aanzienlijke milieueffecten (artikel 16.43 lid 2)."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "5.19"
+    - ref_article: "4.22"
+    - ref_article: "16.43"
+
+article_5.27:
+  article: "5.27"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag mijnbouwlocatieactiviteit)"
+  text_nl: |
+    Lid 1: Voor een mijnbouwlocatieactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:
+    a. het waarborgen van de veiligheid,
+    b. een evenwichtige toedeling van functies aan locaties.
+
+    Lid 2: Op het stellen van deze regels is artikel 4.24, tweede lid, en derde lid, aanhef en onder b, van overeenkomstige toepassing.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels mijnbouwlocatieactiviteit gericht op veiligheid en evenwichtige toedeling functies."
+    - lid: 2
+      text: "Artikel 4.24 van overeenkomstige toepassing."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "4.24"
+
+article_5.28:
+  article: "5.28"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels beperkingengebiedactiviteit anders dan een wateractiviteit)"
+  text_nl: |
+    Voor een beperkingengebiedactiviteit met betrekking tot:
+    a. een weg,
+    b. een luchthaven,
+    c. een spoorweg,
+    d. een mijnbouwinstallatie in een waterstaatswerk,
+    worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het behoeden van de staat en werking daarvan voor nadelige gevolgen van activiteiten, waartoe ook het belang van verruiming of wijziging van de onder a tot en met d genoemde werken en objecten kan behoren.
+  internal_refs:
+    - ref_article: "5.18"
+
+article_5.29:
+  article: "5.29"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag Natura 2000-activiteit en flora- en fauna-activiteit)"
+  text_nl: |
+    Lid 1: Voor een Natura 2000-activiteit en een flora- en fauna-activiteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de natuurbescherming.
+
+    Lid 2: Deze regels strekken in ieder geval tot uitvoering van artikel 6, tweede, derde en vierde lid, en artikel 16 van de habitatrichtlijn en artikel 9 van de vogelrichtlijn.
+
+    Lid 3: De regels kunnen ertoe strekken dat de omgevingsvergunning alleen wordt verleend als geregistreerde stikstofdepositieruimte aan de Natura 2000-activiteit wordt toegedeeld.
+  leden:
+    - lid: 1
+      text: "Beoordelingsregels Natura 2000 en flora-fauna gericht op natuurbescherming."
+    - lid: 2
+      text: "Uitvoering habitatrichtlijn (artikel 6 en 16) en vogelrichtlijn (artikel 9)."
+    - lid: 3
+      text: "Vergunning mogelijk alleen bij toewijzing stikstofdepositieruimte."
+  internal_refs:
+    - ref_article: "5.18"
+  external_refs:
+    - ref_directive: "habitatrichtlijn"
+      ref_article: "6, 16"
+    - ref_directive: "vogelrichtlijn"
+      ref_article: "9"
+
+article_5.29a:
+  article: "5.29a"
+  paragraaf: "5.1.3"
+  title_nl: "(artikel 5.18 beoordelingsregels aanvraag jachtgeweeractiviteit en valkeniersactiviteit)"
+  text_nl: |
+    Voor een jachtgeweeractiviteit of een valkeniersactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de natuurbescherming of de veiligheid.
+  internal_refs:
+    - ref_article: "5.18"
+
+article_5.30:
+  article: "5.30"
+  paragraaf: "5.1.3"
+  title_nl: "(beoordelingsregels artikel 5.3- en 5.4-activiteiten)"
+  text_nl: |
+    Voor zover de aanvraag betrekking heeft op een activiteit als bedoeld in artikel 5.3 of 5.4, kan de omgevingsvergunning alleen worden verleend of geweigerd op de gronden die zijn bepaald in de waterschapsverordening respectievelijk de omgevingsverordening.
+  internal_refs:
+    - ref_article: "5.3"
+    - ref_article: "5.4"
+
+article_5.31:
+  article: "5.31"
+  paragraaf: "5.1.3"
+  title_nl: "(weigeren vergunning vanwege Wet bibob)"
+  text_nl: |
+    Lid 1: Het bevoegd gezag kan de omgevingsvergunning weigeren in het geval en onder de voorwaarden, bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, voor zover de aanvraag betrekking heeft op:
+    a. een bouwactiviteit,
+    b. een omgevingsplanactiviteit,
+    c. een milieubelastende activiteit,
+    d. een activiteit als bedoeld in artikel 5.3.
+
+    Lid 2: Voor de toepassing van het eerste lid wordt onder betrokkene als bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur ook verstaan degene die op grond van feiten en omstandigheden redelijkerwijs met de aanvrager van de omgevingsvergunning kan worden gelijkgesteld.
+
+    Lid 3: Voordat toepassing wordt gegeven aan het eerste lid, kan het bevoegd gezag het bureau, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, vragen om een advies als bedoeld in artikel 9 van die wet.
+  leden:
+    - lid: 1
+      text: "Weigering mogelijk op grond van Wet bibob voor bouwactiviteit, omgevingsplanactiviteit, milieubelastende activiteit, artikel 5.3-activiteit."
+    - lid: 2
+      text: "Betrokkene omvat ook degene gelijkgesteld met aanvrager."
+    - lid: 3
+      text: "Bureau Bibob advies mogelijk."
+  internal_refs:
+    - ref_article: "5.3"
+  external_refs:
+    - ref_law: "Wet bevordering integriteitsbeoordelingen door het openbaar bestuur (Wet bibob)"
+      ref_article: "3, 8, 9"
+
+article_5.32:
+  article: "5.32"
+  paragraaf: "5.1.3"
+  title_nl: "(weigeren vergunning vanwege ernstige gezondheidsrisico's)"
+  text_nl: |
+    Het bevoegd gezag kan een omgevingsvergunning weigeren als naar zijn oordeel sprake is van bijzondere omstandigheden waardoor het verlenen van de vergunning zou leiden tot ernstige nadelige of mogelijk ernstige nadelige gevolgen voor de gezondheid.
+
+article_5.33:
+  article: "5.33"
+  paragraaf: "5.1.3"
+  title_nl: "(verlenen of weigeren vergunning vanwege instemming)"
+  text_nl: |
+    Voor zover de aanvraag betrekking heeft op een activiteit waarvoor de beslissing op de aanvraag op grond van artikel 16.16 instemming van een ander bestuursorgaan behoeft, wordt de omgevingsvergunning verleend of geweigerd met inachtneming van het besluit over de instemming.
+  internal_refs:
+    - ref_article: "16.16"
+
+article_5.33a:
+  article: "5.33a"
+  paragraaf: "5.1.3"
+  title_nl: "(gedeeltelijke verlening omgevingsvergunning bij aanvraag meer activiteiten)"
+  text_nl: |
+    Lid 1: Voor zover de aanvraag betrekking heeft op meer dan een activiteit wordt als er een bij of krachtens deze paragraaf gestelde regel is op grond waarvan voor een deel van die activiteiten de omgevingsvergunning moet worden geweigerd, de vergunning alleen geweigerd voor die activiteiten en voor de overige activiteiten verleend.
+
+    Lid 2: In afwijking van het eerste lid wordt de omgevingsvergunning in haar geheel geweigerd op verzoek of met instemming van de aanvrager.
+  leden:
+    - lid: 1
+      text: "Bij meerdere activiteiten: deelweigering voor activiteiten die moeten worden geweigerd, verlening voor overige."
+    - lid: 2
+      text: "Gehele weigering op verzoek of met instemming aanvrager."
+
+# ==============================================================================
+# PARAGRAAF 5.1.4 - Inhoud en werking
+# ==============================================================================
+
+article_5.34:
+  article: "5.34"
+  paragraaf: "5.1.4"
+  title_nl: "(voorschriften omgevingsvergunning)"
+  text_nl: |
+    Lid 1: Aan een omgevingsvergunning worden de voorschriften verbonden die nodig zijn voor de regels, bedoeld in de artikelen 5.18, 5.19, 5.30 en 5.31.
+
+    Lid 2: Onverminderd de artikelen 13.5, eerste tot en met vijfde lid, en 13.6 worden bij of krachtens algemene maatregel van bestuur voor daarbij aangewezen activiteiten regels gesteld over de toepassing van het eerste lid. Daarbij worden in ieder geval regels gesteld over:
+    a. voorschriften die strekken tot toepassing van andere technieken dan die waarover bij de aanvraag gegevens of bescheiden zijn verstrekt,
+    b. voorschriften die, ook al houden deze verband met regels als bedoeld in het eerste lid, niet aan de omgevingsvergunning kunnen worden verbonden.
+
+    Lid 3: Regels over het verbinden van voorschriften aan een omgevingsvergunning kunnen ook worden gesteld bij:
+    a. omgevingsplan, voor zover het gaat om een omgevingsvergunning voor een omgevingsplanactiviteit,
+    b. waterschapsverordening, voor zover het gaat om een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.3,
+    c. omgevingsverordening, voor zover het gaat om een omgevingsvergunning voor: 1. een milieubelastende activiteit (behalve artikel 5.26 lid 4 gevallen), 2. een activiteit als bedoeld in artikel 5.4.
+
+    Lid 4: Bij het stellen van regels als bedoeld in het derde lid, aanhef en onder c, worden de grenzen van artikel 2.3, tweede lid, in acht genomen.
+  leden:
+    - lid: 1
+      text: "Voorschriften die nodig zijn voor beoordelingsregels (artikelen 5.18, 5.19, 5.30, 5.31)."
+    - lid: 2
+      text: "AMvB stelt nadere regels over voorschriften, inclusief alternatieve technieken en uitzonderingen."
+    - lid: 3
+      text: "Voorschriftenregels ook in omgevingsplan, waterschapsverordening, omgevingsverordening."
+    - lid: 4
+      text: "Grenzen artikel 2.3 lid 2 bij omgevingsverordening-regels."
+  internal_refs:
+    - ref_article: "5.18"
+    - ref_article: "5.19"
+    - ref_article: "5.30"
+    - ref_article: "5.31"
+    - ref_article: "5.3"
+    - ref_article: "5.4"
+    - ref_article: "5.26"
+    - ref_article: "2.3"
+    - ref_article: "13.5"
+    - ref_article: "13.6"
+
+article_5.35:
+  article: "5.35"
+  paragraaf: "5.1.4"
+  title_nl: null
+  text_nl: |
+    Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172.
+  status: "ingetrokken"
+
+article_5.36:
+  article: "5.36"
+  paragraaf: "5.1.4"
+  title_nl: "(termijnstelling in omgevingsvergunning)"
+  text_nl: |
+    Lid 1: In een omgevingsvergunning voor een voortdurende activiteit kan worden bepaald dat die vergunning geldt voor een daarbij gestelde termijn.
+
+    Lid 2: In een omgevingsvergunning voor een aflopende activiteit kan worden bepaald dat de vergunninghouder na afloop van een bij de vergunning gestelde termijn, de voor de verlening van de vergunning bestaande toestand heeft hersteld of een andere, in de omgevingsvergunning omschreven, toestand heeft gerealiseerd.
+
+    Lid 3: In een omgevingsvergunning kan worden bepaald dat daarbij aangewezen voorschriften nadat de vergunning haar gelding heeft verloren, tijdens een daarbij gestelde termijn van kracht blijven.
+
+    Lid 4: Bij algemene maatregel van bestuur worden gevallen aangewezen waarin een termijn als bedoeld in het eerste of tweede lid wordt gesteld. Bij de maatregel kunnen over die termijn worden geregeld:
+    a. de maximale duur,
+    b. de gevallen waarin verlenging mogelijk is.
+  leden:
+    - lid: 1
+      text: "Termijnstelling voor voortdurende activiteit."
+    - lid: 2
+      text: "Termijnstelling voor aflopende activiteit met herstelplicht."
+    - lid: 3
+      text: "Voorschriften kunnen van kracht blijven na verval vergunning."
+    - lid: 4
+      text: "AMvB wijst gevallen aan; regelt maximale duur en verlenging."
+
+article_5.36a:
+  article: "5.36a"
+  paragraaf: "5.1.4"
+  title_nl: "(termijnstelling seizoensgebonden en drijvende bouwwerken)"
+  text_nl: |
+    Lid 1: In een omgevingsvergunning voor een bouwactiviteit voor een seizoensgebonden bouwwerk of voor een omgevingsplanactiviteit bestaande uit een bouwactiviteit voor een seizoensgebonden bouwwerk:
+    a. kan worden bepaald dat het bouwwerk op grond van die vergunning gedurende opeenvolgende kalenderjaren kan worden gebouwd en gesloopt, en
+    b. wordt bepaald binnen welke opeenvolgende tijdvakken van een kalenderjaar het bouwen en slopen van het bouwwerk plaatsvindt.
+
+    Lid 2: Een omgevingsvergunning voor een bouwactiviteit voor een drijvend bouwwerk of voor een omgevingsplanactiviteit bestaande uit een bouwactiviteit voor een drijvend bouwwerk omvat ook de toestemming om het bouwwerk in verband met werkzaamheden te verplaatsen en op dezelfde locatie terug te plaatsen.
+
+    Lid 3: In een omgevingsvergunning voor een drijvend bouwwerk kan worden bepaald dat het bouwwerk ook in andere gevallen kan worden verplaatst en op dezelfde locatie kan worden teruggeplaatst.
+  leden:
+    - lid: 1
+      text: "Seizoensgebonden bouwwerk: meerjarige vergunning met tijdvakbepaling per kalenderjaar."
+    - lid: 2
+      text: "Drijvend bouwwerk: vergunning omvat verplaatsing voor werkzaamheden."
+    - lid: 3
+      text: "Drijvend bouwwerk: verplaatsing ook in andere gevallen mogelijk."
+
+article_5.36b:
+  article: "5.36b"
+  paragraaf: "5.1.4"
+  title_nl: "(conversie omgevingsvergunning wateractiviteit vanwege nieuwe vergunningplicht stortingsactiviteit op zee)"
+  text_nl: |
+    Als het verbod, bedoeld in artikel 5.1, eerste lid, om zonder omgevingsvergunning een stortingsactiviteit op zee te verrichten door een wijziging van bijlage 4 bij het Londen-protocol van toepassing wordt op een activiteit waarvoor al een omgevingsvergunning voor een lozingsactiviteit op een oppervlaktewaterlichaam of voor een beperkingengebiedactiviteit met betrekking tot een waterstaatswerk als bedoeld in artikel 5.1, tweede lid, is verleend, geldt die omgevingsvergunning als omgevingsvergunning voor een stortingsactiviteit op zee, mits in die bijlage bij het Londen-protocol is bepaald dat voor die activiteit een vergunning kan worden verleend.
+  internal_refs:
+    - ref_article: "5.1"
+  external_refs:
+    - ref_directive: "Londen-protocol"
+      ref_article: "bijlage 4"
+
+article_5.37:
+  article: "5.37"
+  paragraaf: "5.1.4"
+  title_nl: "(normadressaat omgevingsvergunning en aanwijzing vergunninghouder)"
+  text_nl: |
+    Lid 1: Een omgevingsvergunning geldt voor degene die de activiteit verricht waarop zij betrekking heeft. Diegene is vergunninghouder en draagt zorg voor de naleving van de vergunningvoorschriften.
+
+    Lid 2: Als een aangevraagde of verleende omgevingsvergunning zal gaan gelden voor een ander dan de aanvrager of de vergunninghouder, informeert de aanvrager respectievelijk de vergunninghouder ten minste vier weken van tevoren het bevoegd gezag daarover. Bij ministeriele regeling worden regels gesteld over de gegevens die daarbij worden verstrekt.
+
+    Lid 3: In afwijking van het eerste lid, eerste zin, kan het bevoegd gezag in de omgevingsvergunning bepalen dat deze alleen geldt voor degene aan wie zij is verleend, als de persoon van de vergunninghouder van belang is voor de toepassing van de regels over het verlenen of weigeren van de omgevingsvergunning.
+  leden:
+    - lid: 1
+      text: "Vergunning geldt voor degene die activiteit verricht; deze is vergunninghouder en draagt zorg voor naleving."
+    - lid: 2
+      text: "Bij overgang naar ander: informatie aan bevoegd gezag 4 weken van tevoren."
+    - lid: 3
+      text: "Vergunning kan persoonsgebonden zijn als persoon van belang is voor beoordeling."
+
+article_5.37a:
+  article: "5.37a"
+  paragraaf: "5.1.4"
+  title_nl: "(verantwoordelijkheidsverdeling vergunninghouders)"
+  text_nl: |
+    Lid 1: In afwijking van artikel 5.37, eerste lid, kan het bevoegd gezag in de omgevingsvergunning bepalen dat een vergunninghouder alleen zorg draagt voor de naleving van de vergunningvoorschriften voor de activiteit die of het deel van de activiteit dat hij verricht, voor zover de activiteit of het deel van de activiteit te onderscheiden is, tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval.
+
+    Lid 2: Bij algemene maatregel van bestuur kunnen nadere regels worden gesteld over de toepassing van het eerste lid.
+  leden:
+    - lid: 1
+      text: "Verantwoordelijkheid beperkt tot eigen activiteit(deel) als onderscheidbaar, tenzij AMvB-uitzondering."
+    - lid: 2
+      text: "Nadere regels bij AMvB mogelijk."
+  internal_refs:
+    - ref_article: "5.37"
+
+# ==============================================================================
+# PARAGRAAF 5.1.5 - Actualisering, wijziging, intrekking en revisievergunning
+# ==============================================================================
+
+article_5.38:
+  article: "5.38"
+  paragraaf: "5.1.5"
+  title_nl: "(actualisering omgevingsvergunning)"
+  text_nl: |
+    Lid 1: Voor zover een omgevingsvergunning betrekking heeft op:
+    a. een stortingsactiviteit op zee,
+    b. een milieubelastende activiteit, tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval,
+    c. een lozingsactiviteit op: 1. een oppervlaktewaterlichaam, 2. een zuiveringtechnisch werk,
+    beziet het bevoegd gezag regelmatig of de voorschriften van de vergunning nog toereikend zijn gezien de ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu en de ontwikkelingen met betrekking tot de kwaliteit van het milieu.
+
+    Lid 2: Onder ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu wordt ook verstaan de vaststelling van nieuwe of herziene conclusies over beste beschikbare technieken, bedoeld in artikel 13, vijfde en zevende lid, van de richtlijn industriele emissies.
+
+    Lid 3: Bij algemene maatregel van bestuur worden met het oog op het beschermen van het milieu regels gesteld over de wijze waarop het eerste lid wordt toegepast voor daarbij aangewezen activiteiten.
+  leden:
+    - lid: 1
+      text: "Regelmatige actualisatie voor stortingsactiviteit op zee, milieubelastende activiteit, lozingsactiviteit."
+    - lid: 2
+      text: "Technische ontwikkelingen omvatten BBT-conclusies (richtlijn industriele emissies)."
+    - lid: 3
+      text: "AMvB regelt wijze van toepassing."
+  internal_refs:
+    - ref_article: "5.26"
+  external_refs:
+    - ref_directive: "richtlijn industriele emissies"
+      ref_article: "13"
+
+article_5.39:
+  article: "5.39"
+  paragraaf: "5.1.5"
+  title_nl: "(verplichting tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+  text_nl: |
+    Het bevoegd gezag wijzigt de voorschriften van een omgevingsvergunning of trekt een omgevingsvergunning in:
+    a. in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,
+    b. voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald.
+  internal_refs:
+    - ref_article: "5.3"
+    - ref_article: "5.4"
+
+article_5.40:
+  article: "5.40"
+  paragraaf: "5.1.5"
+  title_nl: "(bevoegdheid tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+  text_nl: |
+    Lid 1: Het bevoegd gezag kan de voorschriften van een omgevingsvergunning wijzigen:
+    a. in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,
+    b. voor een activiteit als bedoeld in artikel 5.31, eerste lid: als het gaat om het wegnemen of beperken van gevaar (Wet bibob),
+    c. voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald.
+
+    Lid 2: In andere gevallen dan bedoeld in artikel 18.10 kan het bevoegd gezag een omgevingsvergunning intrekken:
+    a. in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,
+    b. als gedurende een jaar of een in de vergunning bepaalde langere termijn geen activiteiten zijn verricht met gebruikmaking van de vergunning,
+    c. op verzoek van de vergunninghouder,
+    d. voor een activiteit als bedoeld in artikel 5.31, eerste lid: Wet bibob-gronden,
+    e. voor een milieubelastende activiteit of een wateractiviteit waarvoor gecoordineerd omgevingsvergunningen zijn verleend: als de omgevingsvergunning voor de samenhangende activiteit is ingetrokken,
+    f. voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald.
+  leden:
+    - lid: 1
+      text: "Bevoegdheid tot wijziging voorschriften: AMvB-gevallen, Wet bibob, waterschapsverordening/omgevingsverordening-gevallen."
+    - lid: 2
+      text: "Bevoegdheid tot intrekking: AMvB-gevallen, niet-gebruik (1 jaar), verzoek vergunninghouder, Wet bibob, gecoordineerde vergunningen, waterschapsverordening/omgevingsverordening-gevallen."
+  internal_refs:
+    - ref_article: "5.31"
+    - ref_article: "5.3"
+    - ref_article: "5.4"
+    - ref_article: "18.10"
+    - ref_article: "16.7"
+  external_refs:
+    - ref_law: "Wet bevordering integriteitsbeoordelingen door het openbaar bestuur (Wet bibob)"
+      ref_article: "3"
+
+article_5.41:
+  article: "5.41"
+  paragraaf: "5.1.5"
+  title_nl: "(toepassing artikelen 5.39 en 5.40 op verzoek instemmingsorgaan)"
+  text_nl: |
+    Lid 1: Het bevoegd gezag wijzigt de voorschriften van een omgevingsvergunning voor een activiteit of trekt de omgevingsvergunning voor een activiteit in met toepassing van artikel 5.39 of 5.40, op verzoek van het bestuursorgaan dat op grond van artikel 16.16, eerste lid, heeft beslist over instemming met de voorgenomen beslissing op de aanvraag om de omgevingsvergunning voor die activiteit of dat op grond van artikel 16.16, derde of vierde lid, heeft bepaald dat instemming niet is vereist.
+
+    Lid 2: Het eerste lid is van overeenkomstige toepassing op een verzoek van Onze Minister van Justitie en Veiligheid tot intrekking van een omgevingsvergunning voor een jachtgeweeractiviteit op de grond, bedoeld in artikel 5.42, derde lid.
+  leden:
+    - lid: 1
+      text: "Wijziging/intrekking op verzoek van instemmingsorgaan (artikel 16.16)."
+    - lid: 2
+      text: "Ook op verzoek Minister van JenV voor jachtgeweeractiviteit (artikel 5.42 lid 3)."
+  internal_refs:
+    - ref_article: "5.39"
+    - ref_article: "5.40"
+    - ref_article: "5.42"
+    - ref_article: "16.16"
+
+article_5.42:
+  article: "5.42"
+  paragraaf: "5.1.5"
+  title_nl: "(invulling algemene maatregel van bestuur artikelen 5.39 en 5.40)"
+  text_nl: |
+    Lid 1: Als voor een activiteit als bedoeld in artikel 5.1 toepassing wordt gegeven aan artikel 5.39, onder a, of 5.40, eerste lid, onder a, of tweede lid, onder a, worden bij algemene maatregel van bestuur gevallen of gronden met hetzelfde oogmerk bepaald als het oogmerk waarmee op grond van artikel 5.18 regels over die activiteit worden gesteld.
+
+    Lid 2: Als geval als bedoeld in artikel 5.39, onder a, waarin het bevoegd gezag de voorschriften van een omgevingsvergunning wijzigt, wordt in ieder geval aangewezen het geval waarin uit toepassing van artikel 5.38 is gebleken dat de nadelige gevolgen die de desbetreffende activiteit voor het milieu veroorzaakt:
+    a. gezien de ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu, verder kunnen worden beperkt, of
+    b. gezien de ontwikkelingen met betrekking tot de kwaliteit van het milieu, verder moeten worden beperkt.
+
+    Lid 3: Als geval als bedoeld in artikel 5.39, onder a, waarin het bevoegd gezag de omgevingsvergunning voor een jachtgeweeractiviteit intrekt, wordt in ieder geval aangewezen het geval waarin de vergunninghouder misbruik heeft gemaakt van wapens of munitie of van de bevoegdheid die voorhanden te hebben, of waarin er andere aanwijzingen zijn dat aan hem het voorhanden hebben van wapens of munitie niet langer kan worden toevertrouwd.
+
+    Lid 4: Als geval als bedoeld in artikel 5.40, eerste lid, onder a, of tweede lid, onder a, wordt in ieder geval aangewezen het geval waarin de voorschriften van de omgevingsvergunning kunnen worden gewijzigd of de omgevingsvergunning kan worden ingetrokken, met het oog op het treffen van passende preventieve maatregelen ter bescherming van de gezondheid, bedoeld in artikel 4.22, tweede lid, onder b.
+  leden:
+    - lid: 1
+      text: "AMvB-gevallen met zelfde oogmerk als beoordelingsregels (artikel 5.18)."
+    - lid: 2
+      text: "Verplichte wijziging na actualisering (artikel 5.38) bij beperking milieueffecten."
+    - lid: 3
+      text: "Verplichte intrekking jachtgeweervergunning bij misbruik of niet-vertrouwen wapens."
+    - lid: 4
+      text: "Wijziging/intrekking voor passende preventieve gezondheidsmaatregelen (artikel 4.22 lid 2 onder b)."
+  internal_refs:
+    - ref_article: "5.1"
+    - ref_article: "5.18"
+    - ref_article: "5.38"
+    - ref_article: "5.39"
+    - ref_article: "5.40"
+    - ref_article: "4.22"
+
+article_5.43:
+  article: "5.43"
+  paragraaf: "5.1.5"
+  title_nl: "(revisievergunning)"
+  text_nl: |
+    Lid 1: Als voor een of meer activiteiten verschillende omgevingsvergunningen van kracht zijn, kan het bevoegd gezag, in het belang van een doelmatige uitvoering en handhaving, ambtshalve een omgevingsvergunning verlenen die de eerder verleende omgevingsvergunningen vervangt.
+
+    Lid 2: Als de omgevingsvergunningen niet door hetzelfde bevoegd gezag zijn verleend, kan het eerste lid worden toegepast door elk van de betrokken bestuursorganen, als de andere betrokken bestuursorganen toepassing hebben gegeven aan artikel 5.16.
+
+    Lid 3: Het eerste lid kan ook worden toegepast tegelijk met:
+    a. het beslissen op een aanvraag om een nieuwe omgevingsvergunning, waarbij dit in afwijking van het eerste lid ook geldt als slechts een omgevingsvergunning van kracht is,
+    b. het wijzigen van de voorschriften van een van kracht zijnde omgevingsvergunning of het intrekken van een van kracht zijnde omgevingsvergunning met toepassing van artikel 5.39 of 5.40.
+
+    Lid 4: Een met toepassing van dit artikel verleende omgevingsvergunning schorst met ingang van de dag waarop zij in werking treedt, en daarna, in de periode waarin deze vergunning nog niet onherroepelijk is, zolang zij in werking blijft, de werking van de omgevingsvergunningen die zij vervangt. Deze omgevingsvergunningen vervallen op de dag waarop de met toepassing van dit artikel verleende omgevingsvergunning onherroepelijk wordt.
+  leden:
+    - lid: 1
+      text: "Revisievergunning: ambtshalve vervangende vergunning in belang doelmatige uitvoering en handhaving."
+    - lid: 2
+      text: "Bij verschillende bevoegde gezagen: toepassing na bevoegdheidsoverdracht (artikel 5.16)."
+    - lid: 3
+      text: "Gelijktijdig met nieuwe aanvraag of wijziging/intrekking mogelijk."
+    - lid: 4
+      text: "Revisievergunning schorst vervangen vergunningen; deze vervallen bij onherroepelijk worden."
+  internal_refs:
+    - ref_article: "5.16"
+    - ref_article: "5.39"
+    - ref_article: "5.40"

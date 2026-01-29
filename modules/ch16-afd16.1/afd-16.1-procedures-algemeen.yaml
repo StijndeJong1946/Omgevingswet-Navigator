@@ -1,0 +1,132 @@
+# Omgevingswet Navigator - Pilot Module
+# Chapter 16, Afdeling 16.1: Elektronisch verkeer en gebruik van gegevens en methoden
+# Source: BWBR0037885 (Omgevingswet)
+
+_metadata:
+  module_id: "ow-mod-ch16-afd-16.1"
+  chapter: 16
+  chapter_title: "Procedures"
+  afdeling: "16.1"
+  afdeling_title: "Elektronisch verkeer en gebruik van gegevens en methoden"
+  extraction_date: "2026-01-28"
+  source: "source/Omgevingswet.xml"
+  bwb_id: "BWBR0037885"
+  paragraphs:
+    - id: "16.1.1"
+      title: "Elektronisch verkeer"
+      articles: ["16.1", "16.2", "16.3", "16.4"]
+    - id: "16.1.2"
+      title: "Gebruik van gegevens en methoden"
+      articles: ["16.5", "16.6"]
+
+# =============================================================================
+# PARAGRAAF 16.1.1 - ELEKTRONISCH VERKEER
+# =============================================================================
+
+article_16.1:
+  article: "16.1"
+  title_nl: "(elektronisch verkeer)"
+  paragraph: "16.1.1"
+  inwerking: "2026-01-01"
+  text_nl: |
+    1. Een elektronische aanvraag om een besluit of een melding op grond van deze wet wordt in bij algemene maatregel van bestuur aangewezen gevallen ingediend of gedaan via de landelijke voorziening, bedoeld in artikel 20.21, tenzij bij die maatregel anders is bepaald.
+    2. Het elektronisch voldoen aan een andere informatieverplichting dan een melding of het elektronisch verzenden van een ander bericht op grond van deze wet kan in bij algemene maatregel van bestuur aangewezen gevallen plaatsvinden op de bij die maatregel aangegeven wijze.
+    3. Bij de maatregel kunnen in afwijking van de artikelen 2:7, tweede lid, en 2:8 van de Algemene wet bestuursrecht gevallen worden aangewezen waarin het verkeer, bedoeld in het eerste en tweede lid, alleen elektronisch kan plaatsvinden.
+  leden:
+    - lid: 1
+      text: "Een elektronische aanvraag om een besluit of een melding op grond van deze wet wordt in bij algemene maatregel van bestuur aangewezen gevallen ingediend of gedaan via de landelijke voorziening, bedoeld in artikel 20.21, tenzij bij die maatregel anders is bepaald."
+    - lid: 2
+      text: "Het elektronisch voldoen aan een andere informatieverplichting dan een melding of het elektronisch verzenden van een ander bericht op grond van deze wet kan in bij algemene maatregel van bestuur aangewezen gevallen plaatsvinden op de bij die maatregel aangegeven wijze."
+    - lid: 3
+      text: "Bij de maatregel kunnen in afwijking van de artikelen 2:7, tweede lid, en 2:8 van de Algemene wet bestuursrecht gevallen worden aangewezen waarin het verkeer, bedoeld in het eerste en tweede lid, alleen elektronisch kan plaatsvinden."
+  internal_refs:
+    - target: "artikel 20.21"
+      context: "landelijke voorziening"
+      lid: 1
+  external_refs:
+    - target: "artikelen 2:7, tweede lid, en 2:8 van de Algemene wet bestuursrecht"
+      bwb_id: "BWBR0005537"
+      context: "afwijking voor verplicht elektronisch verkeer"
+      lid: 3
+
+article_16.2:
+  article: "16.2"
+  title_nl: "(totstandkoming consolidatie omgevingsplan)"
+  paragraph: "16.1.1"
+  inwerking: "2024-01-01"
+  text_nl: |
+    Ter uitvoering van artikel 19 van de Bekendmakingswet rust op een bestuursorgaan dat met toepassing van artikel 4.16, 5.52 of 16.21 een omgevingsplan wijzigt ook de verplichting om deze wijziging te verwerken in een nieuwe geconsolideerde versie van het omgevingsplan.
+  leden: []
+  internal_refs:
+    - target: "artikel 4.16"
+      context: "wijziging omgevingsplan"
+    - target: "artikel 5.52"
+      context: "wijziging omgevingsplan"
+    - target: "artikel 16.21"
+      context: "wijziging omgevingsplan"
+  external_refs:
+    - target: "artikel 19 van de Bekendmakingswet"
+      bwb_id: "BWBR0004287"
+      context: "consolidatie verplichting"
+
+article_16.3:
+  article: "16.3"
+  title_nl: null
+  paragraph: "16.1.1"
+  inwerking: "2024-01-01"
+  status: "ingetrokken"
+  text_nl: |
+    Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172.
+  leden: []
+  notes:
+    - "Artikel ingetrokken door Stb. 2020/172"
+
+article_16.4:
+  article: "16.4"
+  title_nl: null
+  paragraph: "16.1.1"
+  inwerking: "2024-01-01"
+  status: "ingetrokken"
+  text_nl: |
+    Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172.
+  leden: []
+  notes:
+    - "Artikel ingetrokken door Stb. 2020/172"
+
+# =============================================================================
+# PARAGRAAF 16.1.2 - GEBRUIK VAN GEGEVENS EN METHODEN
+# =============================================================================
+
+article_16.5:
+  article: "16.5"
+  title_nl: "(houdbaarheid onderzoeksgegevens)"
+  paragraph: "16.1.2"
+  inwerking: "2024-01-01"
+  text_nl: |
+    1. Bij het nemen van een besluit op grond van deze wet kan in ieder geval gebruik worden gemaakt van rapporten met gegevens, onderzoeken of inventarisaties die bij het ontwerpbesluit of, bij het ontbreken daarvan, bij de aanvraag zijn gebruikt en die bij de vaststelling van het besluit niet ouder zijn dan twee jaar.
+    2. Bij het nemen van besluit op grond van deze wet kan ook gebruik worden gemaakt van gegevens uit rapporten die bij de vaststelling van het besluit ouder zijn dan twee jaar als wordt onderbouwd dat de gegevens nog actueel zijn.
+    3. Het eerste lid is niet van toepassing op besluiten die betrekking hebben op een Natura 2000-activiteit of flora- en fauna-activiteit.
+  leden:
+    - lid: 1
+      text: "Bij het nemen van een besluit op grond van deze wet kan in ieder geval gebruik worden gemaakt van rapporten met gegevens, onderzoeken of inventarisaties die bij het ontwerpbesluit of, bij het ontbreken daarvan, bij de aanvraag zijn gebruikt en die bij de vaststelling van het besluit niet ouder zijn dan twee jaar."
+    - lid: 2
+      text: "Bij het nemen van besluit op grond van deze wet kan ook gebruik worden gemaakt van gegevens uit rapporten die bij de vaststelling van het besluit ouder zijn dan twee jaar als wordt onderbouwd dat de gegevens nog actueel zijn."
+    - lid: 3
+      text: "Het eerste lid is niet van toepassing op besluiten die betrekking hebben op een Natura 2000-activiteit of flora- en fauna-activiteit."
+  key_concepts:
+    - term: "houdbaarheid onderzoeksgegevens"
+      description: "Rapporten en gegevens mogen niet ouder zijn dan twee jaar, tenzij onderbouwd actueel"
+    - term: "uitzondering Natura 2000"
+      description: "Lid 1 niet van toepassing op Natura 2000-activiteit of flora- en fauna-activiteit"
+
+article_16.6:
+  article: "16.6"
+  title_nl: "(beoordeling van gevolgen)"
+  paragraph: "16.1.2"
+  inwerking: "2024-01-01"
+  text_nl: |
+    Bij ministeriele regeling kunnen regels worden gesteld over de meet- en rekenmethoden en uitgangspunten aan de hand waarvan op het moment van het nemen van een besluit de gevolgen van dat besluit worden beoordeeld.
+  leden: []
+  delegatie:
+    type: "ministeriele_regeling"
+    scope: "meet- en rekenmethoden, uitgangspunten voor beoordeling gevolgen"

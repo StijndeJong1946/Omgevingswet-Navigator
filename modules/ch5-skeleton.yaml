@@ -1,0 +1,2748 @@
+# Chapter 5 Skeleton Map - De omgevingsvergunning en het projectbesluit
+# Omgevingswet Navigator
+# Generated: 2026-01-28
+
+_metadata:
+  chapter: 5
+  chapter_title: "De omgevingsvergunning en het projectbesluit"
+  total_articles: 65
+  afdelingen: 2
+  paragrafen: 9
+  clusters_identified: 12
+  mapping_date: "2026-01-28"
+  structure:
+    afdeling_5.1:
+      title: "De omgevingsvergunning"
+      paragrafen:
+        - "5.1.1: Verbodsbepalingen (5.1-5.6)"
+        - "5.1.2: Reikwijdte aanvraag en bevoegd gezag (5.7-5.16)"
+        - "5.1.3: De beoordeling van de aanvraag (5.17-5.33a)"
+        - "5.1.4: Inhoud en werking (5.34-5.37a)"
+        - "5.1.5: Actualisering, wijziging, intrekking en revisievergunning (5.38-5.43)"
+    afdeling_5.2:
+      title: "Projectprocedure"
+      paragrafen:
+        - "5.2.1: Algemene bepalingen voor het projectbesluit (5.44-5.46)"
+        - "5.2.2: Voornemen, verkenning en voorkeursbeslissing (5.47-5.50)"
+        - "5.2.3: Projectbesluit (5.51-5.54)"
+        - "5.2.4: Gemeentelijke projecten van publiek belang (5.55)"
+
+# ==============================================================================
+# SKELETON: AFDELING 5.1 - DE OMGEVINGSVERGUNNING
+# ==============================================================================
+
+skeleton:
+
+  # ============================================================================
+  # PARAGRAAF 5.1.1 - VERBODSBEPALINGEN
+  # ============================================================================
+
+  artikel_5.1:
+    title: "(omgevingsvergunningplichtige activiteiten wet)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - trigger         # Primary entry point - activates permit requirement
+      - definition      # Defines which activities require permit
+
+    determines: |
+      Establishes the CORE PROHIBITION: it is forbidden to perform specified
+      activities without an omgevingsvergunning. Two categories:
+      - Lid 1: Activities prohibited UNLESS AMvB excludes them (negative list)
+      - Lid 2: Activities prohibited IF AMvB includes them (positive list)
+
+    triggered_by:
+      - source: "external"
+        condition: "Someone wants to perform an activity in physical environment"
+
+    routes_to:
+      - target: "artikel_5.2"
+        condition: "To determine scope/boundaries of permit requirement"
+      - target: "artikel_5.7"
+        condition: "When filing application (scope of application)"
+      - target: "artikel_5.8"
+        condition: "To determine competent authority"
+      - target: "artikel_5.18"
+        condition: "For assessment rules when application filed"
+
+    exceptions:
+      - exception: "AMvB-designated cases exempt from lid 1 prohibition"
+        defined_in: "AMvB (Bal/Bbl)"
+        effect: "No permit required"
+      - exception: "AMvB must designate cases for lid 2 activities"
+        defined_in: "AMvB (Bal/Bbl)"
+        effect: "Permit only required if designated"
+
+    delegates_to:
+      - target: "Bal"
+        for: "Designation of cases exempt from or requiring permit"
+      - target: "Bbl"
+        for: "Building activity (bouwactiviteit) permit requirements"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 14  # 7 in lid 1, 7 in lid 2 with nested items
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 2
+
+    cluster: "permit-trigger"
+
+    key_activities:
+      lid_1_activities:
+        - "omgevingsplanactiviteit"
+        - "rijksmonumentenactiviteit"
+        - "ontgrondingsactiviteit"
+        - "stortingsactiviteit op zee"
+        - "Natura 2000-activiteit"
+        - "jachtgeweeractiviteit"
+        - "valkeniersactiviteit"
+      lid_2_activities:
+        - "bouwactiviteit"
+        - "milieubelastende activiteit"
+        - "lozingsactiviteit (oppervlaktewater/zuiveringtechnisch werk)"
+        - "wateronttrekkingsactiviteit"
+        - "mijnbouwlocatieactiviteit"
+        - "beperkingengebiedactiviteit"
+        - "flora- en fauna-activiteit"
+
+  artikel_5.2:
+    title: "(afbakening vergunningplicht artikel 5.1)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - condition       # Sets boundaries for permit requirements
+      - delegation      # Allows deviations via local instruments
+
+    determines: |
+      Boundaries and flexibility for Art. 5.1 permit requirements:
+      - Lid 1: AMvB designation must respect Art. 2.3 lid 3 limits
+      - Lid 1: Allows deviation via omgevingsplan/waterschapsverordening/omgevingsverordening
+      - Lid 2: Archaeological monument specific exception
+      - Lid 3-4: Allows deviation via ministerial regulation or program
+      - Lid 5: Mandatory EU implementation cases
+
+    triggered_by:
+      - source: "artikel_5.1"
+        condition: "When determining if permit requirement applies"
+
+    routes_to:
+      - target: "external: omgevingsplan"
+        condition: "For local deviation from permit requirement"
+      - target: "external: waterschapsverordening"
+        condition: "For water authority deviation"
+      - target: "external: omgevingsverordening"
+        condition: "For provincial deviation"
+
+    delegates_to:
+      - target: "Bal"
+        for: "Designation of cases with deviation possibility"
+      - target: "omgevingsplan"
+        for: "Local deviation from permit requirements"
+      - target: "waterschapsverordening"
+        for: "Water-related deviation"
+      - target: "omgevingsverordening"
+        for: "Provincial deviation"
+
+    complexity:
+      leden_count: 5
+      onderdelen_count: 25  # Many activities listed with EU directives
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 2  # 5.1, 2.3
+      external_refs_count: 1  # Erfgoedwet
+      delegation_count: 4
+
+    cluster: "permit-trigger"
+
+  artikel_5.3:
+    title: "(omgevingsvergunningplicht waterschapsverordening)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - trigger         # Alternative trigger source for permits
+
+    determines: |
+      Waterschapsverordening can independently create permit requirements
+      beyond Art. 5.1 (decentralized permit creation)
+
+    triggered_by:
+      - source: "external: waterschapsverordening"
+        condition: "Water board determines activity needs permit"
+
+    routes_to:
+      - target: "artikel_5.8"
+        condition: "Bevoegd gezag determination"
+      - target: "artikel_5.30"
+        condition: "Assessment rules"
+
+    delegates_to:
+      - target: "waterschapsverordening"
+        for: "Creating additional permit requirements"
+
+    complexity:
+      leden_count: 0  # Single alinea
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "permit-trigger"
+
+  artikel_5.4:
+    title: "(omgevingsvergunningplicht omgevingsverordening)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - trigger         # Alternative trigger source for permits
+
+    determines: |
+      Omgevingsverordening can independently create permit requirements
+      beyond Art. 5.1 (provincial permit creation)
+
+    triggered_by:
+      - source: "external: omgevingsverordening"
+        condition: "Province determines activity needs permit"
+
+    routes_to:
+      - target: "artikel_5.8"
+        condition: "Bevoegd gezag determination"
+      - target: "artikel_5.10"
+        condition: "Provincial authority cases"
+      - target: "artikel_5.30"
+        condition: "Assessment rules"
+
+    delegates_to:
+      - target: "omgevingsverordening"
+        for: "Creating additional permit requirements"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "permit-trigger"
+
+  artikel_5.5:
+    title: "(verbod handelen in strijd met voorschriften omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - trigger         # Compliance trigger - post-permit
+      - condition       # Different conditions per activity type
+
+    determines: |
+      Prohibition to act contrary to permit conditions:
+      - Lid 1-3: Different activity categories with different conditions
+      - Lid 4-5: Art. 5.3/5.4 activities (waterschaps/omgevingsverordening)
+      Creates enforcement pathway for permit violations
+
+    triggered_by:
+      - source: "artikel_5.34"
+        condition: "After permit with conditions is granted"
+      - source: "external"
+        condition: "Holder acts contrary to permit conditions"
+
+    routes_to:
+      - target: "external: handhaving (Ch. 18)"
+        condition: "Violation detected"
+
+    complexity:
+      leden_count: 5
+      onderdelen_count: 15
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 2  # 5.3, 5.4
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-compliance"
+
+  artikel_5.6:
+    title: "(verbod in stand laten zonder vergunning gebouwd bouwwerk)"
+    afdeling: "5.1"
+    paragraaf: "5.1.1"
+
+    roles:
+      - trigger         # Continuing violation trigger
+
+    determines: |
+      Prohibition to maintain a building constructed without required
+      building permit - creates continuous violation state
+
+    triggered_by:
+      - source: "external"
+        condition: "Building exists without required permit"
+
+    routes_to:
+      - target: "external: handhaving (Ch. 18)"
+        condition: "Violation detected"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-compliance"
+
+  # ============================================================================
+  # PARAGRAAF 5.1.2 - REIKWIJDTE AANVRAAG EN BEVOEGD GEZAG
+  # ============================================================================
+
+  artikel_5.7:
+    title: "(aanvraag los of gelijktijdig)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - procedure       # Application scope rules
+      - condition       # Conditions for combined/separate applications
+
+    determines: |
+      Application scope flexibility:
+      - Lid 1: Applicant choice for single or multiple activities
+      - Lid 2: Mandatory separate application for water activities (AMvB cases)
+      - Lid 3: Mandatory separate for location-independent activities
+      - Lid 4: Mandatory simultaneous for IPPC/Seveso (water + miljeu)
+      - Lid 5: Applies equally to modification requests
+
+    triggered_by:
+      - source: "external"
+        condition: "Applicant prepares permit application"
+
+    routes_to:
+      - target: "artikel_5.8"
+        condition: "Single activity application"
+      - target: "artikel_5.12"
+        condition: "Multiple activity application"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of separate/simultaneous application cases"
+
+    complexity:
+      leden_count: 5
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.1, 5.4
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.8:
+    title: "(bevoegd gezag gemeente aanvraag een activiteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # DEFAULT competent authority rule
+
+    determines: |
+      DEFAULT RULE: College van B&W decides on single-activity applications
+      UNLESS another authority designated per Art. 5.9, 5.9a, 5.10, 5.11, or 5.13
+
+    triggered_by:
+      - source: "artikel_5.7"
+        condition: "Single activity application filed"
+      - source: "artikel_5.1"
+        condition: "Permit requirement triggered"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Municipality decides - proceed to assessment"
+      - target: "artikel_5.9"
+        condition: "Check if water activity exception applies"
+      - target: "artikel_5.9a"
+        condition: "Check if hunting weapon exception applies"
+      - target: "artikel_5.10"
+        condition: "Check if provincial exception applies"
+      - target: "artikel_5.11"
+        condition: "Check if national exception applies"
+      - target: "artikel_5.13"
+        condition: "Check if prior-permit exception applies"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 5  # 5.9, 5.9a, 5.10, 5.11, 5.13
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "authority-determination"
+
+  artikel_5.9:
+    title: "(bevoegd gezag aanvraag een wateractiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Water authority exception
+      - delegation      # Delegates to AMvB
+
+    determines: |
+      For water activities: AMvB designates when water board (dagelijks
+      bestuur), province (GS), or Minister I&W decides instead of municipality
+
+    triggered_by:
+      - source: "artikel_5.8"
+        condition: "Checking if water exception applies"
+      - source: "artikel_5.1"
+        condition: "Water activity permit requirement"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Designated authority decides - proceed to assessment"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Designation of competent authority for water activities"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.9a:
+    title: "(bevoegd gezag aanvraag een jachtgeweeractiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Special authority: korpschef (police)
+
+    determines: |
+      Korpschef (police chief) decides on hunting weapon permits
+      (special exception from municipal default)
+
+    triggered_by:
+      - source: "artikel_5.8"
+        condition: "Checking if hunting weapon exception applies"
+      - source: "artikel_5.1"
+        condition: "Jachtgeweeractiviteit permit requirement"
+
+    routes_to:
+      - target: "artikel_5.29a"
+        condition: "Assessment rules for hunting weapon activity"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "authority-determination"
+
+  artikel_5.10:
+    title: "(bevoegd gezag provincie aanvraag een activiteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Provincial authority cases
+      - delegation      # AMvB designation
+
+    determines: |
+      AMvB designates when Gedeputeerde Staten (province) decides:
+      - Provincial interest omgevingsplanactiviteiten
+      - Ontgrondingsactiviteiten (winterbed rivers, outside rijkswateren)
+      - IPPC/Seveso/groundwater milieubelastende activiteiten
+      - Regional airports, local railways
+      - Natura 2000 and flora/fauna activities
+      - Art. 5.4 activities
+      Must respect Art. 2.3 lid 2 boundaries
+
+    triggered_by:
+      - source: "artikel_5.8"
+        condition: "Checking if provincial exception applies"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Province decides - proceed to assessment"
+
+    exceptions:
+      - exception: "Transport authority for regional spoorweg"
+        defined_in: "artikel_5.10 lid 3"
+        effect: "Openbaar lichaam decides instead of province"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Designation of provincial competence cases"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 11
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 2  # 2.3, 5.4
+      external_refs_count: 1  # Wet personenvervoer
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.11:
+    title: "(bevoegd gezag Rijk aanvraag een activiteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # National authority cases
+      - delegation      # AMvB designation
+
+    determines: |
+      AMvB designates when Minister decides:
+      - National interest omgevingsplanactiviteiten
+      - Archaeological monuments
+      - Rijkswateren ontgrondingen
+      - Mining activities, national security
+      - Rijkswegen, airports, railways, mining installations
+      - National interest nature activities
+      - Activities in territorial sea/EEZ
+      - Valkeniersactiviteit
+      Lid 3: Minister can override for national security
+
+    triggered_by:
+      - source: "artikel_5.8"
+        condition: "Checking if national exception applies"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Minister decides - proceed to assessment"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Designation of national competence cases"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 13
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 3  # 5.8, 5.10, 5.13, 2.3
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.12:
+    title: "(bevoegd gezag aanvraag meer activiteiten)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Multi-activity authority resolution
+      - procedure       # Coordination rules
+
+    determines: |
+      Rules for multi-activity applications:
+      - Lid 1: One of the normally-competent authorities decides
+      - Lid 2: If B&W is among them, B&W decides (unless AMvB overrides)
+      - Lid 3: Otherwise, AMvB designates which authority
+      - Lid 4: Minister can override for national security
+
+    triggered_by:
+      - source: "artikel_5.7"
+        condition: "Multiple activity application filed"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Designated authority decides - proceed to assessment"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Designation of authority for complex cases"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 5  # 5.8, 5.9, 5.10, 5.11, 5.13, 2.3
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.13:
+    title: "(eens bevoegd gezag altijd bevoegd gezag)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Continuity rule
+      - exception       # Exception from normal rules
+
+    determines: |
+      "Once competent, always competent" rule:
+      AMvB can designate that GS or Minister who granted earlier permit
+      continues to decide on subsequent applications for same location
+      Exception: Does not apply to water activities (5.9) or hunting (5.9a)
+
+    triggered_by:
+      - source: "external"
+        condition: "New application for location with existing permit"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Prior-authority decides - proceed to assessment"
+
+    exceptions:
+      - exception: "Water activities exempt"
+        defined_in: "artikel_5.13 lid 2"
+        effect: "Normal authority rules apply"
+      - exception: "Hunting weapon activities exempt"
+        defined_in: "artikel_5.13 lid 2"
+        effect: "Korpschef remains competent"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Designation of continuity cases"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 2  # 5.9, 5.9a
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  artikel_5.14:
+    title: "(bevoegd gezag grondgebiedoverstijgende aanvraag)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Cross-boundary rule
+      - procedure       # Determines primary location
+
+    determines: |
+      For activities spanning multiple municipalities/provinces/waterschappen:
+      Authority of area where activity predominantly takes place decides
+
+    triggered_by:
+      - source: "external"
+        condition: "Activity spans multiple governmental territories"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "Primary-location authority decides"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 5  # 5.8, 5.9, 5.10, 5.12, 5.13
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "authority-determination"
+
+  artikel_5.15:
+    title: "(bevoegd gezag toepassing paragraaf 5.1.5)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Post-permit authority continuity
+
+    determines: |
+      Same authority competent for application is also competent for
+      modification/revocation (par. 5.1.5) of that permit
+
+    triggered_by:
+      - source: "artikel_5.38"
+        condition: "Actualization needed"
+      - source: "artikel_5.39"
+        condition: "Mandatory modification/revocation"
+      - source: "artikel_5.40"
+        condition: "Discretionary modification/revocation"
+
+    routes_to:
+      - target: "artikel_5.38"
+        condition: "Actualization pathway"
+      - target: "artikel_5.39"
+        condition: "Mandatory modification pathway"
+      - target: "artikel_5.40"
+        condition: "Discretionary modification pathway"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # par. 5.1.5
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "authority-determination"
+
+  artikel_5.16:
+    title: "(flexibiliteitsregeling bevoegd gezag)"
+    afdeling: "5.1"
+    paragraaf: "5.1.2"
+
+    roles:
+      - authority       # Authority transfer mechanism
+      - procedure       # Requires consent
+
+    determines: |
+      Competent authority can transfer its competence to another authority
+      if that authority consents - flexibility mechanism
+
+    triggered_by:
+      - source: "external"
+        condition: "Authority wishes to transfer competence"
+
+    routes_to:
+      - target: "artikel_5.18"
+        condition: "New authority proceeds with assessment"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Rules on transfer application"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # par. 5.1.5
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "authority-determination"
+
+  # ============================================================================
+  # PARAGRAAF 5.1.3 - DE BEOORDELING VAN DE AANVRAAG
+  # ============================================================================
+
+  artikel_5.17:
+    title: "(ingetrokken)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - definition      # Placeholder - withdrawn article
+
+    determines: |
+      WITHDRAWN (Stb. 2020/172) - no longer in force
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-framework"
+
+  artikel_5.18:
+    title: "(beoordelingsregels aanvraag artikel 5.1-activiteiten bij AMvB)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - procedure       # CORE assessment rules
+      - delegation      # Delegates to AMvB
+
+    determines: |
+      CORE DELEGATION: AMvB establishes assessment rules for granting/refusing
+      permits for Art. 5.1 activities. This is the key routing article to Bkl.
+      - Lid 2: May include motivation requirements
+      - Lid 3: Art. 2.32 (provincial override) applies
+
+    triggered_by:
+      - source: "artikel_5.8"
+        condition: "After competent authority determined"
+      - source: "artikel_5.9"
+        condition: "Water authority case"
+      - source: "artikel_5.10"
+        condition: "Provincial case"
+      - source: "artikel_5.11"
+        condition: "National case"
+      - source: "artikel_5.12"
+        condition: "Multi-activity case"
+
+    routes_to:
+      - target: "artikel_5.20"
+        condition: "Bouwactiviteit - specific rules"
+      - target: "artikel_5.21"
+        condition: "Omgevingsplanactiviteit - specific rules"
+      - target: "artikel_5.22"
+        condition: "Rijksmonumentenactiviteit - specific rules"
+      - target: "artikel_5.23"
+        condition: "Ontgrondingsactiviteit - specific rules"
+      - target: "artikel_5.24"
+        condition: "Wateractiviteit - specific rules"
+      - target: "artikel_5.26"
+        condition: "Milieubelastende activiteit - specific rules"
+      - target: "artikel_5.27"
+        condition: "Mijnbouwlocatieactiviteit - specific rules"
+      - target: "artikel_5.28"
+        condition: "Beperkingengebiedactiviteit - specific rules"
+      - target: "artikel_5.29"
+        condition: "Natura 2000/flora-fauna - specific rules"
+      - target: "artikel_5.29a"
+        condition: "Jachtgeweer/valkenier - specific rules"
+      - target: "artikel_5.34"
+        condition: "Permit granted - conditions attached"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Assessment rules for all Art. 5.1 activities"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.1, 2.32
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "assessment-framework"
+
+  artikel_5.19:
+    title: "(beoordelingsregels aanvraag artikel 5.1-activiteiten in omgevingsverordening)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - procedure       # Provincial supplementary rules
+      - delegation      # Provincial level
+
+    determines: |
+      Province can set additional assessment rules for milieubelastende
+      activiteiten via omgevingsverordening (except Art. 5.26 lid 4 cases)
+      Must respect Art. 2.3 lid 2 boundaries
+
+    triggered_by:
+      - source: "artikel_5.26"
+        condition: "Milieubelastende activiteit with provincial interest"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Provincial rules inform permit conditions"
+
+    delegates_to:
+      - target: "omgevingsverordening"
+        for: "Additional assessment rules for milieubelastende activiteiten"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 2  # 5.26, 2.3, 2.32
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "assessment-framework"
+
+  artikel_5.20:
+    title: "(artikel 5.18 beoordelingsregels aanvraag bouwactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Building-specific assessment criteria
+
+    determines: |
+      For bouwactiviteit, Art. 5.18 rules focus on:
+      - Safety
+      - Health protection
+      - Durability and usability
+      Permit granted if likely to comply with Bbl building quality rules
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Bouwactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 3
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.18, 4.3
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.21:
+    title: "(artikel 5.18 beoordelingsregels aanvraag omgevingsplanactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Omgevingsplan-specific assessment
+
+    determines: |
+      For omgevingsplanactiviteit:
+      - Assessed against law's goals
+      - Permit granted per omgevingsplan rules OR
+      - Also possible for "evenwichtige toedeling van functies"
+      - Lid 3: Instructions apply (provincial/national interest cases)
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Omgevingsplanactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 3
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 5  # 5.18, 2.22, 2.24, 2.32, 2.33, 2.34
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.22:
+    title: "(artikel 5.18 beoordelingsregels aanvraag rijksmonumentenactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Heritage-specific assessment
+
+    determines: |
+      For rijksmonumentenactiviteit, focus on cultural heritage protection:
+      - Prevention of disfigurement, damage, demolition, relocation
+      - Promotion of use (with adaptations if needed)
+      - Conservation in situ (archaeological)
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Rijksmonumentenactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 3
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.18
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.23:
+    title: "(artikel 5.18 beoordelingsregels aanvraag ontgrondingsactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Extraction-specific assessment
+
+    determines: |
+      For ontgrondingsactiviteit: assessed against law's goals
+      (broad assessment framework)
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Ontgrondingsactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.18
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.24:
+    title: "(artikel 5.18 beoordelingsregels aanvraag wateractiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Water-specific assessment criteria
+
+    determines: |
+      For wateractiviteiten, focus on:
+      - Flood prevention, water scarcity
+      - Chemical/ecological water quality
+      - Societal water functions
+      - WWTP protection
+      Lid 3: Stortingsactiviteit also implements Londen-protocol/Ospar
+      Lid 4: Beperkingengebiedactiviteit outside provincial/municipal areas: broader goals
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Wateractiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 4
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 2  # 5.18, 4.23
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.25:
+    title: "(ingetrokken)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - definition      # Placeholder - withdrawn
+
+    determines: |
+      WITHDRAWN (Stb. 2020/172) - no longer in force
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-framework"
+
+  artikel_5.26:
+    title: "(artikel 5.18 beoordelingsregels aanvraag milieubelastende activiteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Environment-specific assessment
+      - delegation      # Links to provincial rules
+
+    determines: |
+      For milieubelastende activiteit, focus on:
+      - Safety, health, environment protection
+      Lid 3: Provincial rules (Art. 5.19) also apply
+      Lid 4: Some cases only require MER significance assessment
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Milieubelastende activiteit application"
+
+    routes_to:
+      - target: "artikel_5.19"
+        condition: "Check provincial rules"
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+      - target: "artikel_16.43"
+        condition: "Lid 4 cases - MER assessment only"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 3  # 5.18, 5.19, 4.22, 16.43
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.27:
+    title: "(artikel 5.18 beoordelingsregels aanvraag mijnbouwlocatieactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Mining location-specific assessment
+
+    determines: |
+      For mijnbouwlocatieactiviteit, focus on:
+      - Safety
+      - Balanced function allocation
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Mijnbouwlocatieactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.18, 4.24
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.28:
+    title: "(artikel 5.18 beoordelingsregels beperkingengebiedactiviteit anders dan wateractiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Infrastructure protection assessment
+
+    determines: |
+      For beperkingengebiedactiviteit (roads, airports, railways, mining
+      installations): focus on protecting state and function of infrastructure
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Beperkingengebiedactiviteit application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 4
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.18
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.29:
+    title: "(artikel 5.18 beoordelingsregels aanvraag Natura 2000-activiteit en flora- en fauna-activiteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Nature protection assessment
+
+    determines: |
+      For Natura 2000 and flora/fauna activities:
+      - Focus on nature protection
+      - Implements Habitats Directive Art. 6 & 16, Birds Directive Art. 9
+      - May require nitrogen deposition space registration
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Natura 2000 or flora/fauna application"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.18
+      external_refs_count: 2  # habitatrichtlijn, vogelrichtlijn
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.29a:
+    title: "(artikel 5.18 beoordelingsregels aanvraag jachtgeweeractiviteit en valkeniersactiviteit)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Hunting-specific assessment
+
+    determines: |
+      For jachtgeweer and valkenier activities:
+      Focus on nature protection OR safety
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Jachtgeweer or valkenier application"
+      - source: "artikel_5.9a"
+        condition: "Korpschef application route"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.18
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.30:
+    title: "(beoordelingsregels artikel 5.3- en 5.4-activiteiten)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Decentral assessment rules
+
+    determines: |
+      For Art. 5.3/5.4 activities (waterschaps/omgevingsverordening):
+      Permit can ONLY be granted/refused on grounds specified in those
+      verordeningen - no additional assessment criteria apply
+
+    triggered_by:
+      - source: "artikel_5.3"
+        condition: "Waterschapsverordening activity"
+      - source: "artikel_5.4"
+        condition: "Omgevingsverordening activity"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Assessment complete - conditions determined"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.3, 5.4
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-activity-specific"
+
+  artikel_5.31:
+    title: "(weigeren vergunning vanwege Wet bibob)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Discretionary refusal ground
+      - exception       # Special refusal pathway
+
+    determines: |
+      Authority MAY refuse permit under Wet bibob conditions for:
+      - Bouwactiviteit
+      - Omgevingsplanactiviteit
+      - Milieubelastende activiteit
+      - Art. 5.3 activities
+      Can request Bibob Bureau advice before deciding
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Integrity concerns arise during assessment"
+
+    routes_to:
+      - target: "external: Wet bibob"
+        condition: "Bibob assessment triggered"
+      - target: "artikel_5.40"
+        condition: "Bibob concerns after permit - modification/revocation"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 4
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.3
+      external_refs_count: 2  # Wet bibob
+      delegation_count: 0
+
+    cluster: "assessment-special-grounds"
+
+  artikel_5.32:
+    title: "(weigeren vergunning vanwege ernstige gezondheidsrisico's)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - condition       # Discretionary refusal ground
+      - exception       # Special refusal pathway
+
+    determines: |
+      Authority MAY refuse any permit if special circumstances would cause
+      serious (potential) health effects - discretionary health protection
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Serious health concerns identified"
+
+    routes_to:
+      - target: "outcome: weigering"
+        condition: "Decision to refuse on health grounds"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-special-grounds"
+
+  artikel_5.33:
+    title: "(verlenen of weigeren vergunning vanwege instemming)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - procedure       # Consent requirement
+      - condition       # Must follow consent decision
+
+    determines: |
+      If activity requires consent from another authority (Art. 16.16),
+      permit must be granted/refused in accordance with consent decision
+
+    triggered_by:
+      - source: "artikel_16.16"
+        condition: "Consent requirement applies"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Consent given - proceed to grant"
+      - target: "outcome: weigering"
+        condition: "Consent refused - must refuse"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 16.16
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-special-grounds"
+
+  artikel_5.33a:
+    title: "(gedeeltelijke verlening omgevingsvergunning bij aanvraag meer activiteiten)"
+    afdeling: "5.1"
+    paragraaf: "5.1.3"
+
+    roles:
+      - procedure       # Partial grant rules
+      - outcome         # Determines grant/refuse outcome
+
+    determines: |
+      Multi-activity applications:
+      - If some activities must be refused, refuse only those
+      - Grant permit for remaining activities
+      - Unless applicant requests or agrees to full refusal
+
+    triggered_by:
+      - source: "artikel_5.12"
+        condition: "Multi-activity application"
+      - source: "artikel_5.18"
+        condition: "Assessment shows mixed result"
+
+    routes_to:
+      - target: "artikel_5.34"
+        condition: "Partial grant - conditions for granted activities"
+      - target: "outcome: gedeeltelijke weigering"
+        condition: "Some activities refused"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "assessment-special-grounds"
+
+  # ============================================================================
+  # PARAGRAAF 5.1.4 - INHOUD EN WERKING
+  # ============================================================================
+
+  artikel_5.34:
+    title: "(voorschriften omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - outcome         # Core permit conditions article
+      - procedure       # How conditions are attached
+
+    determines: |
+      CORE PERMIT CONDITIONS ARTICLE:
+      - Lid 1: Conditions necessary per assessment rules (5.18, 5.19, 5.30, 5.31)
+      - Lid 2: AMvB sets further rules for designated activities
+      - Lid 3: Local rules may also govern conditions (omgevingsplan,
+        waterschapsverordening, omgevingsverordening)
+
+    triggered_by:
+      - source: "artikel_5.18"
+        condition: "Assessment rules applied"
+      - source: "artikel_5.20"
+        condition: "Building assessment complete"
+      - source: "artikel_5.21"
+        condition: "Omgevingsplan assessment complete"
+      - source: "artikel_5.22"
+        condition: "Monument assessment complete"
+      - source: "artikel_5.26"
+        condition: "Environment assessment complete"
+      - source: "artikel_5.30"
+        condition: "Decentral assessment complete"
+
+    routes_to:
+      - target: "artikel_5.5"
+        condition: "Permit granted - compliance obligations"
+      - target: "artikel_5.36"
+        condition: "Time limitations may apply"
+      - target: "artikel_5.37"
+        condition: "Holder determination"
+      - target: "artikel_5.38"
+        condition: "Future actualization pathway"
+
+    delegates_to:
+      - target: "Bkl"
+        for: "Specific condition rules per activity"
+      - target: "omgevingsplan"
+        for: "Local condition rules for omgevingsplanactiviteit"
+      - target: "waterschapsverordening"
+        for: "Water board condition rules"
+      - target: "omgevingsverordening"
+        for: "Provincial condition rules"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 5
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 6  # 5.18, 5.19, 5.30, 5.31, 5.3, 5.4, 5.26, 13.5, 13.6, 2.3
+      external_refs_count: 0
+      delegation_count: 4
+
+    cluster: "permit-outcome"
+
+  artikel_5.35:
+    title: "(ingetrokken)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - definition      # Placeholder - withdrawn
+
+    determines: |
+      WITHDRAWN (Stb. 2020/172) - no longer in force
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-outcome"
+
+  artikel_5.36:
+    title: "(termijnstelling in omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - condition       # Time limitations
+      - procedure       # Termination/restoration rules
+
+    determines: |
+      Time-limited permits:
+      - Lid 1: Ongoing activities may have term limit
+      - Lid 2: Finite activities may require restoration
+      - Lid 3: Conditions may survive permit expiry
+      - Lid 4: AMvB designates mandatory term cases
+
+    triggered_by:
+      - source: "artikel_5.34"
+        condition: "Permit granted with conditions"
+
+    routes_to:
+      - target: "external: permit expiry"
+        condition: "Term expires"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of mandatory term cases"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "permit-outcome"
+
+  artikel_5.36a:
+    title: "(termijnstelling seizoensgebonden en drijvende bouwwerken)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - condition       # Special building permit rules
+      - exception       # Deviation from normal permit scope
+
+    determines: |
+      Special rules for seasonal and floating buildings:
+      - Seasonal: permit can allow repeated construction/demolition
+      - Floating: permit includes movement for maintenance
+
+    triggered_by:
+      - source: "artikel_5.34"
+        condition: "Building permit for seasonal/floating structure"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-outcome"
+
+  artikel_5.36b:
+    title: "(conversie omgevingsvergunning wateractiviteit vanwege nieuwe vergunningplicht stortingsactiviteit op zee)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - exception       # Automatic conversion rule
+      - procedure       # Legal continuity mechanism
+
+    determines: |
+      If London Protocol amendment creates new stortingsactiviteit requirement
+      for activity already permitted as water activity, existing permit
+      automatically converts to stortingsactiviteit permit
+
+    triggered_by:
+      - source: "external: London Protocol change"
+        condition: "New permit requirement created"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.1
+      external_refs_count: 1  # London Protocol
+      delegation_count: 0
+
+    cluster: "permit-outcome"
+
+  artikel_5.37:
+    title: "(normadressaat omgevingsvergunning en aanwijzing vergunninghouder)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - definition      # Who is permit holder
+      - procedure       # Transfer notification rules
+
+    determines: |
+      Permit holder rules:
+      - Lid 1: Permit applies to whoever performs activity (zaaksgebonden)
+      - Lid 2: Notify authority 4 weeks before permit transfers
+      - Lid 3: Authority can make permit personal if relevant
+
+    triggered_by:
+      - source: "artikel_5.34"
+        condition: "Permit granted"
+
+    routes_to:
+      - target: "artikel_5.5"
+        condition: "Holder responsible for compliance"
+      - target: "artikel_5.37a"
+        condition: "Multiple holders - responsibility split"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-outcome"
+
+  artikel_5.37a:
+    title: "(verantwoordelijkheidsverdeling vergunninghouders)"
+    afdeling: "5.1"
+    paragraaf: "5.1.4"
+
+    roles:
+      - condition       # Split responsibility rules
+      - exception       # Deviation from default holder responsibility
+
+    determines: |
+      Authority can split permit compliance responsibility among multiple
+      holders if activities are distinguishable - except AMvB-designated cases
+
+    triggered_by:
+      - source: "artikel_5.37"
+        condition: "Multiple parties performing activity"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Cases excluded from responsibility split"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 1  # 5.37
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "permit-outcome"
+
+  # ============================================================================
+  # PARAGRAAF 5.1.5 - ACTUALISERING, WIJZIGING, INTREKKING EN REVISIEVERGUNNING
+  # ============================================================================
+
+  artikel_5.38:
+    title: "(actualisering omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - procedure       # Ongoing review obligation
+
+    determines: |
+      For stortingsactiviteiten, milieubelastende activiteiten, and
+      lozingsactiviteiten: authority must regularly review if permit
+      conditions remain adequate given:
+      - Technical developments for environmental protection
+      - Environmental quality developments
+      - New BAT conclusions (IPPC)
+
+    triggered_by:
+      - source: "external: time passage"
+        condition: "Regular review period"
+      - source: "external: BAT conclusions"
+        condition: "New EU best available techniques"
+
+    routes_to:
+      - target: "artikel_5.39"
+        condition: "Review shows modification needed"
+      - target: "artikel_5.42"
+        condition: "Specific modification grounds"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Detailed review rules per activity"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 3
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 1  # richtlijn industriele emissies
+      delegation_count: 1
+
+    cluster: "permit-lifecycle"
+
+  artikel_5.39:
+    title: "(verplichting tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - procedure       # MANDATORY modification/revocation
+      - outcome         # Forces authority action
+
+    determines: |
+      Authority MUST modify conditions or revoke permit:
+      - (a) In AMvB-designated cases/grounds
+      - (b) For Art. 5.3/5.4 activities: in verordening-designated cases
+
+    triggered_by:
+      - source: "artikel_5.38"
+        condition: "Actualization review shows inadequacy"
+      - source: "external: regulatory change"
+        condition: "AMvB or verordening requires modification"
+
+    routes_to:
+      - target: "artikel_5.41"
+        condition: "At request of consent authority"
+      - target: "artikel_5.42"
+        condition: "Specific grounds apply"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Mandatory modification/revocation grounds"
+      - target: "waterschapsverordening"
+        for: "Art. 5.3 activity modification grounds"
+      - target: "omgevingsverordening"
+        for: "Art. 5.4 activity modification grounds"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 2  # 5.3, 5.4
+      external_refs_count: 0
+      delegation_count: 3
+
+    cluster: "permit-lifecycle"
+
+  artikel_5.40:
+    title: "(bevoegdheid tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - procedure       # DISCRETIONARY modification/revocation
+      - authority       # Power to act
+
+    determines: |
+      Authority MAY modify conditions (lid 1) or revoke permit (lid 2):
+      - (a) AMvB-designated cases
+      - (b) Bibob danger reduction (modification)
+      - (c) Verordening-designated cases (5.3/5.4)
+      - (b-lid2) Unused for 1+ year
+      - (c-lid2) At holder request
+      - (d-lid2) Bibob grounds (revocation)
+      - (e-lid2) Coordinated water/milieu permit revoked
+      - (f-lid2) Verordening-designated cases
+
+    triggered_by:
+      - source: "artikel_5.38"
+        condition: "Actualization shows option to modify"
+      - source: "external: holder request"
+        condition: "Holder wants revocation"
+      - source: "artikel_5.31"
+        condition: "Bibob concerns post-permit"
+
+    routes_to:
+      - target: "external: modified permit"
+        condition: "Conditions changed"
+      - target: "external: permit revoked"
+        condition: "Permit no longer valid"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Discretionary modification/revocation cases"
+      - target: "waterschapsverordening"
+        for: "Art. 5.3 activity discretionary grounds"
+      - target: "omgevingsverordening"
+        for: "Art. 5.4 activity discretionary grounds"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 9
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 5  # 5.3, 5.4, 5.31, 16.7, 18.10
+      external_refs_count: 1  # Wet bibob
+      delegation_count: 3
+
+    cluster: "permit-lifecycle"
+
+  artikel_5.41:
+    title: "(toepassing artikelen 5.39 en 5.40 op verzoek instemmingsorgaan)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - procedure       # Cross-authority modification request
+
+    determines: |
+      Authority must modify/revoke at request of consent authority (16.16)
+      or Minister of Justice for jachtgeweeractiviteit revocation
+
+    triggered_by:
+      - source: "artikel_16.16"
+        condition: "Consent authority requests modification/revocation"
+      - source: "external: Minister JV"
+        condition: "Hunting weapon revocation requested"
+
+    routes_to:
+      - target: "artikel_5.39"
+        condition: "Mandatory modification triggered"
+      - target: "artikel_5.40"
+        condition: "Discretionary modification triggered"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 4  # 5.39, 5.40, 16.16, 5.42
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-lifecycle"
+
+  artikel_5.42:
+    title: "(invulling algemene maatregel van bestuur artikelen 5.39 en 5.40)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - condition       # Specific grounds specification
+      - delegation      # AMvB content requirements
+
+    determines: |
+      Specifies what AMvB must contain for 5.39/5.40:
+      - Same purpose as assessment rules (5.18)
+      - Mandatory: modification if Art. 5.38 shows improvement possible/needed
+      - Mandatory: jachtgeweer revocation for weapon misuse
+      - Mandatory: health protection modification/revocation cases
+
+    triggered_by:
+      - source: "artikel_5.38"
+        condition: "Actualization complete"
+      - source: "artikel_5.39"
+        condition: "Mandatory grounds apply"
+      - source: "artikel_5.40"
+        condition: "Discretionary grounds apply"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Specific modification/revocation grounds"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 5  # 5.1, 5.18, 5.38, 5.39, 5.40, 4.22
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "permit-lifecycle"
+
+  artikel_5.43:
+    title: "(revisievergunning)"
+    afdeling: "5.1"
+    paragraaf: "5.1.5"
+
+    roles:
+      - procedure       # Permit consolidation
+      - outcome         # New permit replacing old ones
+
+    determines: |
+      REVISION PERMIT - permit consolidation:
+      - Authority can consolidate multiple permits into one
+      - For efficient execution and enforcement
+      - Can combine with new application or modification
+      - Consolidated permit suspends old permits until final
+
+    triggered_by:
+      - source: "external"
+        condition: "Multiple permits exist for same location/activities"
+
+    routes_to:
+      - target: "external: consolidated permit"
+        condition: "New permit replaces existing ones"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 3  # 5.16, 5.39, 5.40
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "permit-lifecycle"
+
+  # ============================================================================
+  # AFDELING 5.2 - PROJECTPROCEDURE
+  # ============================================================================
+
+  # ============================================================================
+  # PARAGRAAF 5.2.1 - ALGEMENE BEPALINGEN PROJECTBESLUIT
+  # ============================================================================
+
+  artikel_5.44:
+    title: "(bevoegd gezag projectbesluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - authority       # Who can make project decisions
+      - trigger         # Entry point for project procedure
+
+    determines: |
+      Who can adopt projectbesluit:
+      - Water board (daily board) - for water tasks only
+      - Province (GS)
+      - Minister (with BZK consent)
+      Must respect Art. 2.3 boundaries
+
+    triggered_by:
+      - source: "external"
+        condition: "Major project with public interest planned"
+
+    routes_to:
+      - target: "artikel_5.44a"
+        condition: "Determine which authority prevails"
+      - target: "artikel_5.47"
+        condition: "Start voornemen/verkenning"
+      - target: "artikel_5.46"
+        condition: "Check if mandatory project decision"
+
+    exceptions:
+      - exception: "Consent not required for uitwerking (5.54)"
+        defined_in: "artikel_5.44 lid 2"
+        effect: "Simplified procedure"
+      - exception: "Consent not required for wijziging"
+        defined_in: "artikel_5.44 lid 2"
+        effect: "Simplified procedure"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 3  # 2.3, 2.17, 5.54
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-authority"
+
+  artikel_5.44a:
+    title: "(voorrangsregel bevoegd gezag projectbesluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - authority       # Authority precedence rules
+      - condition       # Multi-authority resolution
+
+    determines: |
+      Precedence rules:
+      - Province: where project predominantly located
+      - Water board: where project predominantly located
+      - Province+water board joint: province prevails
+      - State+lower: state prevails
+
+    triggered_by:
+      - source: "artikel_5.44"
+        condition: "Multiple authorities could be competent"
+
+    routes_to:
+      - target: "artikel_5.45"
+        condition: "Coordination of execution decisions"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-authority"
+
+  artikel_5.44b:
+    title: "(flexibiliteitsregeling projectbesluit Rijk)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - authority       # Authority transfer for projects
+      - procedure       # Flexibility mechanism
+
+    determines: |
+      Minister can transfer project decision authority to province
+      if province consents - flexibility for national projects
+
+    triggered_by:
+      - source: "artikel_5.44"
+        condition: "Minister wishes to delegate to province"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Rules on transfer application"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "project-authority"
+
+  artikel_5.45:
+    title: "(coordinatie uitvoeringsbesluiten)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - procedure       # Coordination framework
+      - authority       # Coordination authority designation
+
+    determines: |
+      Coordination of execution decisions:
+      - Project authority can opt into Art. 16.7 coordination
+      - Mandatory for Art. 5.46 projects (major infrastructure)
+      - Coordinating authority varies by project level
+
+    triggered_by:
+      - source: "artikel_5.52"
+        condition: "Project decision adopted - needs execution"
+
+    routes_to:
+      - target: "artikel_16.7"
+        condition: "Coordination rules apply"
+      - target: "artikel_5.45a"
+        condition: "Authority substitution needed"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 4  # 16.7, 5.46, 5.44, 5.44a
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-coordination"
+
+  artikel_5.45a:
+    title: "(bevoegdheid tot indeplaatstreding)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - authority       # Substitution power
+      - exception       # Override mechanism
+
+    determines: |
+      Coordinating authority can substitute for reluctant authority:
+      - If decision not made (timely)
+      - If decision blocks project execution
+      Province coordinates waterschap projects; Minister coordinates all
+
+    triggered_by:
+      - source: "artikel_5.45"
+        condition: "Execution decision blocked or delayed"
+
+    routes_to:
+      - target: "external: substituted decision"
+        condition: "Coordinator makes decision instead"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-coordination"
+
+  artikel_5.46:
+    title: "(projectbesluit voor hoofdinfrastructuur en primaire waterkeringen)"
+    afdeling: "5.2"
+    paragraaf: "5.2.1"
+
+    roles:
+      - trigger         # MANDATORY project decisions
+      - authority       # Who must decide
+
+    determines: |
+      MANDATORY projectbesluit required for:
+      - New highways, railways, waterways
+      - Highway expansion (road-to-highway, extra lanes)
+      - Railway expansion (extra tracks, buildings, connections)
+      - Waterway expansion (20%+ area or 5M+ m3 deepening)
+      - Primary flood defenses (Rijk and water board)
+
+    triggered_by:
+      - source: "external"
+        condition: "Major infrastructure project planned"
+
+    routes_to:
+      - target: "artikel_5.47"
+        condition: "Start voornemen/verkenning"
+      - target: "artikel_5.45"
+        condition: "Coordination mandatory"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 10
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-mandatory"
+
+  # ============================================================================
+  # PARAGRAAF 5.2.2 - VOORNEMEN, VERKENNING EN VOORKEURSBESLISSING
+  # ============================================================================
+
+  artikel_5.47:
+    title: "(voornemen)"
+    afdeling: "5.2"
+    paragraaf: "5.2.2"
+
+    roles:
+      - procedure       # Initial announcement
+      - trigger         # Starts project process
+
+    determines: |
+      Authority announces intention to explore and decides whether:
+      - (a) Project decision without preference decision first
+      - (b) Project decision with preference decision
+      Public can propose solutions; participation plan required
+
+    triggered_by:
+      - source: "artikel_5.44"
+        condition: "Decision to initiate project"
+      - source: "artikel_5.46"
+        condition: "Mandatory project triggers process"
+
+    routes_to:
+      - target: "artikel_5.48"
+        condition: "Proceed to verkenning"
+      - target: "artikel_5.49"
+        condition: "If preference decision path chosen"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "When preference decision required"
+
+    complexity:
+      leden_count: 5
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "project-exploration"
+
+  artikel_5.48:
+    title: "(verkenning)"
+    afdeling: "5.2"
+    paragraaf: "5.2.2"
+
+    roles:
+      - procedure       # Exploration phase
+
+    determines: |
+      Exploration phase:
+      - Gather knowledge about challenge and relevant developments
+      - Consider proposed solutions
+      - May request independent expert advice
+      - Authority decides which solutions to consider
+
+    triggered_by:
+      - source: "artikel_5.47"
+        condition: "After voornemen announcement"
+
+    routes_to:
+      - target: "artikel_5.49"
+        condition: "If preference decision path"
+      - target: "artikel_5.51"
+        condition: "Directly to project decision"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 3
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.47
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-exploration"
+
+  artikel_5.49:
+    title: "(voorkeursbeslissing)"
+    afdeling: "5.2"
+    paragraaf: "5.2.2"
+
+    roles:
+      - outcome         # Preference decision options
+      - procedure       # Intermediate decision point
+
+    determines: |
+      Preference decision options:
+      - (a) Execute project
+      - (b) Non-project solution
+      - (c) Combination with other projects
+      - (d) No solution pursued
+
+    triggered_by:
+      - source: "artikel_5.48"
+        condition: "Exploration complete"
+
+    routes_to:
+      - target: "artikel_5.51"
+        condition: "If (a) - proceed to project decision"
+      - target: "external: no project"
+        condition: "If (b), (c) alternative, or (d)"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 4
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-exploration"
+
+  artikel_5.50:
+    title: "(uitwerken of wijzigen projectbesluit zonder paragraaf 5.2.2)"
+    afdeling: "5.2"
+    paragraaf: "5.2.2"
+
+    roles:
+      - exception       # Bypass exploration for amendments
+
+    determines: |
+      Par. 5.2.2 (voornemen/verkenning/voorkeur) does NOT apply to:
+      - Uitwerking of project decision (Art. 5.54)
+      - Wijziging of project decision
+
+    triggered_by:
+      - source: "artikel_5.54"
+        condition: "Uitwerking needed"
+      - source: "external"
+        condition: "Project decision modification needed"
+
+    routes_to:
+      - target: "artikel_5.54"
+        condition: "Uitwerking path"
+      - target: "artikel_5.52"
+        condition: "Direct to project decision content"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # 5.54
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-exploration"
+
+  # ============================================================================
+  # PARAGRAAF 5.2.3 - PROJECTBESLUIT
+  # ============================================================================
+
+  artikel_5.51:
+    title: "(inhoud projectbesluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.3"
+
+    roles:
+      - procedure       # Content requirements
+
+    determines: |
+      Project decision must describe:
+      - How parties were involved in preparation
+      - Exploration results
+      - Third-party solutions considered
+      - Expert advice received
+
+    triggered_by:
+      - source: "artikel_5.49"
+        condition: "If preference is to execute project"
+      - source: "artikel_5.47"
+        condition: "If direct path without preference"
+
+    routes_to:
+      - target: "artikel_5.52"
+        condition: "Content determination"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-decision"
+
+  artikel_5.52:
+    title: "(integraal besluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.3"
+
+    roles:
+      - outcome         # CORE project decision effect
+      - procedure       # Integration mechanism
+
+    determines: |
+      Project decision LEGAL EFFECT:
+      - Lid 1: Modifies omgevingsplan with necessary rules
+      - Lid 2a: Can serve as omgevingsvergunning if explicit
+      - Lid 2b: Can serve as AMvB-designated decisions if explicit
+      One integrated decision for project execution
+
+    triggered_by:
+      - source: "artikel_5.51"
+        condition: "Content requirements met"
+
+    routes_to:
+      - target: "artikel_5.53"
+        condition: "Assessment rules apply"
+      - target: "artikel_5.45"
+        condition: "Execution coordination"
+      - target: "artikel_5.54"
+        condition: "If uitwerking provision included"
+
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of included decisions"
+
+    complexity:
+      leden_count: 3
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+
+    cluster: "project-decision"
+
+  artikel_5.53:
+    title: "(beoordelingsregels)"
+    afdeling: "5.2"
+    paragraaf: "5.2.3"
+
+    roles:
+      - condition       # Assessment framework for projects
+
+    determines: |
+      Assessment rules for project decisions:
+      - Lid 1: Omgevingsplan rules apply (Art. 4.1, 4.2, par. 4.1.2, 4.3.1)
+      - Lid 2: For permit component, par. 5.1.3-5.1.5 apply
+      - Lid 3-4: Can override local rules if blocking execution
+
+    triggered_by:
+      - source: "artikel_5.52"
+        condition: "Project decision being prepared"
+
+    routes_to:
+      - target: "external: adopted project decision"
+        condition: "Assessment complete"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 6  # 5.52, 4.1, 4.2, 4.1.2, 4.3.1, 5.1.3-5.1.5, 2.24, 2.34
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-decision"
+
+  artikel_5.53a:
+    title: "(geen belemmering projectbesluit en voorbereidingsbesluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.3"
+
+    roles:
+      - condition       # Hierarchy protection
+      - exception       # Provincial/state protection
+
+    determines: |
+      Protection hierarchy:
+      - Water board decisions cannot block provincial/state projects
+      - Provincial decisions cannot block state projects
+      - Term limits apply to blocking protection
+
+    triggered_by:
+      - source: "artikel_5.52"
+        condition: "Higher-level project decision exists"
+
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 3  # 4.19a, 2.24, 2.34
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-decision"
+
+  artikel_5.54:
+    title: "(uitwerking binnen besluit)"
+    afdeling: "5.2"
+    paragraaf: "5.2.3"
+
+    roles:
+      - procedure       # Elaboration mechanism
+      - delegation      # Self-delegation within project
+
+    determines: |
+      Project decision can include uitwerking provision:
+      - Authority can later elaborate within set parameters
+      - Uitwerking becomes part of project decision
+      - Can be replaced if not yet realized
+
+    triggered_by:
+      - source: "artikel_5.52"
+        condition: "Project decision with uitwerking provision"
+
+    routes_to:
+      - target: "artikel_5.50"
+        condition: "Uitwerking doesn't need full 5.2.2 process"
+
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "project-decision"
+
+  # ============================================================================
+  # PARAGRAAF 5.2.4 - GEMEENTELIJKE PROJECTEN VAN PUBLIEK BELANG
+  # ============================================================================
+
+  artikel_5.55:
+    title: "(gemeentelijk project van publiek belang)"
+    afdeling: "5.2"
+    paragraaf: "5.2.4"
+
+    roles:
+      - procedure       # Municipal project pathway
+      - exception       # Simplified access to project procedure
+
+    determines: |
+      Municipalities can use project-like procedure for public interest
+      projects via omgevingsplan modification, with analogous application of:
+      - Art. 5.45 (coordination)
+      - Art. 5.47-5.49 (voornemen/verkenning/voorkeur)
+      - Art. 5.51 (content)
+      Art. 16.87 applies (special procedural rules)
+
+    triggered_by:
+      - source: "external"
+        condition: "Municipality plans public interest project"
+
+    routes_to:
+      - target: "artikel_16.87"
+        condition: "Procedural rules apply"
+      - target: "external: omgevingsplan modification"
+        condition: "Project rules added to plan"
+
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 5  # 5.45, 5.47, 5.48, 5.49, 5.51, 16.87
+      external_refs_count: 0
+      delegation_count: 0
+
+    cluster: "municipal-projects"
+
+# ==============================================================================
+# CLUSTER DEFINITIONS
+# ==============================================================================
+
+clusters:
+  permit-trigger:
+    name: "Permit Requirement Triggers"
+    purpose: "Determines when an omgevingsvergunning is required"
+    entry_points: ["5.1", "5.3", "5.4"]
+    exit_points: ["5.7", "5.8"]
+    articles: ["5.1", "5.2", "5.3", "5.4"]
+    complexity: high
+    key_flows:
+      - "Activity planned -> Check Art. 5.1 -> AMvB designated? -> Permit required/exempt"
+      - "Activity planned -> Check verordening (5.3/5.4) -> Permit required per local rule"
+
+  permit-compliance:
+    name: "Permit Compliance Obligations"
+    purpose: "Prohibitions related to permit conditions and unauthorized activity"
+    entry_points: ["5.5", "5.6"]
+    exit_points: ["external: handhaving"]
+    articles: ["5.5", "5.6"]
+    complexity: medium
+    key_flows:
+      - "Permit granted with conditions -> Holder acts contrary -> Violation Art. 5.5"
+      - "Building without permit -> Continuous violation Art. 5.6"
+
+  authority-determination:
+    name: "Competent Authority Determination"
+    purpose: "Determines which authority decides on permit applications"
+    entry_points: ["5.7", "5.8"]
+    exit_points: ["5.18"]
+    articles: ["5.7", "5.8", "5.9", "5.9a", "5.10", "5.11", "5.12", "5.13", "5.14", "5.15", "5.16"]
+    complexity: very_high
+    key_flows:
+      - "Single activity -> Art. 5.8 default (B&W) -> Check exceptions 5.9-5.11"
+      - "Multiple activities -> Art. 5.12 resolution -> Designated authority"
+      - "Cross-boundary -> Art. 5.14 -> Primary location authority"
+
+  assessment-framework:
+    name: "Assessment Framework"
+    purpose: "Core assessment rules structure for permit decisions"
+    entry_points: ["5.18"]
+    exit_points: ["5.20-5.30", "5.34"]
+    articles: ["5.17", "5.18", "5.19", "5.25"]
+    complexity: high
+    key_flows:
+      - "Application filed -> Art. 5.18 AMvB rules -> Activity-specific articles -> Decision"
+
+  assessment-activity-specific:
+    name: "Activity-Specific Assessment Rules"
+    purpose: "Detailed assessment criteria per activity type"
+    entry_points: ["5.18"]
+    exit_points: ["5.34"]
+    articles: ["5.20", "5.21", "5.22", "5.23", "5.24", "5.26", "5.27", "5.28", "5.29", "5.29a", "5.30"]
+    complexity: high
+    key_flows:
+      - "Bouwactiviteit -> Art. 5.20 (safety/health/durability) -> Conditions"
+      - "Omgevingsplanactiviteit -> Art. 5.21 (goals + evenwichtige toedeling) -> Conditions"
+      - "Milieubelastende -> Art. 5.26 (safety/health/environment + provincial) -> Conditions"
+
+  assessment-special-grounds:
+    name: "Special Assessment Grounds"
+    purpose: "Additional/discretionary grounds for grant/refusal"
+    entry_points: ["5.18"]
+    exit_points: ["5.34", "weigering"]
+    articles: ["5.31", "5.32", "5.33", "5.33a"]
+    complexity: medium
+    key_flows:
+      - "Integrity concerns -> Art. 5.31 Bibob -> Possible refusal"
+      - "Health risks -> Art. 5.32 -> Possible refusal"
+      - "Consent required -> Art. 5.33 -> Follow consent decision"
+
+  permit-outcome:
+    name: "Permit Outcome and Effect"
+    purpose: "Defines permit content, duration, and holder"
+    entry_points: ["5.34"]
+    exit_points: ["5.5", "5.38"]
+    articles: ["5.34", "5.35", "5.36", "5.36a", "5.36b", "5.37", "5.37a"]
+    complexity: high
+    key_flows:
+      - "Assessment complete -> Art. 5.34 conditions -> Art. 5.37 holder -> Compliance obligations"
+      - "Term limits -> Art. 5.36 -> Expiry/restoration"
+
+  permit-lifecycle:
+    name: "Permit Lifecycle Management"
+    purpose: "Post-grant permit modification, revocation, consolidation"
+    entry_points: ["5.38"]
+    exit_points: ["modified permit", "revoked permit", "consolidated permit"]
+    articles: ["5.38", "5.39", "5.40", "5.41", "5.42", "5.43"]
+    complexity: high
+    key_flows:
+      - "Regular review -> Art. 5.38 actualization -> Art. 5.39/5.40 modification/revocation"
+      - "Multiple permits -> Art. 5.43 revision -> Consolidated permit"
+
+  project-authority:
+    name: "Project Decision Authority"
+    purpose: "Determines who can adopt projectbesluit"
+    entry_points: ["5.44"]
+    exit_points: ["5.45", "5.47"]
+    articles: ["5.44", "5.44a", "5.44b"]
+    complexity: medium
+    key_flows:
+      - "Project planned -> Art. 5.44 authority options -> Art. 5.44a precedence -> Designated authority"
+
+  project-mandatory:
+    name: "Mandatory Project Decisions"
+    purpose: "Infrastructure requiring projectbesluit"
+    entry_points: ["5.46"]
+    exit_points: ["5.47"]
+    articles: ["5.46"]
+    complexity: medium
+    key_flows:
+      - "Major infrastructure planned -> Art. 5.46 list -> Mandatory projectbesluit"
+
+  project-coordination:
+    name: "Project Execution Coordination"
+    purpose: "Coordinating execution decisions"
+    entry_points: ["5.45"]
+    exit_points: ["execution decisions"]
+    articles: ["5.45", "5.45a"]
+    complexity: medium
+    key_flows:
+      - "Project adopted -> Art. 5.45 coordination -> Art. 5.45a substitution if blocked"
+
+  project-exploration:
+    name: "Project Exploration Phase"
+    purpose: "Voornemen, verkenning, voorkeursbeslissing"
+    entry_points: ["5.47"]
+    exit_points: ["5.51", "no project"]
+    articles: ["5.47", "5.48", "5.49", "5.50"]
+    complexity: medium
+    key_flows:
+      - "Intention -> Art. 5.47 voornemen -> Art. 5.48 verkenning -> Art. 5.49 voorkeur -> Project/no project"
+
+  project-decision:
+    name: "Project Decision Content"
+    purpose: "Projectbesluit content and effect"
+    entry_points: ["5.51"]
+    exit_points: ["5.45", "5.54"]
+    articles: ["5.51", "5.52", "5.53", "5.53a", "5.54"]
+    complexity: high
+    key_flows:
+      - "Content -> Art. 5.51 -> Art. 5.52 integrated decision -> Art. 5.53 assessment -> Adopted"
+
+  municipal-projects:
+    name: "Municipal Public Interest Projects"
+    purpose: "Simplified project-like procedure for municipalities"
+    entry_points: ["5.55"]
+    exit_points: ["omgevingsplan modification"]
+    articles: ["5.55"]
+    complexity: low
+    key_flows:
+      - "Municipal project -> Art. 5.55 -> Analogous project procedure -> Plan modification"
+
+# ==============================================================================
+# CHAPTER FLOW SUMMARY
+# ==============================================================================
+
+flow_summary:
+  main_decision_pathways:
+    permit_pathway:
+      description: "Standard omgevingsvergunning application and decision"
+      steps:
+        - "Activity planned -> Art. 5.1/5.3/5.4 trigger check"
+        - "Art. 5.7 application scope"
+        - "Art. 5.8-5.14 authority determination"
+        - "Art. 5.18 + activity-specific (5.20-5.30) assessment"
+        - "Art. 5.31-5.33 special grounds check"
+        - "Art. 5.34 conditions attached"
+        - "Art. 5.36-5.37 duration and holder"
+        - "Art. 5.5 compliance obligations"
+        - "Art. 5.38-5.43 lifecycle management"
+
+    project_pathway:
+      description: "Projectbesluit for major public projects"
+      steps:
+        - "Major project planned"
+        - "Art. 5.44/5.46 authority/mandatory check"
+        - "Art. 5.47 voornemen announcement"
+        - "Art. 5.48 verkenning"
+        - "Art. 5.49 voorkeursbeslissing (optional)"
+        - "Art. 5.51-5.52 projectbesluit adoption"
+        - "Art. 5.53 assessment rules applied"
+        - "Art. 5.45/5.45a execution coordination"
+        - "Art. 5.54 uitwerking (if applicable)"
+
+  key_delegation_points:
+    to_amvb:
+      - "Art. 5.1: Activity designation for permit requirement"
+      - "Art. 5.2: Deviation possibilities"
+      - "Art. 5.9-5.11: Authority designation"
+      - "Art. 5.18: Assessment rules (to Bkl)"
+      - "Art. 5.34: Condition rules"
+      - "Art. 5.36: Term requirements"
+      - "Art. 5.39-5.40: Modification/revocation grounds"
+
+    to_local_instruments:
+      - "Art. 5.2: Omgevingsplan/verordening deviation"
+      - "Art. 5.3: Waterschapsverordening permit creation"
+      - "Art. 5.4: Omgevingsverordening permit creation"
+      - "Art. 5.19: Provincial assessment rules"
+      - "Art. 5.30: Local assessment grounds"
+      - "Art. 5.34: Local condition rules"
+
+  cross_chapter_connections:
+    to_chapter_2:
+      - "Art. 2.3: Boundary limits for authority/rules"
+      - "Art. 2.17: Water board tasks"
+      - "Art. 2.22/2.24: Omgevingsplan instruction rules"
+      - "Art. 2.32: Provincial override power"
+      - "Art. 2.33/2.34: Instructions"
+
+    to_chapter_4:
+      - "Art. 4.1/4.2/4.3: Activity rules and omgevingsplan"
+      - "Art. 4.19a: No blocking of higher-level decisions"
+      - "Art. 4.22-4.24: Activity-specific rules"
+
+    to_chapter_16:
+      - "Art. 16.7: Coordination rules"
+      - "Art. 16.16: Consent requirements"
+      - "Art. 16.43: MER assessment"
+      - "Art. 16.87: Project procedure rules"
+
+    to_chapter_18:
+      - "Art. 18.10: Enforcement-related revocation"

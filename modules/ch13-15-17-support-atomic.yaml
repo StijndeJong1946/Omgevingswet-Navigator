@@ -1,0 +1,601 @@
+# Chapters 13, 15, 17: Financial & Advisory Support Systems
+# Source: BWBR0037885 (Omgevingswet)
+# Extraction date: 2026-01-29
+# TRUE to the SOURCE
+
+# This extraction covers the support systems:
+# - Ch13: Financiële bepalingen (leges, kostenverhaal, grondexploitatie)
+# - Ch15: Schade (nadeelcompensatie/planschade)
+# - Ch17: Adviesorganen en adviseurs
+
+domain:
+  name: "Financial & Advisory Support"
+  chapters: [13, 15, 17]
+  function: "Ondersteunende stelsels"
+
+# =============================================================================
+# CHAPTER 13 - FINANCIËLE BEPALINGEN
+# =============================================================================
+
+chapter_13:
+  number: 13
+  title: "Financiële bepalingen"
+  type: financial_provisions
+  articles: "13.1-13.25"
+
+  structure:
+    afdelingen:
+      - number: "13.1"
+        title: "Leges"
+        articles: "13.1-13.2a"
+
+      - number: "13.2"
+        title: "Vergoeding en verhaal van kosten"
+        articles: "13.3-13.5"
+
+      - number: "13.3"
+        title: "Bijdrage aan een gemeentelijk fonds"
+        articles: "13.6"
+
+      - number: "13.4"
+        title: "Subsidies"
+        articles: "13.7-13.8"
+
+      - number: "13.5"
+        title: "Bijzondere bepalingen over de vergoeding van kosten"
+        articles: "13.9-13.12"
+
+      - number: "13.6"
+        title: "Kostenverhaal"
+        articles: "13.13-13.25"
+
+  afdeling_13_1:
+    titel: "Leges"
+
+    artikel_13_1:
+      titel: "heffen van rechten Rijk"
+      leden:
+        lid_1:
+          content: "Minister kan rechten heffen ter dekking kosten"
+          scope:
+            - "behandeling aanvraag om besluit"
+            - "onderzoeken/verrichtingen op verzoek"
+            - "afgifte documenten, ringen, merken voor dieren"
+
+        lid_2:
+          content: "Rechten voor controles CITES, FLEGT, houtregelgeving"
+
+        lid_3:
+          content: "Tarieven: baten niet hoger dan kosten"
+          pattern: "kostendekking"
+
+        lid_4:
+          content: "Jachtgeweeractiviteit: korpschef heft rechten"
+
+        lid_5:
+          content: "Ringen/merken: Minister N&S kan delegeren aan aangewezen organisaties"
+
+        lid_6:
+          content: "Ministeriële regeling over aanwijzing en tarieven"
+
+    artikel_13_1a:
+      titel: "heffen van rechten gemeente, waterschap en provincie"
+      leden:
+        lid_1:
+          content: "Gemeente/waterschap/provincie kan rechten heffen voor:"
+          scope:
+            - "aanvraag omgevingsvergunning"
+            - "wijziging voorschriften"
+            - "intrekking vergunning"
+          extra_provincie: "verzoek tegemoetkoming faunaschade (Art. 15.53)"
+
+        lid_2:
+          content: "Gemeente: Gemeentewet hoofdstuk XV van toepassing"
+
+        lid_3:
+          content: "Waterschap: Waterschapswet art. 110, 111, 115a van toepassing"
+
+        lid_4:
+          content: "Provincie: Provinciewet hoofdstuk XV van toepassing"
+
+    artikel_13_2:
+      titel: "berekening en bedragen rechten en doelbelastingen"
+      content: "AMvB kan regels stellen over berekening rechten"
+
+    artikel_13_2a:
+      titel: "betalingsverplichting instemmingsbevoegdheid"
+      content: "Bestuursorgaan met instemmingsbevoegdheid kan geldsom vorderen"
+      voorwaarde: "als het bevoegd gezag zou zijn voor die activiteit"
+
+  afdeling_13_2:
+    titel: "Vergoeding en verhaal van kosten"
+
+    artikel_13_3:
+      titel: "vergoeding van extra kosten bestuursorganen"
+      content: "Vergoeding extra kosten door ander bestuursorgaan"
+      trigger: "verzoek om besluit, instructie, instemming"
+      voorwaarde: "geen overeenstemming bereikt"
+
+  afdeling_13_6:
+    titel: "Kostenverhaal"
+    key_articles: "13.13-13.25"
+
+    artikel_13_13:
+      titel: "toepassingsbereik"
+      content: "Kostenverhaal voor kostenverhaalsgebied in omgevingsplan"
+      scope: "bouwactiviteit, aangewezen activiteiten"
+      reference: "Art. 4.1 lid 1"
+
+    artikel_13_14:
+      titel: "kostensoorten"
+      content: "Verhaalbare kosten:"
+      categorieën:
+        a: "kosten onderzoek/opstellen omgevingsplan"
+        b: "kosten werken en werkzaamheden"
+        c: "kosten compensatie natuurschade"
+        d: "waardevermindering grond door verontreiniging"
+        e: "kosten aankoop grond"
+        f: "kosten onteigening"
+        g: "kosten landinrichting"
+        h: "kosten nadeelcompensatie"
+        i: "bovenwijkse voorzieningen"
+        j: "bovenplanse kosten"
+
+    artikel_13_15:
+      titel: "eindafrekening"
+      content: "Definitieve afrekening na realisatie"
+
+    artikel_13_16:
+      titel: "criteria kostenverhaal"
+      criteria:
+        - "profijt"
+        - "toerekenbaarheid"
+        - "proportionaliteit"
+
+    artikel_13_17:
+      titel: "publiekrechtelijk kostenverhaal"
+      content: "Als geen anterieure overeenkomst: kostenverhaalsbijdrage"
+
+    artikel_13_22:
+      titel: "anterieure overeenkomst"
+      content: "Kostenverhaal via privaatrechtelijke overeenkomst"
+      timing: "voor vaststelling omgevingsplan"
+      pattern: "private_route_preferred"
+
+    artikel_13_25:
+      titel: "financiële bijdrage ruimtelijke ontwikkeling"
+      content: "Extra bijdrage voor ruimtelijke ontwikkelingen"
+      voorwaarde: "functionele samenhang"
+      patroon: "bovenplanse_verevening"
+
+  chapter_13_juridische_analyse:
+    pattern: "kostenverhaal_dual_track"
+    twee_routes:
+      - "anterieure overeenkomst (privaatrechtelijk, preferent)"
+      - "kostenverhaalsbijdrage (publiekrechtelijk, subsidiair)"
+    key_principle: "profijt, toerekenbaarheid, proportionaliteit"
+    connection_to_ch5: "projectbesluit triggert kostenverhaal"
+
+# =============================================================================
+# CHAPTER 15 - SCHADE (NADEELCOMPENSATIE)
+# =============================================================================
+
+chapter_15:
+  number: 15
+  title: "Schade"
+  type: damage_compensation
+  articles: "15.1-15.53"
+
+  structure:
+    afdelingen:
+      - number: "15.1"
+        title: "Nadeelcompensatie"
+        articles: "15.1-15.11"
+
+      - number: "15.2"
+        title: "Aanvullende regels nadeelcompensatie bij projectbesluit"
+        articles: "15.12-15.14"
+
+      - number: "15.3"
+        title: "Wettelijke aansprakelijkheid bij ontgrondingen"
+        articles: "15.15-15.50"
+
+      - number: "15.4"
+        title: "Fonds Nazorg gesloten stortplaatsen"
+        articles: "15.51-15.52"
+
+      - number: "15.5"
+        title: "Tegemoetkoming faunaschade"
+        articles: "15.53"
+
+  afdeling_15_1:
+    titel: "Nadeelcompensatie"
+    key_pattern: "planschade_2.0"
+
+    artikel_15_1:
+      titel: "toepassingsbereik"
+      leden:
+        lid_1:
+          content: "Titel 4.5 Awb alleen van toepassing op schade door:"
+          schadeveroorzakende_besluiten:
+            a: "peilbesluit (Art. 2.41)"
+            b: "besluit instandhoudingsdoelstellingen (Art. 2.45)"
+            c: "programma-activiteit"
+            d: "regel in omgevingsplan (Art. 4.1 lid 1)"
+            e: "regel in waterschapsverordening"
+            f: "regel in omgevingsverordening"
+            g: "regel in AMvB (Art. 4.3)"
+            h: "regel in ministeriële regeling"
+            i: "maatwerkvoorschrift"
+            j: "gelijkwaardige maatregel"
+            k: "omgevingsvergunning of weigering"
+            l: "projectbesluit"
+            m: "maatregelen Art. 19.4"
+            n: "maatregelen Art. 19.5"
+            o: "noodmaatregel Art. 19.15"
+
+        lid_2:
+          content: "Bij vergunningplicht: vergunning is het schadeveroorzakende besluit"
+
+        lid_3:
+          content: "Bij Art. 5.52: projectbesluit is het schadeveroorzakende besluit"
+
+      juridische_analyse:
+        pattern: "limitatieve_opsomming"
+        significance: |
+          De wet geeft een limitatieve opsomming van schadeveroorzakende
+          besluiten. Alleen deze besluiten kunnen leiden tot nadeelcompensatie.
+
+    artikel_15_2:
+      titel: "schade die niet voor vergoeding in aanmerking komt"
+      content: "Geen vergoeding voor immateriële schade"
+
+    artikel_15_3:
+      titel: "schadebepaling als omgevingsvergunning is vereist"
+      leden:
+        lid_1:
+          content: "Waardevermindering: vergelijking voor/na kennisgeving vergunning"
+
+        lid_2:
+          content: "Alleen voor schade door activiteit buiten eigen locatie"
+
+    artikel_15_4:
+      titel: "aanvraag om schadevergoeding als geen vergunning vereist"
+      trigger:
+        a: "informatie verstrekt aan bevoegd gezag + kennisgeving"
+        b: "met activiteit is begonnen"
+
+    artikel_15_5:
+      titel: "actieve risicoaanvaarding"
+      content: "Geen risicoaanvaarding als:"
+      voorwaarden:
+        a: "koop woning na planwijziging"
+        b: "Art. 15.1 lid 2 of Art. 15.4 lid 1 van toepassing"
+        c: "schade = waardevermindering"
+      juridische_analyse:
+        pattern: "woningkoper_bescherming"
+        significance: "Woningkopers na planwijziging hebben GEEN risicoaanvaarding"
+
+    artikel_15_6:
+      titel: "passieve risicoaanvaarding"
+      content: "WEL risicoaanvaarding als:"
+      voorwaarden:
+        a: "min 1 jaar kennisgeving voornemen wijziging"
+        b: "3 jaar geen activiteit verricht"
+        c: "na kennisgeving geen activiteit of voorbereidingen"
+      juridische_analyse:
+        pattern: "stilzitten_sanctie"
+        significance: "Wie niet reageert op waarschuwing aanvaardt risico"
+
+    artikel_15_7:
+      titel: "normaal maatschappelijk risico"
+      leden:
+        lid_1:
+          content: "Voor waardevermindering onroerende zaak:"
+          drempel: "4% waardedaling = normaal maatschappelijk risico"
+
+        lid_2:
+          content: "Bestuursorgaan kan drempel verlagen bij bijzondere omstandigheden"
+
+        lid_3:
+          content: "Geen drempel bij schade door intrekking vergunning"
+
+      juridische_analyse:
+        pattern: "4_procent_drempel"
+        significance: "Wettelijke drempel van 4% voor directe schade"
+
+    artikel_15_8:
+      titel: "bevoegd gezag"
+      content: "Bestuursorgaan dat schadeveroorzakend besluit neemt"
+
+    artikel_15_9:
+      titel: "adviescommissie"
+      content: "Bestuursorgaan vraagt onafhankelijke deskundige of adviescommissie"
+
+    artikel_15_10:
+      titel: "betaling door veroorzaker"
+      content: "Schadevergoeding door degene die voordeel heeft van besluit"
+      pattern: "causaliteit"
+
+  afdeling_15_2:
+    titel: "Aanvullende regels nadeelcompensatie bij projectbesluit"
+
+    artikel_15_12:
+      titel: "schadeloosstelling"
+      content: "Projectbesluit: volledige schadeloosstelling bij minnelijk overleg"
+
+    artikel_15_13:
+      titel: "voorschot"
+      content: "Op verzoek 90% voorschot"
+      voorwaarde: "minnelijk overleg niet geslaagd"
+
+    artikel_15_14:
+      titel: "vervaltermijn"
+      termijn: "5 jaar na onherroepelijk worden projectbesluit"
+
+  afdeling_15_5:
+    titel: "Tegemoetkoming faunaschade"
+
+    artikel_15_53:
+      titel: "tegemoetkoming in schade"
+      actor: "GS"
+      content: "Tegemoetkoming in schade aangericht door wilde dieren"
+      scope:
+        - "beschermde dieren"
+        - "op grond van deze wet genomen maatregelen"
+      delegatie: "omgevingsverordening stelt nadere regels"
+
+  chapter_15_juridische_analyse:
+    pattern: "nadeelcompensatie_systeem"
+    key_principles:
+      - "limitatieve opsomming schadeveroorzakende besluiten"
+      - "actieve risicoaanvaarding uitgesloten voor woningkopers"
+      - "passieve risicoaanvaarding bij stilzitten (3 jaar)"
+      - "4% drempel normaal maatschappelijk risico"
+    connection_to_ch4: "regels in omgevingsplan = schadeveroorzakend"
+    connection_to_ch5: "vergunning/projectbesluit = schadeveroorzakend"
+
+# =============================================================================
+# CHAPTER 17 - ADVIESORGANEN EN ADVISEURS
+# =============================================================================
+
+chapter_17:
+  number: 17
+  title: "Adviesorganen en adviseurs"
+  type: advisory_bodies
+  articles: "17.1-17.11"
+
+  structure:
+    afdelingen:
+      - number: "17.1"
+        title: "Adviesorganen op rijksniveau"
+        articles: "17.1-17.6"
+        paragrafen:
+          - "17.1.1": "Algemene bepalingen"
+          - "17.1.2": "Adviesorganen"
+
+      - number: "17.2"
+        title: "Adviesorganen op gemeentelijk niveau"
+        articles: "17.7-17.9"
+        paragrafen:
+          - "17.2.1": "Algemene bepalingen"
+          - "17.2.2": "Verplichte gemeentelijke adviesorganen"
+
+      - number: "17.3"
+        title: "Adviseurs"
+        articles: "17.10-17.11"
+
+  afdeling_17_1:
+    titel: "Adviesorganen op rijksniveau"
+
+    paragraaf_17_1_1:
+      titel: "Algemene bepalingen"
+
+      artikel_17_1:
+        titel: "toepassing"
+        content: "Van toepassing op adviesorganen uit deze afdeling"
+
+      artikel_17_2:
+        titel: "samenstelling, benoeming leden, werkwijze en ondersteuning"
+        leden:
+          lid_1:
+            content: "Minister I&W of betrokken minister benoemt/ontslaat voorzitter en leden"
+
+          lid_2:
+            content: "Kaderwet adviescolleges art. 11, 12, 15, 16, 19-21, 29 van toepassing"
+
+      artikel_17_3:
+        titel: "nadere regels"
+        content: "AMvB kan nadere regels stellen over samenstelling, inrichting, werkwijze"
+
+      artikel_17_4:
+        titel: "reglement van orde"
+        content: "Reglement wordt gezonden aan Minister I&W"
+
+    paragraaf_17_1_2:
+      titel: "Adviesorganen"
+
+      artikel_17_5:
+        titel: "instelling Commissie voor de milieueffectrapportage"
+        leden:
+          lid_1:
+            content: "Er is een Commissie m.e.r."
+            taak: "advies over MER (Art. 16.39 en 16.47)"
+
+          lid_2:
+            content: "Onafhankelijkheid: geen betrokkenheid bij plan/project/activiteit"
+
+          lid_3:
+            content: "AMvB stelt nadere regels"
+
+          lid_4:
+            content: "Kaderwet adviescolleges art. 15 lid 5 en 20 niet van toepassing"
+
+        juridische_analyse:
+          pattern: "commissie_mer"
+          significance: |
+            De Commissie m.e.r. is het centrale adviesorgaan voor
+            milieueffectrapportage. Haar onafhankelijkheid is wettelijk
+            gewaarborgd.
+
+      artikel_17_5a:
+        titel: "instelling wetenschappelijke autoriteit CITES"
+        content: "Wetenschappelijke autoriteit CITES conform CITES-basisverordening"
+
+      artikel_17_6:
+        titel: "grondslag voor instelling overige adviesorganen"
+        content: "AMvB kan andere adviesorganen instellen"
+        scope: "adviserende taak fysieke leefomgeving"
+
+  afdeling_17_2:
+    titel: "Adviesorganen op gemeentelijk niveau"
+
+    paragraaf_17_2_1:
+      titel: "Algemene bepalingen"
+
+      artikel_17_7:
+        titel: "leden adviesorgaan"
+        leden:
+          lid_1:
+            content: "Gemeenteraad stelt aantal leden en benoemingstermijn vast"
+
+          lid_2:
+            content: "Gemeenteraad benoemt en ontslaat leden"
+
+      artikel_17_8:
+        titel: "eisen aan leden"
+        content: "Gemeentebestuurders mogen geen lid zijn"
+        pattern: "onafhankelijkheid"
+
+    paragraaf_17_2_2:
+      titel: "Verplichte gemeentelijke adviesorganen"
+
+      artikel_17_9:
+        titel: "gemeentelijke adviescommissie"
+        leden:
+          lid_1:
+            content: "Gemeenteraad stelt commissie in"
+            taak: "advies over omgevingsvergunning rijksmonumentenactiviteit"
+            eis: "enkele leden deskundig op monumentenzorg"
+
+          lid_2:
+            content: "B&W kan ook vragen om advies over beleid kwaliteit fysieke leefomgeving"
+
+          lid_3:
+            content: "Advies gebaseerd op omgevingsvisie, omgevingsplan, beleidsregels"
+            extra: "rijksmonument: Art. 5.22 uitgangspunten"
+
+          lid_4:
+            content: "Adviezen: deugdelijk gemotiveerd, schriftelijk openbaar"
+
+          lid_5:
+            content: "Vergaderingen openbaar (tenzij Woo-uitzonderingen)"
+
+          lid_6:
+            content: "Jaarlijks verslag aan gemeenteraad"
+
+        juridische_analyse:
+          pattern: "welstandscommissie_2.0"
+          significance: |
+            De verplichte gemeentelijke adviescommissie vervangt de
+            oude welstandscommissie en monumentencommissie. Nu één
+            commissie met monumenten als minimumtaak.
+
+  afdeling_17_3:
+    titel: "Adviseurs"
+
+    artikel_17_10:
+      titel: "advisering over beroepen door StAB"
+      leden:
+        lid_1:
+          content: "Er is een Stichting Advisering Bestuursrechtspraak (StAB)"
+
+        lid_2:
+          content: "Taak: deskundigenbericht aan bestuursrechter"
+          scope:
+            a: "beroepen tegen besluiten Omgevingswet"
+            b: "beroepen andere wetten m.b.t. fysieke leefomgeving"
+
+      juridische_analyse:
+        pattern: "StAB"
+        significance: "Onafhankelijke deskundigenadvisering voor rechter"
+
+  chapter_17_juridische_analyse:
+    pattern: "adviesorganen_structuur"
+    drie_niveaus:
+      rijksniveau:
+        - "Commissie voor de milieueffectrapportage"
+        - "Wetenschappelijke autoriteit CITES"
+        - "overige via AMvB"
+      gemeentelijk:
+        - "gemeentelijke adviescommissie (verplicht)"
+      adviseurs:
+        - "StAB (bestuursrechtspraak)"
+
+    connection_to_ch16: "Commissie m.e.r. adviseert over Art. 16.39/16.47"
+    connection_to_ch5: "gemeentelijke commissie adviseert over rijksmonumenten"
+
+# =============================================================================
+# CROSS-CHAPTER CONNECTIONS
+# =============================================================================
+
+cross_chapter_links:
+
+  internal_support:
+    - from: "Ch13 (kostenverhaal)"
+      to: "Ch15 (nadeelcompensatie)"
+      relation: "kosten nadeelcompensatie verhaalbaar (Art. 13.14h)"
+
+    - from: "Ch17 (advies)"
+      to: "Ch15 (schadeadvies)"
+      relation: "adviescommissie voor schadebeoordeling"
+
+  to_core_chapters:
+    - from: "Ch13 (leges)"
+      to: "Ch5 (vergunning)"
+      relation: "leges voor vergunningaanvraag"
+
+    - from: "Ch13 (kostenverhaal)"
+      to: "Ch4 (omgevingsplan)"
+      relation: "kostenverhaalsgebied in omgevingsplan"
+
+    - from: "Ch15 (nadeelcompensatie)"
+      to: "Ch4 (regels)"
+      relation: "planregels zijn schadeveroorzakend"
+
+    - from: "Ch15 (nadeelcompensatie)"
+      to: "Ch5 (vergunning/projectbesluit)"
+      relation: "vergunning/projectbesluit is schadeveroorzakend"
+
+    - from: "Ch17 (Commissie m.e.r.)"
+      to: "Ch16 (MER-procedure)"
+      relation: "advies over milieueffectrapport"
+
+    - from: "Ch17 (gem. commissie)"
+      to: "Ch5 (rijksmonument)"
+      relation: "advies over rijksmonumentenactiviteit"
+
+# =============================================================================
+# DOMAIN SUMMARY
+# =============================================================================
+
+domain_summary:
+
+  chapter_13_essence: |
+    Financiële bepalingen regelen de geldstromen:
+    - Leges: baten dekken kosten (kostendekking)
+    - Kostenverhaal: profijt, toerekenbaarheid, proportionaliteit
+    - Twee routes: anterieure overeenkomst (preferent) of publiekrechtelijk
+
+  chapter_15_essence: |
+    Nadeelcompensatie is de planschaderegeling van de Omgevingswet:
+    - Limitatieve opsomming schadeveroorzakende besluiten
+    - 4% drempel voor normaal maatschappelijk risico
+    - Actieve risicoaanvaarding uitgesloten voor woningkopers
+    - Passieve risicoaanvaarding bij 3 jaar stilzitten
+
+  chapter_17_essence: |
+    Adviesorganen verzorgen onafhankelijke advisering:
+    - Rijksniveau: Commissie m.e.r., wetenschappelijke autoriteit CITES
+    - Gemeentelijk: verplichte adviescommissie (monumenten + optioneel welstand)
+    - Rechtspraak: StAB voor deskundigenberichten

@@ -1,0 +1,682 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 19 - ATOMIC EXTRACTION
+# Bevoegdheden in bijzondere omstandigheden (Emergency Powers)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  hoofdstuk: "19"
+  titel: "Bevoegdheden in bijzondere omstandigheden"
+  artikelen_range: "19.0-19.19"
+  totaal_artikelen: 20
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "noodbevoegdheden"
+
+# =============================================================================
+# STRUCTURE OVERVIEW
+# =============================================================================
+#
+# Afdeling 19.0 - Bijzondere omstandigheden (Art. 19.0)
+# Afdeling 19.1 - Ongewoon voorval (Art. 19.1-19.7)
+# Afdeling 19.2 - Archeologische toevalsvondst (Art. 19.8-19.9)
+# Afdeling 19.2a - Toevalsvondst bodemverontreiniging (Art. 19.9a-19.9d)
+# Afdeling 19.3 - Alarmeringswaarden (Art. 19.10-19.12)
+# Afdeling 19.4 - Gevaar waterstaatswerken (Art. 19.13-19.16)
+# Afdeling 19.5 - Buitengewone omstandigheden (Art. 19.17-19.19)
+#
+# =============================================================================
+
+afdelingen:
+  # ===========================================================================
+  # AFDELING 19.0 - BIJZONDERE OMSTANDIGHEDEN
+  # ===========================================================================
+  - afdeling: "19.0"
+    titel: "Bijzondere omstandigheden"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.0"
+        titel: "(bijzondere omstandigheden in de fysieke leefomgeving)"
+        status: "goed"
+        type: "grondslag"
+
+        leden:
+          - lid: 1
+            inhoud: "Bij regels §4.1.1 kunnen onderwerpen worden aangewezen waarvoor BG kan bepalen dat bijzondere omstandigheid zich voordoet"
+            koppeling: "paragraaf 4.1.1"
+            delegatie: "regels §4.1.1"
+
+          - lid: 2
+            inhoud: "Bij besluit wordt bepaald welke regels gelden op locatie/periode. Kan afwijken van §4.1.1"
+            effect: "afwijking van algemene regels"
+
+        juridische_analyse:
+          patroon: "NOODAFWIJKING_VIA_BESLUIT"
+          note: |
+            Art. 19.0 = algemene grondslag voor noodsituaties
+            Afwijking van normale regels mogelijk bij bijzondere omstandigheden
+            Vereist: aanwijzing in §4.1.1 regels + concreet besluit
+
+  # ===========================================================================
+  # AFDELING 19.1 - ONGEWOON VOORVAL
+  # ===========================================================================
+  - afdeling: "19.1"
+    titel: "Ongewoon voorval"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.1"
+        titel: "(begripsbepalingen en toepassingsbereik)"
+        status: "goed"
+        type: "definitie"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              "Voorkomen nadelige gevolgen" omvat ook:
+              a. beperken/ongedaan maken gevolgen
+              b. voorkomen verergering/voortduring/herhaling
+              c. wegnemen oorzaak
+            note: "Breed voorkomensbegrip"
+
+          - lid: 2
+            inhoud: |
+              "Veroorzaker" = persoon die:
+              a. activiteit verricht(te)
+              b. vergunninghouder is
+              c. melding heeft gedaan (art. 4.4)
+              d. economische zeggenschap heeft
+            note: "Ruim veroorzakersbegrip"
+
+          - lid: 3
+            inhoud: "Niet van toepassing op Kernenergiewet-voorvallen"
+            uitzondering: "Kernenergiewet"
+            externe_ref: "BWBR0002402"
+
+      - artikel: "19.2"
+        titel: "(aanwijzing en afstemming bevoegd gezag)"
+        status: "goed"
+        type: "bevoegdheidstoedeling"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Bevoegd gezag:
+              a. bestuursorgaan met handhavingstaak (art. 18.2/18.3/18.4), of
+              b. bij luchtverontreiniging: commissaris van de Koning
+            koppelingen:
+              - "artikel 18.2"
+              - "artikel 18.3"
+              - "artikel 18.4"
+
+          - lid: 2
+            inhoud: "Bij meerdere BG's: afstemming. In spoed: eerst handelen, daarna afstemmen"
+
+        juridische_analyse:
+          patroon: "BG_VOLGT_HANDHAVING"
+          note: "Wie handhaaft = wie bij ongewoon voorval optreedt"
+
+      - artikel: "19.3"
+        titel: "(doormeldings- en informatieplicht bevoegd gezag)"
+        status: "goed"
+        type: "informatieplicht"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              BG meldt onverwijld aan:
+              a. burgemeester of voorzitter veiligheidsregio
+              b. beheerder oppervlaktewater/zuiveringstechnisch werk
+              c. Inspectie Leefomgeving en Transport
+              d. andere betrokken organen/diensten
+
+          - lid: 2
+            inhoud: "BG kan veroorzaker verplichten aanvullende info te verstrekken"
+
+      - artikel: "19.4"
+        titel: "(veroorzaker verplichten tot treffen van maatregelen)"
+        status: "goed"
+        type: "bevoegdheid"
+        centrale_bepaling: true
+
+        leden:
+          - lid: 1
+            inhoud: "BG verplicht veroorzaker tot redelijke maatregelen"
+            type: "imperatief"
+
+          - lid: 2
+            inhoud: "BG kan aanwijzingen geven, incl. onmiddellijke stillegging"
+            note: "Stilleggingsbevoegdheid"
+
+          - lid: 3
+            inhoud: "Awb art. 5:31 (spoedeisende bestuursdwang) van toepassing"
+            externe_ref: "BWBR0005537"
+
+          - lid: 4
+            inhoud: "Verzoek waterschapsbestuur bij bedreiging zuiveringstechnisch werk"
+            koppeling: "artikel 2.17"
+
+          - lid: 5
+            inhoud: "BG geeft onverwijld uitvoering aan verzoek lid 4"
+
+      - artikel: "19.5"
+        titel: "(bevoegdheid tot treffen van maatregelen)"
+        status: "goed"
+        type: "bevoegdheid"
+
+        leden:
+          - lid: 1
+            inhoud: "Als veroorzaker/BG niet vaststelbaar: B&W kan preventieve/herstelmaatregelen treffen"
+            default_gezag: "B&W"
+
+          - lid: 2
+            inhoud: "Beslissing = beschikking, onmiddellijk aan veroorzaker als bekend"
+
+          - lid: 3
+            inhoud: "Bij B&W-optreden: art. 19.3 lid 2, 19.4, 19.6 van toepassing zodra veroorzaker bekend"
+
+      - artikel: "19.6"
+        titel: "(kostenverhaal getroffen maatregelen)"
+        status: "goed"
+        type: "kostenverhaal"
+
+        leden:
+          - lid: 1
+            inhoud: "BG verhaalt kosten maatregelen op veroorzaker"
+            type: "imperatief"
+
+          - lid: 2
+            inhoud: "Awb art. 5:10 lid 2 en 5:25 van toepassing"
+            externe_ref: "BWBR0005537"
+
+        juridische_analyse:
+          patroon: "VERVUILER_BETAALT"
+          note: "Kostenverhaal op veroorzaker = standaard"
+
+      - artikel: "19.7"
+        titel: "(onderzoek oorzaak en voorkomen herhaling)"
+        status: "goed"
+        type: "nazorg"
+
+        leden:
+          - lid: 1
+            inhoud: "BG ziet toe op gegevensverzameling voor analyse en oorzaakbepaling"
+
+          - lid: 2
+            inhoud: "BG wijzigt zo nodig vergunningvoorschriften of stelt maatwerkvoorschriften"
+
+        juridische_analyse:
+          patroon: "LEREN_VAN_VOORVAL"
+          note: "Evaluatie → aanpassing regels"
+
+  # ===========================================================================
+  # AFDELING 19.2 - ARCHEOLOGISCHE TOEVALSVONDST
+  # ===========================================================================
+  - afdeling: "19.2"
+    titel: "Archeologische toevalsvondst van algemeen belang"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.8"
+        titel: "(aanwijzing en afstemming bevoegd gezag)"
+        status: "goed"
+        type: "bevoegdheidstoedeling"
+
+        leden:
+          - lid: 1
+            inhoud: "BG = B&W van gemeente waar vondst zich voordoet"
+            default_gezag: "B&W"
+
+          - lid: 2
+            inhoud: "Niet-gemeentelijk ingedeeld: Minister OCW"
+            bevoegd_gezag: "Minister OCW"
+
+          - lid: 3
+            inhoud: "Nationaal belang: Minister OCW kan overnemen"
+            afwijking: "nationaal belang"
+
+          - lid: 4
+            inhoud: "B&W en Minister OCW informeren elkaar onverwijld"
+            koppeling: "Erfgoedwet art. 5.10"
+            externe_ref: "BWBR0037521"
+
+      - artikel: "19.9"
+        titel: "(taken en bevoegdheden)"
+        status: "goed"
+        type: "schakelbepaling"
+
+        inhoud: "Art. 19.3 lid 2, 19.4 lid 1-3, 19.7 lid 2 van overeenkomstige toepassing"
+
+  # ===========================================================================
+  # AFDELING 19.2a - TOEVALSVONDST BODEMVERONTREINIGING
+  # ===========================================================================
+  - afdeling: "19.2a"
+    titel: "Toevalsvondst van verontreiniging op of in de bodem"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.9a"
+        titel: "(toepassingsbereik)"
+        status: "goed"
+        type: "toepassingsbereik"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Van toepassing als naar oordeel BG:
+              a. redelijk vermoeden toevalsvondst verontreiniging, EN
+              b. onmiddellijk tijdelijke beschermingsmaatregelen noodzakelijk
+            voorwaarden:
+              - "redelijk vermoeden verontreiniging"
+              - "onmiddellijk noodzakelijk"
+
+          - lid: 2
+            inhoud: "Onaanvaardbaar risico bij overschrijding max. concentraties (art. 2.24)"
+            koppeling: "artikel 2.24"
+
+          - lid: 3
+            inhoud: "Indirecte blootstelling: bedreiging drinkwatervoorraden"
+
+          - lid: 4
+            inhoud: "Tijdelijke maatregelen strekken NIET tot sanering"
+            beperking: "geen sanering"
+
+      - artikel: "19.9b"
+        titel: "(aanwijzing bevoegd gezag)"
+        status: "goed"
+        type: "bevoegdheidstoedeling"
+
+        leden:
+          - lid: 1
+            inhoud: "BG = B&W van gemeente waar vondst zich voordoet"
+            default_gezag: "B&W"
+
+          - lid: 2
+            inhoud: "Art. 19.2 lid 2 (afstemming) van toepassing"
+
+          - lid: 3
+            inhoud: "Art. 19.3 van toepassing, 'eigenaar/erfpachter' i.p.v. 'veroorzaker'"
+
+      - artikel: "19.9c"
+        titel: "(treffen van tijdelijke beschermingsmaatregelen)"
+        status: "goed"
+        type: "bevoegdheid"
+
+        leden:
+          - lid: 1
+            inhoud: "BG verplicht eigenaar/erfpachter tot onmiddellijke tijdelijke maatregelen"
+            normadressaat: "eigenaar of erfpachter"
+            note: "Anders dan 19.1: niet veroorzaker maar eigenaar"
+
+          - lid: 2
+            inhoud: "Art. 19.4 lid 2-5 van toepassing (eigenaar/erfpachter)"
+
+          - lid: 3
+            inhoud: "Als eigenaar/erfpachter niet tijdig handelt: BG kan zelf maatregelen treffen"
+
+          - lid: 4
+            inhoud: "Beslissing = beschikking"
+
+      - artikel: "19.9d"
+        titel: "(kostenverhaal)"
+        status: "goed"
+        type: "kostenverhaal"
+
+        leden:
+          - lid: 1
+            inhoud: "BG KAN kosten verhalen op eigenaar/erfpachter"
+            type: "facultatief"
+            note: "KAN, niet VERHAALT (verschil met 19.6)"
+            koppeling: "artikel 13.3a"
+
+          - lid: 2
+            inhoud: "Awb art. 5:10 lid 2 en 5:25 van toepassing"
+
+  # ===========================================================================
+  # AFDELING 19.3 - ALARMERINGSWAARDEN
+  # ===========================================================================
+  - afdeling: "19.3"
+    titel: "Alarmeringswaarden"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.10"
+        titel: "(vaststelling alarmeringswaarden en informatieplicht)"
+        status: "goed"
+        type: "grondslag"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Bij ministeriële regeling alarmeringswaarden voor:
+              a. concentraties verontreinigende stoffen in buitenlucht
+              b. hoogwaterstanden gevaar primaire waterkeringen
+            delegatie: "ministeriële regeling"
+
+          - lid: 2
+            inhoud: "Commissaris van de Koning informeert/waarschuwt publiek bij (dreigende) overschrijding lucht"
+            bevoegd_gezag: "commissaris van de Koning"
+
+          - lid: 3
+            inhoud: "Minister IenW informeert/waarschuwt beheerders waterkeringen en GS bij (dreigende) overschrijding hoogwater"
+            bevoegd_gezag: "Minister IenW"
+
+      - artikel: "19.11"
+        titel: "(informatie of waarschuwing bij overschrijding)"
+        status: "goed"
+        type: "delegatiegrondslag"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Ministeriële regeling over informatie/waarschuwingen aan:
+              a. publiek
+              b. gevoelige bevolkingsgroepen
+              c. beheerders primaire waterkeringen
+              d. GS
+              e. overige organen/instanties
+            delegatie: "ministeriële regeling"
+
+          - lid: 2
+            inhoud: |
+              Regels over:
+              a. inhoud informatie/waarschuwingen
+              b. wijze van verstrekking
+              c. uitvoering richtlijn luchtkwaliteit art. 24
+            eu_richtlijn: "richtlijn luchtkwaliteit"
+
+      - artikel: "19.12"
+        titel: "(tijdelijke regels bij luchtverontreiniging)"
+        status: "goed"
+        type: "noodbevoegdheid"
+        centrale_bepaling: true
+
+        leden:
+          - lid: 1
+            inhoud: "Commissaris van de Koning kan bij overschrijding regels stellen over installaties, brandstoffen, activiteiten"
+            bevoegd_gezag: "commissaris van de Koning"
+
+          - lid: 2
+            inhoud: "Incl. verbod installatie in werking / brandstof gebruiken"
+
+          - lid: 3
+            inhoud: "Besluit vervalt na 48 uur. GS kunnen verlengen met max. 48 uur per keer"
+            termijn: "48 uur"
+            verlenging: "GS, max. 48 uur per keer"
+
+          - lid: 4
+            inhoud: "Bekendmaking bij AMvB bepaald. Inwerkingtreding onmiddellijk na bekendmaking"
+
+        juridische_analyse:
+          patroon: "TIJDELIJK_NOODBESLUIT"
+          note: |
+            Smogalarm-achtige bevoegdheid
+            Automatisch verval na 48 uur = waarborg
+            Commissaris = provincial crisis authority
+
+  # ===========================================================================
+  # AFDELING 19.4 - GEVAAR WATERSTAATSWERKEN
+  # ===========================================================================
+  - afdeling: "19.4"
+    titel: "Gevaar voor waterstaatswerken"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.13"
+        titel: "(begripsbepaling en toepassingsbereik)"
+        status: "goed"
+        type: "definitie"
+
+        leden:
+          - lid: 1
+            inhoud: "Gevaar = omstandigheid waardoor goede staat onmiddellijk aangetast/dreigt of werk beschadigd/onbruikbaar wordt"
+
+          - lid: 2
+            inhoud: "Niet van toepassing op Wet bestrijding maritieme ongevallen"
+            uitzondering: "maritieme ongevallen"
+            externe_ref: "BWBR0037162"
+
+      - artikel: "19.14"
+        titel: "(calamiteitenplan beheer waterstaatswerken)"
+        status: "goed"
+        type: "plicht"
+
+        leden:
+          - lid: 1
+            inhoud: "Beheerder houdt oefeningen en stelt calamiteitenplan vast (AMvB-regels)"
+            delegatie: "AMvB"
+
+          - lid: 2
+            inhoud: "Afstemming op crisisplannen/rampbestrijdingsplannen veiligheidsregio"
+            externe_ref: "BWBR0027466"
+
+          - lid: 3
+            inhoud: "Veiligheidsregio's in gelegenheid stellen zienswijze te geven"
+
+      - artikel: "19.15"
+        titel: "(maatregelen beheerder bij gevaar)"
+        status: "goed"
+        type: "noodbevoegdheid"
+        centrale_bepaling: true
+
+        leden:
+          - lid: 1
+            inhoud: "Beheerder mag alle nodige maatregelen treffen, ZO NODIG IN AFWIJKING VAN WETTELIJKE VOORSCHRIFTEN (behalve Gw/internationaalrecht)"
+            type: "vergaande_noodbevoegdheid"
+            uitzondering:
+              - "Grondwet"
+              - "internationaalrechtelijke verplichtingen"
+
+          - lid: 2
+            inhoud: "Waterschapsbestuur meldt gebruik bevoegdheid aan GS of Minister IenW (primaire kering)"
+
+          - lid: 3
+            inhoud: "Beheerder brengt waterstaatswerk terug in legger-staat zodra mogelijk"
+
+          - lid: 4
+            inhoud: "Evaluatie en verslag aan GS/Minister IenW en veiligheidsregio's"
+
+        juridische_analyse:
+          patroon: "NOODRECHT_BEHEERDER"
+          note: |
+            Art. 19.15 = vergaande noodbevoegdheid
+            Mag afwijken van ALLE wettelijke voorschriften behalve Gw en internationaal recht
+            Kritiek voor dijkbewaking bij dreigende doorbraak
+
+      - artikel: "19.16"
+        titel: "(instructiebesluit bij gevaar)"
+        status: "goed"
+        type: "toezichtsbevoegdheid"
+
+        leden:
+          - lid: 1
+            inhoud: "GS kunnen instructie geven aan waterschap als dat niet/onvoldoende optreedt"
+            koppeling: "artikel 2.33"
+
+          - lid: 2
+            inhoud: "Spoedeisend: commissaris van de Koning kan instructie geven"
+
+          - lid: 3
+            inhoud: "Art. 2.36 lid 1a (indeplaatstreding) van toepassing"
+
+          - lid: 4
+            inhoud: "Minister IenW kan instructie geven bij primaire kering als GS/CdK falen"
+            koppeling: "artikel 2.34"
+
+          - lid: 5
+            inhoud: "Art. 2.36 lid 2a (indeplaatstreding Rijk) van toepassing"
+
+        juridische_analyse:
+          patroon: "ESCALATIELADDER"
+          note: |
+            Waterschap → GS/CdK → Minister IenW
+            Oplopende interventie bij falen lager niveau
+
+  # ===========================================================================
+  # AFDELING 19.5 - BUITENGEWONE OMSTANDIGHEDEN
+  # ===========================================================================
+  - afdeling: "19.5"
+    titel: "Buitengewone omstandigheden"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "19.17"
+        titel: "(in- en buitenwerkingstelling regulering bij schaarste)"
+        status: "goed"
+        type: "staatsnoodrecht"
+
+        leden:
+          - lid: 1
+            inhoud: "Bij buitengewone omstandigheden: KB op voordracht MP kan art. 19.18 of 19.19 in werking stellen"
+            grondslag: "koninklijk besluit"
+            externe_ref: "BWBR0007981"
+
+          - lid: 2
+            inhoud: "Onverwijld wetsvoorstel aan Tweede Kamer over voortduring"
+
+          - lid: 3
+            inhoud: |
+              Buiten werking stellen:
+              a. bij verwerping door Kamers
+              b. zodra omstandigheden dit toelaten
+
+          - lid: 4
+            inhoud: "Bekendmaking en onmiddellijke inwerkingtreding"
+
+        juridische_analyse:
+          patroon: "STAATSNOODRECHT"
+          note: |
+            Art. 19.17 = staatsnoodrecht-achtige bevoegdheid
+            Parallel aan Coördinatiewet uitzonderingstoestanden
+            Parlementaire controle via wetsvoorstel
+
+      - artikel: "19.18"
+        titel: "(regulering prioritering uitvoering projecten bij schaarste)"
+        status: "goed"
+        type: "schaarstebevoegdheid"
+
+        leden:
+          - lid: 1
+            inhoud: "Minister BZK stelt vast welke projecten bij schaarste (arbeid, geld, materiaal) mogen doorgaan"
+            bevoegd_gezag: "Minister BZK"
+
+          - lid: 2
+            inhoud: "Regeling kan afwijken van Ch4 en Ch5"
+            afwijking:
+              - "hoofdstuk 4"
+              - "hoofdstuk 5"
+
+          - lid: 3
+            inhoud: "Kan verbod bevatten om project uit te voeren zonder toestemming Minister BZK"
+
+        juridische_analyse:
+          note: "Wederopbouw-achtige bevoegdheid (vgl. naoorlogse periode)"
+
+      - artikel: "19.19"
+        titel: "(defensie)"
+        status: "goed"
+        type: "defensiebevoegdheid"
+
+        inhoud: "Minister van Defensie stelt vast welke defensieactiviteiten worden verricht, waarbij Ow-regels buiten toepassing kunnen blijven"
+        bevoegd_gezag: "Minister van Defensie"
+
+        juridische_analyse:
+          note: "Defensie kan in nood Ow-regels passeren"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE HOOFDSTUK 19
+# =============================================================================
+
+analyse:
+  karakterisering: "Noodbevoegdheden voor bijzondere en buitengewone situaties"
+
+  scenario_matrix:
+    ongewoon_voorval:
+      afdeling: "19.1"
+      trigger: "incident met milieuschade"
+      bevoegd_gezag: "handhavingsorgaan (art. 18.2)"
+      actie: "veroorzaker verplichten tot maatregelen"
+      kostenverhaal: "op veroorzaker"
+
+    archeologische_vondst:
+      afdeling: "19.2"
+      trigger: "toevalsvondst erfgoed"
+      bevoegd_gezag: "B&W (nationaal: Minister OCW)"
+      actie: "beschermingsmaatregelen"
+
+    bodemverontreiniging:
+      afdeling: "19.2a"
+      trigger: "toevalsvondst verontreiniging"
+      bevoegd_gezag: "B&W"
+      actie: "tijdelijke beschermingsmaatregelen"
+      normadressaat: "eigenaar/erfpachter (niet veroorzaker)"
+      kostenverhaal: "facultatief op eigenaar/erfpachter"
+
+    luchtalarm:
+      afdeling: "19.3"
+      trigger: "overschrijding alarmeringswaarde lucht"
+      bevoegd_gezag: "commissaris van de Koning"
+      actie: "tijdelijke regels (max 48 uur)"
+
+    hoogwateralarm:
+      afdeling: "19.3"
+      trigger: "overschrijding alarmeringswaarde hoogwater"
+      bevoegd_gezag: "Minister IenW"
+      actie: "informeren beheerders/GS"
+
+    dijkgevaar:
+      afdeling: "19.4"
+      trigger: "gevaar voor waterstaatswerk"
+      bevoegd_gezag: "beheerder"
+      actie: "alle nodige maatregelen, INCL. afwijking wettelijke voorschriften"
+      escalatie: "GS → CdK → Minister IenW"
+
+    schaarste:
+      afdeling: "19.5"
+      trigger: "buitengewone omstandigheden (oorlog, ramp)"
+      bevoegd_gezag: "Minister BZK"
+      actie: "prioritering projecten, afwijking Ch4/Ch5"
+      grondslag: "KB op voordracht MP"
+
+  noodbevoegdheden_hiërarchie:
+    normaal: "art. 19.0 - afwijking via besluit als aangewezen in §4.1.1"
+    ongewoon_voorval: "art. 19.4 - stillegging, maatregelen"
+    luchtalarm: "art. 19.12 - tijdelijke regels (48 uur)"
+    watergevaar: "art. 19.15 - afwijking alle wet behalve Gw/internationaal"
+    staatsnood: "art. 19.17-19.19 - KB, afwijking Ch4/Ch5"
+
+  koppelingen:
+    naar_ch2:
+      - artikel: "2.33"
+        relatie: "instructie aan waterschap"
+      - artikel: "2.34"
+        relatie: "instructie Rijk aan waterschap"
+      - artikel: "2.36"
+        relatie: "indeplaatstreding"
+    naar_ch4:
+      - artikel: "4.1.1"
+        relatie: "regels die kunnen worden gepasseerd"
+    naar_ch18:
+      - artikel: "18.2"
+        relatie: "BG ongewoon voorval = handhavingsorgaan"
+
+  praktijk_belang:
+    dijkbewaking: |
+      Art. 19.15 = kritiek voor waterschappen
+      Tijdens hoogwater: afwijking van alle regels toegestaan
+      Doel: dijkdoorbraak voorkomen, ongeacht andere belangen
+    smogalarm: |
+      Art. 19.12 = commissaris van de Koning kan tijdelijke maatregelen
+      Max 48 uur, verlenging door GS
+    toevalsvondst: |
+      Art. 19.2a = nieuw regime voor bodemverontreiniging
+      Eigenaar/erfpachter (niet veroorzaker) als normadressaat
+      Facultatief kostenverhaal

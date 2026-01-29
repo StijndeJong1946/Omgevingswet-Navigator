@@ -1,0 +1,481 @@
+_metadata:
+  id: ow-infra-external-systems
+  title: External Systems Registry
+  description: References to AMvBs and related legal frameworks
+  extraction_date: '2026-01-28'
+external_systems:
+  bal_navigator:
+    name: BAL Navigator
+    full_name: Besluit activiteiten leefomgeving
+    bwb_id: BWBR0043298
+    version: '1.0'
+    location: sibling
+    integration_status: planned
+    link_pattern: ow-artikel-X references bal-module-Y
+  bkl:
+    name: Besluit kwaliteit leefomgeving
+    bwb_id: BWBR0043301
+    integration_status: not-started
+  bbl:
+    name: Besluit bouwwerken leefomgeving
+    bwb_id: BWBR0043297
+    integration_status: not-started
+  or:
+    name: Omgevingsregeling
+    bwb_id: BWBR0043451
+    integration_status: not-started
+  awb:
+    name: Algemene wet bestuursrecht
+    bwb_id: BWBR0005537
+    integration_status: reference-only
+cross_reference_analysis:
+  extraction_date: '2026-01-28'
+  total_extref_count: 473
+  unique_bwb_ids: 59
+  by_category:
+    wet:
+    - bwb_id: BWBR0005537
+      name: Algemene wet bestuursrecht
+      abbrev: Awb
+      reference_count: 192
+      sample_from_articles:
+      - Artikel 16.77b
+      - Artikel 15.1
+      - Artikel 16.82b
+      - Artikel 16.110
+      - Artikel 16.72
+    - bwb_id: BWBR0003245
+      name: Wet milieubeheer
+      abbrev: Wm
+      reference_count: 11
+      sample_from_articles:
+      - Artikel 16.67
+      - Artikel 10.6
+      - Artikel 18.10
+      - Artikel 23.3
+    - bwb_id: BWBR0005555
+      name: Wet luchtvaart
+      abbrev: Wlv
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 2.29
+      - Artikel 10.7
+    - bwb_id: BWBR0037521
+      name: Erfgoedwet
+      abbrev: Efw
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 5.2
+      - Artikel 16.58
+      - Artikel 19.8
+    - bwb_id: BWBR0014168
+      name: Mijnbouwwet
+      abbrev: Mbw
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 18.5a
+      - Artikel 10.14
+      - Artikel 10.9
+    - bwb_id: BWBR0001840
+      name: Grondwet
+      abbrev: Gw
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 11.1
+    - bwb_id: BWBR0006622
+      name: Wegenverkeerswet 1994
+      abbrev: Wvw
+      reference_count: 2
+      sample_from_articles: []
+    unknown:
+    - bwb_id: BWBR0005645
+      name: Unknown
+      abbrev: ''
+      reference_count: 24
+      sample_from_articles:
+      - Artikel 13.10
+      - Artikel 2.37
+      - Artikel 16.137
+      - Artikel 2.34
+      - Artikel 2.36
+    - bwb_id: BWBR0005416
+      name: Unknown
+      abbrev: ''
+      reference_count: 12
+      sample_from_articles:
+      - Artikel 22.4
+      - Artikel 2.34
+      - Artikel 13.1a
+      - Artikel 13.2
+      - Artikel 2.33
+    - bwb_id: BWBR0004287
+      name: Unknown
+      abbrev: ''
+      reference_count: 12
+      sample_from_articles:
+      - Artikel 16.139
+      - Artikel 16.29
+      - Artikel 16.115
+      - Artikel 22.5
+      - Artikel 16.64
+    - bwb_id: BWBR0005108
+      name: Unknown
+      abbrev: ''
+      reference_count: 10
+      sample_from_articles:
+      - Artikel 2.18
+      - Artikel 22.15
+      - Artikel 13.1a
+      - Artikel 13.2
+      - Artikel 2.1
+    - bwb_id: BWBR0005290
+      name: Unknown
+      abbrev: ''
+      reference_count: 10
+      sample_from_articles:
+      - Artikel 9.8
+      - Artikel 16.131
+      - Artikel 15.5
+      - Artikel 15.29
+      - Artikel 16.127
+    - bwb_id: BWBR0013798
+      name: Unknown
+      abbrev: ''
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 5.40
+      - Artikel 4.19b
+      - Artikel 5.31
+    - bwb_id: BWBR0001827
+      name: Unknown
+      abbrev: ''
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 16.90
+      - Artikel 15.30
+      - Artikel 15.37
+      - Artikel 15.36
+      - Artikel 16.88
+    - bwb_id: BWBR0008159
+      name: Unknown
+      abbrev: ''
+      reference_count: 9
+      sample_from_articles:
+      - Artikel 17.2
+      - Artikel 17.4
+      - Artikel 17.5
+    - bwb_id: BWBR0050714
+      name: Unknown
+      abbrev: ''
+      reference_count: 8
+      sample_from_articles:
+      - Artikel 10.10i
+      - Artikel 10.14
+      - Artikel 13.3e
+      - Artikel 23.3
+    - bwb_id: BWBR0005289
+      name: Unknown
+      abbrev: ''
+      reference_count: 8
+      sample_from_articles:
+      - Artikel 15.32
+      - Artikel 12.23
+      - Artikel 15.27
+      - Artikel 16.97
+      - Artikel 12.1
+    - bwb_id: BWBR0011470
+      name: Unknown
+      abbrev: ''
+      reference_count: 7
+      sample_from_articles:
+      - Artikel 2.18
+      - Artikel 5.10
+      - Artikel 4.11
+      - Artikel 18.6a
+      - Artikel 2.13a
+    - bwb_id: BWBR0034363
+      name: Unknown
+      abbrev: ''
+      reference_count: 6
+      sample_from_articles:
+      - Artikel 2.27
+      - Artikel 18.6a
+      - Artikel 18.15
+      - Artikel 10.8
+    - bwb_id: BWBR0005291
+      name: Unknown
+      abbrev: ''
+      reference_count: 6
+      sample_from_articles:
+      - Artikel 9.8
+      - Artikel 15.30
+      - Artikel 12.44
+      - Artikel 15.33
+    - bwb_id: BWBR0001941
+      name: Unknown
+      abbrev: ''
+      reference_count: 6
+      sample_from_articles:
+      - Artikel 11.9
+    - bwb_id: BWBR0004541
+      name: Unknown
+      abbrev: ''
+      reference_count: 6
+      sample_from_articles:
+      - Artikel 16.136
+      - Artikel 12.4
+      - Artikel 16.137
+    - bwb_id: BWBR0001854
+      name: Unknown
+      abbrev: ''
+      reference_count: 6
+      sample_from_articles:
+      - Artikel 18.15a
+      - Artikel 18.14
+      - Artikel 18.12
+      - Artikel 18.13
+      - Artikel 18.11
+    - bwb_id: BWBR0015007
+      name: Unknown
+      abbrev: ''
+      reference_count: 5
+      sample_from_articles:
+      - Artikel 10.8
+      - Artikel 18.15
+      - Artikel 2.24
+    - bwb_id: BWBR0003338
+      name: Unknown
+      abbrev: ''
+      reference_count: 5
+      sample_from_articles:
+      - Artikel 15.43
+      - Artikel 11.16
+      - Artikel 15.50
+      - Artikel 15.45
+      - Artikel 15.49
+    - bwb_id: BWBR0005009
+      name: Unknown
+      abbrev: ''
+      reference_count: 5
+      sample_from_articles:
+      - Artikel 12.10
+    - bwb_id: BWBR0002402
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 10.14
+      - Artikel 16.80
+      - Artikel 19.1
+    - bwb_id: BWBR0033729
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 10.14
+      - Artikel 20.7a
+      - Artikel 13.3e
+      - Artikel 23.3
+    - bwb_id: BWBR0005181
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 11.8
+      - Artikel 11.10
+      - Artikel 11.9
+    - bwb_id: BWBR0001948
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 12.9
+    - bwb_id: BWBR0007981
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 16.35
+      - Artikel 16.44
+      - Artikel 19.17
+    - bwb_id: BWBR0026759
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 16.64
+      - Artikel 16.54a
+      - Artikel 16.66
+    - bwb_id: BWBR0045754
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 17.9
+      - Artikel 20.23
+      - Artikel 20.10
+      - Artikel 20.6
+    - bwb_id: BWBR0027466
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 18.21
+      - Artikel 19.14
+    - bwb_id: BWBR0020449
+      name: Unknown
+      abbrev: ''
+      reference_count: 4
+      sample_from_articles:
+      - Artikel 22.10
+      - Artikel 22.12
+      - Artikel 22.11
+      - Artikel 22.9
+    - bwb_id: BWBR0002565
+      name: Unknown
+      abbrev: ''
+      reference_count: 3
+      sample_from_articles:
+      - Artikel 9.21
+      - Artikel 15.27
+      - Artikel 16.97
+    - bwb_id: BWBR0026338
+      name: Unknown
+      abbrev: ''
+      reference_count: 3
+      sample_from_articles:
+      - Artikel 10.13
+    - bwb_id: BWBR0003994
+      name: Unknown
+      abbrev: ''
+      reference_count: 3
+      sample_from_articles:
+      - Artikel 10.13b
+    - bwb_id: BWBR0005288
+      name: Unknown
+      abbrev: ''
+      reference_count: 3
+      sample_from_articles:
+      - Artikel 10.28
+      - Artikel 15.32
+    - bwb_id: BWBR0003740
+      name: Unknown
+      abbrev: ''
+      reference_count: 3
+      sample_from_articles:
+      - Artikel 18.21
+    - bwb_id: BWBR0043277
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 22.1
+      - Artikel 10.13b
+    - bwb_id: BWBR0002412
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 10.15
+    - bwb_id: BWBR0002320
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 13.10
+    - bwb_id: BWBR0001903
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 18.16a
+      - Artikel 18.15a
+    - bwb_id: BWBR0043660
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 22.6
+      - Artikel 22.1
+    - bwb_id: BWBR0003718
+      name: Unknown
+      abbrev: ''
+      reference_count: 2
+      sample_from_articles:
+      - Artikel 22.4
+    - bwb_id: BWBR0031640
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 2.34
+    - bwb_id: BWBR0004364
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 10.2
+    - bwb_id: BWBR0006763
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 10.5
+    - bwb_id: BWBR0004770
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 13.10
+    - bwb_id: BWBR0037162
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 19.13
+    - bwb_id: BWBR0011440
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 20.7a
+    - bwb_id: BWBR0009755
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 20.7a
+    - bwb_id: BWBR0038662
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 22.21
+    - bwb_id: BWBR0007168
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 23.3
+    - bwb_id: BWBR0035303
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 23.3
+    - bwb_id: BWBR0003403
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles:
+      - Artikel 23.3
+    - bwb_id: BWBR0031788
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles: []
+    - bwb_id: BWBR0009950
+      name: Unknown
+      abbrev: ''
+      reference_count: 1
+      sample_from_articles: []

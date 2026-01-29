@@ -1,0 +1,825 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 18 - ATOMIC EXTRACTION
+# Handhaving en uitvoering (Enforcement and Execution)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  hoofdstuk: "18"
+  titel: "Handhaving en uitvoering"
+  artikelen_range: "18.1-18.27"
+  totaal_artikelen: 30
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "enforcement"
+
+# =============================================================================
+# STRUCTURE OVERVIEW
+# =============================================================================
+#
+# Afdeling 18.1 - Bestuursrechtelijke handhaving (administrative enforcement)
+#   §18.1.1: Handhavingstaak en -bevoegdheid (Art. 18.1-18.5a)
+#   §18.1.2: Toezichthouders (Art. 18.6-18.9)
+#   §18.1.3: Intrekking begunstigende beschikking (Art. 18.10)
+#   §18.1.4: Bestuurlijke boete (Art. 18.11-18.16)
+#   §18.1.5: Bestuurlijke maatregelen dieren etc. (Art. 18.16a-18.16b)
+#
+# Afdeling 18.2 - Strafrechtelijke handhaving (Art. 18.17)
+#
+# Afdeling 18.3 - Kwaliteitsbevordering en afstemming
+#   §18.3.1: Reikwijdte (Art. 18.18)
+#   §18.3.2: Strategische en programmatische uitvoering (Art. 18.19)
+#   §18.3.3: Kwaliteit; omgevingsdiensten (Art. 18.20-18.24)
+#   §18.3.4: Informatieverstrekking (Art. 18.25-18.27)
+#
+# =============================================================================
+
+afdelingen:
+  # ===========================================================================
+  # AFDELING 18.1 - BESTUURSRECHTELIJKE HANDHAVING
+  # ===========================================================================
+  - afdeling: "18.1"
+    titel: "Bestuursrechtelijke handhaving"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    paragrafen:
+      # -----------------------------------------------------------------------
+      # §18.1.1 - HANDHAVINGSTAAK EN -BEVOEGDHEID
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.1.1"
+        titel: "Bestuursrechtelijke handhavingstaak en handhavingsbevoegdheid"
+        artikelen:
+          - artikel: "18.1"
+            titel: "(inhoud handhavingstaak)"
+            status: "goed"
+            type: "definitie"
+
+            inhoud: |
+              De bestuursrechtelijke handhavingstaak omvat:
+              a. toezicht op naleving (incl. gegevensverzameling)
+              b. behandeling klachten over naleving
+              c. opleggen en uitvoeren bestuurlijke sancties
+
+            structuur:
+              onderdelen:
+                a: "toezicht + registratie"
+                b: "klachtenbehandeling"
+                c: "sancties"
+
+            juridische_analyse:
+              patroon: "DRIELEDIGE_TAAK"
+              note: "Toezicht → klacht → sanctie als volgorde"
+
+          - artikel: "18.2"
+            titel: "(toedeling handhavingstaak)"
+            status: "goed"
+            type: "bevoegdheidstoedeling"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: "Bij activiteit met algemene regels (§4.1.1): handhaving bij BG van §4.1.3"
+                koppeling: "paragraaf 4.1.3"
+
+              - lid: 2
+                inhoud: "Bij vergunningplichtige activiteit: handhaving bij BG van §5.1.2"
+                koppeling: "paragraaf 5.1.2"
+
+              - lid: 3
+                inhoud: "Bij projectbesluit (art. 5.52 lid 2a): handhaving bij vaststeller projectbesluit"
+                koppeling: "artikel 5.52"
+
+              - lid: 4
+                inhoud: "Bij gedoogplicht (H10): alleen als AMvB die taak toewijst"
+                koppeling: "hoofdstuk 10"
+                delegatie: "AMvB"
+
+              - lid: 5
+                inhoud: "In overige gevallen: B&W"
+                type: "default"
+                default_gezag: "B&W"
+
+              - lid: 6
+                inhoud: "AMvB kan andere toedeling maken (binnen art. 2.3)"
+                koppeling: "artikel 2.3"
+                delegatie: "AMvB"
+
+            juridische_analyse:
+              patroon: "WIE_VERLEENT_HANDHAAFT"
+              kernprincipe: "Wie bevoegd gezag is voor vergunning = wie handhaving uitoefent"
+              note: |
+                CRITICAL PATTERN: Art. 18.2 creates direct link:
+                - Lid 1: regels (Ch4) → handhaving volgt Ch4 BG
+                - Lid 2: vergunning (Ch5) → handhaving volgt Ch5 BG
+                - Lid 5: default gemeente (consistent met 4.9, 5.8)
+              koppelingen:
+                - naar: "4.9"
+                  relatie: "BG voor regels"
+                - naar: "5.8"
+                  relatie: "BG voor vergunning"
+                - naar: "2.3"
+                  relatie: "subsidiariteitsgrens"
+
+          - artikel: "18.3"
+            titel: "(toedeling mede-handhavingstaak)"
+            status: "goed"
+            type: "bevoegdheidsuitbreiding"
+
+            leden:
+              - lid: 1
+                inhoud: "Instemmingsorgaan (art. 16.16) krijgt mede-handhavingstaak voor vergunningvoorschriften"
+                koppeling: "artikel 16.16"
+                note: "Wie instemt, mag ook mede handhaven"
+
+              - lid: 2
+                inhoud: "AMvB kan mede-handhaving opdragen voor doelmatigheid"
+                delegatie: "AMvB"
+                doel: "doelmatige uitoefening"
+
+            juridische_analyse:
+              patroon: "PARALLELLE_HANDHAVING"
+              note: "Meerdere organen kunnen tegelijk handhaven"
+
+          - artikel: "18.4"
+            titel: "(bestuursdwangbevoegdheid Minister)"
+            status: "goed"
+            type: "bevoegdheid"
+
+            inhoud: "Minister is bevoegd tot last onder bestuursdwang voor zover handhavingstaak bij hem berust"
+
+            juridische_analyse:
+              note: "Expliciet nodig omdat Awb dit niet automatisch toekent aan Ministers"
+
+          - artikel: "18.4a"
+            titel: "(herstelsanctie en rechtsopvolger)"
+            status: "goed"
+            type: "rechtsgevolg"
+
+            inhoud: "Last onder bestuursdwang/dwangsom kan gelden voor rechtsopvolgers als besluit dit bepaalt"
+
+            juridische_analyse:
+              patroon: "ZAAKGEBONDEN_HANDHAVING"
+              note: "Voorkomt ontduiking via overdracht"
+
+          - artikel: "18.5"
+            titel: "(niet overgaan van bevoegdheid tot handhaving)"
+            status: "goed"
+            type: "continuiteit"
+
+            inhoud: |
+              Bij bevoegdheidswisseling blijft oorspronkelijk orgaan bevoegd totdat:
+              a. beschikking onherroepelijk + ten uitvoer gelegd
+              b. beschikking ingetrokken
+              c. dwangsom ingevorderd of last opgeheven
+
+            juridische_analyse:
+              patroon: "CONTINUITEIT_BIJ_OVERGANG"
+              note: "Voorkomt handhavingsgat bij reorganisaties"
+
+          - artikel: "18.5a"
+            titel: "(handhavingstaak mijnbouw)"
+            status: "goed"
+            type: "delegatie"
+
+            inhoud: "Mijnbouwtaken uitgeoefend door BG op grond van Mijnbouwwet H8"
+            externe_ref: "BWBR0014168"
+
+      # -----------------------------------------------------------------------
+      # §18.1.2 - TOEZICHTHOUDERS
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.1.2"
+        titel: "Aanwijzing en bevoegdheid toezichthouders"
+        artikelen:
+          - artikel: "18.6"
+            titel: "(aanwijzing toezichthouder)"
+            status: "goed"
+            type: "bevoegdheid"
+
+            leden:
+              - lid: 1
+                inhoud: "Toezicht door personen aangewezen bij besluit van B&W, DB waterschap, GS, Minister"
+                bevoegde_gezagen:
+                  - "B&W"
+                  - "dagelijks bestuur waterschap"
+                  - "GS"
+                  - "Minister"
+
+              - lid: 2
+                inhoud: "Aanwijzingsbesluit publiceren in gemeenteblad/waterschapsblad/provinciaal blad/Staatscourant"
+
+          - artikel: "18.6a"
+            titel: "(reikwijdte bevoegdheid toezichthouder)"
+            status: "goed"
+            type: "bevoegdheidsuitbreiding"
+
+            leden:
+              - lid: 1
+                inhoud: "Minister/GS kunnen omgevingsdienst-toezichthouders buiten werkgebied bevoegd maken"
+
+              - lid: 2
+                inhoud: "Minister kan exclusieve toezichthouders aanwijzen"
+
+              - lid: 3
+                inhoud: "Specifiek voor lokale spoorwegen: IenW-toezichthouder"
+                koppelingen:
+                  - "4.3 lid 3c2"
+                  - "5.1 lid 2f"
+                  - "5.5 lid 1f"
+
+          - artikel: "18.7"
+            titel: "(bevoegdheid binnentreden woning)"
+            status: "goed"
+            type: "bijzondere_bevoegdheid"
+
+            leden:
+              - lid: 1
+                inhoud: "Toezichthouder mag woning betreden zonder toestemming MITS in aanwijzingsbesluit toegekend"
+                voorwaarde: "in aanwijzingsbesluit"
+
+              - lid: 2
+                inhoud: "Alleen toekennen voor zover toezicht dit vereist, gelet op beschermde belangen"
+
+            juridische_analyse:
+              note: "Grondwettelijk huisrecht (art. 12 Gw) - strenge voorwaarden"
+
+          - artikel: "18.8"
+            titel: "(bevoegdheid rijksbelastingdienst)"
+            status: "goed"
+            type: "bijzondere_bevoegdheid"
+
+            inhoud: "Douane kan vertrek vaartuig/luchtvaartuig weigeren bij vermoeden overtreding art. 5.1 lid 1d / 5.5 lid 1c"
+            note: "CITES-gerelateerd (handel beschermde soorten)"
+
+          - artikel: "18.9"
+            titel: "(inachtneming VN-Zeerechtverdrag)"
+            status: "goed"
+            type: "procedurele_eis"
+
+            inhoud: "Minister en toezichthouders nemen VN-Zeerechtverdrag Deel XII Afd. 7 in acht"
+            internationale_norm: "UNCLOS"
+
+      # -----------------------------------------------------------------------
+      # §18.1.3 - INTREKKING BEGUNSTIGENDE BESCHIKKING
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.1.3"
+        titel: "Intrekking begunstigende beschikking"
+        artikelen:
+          - artikel: "18.10"
+            titel: "(bevoegdheid intrekken begunstigende beschikking)"
+            status: "goed"
+            type: "sanctie"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: "BG kan beschikking intrekken bij strijd met beschikking of geldende regels"
+                type: "facultatief"
+
+              - lid: 2
+                inhoud: "Ook bij strijd met Wm H10 (afvalbeheer)"
+                externe_ref: "BWBR0003245"
+
+              - lid: 3
+                inhoud: "VOORWAARDE: eerst herstelmogelijkheid bieden binnen termijn"
+                type: "procedurele_waarborg"
+
+              - lid: 4
+                inhoud: |
+                  Intrekking ook mogelijk bij:
+                  a. beschikking op onjuiste/onvolledige gegevens
+                  b. activiteit door ander dan vergunninghouder (art. 5.37 lid 2)
+                koppeling: "artikel 5.37"
+
+            juridische_analyse:
+              patroon: "HERSTELMOGELIJKHEID_EERST"
+              note: |
+                Lid 3 is kritiek: geen intrekking zonder eerst kans tot herstel
+                Uitzondering: lid 4 (valse gegevens, verkeerde persoon)
+              koppelingen:
+                - naar: "5.40"
+                  relatie: "wijziging/intrekking door BG"
+
+      # -----------------------------------------------------------------------
+      # §18.1.4 - BESTUURLIJKE BOETE
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.1.4"
+        titel: "Bestuurlijke boete"
+        artikelen:
+          - artikel: "18.11"
+            titel: "(bestuurlijke boete Seveso)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: "Boete bij overtreding Seveso-regels (art. 4.3 lid 1b + lid 4)"
+                koppeling: "artikel 4.3"
+                eu_richtlijn: "Seveso-richtlijn art. 5, 7-12"
+
+              - lid: 2
+                inhoud: "Maximum: categorie 6 Sr of 10% omzet"
+                boete_categorie: 6
+                alternatief: "10% omzet"
+
+            juridische_analyse:
+              note: "Zwaarste boetecategorie - gevaarlijke stoffen"
+
+          - artikel: "18.12"
+            titel: "(bestuurlijke boete bouw/sloop)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Boete bij overtreding:
+                  a. omgevingsplan-regels (art. 4.1) over gebruik/staat erven/terreinen/gebouwen
+                  b. AMvB-regels (art. 4.3 lid 1a + lid 4) over bouw/sloop/gebruik bouwwerken
+
+              - lid: 2
+                inhoud: "Maximum: categorie 2 Sr"
+                boete_categorie: 2
+
+              - lid: 3
+                inhoud: "Bij bedreiging leefbaarheid/gezondheid/veiligheid: verhogen tot categorie 4"
+                boete_categorie: 4
+                voorwaarde: "bedreiging leefbaarheid/gezondheid/veiligheid"
+
+              - lid: 4
+                inhoud: "AMvB kan nadere regels stellen over boetehoogte"
+                delegatie: "AMvB"
+
+          - artikel: "18.13"
+            titel: "(bestuurlijke boete erfgoed)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Boete bij overtreding erfgoedregels:
+                  a. omgevingsplan-regels (art. 4.1) cultureel erfgoed/werelderfgoed
+                  b. AMvB-regels (art. 4.3 lid 1h/i)
+                  c. vergunningplicht omgevingsplan (art. 5.1 lid 1a/b)
+                  d. vergunningplicht omgevingsverordening (art. 5.4)
+                  e. verbod art. 5.5
+                  f. verplichtingen art. 19.9 + 19.3/19.4
+
+              - lid: 2
+                inhoud: "Maximum: categorie 5 Sr"
+                boete_categorie: 5
+
+          - artikel: "18.14"
+            titel: "(bestuurlijke boete luchthaven)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: "Boete bij overtreding beperkingengebied luchthaven (art. 4.3 lid 3c1, 5.1 lid 2f3, 5.5 lid 1f)"
+
+              - lid: 2
+                inhoud: "Maximum: categorie 5 Sr"
+                boete_categorie: 5
+
+          - artikel: "18.15"
+            titel: "(bestuurlijke boete spoor)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: "Minister IenW: boete bij overtreding beperkingengebied spoor (art. 4.3 lid 3c2, 5.1 lid 2f4, 5.5 lid 1f)"
+                bevoegd_gezag: "Minister IenW"
+
+              - lid: 2
+                inhoud: "Hoofdspoorweg/bijzondere spoorweg: Spoorwegwet art. 80 van toepassing"
+                externe_ref: "BWBR0015007"
+
+              - lid: 3
+                inhoud: "Lokale spoorweg: Wet lokaal spoor art. 44 van toepassing"
+                externe_ref: "BWBR0034363"
+
+          - artikel: "18.15a"
+            titel: "(bestuurlijke boete handel dieren/planten/hout)"
+            status: "goed"
+            type: "boete"
+
+            leden:
+              - lid: 1
+                inhoud: "Minister Natuur: boete bij overtreding AMvB-aangewezen regels (art. 4.3 lid 2a/b)"
+                bevoegd_gezag: "Minister voor Natuur en Stikstof"
+
+              - lid: 2
+                inhoud: "Maximum: cat. 1 (natuurlijk persoon), cat. 2 (rechtspersoon)"
+                boete_categorie_np: 1
+                boete_categorie_rp: 2
+
+              - lid: 3
+                inhoud: "AMvB stelt nadere regels over maximum per overtreding"
+                delegatie: "AMvB"
+
+              - lid: 4
+                inhoud: "Geen strafbeschikking (art. 257ba Sv)"
+                note: "Alleen bestuursrechtelijke weg"
+
+          - artikel: "18.16"
+            titel: "(afstemming OM)"
+            status: "goed"
+            type: "procedureel"
+
+            inhoud: "Bij ernst overtreding of omstandigheden: voorleggen aan openbaar ministerie"
+
+            juridische_analyse:
+              patroon: "BESTUURSRECHT_STRAFRECHT_INTERFACE"
+              note: "Ernstige gevallen → strafrechtelijk spoor"
+
+      # -----------------------------------------------------------------------
+      # §18.1.5 - BESTUURLIJKE MAATREGELEN DIEREN ETC.
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.1.5"
+        titel: "Bestuurlijke maatregelen dieren, planten, eieren, hout en producten daarvan"
+        artikelen:
+          - artikel: "18.16a"
+            titel: "(bestuurlijke maatregelen)"
+            status: "goed"
+            type: "maatregelen"
+
+            leden:
+              - lid: 1
+                inhoud: "Minister Natuur kan maatregelen treffen voor illegaal ingevoerde dieren/planten/hout"
+                bevoegd_gezag: "Minister voor Natuur en Stikstof"
+
+              - lid: 2
+                inhoud: |
+                  Maatregelen:
+                  a. terugzenden
+                  b. naar geschikte plaats buiten NL (conform CITES)
+                  c. verbod vervoer/verwerking/verhandeling
+                  d. bewaring
+                  e. informatieplicht aan houders
+                  f. ophalen/opslag
+                  g. identificatie/registratie
+
+              - lid: 3
+                inhoud: "Invrijheidstelling inheemse dieren die zich kunnen handhaven"
+
+          - artikel: "18.16b"
+            titel: "(nadere regels maatregelen)"
+            status: "goed"
+            type: "uitvoering"
+
+            leden:
+              - lid: 1
+                inhoud: "Voorschriften kunnen worden verbonden"
+
+              - lid: 2
+                inhoud: "Verbod handelen in strijd met maatregelen/voorschriften"
+
+              - lid: 3
+                inhoud: "Kosten verzorging/huisvesting/opslag in rekening brengen"
+
+              - lid: 4
+                inhoud: "Kosten bewaring transport naar bestemming"
+
+              - lid: 5
+                inhoud: "Invordering bij dwangbevel"
+
+  # ===========================================================================
+  # AFDELING 18.2 - STRAFRECHTELIJKE HANDHAVING
+  # ===========================================================================
+  - afdeling: "18.2"
+    titel: "Strafrechtelijke handhaving"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "18.17"
+        titel: "(toepasselijkheid Nederlandse strafwet)"
+        status: "goed"
+        type: "rechtsmacht"
+
+        leden:
+          - lid: 1
+            inhoud: "Nederlandse strafwet van toepassing in EEZ"
+            reikwijdte: "exclusieve economische zone"
+
+          - lid: 2
+            inhoud: "VN-Zeerechtverdrag Deel XII Afd. 7 in acht nemen"
+            internationale_norm: "UNCLOS"
+
+        juridische_analyse:
+          note: "Uitbreiding rechtsmacht naar zee"
+
+  # ===========================================================================
+  # AFDELING 18.3 - KWALITEITSBEVORDERING EN AFSTEMMING
+  # ===========================================================================
+  - afdeling: "18.3"
+    titel: "Kwaliteitsbevordering en afstemming uitvoering en handhaving"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    paragrafen:
+      # -----------------------------------------------------------------------
+      # §18.3.1 - REIKWIJDTE
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.3.1"
+        titel: "Reikwijdte afdeling 18.3"
+        artikelen:
+          - artikel: "18.18"
+            titel: "(reikwijdte)"
+            status: "goed"
+            type: "toepassingsbereik"
+
+            leden:
+              - lid: 1
+                inhoud: "Afdeling van toepassing op uitvoeringstaak (lid 2) en handhavingstaak (art. 18.1)"
+
+              - lid: 2
+                inhoud: |
+                  Uitvoeringstaak omvat:
+                  a. maatwerkvoorschriften (art. 4.5)
+                  b. beslissen op vergunningaanvraag (§5.1.2, 5.1.3)
+                  c. toepassing §5.1.5 (wijziging/intrekking)
+                  d. advies (art. 16.15-16.19)
+                koppelingen:
+                  - "artikel 4.5"
+                  - "paragraaf 5.1.2"
+                  - "paragraaf 5.1.3"
+                  - "paragraaf 5.1.5"
+                  - "artikelen 16.15-16.19"
+
+      # -----------------------------------------------------------------------
+      # §18.3.2 - STRATEGISCHE EN PROGRAMMATISCHE UITVOERING
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.3.2"
+        titel: "Strategische en programmatische uitvoering en handhaving"
+        artikelen:
+          - artikel: "18.19"
+            titel: "(strategische en programmatische uitvoering)"
+            status: "goed"
+            type: "delegatiegrondslag"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  AMvB stelt regels over:
+                  a. strategische en programmatische uitoefening taken
+                  b. onderlinge afstemming door:
+                     1° bestuursorganen
+                     2° toezichthouders
+                     3° strafrechtelijke instanties
+                delegatie: "AMvB"
+
+              - lid: 2
+                inhoud: "Regels ter uitvoering richtlijn industriële emissies en Seveso"
+                eu_richtlijnen:
+                  - "richtlijn industriële emissies"
+                  - "Seveso-richtlijn"
+
+      # -----------------------------------------------------------------------
+      # §18.3.3 - KWALITEIT; OMGEVINGSDIENSTEN
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.3.3"
+        titel: "Kwaliteit uitvoering en handhaving; omgevingsdiensten"
+        artikelen:
+          - artikel: "18.20"
+            titel: "(zorg kwaliteit)"
+            status: "goed"
+            type: "zorgplicht"
+
+            leden:
+              - lid: 1
+                inhoud: "Bestuursorganen dragen zorg voor goede kwaliteit uitvoering/handhaving"
+                type: "algemene_zorgplicht"
+
+              - lid: 2
+                inhoud: "PS kunnen regels stellen voor GS"
+
+              - lid: 3
+                inhoud: "Gemeenteraad kan regels stellen voor B&W"
+
+          - artikel: "18.21"
+            titel: "(instelling omgevingsdiensten)"
+            status: "goed"
+            type: "organisatie"
+            centrale_bepaling: true
+
+            leden:
+              - lid: 1
+                inhoud: "GS + B&W stellen omgevingsdienst in per veiligheidsregio of aangewezen kring"
+                externe_ref: "BWBR0027466"
+
+              - lid: 2
+                inhoud: "Omgevingsdienst = openbaar lichaam (Wgr art. 8 + 52/74)"
+                externe_ref: "BWBR0003740"
+                rechtsvorm: "openbaar lichaam"
+
+              - lid: 3
+                inhoud: "Werkgebied = veiligheidsregio of aangewezen kring"
+
+            juridische_analyse:
+              note: "Verplichte regionale uitvoeringsorganisatie"
+
+          - artikel: "18.22"
+            titel: "(basistakenpakket omgevingsdiensten)"
+            status: "goed"
+            type: "taakverdeling"
+
+            leden:
+              - lid: 1
+                inhoud: "AMvB bepaalt welke taken aan omgevingsdienst worden opgedragen"
+                delegatie: "AMvB"
+
+              - lid: 2
+                inhoud: |
+                  Aangewezen omgevingsdiensten (exclusief) voor:
+                  a. installaties richtlijn industriële emissies bijlage I cat. 4
+                  b. Seveso-activiteiten
+                type: "specialisatie"
+
+            juridische_analyse:
+              note: "BRZO/RIE-bedrijven bij gespecialiseerde omgevingsdiensten"
+
+          - artikel: "18.23"
+            titel: "(kwaliteit basistakenpakket)"
+            status: "goed"
+            type: "kwaliteitsborging"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Kwaliteitsregels:
+                  a. gemeenteraad stelt regels voor B&W-opdrachtgeverschap
+                  b. PS stellen regels voor GS-opdrachtgeverschap
+
+              - lid: 2
+                inhoud: "Uniforme regels per omgevingsdienst"
+
+          - artikel: "18.24"
+            titel: "(tweejaarlijks onderzoek)"
+            status: "goed"
+            type: "monitoring"
+
+            leden:
+              - lid: 1
+                inhoud: |
+                  Tweejaarlijks onderzoek naar doeltreffendheid:
+                  a. naleving zorgplicht (art. 18.20 lid 1)
+                  b. kwaliteitsregels (art. 18.20 lid 2/3, 18.23 lid 1)
+                frequentie: "elke twee jaar"
+
+              - lid: 2
+                inhoud: "Bij onvoldoende doeltreffendheid: AMvB kan vervangende/aanvullende regels stellen"
+                delegatie: "AMvB"
+                type: "escalatie"
+
+      # -----------------------------------------------------------------------
+      # §18.3.4 - INFORMATIEVERSTREKKING EN AFSTEMMING
+      # -----------------------------------------------------------------------
+      - paragraaf: "18.3.4"
+        titel: "Informatieverstrekking en afstemming"
+        inwerking: "2024-12-11"
+        artikelen:
+          - artikel: "18.25"
+            titel: "(informatieverstrekking)"
+            status: "goed"
+            type: "informatieplicht"
+
+            leden:
+              - lid: 1
+                inhoud: "Bestuursorganen verstrekken gegevens aan elkaar + strafrechtelijke instanties"
+
+              - lid: 2
+                inhoud: "AMvB kan andere instanties aanwijzen die gegevens verstrekken"
+                delegatie: "AMvB"
+
+              - lid: 3
+                inhoud: |
+                  AMvB stelt regels over:
+                  a. wijze van verstrekking
+                  b. verwerking persoonsgegevens (AVG)
+                  c. kostenverdeling
+                delegatie: "AMvB"
+
+          - artikel: "18.25a"
+            titel: "(informatieverstrekking energiegebruik)"
+            status: "goed"
+            inwerking: "2025-07-01"
+            type: "informatieplicht"
+
+            leden:
+              - lid: 1
+                inhoud: "AMvB kan aanwijzen wie energiegebruiksdata moet verstrekken"
+                doel: "verduurzaming energiegebruik"
+                delegatie: "AMvB"
+
+              - lid: 2
+                inhoud: "AMvB kan regels stellen over voldoening/wijze"
+                delegatie: "AMvB"
+
+          - artikel: "18.26"
+            titel: "(coördinatie)"
+            status: "goed"
+            type: "coördinatie"
+
+            leden:
+              - lid: 1
+                inhoud: "GS dragen zorg voor provinciale coördinatie"
+                coördinator: "GS"
+                niveau: "provinciaal"
+
+              - lid: 2
+                inhoud: "Minister + BZK dragen zorg voor bovenprovinciaal"
+                coördinator: "Minister + BZK"
+                niveau: "nationaal"
+
+          - artikel: "18.27"
+            titel: "(provinciaal handhavingsoverleg)"
+            status: "goed"
+            type: "organisatie"
+
+            inhoud: "GS stellen een of meer overlegorganen in voor kwaliteit/doeltreffendheid/doelmatigheid"
+            coördinator: "GS"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE HOOFDSTUK 18
+# =============================================================================
+
+analyse:
+  karakterisering: "Handhaving als sluitstuk van het systeem"
+
+  kernprincipe:
+    wie_verleent_handhaaft:
+      beschrijving: "Bevoegd gezag voor vergunning = bevoegd gezag voor handhaving"
+      artikelen: ["18.2"]
+      koppelingen:
+        - van: "18.2 lid 1"
+          naar: "4.1.3"
+          type: "regels → handhaving"
+        - van: "18.2 lid 2"
+          naar: "5.1.2"
+          type: "vergunning → handhaving"
+        - van: "18.2 lid 5"
+          naar: "gemeente"
+          type: "default"
+
+  handhavingsinstrumenten:
+    bestuursrechtelijk:
+      - instrument: "toezicht"
+        artikel: "18.1a"
+      - instrument: "last onder bestuursdwang"
+        artikel: "18.4"
+      - instrument: "last onder dwangsom"
+        artikel: "18.4a"
+      - instrument: "intrekking vergunning"
+        artikel: "18.10"
+      - instrument: "bestuurlijke boete"
+        artikelen: ["18.11-18.15a"]
+    strafrechtelijk:
+      - instrument: "vervolging OM"
+        artikel: "18.16"
+      - instrument: "EEZ-rechtsmacht"
+        artikel: "18.17"
+
+  boetecategorieën:
+    categorie_6: "Seveso (art. 18.11)"
+    categorie_5: "erfgoed, luchthaven (art. 18.13, 18.14)"
+    categorie_4: "bouw bij bedreiging (art. 18.12 lid 3)"
+    categorie_2: "bouw standaard (art. 18.12 lid 2)"
+    categorie_1_2: "handel dieren/planten (art. 18.15a)"
+
+  omgevingsdiensten:
+    verplicht: true
+    rechtsvorm: "openbaar lichaam (Wgr)"
+    werkgebied: "veiligheidsregio"
+    specialisatie:
+      - "RIE bijlage I cat. 4"
+      - "Seveso-bedrijven"
+
+  koppelingen:
+    naar_ch4:
+      - artikel: "4.3"
+        relatie: "regels waarop wordt gehandhaafd"
+      - artikel: "4.9"
+        relatie: "BG voor regels"
+    naar_ch5:
+      - artikel: "5.8"
+        relatie: "BG voor vergunning"
+      - artikel: "5.37"
+        relatie: "normadressaat"
+      - artikel: "5.40"
+        relatie: "wijziging/intrekking"
+    naar_ch16:
+      - artikel: "16.16"
+        relatie: "instemming → mede-handhaving"
+    naar_ch2:
+      - artikel: "2.3"
+        relatie: "subsidiariteitsgrens"
+
+  praktijk_belang:
+    herstelmogelijkheid: "Art. 18.10 lid 3: eerst kans tot herstel"
+    continuiteit: "Art. 18.5: handhaving loopt door bij reorganisatie"
+    rechtsopvolging: "Art. 18.4a: zaakgebonden handhaving"
+    omgevingsdienst: "Verplichte regionale samenwerking"

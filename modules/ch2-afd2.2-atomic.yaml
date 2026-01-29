@@ -1,0 +1,205 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 2, AFDELING 2.2 - ATOMIC EXTRACTION
+# Omgevingsplan, waterschapsverordening en omgevingsverordening
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "2.2"
+  titel: "Omgevingsplan, waterschapsverordening en omgevingsverordening"
+  artikelen_range: "2.4-2.8"
+  totaal_artikelen: 5
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "instrumentbasis"
+
+# =============================================================================
+# ARTIKELEN 2.4-2.8 - GRONDSLAGEN DECENTRALE INSTRUMENTEN
+# =============================================================================
+
+artikelen:
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.4 - OMGEVINGSPLAN (CENTRALE BEPALING)
+  # ---------------------------------------------------------------------------
+  - artikel: "2.4"
+    titel: "(omgevingsplan)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "grondslag"
+    centrale_bepaling: true
+
+    inhoud: "De gemeenteraad stelt voor het gehele grondgebied van de gemeente één omgevingsplan vast waarin regels over de fysieke leefomgeving worden opgenomen."
+    structuur:
+      bevoegd_gezag: "gemeenteraad"
+      reikwijdte: "gehele grondgebied"
+      aantal: "één"
+      inhoud: "regels over fysieke leefomgeving"
+
+    juridische_analyse:
+      patroon: "VERPLICHT_DEKKEND_PLAN"
+      kernkenmerken:
+        - "verplicht (stelt vast)"
+        - "integraal (gehele grondgebied)"
+        - "exclusief (één)"
+      opvolger_van:
+        - "bestemmingsplan"
+        - "beheersverordening"
+        - "diverse gemeentelijke verordeningen"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.5 - WATERSCHAPSVERORDENING
+  # ---------------------------------------------------------------------------
+  - artikel: "2.5"
+    titel: "(waterschapsverordening)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "grondslag"
+
+    inhoud: "Het algemeen bestuur van het waterschap stelt één waterschapsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
+    structuur:
+      bevoegd_gezag: "algemeen bestuur waterschap"
+      aantal: "één"
+      inhoud: "regels over fysieke leefomgeving"
+
+    juridische_analyse:
+      patroon: "VERPLICHT_DEKKEND_PLAN"
+      kernkenmerken:
+        - "verplicht"
+        - "exclusief (één)"
+      opvolger_van:
+        - "keur"
+        - "diverse waterschapsverordeningen"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.6 - OMGEVINGSVERORDENING
+  # ---------------------------------------------------------------------------
+  - artikel: "2.6"
+    titel: "(omgevingsverordening)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "grondslag"
+
+    inhoud: "Provinciale staten stellen één omgevingsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
+    structuur:
+      bevoegd_gezag: "provinciale staten"
+      aantal: "één"
+      inhoud: "regels over fysieke leefomgeving"
+
+    juridische_analyse:
+      patroon: "VERPLICHT_DEKKEND_PLAN"
+      kernkenmerken:
+        - "verplicht"
+        - "exclusief (één)"
+      opvolger_van:
+        - "provinciale verordeningen ruimtelijke ordening"
+        - "milieu-, natuur-, water-, grondwaterverordeningen"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.7 - EXCLUSIVITEIT DECENTRALE REGELS
+  # ---------------------------------------------------------------------------
+  - artikel: "2.7"
+    titel: "(verplicht opnemen en uitsluiten van decentrale regels)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "delegatiegrondslag"
+
+    leden:
+      - lid: 1
+        inhoud: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin regels over de fysieke leefomgeving alleen in het omgevingsplan, de waterschapsverordening of de omgevingsverordening mogen worden opgenomen."
+        type: "exclusiviteitsbepaling"
+        delegatie: "AMvB"
+        richting: "verplicht_opnemen"
+
+      - lid: 2
+        inhoud: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin regels over de fysieke leefomgeving niet in het omgevingsplan, de waterschapsverordening of de omgevingsverordening mogen worden opgenomen."
+        type: "exclusiviteitsbepaling"
+        delegatie: "AMvB"
+        richting: "uitsluiten"
+
+    juridische_analyse:
+      patroon: "KANALISATIE_REGELGEVING"
+      note: "Voorkomt samenloop gemeentelijke APV / omgevingsplan"
+      amvb_uitwerking: "Omgevingsbesluit"
+
+  # ---------------------------------------------------------------------------
+  # ARTIKEL 2.8 - DELEGATIE AAN DAGELIJKS BESTUUR
+  # ---------------------------------------------------------------------------
+  - artikel: "2.8"
+    titel: "(delegatie)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "delegatiebevoegdheid"
+
+    inhoud: "De gemeenteraad, het algemeen bestuur van een waterschap of provinciale staten kunnen de bevoegdheid tot het vaststellen van delen van het omgevingsplan, de waterschapsverordening of de omgevingsverordening delegeren aan het college van burgemeester en wethouders, het dagelijks bestuur van het waterschap respectievelijk gedeputeerde staten."
+    structuur:
+      gemeente:
+        van: "gemeenteraad"
+        naar: "B&W"
+      waterschap:
+        van: "algemeen bestuur"
+        naar: "dagelijks bestuur"
+      provincie:
+        van: "provinciale staten"
+        naar: "GS"
+    beperking: "delen van"
+
+    juridische_analyse:
+      patroon: "INTERNE_DELEGATIE"
+      note: "Flexibiliteit voor dagelijks bestuur"
+      praktijk: "Vaak voor wijzigingen van ondergeschikte aard"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 2.2
+# =============================================================================
+
+analyse:
+  karakterisering: "Grondslag drie decentrale kerninstrumenten"
+
+  instrument_drieluik:
+    omgevingsplan:
+      grondslag: "art. 2.4"
+      bevoegd_gezag: "gemeenteraad"
+      delegatie: "naar B&W mogelijk (art. 2.8)"
+      uitwerking_ch4: "art. 4.2"
+
+    waterschapsverordening:
+      grondslag: "art. 2.5"
+      bevoegd_gezag: "algemeen bestuur waterschap"
+      delegatie: "naar DB mogelijk (art. 2.8)"
+      uitwerking_ch4: "art. 4.1"
+
+    omgevingsverordening:
+      grondslag: "art. 2.6"
+      bevoegd_gezag: "provinciale staten"
+      delegatie: "naar GS mogelijk (art. 2.8)"
+      uitwerking_ch4: "art. 4.1"
+
+  kernpatronen:
+    een_plan_principe:
+      beschrijving: "Elk niveau één integraal instrument"
+      artikelen: ["2.4", "2.5", "2.6"]
+      note: "Einde fragmentatie oude stelsel"
+
+    kanalisatie:
+      beschrijving: "AMvB kan verplichten/uitsluiten"
+      artikel: "2.7"
+      doel: "Voorkom samenloop met APV etc."
+
+    delegatiemogelijkheid:
+      beschrijving: "Van vertegenwoordigend naar dagelijks bestuur"
+      artikel: "2.8"
+      beperking: "alleen delen"
+
+  koppelingen:
+    naar_ch4:
+      - artikel: "4.1"
+        relatie: "inhoud omgevingsverordening/waterschapsverordening"
+      - artikel: "4.2"
+        relatie: "inhoud omgevingsplan"
+    naar_ch16:
+      - artikel: "16.29-16.32"
+        relatie: "procedure vaststelling"
+
+  praktijk_belang:
+    stelselwijziging: "Van tientallen plannen naar drie kerninstrumenten"
+    transitie: "Bruidsschat omgevingsplan tot aanpassing"

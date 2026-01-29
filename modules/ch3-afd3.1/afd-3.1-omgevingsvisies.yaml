@@ -1,0 +1,64 @@
+# Omgevingswet Navigator - Chapter 3 Afdeling 3.1
+# Extracted from source/Omgevingswet.xml (BWBR0037885)
+
+_metadata:
+  module_id: "ow-mod-ch3-afd-3.1"
+  chapter: 3
+  chapter_title: "Omgevingsvisies en programma's"
+  afdeling: "3.1"
+  afdeling_title: "Omgevingsvisies"
+  extraction_date: "2026-01-28"
+  source_reference: "BWBR0037885"
+  inwerking: "2024-01-01"
+
+article_3.1:
+  article: "3.1"
+  title_nl: "(vaststellen omgevingsvisie)"
+  bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1"
+  text_nl: null
+  leden:
+    - lid: 1
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid1"
+      text: "De gemeenteraad stelt een gemeentelijke omgevingsvisie vast."
+    - lid: 2
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid2"
+      text: "Provinciale staten stellen een provinciale omgevingsvisie vast."
+    - lid: 3
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid3"
+      text: "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties stelt, in overeenstemming met Onze Ministers die het aangaat, een nationale omgevingsvisie vast."
+
+article_3.2:
+  article: "3.2"
+  title_nl: "(inhoud omgevingsvisie)"
+  bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2"
+  text_nl: |
+    Een omgevingsvisie bevat, mede voor de uitoefening van de taken en bevoegdheden, bedoeld in artikel 2.1, eerste lid:
+    a. een beschrijving van de hoofdlijnen van de kwaliteit van de fysieke leefomgeving,
+    b. de hoofdlijnen van de voorgenomen ontwikkeling, het gebruik, het beheer, de bescherming en het behoud van het grondgebied,
+    c. de hoofdzaken van het voor de fysieke leefomgeving te voeren integrale beleid.
+  onderdelen:
+    - onderdeel: "a"
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeela"
+      text: "een beschrijving van de hoofdlijnen van de kwaliteit van de fysieke leefomgeving,"
+    - onderdeel: "b"
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeelb"
+      text: "de hoofdlijnen van de voorgenomen ontwikkeling, het gebruik, het beheer, de bescherming en het behoud van het grondgebied,"
+    - onderdeel: "c"
+      bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeelc"
+      text: "de hoofdzaken van het voor de fysieke leefomgeving te voeren integrale beleid."
+  internal_refs:
+    - target: "artikel 2.1, eerste lid"
+      bwb_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1"
+      doc_ref: "jci1.3:c:BWBR0037885&hoofdstuk=2&afdeling=2.1&artikel=2.1"
+
+article_3.3:
+  article: "3.3"
+  title_nl: "(doorwerking beginselen)"
+  bwb_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.3"
+  text_nl: |
+    In een omgevingsvisie wordt rekening gehouden met het voorzorgsbeginsel, het beginsel van preventief handelen, het beginsel dat milieuaantastingen bij voorrang aan de bron dienen te worden bestreden en het beginsel dat de vervuiler betaalt.
+  beginselen:
+    - voorzorgsbeginsel
+    - beginsel van preventief handelen
+    - beginsel dat milieuaantastingen bij voorrang aan de bron dienen te worden bestreden
+    - beginsel dat de vervuiler betaalt

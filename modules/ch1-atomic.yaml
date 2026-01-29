@@ -1,0 +1,456 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 1 - ATOMIC EXTRACTION
+# Algemene bepalingen (General Provisions)
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  hoofdstuk: "1"
+  titel: "Algemene bepalingen"
+  artikelen_range: "1.1-1.8"
+  totaal_artikelen: 8
+  status: "goed"
+  inwerking: "2024-01-01"
+  kernbegrip: "grondslagen"
+
+# =============================================================================
+# STRUCTURE OVERVIEW
+# =============================================================================
+#
+# Afdeling 1.1 - Begripsbepalingen (Art. 1.1)
+# Afdeling 1.2 - Toepassingsgebied en doelen (Art. 1.2-1.5)
+# Afdeling 1.3 - Zorg voor de fysieke leefomgeving (Art. 1.6-1.8)
+#
+# =============================================================================
+
+afdelingen:
+  # ===========================================================================
+  # AFDELING 1.1 - BEGRIPSBEPALINGEN
+  # ===========================================================================
+  - afdeling: "1.1"
+    titel: "Begripsbepalingen"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "1.1"
+        titel: "(begripsbepalingen)"
+        status: "goed"
+        type: "definitie"
+
+        leden:
+          - lid: 1
+            inhoud: "De bijlage bij deze wet bevat begripsbepalingen voor de toepassing van deze wet en de daarop berustende bepalingen."
+            note: "Centrale begrippenlijst in Bijlage"
+
+          - lid: 2
+            inhoud: "Begripsbepalingen in AMvB-bijlage gelden ook voor ministeriële regeling, tenzij anders bepaald."
+            note: "Doorwerking naar lager niveau"
+
+        juridische_analyse:
+          patroon: "CENTRALE_DEFINITIEBIJLAGE"
+          note: |
+            Omgevingswet hanteert bijlage-systematiek voor begrippen
+            Voorkomt herhaling in artikelen
+            Bijlage bevat 100+ begrippen
+          praktijk: |
+            Altijd eerst bijlage raadplegen bij interpretatie
+            AMvB's (Bkl, Bal, Bbl, Ob) hebben eigen bijlagen die aanvullen
+
+  # ===========================================================================
+  # AFDELING 1.2 - TOEPASSINGSGEBIED EN DOELEN
+  # ===========================================================================
+  - afdeling: "1.2"
+    titel: "Toepassingsgebied en doelen"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "1.2"
+        titel: "(fysieke leefomgeving)"
+        status: "goed"
+        type: "definitie"
+        centrale_bepaling: true
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Deze wet gaat over:
+              a. de fysieke leefomgeving, en
+              b. activiteiten die gevolgen hebben of kunnen hebben voor de fysieke leefomgeving.
+            note: "Reikwijdte Omgevingswet"
+
+          - lid: 2
+            inhoud: |
+              De fysieke leefomgeving omvat in ieder geval:
+              a. bouwwerken
+              b. infrastructuur
+              c. watersystemen
+              d. water
+              e. bodem
+              f. lucht
+              g. landschappen
+              h. natuur
+              i. cultureel erfgoed
+              j. werelderfgoed
+            note: "10 onderdelen - 'in ieder geval' = niet uitputtend"
+
+          - lid: 3
+            inhoud: |
+              Als gevolgen voor de fysieke leefomgeving worden in ieder geval aangemerkt:
+              a. wijzigen onderdelen of gebruik daarvan
+              b. gebruik natuurlijke hulpbronnen
+              c. activiteiten met emissies, hinder of risico's
+              d. nalaten van activiteiten
+            note: "Breed gevolgenbegrip - ook nalaten!"
+
+          - lid: 4
+            inhoud: "Gevolgen voor de mens, voor zover beïnvloed door/via fysieke leefomgeving"
+            note: "Indirecte gezondheidseffecten ook relevant"
+
+        structuur:
+          fysieke_leefomgeving:
+            onderdelen:
+              - "bouwwerken"
+              - "infrastructuur"
+              - "watersystemen"
+              - "water"
+              - "bodem"
+              - "lucht"
+              - "landschappen"
+              - "natuur"
+              - "cultureel erfgoed"
+              - "werelderfgoed"
+            karakter: "niet-limitatief (in ieder geval)"
+
+          gevolgen:
+            onderdelen:
+              - "wijziging/gebruik"
+              - "hulpbronnengebruik"
+              - "emissies/hinder/risico's"
+              - "nalaten"
+            karakter: "niet-limitatief"
+
+        juridische_analyse:
+          patroon: "OPEN_REIKWIJDTE"
+          note: |
+            "In ieder geval" = open norm
+            Fysieke leefomgeving = kernbegrip gehele wet
+            Activiteitenbegrip zeer ruim (ook nalaten)
+
+      - artikel: "1.3"
+        titel: "(maatschappelijke doelen van de wet)"
+        status: "goed"
+        type: "doelbepaling"
+        centrale_bepaling: true
+
+        inhoud: |
+          Deze wet is, met het oog op duurzame ontwikkeling, de bewoonbaarheid
+          van het land en de bescherming en verbetering van het leefmilieu,
+          gericht op het in onderlinge samenhang:
+          a. bereiken en in stand houden van een veilige en gezonde fysieke
+             leefomgeving en een goede omgevingskwaliteit, ook vanwege de
+             intrinsieke waarde van de natuur, en
+          b. doelmatig beheren, gebruiken en ontwikkelen van de fysieke
+             leefomgeving ter vervulling van maatschappelijke behoeften.
+
+        structuur:
+          grondwettelijke_basis:
+            - "duurzame ontwikkeling"
+            - "bewoonbaarheid van het land"
+            - "bescherming en verbetering leefmilieu"
+
+          doelen:
+            a:
+              kern: "bescherming"
+              elementen:
+                - "veilige fysieke leefomgeving"
+                - "gezonde fysieke leefomgeving"
+                - "goede omgevingskwaliteit"
+                - "intrinsieke waarde natuur"
+
+            b:
+              kern: "benutting"
+              elementen:
+                - "doelmatig beheren"
+                - "doelmatig gebruiken"
+                - "doelmatig ontwikkelen"
+                - "maatschappelijke behoeften"
+
+          samenhang: "in onderlinge samenhang"
+
+        juridische_analyse:
+          patroon: "DUBBELE_DOELSTELLING"
+          note: |
+            Art. 1.3 = constitutionele kern van de Omgevingswet
+            Twee polen die in balans moeten:
+            - Beschermen (a)
+            - Benutten (b)
+
+            Intrinsieke waarde natuur = ecocentrisch element
+            "In onderlinge samenhang" = integratiebeginsel
+          grondwet_connectie: |
+            Art. 21 Gw: "Zorg voor bewoonbaarheid land en bescherming leefmilieu"
+            Art. 1.3 Ow = uitwerking grondwettelijke opdracht
+
+      - artikel: "1.4"
+        titel: "(verhouding tot andere wetgeving)"
+        status: "goed"
+        type: "afbakening"
+
+        inhoud: |
+          Deze wet is niet van toepassing op onderwerpen met betrekking tot de
+          fysieke leefomgeving of onderdelen daarvan, die bij of krachtens een
+          andere wet uitputtend zijn geregeld, tenzij uit de bepalingen van
+          deze wet anders blijkt.
+
+        juridische_analyse:
+          patroon: "SUBSIDIARITEIT_WETGEVING"
+          note: |
+            Omgevingswet wijkt voor uitputtende regeling elders
+            Voorbeelden:
+            - Kernenergiewet (nucleair)
+            - Arbeidsomstandighedenwet (interne arbeidsomstandigheden)
+            - Telecommunicatiewet (frequenties)
+          tenzij: "uit bepalingen Ow anders blijkt"
+
+      - artikel: "1.5"
+        titel: "(toepassing in de exclusieve economische zone en internationaal)"
+        status: "goed"
+        type: "territoriale_reikwijdte"
+
+        leden:
+          - lid: 1
+            inhoud: "Wet van toepassing in EEZ, behalve art. 5.1 lid 1 a/b en lid 2a"
+            reikwijdte: "EEZ"
+            uitzondering: "omgevingsplanactiviteit, bouwactiviteit"
+
+          - lid: 2
+            inhoud: "AMvB/ministeriële regeling van toepassing in EEZ als dat is bepaald"
+            note: "Opt-in voor lagere regelgeving"
+
+          - lid: 3
+            inhoud: "Regels stortingsactiviteiten op zee ook voor NL-geregistreerde vaartuigen/luchtvaartuigen buiten NL/EEZ"
+            extraterritoriale_werking: true
+
+          - lid: 4
+            inhoud: "Regels walvisvangst ook voor NL-geregistreerde vaartuigen buiten NL/EEZ"
+            extraterritoriale_werking: true
+
+        juridische_analyse:
+          note: |
+            EEZ = ca. 58.000 km² Noordzee
+            Internationale verplichtingen (UNCLOS, OSPAR) doorvertaald
+
+  # ===========================================================================
+  # AFDELING 1.3 - ZORG VOOR DE FYSIEKE LEEFOMGEVING
+  # ===========================================================================
+  - afdeling: "1.3"
+    titel: "Zorg voor de fysieke leefomgeving"
+    status: "goed"
+    inwerking: "2024-01-01"
+
+    artikelen:
+      - artikel: "1.6"
+        titel: "(zorgplicht voor een ieder)"
+        status: "goed"
+        type: "zorgplicht"
+        centrale_bepaling: true
+
+        inhoud: "Een ieder draagt voldoende zorg voor de fysieke leefomgeving."
+
+        juridische_analyse:
+          patroon: "ALGEMENE_ZORGPLICHT"
+          normadressaat: "een ieder"
+          karakter: "open norm"
+          note: |
+            Algemene zorgplicht = vangnet
+            Niet rechtstreeks handhaafbaar (te open)
+            Concretisering via art. 1.7 en specifieke regels
+          opvolger_van: "art. 1.1a Wm (oud)"
+
+      - artikel: "1.7"
+        titel: "(activiteit met nadelige gevolgen)"
+        status: "goed"
+        type: "zorgplicht"
+        centrale_bepaling: true
+
+        inhoud: |
+          Een ieder die weet of redelijkerwijs kan vermoeden dat zijn activiteit
+          nadelige gevolgen kan hebben voor de fysieke leefomgeving, is verplicht:
+          a. alle maatregelen te nemen die redelijkerwijs kunnen worden gevraagd
+             om die gevolgen te voorkomen,
+          b. voor zover niet kunnen worden voorkomen: zoveel mogelijk beperken
+             of ongedaan maken,
+          c. als onvoldoende kunnen worden beperkt: activiteit achterwege laten
+             voor zover redelijkerwijs kan worden gevraagd.
+
+        structuur:
+          voorwaarde: "weet of redelijkerwijs kan vermoeden"
+          trapsgewijze_verplichting:
+            stap_1:
+              letter: "a"
+              actie: "voorkomen"
+              norm: "alle redelijke maatregelen"
+            stap_2:
+              letter: "b"
+              actie: "beperken/ongedaan maken"
+              voorwaarde: "voorkomen niet mogelijk"
+            stap_3:
+              letter: "c"
+              actie: "achterwege laten"
+              voorwaarde: "beperken onvoldoende"
+
+        juridische_analyse:
+          patroon: "VOORKOMEN_BEPERKEN_STOPPEN"
+          normadressaat: "een ieder met kennis/vermoeden"
+          note: |
+            Trapsgewijze zorgplicht:
+            1. Voorkomen
+            2. Beperken/ongedaan maken
+            3. Stoppen
+
+            "Redelijkerwijs" = evenredigheidstoets
+            Direct handhaafbaar (concreter dan 1.6)
+          opvolger_van: "art. 1.1a Wm (oud), art. 2.1 Wabo (oud)"
+
+      - artikel: "1.7a"
+        titel: "(verbod activiteit met aanzienlijke nadelige gevolgen)"
+        status: "goed"
+        type: "verbod"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Verbod activiteit te verrichten of na te laten als daardoor
+              aanzienlijke nadelige gevolgen voor de fysieke leefomgeving
+              ontstaan of dreigen te ontstaan.
+            type: "absoluut_verbod"
+            drempel: "aanzienlijk"
+
+          - lid: 2
+            inhoud: |
+              AMvB werkt toepassing lid 1 uit of begrenst deze.
+              Ter uitvoering richtlijn milieustrafrecht, betrekking op:
+              a. omvang nadelige gevolgen
+              b. gevallen waarin lid 1 van toepassing is
+            delegatie: "AMvB"
+            eu_richtlijn: "richtlijn milieustrafrecht"
+
+        juridische_analyse:
+          patroon: "ABSOLUUT_VERBOD"
+          note: |
+            Art. 1.7a = zwaarste categorie
+            "Aanzienlijk" = hoge drempel
+            EU-verplicht (richtlijn milieustrafrecht)
+            Strafrechtelijk vervolgbaar
+
+      - artikel: "1.8"
+        titel: "(verhouding tot specifieke regels)"
+        status: "goed"
+        type: "samenloopregeling"
+
+        leden:
+          - lid: 1
+            inhoud: |
+              Aan verplichtingen art. 1.6 en 1.7 wordt in ieder geval voldaan,
+              voor zover specifieke regels zijn gesteld met oog op doelen wet
+              en die regels worden nageleefd.
+            effect: "compliance met specifieke regels = voldoet aan zorgplicht"
+
+          - lid: 2
+            inhoud: "Art. 1.7a niet van toepassing voor zover specifieke regels zijn gesteld"
+            effect: "specifieke regels verdringen absoluut verbod"
+
+        juridische_analyse:
+          patroon: "LEX_SPECIALIS"
+          note: |
+            Art. 1.8 = samenloopregeling zorgplichten
+            Lid 1: specifieke regels = safe harbour voor 1.6/1.7
+            Lid 2: specifieke regels verdringen 1.7a
+
+            Voorkomt dubbele normering
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE HOOFDSTUK 1
+# =============================================================================
+
+analyse:
+  karakterisering: "Constitutionele kern van het omgevingsrecht"
+
+  drie_pijlers:
+    begrippen:
+      artikel: "1.1"
+      note: "Bijlage-systematiek voor definities"
+
+    reikwijdte_en_doelen:
+      artikelen: ["1.2", "1.3", "1.4", "1.5"]
+      kernbegrippen:
+        - "fysieke leefomgeving (10+ onderdelen)"
+        - "activiteiten met gevolgen"
+        - "beschermen + benutten"
+
+    zorgplichten:
+      artikelen: ["1.6", "1.7", "1.7a", "1.8"]
+      opbouw:
+        - "1.6: algemene zorgplicht (open)"
+        - "1.7: concrete zorgplicht (voorkomen-beperken-stoppen)"
+        - "1.7a: absoluut verbod (aanzienlijke gevolgen)"
+        - "1.8: samenloop met specifieke regels"
+
+  dubbele_doelstelling:
+    beschrijving: "Art. 1.3 = balans tussen beschermen en benutten"
+    pool_a: "Beschermen (veilig, gezond, omgevingskwaliteit, intrinsieke waarde natuur)"
+    pool_b: "Benutten (doelmatig beheren, gebruiken, ontwikkelen)"
+    verbinding: "In onderlinge samenhang"
+
+  zorgplicht_hiërarchie:
+    algemeen: "1.6 - open norm, niet direct handhaafbaar"
+    concreet: "1.7 - trapsgewijs (voorkomen → beperken → stoppen)"
+    absoluut: "1.7a - verbod bij aanzienlijke gevolgen"
+    samenloop: "1.8 - specifieke regels gaan voor"
+
+  fysieke_leefomgeving_onderdelen:
+    expliciet:
+      - "bouwwerken"
+      - "infrastructuur"
+      - "watersystemen"
+      - "water"
+      - "bodem"
+      - "lucht"
+      - "landschappen"
+      - "natuur"
+      - "cultureel erfgoed"
+      - "werelderfgoed"
+    karakter: "niet-limitatief (in ieder geval)"
+
+  koppelingen:
+    naar_ch2:
+      - artikel: "2.1"
+        relatie: "doelgebondenheid uitoefening taken/bevoegdheden (→ art. 1.3 doelen)"
+      - artikel: "2.3"
+        relatie: "subsidiariteit (→ art. 1.4 parallel)"
+    naar_ch4:
+      - artikel: "4.1-4.3"
+        relatie: "specifieke regels als bedoeld in art. 1.8"
+    naar_ch5:
+      - artikel: "5.1"
+        relatie: "vergunningplicht als specifieke regel (art. 1.8)"
+    naar_ch18:
+      - artikel: "18.1"
+        relatie: "handhaving zorgplichten"
+
+  grondwettelijke_basis:
+    artikel_21_gw: "Zorg overheid voor bewoonbaarheid land en bescherming/verbetering leefmilieu"
+    doorwerking: "Art. 1.3 Ow = directe uitwerking van art. 21 Gw"
+
+  praktijk_belang:
+    zorgplicht_als_vangnet: |
+      Art. 1.7 = vangnet voor situaties niet gedekt door specifieke regels
+      Handhavingsgrondslag voor onvoorziene gevallen
+    intrinsieke_waarde_natuur: |
+      Art. 1.3a expliciet: "ook vanwege de intrinsieke waarde van de natuur"
+      Ecocentrisch element naast antropocentrische bescherming
+    nalaten_als_activiteit: |
+      Art. 1.2 lid 3d: nalaten = ook activiteit met gevolgen
+      Relevant voor handhaving bij niet-ingrijpen

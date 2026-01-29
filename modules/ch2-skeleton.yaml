@@ -1,0 +1,1905 @@
+# Omgevingswet Chapter 2 Skeleton Map
+# Taken en bevoegdheden van bestuursorganen
+# Authority assignment and competency distribution logic
+
+_metadata:
+  chapter: 2
+  chapter_title: "Taken en bevoegdheden van bestuursorganen"
+  total_articles: 46
+  afdelingen: 6
+  paragrafen: 10
+  clusters_identified: 9
+  mapping_date: "2026-01-28"
+  key_theme: "WHO has WHAT authority - government layer distribution"
+
+# Structure overview:
+# Afdeling 2.1: Algemene bepalingen (art. 2.1-2.3)
+# Afdeling 2.2: Omgevingsplan, waterschapsverordening en omgevingsverordening (art. 2.4-2.8)
+# Afdeling 2.3: Omgevingswaarden (art. 2.9-2.15a)
+#   - Par. 2.3.1: Algemene bepalingen (art. 2.9-2.10)
+#   - Par. 2.3.2: Omgevingswaarden gemeente (art. 2.11-2.11a)
+#   - Par. 2.3.3: Omgevingswaarden provincie (art. 2.12-2.13a)
+#   - Par. 2.3.4: Omgevingswaarden Rijk (art. 2.14-2.15a)
+# Afdeling 2.4: Toedeling van taken en aanwijzing van locaties (art. 2.16-2.21a)
+#   - Par. 2.4.1: Toedeling van specifieke taken (art. 2.16-2.19)
+#   - Par. 2.4.2: Aanwijzing van locaties (art. 2.20-2.21a)
+# Afdeling 2.5: Instructieregels en instructies (art. 2.22-2.37)
+#   - Par. 2.5.1: Doorwerking van beleid door instructieregels (art. 2.22-2.32)
+#   - Par. 2.5.2: Doorwerking van beleid door instructies (art. 2.33-2.35)
+#   - Par. 2.5.3: Indeplaatstreding en vernietiging (art. 2.36-2.37)
+# Afdeling 2.6: Bijzondere taken en bevoegdheden (art. 2.38-2.46)
+#   - Par. 2.6.1: Water, waterstaatswerken en wegen (art. 2.38-2.42)
+#   - Par. 2.6.2: Bijzondere bevoegdheden geluid (art. 2.43)
+#   - Par. 2.6.3: Bijzondere bevoegdheden natuur en landschap (art. 2.44-2.46)
+
+# =============================================================================
+# SKELETON MAPPINGS
+# =============================================================================
+
+skeleton:
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.1 - ALGEMENE BEPALINGEN
+  # ---------------------------------------------------------------------------
+
+  artikel_2.1:
+    title: "(uitoefening taken en bevoegdheden)"
+    afdeling: "2.1"
+    roles:
+      - definition
+      - condition
+    determines: "General framework: all government authorities exercise tasks/powers with respect to law's goals, considering coherence of physical environment"
+    triggered_by:
+      - source: "external"
+        condition: "Any exercise of tasks/powers under Omgevingswet"
+    routes_to:
+      - target: "artikel 2.2"
+        condition: "When coordination needed with other authorities"
+      - target: "artikel 2.3"
+        condition: "To determine which government layer exercises task"
+    exceptions:
+      - exception: "Specific rules may limit/specify application"
+        defined_in: "lid 3"
+        effect: "Rules may bound or elaborate general principle"
+    delegates_to:
+      - target: "AMvB"
+        for: "Further specification of application limits (lid 3)"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 19  # extensive list in lid 3
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 1  # Waterschapswet
+      delegation_count: 1
+    cluster: "general-principles"
+
+  artikel_2.2:
+    title: "(afstemming en samenwerking)"
+    afdeling: "2.1"
+    roles:
+      - procedure
+      - condition
+    determines: "Coordination duty between authorities - must consider and align with other authorities' tasks"
+    triggered_by:
+      - source: "artikel 2.1"
+        condition: "When exercising any task/power under this law"
+    routes_to:
+      - target: "any subsequent article"
+        condition: "Coordination principle applies throughout"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "general-principles"
+
+  artikel_2.3:
+    title: "(algemene criteria verdeling van taken en bevoegdheden)"
+    afdeling: "2.1"
+    roles:
+      - authority
+      - definition
+    determines: "CORE AUTHORITY HIERARCHY: Municipality default -> Province if provincial interest -> Rijk if national interest"
+    triggered_by:
+      - source: "external"
+        condition: "Need to determine which government layer has competence"
+    routes_to:
+      - target: "artikel 2.12"
+        condition: "Province omgevingswaarden constrained by lid 2"
+      - target: "artikel 2.14"
+        condition: "Rijk omgevingswaarden constrained by lid 3"
+      - target: "artikel 2.20"
+        condition: "Rijkswateren designation constrained by lid 3"
+      - target: "artikel 2.21"
+        condition: "Location designation constrained by lid 3"
+      - target: "artikel 2.22"
+        condition: "Provincial instructieregels constrained by lid 2"
+      - target: "artikel 2.24"
+        condition: "Rijk instructieregels constrained by lid 3"
+      - target: "artikel 2.33"
+        condition: "Provincial instructies constrained by lid 2"
+      - target: "artikel 2.34"
+        condition: "Rijk instructies constrained by lid 3"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 4
+      onderdelen_count: 4
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "general-principles"
+    notes: "CRITICAL - This article is referenced by 12+ other articles as constraint"
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.2 - OMGEVINGSPLAN, WATERSCHAPSVERORDENING EN OMGEVINGSVERORDENING
+  # ---------------------------------------------------------------------------
+
+  artikel_2.4:
+    title: "(omgevingsplan)"
+    afdeling: "2.2"
+    roles:
+      - authority
+      - trigger
+    determines: "Gemeenteraad MUST establish ONE omgevingsplan for entire municipal territory with rules on physical environment"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to:
+      - target: "artikel 2.7"
+        condition: "AMvB may specify required/excluded content"
+      - target: "artikel 2.8"
+        condition: "Delegation to B&W possible"
+      - target: "artikel 2.11"
+        condition: "Omgevingswaarden may be included"
+      - target: "Chapter 4"
+        condition: "Detailed content rules"
+    exceptions: []
+    delegates_to:
+      - target: "artikel 2.8"
+        for: "Delegation of parts to B&W"
+    complexity:
+      leden_count: 0  # single paragraph
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "decentrale-verordeningen"
+
+  artikel_2.5:
+    title: "(waterschapsverordening)"
+    afdeling: "2.2"
+    roles:
+      - authority
+      - trigger
+    determines: "Algemeen bestuur waterschap MUST establish ONE waterschapsverordening with rules on physical environment"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to:
+      - target: "artikel 2.7"
+        condition: "AMvB may specify required/excluded content"
+      - target: "artikel 2.8"
+        condition: "Delegation to dagelijks bestuur possible"
+    exceptions: []
+    delegates_to:
+      - target: "artikel 2.8"
+        for: "Delegation of parts to dagelijks bestuur"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "decentrale-verordeningen"
+
+  artikel_2.6:
+    title: "(omgevingsverordening)"
+    afdeling: "2.2"
+    roles:
+      - authority
+      - trigger
+    determines: "Provinciale staten MUST establish ONE omgevingsverordening with rules on physical environment"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to:
+      - target: "artikel 2.7"
+        condition: "AMvB may specify required/excluded content"
+      - target: "artikel 2.8"
+        condition: "Delegation to GS possible"
+      - target: "artikel 2.12"
+        condition: "Omgevingswaarden may be included"
+      - target: "artikel 2.22"
+        condition: "Instructieregels may be included"
+    exceptions: []
+    delegates_to:
+      - target: "artikel 2.8"
+        for: "Delegation of parts to GS"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "decentrale-verordeningen"
+
+  artikel_2.7:
+    title: "(verplicht opnemen en uitsluiten van decentrale regels)"
+    afdeling: "2.2"
+    roles:
+      - delegation
+      - condition
+    determines: "AMvB can specify what MUST be / MAY NOT be in omgevingsplan/waterschapsverordening/omgevingsverordening"
+    triggered_by:
+      - source: "artikel 2.4"
+        condition: "Content scope of omgevingsplan"
+      - source: "artikel 2.5"
+        condition: "Content scope of waterschapsverordening"
+      - source: "artikel 2.6"
+        condition: "Content scope of omgevingsverordening"
+    routes_to: []
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Specifying required/excluded content"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 2
+    cluster: "decentrale-verordeningen"
+
+  artikel_2.8:
+    title: "(delegatie)"
+    afdeling: "2.2"
+    roles:
+      - delegation
+      - authority
+    determines: "Representative body can delegate adoption of PARTS of verordening to executive body"
+    triggered_by:
+      - source: "artikel 2.4"
+        condition: "Gemeenteraad may delegate to B&W"
+      - source: "artikel 2.5"
+        condition: "Algemeen bestuur may delegate to dagelijks bestuur"
+      - source: "artikel 2.6"
+        condition: "PS may delegate to GS"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "decentrale-verordeningen"
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.3 - OMGEVINGSWAARDEN
+  # ---------------------------------------------------------------------------
+
+  # PARAGRAAF 2.3.1 - Algemene bepalingen
+
+  artikel_2.9:
+    title: "(omgevingswaarden)"
+    afdeling: "2.3"
+    paragraaf: "2.3.1"
+    roles:
+      - definition
+    determines: "Definition of omgevingswaarden: measurable values for state/quality, acceptable load, or acceptable concentration/deposition"
+    triggered_by:
+      - source: "external"
+        condition: "Any omgevingswaarde establishment"
+    routes_to:
+      - target: "artikel 2.10"
+        condition: "Must comply with specification requirements"
+      - target: "artikel 2.11"
+        condition: "If established by gemeente"
+      - target: "artikel 2.12"
+        condition: "If established by provincie"
+      - target: "artikel 2.14"
+        condition: "If established by Rijk"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 3
+      onderdelen_count: 3
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "omgevingswaarden-algemeen"
+
+  artikel_2.10:
+    title: "(aard, termijn en locaties van omgevingswaarden en onderbouwing)"
+    afdeling: "2.3"
+    paragraaf: "2.3.1"
+    roles:
+      - procedure
+      - condition
+    determines: "When establishing omgevingswaarde: must specify type (result/effort obligation), applicable locations, optional deadline, and justification of instruments to achieve it"
+    triggered_by:
+      - source: "artikel 2.9"
+        condition: "Any omgevingswaarde establishment"
+    routes_to: []
+    exceptions:
+      - exception: "Different rules for geluidproductieplafonds"
+        defined_in: "lid 4"
+        effect: "AMvB may set different rules for aard and termijn"
+    delegates_to:
+      - target: "AMvB"
+        for: "Rules on aard/termijn for geluidproductieplafonds (lid 4)"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "omgevingswaarden-algemeen"
+
+  # PARAGRAAF 2.3.2 - Omgevingswaarden gemeente
+
+  artikel_2.11:
+    title: "(omgevingswaarden gemeente)"
+    afdeling: "2.3"
+    paragraaf: "2.3.2"
+    roles:
+      - authority
+      - condition
+    determines: "Gemeente CAN establish omgevingswaarden in omgevingsplan, but NOT in deviation from higher-level omgevingswaarden unless permitted"
+    triggered_by:
+      - source: "artikel 2.4"
+        condition: "When adopting omgevingsplan"
+    routes_to: []
+    exceptions:
+      - exception: "Cannot deviate from provincial/Rijk omgevingswaarden"
+        defined_in: "lid 2"
+        effect: "Unless higher level explicitly permits deviation"
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 4  # refs to 2.12a, 2.13a, 2.15
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "omgevingswaarden-gemeente"
+
+  artikel_2.11a:
+    title: "(verplichte omgevingswaarden gemeente voor geluidproductie industrieterreinen)"
+    afdeling: "2.3"
+    paragraaf: "2.3.2"
+    roles:
+      - authority
+      - trigger
+    determines: "Gemeente MUST establish geluidproductieplafonds around industrial areas with significant noise activities (as designated by AMvB)"
+    triggered_by:
+      - source: "AMvB"
+        condition: "Designation of activities causing significant noise"
+    routes_to: []
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of noise-causing activities"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "omgevingswaarden-gemeente"
+
+  # PARAGRAAF 2.3.3 - Omgevingswaarden provincie
+
+  artikel_2.12:
+    title: "(omgevingswaarden provincie)"
+    afdeling: "2.3"
+    paragraaf: "2.3.3"
+    roles:
+      - authority
+      - condition
+    determines: "Provincie CAN establish omgevingswaarden in omgevingsverordening (within art. 2.3 lid 2 limits), but NOT in deviation from Rijk omgevingswaarden unless permitted"
+    triggered_by:
+      - source: "artikel 2.6"
+        condition: "When adopting omgevingsverordening"
+    routes_to: []
+    exceptions:
+      - exception: "Cannot deviate from Rijk omgevingswaarden"
+        defined_in: "lid 2"
+        effect: "Unless Rijk explicitly permits deviation"
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 2  # refs to 2.3, 2.15
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "omgevingswaarden-provincie"
+
+  artikel_2.12a:
+    title: "(omgevingswaarden provincie voor geluidproductie industrieterreinen)"
+    afdeling: "2.3"
+    paragraaf: "2.3.3"
+    roles:
+      - authority
+      - delegation
+    determines: "Provincie CAN designate industrial areas (in omgevingsverordening) for which PS establishes geluidproductieplafonds by separate besluit; may delegate to GS"
+    triggered_by:
+      - source: "artikel 2.6"
+        condition: "When adopting omgevingsverordening"
+    routes_to:
+      - target: "artikel 2.25"
+        condition: "Instructieregels may apply to this besluit"
+    exceptions: []
+    delegates_to:
+      - target: "GS"
+        for: "Delegation of geluidproductieplafonds establishment (lid 2)"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.3
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "omgevingswaarden-provincie"
+
+  artikel_2.13:
+    title: "(verplichte omgevingswaarden provincie voor watersystemen)"
+    afdeling: "2.3"
+    paragraaf: "2.3.3"
+    roles:
+      - authority
+      - trigger
+    determines: "Provincie MUST establish omgevingswaarden for: (a) safety of designated non-primary water barriers, (b) flooding probability of designated areas"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "omgevingswaarden-provincie"
+
+  artikel_2.13a:
+    title: "(verplichte omgevingswaarden provincie voor geluidproductie wegen en lokale spoorwegen)"
+    afdeling: "2.3"
+    paragraaf: "2.3.3"
+    roles:
+      - authority
+      - trigger
+      - delegation
+    determines: "PS MUST establish geluidproductieplafonds for designated provincial roads and local railways (outside Wet personenvervoer areas); may delegate to GS"
+    triggered_by:
+      - source: "artikel 2.6"
+        condition: "Designation in omgevingsverordening triggers obligation"
+    routes_to:
+      - target: "artikel 2.16"
+        condition: "Municipality tasks exclude these designated roads/railways"
+      - target: "artikel 2.18"
+        condition: "Provincial tasks include these designated roads/railways"
+    exceptions: []
+    delegates_to:
+      - target: "GS"
+        for: "Delegation of geluidproductieplafonds establishment (lid 2)"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 1  # Wet personenvervoer 2000
+      delegation_count: 1
+    cluster: "omgevingswaarden-provincie"
+
+  # PARAGRAAF 2.3.4 - Omgevingswaarden Rijk
+
+  artikel_2.14:
+    title: "(omgevingswaarden Rijk)"
+    afdeling: "2.3"
+    paragraaf: "2.3.4"
+    roles:
+      - authority
+      - delegation
+    determines: "Rijk CAN establish omgevingswaarden by AMvB (within art. 2.3 lid 3 limits)"
+    triggered_by:
+      - source: "external"
+        condition: "Policy decision to establish national omgevingswaarden"
+    routes_to:
+      - target: "artikel 2.15"
+        condition: "Mandatory omgevingswaarden"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Establishment of omgevingswaarden"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.3
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "omgevingswaarden-rijk"
+
+  artikel_2.15:
+    title: "(verplichte omgevingswaarden Rijk)"
+    afdeling: "2.3"
+    paragraaf: "2.3.4"
+    roles:
+      - authority
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish omgevingswaarden for: air quality, water quality (surface/groundwater), swim water quality, primary water barriers safety, and geluidproductieplafonds for rijkswegen/hoofdspoorwegen"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+      - source: "EU directives"
+        condition: "Luchtkwaliteit, kaderrichtlijn water, zwemwaterrichtlijn"
+    routes_to:
+      - target: "artikel 2.11"
+        condition: "Constrains gemeente omgevingswaarden"
+      - target: "artikel 2.12"
+        condition: "Constrains provincie omgevingswaarden"
+      - target: "artikel 2.19"
+        condition: "Linked to Rijk infrastructure tasks"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Detailed omgevingswaarden (lid 1)"
+      - target: "Minister I&W besluit"
+        for: "Geluidproductieplafonds rijkswegen/hoofdspoorwegen (lid 2)"
+      - target: "ministeriele regeling"
+        for: "Technical specifications for water barriers (lid 4-5)"
+    complexity:
+      leden_count: 6
+      onderdelen_count: 8  # lid 1: 5, lid 2: 2, lid 3: 3
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 4
+    cluster: "omgevingswaarden-rijk"
+    notes: "CRITICAL - Core mandatory quality standards"
+
+  artikel_2.15a:
+    title: "(omgevingswaarden stikstofdepositie)"
+    afdeling: "2.3"
+    paragraaf: "2.3.4"
+    roles:
+      - authority
+      - trigger
+      - outcome
+    determines: "Specific nitrogen deposition targets: 40% by 2025, 50% by 2030, 74% by 2035 (result obligations); review in 2028; future legislation required"
+    triggered_by:
+      - source: "external"
+        condition: "Natura 2000 protection needs"
+    routes_to:
+      - target: "artikel 2.46"
+        condition: "Stikstofdepositieruimte mechanism"
+      - target: "Chapter 3 programma's"
+        condition: "Programs to achieve targets"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 4
+      onderdelen_count: 3  # percentage targets
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "omgevingswaarden-rijk"
+    notes: "POLITICALLY SENSITIVE - stikstof targets"
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.4 - TOEDELING VAN TAKEN EN AANWIJZING VAN LOCATIES
+  # ---------------------------------------------------------------------------
+
+  # PARAGRAAF 2.4.1 - Toedeling van specifieke taken
+
+  artikel_2.16:
+    title: "(gemeentelijke taken voor de fysieke leefomgeving)"
+    afdeling: "2.4"
+    paragraaf: "2.4.1"
+    roles:
+      - authority
+      - definition
+    determines: "Enumeration of GEMEENTE tasks: watersysteem/ketenbeheer (hemelwater, grondwater, stedelijk afvalwater, watersysteem if assigned), roads not managed by others, noise management (gemeentelijke wegen, non-designated local railways, non-designated industrial areas)"
+    triggered_by:
+      - source: "external"
+        condition: "Task assignment - statutory"
+    routes_to:
+      - target: "artikel 2.17"
+        condition: "Interface with waterschap tasks"
+      - target: "artikel 2.18"
+        condition: "Interface with province tasks"
+      - target: "artikel 2.19"
+        condition: "Interface with Rijk tasks"
+    exceptions:
+      - exception: "Tasks exclude those assigned to waterschap/province/Rijk"
+        defined_in: "lid 1"
+        effect: "Careful boundary definitions"
+    delegates_to: []
+    complexity:
+      leden_count: 3
+      onderdelen_count: 9  # extensive enumeration
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 5  # refs to 2.17, 2.18, 2.19, 2.13a, 2.12a
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "takentoedeling"
+
+  artikel_2.17:
+    title: "(waterschapstaken voor de fysieke leefomgeving)"
+    afdeling: "2.4"
+    paragraaf: "2.4.1"
+    roles:
+      - authority
+      - definition
+    determines: "Enumeration of WATERSCHAP tasks: watersysteem/ketenbeheer (watersystemen if assigned, zuivering stedelijk afvalwater), roads if assigned by province, noise from those roads"
+    triggered_by:
+      - source: "externe"
+        condition: "Task assignment - statutory"
+      - source: "artikel 2.18"
+        condition: "Provincial assignment of watersystems and roads"
+    routes_to:
+      - target: "artikel 2.16"
+        condition: "Interface with gemeente tasks"
+      - target: "artikel 2.18"
+        condition: "Tasks assigned by province"
+    exceptions:
+      - exception: "Zuiveringstaak can be transferred to gemeente"
+        defined_in: "lid 3"
+        effect: "Joint decision waterschap+gemeente if more efficient"
+    delegates_to:
+      - target: "andere rechtspersoon"
+        for: "Exploitation of zuiveringtechnisch werk (lid 2)"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 5
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 2  # refs to 2.18, 2.20
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "takentoedeling"
+
+  artikel_2.18:
+    title: "(provinciale taken voor de fysieke leefomgeving)"
+    afdeling: "2.4"
+    paragraaf: "2.4.1"
+    roles:
+      - authority
+      - definition
+    determines: "Enumeration of PROVINCE tasks: coordination, stiltegebieden, grondwaterbescherming, watersysteem/zwemwater (supervision, assignment), infrastructure (regionale luchthavens, lokaal spoor, provinciale wegen), noise (designated roads/railways/industrial), nature (soorten/habitats, Natura 2000, invasive species)"
+    triggered_by:
+      - source: "external"
+        condition: "Task assignment - statutory"
+    routes_to:
+      - target: "artikel 2.16"
+        condition: "Assigns tasks to gemeente"
+      - target: "artikel 2.17"
+        condition: "Assigns tasks to waterschap"
+      - target: "artikel 2.19"
+        condition: "Interface with Rijk tasks"
+      - target: "artikel 2.13a"
+        condition: "Geluidproductieplafonds designated roads/railways"
+      - target: "artikel 2.12a"
+        condition: "Geluidproductieplafonds designated industrial"
+    exceptions:
+      - exception: "Lokaal spoor in WPV2000 areas: different authority"
+        defined_in: "lid 3"
+        effect: "Task at dagelijks bestuur openbaar lichaam"
+    delegates_to:
+      - target: "AMvB"
+        for: "Specification of nature tasks (lid 1.g)"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 15+  # extensive enumeration with sub-levels
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 4  # refs to 2.3, 2.16, 2.17, 2.19
+      external_refs_count: 2  # Waterschapswet, Wet personenvervoer 2000
+      delegation_count: 1
+    cluster: "takentoedeling"
+    notes: "COMPLEX - Many sub-categories and cross-references"
+
+  artikel_2.19:
+    title: "(rijkstaken voor de fysieke leefomgeving)"
+    afdeling: "2.4"
+    paragraaf: "2.4.1"
+    roles:
+      - authority
+      - definition
+    determines: "Enumeration of RIJK tasks by Minister: I&W (rijkswateren, kustlijn, toezicht waterkeringen, technische leidraden; rijksinfra, geluid), Defensie (militaire infrastructuur), BZK (toezicht digitaal stelsel), Natuur&Stikstof (bijzondere nationale natuurgebieden, instandhoudingsdoelen, rode lijsten, invasive species except provincial)"
+    triggered_by:
+      - source: "external"
+        condition: "Task assignment - statutory"
+    routes_to:
+      - target: "artikel 2.15"
+        condition: "Linked to Rijk omgevingswaarden"
+      - target: "artikel 2.20"
+        condition: "Rijkswateren designation"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Specification of nature tasks and Minister designation"
+    complexity:
+      leden_count: 5
+      onderdelen_count: 20+  # extensive enumeration
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 3  # refs to 2.15, 2.18, 2.20
+      external_refs_count: 1  # Spoorwegwet
+      delegation_count: 1
+    cluster: "takentoedeling"
+    notes: "COMPLEX - Tasks distributed across multiple Ministers"
+
+  # PARAGRAAF 2.4.2 - Aanwijzing van locaties
+
+  artikel_2.20:
+    title: "(aanwijzing en begrenzing van rijkswateren)"
+    afdeling: "2.4"
+    paragraaf: "2.4.2"
+    roles:
+      - authority
+      - delegation
+    determines: "AMvB designates rijkswateren (water barriers, surface water); ministeriele regeling geometrically bounds them; ministeriele regeling can assign management to non-Rijk bodies"
+    triggered_by:
+      - source: "artikel 2.19"
+        condition: "Specification of Rijk water management tasks"
+    routes_to:
+      - target: "artikel 2.16"
+        condition: "Tasks for non-rijkswateren"
+      - target: "artikel 2.17"
+        condition: "Tasks for non-rijkswateren"
+      - target: "artikel 2.39"
+        condition: "Legger requirements"
+    exceptions:
+      - exception: "Management can be with non-Rijk bodies"
+        defined_in: "lid 3"
+        effect: "Ministeriele regeling designation"
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of rijkswateren (lid 1)"
+      - target: "ministeriele regeling"
+        for: "Geometric boundaries (lid 2), alternative management (lid 3)"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 1  # ref to 2.3
+      external_refs_count: 0
+      delegation_count: 3
+    cluster: "locatie-aanwijzing"
+
+  artikel_2.21:
+    title: "(grondslag aanwijzing en begrenzing van andere locaties)"
+    afdeling: "2.4"
+    paragraaf: "2.4.2"
+    roles:
+      - authority
+      - delegation
+    determines: "Ministeriele regeling can designate and geometrically bound other locations; MUST designate stroomgebiedsdistricten and zones/agglomeraties for EU directives"
+    triggered_by:
+      - source: "EU directives"
+        condition: "Kaderrichtlijn water, richtlijn omgevingslawaai, richtlijn luchtkwaliteit"
+    routes_to: []
+    exceptions: []
+    delegates_to:
+      - target: "ministeriele regeling"
+        for: "Location designation and bounding"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 2  # refs to 2.3, 2.20
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "locatie-aanwijzing"
+
+  artikel_2.21a:
+    title: "(aanwijzing en begrenzing van beperkingengebieden)"
+    afdeling: "2.4"
+    paragraaf: "2.4.2"
+    roles:
+      - authority
+      - delegation
+    determines: "Ministeriele regeling MUST designate beperkingengebieden for: rijkswegen, rijkswaterstaatswerken, hoofdspoorweg, installations in waterstaatswerk (except mijnbouw); default distance rules until designated; special rule for mijnbouwinstallaties"
+    triggered_by:
+      - source: "artikel 2.21"
+        condition: "Location designation framework"
+    routes_to:
+      - target: "Chapter 5"
+        condition: "Vergunning requirements in beperkingengebieden"
+    exceptions:
+      - exception: "Mijnbouwinstallaties have own distance rule"
+        defined_in: "lid 3"
+        effect: "AMvB sets distance per offshore safety directive"
+    delegates_to:
+      - target: "ministeriele regeling"
+        for: "Beperkingengebied designation (lid 1)"
+      - target: "AMvB"
+        for: "Default distances (lid 2), mijnbouw distances (lid 3)"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 4
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 1  # ref to 2.21
+      external_refs_count: 0
+      delegation_count: 3
+    cluster: "locatie-aanwijzing"
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.5 - INSTRUCTIEREGELS EN INSTRUCTIES
+  # ---------------------------------------------------------------------------
+
+  # PARAGRAAF 2.5.1 - Doorwerking van beleid door instructieregels
+
+  artikel_2.22:
+    title: "(grondslag algemene instructieregels provincie)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - authority
+      - delegation
+    determines: "Province CAN establish instructieregels in omgevingsverordening (within art. 2.3 lid 2) to achieve provincial omgevingswaarden or other physical environment goals"
+    triggered_by:
+      - source: "artikel 2.6"
+        condition: "When adopting omgevingsverordening"
+    routes_to:
+      - target: "artikel 2.23"
+        condition: "Content constraints"
+      - target: "artikel 2.32"
+        condition: "Ontheffing possible"
+      - target: "artikel 2.33"
+        condition: "Alternative: individual instructie"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.3
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "instructieregels-provincie"
+
+  artikel_2.23:
+    title: "(inhoud instructieregels provincie)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - condition
+      - procedure
+    determines: "Provincial instructieregels can ONLY concern: content/motivation of programs, omgevingsplan, waterschapsverordening, maatwerkvoorschrift, projectbesluit, article 5.53 decisions, legger/peilbesluit; OR execution of tasks in art. 2.16-2.18. Additional constraints for omgevingsplan/waterschapsverordening content. May set deadline. MUST include deviation clause."
+    triggered_by:
+      - source: "artikel 2.22"
+        condition: "When province wants to adopt instructieregels"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 5
+      onderdelen_count: 12+  # extensive enumeration
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 8+  # many cross-references
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "instructieregels-provincie"
+    notes: "COMPLEX - Detailed scope limitations"
+
+  artikel_2.24:
+    title: "(grondslag algemene instructieregels Rijk)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - authority
+      - delegation
+    determines: "Rijk CAN establish instructieregels by AMvB (within art. 2.3 lid 3) to achieve Rijk omgevingswaarden or other physical environment goals; ministeriele regeling for location/geometric or technical aspects; can also apply to spoorwegbeheerder"
+    triggered_by:
+      - source: "external"
+        condition: "Policy decision to establish instructieregels"
+    routes_to:
+      - target: "artikel 2.25"
+        condition: "Content constraints"
+      - target: "artikelen 2.26-2.31a"
+        condition: "Mandatory instructieregels"
+      - target: "artikel 2.32"
+        condition: "Ontheffing possible"
+      - target: "artikel 2.34"
+        condition: "Alternative: individual instructie"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels (lid 1)"
+      - target: "ministeriele regeling"
+        for: "Location/geometric or technical aspects (lid 2)"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 2  # refs to 2.3, 2.19
+      external_refs_count: 1  # Spoorwegwet
+      delegation_count: 2
+    cluster: "instructieregels-rijk"
+
+  artikel_2.25:
+    title: "(inhoud instructieregels Rijk)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - condition
+      - procedure
+    determines: "Rijk instructieregels can ONLY concern: content/motivation of extensive list of programs/decisions/plans; OR execution of tasks/powers. Additional constraints for omgevingsplan/waterschapsverordening/omgevingsverordening content. May set deadline. MUST include deviation clause. May allow omgevingsverordening to set different/additional rules."
+    triggered_by:
+      - source: "artikel 2.24"
+        condition: "When Rijk wants to adopt instructieregels"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 6
+      onderdelen_count: 20+  # extensive enumeration
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 15+  # many cross-references
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "instructieregels-rijk"
+    notes: "VERY COMPLEX - Most detailed scope article"
+
+  artikel_2.26:
+    title: "(verplichte instructieregels Rijk programma's)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for programs arising from international obligations (11 EU directives listed)"
+    triggered_by:
+      - source: "EU directives"
+        condition: "International obligations"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for EU-required programs"
+    complexity:
+      leden_count: 3
+      onderdelen_count: 11  # directive list
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.24
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.27:
+    title: "(verplichte instructieregels Rijk omgevingsverordening)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for omgevingsverordeningen on: cultural heritage, world heritage, noise in stiltegebieden, groundwater quality, regional airports, local railways, noise from roads/railways"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for omgevingsverordeningen"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 6
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.24
+      external_refs_count: 1  # Wet personenvervoer 2000
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.28:
+    title: "(verplichte instructieregels Rijk omgevingsplan en projectbesluit)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for omgevingsplannen and projectbesluiten on: cultural heritage, world heritage, external safety (Seveso), noise, infrastructure protection, accessibility, Wadden mijnbouw exclusion, soil protection, jacht/houtopstanden locations"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+      - source: "EU directives"
+        condition: "Seveso, verdrag van Granada, verdrag van Valletta, Europees landschapsverdrag, werelderfgoedverdrag"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for omgevingsplannen/projectbesluiten"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 10
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 2  # refs to 2.24, 2.19
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.29:
+    title: "(verplichte instructieregels Rijk omgevingsplan en projectbesluit voor luchthavens)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for omgevingsplannen and projectbesluiten around airports: luchthavengebied and beperkingengebied inclusion, function/activity rules"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+      - source: "verdrag van Chicago"
+        condition: "International aviation treaty"
+    routes_to:
+      - target: "Wet luchtvaart"
+        condition: "Interface with aviation law"
+    exceptions:
+      - exception: "Not yet in force"
+        defined_in: "lid 4"
+        effect: "Awaits koninklijk besluit activation"
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for airports"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 7
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 2  # refs to 2.24, 2.25
+      external_refs_count: 1  # Wet luchtvaart
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.29a:
+    title: "(verplichte instructieregels Rijk geluidproductieplafonds)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for decisions establishing geluidproductieplafonds (health protection)"
+    triggered_by:
+      - source: "external"
+        condition: "Legal obligation - mandatory"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for geluidproductieplafonds decisions"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.24
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.30:
+    title: "(verplichte instructieregels Rijk zwemlocaties)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for: swim location designation, swim location tasks, badseizoen determination (EU zwemwaterrichtlijn)"
+    triggered_by:
+      - source: "EU zwemwaterrichtlijn"
+        condition: "International obligation"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for swim locations"
+    complexity:
+      leden_count: 0
+      onderdelen_count: 3
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 2  # refs to 2.24, 2.18, 2.38
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.31:
+    title: "(verplichte instructieregels Rijk stedelijk afvalwater)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for design, construction and maintenance of public sewers (EU richtlijn stedelijk afvalwater)"
+    triggered_by:
+      - source: "EU richtlijn stedelijk afvalwater"
+        condition: "International obligation"
+    routes_to:
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for sewer design/construction/maintenance"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.24
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.31a:
+    title: "(verplichte instructieregels Rijk natuurgebieden, flora en fauna)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - trigger
+      - delegation
+    determines: "Rijk MUST establish instructieregels for: species/habitat conservation, Natura 2000 designation/protection, bijzondere nationale natuurgebieden, natuurnetwerk Nederland, nationale parken, habitatrichtlijn art. 6(3) plans. MAY establish rules on stikstofdepositieruimte registration and allocation."
+    triggered_by:
+      - source: "EU vogelrichtlijn, habitatrichtlijn"
+        condition: "International obligations"
+    routes_to:
+      - target: "artikel 2.44"
+        condition: "Nature area designation"
+      - target: "artikel 2.46"
+        condition: "Stikstofdepositieruimte mechanism"
+      - target: "Bkl"
+        condition: "Implementation in Besluit kwaliteit leefomgeving"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Instructieregels for nature areas and species"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 8
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.24, 2.25
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "instructieregels-verplicht"
+
+  artikel_2.32:
+    title: "(ontheffing instructieregels)"
+    afdeling: "2.5"
+    paragraaf: "2.5.1"
+    roles:
+      - exception
+      - procedure
+    determines: "Ontheffing from instructieregels possible: province rules -> GS grants; Rijk rules -> Minister grants (with possible overeenstemming); Rijk rules with provincial location -> GS may grant. Strict test: disproportionate hindrance vs. protected interest. Conditions and time limits possible."
+    triggered_by:
+      - source: "artikel 2.22"
+        condition: "Provincial instructieregels may include ontheffing option"
+      - source: "artikel 2.24"
+        condition: "Rijk instructieregels may include ontheffing option"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 6
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 3  # refs to 2.22, 2.24, 2.25
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "instructieregels-algemeen"
+
+  # PARAGRAAF 2.5.2 - Doorwerking van beleid door instructies
+
+  artikel_2.33:
+    title: "(grondslag instructie provincie)"
+    afdeling: "2.5"
+    paragraaf: "2.5.2"
+    roles:
+      - authority
+      - procedure
+    determines: "GS CAN give individual instructie to gemeente or waterschap (within art. 2.3 lid 2); only for: omgevingsplan evenwichtige toedeling, waterschap noise management, waterschap water management, waterschap projectbesluit. Art. 2.23(2,4) applies analogously. Cannot be used if Gemeentewet/Waterschapswet measures available."
+    triggered_by:
+      - source: "external"
+        condition: "Province identifies need for specific municipal/waterschap action"
+    routes_to:
+      - target: "artikel 2.35"
+        condition: "Application constraints"
+      - target: "artikel 2.36"
+        condition: "Indeplaatstreding if not followed"
+    exceptions:
+      - exception: "Cannot use if Gemeentewet/Waterschapswet applies"
+        defined_in: "lid 4"
+        effect: "Subsidiarity to existing supervision"
+    delegates_to: []
+    complexity:
+      leden_count: 4
+      onderdelen_count: 4
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 4  # refs to 2.3, 2.23, 2.17, 4.2
+      external_refs_count: 2  # Gemeentewet, Waterschapswet
+      delegation_count: 0
+    cluster: "instructies-provincie"
+
+  artikel_2.34:
+    title: "(grondslag instructie Rijk)"
+    afdeling: "2.5"
+    paragraaf: "2.5.2"
+    roles:
+      - authority
+      - procedure
+    determines: "Minister CAN give individual instructie to province, gemeente or waterschap (within art. 2.3 lid 3); for various topics (omgevingsverordening, projectbesluit, geluidproductieplafonds, omgevingsplan). Special: I&W for water management; OCW for stads/dorpsgezichten. Art. 2.25(2,4) applies analogously. Cannot be used if other supervision available."
+    triggered_by:
+      - source: "external"
+        condition: "Rijk identifies need for specific decentral action"
+    routes_to:
+      - target: "artikel 2.35"
+        condition: "Application constraints"
+      - target: "artikel 2.36"
+        condition: "Indeplaatstreding if not followed"
+    exceptions:
+      - exception: "Cannot use if Gemeentewet/Provinciewet/EU enforcement applies"
+        defined_in: "lid 6"
+        effect: "Subsidiarity to existing supervision"
+    delegates_to: []
+    complexity:
+      leden_count: 6
+      onderdelen_count: 5
+      has_nested_lists: true
+      has_exceptions: true
+      internal_refs_count: 4  # refs to 2.3, 2.25, 2.22, 4.1, 4.2, 2.12a
+      external_refs_count: 3  # Gemeentewet, Provinciewet, Wet Naleving EU
+      delegation_count: 0
+    cluster: "instructies-rijk"
+
+  artikel_2.35:
+    title: "(toepassing instructie)"
+    afdeling: "2.5"
+    paragraaf: "2.5.2"
+    roles:
+      - condition
+    determines: "Instructie cannot be for repeated application by multiple authorities (use instructieregels instead). Instructie for provincial/national interest only if that interest is stated in public document."
+    triggered_by:
+      - source: "artikel 2.33"
+        condition: "When province considers giving instructie"
+      - source: "artikel 2.34"
+        condition: "When Rijk considers giving instructie"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.3
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "instructies-algemeen"
+
+  # PARAGRAAF 2.5.3 - Indeplaatstreding en vernietiging waterschapsbeslissingen
+
+  artikel_2.36:
+    title: "(bevoegdheid tot indeplaatstreding)"
+    afdeling: "2.5"
+    paragraaf: "2.5.3"
+    roles:
+      - authority
+      - procedure
+    determines: "GS can act in place of and at expense of waterschap if: instructie not followed, chapter 18 action not taken. Minister can do same for: instructie not followed, chapter 18 action not taken, digital stelsel task not performed."
+    triggered_by:
+      - source: "artikel 2.33"
+        condition: "Provincial instructie not followed"
+      - source: "artikel 2.34"
+        condition: "Rijk instructie not followed"
+      - source: "Chapter 18"
+        condition: "Enforcement action not taken"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 3
+      onderdelen_count: 5
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 4  # refs to 2.33, 2.34, 12.18, 18, 20.5
+      external_refs_count: 1  # Provinciewet
+      delegation_count: 0
+    cluster: "toezicht-waterschappen"
+
+  artikel_2.37:
+    title: "(vernietiging waterschapsbeslissingen door het Rijk)"
+    afdeling: "2.5"
+    paragraaf: "2.5.3"
+    roles:
+      - authority
+      - procedure
+    determines: "Waterschap besluit can be annulled by koninklijk besluit if contrary to: Rijk instructieregels/instructies, or chapter 18 rules."
+    triggered_by:
+      - source: "artikel 2.24"
+        condition: "Violation of Rijk instructieregels"
+      - source: "artikel 2.34"
+        condition: "Violation of Rijk instructie"
+      - source: "Chapter 18"
+        condition: "Violation of enforcement rules"
+    routes_to: []
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 2
+      has_nested_lists: true
+      has_exceptions: false
+      internal_refs_count: 3  # refs to 2.24, 2.34, 18
+      external_refs_count: 2  # Provinciewet, Awb
+      delegation_count: 0
+    cluster: "toezicht-waterschappen"
+
+  # ---------------------------------------------------------------------------
+  # AFDELING 2.6 - BIJZONDERE TAKEN EN BEVOEGDHEDEN
+  # ---------------------------------------------------------------------------
+
+  # PARAGRAAF 2.6.1 - Water, waterstaatswerken en wegen
+
+  artikel_2.38:
+    title: "(zwemverbod en negatief zwemadvies)"
+    afdeling: "2.6"
+    paragraaf: "2.6.1"
+    roles:
+      - authority
+    determines: "GS can issue negative swim advice or swim prohibition for surface waters (safety or health reasons)"
+    triggered_by:
+      - source: "external"
+        condition: "Safety or health concern at swim location"
+    routes_to:
+      - target: "artikel 2.30"
+        condition: "Instructieregels apply"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 0
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "bijzondere-bevoegdheden-water"
+
+  artikel_2.39:
+    title: "(legger)"
+    afdeling: "2.6"
+    paragraaf: "2.6.1"
+    roles:
+      - authority
+      - procedure
+    determines: "Waterstaatswerk manager MUST establish legger describing required location, form, size, construction. Technical beheerregister required for primary/designated water barriers. Exemption possible by omgevingsverordening or AMvB."
+    triggered_by:
+      - source: "artikel 2.17"
+        condition: "Waterschap waterstaatswerk management"
+      - source: "artikel 2.19"
+        condition: "Rijk waterstaatswerk management"
+    routes_to:
+      - target: "artikel 2.23"
+        condition: "Provincial instructieregels may apply"
+      - target: "artikel 2.25"
+        condition: "Rijk instructieregels may apply"
+    exceptions:
+      - exception: "Exemption for unsuitable or small works"
+        defined_in: "lid 4"
+        effect: "Omgevingsverordening or AMvB exemption"
+      - exception: "Not applicable if managed by non-waterschap/non-Rijk body"
+        defined_in: "lid 2"
+        effect: "Per art. 2.18(2) or 2.20(3)"
+    delegates_to:
+      - target: "omgevingsverordening or AMvB"
+        for: "Exemption from legger requirement"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 4  # refs to 2.18, 2.20, 2.13, 2.15
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "bijzondere-bevoegdheden-water"
+
+  artikel_2.40:
+    title: "(toegangsverbod waterstaatswerken en wegen)"
+    afdeling: "2.6"
+    paragraaf: "2.6.1"
+    roles:
+      - authority
+    determines: "Minister I&W can restrict/prohibit access to Rijk waterstaatswerk or road (not applying to public traffic)"
+    triggered_by:
+      - source: "external"
+        condition: "Safety or management need"
+    routes_to: []
+    exceptions:
+      - exception: "Does not apply to public traffic use"
+        defined_in: "lid 2"
+        effect: "Traffic rules remain separate"
+    delegates_to: []
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: true
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "bijzondere-bevoegdheden-water"
+
+  artikel_2.41:
+    title: "(peilbesluit)"
+    afdeling: "2.6"
+    paragraaf: "2.6.1"
+    roles:
+      - authority
+      - procedure
+    determines: "Waterschap/other designated body MUST establish peilbesluit for waters designated by omgevingsverordening. Minister I&W MUST establish for waters designated by AMvB. Peilbesluit sets water levels or bandwidths for specified periods/circumstances."
+    triggered_by:
+      - source: "artikel 2.18"
+        condition: "Water management task"
+      - source: "omgevingsverordening"
+        condition: "Water designation"
+      - source: "AMvB"
+        condition: "Rijkswater designation"
+    routes_to:
+      - target: "artikel 2.23"
+        condition: "Provincial instructieregels may apply"
+      - target: "artikel 2.25"
+        condition: "Rijk instructieregels may apply"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 3
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 1  # ref to 2.18
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "bijzondere-bevoegdheden-water"
+
+  artikel_2.42:
+    title: "(rangorde bij waterschaarste)"
+    afdeling: "2.6"
+    paragraaf: "2.6.1"
+    roles:
+      - authority
+      - delegation
+    determines: "AMvB establishes priority ranking of societal/ecological needs for surface water distribution in scarcity. Additional rules by AMvB or omgevingsverordening possible. May extend to groundwater."
+    triggered_by:
+      - source: "external"
+        condition: "Water scarcity situation"
+    routes_to: []
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Priority ranking (lid 1)"
+      - target: "AMvB/omgevingsverordening"
+        for: "Additional rules (lid 2)"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 2
+    cluster: "bijzondere-bevoegdheden-water"
+
+  # PARAGRAAF 2.6.2 - Bijzondere bevoegdheden geluid
+
+  artikel_2.43:
+    title: "(geluidwerende maatregelen aan gebouwen)"
+    afdeling: "2.6"
+    paragraaf: "2.6.2"
+    roles:
+      - authority
+      - procedure
+    determines: "B&W, dagelijks bestuur waterschap, GS, Minister I&W determine by besluit whether and which noise-reducing measures for buildings (in AMvB-designated cases). Besluit withdrawn in AMvB cases/grounds."
+    triggered_by:
+      - source: "AMvB"
+        condition: "Designated cases requiring noise measures"
+    routes_to:
+      - target: "artikel 2.25"
+        condition: "Instructieregels may apply"
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Designation of cases (lid 1), withdrawal grounds (lid 2)"
+    complexity:
+      leden_count: 2
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 2
+    cluster: "bijzondere-bevoegdheden-geluid"
+
+  # PARAGRAAF 2.6.3 - Bijzondere bevoegdheden natuur en landschap
+
+  artikel_2.44:
+    title: "(aanwijzing natuurgebieden en landschappen)"
+    afdeling: "2.6"
+    paragraaf: "2.6.3"
+    roles:
+      - authority
+      - trigger
+    determines: "Minister Natuur&Stikstof: MUST designate Natura 2000 areas + instandhoudingsdoelstellingen; CAN designate bijzondere nationale natuurgebieden + doelstellingen; CAN designate nationale parken. Omgevingsverordening: MUST designate natuurnetwerk Nederland; CAN designate bijzondere provinciale natuurgebieden/landschappen."
+    triggered_by:
+      - source: "EU vogelrichtlijn, habitatrichtlijn"
+        condition: "Natura 2000 designation obligation"
+    routes_to:
+      - target: "artikel 2.45"
+        condition: "Access restrictions possible"
+      - target: "artikel 2.31a"
+        condition: "Instructieregels apply"
+      - target: "artikel 2.25"
+        condition: "Instructieregels may apply"
+    exceptions: []
+    delegates_to: []
+    complexity:
+      leden_count: 5
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 0
+    cluster: "bijzondere-bevoegdheden-natuur"
+
+  artikel_2.45:
+    title: "(toegangsbeperking natuurgebieden)"
+    afdeling: "2.6"
+    paragraaf: "2.6.3"
+    roles:
+      - authority
+    determines: "GS can restrict/prohibit access to Natura 2000 area (or Minister if managed by other Minister). Minister Natuur&Stikstof can restrict/prohibit access to bijzonder nationaal natuurgebied (or GS in AMvB cases)."
+    triggered_by:
+      - source: "artikel 2.44"
+        condition: "Area designated"
+    routes_to: []
+    exceptions: []
+    delegates_to:
+      - target: "AMvB"
+        for: "Cases where GS has bijzonder nationaal natuurgebied authority"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "bijzondere-bevoegdheden-natuur"
+
+  artikel_2.46:
+    title: "(stikstofdepositieruimte)"
+    afdeling: "2.6"
+    paragraaf: "2.6.3"
+    roles:
+      - authority
+      - procedure
+    determines: "Minister Natuur&Stikstof (or designated body) CAN register stikstofdepositieruimte from additional measures. Competent authority for Natura 2000 vergunning CAN allocate to activity. Only if measures exceed beheerplan and room >= activity deposition."
+    triggered_by:
+      - source: "artikel 2.15a"
+        condition: "Stikstof targets framework"
+      - source: "additional measures"
+        condition: "Measures creating depositieruimte"
+    routes_to:
+      - target: "Chapter 5"
+        condition: "Omgevingsvergunning for Natura 2000 activity"
+    exceptions: []
+    delegates_to:
+      - target: "designated body"
+        for: "Registration function (lid 1)"
+    complexity:
+      leden_count: 4
+      onderdelen_count: 0
+      has_nested_lists: false
+      has_exceptions: false
+      internal_refs_count: 0
+      external_refs_count: 0
+      delegation_count: 1
+    cluster: "bijzondere-bevoegdheden-natuur"
+    notes: "KEY MECHANISM for stikstof permit decisions"
+
+# =============================================================================
+# CLUSTER DEFINITIONS
+# =============================================================================
+
+clusters:
+  general-principles:
+    name: "General Principles - Authority Exercise"
+    purpose: "Framework for how all authorities exercise tasks/powers under Omgevingswet"
+    entry_points: ["2.1"]
+    exit_points: ["2.3"]  # Routes to specific competency articles
+    articles: ["2.1", "2.2", "2.3"]
+    complexity: medium
+    notes: "Art. 2.3 is THE authority hierarchy article - referenced everywhere"
+
+  decentrale-verordeningen:
+    name: "Decentral Ordinances - Plan/Verordening Adoption"
+    purpose: "Authority to adopt omgevingsplan, waterschapsverordening, omgevingsverordening"
+    entry_points: ["2.4", "2.5", "2.6"]
+    exit_points: ["2.8"]
+    articles: ["2.4", "2.5", "2.6", "2.7", "2.8"]
+    complexity: low
+    notes: "Straightforward assignment with delegation option"
+
+  omgevingswaarden-algemeen:
+    name: "Omgevingswaarden - General Framework"
+    purpose: "Definition and specification requirements for omgevingswaarden"
+    entry_points: ["2.9"]
+    exit_points: ["2.10"]
+    articles: ["2.9", "2.10"]
+    complexity: medium
+    notes: "Applies to all omgevingswaarden regardless of government level"
+
+  omgevingswaarden-gemeente:
+    name: "Omgevingswaarden - Municipal Level"
+    purpose: "Municipality authority to set omgevingswaarden (optional + mandatory)"
+    entry_points: ["2.11"]
+    exit_points: ["2.11a"]
+    articles: ["2.11", "2.11a"]
+    complexity: low
+    notes: "Constrained by higher-level omgevingswaarden"
+
+  omgevingswaarden-provincie:
+    name: "Omgevingswaarden - Provincial Level"
+    purpose: "Province authority to set omgevingswaarden (optional + mandatory)"
+    entry_points: ["2.12"]
+    exit_points: ["2.13a"]
+    articles: ["2.12", "2.12a", "2.13", "2.13a"]
+    complexity: medium
+    notes: "Includes mandatory water and noise values"
+
+  omgevingswaarden-rijk:
+    name: "Omgevingswaarden - National Level"
+    purpose: "Rijk authority to set omgevingswaarden (optional + mandatory) including stikstof targets"
+    entry_points: ["2.14"]
+    exit_points: ["2.15a"]
+    articles: ["2.14", "2.15", "2.15a"]
+    complexity: high
+    notes: "Includes EU-mandated values and politically sensitive stikstof targets"
+
+  takentoedeling:
+    name: "Task Allocation - Government Layer Distribution"
+    purpose: "Which tasks belong to which government layer (gemeente/waterschap/provincie/Rijk)"
+    entry_points: ["2.16"]
+    exit_points: ["2.19"]
+    articles: ["2.16", "2.17", "2.18", "2.19"]
+    complexity: very_high
+    notes: "CRITICAL cluster - extensive enumeration with many cross-references"
+
+  locatie-aanwijzing:
+    name: "Location Designation"
+    purpose: "Designation and geometric bounding of specific locations"
+    entry_points: ["2.20"]
+    exit_points: ["2.21a"]
+    articles: ["2.20", "2.21", "2.21a"]
+    complexity: medium
+    notes: "Primarily delegation to ministeriele regeling/AMvB"
+
+  instructieregels-provincie:
+    name: "Instructieregels - Provincial"
+    purpose: "Province authority to set binding rules for lower-level decisions"
+    entry_points: ["2.22"]
+    exit_points: ["2.23"]
+    articles: ["2.22", "2.23"]
+    complexity: high
+    notes: "Detailed scope limitations"
+
+  instructieregels-rijk:
+    name: "Instructieregels - National"
+    purpose: "Rijk authority to set binding rules for decentral decisions"
+    entry_points: ["2.24"]
+    exit_points: ["2.32"]
+    articles: ["2.24", "2.25"]
+    complexity: very_high
+    notes: "Most complex scope article (2.25)"
+
+  instructieregels-verplicht:
+    name: "Mandatory Instructieregels"
+    purpose: "Required instructieregels for EU compliance and other mandatory topics"
+    entry_points: ["2.26"]
+    exit_points: ["2.31a"]
+    articles: ["2.26", "2.27", "2.28", "2.29", "2.29a", "2.30", "2.31", "2.31a"]
+    complexity: high
+    notes: "Long list of mandatory topics, mostly EU-driven"
+
+  instructieregels-algemeen:
+    name: "Instructieregels - Common Provisions"
+    purpose: "Ontheffing mechanism for instructieregels"
+    entry_points: ["2.32"]
+    exit_points: ["2.32"]
+    articles: ["2.32"]
+    complexity: medium
+    notes: "Strict ontheffing test"
+
+  instructies-provincie:
+    name: "Instructies - Provincial"
+    purpose: "Individual instructions from province to gemeente/waterschap"
+    entry_points: ["2.33"]
+    exit_points: ["2.33"]
+    articles: ["2.33"]
+    complexity: medium
+    notes: "Limited scope, subsidiarity to other supervision"
+
+  instructies-rijk:
+    name: "Instructies - National"
+    purpose: "Individual instructions from Rijk to decentral authorities"
+    entry_points: ["2.34"]
+    exit_points: ["2.34"]
+    articles: ["2.34"]
+    complexity: medium
+    notes: "Limited scope, subsidiarity to other supervision"
+
+  instructies-algemeen:
+    name: "Instructies - Common Provisions"
+    purpose: "Constraints on instructie use"
+    entry_points: ["2.35"]
+    exit_points: ["2.35"]
+    articles: ["2.35"]
+    complexity: low
+    notes: "Prevents misuse as pseudo-instructieregels"
+
+  toezicht-waterschappen:
+    name: "Supervision - Waterschap"
+    purpose: "Indeplaatstreding and vernietiging for waterschap decisions"
+    entry_points: ["2.36"]
+    exit_points: ["2.37"]
+    articles: ["2.36", "2.37"]
+    complexity: medium
+    notes: "Special supervision regime for waterschappen"
+
+  bijzondere-bevoegdheden-water:
+    name: "Special Powers - Water Management"
+    purpose: "Specific powers for water/waterstaatswerk/road management"
+    entry_points: ["2.38"]
+    exit_points: ["2.42"]
+    articles: ["2.38", "2.39", "2.40", "2.41", "2.42"]
+    complexity: medium
+    notes: "Operational management powers"
+
+  bijzondere-bevoegdheden-geluid:
+    name: "Special Powers - Noise"
+    purpose: "Building noise insulation measures"
+    entry_points: ["2.43"]
+    exit_points: ["2.43"]
+    articles: ["2.43"]
+    complexity: low
+    notes: "Single article cluster"
+
+  bijzondere-bevoegdheden-natuur:
+    name: "Special Powers - Nature and Landscape"
+    purpose: "Nature area designation and access, stikstofdepositieruimte mechanism"
+    entry_points: ["2.44"]
+    exit_points: ["2.46"]
+    articles: ["2.44", "2.45", "2.46"]
+    complexity: high
+    notes: "Includes critical stikstof mechanism"
+
+# =============================================================================
+# CRITICAL FLOWS AND CONNECTIONS
+# =============================================================================
+
+critical_flows:
+  authority_hierarchy:
+    description: "Art. 2.3 establishes gemeente-default with province/Rijk override logic"
+    source: "2.3"
+    targets:
+      - "2.12 (province omgevingswaarden)"
+      - "2.14 (Rijk omgevingswaarden)"
+      - "2.22 (province instructieregels)"
+      - "2.24 (Rijk instructieregels)"
+      - "2.33 (province instructies)"
+      - "2.34 (Rijk instructies)"
+
+  omgevingswaarden_cascade:
+    description: "Omgevingswaarden flow from definition to government-level specifics"
+    flow: "2.9 (definition) -> 2.10 (requirements) -> 2.11/2.12/2.14 (level-specific)"
+
+  instructieregels_to_ontheffing:
+    description: "Instructieregels can include ontheffing option"
+    flow: "2.22/2.24 (grondslag) -> 2.23/2.25 (inhoud) -> 2.32 (ontheffing)"
+
+  instructie_to_indeplaatstreding:
+    description: "Unfollowed instructie can lead to indeplaatstreding for waterschappen"
+    flow: "2.33/2.34 (instructie) -> 2.36 (indeplaatstreding)"
+
+  stikstof_mechanism:
+    description: "Stikstof targets flow to depositieruimte mechanism"
+    flow: "2.15a (targets) -> 2.31a (instructieregels) -> 2.46 (depositieruimte)"
+
+# =============================================================================
+# EXTERNAL DELEGATIONS SUMMARY
+# =============================================================================
+
+external_delegations:
+  to_AMvB:
+    count: 20+
+    key_articles: ["2.7", "2.10", "2.11a", "2.14", "2.15", "2.20", "2.21a", "2.24", "2.42", "2.43"]
+    primary_AMvBs:
+      - "Bkl (Besluit kwaliteit leefomgeving) - instructieregels"
+      - "Bbl (Besluit bouwwerken leefomgeving) - activities"
+      - "Bal (Besluit activiteiten leefomgeving) - activities"
+
+  to_ministeriele_regeling:
+    count: 10+
+    key_articles: ["2.15", "2.20", "2.21", "2.21a", "2.24"]
+    purpose: "Primarily location designation and technical specifications"
+
+  to_omgevingsverordening:
+    count: 8+
+    key_articles: ["2.18", "2.25", "2.39", "2.41", "2.42", "2.44"]
+    purpose: "Provincial implementation and task allocation"

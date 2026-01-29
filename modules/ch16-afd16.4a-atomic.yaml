@@ -1,0 +1,100 @@
+# =============================================================================
+# OMGEVINGSWET CHAPTER 16, AFDELING 16.4a - ATOMIC EXTRACTION
+# Passende beoordeling Natura 2000
+# Source: BWBR0037885, retrieved 2024
+# =============================================================================
+
+metadata:
+  afdeling: "16.4a"
+  titel: "Passende beoordeling Natura 2000"
+  artikelen_range: "16.53c"
+  totaal_artikelen: 1
+  status: "goed"
+  inwerking: "2024-01-01"
+  eu_richtlijn:
+    id: "habitatrichtlijn"
+    naam: "Richtlijn 92/43/EEG"
+    artikel: "6, derde lid"
+
+# =============================================================================
+# ARTIKEL 16.53c - PASSENDE BEOORDELING (CENTRALE BEPALING)
+# =============================================================================
+
+artikelen:
+  - artikel: "16.53c"
+    titel: "(passende beoordeling)"
+    status: "goed"
+    inwerking: "2024-01-01"
+    type: "plicht_bepaling"
+    centrale_bepaling: true
+
+    leden:
+      - lid: 1
+        inhoud: "Voor een plan of een project als bedoeld in artikel 6, derde lid, van de habitatrichtlijn maakt het bestuursorgaan dat het plan vaststelt, de aanvrager van de betrokken omgevingsvergunning, of het bevoegd gezag voor het projectbesluit een passende beoordeling als bedoeld in artikel 6, derde lid, van die richtlijn, van de gevolgen voor het Natura 2000-gebied."
+        type: "imperatief"
+        verantwoordelijke:
+          - "bestuursorgaan (bij plan)"
+          - "aanvrager (bij omgevingsvergunning)"
+          - "bevoegd gezag (bij projectbesluit)"
+        externe_ref:
+          - doc: "habitatrichtlijn"
+            artikel: "6, derde lid"
+            type: "eu_verplichting"
+
+      - lid: 2
+        inhoud: "In afwijking van het eerste lid hoeft geen passende beoordeling te worden gemaakt, als:"
+        onderdelen:
+          - onderdeel: "a"
+            inhoud: "het plan of het project een herhaling of voortzetting is van een ander plan of project, of"
+            type: "uitzondering"
+          - onderdeel: "b"
+            inhoud: "het plan deel uitmaakt van een ander plan,"
+            type: "uitzondering"
+        voorwaarde: "mits voor dat andere plan of project een passende beoordeling is gemaakt en een nieuwe passende beoordeling redelijkerwijs geen nieuwe gegevens en inzichten kan opleveren over de significante gevolgen van dat plan of project."
+        type: "uitzondering_voorwaardelijk"
+
+    juridische_analyse:
+      patroon: "EU_IMPLEMENTATIE_MET_TIERING"
+      kernbegrip: "passende beoordeling"
+      scope: "plannen en projecten met mogelijke significante gevolgen voor Natura 2000"
+      tiering_voordeel:
+        - "herhaling/voortzetting → geen nieuwe PB"
+        - "plan in plan → geen nieuwe PB"
+        - "voorwaarde: geen nieuwe inzichten te verwachten"
+
+# =============================================================================
+# SAMENVATTENDE ANALYSE AFDELING 16.4a
+# =============================================================================
+
+analyse:
+  karakterisering: "Implementatie Habitatrichtlijn artikel 6 lid 3"
+
+  kernelementen:
+    passende_beoordeling:
+      definitie: "Beoordeling van gevolgen plan/project voor Natura 2000-gebied"
+      eu_grondslag: "Habitatrichtlijn art. 6 lid 3"
+      verantwoordelijkheid_afhankelijk_van_besluittype:
+        plan: "bestuursorgaan dat vaststelt"
+        omgevingsvergunning: "aanvrager"
+        projectbesluit: "bevoegd gezag"
+
+    uitzondering_tiering:
+      beschrijving: "Geen nieuwe PB bij herhaling/voortzetting of plan-in-plan"
+      cumulatieve_voorwaarden:
+        - "eerdere PB gemaakt"
+        - "geen nieuwe inzichten te verwachten"
+
+  koppelingen:
+    interne_ref:
+      - artikel: "16.36.2"
+        relatie: "passende beoordeling triggert plan-mer"
+      - artikel: "5.29"
+        relatie: "beoordelingsregels Natura 2000-activiteit"
+    externe_ref:
+      - doc: "habitatrichtlijn"
+        artikel: "6, derde lid"
+        naam: "Richtlijn 92/43/EEG"
+
+  praktijk_belang:
+    stikstof_context: "Art. 16.53c is centraal in stikstofproblematiek"
+    note: "Passende beoordeling is kritieke toets voor projecten nabij Natura 2000"

@@ -1,0 +1,314 @@
+# Paragraaf 5.1.1 - Verbodsbepalingen
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  paragraaf: "5.1.1"
+  titel: "Verbodsbepalingen"
+  artikel_range: "5.1 - 5.6"
+  extraction_method: "atomic"
+
+artikelen:
+
+  5.1:
+    titel: "(omgevingsvergunningplichtige activiteiten wet)"
+
+    leden:
+      1:
+        tekst: "Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:"
+        lijst:
+          a: "een omgevingsplanactiviteit"
+          b: "een rijksmonumentenactiviteit"
+          c: "een ontgrondingsactiviteit"
+          d: "een stortingsactiviteit op zee"
+          e: "een Natura 2000-activiteit"
+          f: "een jachtgeweeractiviteit"
+          g: "een valkeniersactiviteit"
+        afsluiting: "tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval"
+
+      2:
+        tekst: "Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:"
+        lijst:
+          a: "een bouwactiviteit"
+          b: "een milieubelastende activiteit"
+          c:
+            tekst: "een lozingsactiviteit op:"
+            sublijst:
+              1: "een oppervlaktewaterlichaam"
+              2: "een zuiveringtechnisch werk"
+          d: "een wateronttrekkingsactiviteit"
+          e: "een mijnbouwlocatieactiviteit"
+          f:
+            tekst: "een beperkingengebiedactiviteit met betrekking tot:"
+            sublijst:
+              1: "een weg"
+              2: "een waterstaatswerk"
+              3: "een luchthaven"
+              4: "een hoofdspoorweg, lokale spoorweg of bijzondere spoorweg"
+              5: "een installatie in een waterstaatswerk"
+          g: "een flora- en fauna-activiteit"
+        afsluiting: "voor zover het gaat om een bij algemene maatregel van bestuur aangewezen geval"
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "activiteiten zonder omgevingsvergunning"
+      logica:
+        lid_1: "DEFAULT verboden, TENZIJ AMvB vrijstelt"
+        lid_2: "verboden VOOR ZOVER AMvB aanwijst"
+
+    interne_refs: []
+
+    externe_refs: []
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "Bal/Bbl"
+        voor: "aanwijzing gevallen (vrijstelling lid 1, aanwijzing lid 2)"
+
+    voorwaarden:
+      - type: "tenzij"
+        lid: 1
+        effect: "geen vergunningplicht als AMvB vrijstelt"
+      - type: "voor zover"
+        lid: 2
+        effect: "vergunningplicht alleen als AMvB aanwijst"
+
+  5.2:
+    titel: "(afbakening vergunningplicht artikel 5.1)"
+
+    leden:
+      1:
+        tekst: "Bij de aanwijzing van gevallen op grond van artikel 5.1 worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+        # continues with specifics about decentrale afwijking
+
+    functie:
+      werkwoord: "begrenst"
+      object: "aanwijzingsbevoegdheid uit 5.1"
+      subject: "AMvB-maker"
+
+    interne_refs:
+      - naar: "artikel 5.1"
+        context: "op grond van artikel 5.1"
+      - naar: "artikel 2.3, derde lid"
+        context: "grenzen van artikel 2.3, derde lid"
+      - naar: "artikel 5.1, eerste lid, aanhef en onder b"
+        context: "rijksmonumentenactiviteit"
+      - naar: "artikel 5.1, eerste en tweede lid"
+        context: "gecombineerde verwijzing"
+
+    externe_refs:
+      - naar: "BWBR0037521"
+        wet: "Erfgoedwet"
+        artikel: "3.1"
+        context: "rijksmonument als bedoeld in artikel 3.1 van de Erfgoedwet"
+
+    delegeert: []
+
+    voorwaarden: []
+
+  5.3:
+    titel: "(omgevingsvergunningplicht waterschapsverordening)"
+
+    leden:
+      1:
+        tekst: "Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de waterschapsverordening is bepaald."
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "activiteit zonder vergunning"
+      bron: "waterschapsverordening"
+
+    interne_refs: []
+    externe_refs: []
+    delegeert:
+      - type: "bij verordening"
+        naar: "waterschapsverordening"
+        voor: "bepaling vergunningplichtige activiteiten"
+    voorwaarden: []
+
+  5.4:
+    titel: "(omgevingsvergunningplicht omgevingsverordening)"
+
+    leden:
+      1:
+        tekst: "Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de omgevingsverordening is bepaald."
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "activiteit zonder vergunning"
+      bron: "omgevingsverordening"
+
+    interne_refs: []
+    externe_refs: []
+    delegeert:
+      - type: "bij verordening"
+        naar: "omgevingsverordening"
+        voor: "bepaling vergunningplichtige activiteiten"
+    voorwaarden: []
+
+  5.5:
+    titel: "(verbod handelen in strijd met voorschriften omgevingsvergunning)"
+
+    leden:
+      1:
+        tekst: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:"
+        lijst:
+          a:
+            tekst: "een omgevingsplanactiviteit, voor zover dat voorschrift is gesteld met het oog op:"
+            sublijst:
+              1: "het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu"
+              2: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen"
+              3: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk"
+              4: "het beschermen van monumenten of archeologische monumenten"
+          b: "een rijksmonumentenactiviteit"
+          c: "een stortingsactiviteit op zee"
+          d: "een milieubelastende activiteit"
+          e:
+            tekst: "een lozingsactiviteit op:"
+            sublijst:
+              1: "een oppervlaktewaterlichaam"
+              2: "een zuiveringtechnisch werk"
+          f: "een beperkingengebiedactiviteit"
+          g: "een flora- en fauna-activiteit"
+        handhaving_classificatie: "zwaarste overtredingscategorie"
+
+      2:
+        tekst: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:"
+        lijst:
+          a: "een omgevingsplanactiviteit: in andere gevallen dan bedoeld in het eerste lid, onder a"
+          b: "een ontgrondingsactiviteit"
+          c: "een bouwactiviteit"
+          d: "een wateronttrekkingsactiviteit"
+          e: "een mijnbouwlocatieactiviteit"
+          f: "een Natura 2000-activiteit"
+        handhaving_classificatie: "middelzware overtredingscategorie"
+
+      3:
+        tekst: "Het is verboden in strijd te handelen met een voorschrift van een omgevingsvergunning voor:"
+        lijst:
+          a: "een jachtgeweeractiviteit"
+          b: "een valkeniersactiviteit"
+        handhaving_classificatie: "lichtste overtredingscategorie"
+
+      4:
+        tekst: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.3:"
+        lijst:
+          a:
+            tekst: "voor zover dat voorschrift is gesteld met het oog op:"
+            sublijst:
+              1: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen"
+              2: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk"
+          b: "in andere gevallen dan bedoeld onder a"
+        scope: "waterschapsverordening-vergunningen"
+
+      5:
+        tekst: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.4:"
+        lijst:
+          a:
+            tekst: "voor zover dat voorschrift is gesteld met het oog op:"
+            sublijst:
+              1: "het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu"
+              2: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen"
+              3: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk"
+              4: "het beschermen van monumenten of archeologische monumenten"
+          b: "in andere gevallen dan bedoeld onder a"
+        scope: "omgevingsverordening-vergunningen"
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "handelen in strijd met vergunningvoorschriften"
+      logica: |
+        Lid 1-3: overtredingen van art. 5.1-vergunningen (wet)
+        Lid 4: overtredingen van art. 5.3-vergunningen (waterschap)
+        Lid 5: overtredingen van art. 5.4-vergunningen (provincie)
+
+        Classificatiehiërarchie:
+        - Lid 1 = zwaarste (veiligheid, gezondheid, milieu, water, monumenten)
+        - Lid 2 = middel (overige wet-vergunningen)
+        - Lid 3 = lichtste (jacht)
+        - Lid 4/5 = decentrale vergunningen met analoge opbouw
+
+    interne_refs:
+      - naar: "artikel 5.1"
+        context: "vergunningplichtige activiteiten uit de wet"
+      - naar: "artikel 5.3"
+        context: "vergunning op grond van waterschapsverordening"
+      - naar: "artikel 5.4"
+        context: "vergunning op grond van omgevingsverordening"
+
+    externe_refs: []
+    delegeert: []
+
+    juridische_analyse:
+      patroon: "ENFORCEMENT HIERARCHY"
+      belang: |
+        Art. 5.5 is cruciaal voor Ch18 (handhaving):
+        - Bepaalt welke overtredingen zwaarder wegen
+        - Lid 1 activiteiten = prioriteit bij handhaving
+        - Structuur spiegelt Art. 5.1 structuur
+
+  5.6:
+    titel: "(verbod in stand laten zonder vergunning gebouwd bouwwerk)"
+
+    leden:
+      1:
+        tekst: "Het is verboden een bouwwerk of deel daarvan dat is gebouwd zonder de daarvoor vereiste omgevingsvergunning voor een bouwactiviteit in stand te laten."
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "instandlating illegaal bouwwerk"
+
+    interne_refs: []
+    externe_refs: []
+    delegeert: []
+    voorwaarden: []
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  structure:
+    - "5.1-5.2 form PAIR: prohibition + scope limits"
+    - "5.3-5.4 PARALLEL: decentrale vergunningplicht (waterschap / provincie)"
+    - "5.5 ENFORCEMENT HOOK: references 5.3, 5.4"
+    - "5.6 STANDALONE: specific for bouwactiviteit"
+
+  reference_chains:
+    - from: "5.2"
+      to: ["5.1", "2.3"]
+      type: "scope limitation"
+    - from: "5.5"
+      to: ["5.3", "5.4"]
+      type: "enforcement connection"
+
+  delegation_pattern:
+    - "5.1 delegates WHAT is vergunningplichtig to AMvB (Bal/Bbl)"
+    - "5.3 delegates WHAT to waterschapsverordening"
+    - "5.4 delegates WHAT to omgevingsverordening"
+    - "Pattern: Ow sets FRAMEWORK, delegates SPECIFICS"
+
+  logical_boundary:
+    - "Paragraaf 5.1.1 is self-contained unit for VERBODSBEPALINGEN"
+    - "Entry: 5.1 (core prohibition)"
+    - "Exit: to 5.7+ (bevoegd gezag, procedure)"
+
+# ============================================================================
+# MAPPING GUIDE UPDATE (based on this extraction)
+# ============================================================================
+
+mapping_update:
+  insight: |
+    The verbodsbepalingen follow a clear pattern:
+    - Central prohibition (5.1) with AMvB delegation
+    - Scope limitation (5.2) with subsidiarity reference
+    - Decentrale uitbreiding (5.3, 5.4) - parallel structure
+    - Enforcement hooks (5.5, 5.6)
+
+    This suggests modules should respect PARAGRAAF boundaries,
+    as the legislator grouped these artikelen intentionally.
+
+  next_extraction: "Paragraaf 5.1.2 (5.7-5.16) - bevoegd gezag determination"

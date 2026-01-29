@@ -1,0 +1,392 @@
+# Paragraaf 5.1.2 - Reikwijdte aanvraag en bevoegd gezag
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  paragraaf: "5.1.2"
+  titel: "Reikwijdte aanvraag en bevoegd gezag"
+  artikel_range: "5.7 - 5.16"
+  extraction_method: "atomic"
+
+artikelen:
+
+  5.7:
+    titel: "(aanvraag los of gelijktijdig)"
+
+    leden:
+      1:
+        tekst: "Een aanvraag om een omgevingsvergunning kan naar keuze van de aanvrager op een of meer activiteiten betrekking hebben."
+      2:
+        tekst: "Met het oog op een doelmatig waterbeheer wordt een omgevingsvergunning voor wateractiviteiten, in bij algemene maatregel van bestuur aangewezen gevallen, aangevraagd samen met een omgevingsvergunning voor een of meer andere activiteiten."
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "reikwijdte aanvraag"
+      subject: "aanvrager"
+      logica: "keuze bij aanvrager, tenzij AMvB waterbeheer-koppeling voorschrijft"
+
+    interne_refs:
+      - naar: "artikelen 5.1"
+      - naar: "5.4"
+
+    delegeert:
+      - type: "bij AMvB"
+        voor: "gevallen verplichte gecombineerde aanvraag wateractiviteiten"
+
+  5.8:
+    titel: "(bevoegd gezag gemeente aanvraag één activiteit)"
+
+    leden:
+      1:
+        tekst: "Het college van burgemeester en wethouders beslist op de aanvraag om een omgevingsvergunning die betrekking heeft op één activiteit, tenzij op grond van artikel 5.9, 5.9a, 5.10, 5.11 of 5.13 een ander bestuursorgaan is aangewezen."
+
+    functie:
+      werkwoord: "wijst aan"
+      object: "bevoegd gezag"
+      subject: "B&W gemeente"
+      logica: "DEFAULT RULE - gemeente beslist, TENZIJ uitzonderingen"
+
+    interne_refs:
+      - naar: "artikel 5.9"
+        context: "tenzij-verwijzing"
+      - naar: "5.9a"
+        context: "tenzij-verwijzing"
+      - naar: "5.10"
+        context: "tenzij-verwijzing"
+      - naar: "5.11"
+        context: "tenzij-verwijzing"
+      - naar: "5.13"
+        context: "tenzij-verwijzing"
+
+    voorwaarden:
+      - type: "tenzij"
+        effect: "ander bestuursorgaan bevoegd als 5.9/5.9a/5.10/5.11/5.13 van toepassing"
+
+    actoren:
+      - actor: "B&W"
+        rol: "bevoegd gezag (default)"
+
+  5.9:
+    titel: "(bevoegd gezag aanvraag één wateractiviteit)"
+
+    leden:
+      1:
+        tekst: "Bij algemene maatregel van bestuur worden met het oog op een doelmatig waterbeheer voor wateractiviteiten gevallen aangewezen waarin het dagelijks bestuur van het waterschap, gedeputeerde staten of Onze Minister van Infrastructuur en Waterstaat beslist."
+
+    functie:
+      werkwoord: "wijst aan"
+      object: "bevoegd gezag wateractiviteiten"
+      logica: "AMvB bepaalt welk bestuursorgaan voor welke wateractiviteit"
+
+    delegeert:
+      - type: "bij AMvB"
+        voor: "aanwijzing bevoegd gezag wateractiviteiten"
+
+    actoren:
+      - actor: "waterschap"
+        rol: "bevoegd gezag (AMvB-gevallen)"
+      - actor: "GS"
+        rol: "bevoegd gezag (AMvB-gevallen)"
+      - actor: "Minister I&W"
+        rol: "bevoegd gezag (AMvB-gevallen)"
+
+  5.9a:
+    titel: "(bevoegd gezag aanvraag één jachtgeweeractiviteit)"
+
+    leden:
+      1:
+        tekst: "De korpschef beslist op de aanvraag om een omgevingsvergunning voor een jachtgeweeractiviteit."
+
+    functie:
+      werkwoord: "wijst aan"
+      object: "bevoegd gezag jachtgeweeractiviteit"
+      logica: "SPECIALE ACTOR - politie in plaats van bestuursorgaan"
+
+    actoren:
+      - actor: "korpschef"
+        rol: "bevoegd gezag (exclusief)"
+        bijzonderheid: "Enige niet-bestuursorgaan als bevoegd gezag in Ow"
+
+    juridische_analyse:
+      patroon: "ACTOR EXCEPTION"
+      belang: |
+        Art. 5.9a is uniek in de Omgevingswet:
+        - Enige artikel waar een niet-bestuursorgaan bevoegd gezag is
+        - Korpschef = politie, geen bestuur
+        - Logisch: jachtgeweer = vuurwapen = politiebevoegdheid
+        - Verbindt Ow met Wet wapens en munitie
+
+  5.10:
+    titel: "(bevoegd gezag provincie aanvraag één activiteit anders dan in artikel 5.9)"
+
+    leden:
+      1:
+        tekst: "Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin gedeputeerde staten op de aanvraag beslissen:"
+        lijst:
+          a: "omgevingsplanactiviteiten van provinciaal belang"
+          b: "ontgrondingsactiviteiten"
+          c: "Natura 2000-activiteiten"
+          d: "flora- en fauna-activiteiten"
+          e: "activiteiten waarvoor op grond van artikel 5.4 een omgevingsvergunning is vereist"
+      2:
+        tekst: "Daarbij worden de grenzen van artikel 2.3, tweede lid, in acht genomen."
+
+    functie:
+      werkwoord: "wijst aan"
+      object: "bevoegd gezag provinciale activiteiten"
+      logica: "AMvB bepaalt gevallen, met subsidiariteitsgrens"
+
+    interne_refs:
+      - naar: "artikel 5.9"
+        context: "anders dan in artikel 5.9"
+      - naar: "artikel 5.4"
+        context: "omgevingsverordening-activiteiten"
+      - naar: "artikel 2.3, tweede lid"
+        context: "subsidiariteitsgrenzen"
+
+    delegeert:
+      - type: "bij AMvB"
+        voor: "aanwijzing gevallen provinciale bevoegdheid"
+
+    actoren:
+      - actor: "GS"
+        rol: "bevoegd gezag (aangewezen gevallen)"
+
+  5.11:
+    titel: "(bevoegd gezag Rijk aanvraag één activiteit anders dan in artikel 5.9)"
+
+    leden:
+      1:
+        tekst: "Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin een van Onze daarbij aangewezen Ministers op de aanvraag beslist:"
+        lijst:
+          a: "omgevingsplanactiviteiten van nationaal belang"
+          b: "rijksmonumentenactiviteiten"
+          c: "ontgrondingsactiviteiten, met uitzondering van gevallen als bedoeld in artikel 5.10, eerste lid, onder b, onder 1°"
+          d: "stortingsactiviteiten op zee"
+          e: "Natura 2000-activiteiten"
+          f: "flora- en fauna-activiteiten"
+          g: "mijnbouwlocatieactiviteiten"
+          h: "beperkingengebiedactiviteiten"
+      2:
+        tekst: "Daarbij worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+      3:
+        tekst: "Bij algemene maatregel van bestuur kan worden bepaald dat de Minister tot wie de aanvrager zich wendt, in overeenstemming met een daarbij aangegeven andere Minister beslist."
+      4:
+        tekst: "Aan Onze Minister wie het aangaat kan bij algemene maatregel van bestuur de bevoegdheid worden toegekend om te beslissen op een aanvraag die betrekking heeft op een activiteit die plaatsvindt op of in een rijksmonument, als die activiteit samenhangt met een activiteit als bedoeld in het eerste lid, onder b, waarvoor door hem op de aanvraag wordt beslist, en het gaat om gevallen als bedoeld in de artikelen 5.8, 5.10 of 5.13."
+
+    functie:
+      werkwoord: "wijst aan"
+      object: "bevoegd gezag rijksactiviteiten"
+      logica: "AMvB bepaalt gevallen, met subsidiariteitsgrenzen"
+
+    interne_refs:
+      - naar: "artikel 5.9"
+      - naar: "artikel 5.10, eerste lid, onder b, onder 1°"
+      - naar: "artikel 2.3, derde lid"
+      - naar: "artikelen 5.8"
+      - naar: "5.10"
+      - naar: "5.13"
+
+    delegeert:
+      - type: "bij AMvB"
+        voor: "aanwijzing gevallen rijksbevoegdheid"
+
+    actoren:
+      - actor: "Minister"
+        rol: "bevoegd gezag (aangewezen gevallen)"
+
+  5.12:
+    titel: "(bevoegd gezag aanvraag meer activiteiten)"
+
+    leden:
+      1:
+        tekst: "Op de aanvraag om een omgevingsvergunning die betrekking heeft op meer dan een activiteit wordt beslist door een bestuursorgaan dat op grond van artikel 5.8, 5.9, 5.10 of 5.11, eerste lid, aanhef en onder a tot en met h, voor ten minste een van die activiteiten bevoegd is."
+      2:
+        tekst: "Als toepassing van het eerste lid ertoe leidt dat meer dan een bestuursorgaan bevoegd is, is het bestuursorgaan bevoegd waarvoor de zwaarstwegend toepasselijke criteria van artikel 2.3 gelden, of, als die criteria gelijk zijn, het bestuursorgaan op het hoogste schaalniveau."
+      3:
+        tekst: "Op de aanvraag om een omgevingsvergunning die betrekking heeft op meer activiteiten waarop artikel 5.13 van toepassing is, wordt beslist door het bestuursorgaan dat op grond van dat artikel bevoegd is."
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "bevoegd gezag bij meervoudige aanvraag"
+      logica: "routing via subsidiariteitsladder"
+
+    interne_refs:
+      - naar: "artikel 5.8"
+      - naar: "5.9"
+      - naar: "5.10"
+      - naar: "5.11, eerste lid, aanhef en onder a tot en met h"
+      - naar: "artikel 2.3"
+      - naar: "artikel 5.13"
+
+  5.13:
+    titel: "(eens bevoegd gezag altijd bevoegd gezag)"
+
+    leden:
+      1:
+        tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin gedeputeerde staten of Onze Minister die het aangaat beslissen op elke aanvraag om een omgevingsvergunning die betrekking heeft op een locatie waarvoor een door hen eerder verleende omgevingsvergunning geldt."
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "continuteit bevoegd gezag"
+      logica: "wie eerder vergunning verleende, blijft bevoegd"
+
+    interne_refs:
+      - naar: "artikel 5.9"
+      - naar: "5.9a"
+
+    delegeert:
+      - type: "bij AMvB"
+        voor: "aanwijzing gevallen 'eens bevoegd, altijd bevoegd'"
+
+    actoren:
+      - actor: "GS"
+        rol: "blijft bevoegd na eerdere vergunning"
+      - actor: "Minister"
+        rol: "blijft bevoegd na eerdere vergunning"
+
+  5.14:
+    titel: "(bevoegd gezag grondgebiedoverstijgende aanvraag)"
+
+    leden:
+      1:
+        tekst: "Als een aanvraag om een omgevingsvergunning betrekking heeft op een activiteit die op het grondgebied van meer dan een gemeente, waterschap of provincie plaatsvindt, wordt op die aanvraag beslist door het daarvoor op grond van artikel 5.8, 5.9, 5.10, 5.12 of 5.13 bevoegde bestuursorgaan op het grondgebied waar het zwaartepunt van de activiteit ligt."
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "bevoegd gezag bij grensoverschrijding"
+      logica: "zwaartepunt bepaalt bevoegdheid"
+
+    interne_refs:
+      - naar: "artikel 5.8"
+      - naar: "5.9"
+      - naar: "5.10"
+      - naar: "5.12"
+      - naar: "5.13"
+
+  5.15:
+    titel: "(bevoegd gezag toepassing paragraaf 5.1.5)"
+
+    leden:
+      1:
+        tekst: "Het bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen, is ook bevoegd tot toepassing van paragraaf 5.1.5."
+
+    functie:
+      werkwoord: "koppelt"
+      object: "beslisbevoegdheid aan wijzigingsbevoegdheid"
+      logica: "wie verleent, mag ook wijzigen/intrekken"
+
+    interne_refs:
+      - naar: "paragraaf 5.1.5"
+        context: "actualisering, wijziging, intrekking"
+
+  5.16:
+    titel: "(flexibiliteitsregeling bevoegd gezag)"
+
+    leden:
+      1:
+        tekst: "Een bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen of bevoegd is tot toepassing van paragraaf 5.1.5, kan die bevoegdheid aan een ander bestuursorgaan overdragen, als dat bestuursorgaan daarmee instemt."
+      2:
+        tekst: "De overdracht geschiedt bij gezamenlijk besluit van de bestuursorganen."
+
+    functie:
+      werkwoord: "machtigt"
+      object: "overdracht bevoegdheid"
+      logica: "flexibiliteit via instemming"
+
+    interne_refs:
+      - naar: "paragraaf 5.1.5"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  structure:
+    - "5.7 = ENTRY (reikwijdte aanvraag)"
+    - "5.8 = DEFAULT RULE (gemeente beslist)"
+    - "5.9-5.11 = ACTOR EXCEPTIONS (waterschap, provincie, rijk)"
+    - "5.12-5.14 = COMPLEX CASES (meervoudig, grensoverschrijdend)"
+    - "5.15-5.16 = META-RULES (scope, flexibility)"
+
+  decision_tree: |
+    Aanvraag binnenkomt
+         │
+         ▼
+    ┌─── Eén activiteit? ───────────────────────────────────┐
+    │ JA                                                    │ NEE
+    ▼                                                       ▼
+    5.8: Gemeente (DEFAULT)                           5.12: Meervoudige
+    │                                                  aanvraag routing
+    ├── TENZIJ 5.9: wateractiviteit → WS/GS/Min
+    ├── TENZIJ 5.10: provinciaal → GS
+    ├── TENZIJ 5.11: nationaal → Minister
+    └── TENZIJ 5.13: eerder verleend → blijft
+
+    Grensoverschrijdend? → 5.14: zwaartepunt bepaalt
+
+  reference_chains:
+    tenzij_keten:
+      from: "5.8"
+      to: ["5.9", "5.9a", "5.10", "5.11", "5.13"]
+      type: "exception routing"
+
+    subsidiariteit:
+      articles: ["5.10", "5.11", "5.12"]
+      reference: "artikel 2.3"
+      type: "boundary condition"
+
+    meervoudig_routing:
+      from: "5.12"
+      to: ["5.8", "5.9", "5.10", "5.11", "5.13", "2.3"]
+      type: "complex decision"
+
+  delegation_pattern:
+    - "5.9: AMvB wijst aan voor wateractiviteiten"
+    - "5.10: AMvB wijst aan voor provinciale gevallen"
+    - "5.11: AMvB wijst aan voor rijksgevallen"
+    - "5.13: AMvB wijst aan voor 'eens bevoegd' gevallen"
+    - "Pattern: Ow sets ROUTING LOGIC, AMvB provides CASE LISTS"
+
+  key_concepts:
+    subsidiariteit: "artikel 2.3 als grensbepaling"
+    default_gemeente: "5.8 als vangnet"
+    tenzij_structuur: "uitzonderingen expliciet benoemd"
+    eens_bevoegd: "continuïteit via 5.13"
+    zwaartepunt: "geografische routing via 5.14"
+
+  logical_boundary:
+    - "Paragraaf 5.1.2 is ROUTING TABLE voor bevoegd gezag"
+    - "Entry: 5.7 (aanvraag komt binnen)"
+    - "Decision: 5.8-5.14 (wie beslist?)"
+    - "Meta: 5.15-5.16 (scope, overdracht)"
+    - "Exit: naar 5.17+ (beoordeling)"
+
+# ============================================================================
+# MAPPING GUIDE UPDATE (based on this extraction)
+# ============================================================================
+
+mapping_update:
+  insight: |
+    Paragraaf 5.1.2 is a DECISION TABLE implemented in law:
+    - Default rule (5.8: gemeente)
+    - Exception cascade (5.9-5.11: water/provincie/rijk)
+    - Complex case handlers (5.12-5.14)
+    - Meta-rules (5.15-5.16)
+
+    The "tenzij" structure in 5.8 is the KEY - it explicitly
+    lists all exception articles, making the routing explicit.
+
+    Art. 2.3 (subsidiariteit) is referenced 4x - it's the
+    boundary condition that prevents over-centralization.
+
+  connection_to_par_5.1.1: |
+    5.1.1 determines WHAT needs a permit
+    5.1.2 determines WHO decides on the permit application
+
+    Reference: 5.7 → 5.1, 5.4 (connects to verbodsbepalingen)
+
+  next_extraction: "Paragraaf 5.1.3 (5.17-5.33a) - beoordeling aanvraag"

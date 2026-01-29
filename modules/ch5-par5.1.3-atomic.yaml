@@ -1,0 +1,409 @@
+# Paragraaf 5.1.3 - De beoordeling van de aanvraag
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  paragraaf: "5.1.3"
+  titel: "De beoordeling van de aanvraag"
+  artikel_range: "5.17 - 5.33a"
+  extraction_method: "atomic"
+  note: "5.17 and 5.25 are ingetrokken (withdrawn)"
+
+artikelen:
+
+  5.17:
+    status: "ingetrokken"
+    note: "Stb. 2020/172"
+
+  5.18:
+    titel: "(beoordelingsregels aanvraag artikel 5.1-activiteiten bij algemene maatregel van bestuur)"
+
+    leden:
+      1:
+        tekst: "Bij algemene maatregel van bestuur worden regels gesteld over het verlenen of weigeren van een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.1."
+      2:
+        tekst: "Artikel 2.32, tweede tot en met zesde lid, is van overeenkomstige toepassing."
+
+    functie:
+      werkwoord: "delegeert"
+      object: "beoordelingsregels"
+      naar: "AMvB (Bkl)"
+      logica: "CENTRAL FRAMEWORK - alle beoordelingsregels via AMvB"
+
+    interne_refs:
+      - naar: "artikel 5.1"
+        context: "activiteiten uit verbodsbepalingen"
+      - naar: "Artikel 2.32, tweede tot en met zesde lid"
+        context: "overeenkomstige toepassing"
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "Bkl"
+        voor: "regels over verlenen of weigeren"
+
+    hub_status: "PRIMARY HUB - referenced by 5.20-5.29a"
+
+  5.19:
+    titel: "(beoordelingsregels aanvraag artikel 5.1-activiteiten in omgevingsverordening)"
+
+    leden:
+      1:
+        tekst: "Bij omgevingsverordening kunnen regels worden gesteld over het verlenen of weigeren van een omgevingsvergunning voor een milieubelastende activiteit, tenzij..."
+
+    functie:
+      werkwoord: "machtigt"
+      object: "provinciale beoordelingsregels"
+      logica: "aanvullende regels via omgevingsverordening"
+
+    interne_refs:
+      - naar: "artikel 5.26, vierde lid"
+      - naar: "artikel 2.3, tweede lid"
+        context: "subsidiariteitsgrenzen"
+      - naar: "Artikel 2.32, eerste, vijfde en zesde lid"
+
+    voorwaarden:
+      - type: "tenzij"
+        effect: "grenzen aan provinciale bevoegdheid"
+
+  5.20:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag bouwactiviteit)"
+    references_hub: "5.18"
+
+    leden:
+      1:
+        tekst: "Voor een bouwactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:"
+        lijst:
+          a: "het waarborgen van de veiligheid"
+          b: "het beschermen van de gezondheid"
+          c: "duurzaamheid"
+          d: "bruikbaarheid"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader bouwactiviteit"
+      logica: "invulling 5.18 voor bouwactiviteit"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+        relatie: "invulling van"
+      - naar: "artikel 4.3, eerste lid, aanhef en onder a"
+
+  5.21:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag omgevingsplanactiviteit)"
+    references_hub: "5.18"
+
+    leden:
+      1:
+        tekst: "Voor een omgevingsplanactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de doelen van de wet."
+      2:
+        tekst: "De regels strekken er in ieder geval toe dat de omgevingsvergunning alleen wordt verleend met inachtneming van het omgevingsplan en de instructieregels."
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader omgevingsplanactiviteit"
+      logica: "toetsing aan omgevingsplan + instructieregels"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+      - naar: "artikelen 2.22"
+        context: "omgevingsplan"
+      - naar: "artikelen 2.24"
+        context: "instructieregels"
+      - naar: "artikelen 2.33, 2.34"
+        context: "instructies"
+
+  5.22:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag rijksmonumentenactiviteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader rijksmonumentenactiviteit"
+      doel: "behoud van cultureel erfgoed"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+
+  5.23:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag ontgrondingsactiviteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader ontgrondingsactiviteit"
+      doel: "doelen van de wet"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+
+  5.24:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag wateractiviteit)"
+    references_hub: "5.18"
+
+    leden:
+      1:
+        tekst: "Voor een wateractiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:"
+        lijst:
+          a: "het voorkomen en waar nodig beperken van overstromingen, wateroverlast en waterschaarste"
+          # etc.
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader wateractiviteit"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+      - naar: "artikel 4.23, tweede lid"
+
+  5.25:
+    status: "ingetrokken"
+    note: "Stb. 2020/172"
+
+  5.26:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag milieubelastende activiteit)"
+    references_hub: "5.18"
+
+    leden:
+      1:
+        tekst: "Voor een milieubelastende activiteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu."
+      4:
+        tekst: "bevat specifieke regels over best beschikbare technieken"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader milieubelastende activiteit"
+      bijzonder: "BBT-toetsing"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+      - naar: "artikel 4.22"
+      - naar: "artikel 5.19, eerste lid"
+      - naar: "artikel 16.43, tweede lid"
+        context: "m.e.r.-koppeling"
+
+  5.27:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag mijnbouwlocatieactiviteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader mijnbouwlocatieactiviteit"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+      - naar: "artikel 4.24, tweede lid, en derde lid, aanhef en onder b"
+
+  5.28:
+    titel: "(artikel 5.18 beoordelingsregels beperkingengebiedactiviteit anders dan een wateractiviteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader beperkingengebiedactiviteit"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+
+  5.29:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag Natura 2000-activiteit en flora- en fauna-activiteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader natuuractiviteiten"
+      doel: "natuurbescherming"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+
+  5.29a:
+    titel: "(artikel 5.18 beoordelingsregels aanvraag jachtgeweeractiviteit en valkeniersactiviteit)"
+    references_hub: "5.18"
+
+    functie:
+      werkwoord: "specificeert"
+      object: "beoordelingskader jacht-gerelateerde activiteiten"
+
+    interne_refs:
+      - naar: "artikel 5.18"
+
+  5.30:
+    titel: "(beoordelingsregels artikel 5.3- en 5.4-activiteiten)"
+
+    leden:
+      1:
+        tekst: "Voor zover de aanvraag betrekking heeft op een activiteit als bedoeld in artikel 5.3 of 5.4, kan de omgevingsvergunning alleen worden verleend of geweigerd op de gronden die zijn bepaald in de waterschapsverordening of de omgevingsverordening."
+
+    functie:
+      werkwoord: "beperkt"
+      object: "beoordelingsgronden decentrale activiteiten"
+      logica: "alleen gronden uit verordening"
+
+    interne_refs:
+      - naar: "artikel 5.3"
+        context: "waterschapsverordening-activiteiten"
+      - naar: "5.4"
+        context: "omgevingsverordening-activiteiten"
+
+    note: "Sluit aan op decentrale vergunningplicht uit 5.1.1"
+
+  5.31:
+    titel: "(weigeren vergunning vanwege Wet bibob)"
+
+    leden:
+      1:
+        tekst: "Het bevoegd gezag kan de omgevingsvergunning weigeren in het geval en onder de voorwaarden, bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur..."
+
+    functie:
+      werkwoord: "machtigt"
+      object: "weigering op integriteitsgronden"
+      logica: "facultatieve weigeringsgrond (kan)"
+
+    externe_refs:
+      - naar: "BWBR0013798"
+        wet: "Wet bibob"
+        artikel: "artikel 3"
+
+    voorwaarden:
+      - type: "kan"
+        effect: "discretionaire bevoegdheid"
+
+  5.32:
+    titel: "(weigeren vergunning vanwege ernstige gezondheidsrisico's)"
+
+    leden:
+      1:
+        tekst: "Het bevoegd gezag kan een omgevingsvergunning weigeren als naar zijn oordeel sprake is van bijzondere omstandigheden waardoor het verlenen van de vergunning zou leiden tot ernstige gezondheidsrisico's."
+
+    functie:
+      werkwoord: "machtigt"
+      object: "weigering op gezondheidsgronden"
+      logica: "facultatieve weigeringsgrond bij bijzondere omstandigheden"
+
+    voorwaarden:
+      - type: "kan"
+        effect: "discretionaire bevoegdheid"
+      - type: "als"
+        conditie: "bijzondere omstandigheden + ernstige gezondheidsrisico's"
+
+  5.33:
+    titel: "(verlenen of weigeren vergunning vanwege instemming)"
+
+    leden:
+      1:
+        tekst: "Voor zover de aanvraag betrekking heeft op een activiteit waarvoor de beslissing op de aanvraag op grond van artikel 16.16 instemming van een ander bestuursorgaan behoeft, wordt de omgevingsvergunning alleen verleend als dat bestuursorgaan heeft ingestemd."
+
+    functie:
+      werkwoord: "vereist"
+      object: "instemming ander bestuursorgaan"
+      logica: "geen verlening zonder instemming"
+
+    interne_refs:
+      - naar: "artikel 16.16"
+        context: "instemmingsvereiste"
+
+  5.33a:
+    titel: "(gedeeltelijke verlening omgevingsvergunning bij aanvraag meer activiteiten)"
+
+    leden:
+      1:
+        tekst: "Voor zover de aanvraag betrekking heeft op meer dan een activiteit wordt als er een bij of krachtens deze paragraaf gestelde regel is op grond waarvan voor een van die activiteiten de omgevingsvergunning moet worden geweigerd..."
+
+    functie:
+      werkwoord: "regelt"
+      object: "gedeeltelijke verlening"
+      logica: "weigering voor deel blokkeert niet geheel"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  structure:
+    hub_and_spoke: |
+      Art. 5.18 = CENTRAL HUB (framework)
+           │
+           ├── 5.20: bouwactiviteit
+           ├── 5.21: omgevingsplanactiviteit
+           ├── 5.22: rijksmonumentenactiviteit
+           ├── 5.23: ontgrondingsactiviteit
+           ├── 5.24: wateractiviteit
+           ├── 5.26: milieubelastende activiteit
+           ├── 5.27: mijnbouwlocatieactiviteit
+           ├── 5.28: beperkingengebiedactiviteit
+           ├── 5.29: Natura 2000 / flora-fauna
+           └── 5.29a: jachtgeweer / valkeniers
+
+    categories:
+      - "5.18-5.19: FRAMEWORK (central + provincial)"
+      - "5.20-5.29a: ACTIVITY-SPECIFIC elaboration"
+      - "5.30: DECENTRALE activiteiten (5.3/5.4)"
+      - "5.31-5.32: WEIGERINGSGRONDEN"
+      - "5.33-5.33a: SPECIAL CASES (instemming, gedeeltelijk)"
+
+  reference_pattern:
+    hub_references:
+      hub: "5.18"
+      spokes: ["5.20", "5.21", "5.22", "5.23", "5.24", "5.26", "5.27", "5.28", "5.29", "5.29a"]
+      pattern: "alle activity-specifieke artikelen verwijzen naar 5.18"
+
+    activity_mapping:
+      # Maps to 5.1 activiteitenlijst
+      5.20: "bouwactiviteit (5.1 lid 2a)"
+      5.21: "omgevingsplanactiviteit (5.1 lid 1a)"
+      5.22: "rijksmonumentenactiviteit (5.1 lid 1b)"
+      5.23: "ontgrondingsactiviteit (5.1 lid 1c)"
+      5.24: "wateractiviteit (5.1 lid 2c/d)"
+      5.26: "milieubelastende activiteit (5.1 lid 2b)"
+      5.27: "mijnbouwlocatieactiviteit (5.1 lid 2e)"
+      5.28: "beperkingengebiedactiviteit (5.1 lid 2f)"
+      5.29: "Natura 2000 / flora-fauna (5.1 lid 1e + 2g)"
+      5.29a: "jachtgeweer / valkeniers (5.1 lid 1f/g)"
+
+  delegation_pattern:
+    - "5.18: Ow delegeert beoordelingsregels naar AMvB (Bkl)"
+    - "5.19: provinciale aanvulling via omgevingsverordening"
+    - "5.30: decentrale gronden via waterschaps-/omgevingsverordening"
+    - "Pattern: Ow sets WHAT to assess, AMvB/verordening sets HOW"
+
+  decision_logic:
+    verlenen_weigeren:
+      verplicht: "5.18-5.30 (beoordelingsregels)"
+      facultatief: "5.31-5.32 (kan weigeren)"
+      conditioneel: "5.33 (instemming vereist)"
+      gedeeltelijk: "5.33a (deel weigeren, deel verlenen)"
+
+  logical_boundary:
+    - "Paragraaf 5.1.3 is ASSESSMENT FRAMEWORK"
+    - "Entry: 5.18 (central hub)"
+    - "Spokes: 5.20-5.29a (per activiteit)"
+    - "Special: 5.30-5.33a (decentraal, weigering, instemming)"
+    - "Exit: naar 5.34+ (inhoud vergunning)"
+
+# ============================================================================
+# MAPPING GUIDE UPDATE (based on this extraction)
+# ============================================================================
+
+mapping_update:
+  insight: |
+    Paragraaf 5.1.3 uses a HUB-AND-SPOKE pattern:
+    - Art. 5.18 is the CENTRAL HUB (delegates to AMvB)
+    - Activity-specific articles (5.20-5.29a) are SPOKES
+    - Each spoke references 5.18 and adds activity-specific criteria
+
+    This mirrors the activity list in Art. 5.1:
+    - 5.1 defines WHAT activities need permits
+    - 5.18+ defines HOW applications are assessed
+
+  connection_to_5.1.1:
+    pattern: "5.20-5.29a mirror the activity types from 5.1 lid 1 and lid 2"
+    implication: "Navigator can route from activity type to assessment rules"
+
+  connection_to_5.1.2:
+    pattern: "5.1.2 determines WHO, 5.1.3 determines HOW"
+    implication: "Sequential flow: identify BG → apply assessment rules"
+
+  next_extraction: "Paragraaf 5.1.4 (5.34-5.37a) - inhoud en werking vergunning"

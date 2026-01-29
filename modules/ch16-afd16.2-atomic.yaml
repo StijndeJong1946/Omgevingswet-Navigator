@@ -1,0 +1,590 @@
+# Afdeling 16.2 - Coördinatie en betrokkenheid andere bestuursorganen
+# ATOMIC EXTRACTION - TRUE TO SOURCE
+# Extracted: 2026-01-28
+
+_metadata:
+  chapter: 16
+  afdeling: "16.2"
+  titel: "Coördinatie en betrokkenheid andere bestuursorganen"
+  artikel_range: "16.7 - 16.21"
+  extraction_method: "atomic"
+  paragrafen:
+    - "16.2.1: Toepassing afdeling 3.5 Awb (16.7-16.8)"
+    - "16.2.2: Aanvullende bepalingen milieu+water (16.9-16.14)"
+    - "16.2.2a: Coördinatie omgevingsplan + vergunning (16.14a)"
+    - "16.2.3: Betrokkenheid andere bestuursorganen (16.15-16.21)"
+
+# ============================================================================
+# PARAGRAAF 16.2.1 - TOEPASSING AFD 3.5 AWB (COÖRDINATIE)
+# ============================================================================
+
+paragraaf_16.2.1:
+  titel: "Toepassing afdeling 3.5 Algemene wet bestuursrecht"
+  functie: "Wanneer Awb-coördinatieregeling van toepassing is"
+
+  artikelen:
+
+    16.7:
+      titel: "(toepassing coördinatieregeling Awb)"
+      hub_status: "HUB ARTICLE - 12 references"
+
+      leden:
+        1:
+          tekst: "Afdeling 3.5 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van:"
+          onderdelen:
+            a:
+              tekst: "de beslissingen op aanvragen om een omgevingsvergunning of wijziging... voor:"
+              sub:
+                1: "een of meer op grond van artikel 5.7, tweede lid, aangewezen wateractiviteiten, en"
+                2: "een of meer andere activiteiten als bedoeld in de artikelen 5.1 en 5.4"
+              voorwaarde: "die gelijktijdig zijn ingediend"
+            b: "de beslissingen op aanvragen om een omgevingsvergunning... voor een milieubelastende activiteit en voor een wateractiviteit waarvoor op grond van artikel 5.7, vierde lid, de verplichting geldt deze gelijktijdig in te dienen"
+            c: "de besluiten ter uitvoering van een projectbesluit waarvoor dat op grond van artikel 5.45, eerste of tweede lid, is bepaald"
+        2:
+          tekst: "Bij algemene maatregel van bestuur wordt voor de gevallen, bedoeld in het eerste lid, onder a en b, het coördinerend bestuursorgaan, bedoeld in artikel 3:21, eerste lid, van de Algemene wet bestuursrecht, aangewezen."
+          delegatie: "AMvB"
+        3:
+          tekst: "De artikelen 3:21, derde lid, en 3:23, eerste en derde lid, van de Algemene wet bestuursrecht zijn niet van toepassing op de gevallen, bedoeld in het eerste lid, onder a en b."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "wanneer Awb coördinatieregeling geldt"
+        gevallen:
+          - "gelijktijdige aanvragen water + andere activiteiten"
+          - "verplicht gelijktijdige milieu + water"
+          - "uitvoeringsbesluiten projectbesluit"
+
+      interne_refs:
+        - naar: "artikel 5.7, tweede lid"
+          context: "wateractiviteiten aanwijzing"
+        - naar: "artikelen 5.1 en 5.4"
+          context: "vergunningplichtige activiteiten"
+        - naar: "artikel 5.7, vierde lid"
+          context: "verplichte gelijktijdige indiening"
+        - naar: "artikel 5.45, eerste of tweede lid"
+          context: "projectbesluit coördinatie"
+
+      externe_refs:
+        - naar: "Awb afdeling 3.5"
+          bwb_id: "BWBR0005537"
+          context: "coördinatieregeling"
+        - naar: "Awb artikel 3:21"
+          bwb_id: "BWBR0005537"
+          context: "coördinerend bestuursorgaan"
+        - naar: "Awb artikel 3:23"
+          bwb_id: "BWBR0005537"
+
+    16.8:
+      titel: "(koepelconcept)"
+
+      leden:
+        1:
+          tekst: "In een coördinatiebesluit als bedoeld in artikel 3:20, onder b, van de Algemene wet bestuursrecht kan, met het oog op de doelen van de wet en voor het optimaliseren van gebruiksruimte in een gebied, worden bepaald dat afdeling 3.5 van die wet van toepassing is op de voorbereiding van:"
+          onderdelen:
+            a: "een omgevingsplan, waterschapsverordening of omgevingsverordening"
+            b: "een programma"
+            c: "een projectbesluit of een omgevingsvergunning"
+        2:
+          tekst: "Artikel 3:28 van de Algemene wet bestuursrecht is niet van toepassing op besluiten waartegen geen beroep kan worden ingesteld."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "facultatieve uitbreiding coördinatie"
+        doel: "optimaliseren gebruiksruimte in gebied"
+
+      key_concept:
+        koepelconcept: "coördinatie meerdere instrumenten tegelijk"
+
+      externe_refs:
+        - naar: "Awb artikel 3:20"
+          bwb_id: "BWBR0005537"
+        - naar: "Awb afdeling 3.5"
+          bwb_id: "BWBR0005537"
+        - naar: "Awb artikel 3:28"
+          bwb_id: "BWBR0005537"
+
+# ============================================================================
+# PARAGRAAF 16.2.2 - MILIEU + WATER COÖRDINATIE
+# ============================================================================
+
+paragraaf_16.2.2:
+  titel: "Aanvullende bepalingen voor coördinatie van de vergunningverlening voor een milieubelastende activiteit en wateractiviteit"
+  functie: "Specifieke regels voor milieu-water koppeling"
+
+  artikelen:
+
+    16.9:
+      titel: "(toepassingsbereik paragraaf 16.2.2)"
+
+      tekst: "Deze paragraaf is:"
+      onderdelen:
+        a: "van toepassing op de beslissingen op aanvragen om een omgevingsvergunning, bedoeld in artikel 16.7, eerste lid, onder b"
+        b: "van overeenkomstige toepassing op de beslissingen op aanvragen om wijziging van de voorschriften... of de beslissingen tot ambtshalve wijziging van die voorschriften"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "toepassingsbereik"
+        scope: "alleen milieu + water gevallen uit 16.7-1-b"
+
+      interne_refs:
+        - naar: "artikel 16.7, eerste lid, onder b"
+
+    16.10:
+      titel: "(buiten behandeling laten aanvraag)"
+
+      leden:
+        1:
+          tekst: "Als maar één van de aanvragen om een omgevingsvergunning, bedoeld in artikel 16.7, eerste lid, onder b, is ingediend, laat het bevoegd gezag die aanvraag buiten behandeling, nadat de aanvrager eerst in de gelegenheid is gesteld de ontbrekende aanvraag in te dienen binnen een door het bevoegd gezag gestelde termijn."
+        2:
+          tekst: "Als van beide aanvragen om een omgevingsvergunning... er één buiten behandeling wordt gelaten, laat het bevoegd gezag voor de andere aanvraag ook die aanvraag buiten behandeling."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "buiten behandeling laten onvolledige set"
+        logica: "beide aanvragen OF geen"
+
+      interne_refs:
+        - naar: "artikel 16.7, eerste lid, onder b"
+
+    16.11:
+      titel: "(advies)"
+
+      tekst: "De bestuursorganen die bevoegd gezag zijn met betrekking tot elk van de aanvragen, bedoeld in artikel 16.7, eerste lid, onder b, brengen aan elkaar een advies uit met het oog op de samenhang tussen de beslissingen op beide aanvragen."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "wederzijdse advisering"
+        doel: "samenhang waarborgen"
+
+      interne_refs:
+        - naar: "artikel 16.7, eerste lid, onder b"
+
+    16.12:
+      titel: "(termijn gelding omgevingsvergunningen)"
+
+      leden:
+        1:
+          tekst: "Als in de omgevingsvergunning voor de wateractiviteit met toepassing van artikel 5.36, eerste lid, een termijn voor de gelding van de vergunning wordt gesteld, kan in de omgevingsvergunning voor de milieubelastende activiteit een gelijke termijn worden gesteld."
+          logica: "kan gelijke termijn stellen"
+        2:
+          tekst: "Als in de omgevingsvergunning voor de milieubelastende activiteit met toepassing van artikel 5.36, eerste lid, een termijn voor de gelding van de vergunning wordt gesteld, wordt in de omgevingsvergunning voor de wateractiviteit een gelijke termijn gesteld."
+          logica: "MOET gelijke termijn stellen"
+
+      functie:
+        werkwoord: "koppelt"
+        object: "termijnen milieu- en watervergunning"
+
+      key_distinction:
+        water_naar_milieu: "kan (facultatief)"
+        milieu_naar_water: "moet (imperatief)"
+
+      interne_refs:
+        - naar: "artikel 5.36, eerste lid"
+          context: "termijnstelling"
+
+    16.13:
+      titel: "(instructie op initiatief algemeen bevoegd gezag)"
+
+      leden:
+        1:
+          tekst: "Als gedeputeerde staten of Onze Minister die het aangaat het bevoegd gezag zijn voor de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit, kunnen gedeputeerde staten respectievelijk Onze Minister die het aangaat, als dat vanwege de samenhang tussen de beslissingen op de beide aanvragen met het oog op het beschermen van het milieu geboden is, aan het bevoegd gezag voor de aanvraag om de omgevingsvergunning voor de wateractiviteit een instructie geven over de inhoud van die beslissing."
+          voorwaarde: "samenhang + milieubescherming"
+        2:
+          tekst: "De instructie wordt gegeven binnen acht weken na de dag waarop het ontwerpbesluit voor de beslissing op de aanvraag om de omgevingsvergunning voor de wateractiviteit overeenkomstig artikel 3:11, eerste lid, van de Algemene wet bestuursrecht ter inzage is gelegd..."
+          termijn: "8 weken na terinzagelegging"
+        3:
+          tekst: "Het eerste en tweede lid zijn van overeenkomstige toepassing als het college van burgemeester en wethouders bevoegd gezag is..."
+
+      functie:
+        werkwoord: "machtigt"
+        object: "instructie aan water-BG"
+        initiator: "milieu-BG (GS/Minister)"
+        richting: "milieu → water"
+
+      interne_refs:
+        - naar: "artikel 2.33"
+          context: "instructie GS"
+        - naar: "artikel 2.34"
+          context: "instructie Minister"
+        - naar: "artikelen 2.22 en 2.23"
+          context: "afwijking mogelijk"
+
+      externe_refs:
+        - naar: "Awb artikel 3:11"
+          bwb_id: "BWBR0005537"
+
+    16.14:
+      titel: "(instructie op initiatief bevoegd gezag water)"
+
+      leden:
+        1:
+          tekst: "Als het college van burgemeester en wethouders het bevoegd gezag is voor de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit, kunnen gedeputeerde staten, als dat vanwege de samenhang tussen de beslissingen op de beide aanvragen met het oog op het beschermen van het milieu geboden is, aan het college van burgemeester en wethouders, op verzoek van het bevoegd gezag voor de aanvraag om de omgevingsvergunning voor de wateractiviteit, een instructie geven..."
+        2:
+          tekst: "De instructie wordt gegeven binnen acht weken na de dag waarop het ontwerpbesluit op de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit... ter inzage is gelegd..."
+          termijn: "8 weken"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "instructie aan milieu-BG"
+        initiator: "water-BG (via GS)"
+        richting: "water → milieu (via GS)"
+
+      interne_refs:
+        - naar: "artikel 2.33"
+
+# ============================================================================
+# PARAGRAAF 16.2.2a - COÖRDINATIE OMGEVINGSPLAN + VERGUNNING
+# ============================================================================
+
+paragraaf_16.2.2a:
+  titel: "Coördinatie omgevingsplan en omgevingsvergunning voor een omgevingsplanactiviteit"
+
+  artikelen:
+
+    16.14a:
+      titel: "(coördinatie omgevingsplan en omgevingsvergunning)"
+
+      tekst: "Als afdeling 3.5 van de Algemene wet bestuursrecht wordt toegepast op de voorbereiding van een omgevingsplan en de beslissing op een aanvraag om een omgevingsvergunning en de beslissing op die aanvraag wordt genomen gelijktijdig met of na de vaststelling van dat omgevingsplan, wordt bij de beslissing uitgegaan van de regels in dat omgevingsplan."
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "toetsingsmoment bij coördinatie"
+        logica: "nieuw omgevingsplan geldt voor vergunning"
+
+      key_concept:
+        gecoördineerde_toetsing: "vergunning volgt nieuw omgevingsplan"
+
+      externe_refs:
+        - naar: "Awb afdeling 3.5"
+          bwb_id: "BWBR0005537"
+
+# ============================================================================
+# PARAGRAAF 16.2.3 - BETROKKENHEID ANDERE BESTUURSORGANEN
+# ============================================================================
+
+paragraaf_16.2.3:
+  titel: "Betrokkenheid van andere bestuursorganen"
+  functie: "Regelt ADVIES en INSTEMMING"
+
+  artikelen:
+
+    16.15:
+      titel: "(advies)"
+
+      leden:
+        1:
+          tekst: "Bij algemene maatregel van bestuur worden bestuursorganen of andere instanties aangewezen die, in daarbij aangewezen gevallen, in de gelegenheid worden gesteld om aan het bevoegd gezag of een ander bestuursorgaan advies uit te brengen over een aanvraag om een besluit op grond van deze wet."
+          delegatie: "AMvB"
+        2:
+          tekst: "Bij een omgevingsplan, waterschapsverordening of omgevingsverordening kunnen bestuursorganen of andere instanties worden aangewezen die in de gelegenheid worden gesteld om aan het bevoegd gezag advies uit de brengen over een aanvraag om een omgevingsvergunning voor een omgevingsplanactiviteit of een activiteit als bedoeld in artikel 5.3 of 5.4."
+        3:
+          tekst: "Een bestuursorgaan of andere instantie wordt als adviseur aangewezen als dat wenselijk is vanwege:"
+          gronden:
+            a: "de deskundigheid van het bestuursorgaan of de instantie"
+            b: "de door het bestuursorgaan te behartigen belangen, gelet op de aan dat bestuursorgaan toegedeelde taken voor de fysieke leefomgeving"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "aanwijzing adviseurs"
+
+      key_concept:
+        advies: "niet-bindend, wel te betrekken"
+
+      interne_refs:
+        - naar: "artikel 5.3"
+        - naar: "artikel 5.4"
+
+    16.15a:
+      titel: "(verplichte aanwijzing adviseurs)"
+
+      tekst: "Op grond van artikel 16.15, eerste lid, worden in ieder geval als adviseur aangewezen:"
+      onderdelen:
+        a: "een bestuursorgaan dat zijn bevoegdheid met toepassing van artikel 5.16 heeft overgedragen aan een ander bestuursorgaan..."
+        b: "de gemeenteraad als het gaat om:"
+          sub:
+            1: "een aanvraag om een omgevingsvergunning voor in door de gemeenteraad aangewezen gevallen van een buitenplanse omgevingsplanactiviteit"
+            2: "een verzoek om een beslissing over instemming..."
+        c: "de gemeentelijke commissie, bedoeld in artikel 17.9, als het gaat om:"
+          sub:
+            1: "een aanvraag om een omgevingsvergunning voor een rijksmonumentenactiviteit met betrekking tot een monument"
+            2: "een aanvraag om een omgevingsvergunning voor een andere activiteit, in door de gemeenteraad aangewezen gevallen"
+        d: "gedeputeerde staten als het gaat om een aanvraag om een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, in door hen aangewezen gevallen..."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "specifieke adviseurs"
+
+      interne_refs:
+        - naar: "artikel 5.16"
+          context: "overdracht bevoegdheid"
+        - naar: "artikel 16.16"
+        - naar: "artikel 17.9"
+          context: "gemeentelijke adviescommissie"
+        - naar: "artikel 2.3, tweede lid, onder a"
+          context: "provinciaal belang"
+
+    16.15b:
+      titel: "(doorwerking advies gemeenteraad)"
+
+      tekst: "In een geval als bedoeld in artikel 16.15a, onder b, worden de bij of krachtens deze wet gestelde regels over het beslissen op de aanvraag om de omgevingsvergunning of het verlenen of onthouden van instemming met inachtneming van het advies van de gemeenteraad toegepast."
+
+      functie:
+        werkwoord: "verplicht"
+        object: "inachtneming raadsadvies"
+        logica: "raadsadvies versterkt"
+
+      interne_refs:
+        - naar: "artikel 16.15a, onder b"
+
+    16.16:
+      titel: "(instemming)"
+      hub_status: "HUB ARTICLE - 12 references"
+
+      leden:
+        1:
+          tekst: "Als een aanvraag om een besluit op grond van deze wet betrekking heeft op een bij algemene maatregel van bestuur aangewezen geval, behoeft de voorgenomen beslissing op de aanvraag instemming van het bestuursorgaan dat op grond van artikel 16.15 in de gelegenheid is gesteld advies uit te brengen. Bij de aanwijzing kan worden bepaald dat alleen een voorgenomen beslissing tot het toewijzen van de aanvraag instemming behoeft."
+        2:
+          tekst: "Bij de maatregel worden gevallen aangewezen waarin instemming... wenselijk is vanwege:"
+          gronden:
+            a: "de bijzondere deskundigheid van het bestuursorgaan"
+            b: "door het bestuursorgaan te behartigen zwaarwegende belangen, gelet op de aan dat bestuursorgaan toegedeelde taken voor de fysieke leefomgeving"
+            c: "door het provinciebestuur te behartigen provinciale belangen"
+        3:
+          tekst: "Bij de maatregel kan worden bepaald dat het aangewezen bestuursorgaan gevallen kan aanwijzen waarin instemming niet is vereist."
+        4:
+          tekst: "Het aangewezen bestuursorgaan kan bij het op grond van artikel 16.15 uitgebrachte advies bepalen dat instemming niet is vereist."
+        5:
+          tekst: "In afwijking van artikel 10:3, tweede lid, aanhef en onder c, van de Algemene wet bestuursrecht kan het aangewezen bestuursorgaan mandaat verlenen om te beslissen over de instemming."
+
+      functie:
+        werkwoord: "regelt"
+        object: "instemmingsvereiste"
+        logica: "advies kan uitgroeien tot instemming"
+
+      key_concept:
+        instemming: "bindend goedkeuringsvereiste"
+        verschil_met_advies: "instemming = veto-mogelijkheid"
+
+      interne_refs:
+        - naar: "artikel 16.15"
+
+      externe_refs:
+        - naar: "Awb artikel 10:3"
+          bwb_id: "BWBR0005537"
+
+    16.17:
+      titel: "(gronden verlenen of onthouden instemming)"
+
+      leden:
+        1:
+          tekst: "Bij algemene maatregel van bestuur worden gronden aangewezen voor het verlenen of onthouden van instemming."
+          delegatie: "AMvB"
+        2:
+          tekst: "Artikel 10:27 van de Algemene wet bestuursrecht is niet van toepassing."
+
+      functie:
+        werkwoord: "delegeert"
+        object: "instemmingsgronden"
+
+      externe_refs:
+        - naar: "Awb artikel 10:27"
+          bwb_id: "BWBR0005537"
+
+    16.18:
+      titel: "(termijn instemming; geen fictieve instemming)"
+
+      leden:
+        1:
+          tekst: "Het besluit over instemming als bedoeld in artikel 16.16 wordt binnen vier weken na indiening van het verzoek om instemming bekendgemaakt door toezending aan het bevoegd gezag."
+          termijn: "4 weken"
+        2:
+          tekst: "Artikel 10:31, tweede tot en met vierde lid, van de Algemene wet bestuursrecht is niet van toepassing."
+          effect: "GEEN fictieve instemming"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "termijn en afwezigheid fictie"
+
+      key_concept:
+        geen_fictieve_instemming: "termijnoverschrijding = NIET automatisch instemming"
+
+      interne_refs:
+        - naar: "artikel 16.16"
+
+      externe_refs:
+        - naar: "Awb artikel 10:31"
+          bwb_id: "BWBR0005537"
+          context: "fictieve instemming uitgezonderd"
+
+    16.19:
+      titel: "(advies en instemming bij ambtshalve besluit)"
+
+      leden:
+        1:
+          tekst: "De artikelen 16.15 tot en met 16.18 en de op grond van de artikelen 16.15 tot en met 16.17 gestelde regels zijn van overeenkomstige toepassing op een ambtshalve besluit tot wijziging of intrekking van een eerder op aanvraag genomen besluit..."
+        2:
+          tekst: "Daarbij wordt voor een ambtshalve besluit... een voorgenomen ambtshalve besluit tot wijziging of intrekking van het eerdere besluit gelijkgesteld met een aanvraag om dat besluit."
+
+      functie:
+        werkwoord: "breidt uit"
+        object: "advies/instemming naar ambtshalve besluiten"
+
+      interne_refs:
+        - naar: "artikelen 16.15 tot en met 16.18"
+
+    16.20:
+      titel: "(advies en instemming bij projectbesluit)"
+
+      leden:
+        1:
+          tekst: "De artikelen 16.15 tot en met 16.19... zijn van overeenkomstige toepassing op het uitbrengen van advies over het ontwerp van een projectbesluit en het verlenen van instemming met een voorgenomen projectbesluit, voor zover daarin wordt bepaald dat het geldt als omgevingsvergunning als bedoeld in artikel 5.52, tweede lid, onder a"
+          uitzonderingen:
+            a: "projectbesluit door Minister → geen instemming lager orgaan"
+            b: "projectbesluit door GS → geen instemming lager orgaan (behalve Rijk)"
+        2:
+          tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarbij... advies niet van toepassing..."
+        3:
+          tekst: "De artikelen 16.15 tot en met 16.19 zijn van overeenkomstige toepassing... voor zover daarin wordt bepaald dat het geldt als een besluit als bedoeld in artikel 5.52, tweede lid, onder b."
+
+      functie:
+        werkwoord: "breidt uit"
+        object: "advies/instemming naar projectbesluit"
+
+      key_concept:
+        hierarchie: "hoger niveau = geen instemming van lager nodig"
+
+      interne_refs:
+        - naar: "artikelen 16.15 tot en met 16.19"
+        - naar: "artikel 5.52, tweede lid"
+          context: "projectbesluit als vergunning"
+        - naar: "artikel 16.16"
+
+    16.21:
+      titel: "(reactieve interventie)"
+
+      leden:
+        1:
+          tekst: "Gedeputeerde staten kunnen besluiten dat een onderdeel van een besluit tot vaststelling of wijziging van een omgevingsplan geen deel daarvan uitmaakt als:"
+          voorwaarden:
+            a: "zij over het onderdeel een zienswijze naar voren hebben gebracht en die zienswijze niet volledig in het omgevingsplan is overgenomen"
+            b: "in het onderdeel wijzigingen zijn aangebracht ten opzichte van het ontwerp, anders dan op grond van een zienswijze van gedeputeerde staten"
+        2:
+          tekst: "Gedeputeerde staten kunnen alleen gebruik maken van die bevoegdheid voor zover:"
+          beperkingen:
+            a: "dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties"
+            b: "er sprake is van strijd met een belang als bedoeld in artikel 2.3, tweede lid, onder a, dat is aangegeven in een door een bestuursorgaan van de provincie openbaar gemaakt document"
+        3:
+          tekst: "Gedeputeerde staten vermelden in de motivering van het besluit de daaraan ten grondslag liggende feiten, omstandigheden en overwegingen die het provinciebestuur beletten het betrokken belang met inzet van andere aan hen toekomende bevoegdheden te beschermen."
+        4:
+          tekst: "Het besluit wordt bekendgemaakt binnen vier weken nadat het besluit tot vaststelling of wijziging van het omgevingsplan is bekendgemaakt."
+          termijn: "4 weken"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "provinciaal veto op omgevingsplan-onderdeel"
+        actor: "GS"
+        target: "omgevingsplan gemeente"
+
+      key_concept:
+        reactieve_interventie: "provinciaal veto-recht op gemeentelijk omgevingsplan"
+        ultimum_remedium: "alleen als andere bevoegdheden niet volstaan (lid 3)"
+
+      interne_refs:
+        - naar: "artikel 2.3, tweede lid, onder a"
+          context: "provinciaal belang"
+
+# ============================================================================
+# OBSERVED PATTERNS (emergent from extraction)
+# ============================================================================
+
+observed_patterns:
+
+  two_forms_of_involvement:
+    pattern: "ADVIES vs INSTEMMING"
+    advies:
+      artikel: "16.15"
+      karakter: "niet-bindend"
+      gronden: "deskundigheid OF belangen"
+    instemming:
+      artikel: "16.16"
+      karakter: "bindend (veto-mogelijkheid)"
+      gronden: "deskundigheid OF zwaarwegende belangen OF provinciale belangen"
+    escalatie: "advies-orgaan kan ook instemming-orgaan zijn"
+
+  hub_articles:
+    16.7:
+      refs: 12
+      functie: "wanneer Awb 3.5 coördinatie geldt"
+    16.16:
+      refs: 12
+      functie: "wanneer instemming vereist"
+    observation: "beide structureren inter-bestuursorgaan relaties"
+
+  milieu_water_koppeling:
+    paragraaf: "16.2.2"
+    reden: "milieubelastende activiteit en wateractiviteit vaak samenhangend"
+    mechanismen:
+      - "wederzijdse advisering (16.11)"
+      - "gekoppelde termijnen (16.12)"
+      - "instructiemogelijkheid (16.13-16.14)"
+    asymmetrie:
+      milieu_naar_water_termijn: "kan"
+      water_naar_milieu_termijn: "moet"
+
+  connection_to_ch2:
+    via_instructie:
+      - "16.13 → 2.33, 2.34 (instructiemechanisme)"
+    via_subsidiariteit:
+      - "16.21 → 2.3 (provinciaal belang)"
+    logica: "Ch16 bouwt voort op Ch2 governance-mechanismen"
+
+  geen_fictie_pattern:
+    16.18: "geen fictieve instemming"
+    16.64: "geen lex silencio positivo"
+    pattern: "Omgevingswet sluit Awb-ficties uit"
+
+  reactieve_interventie:
+    artikel: "16.21"
+    betekenis: "GS kan onderdeel omgevingsplan blokkeren"
+    voorwaarden:
+      - "zienswijze niet overgenomen OF wijziging na ontwerp"
+      - "evenwichtige toedeling functies"
+      - "strijd met provinciaal belang (openbaar gemaakt)"
+      - "andere bevoegdheden volstaan niet"
+    termijn: "4 weken na bekendmaking omgevingsplan"
+
+# ============================================================================
+# AFDELING 16.2 SUMMARY
+# ============================================================================
+
+afdeling_16.2_summary:
+  total_artikelen: 15
+
+  structure:
+    16.2.1: "Toepassing Awb 3.5 coördinatie"
+    16.2.2: "Milieu-water specifiek"
+    16.2.2a: "Omgevingsplan + vergunning"
+    16.2.3: "Advies en instemming"
+
+  key_articles:
+    16.7: "Hub - coördinatieregeling trigger"
+    16.16: "Hub - instemmingsregeling"
+    16.21: "Reactieve interventie"
+
+  external_connections:
+    naar_ch2:
+      - "2.3 (subsidiariteit, provinciaal belang)"
+      - "2.22, 2.23 (afwijking)"
+      - "2.33, 2.34 (instructie)"
+    naar_ch5:
+      - "5.1, 5.4 (vergunningplichtige activiteiten)"
+      - "5.7 (wateractiviteiten)"
+      - "5.16 (overdracht bevoegdheid)"
+      - "5.36 (termijnstelling)"
+      - "5.45 (projectbesluit coördinatie)"
+      - "5.52 (projectbesluit als vergunning)"
+    naar_ch17:
+      - "17.9 (gemeentelijke adviescommissie)"
+    naar_awb:
+      - "3.5 (coördinatieregeling)"
+      - "10:3, 10:27, 10:31 (goedkeuring)"

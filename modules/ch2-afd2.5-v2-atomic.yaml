@@ -793,12 +793,11 @@ paragraaf_2.5.1:
 
       logica_samenvatting:
         narrative: |
-          Art. 2.31a is cruciaal voor natuurbescherming.
+          Art. 2.31a bevat instructieregels voor natuurbescherming.
           Lid 1: VERPLICHTE instructieregels (Natura 2000, soorten, etc.)
-          Lid 2: MACHTIGING voor stikstofregels (politiek zeer relevant!)
+          Lid 2: MACHTIGING voor stikstofregels
 
-          Opvallend: lid 2 is KAN, lid 1 is MOET.
-          Stikstofdepositieruimte is facultatief in de wet.
+          Lid 2 is KAN, lid 1 is MOET.
 
     # =========================================================================
     # ARTIKEL 2.32 - ONTHEFFING INSTRUCTIEREGELS
@@ -1460,14 +1459,9 @@ mapping_guide_update:
 
     instructieregels_vs_instructies_onderscheid:
       observatie: |
-        Afdeling 2.5 maakt cruciaal onderscheid tussen:
+        Afdeling 2.5 onderscheidt:
         - INSTRUCTIEREGELS (§ 2.5.1): algemeen, vooraf, in verordening
         - INSTRUCTIES (§ 2.5.2): individueel, achteraf, concreet besluit
-
-        Dit bepaalt welk instrument wanneer mag worden gebruikt.
-      implicatie: |
-        Navigator moet dit onderscheid expliciet maken.
-        Vraag "kan provincie gemeente dwingen?" leidt naar BEIDE mogelijkheden.
 
     doorwerking_hiërarchie:
       observatie: |

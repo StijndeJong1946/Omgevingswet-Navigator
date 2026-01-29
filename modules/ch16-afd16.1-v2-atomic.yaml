@@ -17,6 +17,14 @@ paragraaf_16.1.1:
   titel: "Elektronisch verkeer"
   bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1"
 
+  logica:
+    type: paragraaf_synthese
+    norm: "Digitalisering omgevingsrecht via DSO"
+    kernprincipes:
+      - "Landelijke voorziening (DSO) als centraal loket"
+      - "AMvB bepaalt verplicht elektronisch verkeer"
+      - "Consolidatieplicht bij omgevingsplanwijzigingen"
+
   artikelen:
 
     artikel_16.1:
@@ -76,6 +84,12 @@ paragraaf_16.1.1:
           context: "landelijke voorziening (DSO)"
           bron_path: "/Hoofdstuk20/Afdeling20.5/Paragraaf20.5.2/Artikel20.21"
 
+      beslislogica:
+        trigger: "elektronische aanvraag of melding"
+        hoofdregel: "via DSO indienen"
+        uitzondering: "AMvB bepaalt anders"
+        escalatie: "AMvB kan verplicht elektronisch voorschrijven"
+
       logica_samenvatting:
         narrative: |
           Art. 16.1 is de BASIS voor digitaal verkeer met de overheid.
@@ -118,6 +132,16 @@ paragraaf_16.1.1:
           type: verwijzing
           bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21"
 
+      beslislogica:
+        trigger: "omgevingsplan gewijzigd via art. 4.16, 5.52 of 16.21"
+        verplichting: "verwerken in geconsolideerde versie"
+        ratio: "actueel omgevingsplan altijd beschikbaar"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.2 waarborgt dat het omgevingsplan steeds geconsolideerd is.
+          Dit is essentieel voor de DSO-werking: burgers zien altijd actuele versie.
+
     artikel_16.3:
       nummer: "16.3"
       titel: "(ingetrokken)"
@@ -131,6 +155,7 @@ paragraaf_16.1.1:
       logica:
         type: vervallen
         norm: "Artikel ingetrokken"
+        intrekking: "Stb. 2020/172"
 
     artikel_16.4:
       nummer: "16.4"
@@ -145,6 +170,7 @@ paragraaf_16.1.1:
       logica:
         type: vervallen
         norm: "Artikel ingetrokken"
+        intrekking: "Stb. 2020/172"
 
 # =============================================================================
 # PARAGRAAF 16.1.2: GEBRUIK VAN GEGEVENS EN METHODEN
@@ -153,6 +179,14 @@ paragraaf_16.1.2:
   nummer: "16.1.2"
   titel: "Gebruik van gegevens en methoden"
   bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2"
+
+  logica:
+    type: paragraaf_synthese
+    norm: "Kwaliteitseisen voor besluitvorming"
+    kernprincipes:
+      - "Houdbaarheid onderzoeksgegevens (2-jaar regel)"
+      - "Strengere eisen voor natuurbescherming"
+      - "Standaardisatie meet- en rekenmethoden"
 
   artikelen:
 
@@ -196,6 +230,12 @@ paragraaf_16.1.2:
             scope: "Natura 2000-activiteit, flora- en fauna-activiteit"
             kernbegrip: "strengere actueel-eis voor natuur"
 
+      beslislogica:
+        trigger: "onderzoeksgegevens nodig voor besluit"
+        hoofdregel: "gegevens ≤ 2 jaar altijd bruikbaar"
+        uitzondering_1: "ouder dan 2 jaar: onderbouw actualiteit"
+        uitzondering_2: "Natura 2000/flora-fauna: 2-jaar regel niet van toepassing"
+
       logica_samenvatting:
         narrative: |
           Art. 16.5 regelt de HOUDBAARHEID van onderzoeksgegevens.
@@ -227,10 +267,30 @@ paragraaf_16.1.2:
           voor: "meet- en rekenmethoden"
           actor: "minister"
 
+      beslislogica:
+        trigger: "gevolgen besluit beoordelen"
+        methode: "volgens ministeriële regeling"
+        ratio: "landelijke uniformiteit in beoordelingen"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.6 machtigt ministeriële regeling voor meet- en rekenmethoden.
+
 # =============================================================================
 # AFDELING ANALYSE
 # =============================================================================
 afdeling_analyse:
+  bron_path: "/Hoofdstuk16/Afdeling16.1"
+
+  logica:
+    type: afdeling_synthese
+    norm: "Digitalisering en kwaliteitswaarborgen besluitvorming"
+    kernprincipes:
+      - "DSO als centraal loket voor omgevingsrecht"
+      - "Consolidatieplicht voor actuele regels"
+      - "Houdbaarheid onderzoeksgegevens gestandaardiseerd"
+      - "Strengere eisen voor natuuronderzoek"
+
   structuur:
     artikelen_count: 6
     actieve_artikelen: 4
@@ -243,26 +303,35 @@ afdeling_analyse:
       evidence: ["art. 16.1 lid 1-3"]
 
     houdbaarheid_gegevens:
-      beschrijving: "2-jaar regel voor onderzoeksgegevens, strenger voor natuur"
+      beschrijving: "2-jaar regel voor onderzoeksgegevens, niet van toepassing op Natura 2000"
       evidence: ["art. 16.5"]
 
     consolidatieplicht:
       beschrijving: "Wijzigingen moeten in geconsolideerde versie verwerkt"
       evidence: ["art. 16.2"]
 
+    standaardisatie_methoden:
+      beschrijving: "Meet- en rekenmethoden via ministeriële regeling"
+      evidence: ["art. 16.6"]
+
   kritieke_verwijzingen:
-    - art_16.1: "Koppeling met art. 20.21 (DSO landelijke voorziening)"
-    - art_16.2: "Koppeling met Bekendmakingswet art. 19"
-    - art_16.5_lid_3: "Strenger regime voor Natura 2000"
+    - art_16.1: "Verwijst naar art. 20.21 (landelijke voorziening)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.1"
+    - art_16.2: "Verwijst naar Bekendmakingswet art. 19"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.2"
+    - art_16.5_lid_3: "Lid 1 niet van toepassing op Natura 2000/flora-fauna"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.5/Lid3"
 
   routes:
     entry_points:
       - artikel: "16.1"
-        vraag: "Hoe dien ik elektronisch in?"
+        vraag: "Via welke weg elektronisch indienen?"
       - artikel: "16.5"
         vraag: "Hoe oud mogen onderzoeksgegevens zijn?"
+      - artikel: "16.6"
+        vraag: "Welke rekenmethoden gelden?"
     exit_points:
       - naar: "art. 20.21"
-        context: "DSO landelijke voorziening"
+        context: "landelijke voorziening"
       - naar: "Omgevingsbesluit"
-        context: "AMvB met aangewezen gevallen"
+        context: "aangewezen gevallen elektronisch verkeer"

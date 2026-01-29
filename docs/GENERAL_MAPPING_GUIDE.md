@@ -175,28 +175,52 @@ Governed by: Art. 2.3 (algemene regel), specific articles per instrument
 | **Chapter 16** | Per afdeling | Large chapter, clear procedural clusters |
 | **Rest** | Per chapter | Support functions, moderate size |
 
-## Extraction Priorities
+## V2 Extraction Principles
 
-### Phase 0: Infrastructure (Current)
-1. ✅ Definitions (Bijlage → `definitions.yaml`)
-2. ✅ Instruments (Ch2 afdelingen → `instruments.yaml`)
-3. ✅ Bevoegdheden mapping (Ch2/Ch5 → `bevoegdheden.yaml`)
-4. ✅ External references (→ `external-systems.yaml`)
+### Core Rule: Source-Only Content
 
-### Phase 1: Core Navigation
-1. Chapter 5 skeleton (vergunningplicht flow)
-2. Chapter 4 skeleton (algemene regels routing)
-3. Chapter 16 Afd 16.1 (procedural basics)
+V2 atomic extractions must contain **ONLY** content derived from the source XML (BWBR0037885):
 
-### Phase 2: Full Workflows
-1. Complete Ch5 modules
-2. Ch16 procedure modules
-3. Ch2 instructie flows
+| ✅ ALLOWED | ❌ NOT ALLOWED |
+|------------|----------------|
+| Actual article text | Interpretive commentary ("cruciaal", "KRITISCH") |
+| Structure as in source | Outside knowledge (case law, policy context) |
+| Explicit references in articles | Invented pattern names |
+| Conditie types from text (tenzij, mits, voor zover) | Practice/implementation details |
+| Actor/subject/object from text | Political commentary |
 
-### Phase 3: Domain Extensions
-1. Chapters 8-12 (domain-specific)
-2. Chapters 13, 15, 18 (support systems)
-3. Chapters 19-23 (special/transitional)
+### Pattern Names
+
+Use **descriptive names derived from source structure**, not interpretive labels:
+
+| ❌ Avoid | ✅ Prefer |
+|----------|----------|
+| efficiëntiepatroon | default_tenzij |
+| transparantiepatroon | verplichting_lid_1 |
+| kwaliteitspatroon | uitzondering_lid_2 |
+
+### Reserved Chapters
+
+Chapters 6, 7, 14, 21 are **[Gereserveerd]** - empty placeholders with no content to extract.
+
+---
+
+## Extraction Status (COMPLETE)
+
+### All Phases Complete ✅
+
+| Phase | Status | Modules |
+|-------|--------|---------|
+| **Phase 0: Infrastructure** | ✅ Complete | definitions, instruments, bevoegdheden, external-systems |
+| **Phase 1: Core Navigation** | ✅ Complete | Ch4, Ch5, Ch16 V2 modules |
+| **Phase 2: Full Workflows** | ✅ Complete | All afdelingen extracted |
+| **Phase 3: Domain Extensions** | ✅ Complete | Ch8-13, Ch15, Ch17-20, Ch22-23 |
+
+### V2 Module Count: 38 files
+
+- 1,700+ bron_path references
+- 700+ logica blocks
+- All chapters with substantive content extracted
 
 ## Key Questions for Navigation
 
@@ -2001,7 +2025,7 @@ Trigger: "weet of redelijkerwijs kan vermoeden"
 | 1 | Art. 1.6/1.7 | Specifieke regels + NALEVING | Voldaan aan zorgplicht |
 | 2 | Art. 1.7a | Specifieke regels (geen naleving nodig) | Art. 1.7a niet van toepassing |
 
-**KRITISCH verschil**: Lid 1 = compliance defence, Lid 2 = regulatory defence
+**Verschil**: Lid 1 vereist naleving, Lid 2 niet
 
 ### Cross-Chapter Connections (Ch1)
 
@@ -2189,7 +2213,7 @@ GEDOOGPLICHTEN:
 | **c. Proportionaliteit** | Minimale belemmering |
 | **d. Subsidiariteit** | Onteigening niet gerechtvaardigd |
 
-**KRITISCH**: Alle vier cumulatief vereist. Als belangen onteigening vorderen → Ch11, niet Ch10.
+Alle vier cumulatief vereist. Als belangen onteigening vorderen → Ch11, niet Ch10.
 
 ### Bevoegdheidsverdeling
 
@@ -3948,9 +3972,9 @@ Art. 16.54-16.56 establishes the **loket** (service desk) principle:
 │  ├─ Waterschap: bij wateractiviteiten                           │
 │  └─ OOK ALS zij niet bevoegd gezag zijn!                        │
 │                                                                 │
-│  KRITISCH: LOKETDATUM = TERMIJNSTART                            │
+│  LOKETDATUM = TERMIJNSTART                                      │
 │  ├─ Art. 16.54 lid 1: "Loket zendt door naar BG"               │
-│  └─ Termijn begint bij ontvangst LOKET, niet BG!               │
+│  └─ Termijn begint bij ontvangst loket                          │
 │                                                                 │
 │  PRAKTISCH EFFECT:                                              │
 │  ┌────────────────────────────────────────────────────┐         │
@@ -3984,14 +4008,9 @@ Art. 16.62-16.65 establishes **two tracks** for permit procedures:
 │      ├─ 6 maanden + 6 weken verlenging                          │
 │      └─ Bij AMvB aangewezen gevallen                            │
 │                                                                 │
-│  KRITIEK: LEX SILENCIO EXCLUSIE (Art. 16.64 lid 4)              │
+│  LEX SILENCIO EXCLUSIE (Art. 16.64 lid 4)                       │
 │  ├─ Awb § 4.1.3.3 NIET van toepassing                           │
-│  ├─ Geen vergunning van rechtswege bij termijnoverschrijding    │
-│  └─ Bewuste ontwerpkeuze Omgevingswet                           │
-│                                                                 │
-│  RATIO:                                                          │
-│  ├─ Milieu/natuur te belangrijk voor automatische verlening     │
-│  └─ Initiatiefnemer kan dwangsom vorderen bij overschrijding    │
+│  └─ Geen vergunning van rechtswege bij termijnoverschrijding    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -4004,21 +4023,12 @@ Art. 5.38-5.39 links permits to **Best Beschikbare Technieken** (BBT):
 │              BBT-KOPPELING                                       │
 │                                                                 │
 │  ACTUALISATIEPLICHT (Art. 5.38):                                │
-│  └─ Voorschriften moeten actueel blijven t.a.v. BBT             │
+│  └─ Voorschriften moeten actueel blijven                        │
 │                                                                 │
 │  WIJZIGINGSPLICHT (Art. 5.39 lid 2):                            │
 │  ├─ (a) Strijdigheid met wettelijk voorschrift                  │
-│  ├─ (b) BBT/BKE is geëvolueerd                                  │
-│  └─ (c) Nieuwe wetenschappelijke inzichten                      │
-│                                                                 │
-│  DOORWERKING:                                                    │
-│  ├─ EU publiceert BREF-documenten                               │
-│  ├─ BREF → BBT-conclusies                                       │
-│  ├─ BBT-conclusies → wijziging Bal                              │
-│  └─ Bal wijziging → vergunningvoorschriften moeten volgen       │
-│                                                                 │
-│  TERMIJN: 4 jaar na publicatie BBT-conclusies                   │
-│  └─ Vergunning moet zijn aangepast                              │
+│  ├─ (b) Ontwikkeling technische mogelijkheden                   │
+│  └─ (c) Ontwikkeling wetenschappelijke kennis                   │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

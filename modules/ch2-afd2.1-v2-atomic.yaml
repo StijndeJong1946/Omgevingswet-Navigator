@@ -298,10 +298,19 @@ artikelen:
 # AFDELING ANALYSE
 # =============================================================================
 afdeling_analyse:
+  bron_path: "/Hoofdstuk2/Afdeling2.1"
   structuur:
     artikelen_count: 3
     totaal_leden: 10
     totaal_onderdelen: 23
+
+  logica:
+    type: afdeling_synthese
+    norm: "Drie fundamentele beginselen voor taakuitoefening"
+    beginselen:
+      - doelgebondenheid: "Art. 2.1 - taken gericht op wetsdoelen"
+      - samenwerking: "Art. 2.2 - afstemming tussen bestuursorganen"
+      - subsidiariteit: "Art. 2.3 - gemeente primair, hogere lagen secundair"
 
   patronen:
     subsidiariteitsbeginsel:

@@ -9,6 +9,27 @@ afdeling: 2.2
 titel: "Omgevingsplan, waterschapsverordening en omgevingsverordening"
 bron_path: "/Hoofdstuk2/Afdeling2.2"
 
+afdeling_logica:
+  type: afdeling_synthese
+  norm: "Drie decentrale kerninstrumenten met parallelle structuur"
+  kernprincipes:
+    - "Exclusiviteit: één instrument per bestuurslaag"
+    - "Integraliteit: alle regels fysieke leefomgeving gebundeld"
+    - "Delegatiemogelijkheid naar dagelijks bestuur"
+  instrumenten:
+    omgevingsplan:
+      bestuurslaag: gemeente
+      vaststeller: gemeenteraad
+      scope: gehele grondgebied
+    waterschapsverordening:
+      bestuurslaag: waterschap
+      vaststeller: algemeen bestuur
+      scope: beheergebied
+    omgevingsverordening:
+      bestuurslaag: provincie
+      vaststeller: provinciale staten
+      scope: provinciegebied
+
 artikelen:
 
   # ===========================================================================
@@ -19,6 +40,12 @@ artikelen:
     titel: "(omgevingsplan)"
     bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.4"
     inwerking: "2024-01-01"
+
+    # Lid 1 (enig lid)
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.4/Lid1"
+        volledige_tekst: "De gemeenteraad stelt voor het gehele grondgebied van de gemeente één omgevingsplan vast waarin regels over de fysieke leefomgeving worden opgenomen."
 
     structuur:
       volledige_tekst: "De gemeenteraad stelt voor het gehele grondgebied van de gemeente één omgevingsplan vast waarin regels over de fysieke leefomgeving worden opgenomen."
@@ -38,6 +65,14 @@ artikelen:
       subject: "gemeenteraad"
       object: "omgevingsplan"
       bevoegd_gezag: gemeente
+
+    beslislogica:
+      trigger: "regelgeving fysieke leefomgeving op gemeentelijk niveau"
+      verplichting: "opnemen in omgevingsplan"
+      kenmerken:
+        - "één plan per gemeente"
+        - "dekkend voor gehele grondgebied"
+        - "integraal voor alle fysieke leefomgevingsregels"
 
     logica_samenvatting:
       narrative: |
@@ -59,6 +94,12 @@ artikelen:
     bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.5"
     inwerking: "2024-01-01"
 
+    # Lid 1 (enig lid)
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.5/Lid1"
+        volledige_tekst: "Het algemeen bestuur van het waterschap stelt één waterschapsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
+
     structuur:
       volledige_tekst: "Het algemeen bestuur van het waterschap stelt één waterschapsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
 
@@ -77,6 +118,14 @@ artikelen:
       object: "waterschapsverordening"
       bevoegd_gezag: waterschap
 
+    beslislogica:
+      trigger: "regelgeving fysieke leefomgeving op waterschapsniveau"
+      verplichting: "opnemen in waterschapsverordening"
+      kenmerken:
+        - "één verordening per waterschap"
+        - "functioneel beheergebied"
+        - "watergerelateerde regels"
+
     logica_samenvatting:
       narrative: |
         Art. 2.5 is de GRONDSLAG voor de waterschapsverordening.
@@ -92,6 +141,12 @@ artikelen:
     titel: "(omgevingsverordening)"
     bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.6"
     inwerking: "2024-01-01"
+
+    # Lid 1 (enig lid)
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.6/Lid1"
+        volledige_tekst: "Provinciale staten stellen één omgevingsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
 
     structuur:
       volledige_tekst: "Provinciale staten stellen één omgevingsverordening vast waarin regels over de fysieke leefomgeving worden opgenomen."
@@ -110,6 +165,14 @@ artikelen:
       subject: "provinciale staten"
       object: "omgevingsverordening"
       bevoegd_gezag: provincie
+
+    beslislogica:
+      trigger: "regelgeving fysieke leefomgeving op provinciaal niveau"
+      verplichting: "opnemen in omgevingsverordening"
+      kenmerken:
+        - "één verordening per provincie"
+        - "gehele provinciegebied"
+        - "bovenlokale belangen"
 
     logica_samenvatting:
       narrative: |
@@ -157,6 +220,16 @@ artikelen:
         voor: "aanwijzing gevallen verplicht opnemen of uitsluiten decentrale regels"
         actor: "Rijk"
 
+    beslislogica:
+      lid_1:
+        trigger: "bepalen wat ALLEEN in decentraal instrument mag"
+        mechanisme: "AMvB wijst gevallen aan"
+        effect: "positieve exclusiviteit"
+      lid_2:
+        trigger: "bepalen wat NIET in decentraal instrument mag"
+        mechanisme: "AMvB wijst gevallen aan"
+        effect: "negatieve exclusiviteit"
+
     logica_samenvatting:
       narrative: |
         Art. 2.7 regelt de EXCLUSIVITEIT van decentrale instrumenten.
@@ -175,6 +248,12 @@ artikelen:
     titel: "(delegatie)"
     bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.8"
     inwerking: "2024-01-01"
+
+    # Lid 1 (enig lid)
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.8/Lid1"
+        volledige_tekst: "De gemeenteraad, het algemeen bestuur van een waterschap of provinciale staten kunnen de bevoegdheid tot het vaststellen van delen van het omgevingsplan, de waterschapsverordening of de omgevingsverordening delegeren aan het college van burgemeester en wethouders, het dagelijks bestuur van het waterschap respectievelijk gedeputeerde staten."
 
     structuur:
       volledige_tekst: "De gemeenteraad, het algemeen bestuur van een waterschap of provinciale staten kunnen de bevoegdheid tot het vaststellen van delen van het omgevingsplan, de waterschapsverordening of de omgevingsverordening delegeren aan het college van burgemeester en wethouders, het dagelijks bestuur van het waterschap respectievelijk gedeputeerde staten."
@@ -199,6 +278,14 @@ artikelen:
       subject: "vertegenwoordigende organen"
       object: "delegatie vaststelling delen"
 
+    beslislogica:
+      trigger: "noodzaak snelle aanpassing decentraal instrument"
+      mogelijkheid: "delegeren aan dagelijks bestuur"
+      beperking: "alleen voor DELEN, niet geheel"
+      voorbeelden:
+        - "binnenplanse afwijking omgevingsplan → B&W"
+        - "technische wijzigingen waterschapsverordening → DB"
+
     logica_samenvatting:
       narrative: |
         Art. 2.8 maakt INTERNE DELEGATIE mogelijk binnen bestuurslaag.
@@ -215,38 +302,80 @@ artikelen:
 # AFDELING ANALYSE
 # =============================================================================
 afdeling_analyse:
+  bron_path: "/Hoofdstuk2/Afdeling2.2"
+
+  logica:
+    type: afdeling_synthese
+    norm: "Drie decentrale kerninstrumenten gedefinieerd"
+    beslislogica:
+      - vraag: "Welk instrument voor gemeentelijke regels?"
+        antwoord: "Omgevingsplan (art. 2.4)"
+      - vraag: "Welk instrument voor waterschapsregels?"
+        antwoord: "Waterschapsverordening (art. 2.5)"
+      - vraag: "Welk instrument voor provinciale regels?"
+        antwoord: "Omgevingsverordening (art. 2.6)"
+      - vraag: "Mag alles in decentraal instrument?"
+        antwoord: "AMvB kan exclusiviteit bepalen (art. 2.7)"
+      - vraag: "Kan raad delegeren aan college?"
+        antwoord: "Ja, voor DELEN van instrument (art. 2.8)"
+
   structuur:
     artikelen_count: 5
-    totaal_leden: 2
+    totaal_leden: 6
     totaal_onderdelen: 0
+    logica:
+      type: statistiek
+      norm: "Compacte afdeling met vijf kerndefinities"
 
   patronen:
-    drie_instrumenten_parallellisme:
-      beschrijving: "Omgevingsplan, waterschapsverordening, omgevingsverordening hebben parallelle structuur"
+    drie_instrumenten:
+      beschrijving: "Omgevingsplan (art. 2.4), waterschapsverordening (art. 2.5), omgevingsverordening (art. 2.6)"
       evidence: ["art. 2.4", "art. 2.5", "art. 2.6"]
 
-    exclusiviteit_één_instrument:
-      beschrijving: "Elke bestuurslaag heeft precies één integraal instrument"
-      evidence: ["art. 2.4", "art. 2.5", "art. 2.6 - alle 'één' vereiste"]
+    één_instrument_per_bestuurslaag:
+      beschrijving: "Elk artikel vereist 'één' instrument"
+      evidence: ["art. 2.4", "art. 2.5", "art. 2.6"]
 
     delegatie_naar_dagelijks_bestuur:
-      beschrijving: "Intern delegatiemogelijkheid van vertegenwoordigend naar dagelijks bestuur"
+      beschrijving: "Bevoegdheid tot vaststellen delen kan worden gedelegeerd"
       evidence: ["art. 2.8"]
 
+    amvb_exclusiviteit:
+      beschrijving: "AMvB kan gevallen aanwijzen voor verplicht opnemen of uitsluiten"
+      evidence: ["art. 2.7"]
+
   kritieke_verwijzingen:
-    - art_2.4: "Grondslag omgevingsplan - uitwerking in Hfst 4"
+    - art_2.4: "Grondslag omgevingsplan"
+      bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.4"
     - art_2.5: "Grondslag waterschapsverordening"
+      bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.5"
     - art_2.6: "Grondslag omgevingsverordening"
-    - art_2.7: "Delegatie naar AMvB (Bkl) voor exclusiviteit"
+      bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.6"
+    - art_2.7: "Delegatie naar AMvB voor exclusiviteit"
+      bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.7"
 
   routes:
     entry_points:
       - artikel: "2.4"
         vraag: "Wat is het omgevingsplan?"
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.4"
+      - artikel: "2.5"
+        vraag: "Wat is de waterschapsverordening?"
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.5"
+      - artikel: "2.6"
+        vraag: "Wat is de omgevingsverordening?"
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.6"
       - artikel: "2.7"
         vraag: "Wat mag/moet in welk instrument?"
+        bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.7"
     exit_points:
       - naar: "Hoofdstuk 4"
-        context: "Uitwerking algemene regels en omgevingsplan"
+        context: "Uitwerking omgevingsplan"
+        logica:
+          type: vervolgkoppeling
+          norm: "Inhoudelijke uitwerking instrumenten"
       - naar: "Bkl"
         context: "Externe AMvB voor exclusiviteitsregels"
+        logica:
+          type: externe_koppeling
+          norm: "Rijksuitwerking via delegatie"

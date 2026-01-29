@@ -14,11 +14,29 @@ bron_path: "/Hoofdstuk16/Afdeling16.6 + Afdeling16.6a"
 # =============================================================================
 afdeling_16_6:
   titel: "Projectprocedure"
+  bron_path: "/Hoofdstuk16/Afdeling16.6"
+
+  logica:
+    type: afdeling_synthese
+    norm: "Procedureregels voor projectbesluitvorming"
+    kernprincipes:
+      - "UOV-procedure (Awb 3.4) voor voorkeursbeslissing en projectbesluit"
+      - "Goedkeuringsvereiste voor waterschap-projectbesluiten"
+      - "Bekendmaking met vermelding bijzondere beroepsgronden"
+
   paragrafen:
     - nummer: "16.6.1"
       titel: "Voorkeursbeslissing"
+      bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.1"
+      logica:
+        type: procedurefase
+        norm: "Voorkeursbeslissing als voorbereidende stap"
     - nummer: "16.6.2"
       titel: "Projectbesluit"
+      bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2"
+      logica:
+        type: procedurefase
+        norm: "Definitieve besluitvorming projectbesluit"
 
 artikelen:
 
@@ -57,6 +75,11 @@ artikelen:
       - naar: "Omgevingswet"
         artikel: "5.55"
         context: "regels opnemen in omgevingsplan"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.70 bepaalt dat de UOV (Awb 3.4) verplicht is voor voorkeursbeslissingen.
+        Dit geldt zowel voor projectbesluiten als voor art. 5.55 omgevingsplanregels.
 
   # ---------------------------------------------------------------------------
   # § 16.6.2 - Projectbesluit
@@ -116,6 +139,13 @@ artikelen:
         artikel: "16.86"
         context: "beroepsgronden projectbesluit"
 
+    logica_samenvatting:
+      narrative: |
+        Art. 16.71 is de CENTRALE PROCEDUREANKER voor projectbesluiten:
+        - Lid 1: UOV verplicht voor projectbesluit en buiten-toepassing-besluit
+        - Lid 2: Afwijkend van Awb: ook 3.6 en 3.7 van toepassing
+        - Lid 3: Bekendmakingsverplichting voor bijzondere beroepsgronden
+
   artikel_16.72:
     nummer: "16.72"
     titel: "(goedkeuring projectbesluit waterschap)"
@@ -148,6 +178,12 @@ artikelen:
         artikel: "10:31 lid 2-4"
         context: "normale goedkeuringsbepalingen (uitgesloten)"
 
+    logica_samenvatting:
+      narrative: |
+        Art. 16.72 regelt het GOEDKEURINGSVEREISTE voor waterschap-projectbesluiten.
+        GS van de provincie waar het project in hoofdzaak wordt uitgevoerd beslist.
+        Awb-goedkeuringsbepalingen zijn uitgesloten voor specifieke projectprocedure.
+
   artikel_16.73:
     nummer: "16.73"
     titel: "(afwijzing aanvraag om projectbesluit vast te stellen)"
@@ -164,6 +200,11 @@ artikelen:
       afwijking_van: "art. 16.71"
       ratio: "Geen uitgebreide procedure nodig bij afwijzing"
 
+    beslislogica:
+      trigger: "afwijzing aanvraag projectbesluit"
+      procedure: "reguliere Awb-procedure (NIET UOV)"
+      ratio: "Efficiëntie bij negatief besluit"
+
   artikel_16.74:
     nummer: "16.74"
     titel: null
@@ -173,11 +214,25 @@ artikelen:
     status: "ingetrokken"
     opmerking: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
 
+    logica:
+      type: vervallen
+      norm: "Artikel ingetrokken voordat het in werking trad"
+      intrekking: "Stb. 2020/172"
+
 # =============================================================================
 # AFDELING 16.6a - KOSTENVERHAALSBESCHIKKING
 # =============================================================================
 afdeling_16_6a:
   titel: "Kostenverhaalsbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.6a"
+
+  logica:
+    type: afdeling_synthese
+    norm: "Procedurele waarborgen voor kostenverhaalsbeschikking"
+    kernprincipes:
+      - "Aanhouding tot onherroepelijkheid grondslag"
+      - "Zienswijze-gelegenheid voor aanvrager"
+      - "Doorbreking aanhouding mogelijk bij irrelevant beroep"
 
 artikelen_16_6a:
 
@@ -226,6 +281,13 @@ artikelen_16_6a:
         artikel: "13.18 lid 1"
         context: "kostenverhaalsbeschikking"
 
+    logica_samenvatting:
+      narrative: |
+        Art. 16.75 implementeert AANHOUDINGSREGELING voor kostenverhaal:
+        - Lid 1: Aanhouding VERPLICHT zolang grondslag niet onherroepelijk
+        - Lid 2: Duur tot onherroepelijkheid
+        - Lid 3: DOORBREKING mogelijk bij irrelevant beroep of belangenafweging
+
   artikel_16.76:
     nummer: "16.76"
     titel: "(zienswijze kostenverhaalsbeschikking)"
@@ -240,15 +302,48 @@ artikelen_16_6a:
       norm: "Zienswijze-gelegenheid VERPLICHT voor kostenverhaalsbeschikking"
       ratio: "Hoor en wederhoor voor aanvrager"
 
+    beslislogica:
+      trigger: "kostenverhaalsbeschikking voorgenomen"
+      verplichting: "aanvrager zienswijze-gelegenheid geven"
+      moment: "voordat beschikking wordt gegeven"
+
     externe_refs:
       - naar: "Omgevingswet"
         artikel: "13.18 lid 1"
         context: "kostenverhaalsbeschikking"
 
+    logica_samenvatting:
+      narrative: |
+        Art. 16.76 waarborgt HOOR EN WEDERHOOR bij kostenverhaal.
+        De aanvrager moet altijd gelegenheid krijgen zienswijze te geven
+        voordat de beschikking wordt genomen.
+
 # =============================================================================
 # AFDELING ANALYSE
 # =============================================================================
 afdeling_analyse:
+  bron_path: "/Hoofdstuk16/Afdeling16.6 + Afdeling16.6a"
+
+  logica:
+    type: synthese
+    norm: "Twee samenhangende procedureblokken"
+    structuur:
+      afdeling_16_6: "Projectprocedure - UOV voor voorkeursbeslissing en projectbesluit"
+      afdeling_16_6a: "Kostenverhaal - aanhouding tot onherroepelijkheid"
+    beslislogica:
+      - trigger: "voorkeursbeslissing nodig"
+        procedure: "Awb 3.4 UOV"
+        basis: "art. 16.70"
+      - trigger: "projectbesluit nodig"
+        procedure: "Awb 3.4 + 3.6 + 3.7"
+        basis: "art. 16.71"
+      - trigger: "waterschap neemt projectbesluit"
+        procedure: "GS-goedkeuring vereist"
+        basis: "art. 16.72"
+      - trigger: "kostenverhaalsbeschikking gevraagd"
+        procedure: "aanhouding tot onherroepelijkheid"
+        basis: "art. 16.75"
+
   structuur:
     afdelingen_count: 2
     artikelen_count: 7
@@ -257,17 +352,20 @@ afdeling_analyse:
 
   patronen:
     awb_3_4_uov:
-      beschrijving: "Uitgebreide openbare voorbereidingsprocedure voor projectprocedure"
+      beschrijving: "Afdeling 3.4 Awb van toepassing op projectprocedure"
       evidence: ["art. 16.70", "art. 16.71"]
 
     waterschap_goedkeuring:
-      beschrijving: "Provinciale goedkeuring voor waterschap-projectbesluiten"
+      beschrijving: "Projectbesluit waterschap behoeft goedkeuring GS"
       evidence: ["art. 16.72"]
 
     aanhouding_tot_onherroepelijk:
       beschrijving: "Kostenverhaalsbeschikking aangehouden tot grondslag onherroepelijk"
       evidence: ["art. 16.75"]
-      ratio: "Geen definitieve kostenafrekening bij onzekere juridische grondslag"
+
+    zienswijze_verplichting:
+      beschrijving: "Zienswijze-gelegenheid voor kostenverhaalsbeschikking"
+      evidence: ["art. 16.76"]
 
   kritieke_verwijzingen:
     - naar: "Awb afdeling 3.4"

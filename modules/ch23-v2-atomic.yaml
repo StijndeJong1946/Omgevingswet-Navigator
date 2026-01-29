@@ -1,0 +1,748 @@
+# Chapter 23: Overige en slotbepalingen - V2 Atomic Extraction
+# Extracted: 2026-01-29
+# Schema version: v2
+# Source: BWBR0037885 (Omgevingswet)
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_23:
+  nummer: "23"
+  titel: "Overige en slotbepalingen"
+  bron_path: "/Hoofdstuk23"
+  inwerking: "2024-01-01"
+
+  structuur:
+    afdelingen: 4
+    artikelen: 13  # 23.1-23.11 plus 23.5a, 23.6a, 23.6b
+
+# =============================================================================
+# AFDELING 23.1: IMPLEMENTATIE INTERNATIONAALRECHTELIJKE VERPLICHTINGEN
+# =============================================================================
+
+afdeling_23.1:
+  nummer: "23.1"
+  titel: "Implementatie internationaalrechtelijke verplichtingen"
+  bron_path: "/Hoofdstuk23/Afdeling23.1"
+
+artikel_23.1:
+  nummer: "23.1"
+  titel: "(implementatie)"
+  bron_path: "/Hoofdstuk23/Afdeling23.1/Artikel23.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.1/Artikel23.1"
+      structuur:
+        volledige_tekst: "Voor zover deze wet niet in een andere grondslag voor het stellen van regels voorziet, kunnen bij of krachtens algemene maatregel van bestuur regels worden gesteld ter uitvoering van internationaalrechtelijke verplichtingen die betrekking hebben op of samenhangen met onderwerpen waarop deze wet van toepassing is."
+      logica:
+        type: "delegatie"
+        norm: "Vangnet-grondslag voor EU/internationaal recht implementatie"
+        conditie:
+          type: "voor_zover"
+          tekst: "voor zover deze wet niet in een andere grondslag voorziet"
+          effect: "Subsidiaire grondslag"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "implementatie internationaal recht"
+    subject: "AMvB"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "uitvoeringsregelgeving"
+      voor: "implementatie internationaalrechtelijke verplichtingen"
+      actor: "regering"
+      mechanisme: "vangnet-grondslag"
+
+artikel_23.2:
+  nummer: "23.2"
+  titel: "(doorwerking wijzigingen Europese verordeningen, richtlijnen en besluiten in Nederlands recht)"
+  bron_path: "/Hoofdstuk23/Afdeling23.1/Artikel23.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.1/Artikel23.2"
+      structuur:
+        volledige_tekst: "Een wijziging van een verordening, richtlijn of besluit als bedoeld in artikel 288 van het Verdrag betreffende de werking van de Europese Unie waarnaar bij of krachtens deze wet wordt verwezen, gaat voor de toepassing van deze wet en de daarop berustende bepalingen gelden met ingang van de dag waarop aan de betrokken wijziging uitvoering moet zijn gegeven, tenzij bij ministerieel besluit, dat in de Staatscourant wordt bekendgemaakt, een ander tijdstip wordt vastgesteld."
+      logica:
+        type: "automatisme"
+        norm: "EU-wijzigingen werken automatisch door"
+        default: "implementatiedatum EU"
+        uitzondering: "ministerieel besluit kan afwijken"
+        conditie:
+          type: "tenzij"
+          tekst: "tenzij bij ministerieel besluit een ander tijdstip wordt vastgesteld"
+
+  functie:
+    werkwoord: "regelt"
+    object: "automatische doorwerking EU-recht"
+
+  externe_refs:
+    - naar: "VWEU"
+      artikel: "288"
+      context: "Europese rechtsinstrumenten"
+
+# =============================================================================
+# AFDELING 23.2: EXPERIMENTEERBEPALING
+# =============================================================================
+
+afdeling_23.2:
+  nummer: "23.2"
+  titel: "Experimenteerbepaling"
+  bron_path: "/Hoofdstuk23/Afdeling23.2"
+
+artikel_23.3:
+  nummer: "23.3"
+  titel: "(experimenten)"
+  bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3"
+  inwerking: "2026-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur kan, met inachtneming van internationaalrechtelijke verplichtingen, bij wijze van experiment worden afgeweken van het bepaalde bij of krachtens:"
+        onderdelen:
+          a:
+            tekst: "deze wet"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeela"
+          b:
+            tekst: "de Energiewet, voor zover dat geen gevolgen heeft voor de opbrengst van de energiebelasting"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeelb"
+          c:
+            tekst: "de Huisvestingswet 2014"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeelc"
+          d:
+            tekst: "de Leegstandwet"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeeld"
+          e:
+            tekst: "de Warmtewet"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeele"
+          f:
+            tekst: "de Wet milieubeheer"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid1/Onderdeelf"
+      logica:
+        type: "machtiging"
+        norm: "AMvB kan experimenteren met afwijking van diverse wetten"
+        conditie:
+          type: "mits"
+          tekst: "met inachtneming van internationaalrechtelijke verplichtingen"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid2"
+      structuur:
+        volledige_tekst: "Een experiment wordt alleen aangewezen als dit beoogt bij te dragen aan het nastreven van de doelen, bedoeld in artikel 1.3, aanhef en onder a, waaronder de verbetering van de kwaliteit van de fysieke leefomgeving, de te volgen procedures of de besluitvorming daarover."
+      logica:
+        type: "vereiste"
+        norm: "Experiment moet bijdragen aan doelen art. 1.3"
+    3:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3"
+      structuur:
+        aanhef: "Bij de maatregel wordt in ieder geval bepaald:"
+        onderdelen:
+          a:
+            tekst: "wat het doel van het experiment is"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeela"
+          b:
+            tekst: "wat de beoogde gevolgen voor de fysieke leefomgeving zijn"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelb"
+          c:
+            tekst: "welk bestuursorgaan verantwoordelijk is voor de uitvoering van het experiment"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelc"
+          d:
+            tekst: "wat de tijdsduur van het experiment is, waarbij geldt dat het experiment niet langer duurt dan nodig is voor het doel van het experiment"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeeld"
+          e:
+            tekst: "van welke regels kan worden afgeweken"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeele"
+          f:
+            tekst: "welke afwijkingen voor bij de maatregel aan te wijzen gevallen zijn toegestaan"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelf"
+          g:
+            tekst: "voor welk gebied of voor welke besluiten die afwijkingen zijn toegestaan"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelg"
+          h:
+            tekst: "hoe lang die afwijkingen ten hoogste, met een maximum van tien jaar als het gaat om omgevingswaarden, zijn toegestaan"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelh"
+          i:
+            tekst: "welke afwijkingen na afloop van het experiment toegestaan blijven"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeeli"
+          j:
+            tekst: "hoe de evaluatie van het experiment wordt uitgevoerd en hoe vaak tussentijds wordt gemonitord met het oog op de doelen, bedoeld in het tweede lid, en de beoogde gevolgen voor de fysieke leefomgeving"
+            bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid3/Onderdeelj"
+      logica:
+        type: "verplichting"
+        norm: "10 verplichte elementen in experiment-AMvB"
+    4:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid4"
+      structuur:
+        volledige_tekst: "Afwijkingen als bedoeld in het derde lid, onder i, zijn alleen toegestaan als het gaat om afwijkingen die onderdeel zijn van het experiment en wanneer het in overeenstemming brengen met de regelgeving na afloop van het experiment onevenredig is in verhouding tot het te beschermen belang van de fysieke leefomgeving."
+      logica:
+        type: "vereiste"
+        norm: "Permanente afwijkingen alleen bij onevenredigheid terugkeer"
+    5:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid5"
+      structuur:
+        volledige_tekst: "Als uit de monitoring en evaluatie, bedoeld in het derde lid, onder j, blijkt dat het experiment niet bijdraagt aan de doelen, bedoeld in het tweede lid, treft degene die het experiment uitvoert maatregelen gericht op het bereiken van die doelen."
+      logica:
+        type: "verplichting"
+        norm: "Bijsturingsplicht bij tegenvallende resultaten"
+    6:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid6"
+      structuur:
+        volledige_tekst: "Het verantwoordelijke bestuursorgaan, bedoeld in het derde lid, onder c, kan aanwijzingen geven tot het treffen van maatregelen. Artikel 19.4, derde lid, is van overeenkomstige toepassing."
+      logica:
+        type: "machtiging"
+        norm: "Aanwijzingsbevoegdheid bij falend experiment"
+    7:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid7"
+      structuur:
+        volledige_tekst: "Als de te nemen maatregelen niet toereikend zijn, kan Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties besluiten om het experiment te beëindigen. Aan dat besluit kunnen voorschriften worden verbonden."
+      logica:
+        type: "machtiging"
+        norm: "Minister BZK kan experiment beëindigen"
+    8:
+      bron_path: "/Hoofdstuk23/Afdeling23.2/Artikel23.3/Lid8"
+      structuur:
+        volledige_tekst: "Als de evaluatie van een experiment aanleiding geeft tot het aanpassen van regelgeving, kan Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in afwijking van de maatregel waarbij de tijdsduur van het experiment is bepaald, een besluit nemen om die tijdsduur met ten hoogste vijf jaar te verlengen met het oog op het aanpassen van die regelgeving."
+      logica:
+        type: "machtiging"
+        norm: "Verlenging tot 5 jaar voor regelgevingsaanpassing"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "experimenten met afwijking wetgeving"
+    subject: "AMvB"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "experiment-AMvB"
+      voor: "afwijking diverse wetten"
+      actor: "regering"
+      mechanisme: "experimenteerbepaling"
+
+  actoren:
+    - actor: "Minister van BZK"
+      rol: "beëindiging/verlenging experimenten"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 23.3 is de centrale experimenteerbepaling:
+      - Lid 1: Reikwijdte - 6 wetten waarvan kan worden afgeweken
+      - Lid 2: Doelbinding - moet bijdragen aan art. 1.3 doelen
+      - Lid 3: 10 verplichte elementen in elke experiment-AMvB
+      - Lid 4-5: Kwaliteitsborging en bijsturing
+      - Lid 6-7: Interventie bij falen (aanwijzing → beëindiging)
+      - Lid 8: Verlenging voor regelgevingsaanpassing
+
+  interne_refs:
+    - naar: "artikel 1.3"
+      type: "grondslag"
+      context: "doelbinding experimenten"
+    - naar: "artikel 19.4"
+      type: "verwijzing"
+      context: "aanwijzingsbevoegdheid"
+
+  externe_refs:
+    - naar: "BWBR0050714"
+      wet: "Energiewet"
+      context: "experiment mogelijk"
+    - naar: "BWBR0035303"
+      wet: "Huisvestingswet 2014"
+      context: "experiment mogelijk"
+    - naar: "BWBR0003403"
+      wet: "Leegstandwet"
+      context: "experiment mogelijk"
+    - naar: "BWBR0033729"
+      wet: "Warmtewet"
+      context: "experiment mogelijk"
+    - naar: "BWBR0003245"
+      wet: "Wet milieubeheer"
+      context: "experiment mogelijk"
+
+# =============================================================================
+# AFDELING 23.3: PUBLIEKSPARTICIPATIE, PARLEMENT, TOTSTANDKOMING
+# =============================================================================
+
+afdeling_23.3:
+  nummer: "23.3"
+  titel: "Publieksparticipatie, betrokkenheid parlement, totstandkomingsvereisten uitvoeringsregelgeving en overige bepalingen"
+  bron_path: "/Hoofdstuk23/Afdeling23.3"
+
+artikel_23.4:
+  nummer: "23.4"
+  titel: "(publieksparticipatie)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid1"
+      structuur:
+        volledige_tekst: "Een ieder wordt langs elektronische weg in de gelegenheid gesteld gedurende een periode van ten minste vier weken opmerkingen te maken over het ontwerp van een algemene maatregel van bestuur of ministeriële regeling op grond van deze wet."
+      logica:
+        type: "verplichting"
+        norm: "Internetconsultatie verplicht voor AMvB/MR"
+        termijn: "minimaal 4 weken"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid2"
+      structuur:
+        volledige_tekst: "Het eerste lid is niet van toepassing als op andere wijze aan artikel 8 van het verdrag van Aarhus is voldaan."
+      logica:
+        type: "uitzondering"
+        norm: "Niet als Aarhus anderszins voldaan"
+    3:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid3"
+      structuur:
+        aanhef: "Van het eerste lid kan worden afgeweken als het ontwerp:"
+        onderdelen:
+          a:
+            tekst: "wijzigingen bevat van ondergeschikte betekenis"
+            bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid3/Onderdeela"
+          b:
+            tekst: "alleen strekt tot uitvoering van internationaalrechtelijke verplichtingen"
+            bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid3/Onderdeelb"
+          c:
+            tekst: "een voorziening treft die onmiddellijk nodig is"
+            bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.4/Lid3/Onderdeelc"
+      logica:
+        type: "uitzondering"
+        norm: "Geen consultatie bij ondergeschikt/EU-implementatie/spoed"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "internetconsultatie uitvoeringsregelgeving"
+
+  externe_refs:
+    - naar: "Verdrag van Aarhus"
+      artikel: "8"
+      context: "inspraak milieurecht"
+
+artikel_23.5:
+  nummer: "23.5"
+  titel: "(voorhangprocedure)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5/Lid1"
+      structuur:
+        volledige_tekst: "De voordracht voor een algemene maatregel van bestuur op grond van de hoofdstukken 2, 3, 4 en 5, afdeling 13.6, de hoofdstukken 16, 17, 18, 19 en 20 en artikel 23.3 wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd."
+      logica:
+        type: "verplichting"
+        norm: "4 weken voorhang bij Parlement voor belangrijke AMvBs"
+        reikwijdte: "Hoofdstukken 2-5, 13.6, 16-20, art. 23.3"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5/Lid2"
+      structuur:
+        volledige_tekst: "Als het ontwerp van een algemene maatregel van bestuur omgevingswaarden bevat kan binnen de termijn, bedoeld in het eerste lid, een der kamers de wens te kennen geven dat die omgevingswaarden bij wet worden vastgesteld. In dat geval wordt een daartoe strekkend voorstel van wet zo spoedig mogelijk ingediend."
+      logica:
+        type: "machtiging"
+        norm: "Kamer kan omgevingswaarden naar formele wet trekken"
+        effect: "Versterkte parlementaire controle"
+    3:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5/Lid3"
+      structuur:
+        volledige_tekst: "Het eerste en tweede lid zijn niet van toepassing als het ontwerp wijzigingen van ondergeschikte betekenis bevat die niet leiden tot andere of grotere nadelige gevolgen voor de fysieke leefomgeving of als het ontwerp alleen strekt tot uitvoering van internationaalrechtelijke verplichtingen. Als dat het geval is, geeft Onze Minister die het aangaat daarvan kennis aan beide kamers der Staten-Generaal."
+      logica:
+        type: "uitzondering"
+        norm: "Geen voorhang bij ondergeschikt/EU-implementatie"
+        verplichting: "Kennisgeving aan Kamers"
+    4:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5/Lid4"
+      structuur:
+        volledige_tekst: "Van de inwerkingtreding van een algemene maatregel van bestuur en de publicatie van het advies van de Afdeling advisering van de Raad van State en het uitgebrachte nader rapport van een algemene maatregel van bestuur waarbij toepassing is gegeven aan het eerste lid, geeft Onze Minister die het aangaat kennis aan beide kamers der Staten-Generaal."
+      logica:
+        type: "verplichting"
+        norm: "Kennisgeving inwerkingtreding en RvS-advies"
+
+  functie:
+    werkwoord: "reguleert"
+    object: "voorhangprocedure AMvB"
+    subject: "regering/Parlement"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 23.5 regelt parlementaire betrokkenheid:
+      - Lid 1: 4 weken voorhang voor belangrijke AMvBs
+      - Lid 2: Kamers kunnen omgevingswaarden naar formele wet trekken
+      - Lid 3: Uitzonderingen + kennisgevingsplicht
+      - Lid 4: Terugkoppeling na inwerkingtreding
+
+artikel_23.5a:
+  nummer: "23.5a"
+  titel: "(voorhangprocedure besluiten aanwijzing Natura 2000-gebieden in exclusieve economische zone)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5a/Lid1"
+      structuur:
+        volledige_tekst: "Onze Minister voor Natuur en Stikstof zendt een voorstel voor een lijst van Natura 2000-gebieden, geheel of gedeeltelijk gelegen in de exclusieve economische zone, of een voorstel tot wijziging daarvan, als bedoeld in artikel 4, eerste lid, van de habitatrichtlijn niet eerder aan de Europese Commissie dan vier weken nadat het ontwerp van dat voorstel aan beide kamers der Staten-Generaal is overgelegd."
+      logica:
+        type: "verplichting"
+        norm: "4 weken voorhang voor EEZ Natura 2000-voorstellen aan EU"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.5a/Lid2"
+      structuur:
+        volledige_tekst: "Een besluit over de aanwijzing van een Natura 2000-gebied dat geheel of gedeeltelijk is gelegen in de exclusieve economische zone als bedoeld in artikel 2.44, eerste lid, wordt niet eerder genomen dan vier weken nadat het ontwerp van dat besluit aan beide kamers der Staten-Generaal is overgelegd."
+      logica:
+        type: "verplichting"
+        norm: "4 weken voorhang voor EEZ Natura 2000-aanwijzing"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "voorhang EEZ Natura 2000-besluiten"
+    subject: "Minister voor Natuur en Stikstof"
+
+  interne_refs:
+    - naar: "artikel 2.44"
+      type: "grondslag"
+      context: "Natura 2000-aanwijzing"
+
+artikel_23.6:
+  nummer: "23.6"
+  titel: "(doorwerking beginselen)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6"
+      structuur:
+        volledige_tekst: "Bij een algemene maatregel van bestuur waarop artikel 23.5 van toepassing is, wordt in de nota van toelichting gemotiveerd op welke wijze rekening is gehouden met het voorzorgsbeginsel, het beginsel van preventief handelen, het beginsel dat milieuaantastingen bij voorrang aan de bron dienen te worden bestreden en het beginsel dat de vervuiler betaalt."
+      logica:
+        type: "verplichting"
+        norm: "Motivering EU-milieubeginselen in AMvB-toelichting"
+        beginselen:
+          - "voorzorgsbeginsel"
+          - "preventief handelen"
+          - "bronbeginsel"
+          - "vervuiler betaalt"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "motivering milieubeginselen"
+    subject: "regering"
+
+  interne_refs:
+    - naar: "artikel 23.5"
+      type: "grondslag"
+      context: "voorhang-AMvBs"
+
+artikel_23.6a:
+  nummer: "23.6a"
+  titel: "(noodregeling bodem)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6a/Lid1"
+      structuur:
+        volledige_tekst: "Als een voorziening onmiddellijk is geboden, kunnen met het oog op het beschermen van de bodem, in afwijking van artikel 4.3, bij ministeriële regeling regels worden gesteld over milieubelastende activiteiten."
+      logica:
+        type: "machtiging"
+        norm: "Noodregeling bodem via ministeriële regeling"
+        conditie:
+          type: "wanneer"
+          tekst: "Als een voorziening onmiddellijk is geboden"
+        afwijking: "van art. 4.3 (AMvB-grondslag)"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6a/Lid2"
+      structuur:
+        volledige_tekst: "De regeling vervalt twaalf maanden nadat zij in werking is getreden of, als binnen die termijn een algemene maatregel van bestuur ter vervanging van de regeling in werking is getreden, op laatstbedoeld tijdstip. De termijn kan bij ministeriële regeling eenmaal met ten hoogste zes maanden worden verlengd."
+      logica:
+        type: "horizonbepaling"
+        norm: "Noodregeling vervalt na 12 maanden (+ max 6 maanden verlenging)"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "noodregeling bodembescherming"
+    subject: "minister"
+
+  interne_refs:
+    - naar: "artikel 4.3"
+      type: "afwijking"
+      context: "AMvB-grondslag milieubelastende activiteiten"
+
+artikel_23.6b:
+  nummer: "23.6b"
+  titel: "(noodregeling stikstof Natura 2000)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6b"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6b/Lid1"
+      structuur:
+        volledige_tekst: "Als een voorziening onmiddellijk nodig is, kunnen in afwijking van de artikelen 2.24 en 5.18, regels als bedoeld in artikel 2.25, eerste lid, onder a, onder 13°, en regels als bedoeld in artikel 5.18 voor een Natura 2000-activiteit die stikstofdepositie veroorzaakt, bij ministeriële regeling worden gesteld."
+      logica:
+        type: "machtiging"
+        norm: "Noodregeling stikstof via ministeriële regeling"
+        conditie:
+          type: "wanneer"
+          tekst: "Als een voorziening onmiddellijk nodig is"
+        afwijking: "van art. 2.24 en 5.18"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.6b/Lid2"
+      structuur:
+        volledige_tekst: "De regeling vervalt twaalf maanden nadat zij in werking is getreden of, als binnen die termijn een algemene maatregel van bestuur ter vervanging van de regeling in werking is getreden, op laatstbedoeld tijdstip. De termijn kan bij ministeriële regeling eenmaal met ten hoogste zes maanden worden verlengd."
+      logica:
+        type: "horizonbepaling"
+        norm: "Noodregeling vervalt na 12 maanden (+ max 6 maanden verlenging)"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "noodregeling stikstof"
+    subject: "minister"
+
+  interne_refs:
+    - naar: "artikel 2.24"
+      type: "afwijking"
+      context: "AMvB-grondslag instructieregels"
+    - naar: "artikel 2.25"
+      type: "verwijzing"
+      context: "instructieregels inhoud"
+    - naar: "artikel 5.18"
+      type: "afwijking"
+      context: "beoordelingsregels Natura 2000"
+
+artikel_23.7:
+  nummer: "23.7"
+  titel: "(verhouding publiek- en privaatrecht)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.7"
+      structuur:
+        volledige_tekst: "De gemeente kan geen rechtshandelingen naar burgerlijk recht verrichten over onderwerpen waarover regels als bedoeld in artikel 4.21 zijn gesteld of over onderwerpen met betrekking tot het bouwen die geregeld zijn op grond van hoofdstuk 5."
+      logica:
+        type: "verbod"
+        norm: "Gemeente kan niet privaatrechtelijk regelen wat publiekrechtelijk geregeld is"
+        object:
+          - "kostenverhaal (art. 4.21)"
+          - "bouwactiviteiten (hfdst 5)"
+
+  functie:
+    werkwoord: "verbiedt"
+    object: "privaatrechtelijke doorkruising publiekrecht"
+    subject: "gemeente"
+
+  interne_refs:
+    - naar: "artikel 4.21"
+      type: "grondslag"
+      context: "kostenverhaal"
+    - naar: "hoofdstuk 5"
+      type: "grondslag"
+      context: "vergunningplichten"
+
+artikel_23.8:
+  nummer: "23.8"
+  titel: "(Staat is eigenaar vaste stoffen EEZ)"
+  bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.3/Artikel23.8"
+      structuur:
+        volledige_tekst: "De Staat is eigenaar van op de zeebodem in de exclusieve economische zone of in de ondergrond daarvan aanwezige vaste stoffen, met inbegrip van de delfstoffen, voor zover die delfstoffen op een diepte van minder dan honderd meter onder de zeebodem aanwezig zijn."
+      logica:
+        type: "definitie"
+        norm: "Staatseigendom EEZ-bodem en ondiepe delfstoffen"
+        grens: "<100 meter diepte"
+
+  functie:
+    werkwoord: "definieert"
+    object: "eigendom EEZ-bodem"
+    subject: "Staat"
+
+# =============================================================================
+# AFDELING 23.4: EVALUATIE- EN SLOTBEPALINGEN
+# =============================================================================
+
+afdeling_23.4:
+  nummer: "23.4"
+  titel: "Evaluatie- en slotbepalingen"
+  bron_path: "/Hoofdstuk23/Afdeling23.4"
+
+artikel_23.9:
+  nummer: "23.9"
+  titel: "(evaluatie)"
+  bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.9"
+      structuur:
+        volledige_tekst: "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties zendt, in overeenstemming met Onze Ministers die het aangaat, binnen vijf jaar na de inwerkingtreding van deze wet en vervolgens na vijf jaar aan beide kamers der Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk."
+      logica:
+        type: "verplichting"
+        norm: "Wettelijke evaluatieplicht"
+        cyclus: "5 jaar"
+        eerste_evaluatie: "uiterlijk 1 januari 2029"
+        vervolgcyclus: "elke 5 jaar"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "evaluatie Omgevingswet"
+    subject: "Minister BZK"
+    termijn: "5-jaarlijks"
+
+  actoren:
+    - actor: "Minister van BZK"
+      rol: "evaluatieverantwoordelijke"
+
+artikel_23.10:
+  nummer: "23.10"
+  titel: "(inwerkingtreding)"
+  bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.10/Lid1"
+      structuur:
+        volledige_tekst: "De artikelen van deze wet treden in werking op een bij koninklijk besluit te bepalen tijdstip, dat voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld."
+      logica:
+        type: "machtiging"
+        norm: "KB bepaalt inwerkingtreding (gedifferentieerd mogelijk)"
+    2:
+      bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.10/Lid2"
+      structuur:
+        volledige_tekst: "De voordracht voor een koninklijk besluit als bedoeld in het eerste lid wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd. Indien een der kamers der Staten-Generaal besluit niet in te stemmen met het ontwerp, wordt er geen voordracht gedaan en kan niet eerder dan zes weken na het besluit van die kamer der Staten-Generaal een nieuw ontwerp aan beide kamers der Staten-Generaal worden overgelegd."
+      logica:
+        type: "procedure"
+        norm: "Voorhang + veto-mogelijkheid Kamers op inwerkingtredings-KB"
+        termijn: "4 weken voorhang"
+        veto_effect: "6 weken wachttermijn nieuw ontwerp"
+
+  functie:
+    werkwoord: "reguleert"
+    object: "inwerkingtreding wet"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 23.10 regelt de inwerkingtreding met extra parlementaire waarborgen:
+      - Lid 1: KB bepaalt wanneer (gedifferentieerd mogelijk)
+      - Lid 2: Versterkte voorhang met veto-mogelijkheid Kamers
+
+artikel_23.11:
+  nummer: "23.11"
+  titel: "(citeertitel)"
+  bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk23/Afdeling23.4/Artikel23.11"
+      structuur:
+        volledige_tekst: "Deze wet wordt aangehaald als: Omgevingswet."
+      logica:
+        type: "definitie"
+        norm: "Officiële naam is 'Omgevingswet'"
+
+  functie:
+    werkwoord: "benoemt"
+    object: "citeertitel"
+
+# =============================================================================
+# PARAGRAAF-ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+  structuur:
+    afdelingen_count: 4
+    artikelen_count: 13
+    totaal_leden: ~25
+
+  patronen:
+    experimenteerbepaling_centraal:
+      beschrijving: "Art. 23.3 is uitgebreide experimenteerbepaling met 10 verplichte elementen"
+      evidence: ["23.3"]
+      mechanisme: "AMvB-experiment met ingebouwde kwaliteitsborging"
+
+    parlementaire_betrokkenheid:
+      beschrijving: "Versterkte parlementaire controle op belangrijke AMvBs"
+      evidence: ["23.5", "23.5a", "23.10"]
+      mechanismen:
+        - "4 weken voorhang"
+        - "Kamers kunnen omgevingswaarden naar formele wet trekken"
+        - "Veto-mogelijkheid op inwerkingtredings-KB"
+
+    noodregelingen:
+      beschrijving: "Twee specifieke noodregelingen voor bodem en stikstof"
+      evidence: ["23.6a", "23.6b"]
+      mechanisme: "Ministeriële regeling i.p.v. AMvB bij spoed"
+      horizon: "12 maanden + max 6 maanden verlenging"
+
+    eu_rechtdoorwerking:
+      beschrijving: "Automatische doorwerking EU-wijzigingen + implementatie-grondslag"
+      evidence: ["23.1", "23.2"]
+      mechanisme: "Tenzij ministerieel besluit anders bepaalt"
+
+  relaties:
+    intern:
+      - van: "23.3"
+        naar: "art. 1.3"
+        type: "doelbinding"
+      - van: "23.5"
+        naar: "hfdst 2-5, 16-20"
+        type: "reikwijdte voorhang"
+      - van: "23.6"
+        naar: "art. 23.5"
+        type: "aanvullende verplichting"
+      - van: "23.7"
+        naar: "art. 4.21, hfdst 5"
+        type: "privaatrechtverbod"
+    extern:
+      - naar: "Verdrag van Aarhus"
+        context: "inspraak milieurecht"
+      - naar: "VWEU art. 288"
+        context: "EU-rechtsinstrumenten"
+
+  routes:
+    entry_points:
+      - artikel: "23.1"
+        vraag: "Hoe wordt EU-recht geïmplementeerd?"
+      - artikel: "23.3"
+        vraag: "Kan van de Omgevingswet worden afgeweken voor experimenten?"
+      - artikel: "23.5"
+        vraag: "Hoe is parlementaire controle geregeld?"
+    exit_points:
+      - naar: "artikel 1.3"
+        context: "doelen wet"
+      - naar: "hoofdstuk 4"
+        context: "algemene regels"
+      - naar: "hoofdstuk 5"
+        context: "vergunningplichten"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    sluitstuk_functie:
+      observatie: "Hoofdstuk 23 bevat 'meta-regels' over de wet zelf"
+      implicatie: "Navigator eindpunt voor wetgevingskwaliteit-vragen"
+
+    experimenteer_route:
+      observatie: "Art. 23.3 biedt gecontroleerde afwijkingsmogelijkheid"
+      implicatie: "Aparte navigatie-route voor innovatie/experimenten"
+
+    parlementaire_waarborgen:
+      observatie: "Versterkte parlementaire controle op AMvBs en inwerkingtreding"
+      implicatie: "Monitoring nodig van voorhang-procedures"
+
+    noodrecht_complement:
+      observatie: "Art. 23.6a/23.6b vullen noodrecht hfdst 19 aan voor specifieke domeinen"
+      implicatie: "Cross-reference met hoofdstuk 19 nodig"
+
+  schema_verbeteringen:
+    - "Meta-niveau velden voor wetgevingskwaliteit toevoegen"
+    - "Parlementaire procedure tracking"

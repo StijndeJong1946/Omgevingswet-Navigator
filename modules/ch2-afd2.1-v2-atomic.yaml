@@ -1,0 +1,334 @@
+# Afdeling 2.1 - Algemene bepalingen
+# V2 Atomic Extraction
+# Artikelen 2.1-2.3
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 2.1
+titel: "Algemene bepalingen"
+bron_path: "/Hoofdstuk2/Afdeling2.1"
+
+artikelen:
+
+  # ===========================================================================
+  # ARTIKEL 2.1 - DOELGEBONDEN TAAKUITOEFENING
+  # ===========================================================================
+  artikel_2.1:
+    nummer: "2.1"
+    titel: "(uitoefening taken en bevoegdheden)"
+    bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid1"
+        structuur:
+          volledige_tekst: "Een bestuursorgaan van een gemeente, een provincie of het Rijk of, met inachtneming van de Waterschapswet, van een waterschap oefent zijn taken en bevoegdheden op grond van deze wet uit met het oog op de doelen van de wet, tenzij daarover specifieke regels zijn gesteld."
+        logica:
+          type: verplichting
+          norm: "Bestuursorganen MOETEN taken uitoefenen met het oog op wetsdoelen"
+          subject: "bestuursorgaan gemeente/provincie/Rijk/waterschap"
+          object: "uitoefening taken en bevoegdheden"
+          conditie:
+            type: tenzij
+            tekst: "tenzij daarover specifieke regels zijn gesteld"
+            effect: "specifieke regels gaan voor"
+          default: "doelgebonden taakuitoefening"
+          uitzondering: "specifieke regels gesteld"
+
+      2:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid2"
+        structuur:
+          volledige_tekst: "Het bestuursorgaan houdt daarbij rekening met de samenhang van de relevante onderdelen en aspecten van de fysieke leefomgeving en van de rechtstreeks daarbij betrokken belangen."
+        logica:
+          type: verplichting
+          norm: "Bestuursorgaan MOET rekening houden met samenhang"
+          kernbegrip: "integratiebeginsel"
+
+      3:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3"
+        structuur:
+          aanhef: "Bij de op grond van deze wet gestelde regels kan de toepassing van het eerste en tweede lid worden uitgewerkt of begrensd. Deze uitwerking of begrenzing kan in ieder geval betrekking hebben op:"
+          onderdelen:
+            a:
+              tekst: "het waarborgen van de veiligheid"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeela"
+            b:
+              tekst: "het beschermen van de gezondheid"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelb"
+            c:
+              tekst: "het beschermen van het milieu"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelc"
+            d:
+              tekst: "het duurzaam veiligstellen van de openbare drinkwatervoorziening"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeeld"
+            e:
+              tekst: "het beschermen van landschappelijke of stedenbouwkundige waarden"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeele"
+            f:
+              tekst: "het behoud van cultureel erfgoed"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelf"
+            g:
+              tekst: "het behoud van de uitzonderlijke universele waarde van werelderfgoed"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelg"
+            h:
+              tekst: "de natuurbescherming"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelh"
+            i:
+              tekst: "het tegengaan van klimaatverandering"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeeli"
+            j:
+              tekst: "de kwaliteit van bouwwerken"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelj"
+            k:
+              tekst: "een evenwichtige toedeling van functies aan locaties"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelk"
+            l:
+              tekst: "het behoeden van de staat en werking van infrastructuur voor nadelige gevolgen van activiteiten"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeell"
+            m:
+              tekst: "het beheer van infrastructuur"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelm"
+            n:
+              tekst: "het beheer van watersystemen"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeeln"
+            o:
+              tekst: "het beheer van geobiologische en geothermische systemen en ecosystemen"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelo"
+            p:
+              tekst: "het beheer van natuurlijke hulpbronnen"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelp"
+            q:
+              tekst: "het beheer van natuurgebieden"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelq"
+            r:
+              tekst: "het gebruik van bouwwerken"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeelr"
+            s:
+              tekst: "het bevorderen van de toegankelijkheid van de openbare buitenruimte voor personen"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid3/Onderdeels"
+        logica:
+          type: machtiging
+          norm: "Regels KUNNEN toepassing lid 1-2 uitwerken of begrenzen"
+          catalogus: "19 belangen waarvoor uitwerking mogelijk is"
+
+      4:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1/Lid4"
+        structuur:
+          volledige_tekst: "Onverminderd het derde lid wordt bij het stellen van regels met het oog op een evenwichtige toedeling van functies aan locaties in ieder geval rekening gehouden met het belang van het beschermen van de gezondheid."
+        logica:
+          type: verplichting
+          norm: "Bij functietoedeling MOET altijd rekening gehouden worden met gezondheid"
+          conditie:
+            type: onverminderd
+            tekst: "onverminderd het derde lid"
+          kernbegrip: "gezondheid verplicht meewegen"
+
+    functie:
+      werkwoord: verplicht
+      subject: "alle bestuursorganen"
+      object: "doelgebonden taakuitoefening"
+
+    externe_refs:
+      - naar: "BWBR0005108"
+        wet: "Waterschapswet"
+        context: "met inachtneming van de Waterschapswet"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 2.1 is de CENTRALE BEPALING voor doelgebonden taakuitoefening.
+
+        Lid 1: HOOFDREGEL - taken uitoefenen met het oog op wetsdoelen
+               TENZIJ specifieke regels zijn gesteld (dan gaan die voor)
+        Lid 2: INTEGRATIEBEGINSEL - samenhang meewegen
+        Lid 3: UITWERKINGSCATALOGUS - 19 belangen waarvoor regels kunnen uitwerken
+        Lid 4: BIJZONDERE VERPLICHTING - gezondheid altijd meewegen bij functietoedeling
+
+        Dit artikel geldt voor ALLE bestuurslagen: gemeente, provincie, Rijk, waterschap.
+
+  # ===========================================================================
+  # ARTIKEL 2.2 - AFSTEMMING EN SAMENWERKING
+  # ===========================================================================
+  artikel_2.2:
+    nummer: "2.2"
+    titel: "(afstemming en samenwerking)"
+    bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.2"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.2/Lid1"
+        structuur:
+          volledige_tekst: "Een bestuursorgaan houdt bij de uitoefening van zijn taken en bevoegdheden op grond van deze wet rekening met de taken en bevoegdheden van andere bestuursorganen en stemt zonodig met deze andere bestuursorganen af."
+        logica:
+          type: verplichting
+          norm: "Bestuursorgaan MOET rekening houden met andere bestuursorganen"
+          kernbegrip: "afstemmingsplicht"
+
+      2:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.2/Lid2"
+        structuur:
+          volledige_tekst: "Bestuursorganen kunnen taken en bevoegdheden gezamenlijk uitoefenen. Daarbij wordt niet voorzien in een overdracht van taken of bevoegdheden."
+        logica:
+          type: machtiging
+          norm: "Bestuursorganen KUNNEN gezamenlijk uitoefenen"
+          begrenzing: "geen overdracht van taken/bevoegdheden"
+
+      3:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.2/Lid3"
+        structuur:
+          volledige_tekst: "Een bestuursorgaan treedt bij de uitoefening van zijn taken en bevoegdheden slechts in de taken en bevoegdheden van een ander bestuursorgaan voor zover dat nodig is voor de uitoefening van zijn eigen taken en bevoegdheden."
+        logica:
+          type: begrenzing
+          norm: "Intreden in taken ander bestuursorgaan SLECHTS voor zover nodig"
+          conditie:
+            type: voor_zover
+            tekst: "voor zover dat nodig is voor de uitoefening van zijn eigen taken"
+          kernbegrip: "subsidiariteit horizontaal"
+
+    functie:
+      werkwoord: bepaalt
+      subject: "bestuursorganen onderling"
+      object: "afstemming en samenwerking"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 2.2 regelt de HORIZONTALE VERHOUDINGEN tussen bestuursorganen.
+
+        Lid 1: AFSTEMMINGSPLICHT - rekening houden met andere bestuursorganen
+        Lid 2: GEZAMENLIJKE UITOEFENING mogelijk, maar geen overdracht
+        Lid 3: SUBSIDIARITEIT - alleen intreden voor zover nodig voor eigen taken
+
+        Dit is het samenwerkingsartikel van de Omgevingswet.
+
+  # ===========================================================================
+  # ARTIKEL 2.3 - CRITERIA VERDELING TAKEN EN BEVOEGDHEDEN
+  # ===========================================================================
+  artikel_2.3:
+    nummer: "2.3"
+    titel: "(algemene criteria verdeling van taken en bevoegdheden)"
+    bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid1"
+        structuur:
+          volledige_tekst: "De uitoefening van de taken en bevoegdheden op grond van deze wet wordt overgelaten aan de bestuursorganen van een gemeente, tenzij daarover andere regels zijn gesteld."
+        logica:
+          type: verplichting
+          norm: "Taken worden OVERGELATEN aan gemeente"
+          conditie:
+            type: tenzij
+            tekst: "tenzij daarover andere regels zijn gesteld"
+          default: "gemeente primair bevoegd"
+          uitzondering: "andere regels gesteld"
+          kernbegrip: "subsidiariteitsbeginsel - gemeente primair"
+
+      2:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid2"
+        structuur:
+          aanhef: "Een bestuursorgaan van een provincie oefent een taak of bevoegdheid, als dat bij de regeling daarvan is bepaald, alleen uit als dat nodig is:"
+          onderdelen:
+            a:
+              tekst: "met het oog op een provinciaal belang en dat belang niet op een doelmatige en doeltreffende wijze door het gemeentebestuur kan worden behartigd"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid2/Onderdeela"
+            b:
+              tekst: "voor een doelmatige en doeltreffende uitoefening van de taken en bevoegdheden op grond van deze wet of de uitvoering van een internationaalrechtelijke verplichting"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid2/Onderdeelb"
+        logica:
+          type: begrenzing
+          norm: "Provincie oefent ALLEEN uit als nodig"
+          conditie:
+            type: indien
+            tekst: "alleen uit als dat nodig is"
+          criteria:
+            - "provinciaal belang dat gemeente niet kan behartigen"
+            - "doelmatige/doeltreffende uitoefening of internationaalrechtelijke verplichting"
+
+      3:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid3"
+        structuur:
+          aanhef: "Een bestuursorgaan van het Rijk oefent een taak of bevoegdheid, als dat bij de regeling daarvan is bepaald, alleen uit als dat nodig is:"
+          onderdelen:
+            a:
+              tekst: "met het oog op een nationaal belang en dat belang niet op een doelmatige en doeltreffende wijze door het provinciebestuur of gemeentebestuur kan worden behartigd"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid3/Onderdeela"
+            b:
+              tekst: "voor een doelmatige en doeltreffende uitoefening van de taken en bevoegdheden op grond van deze wet of de uitvoering van een internationaalrechtelijke verplichting"
+              bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid3/Onderdeelb"
+        logica:
+          type: begrenzing
+          norm: "Rijk oefent ALLEEN uit als nodig"
+          conditie:
+            type: indien
+            tekst: "alleen uit als dat nodig is"
+          criteria:
+            - "nationaal belang dat provincie/gemeente niet kan behartigen"
+            - "doelmatige/doeltreffende uitoefening of internationaalrechtelijke verplichting"
+
+      4:
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3/Lid4"
+        structuur:
+          volledige_tekst: "Bestuursorganen van het Rijk oefenen ook de taken en bevoegdheden uit voor het niet provinciaal en gemeentelijk ingedeelde gebied."
+        logica:
+          type: taaktoedeling
+          norm: "Rijk bevoegd voor niet-ingedeeld gebied"
+          scope: "territoriale zee, EEZ"
+
+    functie:
+      werkwoord: bepaalt
+      subject: "wetgever"
+      object: "verticale verdeling taken/bevoegdheden"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 2.3 is het SUBSIDIARITEITSBEGINSEL van de Omgevingswet.
+
+        Lid 1: GEMEENTE PRIMAIR - taken worden overgelaten aan gemeente (TENZIJ...)
+        Lid 2: PROVINCIE SECUNDAIR - alleen als nodig voor provinciaal belang
+        Lid 3: RIJK TERTIAIR - alleen als nodig voor nationaal belang
+        Lid 4: RIJK voor niet-ingedeeld gebied (zee, EEZ)
+
+        Dit is de fundamentele bevoegdheidsladder: gemeente → provincie → Rijk
+        Hogere bestuurslaag alleen als lagere niet effectief kan zijn.
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 3
+    totaal_leden: 10
+    totaal_onderdelen: 23
+
+  patronen:
+    subsidiariteitsbeginsel:
+      beschrijving: "Verticale verdeling: gemeente primair, hogere lagen alleen als nodig"
+      evidence: ["art. 2.3 lid 1-3"]
+
+    integratiebeginsel:
+      beschrijving: "Samenhang fysieke leefomgeving als centraal uitgangspunt"
+      evidence: ["art. 2.1 lid 2"]
+
+    doelgebondenheid:
+      beschrijving: "Alle taken gericht op wetsdoelen"
+      evidence: ["art. 2.1 lid 1"]
+
+  kritieke_verwijzingen:
+    - art_2.3_lid_2: "Begrenzing voor provinciale instructieregels (art. 2.22)"
+    - art_2.3_lid_3: "Begrenzing voor rijksinstructieregels (art. 2.24)"
+    - art_2.1_lid_3: "Catalogus van 19 belangen voor uitwerking"
+
+  routes:
+    entry_points:
+      - artikel: "2.1"
+        vraag: "Welke doelen moeten bestuursorganen nastreven?"
+      - artikel: "2.3"
+        vraag: "Welke bestuurslaag is bevoegd?"
+    exit_points:
+      - naar: "art. 2.22-2.37 (Afd 2.5)"
+        context: "uitwerking instructieregels"
+      - naar: "art. 2.16-2.19 (Afd 2.4)"
+        context: "specifieke taaktoedelingen"

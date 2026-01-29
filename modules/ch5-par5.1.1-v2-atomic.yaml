@@ -1,0 +1,820 @@
+# =============================================================================
+# PARAGRAAF 5.1.1 - VERBODSBEPALINGEN
+# PRECISE ATOMIC EXTRACTION v2
+# =============================================================================
+# Extraction date: 2026-01-29
+# Source: Omgevingswet.xml lines 4130-4603
+# Method: Lid-level atomic with full legal logic capture
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  afdeling_titel: "De omgevingsvergunning"
+  paragraaf: "5.1.1"
+  paragraaf_titel: "Verbodsbepalingen"
+  artikel_range: "5.1 - 5.6"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1"
+  extraction_version: 2
+  schema: "lid-atomic-v2"
+
+# =============================================================================
+# ARTIKEL 5.1
+# =============================================================================
+
+artikel_5.1:
+  nummer: "5.1"
+  titel: "(omgevingsvergunningplichtige activiteiten wet)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1"
+      structuur:
+        aanhef: "Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:"
+        onderdelen:
+          a:
+            tekst: "een omgevingsplanactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeela"
+          b:
+            tekst: "een rijksmonumentenactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeelb"
+          c:
+            tekst: "een ontgrondingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeelc"
+          d:
+            tekst: "een stortingsactiviteit op zee,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeeld"
+          e:
+            tekst: "een Natura 2000-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeele"
+          f:
+            tekst: "een jachtgeweeractiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeelf"
+          g:
+            tekst: "een valkeniersactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid1/Onderdeelg"
+        afsluiting: "tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval."
+
+      logica:
+        type: verbod
+        norm: "verboden ZONDER omgevingsvergunning"
+        activiteiten_count: 7
+        conditie:
+          type: tenzij
+          tekst: "tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval"
+          effect: "AMvB kan gevallen VRIJSTELLEN van vergunningplicht"
+          delegatie_richting: "wet → AMvB vrijstelling"
+        default: "vergunningplichtig"
+        uitzondering: "vrijgesteld indien AMvB aanwijst"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2"
+      structuur:
+        aanhef: "Het is verboden zonder omgevingsvergunning de volgende activiteiten te verrichten:"
+        onderdelen:
+          a:
+            tekst: "een bouwactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeela"
+          b:
+            tekst: "een milieubelastende activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelb"
+          c:
+            tekst: "een lozingsactiviteit op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelc"
+            sub_onderdelen:
+              1:
+                tekst: "een oppervlaktewaterlichaam,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelc/Onderdeel1"
+              2:
+                tekst: "een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelc/Onderdeel2"
+          d:
+            tekst: "een wateronttrekkingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeeld"
+          e:
+            tekst: "een mijnbouwlocatieactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeele"
+          f:
+            tekst: "een beperkingengebiedactiviteit met betrekking tot:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf"
+            sub_onderdelen:
+              1:
+                tekst: "een weg,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf/Onderdeel1"
+              2:
+                tekst: "een waterstaatswerk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf/Onderdeel2"
+              3:
+                tekst: "een luchthaven,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf/Onderdeel3"
+              4:
+                tekst: "een hoofdspoorweg, lokale spoorweg of bijzondere spoorweg,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf/Onderdeel4"
+              5:
+                tekst: "een installatie in een waterstaatswerk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelf/Onderdeel5"
+          g:
+            tekst: "een flora- en fauna-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1/Lid2/Onderdeelg"
+        afsluiting: "voor zover het gaat om een bij algemene maatregel van bestuur aangewezen geval."
+
+      logica:
+        type: verbod
+        norm: "verboden ZONDER omgevingsvergunning"
+        activiteiten_count: 7
+        sub_onderdelen_count: 7  # c heeft 2, f heeft 5
+        conditie:
+          type: voor_zover
+          tekst: "voor zover het gaat om een bij algemene maatregel van bestuur aangewezen geval"
+          effect: "AMvB moet gevallen AANWIJZEN voor vergunningplicht"
+          delegatie_richting: "wet → AMvB aanwijzing"
+        default: "NIET vergunningplichtig"
+        uitzondering: "vergunningplichtig indien AMvB aanwijst"
+
+  functie:
+    werkwoord: verbiedt
+    object: "verrichten van activiteiten zonder omgevingsvergunning"
+    subject: "eenieder"
+
+  logica_samenvatting:
+    lid_1_vs_lid_2: |
+      KRITIEK VERSCHIL:
+      - Lid 1: DEFAULT verboden, TENZIJ AMvB vrijstelt
+      - Lid 2: DEFAULT vrij, VOOR ZOVER AMvB aanwijst
+
+      Dit bepaalt of de bewijslast bij de aanvrager of bij de regelgever ligt.
+
+    delegatie_patroon: "Ow definieert activiteittypes, AMvB (Bal/Bbl) bepaalt specifieke gevallen"
+
+  interne_refs: []
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Bal/Bbl"
+      voor: "aanwijzing gevallen (vrijstelling lid 1, aanwijzing lid 2)"
+      mechanisme_lid_1: "TENZIJ-vrijstelling"
+      mechanisme_lid_2: "VOOR ZOVER-aanwijzing"
+
+# =============================================================================
+# ARTIKEL 5.2
+# =============================================================================
+
+artikel_5.2:
+  nummer: "5.2"
+  titel: "(afbakening vergunningplicht artikel 5.1)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1"
+      structuur:
+        aanhef: "Bij de aanwijzing van gevallen op grond van artikel 5.1 worden de grenzen van artikel 2.3, derde lid, in acht genomen. Daarbij kunnen voor:"
+        onderdelen:
+          a:
+            tekst: "een omgevingsplanactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeela"
+          b:
+            tekst: "een ontgrondingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeelb"
+          c:
+            tekst: "een milieubelastende activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeelc"
+          d:
+            tekst: "een lozingsactiviteit op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeeld"
+            sub_onderdelen:
+              1:
+                tekst: "een oppervlaktewaterlichaam,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeeld/Onderdeel1"
+              2:
+                tekst: "een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeeld/Onderdeel2"
+          e:
+            tekst: "een wateronttrekkingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeele"
+          f:
+            tekst: "een beperkingengebiedactiviteit met betrekking tot een lokale spoorweg,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeelf"
+          g:
+            tekst: "een Natura 2000-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeelg"
+          h:
+            tekst: "een flora- en fauna-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeelh"
+          i:
+            tekst: "een jachtgeweeractiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid1/Onderdeeli"
+        afsluiting: "gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, in het omgevingsplan, de waterschapsverordening of de omgevingsverordening van de aanwijzing kan worden afgeweken."
+
+      logica:
+        type: machtiging
+        norm: "AMvB-maker MOET grenzen art. 2.3 lid 3 in acht nemen"
+        effect: "decentrale afwijkingsmogelijkheid binnen grenzen"
+        afwijkingsinstrumenten:
+          - omgevingsplan
+          - waterschapsverordening
+          - omgevingsverordening
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid2"
+      structuur:
+        volledige_tekst: "Voor een rijksmonumentenactiviteit met betrekking tot een archeologisch monument kunnen ook bij het besluit tot aanwijzing van een archeologisch moment als rijksmonument, bedoeld in artikel 3.1 van de Erfgoedwet, gevallen worden aangewezen waarin het verbod, bedoeld in artikel 5.1, eerste lid, aanhef en onder b, niet geldt. Deze gevallen hebben alleen betrekking op onderdelen van het archeologisch monument die uit het oogpunt van de archeologische monumentenzorg geen waarde hebben."
+
+      logica:
+        type: machtiging
+        norm: "bij aanwijzingsbesluit kunnen vrijstellingsgevallen worden bepaald"
+        scope: "alleen rijksmonumentenactiviteit archeologisch monument"
+        beperking: "alleen voor onderdelen zonder archeologische waarde"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid3"
+      structuur:
+        aanhef: "Bij de aanwijzing van gevallen op grond van artikel 5.1, eerste en tweede lid, kunnen voor:"
+        onderdelen:
+          a:
+            tekst: "een Natura 2000-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid3/Onderdeela"
+          b:
+            tekst: "een flora- en fauna-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid3/Onderdeelb"
+          c:
+            tekst: "een jachtgeweeractiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid3/Onderdeelc"
+          d:
+            tekst: "een valkeniersactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid3/Onderdeeld"
+        afsluiting: "gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, bij ministeriële regeling, van de aanwijzing kan worden afgeweken."
+
+      logica:
+        type: machtiging
+        norm: "AMvB kan afwijkingsruimte creëren"
+        afwijkingsinstrument: "ministeriële regeling"
+        scope: "natuur- en fauna-gerelateerde activiteiten"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid4"
+      structuur:
+        aanhef: "Bij de aanwijzing van gevallen op grond van artikel 5.1, eerste en tweede lid, kunnen voor:"
+        onderdelen:
+          a:
+            tekst: "een Natura 2000-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid4/Onderdeela"
+          b:
+            tekst: "een flora- en fauna-activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid4/Onderdeelb"
+        afsluiting: "gevallen worden aangewezen waarin, binnen bij die aanwijzing aangegeven grenzen, in een programma van de aanwijzing kan worden afgeweken."
+
+      logica:
+        type: machtiging
+        norm: "AMvB kan afwijkingsruimte creëren"
+        afwijkingsinstrument: "programma"
+        scope: "Natura 2000 en flora- en fauna"
+
+    5:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5"
+      structuur:
+        aanhef: "Op grond van artikel 5.1 worden in ieder geval gevallen aangewezen ter uitvoering van:"
+        onderdelen:
+          a:
+            tekst: "de habitatrichtlijn,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeela"
+          b:
+            tekst: "de kaderrichtlijn afvalstoffen,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelb"
+          c:
+            tekst: "de kaderrichtlijn water,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelc"
+          d:
+            tekst: "het Londen-protocol,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeeld"
+          e:
+            tekst: "de mer-richtlijn,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeele"
+          f:
+            tekst: "het Ospar-verdrag,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelf"
+          g:
+            tekst: "de richtlijn industriële emissies,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelg"
+          h:
+            tekst: "de richtlijn offshore veiligheid,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelh"
+          i:
+            tekst: "de richtlijn stedelijk afvalwater,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeeli"
+          j:
+            tekst: "de richtlijn winningsafval,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelj"
+          k:
+            tekst: "de Seveso-richtlijn,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelk"
+          l:
+            tekst: "het verdrag van Aarhus,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeell"
+          m:
+            tekst: "het verdrag van Bern,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelm"
+          n:
+            tekst: "het verdrag van Bonn,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeeln"
+          o:
+            tekst: "het verdrag van Valletta."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelo"
+          p:
+            tekst: "de vogelrichtlijn."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.2/Lid5/Onderdeelp"
+
+      logica:
+        type: verplichting
+        norm: "IN IEDER GEVAL worden gevallen aangewezen"
+        effect: "minimumvereiste voor AMvB-maker"
+        eu_implementatie: true
+        verdragen_count: 16
+
+  functie:
+    werkwoord: "begrenst en verplicht"
+    object: "aanwijzingsbevoegdheid uit art. 5.1"
+    subject: "AMvB-maker (Rijk)"
+
+  interne_refs:
+    - naar: "artikel 5.1"
+      type: grondslag
+      context: "aanwijzing van gevallen op grond van artikel 5.1"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+    - naar: "artikel 2.3, derde lid"
+      type: begrenzing
+      context: "grenzen van artikel 2.3, derde lid, in acht genomen"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+    - naar: "artikel 5.1, eerste lid, aanhef en onder b"
+      type: verwijzing
+      context: "rijksmonumentenactiviteit verbod"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+
+  externe_refs:
+    - naar: "BWBR0037521"
+      wet: "Erfgoedwet"
+      artikel: "3.1"
+      context: "besluit tot aanwijzing van een archeologisch moment als rijksmonument"
+
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.3
+# =============================================================================
+
+artikel_5.3:
+  nummer: "5.3"
+  titel: "(omgevingsvergunningplicht waterschapsverordening)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.3"
+      structuur:
+        volledige_tekst: "Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de waterschapsverordening is bepaald."
+
+      logica:
+        type: verbod
+        norm: "verboden ZONDER omgevingsvergunning"
+        conditie:
+          type: wanneer
+          tekst: "wanneer dat in de waterschapsverordening is bepaald"
+          bron: waterschapsverordening
+        delegatie_richting: "wet → waterschapsverordening bepaalt"
+        default: "vrij (tenzij waterschapsverordening bepaalt)"
+
+  functie:
+    werkwoord: verbiedt
+    object: "activiteit zonder vergunning"
+    subject: "eenieder"
+    bevoegd_gezag: "waterschap"
+
+  interne_refs: []
+  externe_refs: []
+
+  delegeert:
+    - type: "bij verordening"
+      naar: "waterschapsverordening"
+      voor: "bepaling vergunningplichtige activiteiten"
+      actor: "waterschap"
+
+# =============================================================================
+# ARTIKEL 5.4
+# =============================================================================
+
+artikel_5.4:
+  nummer: "5.4"
+  titel: "(omgevingsvergunningplicht omgevingsverordening)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+      structuur:
+        volledige_tekst: "Het is verboden zonder omgevingsvergunning een activiteit te verrichten wanneer dat in de omgevingsverordening is bepaald."
+
+      logica:
+        type: verbod
+        norm: "verboden ZONDER omgevingsvergunning"
+        conditie:
+          type: wanneer
+          tekst: "wanneer dat in de omgevingsverordening is bepaald"
+          bron: omgevingsverordening
+        delegatie_richting: "wet → omgevingsverordening bepaalt"
+        default: "vrij (tenzij omgevingsverordening bepaalt)"
+
+  functie:
+    werkwoord: verbiedt
+    object: "activiteit zonder vergunning"
+    subject: "eenieder"
+    bevoegd_gezag: "provincie"
+
+  interne_refs: []
+  externe_refs: []
+
+  delegeert:
+    - type: "bij verordening"
+      naar: "omgevingsverordening"
+      voor: "bepaling vergunningplichtige activiteiten"
+      actor: "provincie"
+
+# =============================================================================
+# ARTIKEL 5.5
+# =============================================================================
+
+artikel_5.5:
+  nummer: "5.5"
+  titel: "(verbod handelen in strijd met voorschriften omgevingsvergunning)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1"
+      structuur:
+        aanhef: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:"
+        onderdelen:
+          a:
+            tekst: "een omgevingsplanactiviteit, voor zover dat voorschrift is gesteld met het oog op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeela"
+            sub_onderdelen:
+              1:
+                tekst: "het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeela/Onderdeel1"
+              2:
+                tekst: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeela/Onderdeel2"
+              3:
+                tekst: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeela/Onderdeel3"
+              4:
+                tekst: "het beschermen van monumenten of archeologische monumenten,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeela/Onderdeel4"
+          b:
+            tekst: "een rijksmonumentenactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeelb"
+          c:
+            tekst: "een stortingsactiviteit op zee,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeelc"
+          d:
+            tekst: "een milieubelastende activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeeld"
+          e:
+            tekst: "een lozingsactiviteit op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeele"
+            sub_onderdelen:
+              1:
+                tekst: "een oppervlaktewaterlichaam,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeele/Onderdeel1"
+              2:
+                tekst: "een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeele/Onderdeel2"
+          f:
+            tekst: "een beperkingengebiedactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeelf"
+          g:
+            tekst: "een flora- en fauna-activiteit."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid1/Onderdeelg"
+
+      logica:
+        type: verbod
+        norm: "verboden in strijd te handelen met vergunningvoorschrift"
+        handhaving_categorie: ZWAAR
+        beschermde_belangen:
+          - veiligheid
+          - gezondheid
+          - milieu
+          - waterkwaliteit
+          - zuiveringstechnisch werk
+          - monumenten
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2"
+      structuur:
+        aanhef: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning voor:"
+        onderdelen:
+          a:
+            tekst: "een omgevingsplanactiviteit: in andere gevallen dan bedoeld in het eerste lid, onder a,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeela"
+          b:
+            tekst: "een ontgrondingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeelb"
+          c:
+            tekst: "een bouwactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeelc"
+          d:
+            tekst: "een wateronttrekkingsactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeeld"
+          e:
+            tekst: "een mijnbouwlocatieactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeele"
+          f:
+            tekst: "een Natura 2000-activiteit."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid2/Onderdeelf"
+
+      logica:
+        type: verbod
+        norm: "verboden in strijd te handelen met vergunningvoorschrift"
+        handhaving_categorie: MIDDEL
+        relatie_lid_1: "andere gevallen dan lid 1 onder a"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid3"
+      structuur:
+        aanhef: "Het is verboden in strijd te handelen met een voorschrift van een omgevingsvergunning voor:"
+        onderdelen:
+          a:
+            tekst: "een jachtgeweeractiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid3/Onderdeela"
+          b:
+            tekst: "een valkeniersactiviteit."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid3/Onderdeelb"
+
+      logica:
+        type: verbod
+        norm: "verboden in strijd te handelen met vergunningvoorschrift"
+        handhaving_categorie: LICHT
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid4"
+      structuur:
+        aanhef: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.3:"
+        onderdelen:
+          a:
+            tekst: "voor zover dat voorschrift is gesteld met het oog op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid4/Onderdeela"
+            sub_onderdelen:
+              1:
+                tekst: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid4/Onderdeela/Onderdeel1"
+              2:
+                tekst: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid4/Onderdeela/Onderdeel2"
+          b:
+            tekst: "in andere gevallen dan bedoeld onder a."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid4/Onderdeelb"
+
+      logica:
+        type: verbod
+        norm: "verboden in strijd te handelen met vergunningvoorschrift"
+        scope: "waterschapsverordening-vergunningen (art. 5.3)"
+        structuur: "a = zwaar (water), b = overig"
+
+    5:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5"
+      structuur:
+        aanhef: "Het is verboden te handelen in strijd met een voorschrift van een omgevingsvergunning als bedoeld in artikel 5.4:"
+        onderdelen:
+          a:
+            tekst: "voor zover dat voorschrift is gesteld met het oog op:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeela"
+            sub_onderdelen:
+              1:
+                tekst: "het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeela/Onderdeel1"
+              2:
+                tekst: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeela/Onderdeel2"
+              3:
+                tekst: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeela/Onderdeel3"
+              4:
+                tekst: "het beschermen van monumenten of archeologische monumenten,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeela/Onderdeel4"
+          b:
+            tekst: "in andere gevallen dan bedoeld onder a."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.5/Lid5/Onderdeelb"
+
+      logica:
+        type: verbod
+        norm: "verboden in strijd te handelen met vergunningvoorschrift"
+        scope: "omgevingsverordening-vergunningen (art. 5.4)"
+        structuur: "a = zwaar (veiligheid, gezondheid, milieu, water, monumenten), b = overig"
+
+  functie:
+    werkwoord: verbiedt
+    object: "handelen in strijd met vergunningvoorschriften"
+    subject: "vergunninghouder"
+
+  logica_samenvatting:
+    handhaving_hierarchie: |
+      DRIE-NIVEAU SYSTEEM:
+      - Lid 1 = ZWAARSTE (veiligheid, gezondheid, milieu, water, monumenten)
+      - Lid 2 = MIDDEL (overige wet-vergunningen)
+      - Lid 3 = LICHTSTE (jacht)
+
+      Lid 4-5 spiegelen dit voor decentrale vergunningen (art. 5.3/5.4)
+
+    relatie_art_5.1: "Art. 5.5 verbiedt overtreding van vergunningen die op grond van 5.1/5.3/5.4 zijn verleend"
+
+  interne_refs:
+    - naar: "artikel 5.1"
+      type: grondslag
+      context: "impliciet - vergunningen op grond van art. 5.1"
+    - naar: "artikel 5.3"
+      type: verwijzing
+      context: "omgevingsvergunning als bedoeld in artikel 5.3"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.3"
+    - naar: "artikel 5.4"
+      type: verwijzing
+      context: "omgevingsvergunning als bedoeld in artikel 5.4"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.6
+# =============================================================================
+
+artikel_5.6:
+  nummer: "5.6"
+  titel: "(verbod in stand laten zonder vergunning gebouwd bouwwerk)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.6"
+      structuur:
+        volledige_tekst: "Het is verboden een bouwwerk of deel daarvan dat is gebouwd zonder de daarvoor vereiste omgevingsvergunning voor een bouwactiviteit in stand te laten."
+
+      logica:
+        type: verbod
+        norm: "verboden in stand te laten"
+        object: "bouwwerk gebouwd zonder vereiste vergunning"
+        voortdurend_karakter: true
+        relatie_art_5.1: "bouwactiviteit uit art. 5.1 lid 2 onder a"
+
+  functie:
+    werkwoord: verbiedt
+    object: "instandlating illegaal bouwwerk"
+    subject: "eenieder (eigenaar/gebruiker)"
+
+  interne_refs:
+    - naar: "artikel 5.1, tweede lid, onder a"
+      type: impliciet
+      context: "bouwactiviteit"
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# PARAGRAAF-NIVEAU ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+
+  structuur:
+    artikelen_count: 6
+    totaal_leden: 14
+    totaal_onderdelen: ~85
+
+  patronen:
+
+    verbods_structuur:
+      beschrijving: "Alle artikelen bevatten verbodsbepalingen"
+      werkwoorden:
+        - "Het is verboden... te verrichten"  # 5.1, 5.3, 5.4
+        - "Het is verboden te handelen in strijd"  # 5.5
+        - "Het is verboden... in stand te laten"  # 5.6
+
+    delegatie_patroon:
+      beschrijving: "Drie delegatieniveaus"
+      niveaus:
+        centraal: "wet → AMvB (art. 5.1)"
+        provinciaal: "wet → omgevingsverordening (art. 5.4)"
+        waterschap: "wet → waterschapsverordening (art. 5.3)"
+
+    tenzij_vs_voorzover:
+      beschrijving: "KRITIEK juridisch verschil in art. 5.1"
+      lid_1: "TENZIJ = default vergunningplichtig, vrijstelling mogelijk"
+      lid_2: "VOOR ZOVER = default vrij, aanwijzing nodig"
+      implicatie: "bewijslast verschuift"
+
+    handhaving_hierarchie:
+      beschrijving: "Art. 5.5 creëert drie-niveau overtredingssysteem"
+      niveaus:
+        zwaar: "veiligheid, gezondheid, milieu, water, monumenten"
+        middel: "overige activiteiten"
+        licht: "jacht"
+
+    spiegeling:
+      beschrijving: "Art. 5.3/5.4 spiegelen decentrale vergunningplicht"
+      art_5.3: "waterschapsverordening"
+      art_5.4: "omgevingsverordening"
+      art_5.5_lid_4_5: "handhaving spiegelt dit"
+
+  relaties:
+    intern:
+      - van: "5.2"
+        naar: "5.1"
+        type: "begrenzing/uitwerking"
+      - van: "5.5"
+        naar: ["5.1", "5.3", "5.4"]
+        type: "handhavingsverbod"
+      - van: "5.6"
+        naar: "5.1.lid2.a"
+        type: "specifiek verbod bouwactiviteit"
+
+    extern:
+      - naar: "art. 2.3"
+        context: "subsidiariteitsbeginsel begrenst aanwijzing"
+      - naar: "Erfgoedwet art. 3.1"
+        context: "archeologische monumenten"
+
+  routes:
+    entry_points:
+      - artikel: "5.1"
+        vraag: "Is mijn activiteit vergunningplichtig?"
+    exit_points:
+      - naar: "par. 5.1.2 (art. 5.7+)"
+        context: "bevoegd gezag bepaling"
+      - naar: "AMvB (Bal/Bbl)"
+        context: "specifieke gevallen"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+
+    1_tenzij_voorzover:
+      observatie: "Art. 5.1 gebruikt TENZIJ (lid 1) vs VOOR ZOVER (lid 2)"
+      implicatie: |
+        Dit is fundamenteel voor legal logic:
+        - TENZIJ = conditie die verbod opheft (exceptie)
+        - VOOR ZOVER = conditie die verbod activeert (scope)
+        Schema moet dit onderscheid vastleggen.
+
+    2_handhaving_hierarchie:
+      observatie: "Art. 5.5 creëert drie-niveau systeem"
+      implicatie: |
+        Voor navigation naar Ch18 (handhaving) is dit cruciaal.
+        Overtredingen in lid 1 = prioriteit.
+
+    3_delegatie_patronen:
+      observatie: "Drie parallelle delegatiestromen"
+      stromen:
+        - "5.1 → AMvB → specifieke activiteiten"
+        - "5.3 → waterschapsverordening → water-gerelateerd"
+        - "5.4 → omgevingsverordening → provinciaal belang"
+
+    4_eu_implementatie:
+      observatie: "Art. 5.2 lid 5 verplicht EU-richtlijn implementatie"
+      implicatie: "16 richtlijnen/verdragen vormen minimumvereiste"
+
+  schema_verbeteringen:
+
+    conditie_types:
+      - tenzij           # exceptie op verbod
+      - voor_zover       # scope van verbod
+      - wanneer          # activeringsconditie
+      - in_ieder_geval   # minimumvereiste
+      - onverminderd     # cumulatie
+
+    logica_velden:
+      - default          # wat geldt zonder conditie
+      - uitzondering     # wat geldt met conditie
+      - delegatie_richting  # wie bepaalt specifics
+
+  volgende_extractie:
+    paragraaf: "5.1.2"
+    titel: "Reikwijdte aanvraag omgevingsvergunning en aanwijzing bevoegd gezag"
+    artikelen: "5.7 - 5.16"
+    focus: "bevoegd gezag routing"

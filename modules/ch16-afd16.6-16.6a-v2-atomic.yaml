@@ -1,0 +1,296 @@
+# Afdeling 16.6-16.6a - Projectprocedure en Kostenverhaalsbeschikking
+# V2 Atomic Extraction
+# Artikelen 16.70-16.76
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdelingen: ["16.6", "16.6a"]
+titel: "Projectprocedure en Kostenverhaalsbeschikking"
+bron_path: "/Hoofdstuk16/Afdeling16.6 + Afdeling16.6a"
+
+# =============================================================================
+# AFDELING 16.6 - PROJECTPROCEDURE
+# =============================================================================
+afdeling_16_6:
+  titel: "Projectprocedure"
+  paragrafen:
+    - nummer: "16.6.1"
+      titel: "Voorkeursbeslissing"
+    - nummer: "16.6.2"
+      titel: "Projectbesluit"
+
+artikelen:
+
+  # ---------------------------------------------------------------------------
+  # § 16.6.1 - Voorkeursbeslissing
+  # ---------------------------------------------------------------------------
+  artikel_16.70:
+    nummer: "16.70"
+    titel: "(toepassing afdeling 3.4 Awb)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.1/Artikel16.70"
+    inwerking: "2024-01-01"
+    paragraaf: "16.6.1"
+
+    structuur:
+      aanhef: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een voorkeursbeslissing voor:"
+      onderdelen:
+        a:
+          tekst: "een projectbesluit,"
+          bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.1/Artikel16.70/Onderdeela"
+        b:
+          tekst: "het opnemen van regels in het omgevingsplan als bedoeld in artikel 5.55."
+          bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.1/Artikel16.70/Onderdeelb"
+
+    logica:
+      type: procedurebepaling
+      norm: "Awb 3.4 UOV verplicht voor voorkeursbeslissing"
+      scope:
+        - "projectbesluit"
+        - "omgevingsplan art. 5.55 regels"
+
+    externe_refs:
+      - naar: "Awb"
+        wet: "BWBR0005537"
+        artikel: "afdeling 3.4"
+        context: "uitgebreide openbare voorbereidingsprocedure"
+      - naar: "Omgevingswet"
+        artikel: "5.55"
+        context: "regels opnemen in omgevingsplan"
+
+  # ---------------------------------------------------------------------------
+  # § 16.6.2 - Projectbesluit
+  # ---------------------------------------------------------------------------
+  artikel_16.71:
+    nummer: "16.71"
+    titel: "(toepassing Awb)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71"
+    inwerking: "2024-01-01"
+    paragraaf: "16.6.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71/Lid1"
+        structuur:
+          aanhef: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van:"
+          onderdelen:
+            a:
+              tekst: "een projectbesluit,"
+              bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71/Lid1/Onderdeela"
+            b:
+              tekst: "een besluit tot het buiten toepassing laten van regels als bedoeld in artikel 5.53, derde of vierde lid."
+              bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71/Lid1/Onderdeelb"
+        logica:
+          type: procedurebepaling
+          norm: "Awb 3.4 UOV verplicht voor projectbesluit en buiten-toepassing-besluit"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71/Lid2"
+        structuur:
+          volledige_tekst: "In afwijking van artikel 3:1, eerste lid, aanhef en onder b, van de Algemene wet bestuursrecht zijn de afdelingen 3.6 en 3.7 van die wet van toepassing op een besluit als bedoeld in het eerste lid, onder a of b."
+        logica:
+          type: uitbreiding
+          norm: "Awb 3.6 en 3.7 ook van toepassing (bekendmaking en motivering)"
+          afwijking_van: "Awb art. 3:1 lid 1b"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.71/Lid3"
+        structuur:
+          volledige_tekst: "Bij de bekendmaking van een projectbesluit of van een besluit tot uitvoering van een projectbesluit wordt de bijzondere regeling over het aanvoeren van gronden van het beroep, bedoeld in artikel 16.86, vermeld."
+        logica:
+          type: verplichting
+          norm: "Bij bekendmaking projectbesluit VERPLICHT vermelding bijzondere beroepsgronden-regeling"
+          verwijzing: "art. 16.86"
+
+    externe_refs:
+      - naar: "Awb"
+        artikel: "afdeling 3.4"
+        context: "UOV procedure"
+      - naar: "Awb"
+        artikel: "afdeling 3.6 en 3.7"
+        context: "bekendmaking en motivering"
+      - naar: "Omgevingswet"
+        artikel: "5.53"
+        context: "buiten toepassing laten regels"
+      - naar: "Omgevingswet"
+        artikel: "16.86"
+        context: "beroepsgronden projectbesluit"
+
+  artikel_16.72:
+    nummer: "16.72"
+    titel: "(goedkeuring projectbesluit waterschap)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.72"
+    inwerking: "2024-01-01"
+    paragraaf: "16.6.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.72/Lid1"
+        structuur:
+          volledige_tekst: "Een door het dagelijks bestuur van het waterschap genomen projectbesluit behoeft de goedkeuring van gedeputeerde staten van de provincie waar dat besluit wordt uitgevoerd. Als het project in meer dan een provincie ligt, beslissen gedeputeerde staten van de provincie waar het project in hoofdzaak zal worden uitgevoerd over de goedkeuring."
+        logica:
+          type: verplichting
+          norm: "Waterschap-projectbesluit vereist GS-goedkeuring"
+          actor: "gedeputeerde staten"
+          competentieregel: "GS van provincie waar project in hoofdzaak wordt uitgevoerd"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.72/Lid2"
+        structuur:
+          volledige_tekst: "Op de goedkeuring van een projectbesluit is artikel 10:31, tweede tot en met vierde lid, van de Algemene wet bestuursrecht niet van toepassing."
+        logica:
+          type: uitzondering
+          norm: "Awb 10:31 lid 2-4 NIET van toepassing op goedkeuring"
+          afwijking_van: "Awb art. 10:31 lid 2-4"
+
+    externe_refs:
+      - naar: "Awb"
+        artikel: "10:31 lid 2-4"
+        context: "normale goedkeuringsbepalingen (uitgesloten)"
+
+  artikel_16.73:
+    nummer: "16.73"
+    titel: "(afwijzing aanvraag om projectbesluit vast te stellen)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.73"
+    inwerking: "2024-01-01"
+    paragraaf: "16.6.2"
+
+    structuur:
+      volledige_tekst: "Artikel 16.71 is niet van toepassing op de afwijzing van een aanvraag om een projectbesluit vast te stellen."
+
+    logica:
+      type: uitzondering
+      norm: "UOV-procedure NIET voor afwijzing aanvraag projectbesluit"
+      afwijking_van: "art. 16.71"
+      ratio: "Geen uitgebreide procedure nodig bij afwijzing"
+
+  artikel_16.74:
+    nummer: "16.74"
+    titel: null
+    bron_path: "/Hoofdstuk16/Afdeling16.6/Paragraaf16.6.2/Artikel16.74"
+    inwerking: "2024-01-01"
+    paragraaf: "16.6.2"
+    status: "ingetrokken"
+    opmerking: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+# =============================================================================
+# AFDELING 16.6a - KOSTENVERHAALSBESCHIKKING
+# =============================================================================
+afdeling_16_6a:
+  titel: "Kostenverhaalsbeschikking"
+
+artikelen_16_6a:
+
+  artikel_16.75:
+    nummer: "16.75"
+    titel: "(aanhoudingsregeling kostenverhaalsbeschikking)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75/Lid1"
+        structuur:
+          volledige_tekst: "De beslissing op een aanvraag om een beschikking als bedoeld in artikel 13.18, eerste lid, wordt aangehouden als voor de in de aanvraag bedoelde te verrichten activiteit het omgevingsplan, de omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, voor zover sprake is van een activiteit die in strijd is met een in het omgevingsplan aan een locatie toegedeelde functie, of het projectbesluit nog niet onherroepelijk is."
+        logica:
+          type: verplichting
+          norm: "Aanhouding kostenverhaalsbeschikking VERPLICHT totdat grondslag-besluit onherroepelijk"
+          trigger: "omgevingsplan/OPA-vergunning/projectbesluit nog niet onherroepelijk"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75/Lid2"
+        structuur:
+          volledige_tekst: "De aanhouding duurt totdat het betrokken besluit onherroepelijk is."
+        logica:
+          type: termijn
+          norm: "Aanhouding eindigt bij onherroepelijkheid"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75/Lid3"
+        structuur:
+          aanhef: "In afwijking van het eerste lid kan het bevoegd gezag de beschikking geven als:"
+          onderdelen:
+            a:
+              tekst: "een ingesteld beroep tegen de in het eerste lid bedoelde besluiten geen gevolgen kan hebben voor de beoordeling van de kostenverhaalplichtige activiteit of van de aan de omgevingsvergunning voor een omgevingsplanactiviteit voor die activiteit te verbinden voorschriften, of"
+              bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75/Lid3/Onderdeela"
+            b:
+              tekst: "de gevolgen, bedoeld onder a, volgens het bestuursorgaan niet opwegen tegen het belang dat met het geven van de beschikking is gediend."
+              bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.75/Lid3/Onderdeelb"
+        logica:
+          type: uitzondering
+          norm: "Doorbreking aanhouding MOGELIJK bij irrelevant beroep of belangenafweging"
+          bevoegdheid: "kan"
+
+    externe_refs:
+      - naar: "Omgevingswet"
+        artikel: "13.18 lid 1"
+        context: "kostenverhaalsbeschikking"
+
+  artikel_16.76:
+    nummer: "16.76"
+    titel: "(zienswijze kostenverhaalsbeschikking)"
+    bron_path: "/Hoofdstuk16/Afdeling16.6a/Artikel16.76"
+    inwerking: "2024-01-01"
+
+    structuur:
+      volledige_tekst: "Voordat het bestuursorgaan een beschikking als bedoeld in artikel 13.18, eerste lid, geeft, stelt het de aanvrager in de gelegenheid zijn zienswijze naar voren te brengen."
+
+    logica:
+      type: verplichting
+      norm: "Zienswijze-gelegenheid VERPLICHT voor kostenverhaalsbeschikking"
+      ratio: "Hoor en wederhoor voor aanvrager"
+
+    externe_refs:
+      - naar: "Omgevingswet"
+        artikel: "13.18 lid 1"
+        context: "kostenverhaalsbeschikking"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    afdelingen_count: 2
+    artikelen_count: 7
+    leden_count: 8
+    paragrafen_count: 2
+
+  patronen:
+    awb_3_4_uov:
+      beschrijving: "Uitgebreide openbare voorbereidingsprocedure voor projectprocedure"
+      evidence: ["art. 16.70", "art. 16.71"]
+
+    waterschap_goedkeuring:
+      beschrijving: "Provinciale goedkeuring voor waterschap-projectbesluiten"
+      evidence: ["art. 16.72"]
+
+    aanhouding_tot_onherroepelijk:
+      beschrijving: "Kostenverhaalsbeschikking aangehouden tot grondslag onherroepelijk"
+      evidence: ["art. 16.75"]
+      ratio: "Geen definitieve kostenafrekening bij onzekere juridische grondslag"
+
+  kritieke_verwijzingen:
+    - naar: "Awb afdeling 3.4"
+      context: "UOV voor projectbesluit"
+    - naar: "art. 5.53"
+      context: "buiten toepassing laten regels"
+    - naar: "art. 5.55"
+      context: "regels in omgevingsplan"
+    - naar: "art. 13.18"
+      context: "kostenverhaalsbeschikking"
+    - naar: "art. 16.86"
+      context: "beroepsgronden projectbesluit"
+
+  routes:
+    entry_points:
+      - artikel: "16.70"
+        vraag: "Welke procedure geldt voor voorkeursbeslissing?"
+      - artikel: "16.71"
+        vraag: "Welke procedure geldt voor projectbesluit?"
+      - artikel: "16.75"
+        vraag: "Wanneer wordt kostenverhaalsbeschikking aangehouden?"
+    exit_points:
+      - naar: "Awb 3.4"
+        context: "UOV procedure"
+      - naar: "art. 13.18"
+        context: "kostenverhaal regeling"

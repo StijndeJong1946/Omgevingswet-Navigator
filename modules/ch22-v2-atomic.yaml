@@ -1,0 +1,925 @@
+# Chapter 22: Overgangsrecht - V2 Atomic Extraction
+# Extracted: 2026-01-29
+# Schema version: v2
+# Source: BWBR0037885 (Omgevingswet)
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_22:
+  nummer: "22"
+  titel: "Overgangsrecht"
+  bron_path: "/Hoofdstuk22"
+  inwerking: "2024-01-01"
+
+  structuur:
+    afdelingen: 3  # 22.1, 22.2, 22.4 (22.3 gereserveerd)
+    artikelen: 19  # 22.1-22.22 (minus gereserveerde)
+
+# =============================================================================
+# AFDELING 22.1: OVERGANGSFASE
+# =============================================================================
+
+afdeling_22.1:
+  nummer: "22.1"
+  titel: "Overgangsfase"
+  bron_path: "/Hoofdstuk22/Afdeling22.1"
+
+  paragrafen:
+    - "§ 22.1.1: Van omgevingsplan met tijdelijk deel tot omgevingsplan"
+    - "§ 22.1.2: De toepassing van in een verordening of het tijdelijke deel van het omgevingsplan opgenomen regels"
+    - "§ 22.1.3: Overige bepalingen"
+
+# -----------------------------------------------------------------------------
+# § 22.1.1: Van omgevingsplan met tijdelijk deel tot omgevingsplan
+# -----------------------------------------------------------------------------
+
+artikel_22.1:
+  nummer: "22.1"
+  titel: "(tijdelijk deel omgevingsplan)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.1"
+      structuur:
+        aanhef: "In deze afdeling wordt onder het tijdelijke deel van het omgevingsplan verstaan het deel van het omgevingsplan dat bestaat uit:"
+        onderdelen:
+          a:
+            tekst: "de besluiten, bedoeld in artikel 4.6, eerste lid, van de Invoeringswet Omgevingswet"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.1/Onderdeela"
+          b:
+            tekst: "de kaarten, bedoeld in artikel 3.5, tweede lid, van de Aanvullingswet bodem Omgevingswet, en de besluiten, bedoeld in artikel 3.5, derde lid, van die wet"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.1/Onderdeelb"
+          c:
+            tekst: "de regels waarvoor op grond van artikel 22.2, eerste lid, is bepaald dat ze tijdelijk deel uitmaken van het omgevingsplan"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.1/Onderdeelc"
+      logica:
+        type: "definitie"
+        norm: "Definieert wat het tijdelijke deel van het omgevingsplan omvat"
+
+  functie:
+    werkwoord: "definieert"
+    object: "tijdelijk deel omgevingsplan"
+    subject: "deze afdeling"
+
+  externe_refs:
+    - naar: "BWBR0043660"
+      wet: "Invoeringswet Omgevingswet"
+      artikel: "4.6"
+      context: "besluiten tijdelijk deel"
+    - naar: "BWBR0043277"
+      wet: "Aanvullingswet bodem Omgevingswet"
+      artikel: "3.5"
+      context: "kaarten en besluiten bodem"
+
+  interne_refs:
+    - naar: "artikel 22.2"
+      type: "verwijzing"
+      context: "regels van rijkswege"
+
+artikel_22.2:
+  nummer: "22.2"
+  titel: "(omgevingsplanregels van rijkswege)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.2/Lid1"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kan worden bepaald dat regels die voor de inwerkingtreding van deze wet bij of krachtens de wet waren gesteld of daaraan gelijkwaardige regels al dan niet tijdelijk deel uitmaken van het omgevingsplan."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan oude regels tijdelijk deel laten zijn van omgevingsplan"
+        conditie:
+          type: "voor_zover"
+          tekst: "al dan niet tijdelijk"
+          effect: "Kan permanent of tijdelijk"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.2/Lid2"
+      structuur:
+        volledige_tekst: "Bij een besluit tot vaststelling of wijziging van een omgevingsplan kunnen die regels worden gewijzigd."
+      logica:
+        type: "machtiging"
+        norm: "Gemeente kan tijdelijke regels wijzigen bij planvaststelling"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "overgangsregels omgevingsplan"
+    subject: "AMvB / gemeenteraad"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Bruidsschat-AMvB"
+      voor: "bepalen welke oude regels tijdelijk deel uitmaken"
+      mechanisme: "aanwijzing"
+
+artikel_22.3:
+  nummer: "22.3"
+  titel: "(omgevingsplan als bedoeld in artikel 2.4)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.3"
+      structuur:
+        volledige_tekst: "Een omgevingsplan als bedoeld in artikel 2.4 wordt niet eerder dan de dag waarop deze wet in werking treedt, bekendgemaakt."
+      logica:
+        type: "verbod"
+        norm: "Geen bekendmaking omgevingsplan vóór inwerkingtreding wet"
+        temporeel: "Synchronisatie-vereiste"
+
+  functie:
+    werkwoord: "verbiedt"
+    object: "voortijdige bekendmaking omgevingsplan"
+
+  interne_refs:
+    - naar: "artikel 2.4"
+      type: "verwijzing"
+      context: "omgevingsplan verplichting"
+
+artikel_22.4:
+  nummer: "22.4"
+  titel: "(regels verordeningen in omgevingsplan)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.4"
+      structuur:
+        volledige_tekst: "Aan de verplichting tot vaststelling van een omgevingsplan, bedoeld in artikel 2.4, wordt uiterlijk op een bij koninklijk besluit te bepalen tijdstip voldaan. Tot dat tijdstip zijn artikel 122 van de Gemeentewet en de artikelen 28 en 34, eerste lid, tweede zin, van de Wet algemene regels herindeling niet van toepassing. Vanaf dat tijdstip worden regels over de fysieke leefomgeving waarvoor dat op grond van artikel 2.7, eerste lid, is bepaald, alleen nog in het omgevingsplan opgenomen."
+      logica:
+        type: "verplichting"
+        norm: "Omgevingsplan moet op KB-datum gereed zijn"
+        conditie:
+          type: "tot_dat"
+          tekst: "Tot KB-tijdstip zijn lex silencio bepalingen n.v.t."
+        deadline: "bij KB te bepalen"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "vaststelling omgevingsplan"
+    subject: "gemeente"
+    deadline: "KB-bepaald tijdstip"
+
+  externe_refs:
+    - naar: "BWBR0005416"
+      wet: "Gemeentewet"
+      artikel: "122"
+      context: "lex silencio niet van toepassing in overgangsfase"
+    - naar: "BWBR0003718"
+      wet: "Wet algemene regels herindeling"
+      artikel: "28, 34"
+      context: "herindeling niet van toepassing in overgangsfase"
+
+artikel_22.5:
+  nummer: "22.5"
+  titel: "(wettelijke verplichtingen omgevingsplan)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5/Lid1"
+      structuur:
+        volledige_tekst: "Uiterlijk tot een bij koninklijk besluit te bepalen tijdstip geldt voor het tijdelijke deel van het omgevingsplan niet de verplichting op grond van artikel 4.2, eerste lid, dat de regels zijn gesteld met het oog op een evenwichtige toedeling van functies aan locaties"
+      logica:
+        type: "uitzondering"
+        norm: "Evenwichtige toedeling-eis geldt niet voor tijdelijk deel"
+        temporeel: "tot KB-datum"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5/Lid2"
+      structuur:
+        volledige_tekst: "Uiterlijk tot een bij koninklijk besluit te bepalen tijdstip geldt niet de verplichting op grond van artikel 4.17 over het in overeenstemming brengen van het omgevingsplan met omgevingsvergunningen voor een buitenplanse omgevingsplanactiviteit."
+      logica:
+        type: "uitzondering"
+        norm: "Synchronisatieplicht bopa geldt niet in overgangsfase"
+        temporeel: "tot KB-datum"
+    3:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5/Lid3"
+      structuur:
+        volledige_tekst: "Het in het eerste en tweede lid bedoelde tijdstip kan voor verschillende gevallen verschillend worden vastgesteld."
+      logica:
+        type: "machtiging"
+        norm: "Flexibiliteit in KB-deadlines"
+    4:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5/Lid4"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen, zo nodig in afwijking van het eerste of tweede lid, nadere regels worden gesteld met het oog op een goede uitvoering van de verplichtingen, bedoeld in die leden."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan afwijken voor goede uitvoering"
+    5:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.5/Lid5"
+      structuur:
+        volledige_tekst: "Voor het tijdelijke deel van het omgevingsplan, bedoeld in artikel 22.1, onder a, geldt niet de verplichting van artikel 19 van de Bekendmakingswet tot het in geconsolideerde vorm beschikbaar stellen."
+      logica:
+        type: "uitzondering"
+        norm: "Geen consolidatieplicht voor tijdelijk deel type a"
+
+  functie:
+    werkwoord: "schort op"
+    object: "wettelijke verplichtingen omgevingsplan"
+    subject: "gemeente"
+    temporeel: "overgangsfase"
+
+  interne_refs:
+    - naar: "artikel 4.2"
+      type: "begrenzing"
+      context: "evenwichtige toedeling-eis"
+    - naar: "artikel 4.17"
+      type: "begrenzing"
+      context: "synchronisatieplicht bopa"
+
+artikel_22.6:
+  nummer: "22.6"
+  titel: "(vervanging tijdelijk deel omgevingsplan)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.6/Lid1"
+      structuur:
+        volledige_tekst: "Bij de vaststelling van een omgevingsplan kunnen de voor een locatie geldende regels die zijn opgenomen in een besluit als bedoeld in artikel 4.6, eerste lid, onder a, b, c, g, h, i, j, k, l of m, van de Invoeringswet Omgevingswet alleen alle tegelijk komen te vervallen."
+      logica:
+        type: "verbod"
+        norm: "Geen partiële vervanging van bepaalde oude besluiten"
+        conditie:
+          type: "voor_zover"
+          tekst: "alleen alle tegelijk"
+          effect: "Alles-of-niets vervanging per locatie"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.6/Lid2"
+      structuur:
+        volledige_tekst: "Bij of krachtens algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin, in afwijking van het eerste lid, tot een bij koninklijk besluit te bepalen tijdstip de regels, bedoeld in het eerste lid, ook gedeeltelijk voor een locatie kunnen komen te vervallen."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan partiële vervanging toestaan"
+        conditie:
+          type: "in_afwijking_van"
+          tekst: "in afwijking van het eerste lid"
+    3:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.6/Lid3"
+      structuur:
+        volledige_tekst: "Uiterlijk op een bij koninklijk besluit te bepalen tijdstip zijn alle regels van het omgevingsplan opgenomen in het niet-tijdelijke deel van dat plan."
+      logica:
+        type: "verplichting"
+        norm: "Einde overgangsfase: alles in permanent deel"
+        deadline: "KB-bepaald"
+
+  functie:
+    werkwoord: "reguleert"
+    object: "vervanging tijdelijk deel"
+    subject: "gemeente"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 22.6 regelt de transitie van tijdelijk naar permanent deel:
+      - Lid 1: Hoofdregel is alles-of-niets vervanging per locatie
+      - Lid 2: AMvB kan partiële vervanging toestaan (flexibiliteit)
+      - Lid 3: Uiterlijke deadline voor volledige transitie
+
+artikel_22.7:
+  nummer: "22.7"
+  titel: "(beroep)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.7"
+      structuur:
+        aanhef: "Bij het beroep tegen een omgevingsplan kunnen geen beroepsgronden worden aangevoerd die betrekking hebben op regels die uitvoering geven aan een onherroepelijk besluit tot aanwijzing van:"
+        onderdelen:
+          a:
+            tekst: "een monument of archeologisch monument als gemeentelijk monument of provinciaal monument"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.7/Onderdeela"
+          b:
+            tekst: "een gemeentelijk of provinciaal beschermd stads- of dorpsgezicht"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.1/Artikel22.7/Onderdeelb"
+      logica:
+        type: "verbod"
+        norm: "Geen beroep tegen overname onherroepelijke monumentaanwijzingen"
+        rationale: "Formele rechtskracht blijft behouden"
+
+  functie:
+    werkwoord: "beperkt"
+    object: "beroepsgronden omgevingsplan"
+    subject: "appellant"
+
+# -----------------------------------------------------------------------------
+# § 22.1.2: Toepassing regels in verordening of tijdelijk deel
+# -----------------------------------------------------------------------------
+
+artikel_22.8:
+  nummer: "22.8"
+  titel: "(omgevingsvergunning gemeentelijke verordening)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.8"
+      structuur:
+        volledige_tekst: "Voor zover op grond van een bepaling in een gemeentelijke verordening een vergunning of ontheffing is vereist voor een geval waarin regels over de fysieke leefomgeving op grond van artikel 2.7, eerste lid, alleen in het omgevingsplan mogen worden opgenomen, geldt een zodanige bepaling als een verbod om zonder omgevingsvergunning een activiteit te verrichten als bedoeld in artikel 5.1, eerste lid, aanhef en onder a."
+      logica:
+        type: "conversie"
+        norm: "Oude verordening-vergunning = omgevingsvergunning omgevingsplanactiviteit"
+        conditie:
+          type: "voor_zover"
+          tekst: "voor zover artikel 2.7 van toepassing"
+
+  functie:
+    werkwoord: "converteert"
+    object: "verordening-vergunningplicht → omgevingsvergunningplicht"
+
+  interne_refs:
+    - naar: "artikel 2.7"
+      type: "grondslag"
+      context: "exclusiviteit omgevingsplan"
+    - naar: "artikel 5.1"
+      type: "verwijzing"
+      context: "vergunningplicht omgevingsplanactiviteit"
+
+artikel_22.9:
+  nummer: "22.9"
+  titel: "(aanwijzing onderdelen voor verwezenlijking in de naaste toekomst)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.9"
+      structuur:
+        volledige_tekst: "Op een in het tijdelijke deel van het omgevingsplan aangewezen onderdeel als bedoeld in artikel 3.4 van de Wet ruimtelijke ordening waarvan verwezenlijking in de naaste toekomst nodig wordt geacht blijft het oude recht van toepassing, uiterlijk tot vijf jaar na de dag met ingang waarvan die aanwijzing geldt."
+      logica:
+        type: "overgangsrecht"
+        norm: "Voorlopige bestemming: 5 jaar oud recht"
+        deadline: "5 jaar na aanwijzing"
+
+  functie:
+    werkwoord: "continueert"
+    object: "oud recht voorlopige bestemming"
+    temporeel: "max 5 jaar"
+
+  externe_refs:
+    - naar: "BWBR0020449"
+      wet: "Wet ruimtelijke ordening"
+      artikel: "3.4"
+      context: "voorlopige bestemming"
+
+artikel_22.10:
+  nummer: "22.10"
+  titel: "(binnenplanse bevoegdheid om af te wijken)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.10"
+      structuur:
+        volledige_tekst: "In het tijdelijke deel van het omgevingsplan opgenomen regels als bedoeld in artikel 3.6, eerste lid, onder c, van de Wet ruimtelijke ordening gelden als regels als bedoeld in artikel 5.21, tweede lid, onder a."
+      logica:
+        type: "conversie"
+        norm: "Oude binnenplanse afwijking = beoordelingsregels art. 5.21"
+
+  functie:
+    werkwoord: "converteert"
+    object: "Wro binnenplanse afwijking → beoordelingsregels omgevingsplanactiviteit"
+
+  externe_refs:
+    - naar: "BWBR0020449"
+      wet: "Wet ruimtelijke ordening"
+      artikel: "3.6 lid 1 onder c"
+      context: "binnenplanse afwijkingsbevoegdheid"
+
+  interne_refs:
+    - naar: "artikel 5.21"
+      type: "verwijzing"
+      context: "beoordelingsregels omgevingsplanactiviteit"
+
+artikel_22.11:
+  nummer: "22.11"
+  titel: "(binnenplanse bevoegdheid tot stellen van nadere eisen)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.11"
+      structuur:
+        volledige_tekst: "Een in het tijdelijke deel van het omgevingsplan opgenomen bevoegdheid tot het stellen van nadere eisen als bedoeld in artikel 3.6, eerste lid, onder d, van de Wet ruimtelijke ordening over in dat deel van het plan omschreven onderwerpen of onderdelen geldt als een bevoegdheid tot het stellen van maatwerkvoorschriften in het omgevingsplan over daarbij aangewezen onderwerpen als bedoeld in artikel 4.5, eerste lid."
+      logica:
+        type: "conversie"
+        norm: "Oude nadere eisen-bevoegdheid = maatwerkvoorschriften-bevoegdheid"
+
+  functie:
+    werkwoord: "converteert"
+    object: "Wro nadere eisen → maatwerkvoorschriften"
+
+  externe_refs:
+    - naar: "BWBR0020449"
+      wet: "Wet ruimtelijke ordening"
+      artikel: "3.6 lid 1 onder d"
+      context: "nadere eisen"
+
+  interne_refs:
+    - naar: "artikel 4.5"
+      type: "verwijzing"
+      context: "maatwerkvoorschriften"
+
+artikel_22.12:
+  nummer: "22.12"
+  titel: "(uitsluiting gebruik afwijkbevoegdheid bestemmingsplan)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.12"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.12"
+      structuur:
+        volledige_tekst: "Als in het tijdelijke deel van een omgevingsplan op grond van artikel 3.6a van de Wet ruimtelijke ordening is uitgesloten dat van dat plan voor een bepaalde termijn kan worden afgeweken met een omgevingsvergunning, geldt die bepaling als een verbod om voor een termijn van ten hoogste tien jaar een activiteit te verrichten."
+      logica:
+        type: "conversie"
+        norm: "Oude uitsluitingsclausule = tijdelijk activiteitenverbod (max 10 jaar)"
+
+  functie:
+    werkwoord: "converteert"
+    object: "Wro uitsluitingsclausule → tijdelijk verbod"
+
+  externe_refs:
+    - naar: "BWBR0020449"
+      wet: "Wet ruimtelijke ordening"
+      artikel: "3.6a"
+      context: "uitsluiting afwijking"
+
+artikel_22.13:
+  nummer: "22.13"
+  titel: "(geen schadeveroorzakend besluit)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13/Lid1"
+      structuur:
+        volledige_tekst: "Een omgevingsvergunning die wordt verleend op grond van een regel in het tijdelijke deel als bedoeld in artikel 22.1, aanhef en onder a, van het omgevingsplan geldt niet als schadeveroorzakend besluit als bedoeld in artikel 15.1, tweede lid."
+      logica:
+        type: "uitzondering"
+        norm: "Geen nadeelcompensatie voor vergunningen op basis tijdelijk deel"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13/Lid2"
+      structuur:
+        aanhef: "Een onherroepelijk besluit tot aanwijzing van:"
+        onderdelen:
+          a:
+            tekst: "een monument of archeologisch monument als gemeentelijk monument of provinciaal monument"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13/Lid2/Onderdeela"
+          b:
+            tekst: "een gemeentelijk of provinciaal beschermd stads- of dorpsgezicht"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13/Lid2/Onderdeelb"
+          c:
+            tekst: "een rijksbeschermd stads- of dorpsgezicht"
+            bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.2/Artikel22.13/Lid2/Onderdeelc"
+        afsluiting: "waarvan de inhoud wordt opgenomen in een omgevingsplan geldt niet als schadeveroorzakend besluit als bedoeld in artikel 15.1, eerste lid, aanhef en onder d."
+      logica:
+        type: "uitzondering"
+        norm: "Geen nadeelcompensatie voor overname monumentaanwijzingen"
+
+  functie:
+    werkwoord: "uitsluit"
+    object: "nadeelcompensatie"
+    subject: "bepaalde overgangsbesluiten"
+
+  interne_refs:
+    - naar: "artikel 15.1"
+      type: "begrenzing"
+      context: "schadeveroorzakend besluit"
+
+# -----------------------------------------------------------------------------
+# § 22.1.3: Overige bepalingen
+# -----------------------------------------------------------------------------
+
+artikel_22.14:
+  nummer: "22.14"
+  titel: "(regels waterschapsverordening van rijkswege)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.14"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.14/Lid1"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kan worden bepaald dat regels die voor de inwerkingtreding van deze wet bij of krachtens een andere wet waren gesteld of daaraan gelijkwaardige regels al dan niet tijdelijk deel uitmaken van de waterschapsverordening."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan oude regels tijdelijk deel laten zijn van waterschapsverordening"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.14/Lid2"
+      structuur:
+        volledige_tekst: "Bij een besluit tot vaststelling of wijziging van een waterschapsverordening kunnen die regels worden gewijzigd."
+      logica:
+        type: "machtiging"
+        norm: "Waterschap kan tijdelijke regels wijzigen bij verordeningsvaststelling"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "overgangsregels waterschapsverordening"
+    subject: "AMvB / waterschap"
+
+artikel_22.15:
+  nummer: "22.15"
+  titel: "(regels verordeningen in waterschapsverordening)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.15"
+      structuur:
+        volledige_tekst: "Aan de verplichting tot vaststelling van een waterschapsverordening, bedoeld in artikel 2.5, wordt uiterlijk op een bij koninklijk besluit te bepalen tijdstip voldaan. Tot dat tijdstip is artikel 59 van de Waterschapswet niet van toepassing. Vanaf dat tijdstip worden regels over de fysieke leefomgeving waarvoor dat op grond van artikel 2.7, eerste lid, is bepaald, alleen nog in de waterschapsverordening opgenomen."
+      logica:
+        type: "verplichting"
+        norm: "Waterschapsverordening moet op KB-datum gereed zijn"
+        deadline: "bij KB te bepalen"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "vaststelling waterschapsverordening"
+    subject: "waterschap"
+
+  externe_refs:
+    - naar: "BWBR0005108"
+      wet: "Waterschapswet"
+      artikel: "59"
+      context: "lex silencio niet van toepassing in overgangsfase"
+
+artikel_22.16:
+  nummer: "22.16"
+  titel: "(overgangsfase projectbesluit)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.16"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.16/Lid1"
+      structuur:
+        volledige_tekst: "Uiterlijk tot een bij koninklijk besluit te bepalen tijdstip hoeft een projectbesluit niet te voldoen aan artikel 5.52, eerste lid. Voor zover een projectbesluit in strijd is met het omgevingsplan, geldt het als een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit."
+      logica:
+        type: "uitzondering"
+        norm: "Projectbesluit hoeft tijdelijk niet omgevingsplan te wijzigen"
+        conversie: "Strijdigheid = bopa"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.16/Lid2"
+      structuur:
+        volledige_tekst: "Voor zover een projectbesluit geldt als een omgevingsvergunning voor een omgevingsplanactiviteit, hoeft het omgevingsplan niet eerder dan op een bij koninklijk besluit te bepalen tijdstip met die vergunning in overeenstemming te zijn gebracht."
+      logica:
+        type: "uitzondering"
+        norm: "Uitgestelde synchronisatieplicht projectbesluit-omgevingsplan"
+    3:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.16/Lid3"
+      structuur:
+        volledige_tekst: "In het omgevingsplan worden geen regels gesteld die in strijd zijn met een projectbesluit als bedoeld in het eerste lid. De artikelen 4.19a, derde tot en met vijfde lid, en 5.53a, tweede tot en met vierde lid, zijn van overeenkomstige toepassing."
+      logica:
+        type: "verbod"
+        norm: "Omgevingsplan mag niet strijden met projectbesluit"
+
+  functie:
+    werkwoord: "reguleert"
+    object: "overgangsfase projectbesluit"
+
+  interne_refs:
+    - naar: "artikel 5.52"
+      type: "begrenzing"
+      context: "projectbesluit wijzigt omgevingsplan"
+    - naar: "artikel 4.19a"
+      type: "verwijzing"
+      context: "strijd met projectbesluit"
+    - naar: "artikel 5.53a"
+      type: "verwijzing"
+      context: "strijd met projectbesluit"
+
+artikel_22.17:
+  nummer: "22.17"
+  titel: "(einde overgangsfase)"
+  bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.17"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.1/Paragraaf22.1.3/Artikel22.17"
+      structuur:
+        volledige_tekst: "Deze afdeling vervalt op een bij koninklijk besluit te bepalen tijdstip."
+      logica:
+        type: "horizonbepaling"
+        norm: "Afdeling 22.1 vervalt na overgangsfase"
+
+  functie:
+    werkwoord: "beëindigt"
+    object: "afdeling 22.1"
+    temporeel: "KB-bepaald"
+
+# =============================================================================
+# AFDELING 22.2: SANERING GELUID DECENTRALE INFRASTRUCTUUR
+# =============================================================================
+
+afdeling_22.2:
+  nummer: "22.2"
+  titel: "Sanering geluid decentrale infrastructuur"
+  bron_path: "/Hoofdstuk22/Afdeling22.2"
+
+artikel_22.18:
+  nummer: "22.18"
+  titel: "(vaststellen van programma)"
+  bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.18"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.18/Lid1"
+      structuur:
+        volledige_tekst: "Het college van burgemeester en wethouders stelt uiterlijk op 18 juli 2039 een programma vast, gericht op het reduceren van geluid van wegen in beheer bij de gemeente en van lokale spoorwegen, voor zover deze niet zijn aangewezen op grond van artikel 2.13a, eerste lid, aanhef en onder b."
+      logica:
+        type: "verplichting"
+        norm: "Gemeente stelt geluidssaneringsprogramma vast"
+        deadline: "18 juli 2039"
+        object: "gemeentelijke wegen en niet-provinciale lokale spoor"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.18/Lid2"
+      structuur:
+        volledige_tekst: "Het algemeen bestuur van een waterschap stelt uiterlijk op 18 juli 2039 een programma vast, gericht op het reduceren van geluid van wegen in beheer bij het waterschap."
+      logica:
+        type: "verplichting"
+        norm: "Waterschap stelt geluidssaneringsprogramma vast"
+        deadline: "18 juli 2039"
+        object: "waterschapswegen"
+    3:
+      bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.18/Lid3"
+      structuur:
+        volledige_tekst: "Gedeputeerde staten stellen uiterlijk op 18 juli 2039 een programma vast, gericht op het reduceren van geluid van wegen in beheer bij de provincie en van lokale spoorwegen, voor zover deze zijn aangewezen op grond van artikel 2.13a, eerste lid, aanhef en onder b."
+      logica:
+        type: "verplichting"
+        norm: "Provincie stelt geluidssaneringsprogramma vast"
+        deadline: "18 juli 2039"
+        object: "provinciale wegen en provinciale lokale spoor"
+    4:
+      bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.18/Lid4"
+      structuur:
+        volledige_tekst: "De artikelen 2.25, eerste lid, aanhef en onder a, onder 1°, 16.27, 16.77b, tweede lid, en 16.139 zijn van overeenkomstige toepassing [...]"
+      logica:
+        type: "verwijzing"
+        norm: "Procedureregels programma's van toepassing"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "geluidssaneringsprogramma"
+    subject: "gemeente, waterschap, provincie"
+    deadline: "18 juli 2039"
+
+  actoren:
+    - actor: "gemeente"
+      rol: "gemeentelijke wegen en lokale spoor"
+    - actor: "waterschap"
+      rol: "waterschapswegen"
+    - actor: "provincie"
+      rol: "provinciale wegen en provinciale lokale spoor"
+
+  interne_refs:
+    - naar: "artikel 2.13a"
+      type: "grondslag"
+      context: "aanwijzing lokale spoorwegen"
+    - naar: "artikel 2.25"
+      type: "verwijzing"
+      context: "instructieregels programma"
+    - naar: "artikel 16.27"
+      type: "verwijzing"
+      context: "procedure programma"
+
+artikel_22.19:
+  nummer: "22.19"
+  titel: "(einde sanering)"
+  bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.19"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.2/Artikel22.19"
+      structuur:
+        volledige_tekst: "Deze afdeling vervalt op een bij koninklijk besluit te bepalen tijdstip."
+      logica:
+        type: "horizonbepaling"
+        norm: "Afdeling 22.2 vervalt na sanering"
+
+  functie:
+    werkwoord: "beëindigt"
+    object: "afdeling 22.2"
+    temporeel: "KB-bepaald"
+
+# =============================================================================
+# AFDELING 22.4: LEGALISERING PROJECTEN NATUUR
+# =============================================================================
+
+afdeling_22.4:
+  nummer: "22.4"
+  titel: "Legalisering projecten natuur"
+  bron_path: "/Hoofdstuk22/Afdeling22.4"
+
+  context: |
+    PAS-legalisatie: projecten die onder oude PAS-regeling vielen en na
+    uitspraak ABRvS 29 mei 2019 zonder vergunning kwamen te zitten
+
+artikel_22.21:
+  nummer: "22.21"
+  titel: "(vaststellen van programma)"
+  bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid1"
+      structuur:
+        volledige_tekst: "Onze Minister voor Natuur en Stikstof draagt uit een oogpunt van rechtszekerheid tezamen met gedeputeerde staten van de provincies zorg voor het legaliseren van de projecten met een geringe stikstofdepositie op Natura 2000-gebieden die voldeden aan de voorwaarden van artikel 2.12 van het Besluit natuurbescherming, zoals dat luidde op 28 mei 2019."
+      logica:
+        type: "verplichting"
+        norm: "Minister + provincies legaliseren PAS-melders"
+        referentiedatum: "28 mei 2019"
+    2:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid2"
+      structuur:
+        aanhef: "Onze Minister voor Natuur en Stikstof stelt zo spoedig mogelijk een programma vast met maatregelen om de gevolgen van de stikstofdepositie van de in het eerste lid bedoelde projecten ongedaan te maken, te beperken of te compenseren gericht op:"
+        onderdelen:
+          a:
+            tekst: "de verlening voor de projecten van een omgevingsvergunning voor een Natura 2000-activiteit"
+            bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid2/Onderdeela"
+          b:
+            tekst: "de aanwijzing van de projecten als vergunningvrije gevallen op grond van artikel 5.2, eerste of derde lid"
+            bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid2/Onderdeelb"
+      logica:
+        type: "verplichting"
+        norm: "Legaliseringsprogramma met twee routes"
+        route_a: "Vergunning"
+        route_b: "Vergunningvrijstelling"
+    3:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid3"
+      structuur:
+        volledige_tekst: "In het programma worden alleen maatregelen opgenomen die niet zijn opgenomen in het programma, bedoeld in artikel 3.9, vierde lid."
+      logica:
+        type: "begrenzing"
+        norm: "Geen overlap met stikstofprogramma art. 3.9"
+    4:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid4"
+      structuur:
+        volledige_tekst: "De in het programma opgenomen maatregelen worden uitgevoerd binnen drie jaar na de vaststelling van het programma."
+      logica:
+        type: "verplichting"
+        norm: "Uitvoeringstermijn maatregelen"
+        deadline: "3 jaar na vaststelling"
+    5:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid5"
+      structuur:
+        volledige_tekst: "In het programma opgenomen compenserende maatregelen als bedoeld in artikel 6, vierde lid, van de habitatrichtlijn waarborgen dat de algehele samenhang van het Natura 2000-netwerk bewaard blijft."
+      logica:
+        type: "verplichting"
+        norm: "Compensatie moet Natura 2000-coherentie waarborgen"
+        eu_recht: "habitatrichtlijn art. 6 lid 4"
+    6:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.21/Lid6"
+      structuur:
+        volledige_tekst: "De artikelen 2.25, eerste lid, aanhef en onder a, onder 1°, 3.12, 3.18, eerste en tweede lid, 3.19, eerste en tweede lid, 16.27, 16.77b, tweede lid, en 16.139 zijn van overeenkomstige toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Procedureregels programma's van toepassing"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "legalisering PAS-projecten"
+    subject: "Minister voor Natuur en Stikstof + provincies"
+
+  actoren:
+    - actor: "Minister voor Natuur en Stikstof"
+      rol: "programma vaststellen"
+    - actor: "gedeputeerde staten"
+      rol: "gezamenlijke zorgplicht"
+
+  externe_refs:
+    - naar: "BWBR0038662"
+      wet: "Besluit natuurbescherming"
+      artikel: "2.12"
+      context: "PAS-regeling zoals gold op 28 mei 2019"
+
+  interne_refs:
+    - naar: "artikel 5.2"
+      type: "verwijzing"
+      context: "vergunningvrije gevallen"
+    - naar: "artikel 3.9"
+      type: "begrenzing"
+      context: "stikstofprogramma"
+
+artikel_22.22:
+  nummer: "22.22"
+  titel: "(einde legalisering)"
+  bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.22"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk22/Afdeling22.4/Artikel22.22"
+      structuur:
+        volledige_tekst: "Deze afdeling vervalt op een bij koninklijk besluit te bepalen tijdstip."
+      logica:
+        type: "horizonbepaling"
+        norm: "Afdeling 22.4 vervalt na legalisering"
+
+  functie:
+    werkwoord: "beëindigt"
+    object: "afdeling 22.4"
+    temporeel: "KB-bepaald"
+
+# =============================================================================
+# PARAGRAAF-ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+  structuur:
+    afdelingen_count: 3
+    artikelen_count: 19
+    totaal_leden: ~35
+
+  patronen:
+    conversie_patronen:
+      beschrijving: "Systematische conversie van oud recht naar Omgevingswet-equivalenten"
+      evidence: ["22.8", "22.10", "22.11", "22.12"]
+      mechanisme: "geldt als"
+
+    horizonbepalingen:
+      beschrijving: "Elke afdeling heeft eigen vervaldatum (KB-bepaald)"
+      evidence: ["22.17", "22.19", "22.22"]
+      mechanisme: "vervalt op KB-tijdstip"
+
+    deadlines_structuur:
+      beschrijving: "Mix van KB-flexibele en harde deadlines"
+      evidence:
+        kb_flexibel: ["22.4", "22.5", "22.6", "22.15", "22.16"]
+        hard: ["22.18: 18 juli 2039", "22.21: 3 jaar na vaststelling"]
+
+    geen_schade_overgang:
+      beschrijving: "Overname oude besluiten geeft geen recht op nadeelcompensatie"
+      evidence: ["22.13"]
+      rationale: "Formele rechtskracht blijft behouden"
+
+  relaties:
+    intern:
+      - van: "22.8-22.13"
+        naar: "Hoofdstuk 5"
+        type: "conversie_regels"
+        context: "Oude vergunningen → omgevingsvergunningen"
+      - van: "22.5"
+        naar: "art. 4.2, 4.17"
+        type: "tijdelijke_uitzondering"
+      - van: "22.21"
+        naar: "art. 3.9, 5.2"
+        type: "afstemming"
+    extern:
+      - naar: "Invoeringswet Omgevingswet"
+        context: "Bruidsschat-regeling"
+      - naar: "Wet ruimtelijke ordening"
+        context: "Conversie Wro-instrumenten"
+      - naar: "Besluit natuurbescherming art. 2.12"
+        context: "PAS-legalisering referentiedatum"
+
+  routes:
+    entry_points:
+      - artikel: "22.1"
+        vraag: "Wat is het tijdelijke deel van het omgevingsplan?"
+      - artikel: "22.8"
+        vraag: "Hoe werken oude verordening-vergunningen?"
+      - artikel: "22.21"
+        vraag: "PAS-melder: hoe word ik gelegaliseerd?"
+    exit_points:
+      - naar: "Hoofdstuk 5"
+        context: "Voor vergunningplichten na conversie"
+      - naar: "Hoofdstuk 15"
+        context: "Voor nadeelcompensatie (beperkt door art. 22.13)"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    transitierecht_drieluik:
+      observatie: "Overgangsrecht heeft drie parallelle sporen: omgevingsplan (22.1), geluidssanering (22.2), PAS-legalisering (22.4)"
+      implicatie: "Navigator moet drie aparte transitie-stromen kunnen volgen"
+
+    conversie_als_patroon:
+      observatie: "'Geldt als'-constructie is systematisch instrument voor rechtscontinuïteit"
+      implicatie: "Mapping van oud → nieuw instrumentarium cruciaal"
+
+    horizonbepalingen_flexibiliteit:
+      observatie: "KB-bepaalde vervaldatums geven flexibiliteit maar onzekerheid"
+      implicatie: "Navigator moet actuele KB-data monitoren"
+
+    pas_legalisering_apart:
+      observatie: "PAS-legalisering is apart spoor met eigen deadlines en routes"
+      implicatie: "Aparte module voor stikstof-transitie nodig"

@@ -1,0 +1,1439 @@
+# Chapter 19: Bevoegdheden in bijzondere omstandigheden - V2 Atomic Extraction
+# Schema: v2
+# Source: BWBR0037885 (Omgevingswet)
+# Extracted: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk:
+  nummer: 19
+  titel: "Bevoegdheden in bijzondere omstandigheden"
+  bron_path: "/Hoofdstuk19"
+  inwerking: "2024-01-01"
+
+  structuur:
+    afdelingen:
+      - nummer: "19.0"
+        titel: "Bijzondere omstandigheden"
+        artikelen: "19.0"
+      - nummer: "19.1"
+        titel: "Ongewoon voorval"
+        artikelen: "19.1-19.7"
+      - nummer: "19.2"
+        titel: "Archeologische toevalsvondst van algemeen belang"
+        artikelen: "19.8-19.9"
+      - nummer: "19.2a"
+        titel: "Toevalsvondst van verontreiniging op of in de bodem"
+        artikelen: "19.9a-19.9d"
+      - nummer: "19.3"
+        titel: "Alarmeringswaarden"
+        artikelen: "19.10-19.12"
+      - nummer: "19.4"
+        titel: "Gevaar voor waterstaatswerken"
+        artikelen: "19.13-19.16"
+      - nummer: "19.5"
+        titel: "Buitengewone omstandigheden"
+        artikelen: "19.17-19.19"
+
+---
+
+# AFDELING 19.0: BIJZONDERE OMSTANDIGHEDEN
+
+artikel_19.0:
+  nummer: "19.0"
+  titel: "(bijzondere omstandigheden in de fysieke leefomgeving)"
+  bron_path: "/Hoofdstuk19/Afdeling19.0/Artikel19.0"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.0/Artikel19.0/Lid1"
+      structuur:
+        volledige_tekst: "Bij regels als bedoeld in paragraaf 4.1.1 kunnen onderwerpen worden aangewezen waarvoor het daarbij aangewezen bestuursorgaan bij besluit kan bepalen dat zich een in die regels aangegeven bijzondere omstandigheid in de fysieke leefomgeving voordoet."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan onderwerpen aanwijzen voor bijzondere-omstandigheden-besluit"
+        mechanisme: "activering noodregime"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.0/Artikel19.0/Lid2"
+      structuur:
+        volledige_tekst: "Bij het besluit wordt bepaald welke regels in verband met de bijzondere omstandigheid op een bepaalde locatie of voor een bepaalde periode gelden. Bij het besluit kan worden afgeweken van regels als bedoeld in paragraaf 4.1.1."
+      logica:
+        type: "machtiging"
+        norm: "Besluit kan afwijken van algemene regels"
+        scope: "locatie of periode"
+        effect: "derogatie van § 4.1.1 regels"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "afwijking algemene regels bij bijzondere omstandigheden"
+    subject: "bestuursorgaan"
+
+  interne_refs:
+    - naar: "paragraaf 4.1.1"
+      type: "grondslag"
+      context: "algemene regels waarvan kan worden afgeweken"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Bal/Bkl"
+      voor: "aanwijzing onderwerpen bijzondere omstandigheden"
+      mechanisme: "nood-activering"
+
+---
+
+# AFDELING 19.1: ONGEWOON VOORVAL
+
+artikel_19.1:
+  nummer: "19.1"
+  titel: "(begripsbepalingen en toepassingsbereik afdeling 19.1)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid1"
+      structuur:
+        aanhef: "In deze afdeling wordt onder het voorkomen van de nadelige gevolgen van een ongewoon voorval ook verstaan:"
+        onderdelen:
+          a:
+            tekst: "het zoveel mogelijk beperken of ongedaan maken van die gevolgen,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid1/Onderdeela"
+          b:
+            tekst: "het voorkomen dat het voorval verergert, voortduurt of zich herhaalt,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid1/Onderdeelb"
+          c:
+            tekst: "het wegnemen van de oorzaak van het voorval."
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid1/Onderdeelc"
+      logica:
+        type: "definitie"
+        norm: "Begrip 'voorkomen' omvat ook beperken, herstel, voorkomen herhaling"
+        extensieve_uitleg: true
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid2"
+      structuur:
+        aanhef: "In deze afdeling wordt onder de veroorzaker verstaan de natuurlijke persoon of rechtspersoon:"
+        onderdelen:
+          a:
+            tekst: "die de activiteit waardoor het ongewoon voorval is veroorzaakt, verricht of heeft verricht,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid2/Onderdeela"
+          b:
+            tekst: "die houder is van een omgevingsvergunning of een andere vorm van publiekrechtelijke toestemming voor het verrichten van die activiteit,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid2/Onderdeelb"
+          c:
+            tekst: "die van de activiteit een melding als bedoeld in artikel 4.4, eerste lid, heeft gedaan,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid2/Onderdeelc"
+          d:
+            tekst: "aan wie op het tijdstip van het voorval over die activiteit een doorslaggevende economische zeggenschap was overgedragen."
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid2/Onderdeeld"
+      logica:
+        type: "definitie"
+        norm: "Begrip 'veroorzaker' - meerdere aanknopingspunten"
+        alternatieven: ["feitelijk verrichten", "vergunninghouder", "melder", "economische zeggenschap"]
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.1/Lid3"
+      structuur:
+        volledige_tekst: "Deze afdeling is niet van toepassing op ongewone voorvallen waarop de Kernenergiewet van toepassing is."
+      logica:
+        type: "begrenzing"
+        norm: "Kernenergiewet-voorvallen uitgesloten"
+        lex_specialis: "Kernenergiewet"
+
+  functie:
+    werkwoord: "definieert"
+    object: "begrippen ongewoon voorval regime"
+    subject: "wet"
+
+  externe_refs:
+    - naar: "BWBR0002402"
+      wet: "Kernenergiewet"
+      context: "lex specialis - uitsluiting"
+
+---
+
+artikel_19.2:
+  nummer: "19.2"
+  titel: "(aanwijzing en afstemming bevoegd gezag)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.2/Lid1"
+      structuur:
+        aanhef: "In deze afdeling wordt onder bevoegd gezag verstaan:"
+        onderdelen:
+          a:
+            tekst: "het bestuursorgaan waarbij op grond van artikel 18.2 de bestuursrechtelijke handhavingstaak berust of dat op grond van artikel 18.3 of 18.4 bevoegd is tot oplegging van een last onder bestuursdwang, of"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.2/Lid1/Onderdeela"
+          b:
+            tekst: "voor zover het ongewoon voorval betrekking heeft op luchtverontreiniging: de commissaris van de Koning."
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.2/Lid1/Onderdeelb"
+      logica:
+        type: "definitie"
+        norm: "Bevoegd gezag: handhavingsorgaan of CdK (luchtverontreiniging)"
+        koppeling: "handhavingstaak → noodbevoegdheid"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.2/Lid2"
+      structuur:
+        volledige_tekst: "Als bij een ongewoon voorval meer bevoegde bestuursorganen zijn betrokken, stemmen deze bestuursorganen de nodige maatregelen om de nadelige gevolgen van een ongewoon voorval te voorkomen op elkaar af. In spoedeisende gevallen kan van afstemming worden afgezien, mits zo spoedig mogelijk na het treffen van de eerst noodzakelijke maatregelen afstemming plaatsvindt."
+      logica:
+        type: "verplichting"
+        norm: "Afstemming tussen bevoegde gezagen verplicht"
+        uitzondering: "spoedeisend: eerst handelen, dan afstemmen"
+
+  functie:
+    werkwoord: "wijst aan"
+    object: "bevoegd gezag bij ongewoon voorval"
+    subject: "wet"
+
+  interne_refs:
+    - naar: "artikel 18.2"
+      type: "grondslag"
+      context: "koppeling aan handhavingstaak"
+      bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2"
+    - naar: "artikel 18.3"
+      type: "grondslag"
+      context: "mede-handhavingstaak"
+      bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.3"
+    - naar: "artikel 18.4"
+      type: "grondslag"
+      context: "bestuursdwangbevoegdheid Minister"
+      bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.4"
+
+  actoren:
+    - actor: "commissaris van de Koning"
+      rol: "bevoegd gezag luchtverontreiniging"
+
+---
+
+artikel_19.3:
+  nummer: "19.3"
+  titel: "(doormeldings- en informatieplicht bevoegd gezag)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid1"
+      structuur:
+        aanhef: "Het bevoegd gezag dat wordt geïnformeerd over een ongewoon voorval, geeft van dat voorval, de daarover verstrekte gegevens en de getroffen of voorgenomen maatregelen onverwijld kennis aan:"
+        onderdelen:
+          a:
+            tekst: "de burgemeester van de gemeente waarin dat voorval zich voordoet, of als de nadelige gevolgen van dat voorval gemeenteoverstijgend zijn, aan de voorzitter van de veiligheidsregio waarin dat voorval zich voordoet,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid1/Onderdeela"
+          b:
+            tekst: "de beheerder van een oppervlaktewaterlichaam of een zuiveringtechnisch werk, als het voorval verontreiniging van een oppervlaktewaterlichaam veroorzaakt of de doelmatige werking van een zuiveringtechnisch werk belemmert,"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid1/Onderdeelb"
+          c:
+            tekst: "de Inspectie Leefomgeving en Transport, en"
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid1/Onderdeelc"
+          d:
+            tekst: "andere bestuursorganen of overheidsdiensten, die belang hebben bij een onverwijlde kennisgeving."
+            bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid1/Onderdeeld"
+      logica:
+        type: "verplichting"
+        norm: "Onverwijlde doormelding aan relevante partijen"
+        termijn: "onverwijld"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.3/Lid2"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag kan de veroorzaker verplichten aanvullende informatie te verstrekken over het voorval, de getroffen maatregelen en de gevolgen van die maatregelen."
+      logica:
+        type: "machtiging"
+        norm: "Bevoegdheid tot vorderen aanvullende informatie"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "doormelding en informatie-uitwisseling"
+    subject: "bevoegd gezag"
+
+  actoren:
+    - actor: "burgemeester"
+      rol: "ontvangt kennisgeving lokaal voorval"
+    - actor: "voorzitter veiligheidsregio"
+      rol: "ontvangt kennisgeving gemeenteoverstijgend voorval"
+    - actor: "waterbeheerder"
+      rol: "ontvangt kennisgeving waterverontreiniging"
+    - actor: "ILT"
+      rol: "ontvangt alle kennisgevingen"
+
+---
+
+artikel_19.4:
+  nummer: "19.4"
+  titel: "(veroorzaker verplichten tot treffen van maatregelen)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4/Lid1"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag verplicht de veroorzaker tot het treffen van de maatregelen die redelijkerwijs van hem kunnen worden verlangd om de nadelige gevolgen van het ongewoon voorval te voorkomen."
+      logica:
+        type: "verplichting"
+        norm: "Veroorzaker moet redelijke maatregelen treffen"
+        begrenzing: "redelijkerwijs te verlangen"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4/Lid2"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag kan aanwijzingen geven over het verrichten van de activiteit of het treffen van maatregelen, waaronder de aanwijzing om de activiteit waardoor het ongewoon voorval is veroorzaakt, onmiddellijk stil te leggen."
+      logica:
+        type: "machtiging"
+        norm: "Aanwijzingsbevoegdheid inclusief stillegging"
+        zwaarste_maatregel: "onmiddellijke stillegging"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4/Lid3"
+      structuur:
+        volledige_tekst: "Artikel 5:31 van de Algemene wet bestuursrecht is van overeenkomstige toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Spoedeisende bestuursdwang (Awb 5:31) van toepassing"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4/Lid4"
+      structuur:
+        volledige_tekst: "Als een ongewoon voorval de doelmatige werking van een zuiveringtechnisch werk belemmert of dreigt te belemmeren, kan het bestuur waarbij de zuiveringstaak, bedoeld in artikel 2.17, eerste lid, onder a, onder 2°, berust het bevoegd gezag verzoeken de veroorzaker van het voorval te verplichten tot het treffen van de nodige maatregelen of de veroorzaker de nodige aanwijzigen te geven om de nadelige gevolgen voor de werking van het zuiveringtechnische werk te beperken of weg te nemen."
+      logica:
+        type: "machtiging"
+        norm: "Zuiveringsbestuur kan verzoek doen aan bevoegd gezag"
+        actor: "waterschap (zuiveringstaak)"
+
+    5:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.4/Lid5"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag geeft onverwijld uitvoering aan dit verzoek, voor zover dat niet in strijd is met het belang van de bescherming van het milieu."
+      logica:
+        type: "verplichting"
+        norm: "Onverwijlde uitvoering verzoek zuiveringsbestuur"
+        uitzondering: "strijd met milieubescherming"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "veroorzaker tot maatregelen"
+    subject: "bevoegd gezag"
+
+  externe_refs:
+    - naar: "BWBR0005537"
+      wet: "Algemene wet bestuursrecht"
+      artikel: "5:31"
+      context: "spoedeisende bestuursdwang"
+
+  interne_refs:
+    - naar: "artikel 2.17"
+      type: "verwijzing"
+      context: "zuiveringstaak waterschap"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17"
+
+---
+
+artikel_19.5:
+  nummer: "19.5"
+  titel: "(bevoegdheid tot treffen van maatregelen)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.5/Lid1"
+      structuur:
+        volledige_tekst: "Als niet onmiddellijk of tijdig kan worden vastgesteld door wie of waardoor het ongewoon voorval is veroorzaakt, kan het bevoegd gezag of, als niet onmiddellijk of tijdig kan worden vastgesteld welk bestuursorgaan bevoegd is, het college van burgemeester en wethouders van de gemeente waarin het voorval zich voordoet, preventieve of herstelmaatregelen treffen."
+      logica:
+        type: "machtiging"
+        norm: "Overheid kan zelf maatregelen treffen bij onbekende veroorzaker"
+        default_bevoegd_gezag: "college B&W waar voorval plaatsvindt"
+        conditie:
+          type: "indien"
+          tekst: "niet onmiddellijk of tijdig kan worden vastgesteld"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.5/Lid2"
+      structuur:
+        volledige_tekst: "Een beslissing tot het treffen van maatregelen wordt op schrift gesteld en geldt als een beschikking. De beschikking wordt onmiddellijk aan de veroorzaker gezonden, zodra die bekend is."
+      logica:
+        type: "bepaling"
+        norm: "Maatregelenbesluit is beschikking"
+        procedure: "toezending aan veroorzaker zodra bekend"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.5/Lid3"
+      structuur:
+        volledige_tekst: "Als het college van burgemeester en wethouders van de gemeente waarin het voorval zich voordoet, toepassing geeft aan het eerste lid, zijn de artikelen 19.3, tweede lid, 19.4 en 19.6 van toepassing, zodra bekend is wie de veroorzaker is."
+      logica:
+        type: "verwijzing"
+        norm: "Bij bekend worden veroorzaker: volledige bevoegdheden"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "overheid tot zelfstandig maatregelen treffen"
+    subject: "bevoegd gezag of college B&W"
+
+---
+
+artikel_19.6:
+  nummer: "19.6"
+  titel: "(kostenverhaal getroffen maatregelen)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.6/Lid1"
+      structuur:
+        volledige_tekst: "Als het bevoegd gezag maatregelen treft of laat treffen door derden, verhaalt het de kosten van die maatregelen op de veroorzaker."
+      logica:
+        type: "verplichting"
+        norm: "Kostenverhaal op veroorzaker verplicht"
+        principe: "veroorzaker betaalt"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.6/Lid2"
+      structuur:
+        volledige_tekst: "De artikelen 5:10, tweede lid, en 5:25 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Awb-regels kostenverhaal van toepassing"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "kostenverhaal op veroorzaker"
+    subject: "bevoegd gezag"
+
+  externe_refs:
+    - naar: "BWBR0005537"
+      wet: "Algemene wet bestuursrecht"
+      artikelen: ["5:10 lid 2", "5:25"]
+      context: "kostenverhaal bestuursdwang"
+
+---
+
+artikel_19.7:
+  nummer: "19.7"
+  titel: "(onderzoek oorzaak en voorkomen herhaling)"
+  bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.7/Lid1"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag ziet erop toe dat de nodige gegevens worden verzameld om het ongewoon voorval te analyseren en de oorzaak ervan te achterhalen."
+      logica:
+        type: "verplichting"
+        norm: "Toezicht op oorzaakanalyse verplicht"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.1/Artikel19.7/Lid2"
+      structuur:
+        volledige_tekst: "Om herhaling te voorkomen wijzigt het bevoegd gezag zo nodig de voorschriften van de omgevingsvergunning, stelt het, als voor de activiteit regels gelden als bedoeld in artikel 4.1 of 4.3, maatwerkvoorschriften of doet het, als het daarvoor niet zelf bevoegd is, daarop gerichte aanbevelingen."
+      logica:
+        type: "verplichting"
+        norm: "Preventieve maatregelen na voorval"
+        opties:
+          - "wijziging vergunningvoorschriften"
+          - "maatwerkvoorschriften"
+          - "aanbevelingen (indien niet bevoegd)"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "oorzaakanalyse en preventie"
+    subject: "bevoegd gezag"
+
+  interne_refs:
+    - naar: "artikel 4.1"
+      type: "verwijzing"
+      context: "rijksregels voor maatwerkvoorschriften"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1/Artikel4.1"
+    - naar: "artikel 4.3"
+      type: "verwijzing"
+      context: "rijksregels voor maatwerkvoorschriften"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1/Artikel4.3"
+
+---
+
+# AFDELING 19.2: ARCHEOLOGISCHE TOEVALSVONDST
+
+artikel_19.8:
+  nummer: "19.8"
+  titel: "(aanwijzing en afstemming bevoegd gezag)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.8/Lid1"
+      structuur:
+        volledige_tekst: "Bevoegd gezag voor een archeologische toevalsvondst van algemeen belang is het college van burgemeester en wethouders van de gemeente waar de vondst zich voordoet."
+      logica:
+        type: "bepaling"
+        norm: "College B&W is bevoegd gezag"
+        default: true
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.8/Lid2"
+      structuur:
+        volledige_tekst: "Bevoegd gezag voor een archeologische toevalsvondst van algemeen belang die zich voordoet in een gebied dat niet gemeentelijk is ingedeeld, is Onze Minister van Onderwijs, Cultuur en Wetenschap."
+      logica:
+        type: "bepaling"
+        norm: "Minister OCW bevoegd in niet-ingedeeld gebied"
+        conditie:
+          type: "indien"
+          tekst: "niet gemeentelijk ingedeeld"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.8/Lid3"
+      structuur:
+        volledige_tekst: "In afwijking van het eerste lid kunnen de taken en bevoegdheden, bedoeld in artikel 19.9, worden uitgeoefend door Onze Minister van Onderwijs, Cultuur en Wetenschap als een archeologische toevalsvondst van algemeen belang, van nationaal belang is."
+      logica:
+        type: "uitzondering"
+        norm: "Minister OCW bij nationaal belang"
+        conditie:
+          type: "in_afwijking_van"
+          tekst: "In afwijking van het eerste lid"
+          effect: "Minister treedt in bevoegdheid gemeente"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.8/Lid4"
+      structuur:
+        volledige_tekst: "Het college van burgemeester en wethouders van de gemeente waar zich een archeologische toevalsvondst van algemeen belang voordoet en Onze Minister van Onderwijs, Cultuur en Wetenschap stellen elkaar onverwijld in kennis van de bij een melding als bedoeld in artikel 5.10 van de Erfgoedwet van een archeologische toevalsvondst van algemeen belang verstrekte gegevens en de bij die vondst getroffen of voorgenomen maatregelen."
+      logica:
+        type: "verplichting"
+        norm: "Onderlinge informatieplicht B&W - Minister OCW"
+
+  functie:
+    werkwoord: "wijst aan"
+    object: "bevoegd gezag archeologische toevalsvondst"
+    subject: "wet"
+
+  externe_refs:
+    - naar: "BWBR0037521"
+      wet: "Erfgoedwet"
+      artikel: "5.10"
+      context: "melding archeologische vondst"
+
+  actoren:
+    - actor: "college B&W"
+      rol: "default bevoegd gezag"
+    - actor: "Minister OCW"
+      rol: "bevoegd gezag bij nationaal belang of niet-ingedeeld gebied"
+
+---
+
+artikel_19.9:
+  nummer: "19.9"
+  titel: "(taken en bevoegdheden bij een archeologische toevalsvondst van algemeen belang)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2/Artikel19.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "De artikelen 19.3, tweede lid, 19.4, eerste tot en met derde lid, en 19.7, tweede lid, zijn van overeenkomstige toepassing op een archeologische toevalsvondst van algemeen belang."
+      logica:
+        type: "verwijzing"
+        norm: "Ongewoon-voorval-regime van overeenkomstige toepassing"
+        toepasselijke_artikelen: ["19.3 lid 2", "19.4 lid 1-3", "19.7 lid 2"]
+
+  functie:
+    werkwoord: "verklaart van toepassing"
+    object: "ongewoon-voorval-bevoegdheden"
+    subject: "archeologische toevalsvondst"
+
+  interne_refs:
+    - naar: "artikel 19.3"
+      type: "schakelbepaling"
+      context: "informatieplicht veroorzaker"
+    - naar: "artikel 19.4"
+      type: "schakelbepaling"
+      context: "maatregelplicht en aanwijzingen"
+    - naar: "artikel 19.7"
+      type: "schakelbepaling"
+      context: "preventieve maatregelen"
+
+---
+
+# AFDELING 19.2a: TOEVALSVONDST BODEMVERONTREINIGING
+
+artikel_19.9a:
+  nummer: "19.9a"
+  titel: "(toepassingsbereik afdeling 19.2a)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid1"
+      structuur:
+        aanhef: "Deze afdeling is van toepassing als naar het oordeel van het bevoegd gezag:"
+        onderdelen:
+          a:
+            tekst: "ten minste een redelijk vermoeden bestaat van een toevalsvondst van verontreiniging op of in de bodem, en"
+            bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid1/Onderdeela"
+          b:
+            tekst: "onmiddellijk tijdelijke beschermingsmaatregelen, met inbegrip van onderzoek naar de aard en omvang van de risico's voor de gezondheid, noodzakelijk zijn om onaanvaardbare risico's voor de gezondheid als gevolg van directe of indirecte blootstelling aan verontreiniging op of in de bodem te voorkomen of te beperken."
+            bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid1/Onderdeelb"
+      logica:
+        type: "bepaling"
+        norm: "Afdeling van toepassing bij redelijk vermoeden + noodzaak maatregelen"
+        cumulatief: true
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid2"
+      structuur:
+        volledige_tekst: "Van onaanvaardbare risico's voor de gezondheid is in ieder geval sprake bij directe blootstelling aan concentraties van stoffen die de op grond van artikel 2.24 vastgestelde, ten hoogste toelaatbare concentraties overschrijden."
+      logica:
+        type: "definitie"
+        norm: "Overschrijding art. 2.24 = onaanvaardbaar risico"
+        conditie:
+          type: "in_ieder_geval"
+          tekst: "in ieder geval"
+          effect: "minimumcriterium, niet limitatief"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid3"
+      structuur:
+        volledige_tekst: "Van indirecte blootstelling is in ieder geval sprake bij aanzienlijke bedreiging van de kwaliteit van drinkwatervoorraden wanneer aangetroffen verontreiniging het grondwater kan bereiken."
+      logica:
+        type: "definitie"
+        norm: "Drinkwaterbedreiging = indirecte blootstelling"
+        conditie:
+          type: "in_ieder_geval"
+          tekst: "in ieder geval"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9a/Lid4"
+      structuur:
+        volledige_tekst: "Tijdelijke beschermingsmaatregelen strekken niet tot het ongedaan maken van de aangetroffen verontreiniging."
+      logica:
+        type: "begrenzing"
+        norm: "Geen saneringsplicht, alleen bescherming"
+
+  functie:
+    werkwoord: "begrenst"
+    object: "toepassingsbereik bodemverontreiniging-regime"
+    subject: "wet"
+
+  interne_refs:
+    - naar: "artikel 2.24"
+      type: "verwijzing"
+      context: "toelaatbare concentraties stoffen"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24"
+
+---
+
+artikel_19.9b:
+  nummer: "19.9b"
+  titel: "(aanwijzing en afstemming bevoegd gezag; doormeldings- en informatieplicht bevoegd gezag)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9b"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9b/Lid1"
+      structuur:
+        volledige_tekst: "Bevoegd gezag voor een toevalsvondst van verontreiniging op of in de bodem is het college van burgemeester en wethouders van de gemeente waar de vondst zich voordoet."
+      logica:
+        type: "bepaling"
+        norm: "College B&W is bevoegd gezag"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9b/Lid2"
+      structuur:
+        volledige_tekst: "Artikel 19.2, tweede lid, is van overeenkomstige toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Afstemmingsplicht van toepassing"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9b/Lid3"
+      structuur:
+        volledige_tekst: "Artikel 19.3 is van overeenkomstige toepassing, waarbij voor «veroorzaker» wordt gelezen: eigenaar of erfpachter."
+      logica:
+        type: "verwijzing"
+        norm: "Doormeldingsplicht, maar gericht op eigenaar/erfpachter"
+        begrippensubstitutie: "veroorzaker → eigenaar of erfpachter"
+
+  functie:
+    werkwoord: "wijst aan"
+    object: "bevoegd gezag bodemverontreiniging-vondst"
+    subject: "wet"
+
+---
+
+artikel_19.9c:
+  nummer: "19.9c"
+  titel: "(treffen van tijdelijke beschermingsmaatregelen)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9c"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9c/Lid1"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag verplicht de eigenaar of erfpachter tot het onmiddellijk treffen van tijdelijke beschermingsmaatregelen, op de locatie waar de verontreiniging zich bevindt of waar de directe gevolgen van blootstelling aan de verontreiniging zich voordoen, die redelijkerwijs van hem kunnen worden gevraagd om onaanvaardbare risico's voor de gezondheid als gevolg van de blootstelling te voorkomen of te beperken."
+      logica:
+        type: "verplichting"
+        norm: "Eigenaar/erfpachter moet onmiddellijk maatregelen treffen"
+        adressaat: "eigenaar of erfpachter"
+        termijn: "onmiddellijk"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9c/Lid2"
+      structuur:
+        volledige_tekst: "Artikel 19.4, tweede tot en met vijfde lid, is van overeenkomstige toepassing, waarbij voor «veroorzaker» telkens wordt gelezen: eigenaar of erfpachter."
+      logica:
+        type: "verwijzing"
+        norm: "Aanwijzingsbevoegdheid en zuiveringsverzoek van toepassing"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9c/Lid3"
+      structuur:
+        volledige_tekst: "Als de eigenaar of erfpachter niet of niet tijdig de vereiste tijdelijke beschermingsmaatregelen treft, kan het bevoegd gezag die maatregelen treffen."
+      logica:
+        type: "machtiging"
+        norm: "Overheid kan zelf maatregelen treffen bij nalaten eigenaar"
+        conditie:
+          type: "indien"
+          tekst: "niet of niet tijdig treft"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9c/Lid4"
+      structuur:
+        volledige_tekst: "Een beslissing tot het treffen van tijdelijke beschermingsmaatregelen wordt op schrift gesteld en geldt als een beschikking. De beschikking wordt onmiddellijk aan de eigenaar of erfpachter gezonden."
+      logica:
+        type: "bepaling"
+        norm: "Maatregelenbesluit is beschikking"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "eigenaar/erfpachter tot beschermingsmaatregelen"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Anders dan bij ongewoon voorval (afd. 19.1) richt bodemverontreiniging-regime
+      zich op eigenaar/erfpachter, niet op veroorzaker. Dit weerspiegelt de
+      zakelijke aansprakelijkheid voor historische verontreiniging.
+
+---
+
+artikel_19.9d:
+  nummer: "19.9d"
+  titel: "(kostenverhaal getroffen maatregelen)"
+  bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9d"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9d/Lid1"
+      structuur:
+        volledige_tekst: "Als het bevoegd gezag tijdelijke beschermingsmaatregelen treft of laat treffen door derden, kan het de kosten van die maatregelen verhalen op de eigenaar of erfpachter onverminderd artikel 13.3a."
+      logica:
+        type: "machtiging"
+        norm: "Kostenverhaal op eigenaar/erfpachter mogelijk"
+        conditie:
+          type: "onverminderd"
+          tekst: "onverminderd artikel 13.3a"
+          effect: "aanvullend op gemeentelijk kostenverhaal"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.2a/Artikel19.9d/Lid2"
+      structuur:
+        volledige_tekst: "De artikelen 5:10, tweede lid, en 5:25 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Awb-regels kostenverhaal van toepassing"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "kostenverhaal op eigenaar/erfpachter"
+    subject: "bevoegd gezag"
+
+  interne_refs:
+    - naar: "artikel 13.3a"
+      type: "verwijzing"
+      context: "gemeentelijk kostenverhaal bodemsanering"
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a"
+
+---
+
+# AFDELING 19.3: ALARMERINGSWAARDEN
+
+artikel_19.10:
+  nummer: "19.10"
+  titel: "(vaststelling van alarmeringswaarden en informatieplicht)"
+  bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10/Lid1"
+      structuur:
+        aanhef: "Bij ministeriële regeling worden alarmeringswaarden vastgesteld voor:"
+        onderdelen:
+          a:
+            tekst: "concentraties van verontreinigende stoffen in de buitenlucht,"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10/Lid1/Onderdeela"
+          b:
+            tekst: "hoogwaterstanden die een gevaar voor primaire waterkeringen kunnen opleveren."
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10/Lid1/Onderdeelb"
+      logica:
+        type: "delegatie"
+        norm: "Ministeriële regeling stelt alarmeringswaarden vast"
+        twee_categorieën:
+          - luchtkwaliteit
+          - hoogwater
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10/Lid2"
+      structuur:
+        volledige_tekst: "De commissaris van de Koning informeert of waarschuwt onverwijld het publiek bij een overschrijding of dreigende overschrijding van een alarmeringswaarde voor concentraties van verontreinigende stoffen in de buitenlucht."
+      logica:
+        type: "verplichting"
+        norm: "CdK waarschuwt publiek bij luchtalarm"
+        termijn: "onverwijld"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.10/Lid3"
+      structuur:
+        volledige_tekst: "Onze Minister van Infrastructuur en Waterstaat informeert of waarschuwt onverwijld de betrokken beheerders van primaire waterkeringen en gedeputeerde staten bij een overschrijding of dreigende overschrijding van een alarmeringswaarde voor hoogwaterstanden."
+      logica:
+        type: "verplichting"
+        norm: "Minister I&W waarschuwt bij hoogwateralarm"
+        ontvangers: ["waterbeheerders", "gedeputeerde staten"]
+
+  functie:
+    werkwoord: "delegeert"
+    object: "vaststelling alarmeringswaarden"
+    subject: "wet"
+
+  delegeert:
+    - type: "bij ministeriële regeling"
+      naar: "Orm"
+      voor: "alarmeringswaarden luchtkwaliteit en hoogwater"
+
+  actoren:
+    - actor: "commissaris van de Koning"
+      rol: "waarschuwt publiek bij luchtverontreiniging"
+    - actor: "Minister van I&W"
+      rol: "waarschuwt bij hoogwater"
+
+---
+
+artikel_19.11:
+  nummer: "19.11"
+  titel: "(informatie of waarschuwing bij overschrijding alarmeringswaarden)"
+  bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1"
+      structuur:
+        aanhef: "Bij ministeriële regeling worden regels gesteld over het geven van informatie of waarschuwingen bij een overschrijding of dreigende overschrijding van een alarmeringswaarde en als de buitenlucht wordt verontreinigd of dreigt te worden verontreinigd door stoffen waarvoor geen alarmeringswaarden zijn vastgesteld, aan:"
+        onderdelen:
+          a:
+            tekst: "het publiek,"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1/Onderdeela"
+          b:
+            tekst: "bijzonder gevoelige bevolkingsgroepen,"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1/Onderdeelb"
+          c:
+            tekst: "de beheerders van primaire waterkeringen,"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1/Onderdeelc"
+          d:
+            tekst: "gedeputeerde staten, en"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1/Onderdeeld"
+          e:
+            tekst: "overige bestuursorganen of andere instanties."
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid1/Onderdeele"
+      logica:
+        type: "delegatie"
+        norm: "Ministeriële regeling voor waarschuwingsprocedure"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid2"
+      structuur:
+        aanhef: "Bij de regeling worden regels gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de inhoud van de te verstrekken informatie en de te geven waarschuwingen,"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid2/Onderdeela"
+          b:
+            tekst: "hoe die informatie wordt verstrekt en die waarschuwingen worden gegeven, en"
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid2/Onderdeelb"
+          c:
+            tekst: "hoe uitvoering wordt gegeven aan artikel 24 van de richtlijn luchtkwaliteit."
+            bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.11/Lid2/Onderdeelc"
+      logica:
+        type: "delegatie"
+        norm: "Inhoud, wijze en EU-implementatie geregeld"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "waarschuwingsprocedure"
+    subject: "wet"
+
+---
+
+artikel_19.12:
+  nummer: "19.12"
+  titel: "(tijdelijke regels bij luchtverontreiniging)"
+  bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.12"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.12/Lid1"
+      structuur:
+        volledige_tekst: "Bij overschrijding van alarmeringswaarden voor luchtkwaliteit of bij verontreiniging van de buitenlucht door stoffen waarvoor geen alarmeringswaarden zijn vastgesteld, kan de commissaris van de Koning, met het oog op het beschermen van de volksgezondheid of de gezondheid van bijzonder gevoelige bevolkingsgroepen, bij besluit regels stellen over het gebruik van installaties of brandstoffen en over andere verontreinigende activiteiten."
+      logica:
+        type: "machtiging"
+        norm: "CdK kan noodregels stellen bij luchtverontreiniging"
+        grondslag: "volksgezondheid"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.12/Lid2"
+      structuur:
+        volledige_tekst: "Deze regels kunnen in ieder geval inhouden een verbod om een installatie in werking te hebben of een brandstof te gebruiken."
+      logica:
+        type: "bepaling"
+        norm: "Tot en met verbod installatie/brandstof"
+        conditie:
+          type: "in_ieder_geval"
+          tekst: "in ieder geval"
+          effect: "niet limitatief"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.12/Lid3"
+      structuur:
+        volledige_tekst: "Een besluit vervalt achtenveertig uur nadat het in werking is getreden. Deze termijn kan door gedeputeerde staten telkens voor ten hoogste achtenveertig uur worden verlengd."
+      logica:
+        type: "bepaling"
+        norm: "Automatisch verval na 48 uur"
+        verlenging: "GS kunnen verlengen met max 48 uur per keer"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.3/Artikel19.12/Lid4"
+      structuur:
+        volledige_tekst: "Een besluit als bedoeld in het eerste lid en een besluit tot verlenging als bedoeld in het derde lid worden op een bij algemene maatregel van bestuur te bepalen wijze bekendgemaakt. De besluiten treden in werking onmiddellijk na de bekendmaking."
+      logica:
+        type: "bepaling"
+        norm: "Onmiddellijke inwerkingtreding na bekendmaking"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "noodregels bij luchtverontreiniging"
+    subject: "commissaris van de Koning"
+
+  actoren:
+    - actor: "commissaris van de Koning"
+      rol: "stelt noodregels (48-uur geldig)"
+    - actor: "gedeputeerde staten"
+      rol: "verlengen noodregels"
+
+---
+
+# AFDELING 19.4: GEVAAR VOOR WATERSTAATSWERKEN
+
+artikel_19.13:
+  nummer: "19.13"
+  titel: "(begripsbepaling en toepassingsbereik afdeling 19.4)"
+  bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.13"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.13/Lid1"
+      structuur:
+        volledige_tekst: "In deze afdeling wordt onder gevaar voor waterstaatswerken verstaan: omstandigheid waardoor de goede staat van een waterstaatswerk onmiddellijk wordt aangetast of dreigt te worden aangetast of dit werk ernstig beschadigd of onbruikbaar wordt."
+      logica:
+        type: "definitie"
+        norm: "Gevaar = aantasting/beschadiging/onbruikbaar"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.13/Lid2"
+      structuur:
+        volledige_tekst: "Deze afdeling is niet van toepassing op gevaren die het gevolg zijn van een ongeval als bedoeld in de Wet bestrijding maritieme ongevallen."
+      logica:
+        type: "begrenzing"
+        norm: "Maritieme ongevallen uitgesloten"
+        lex_specialis: "Wet bestrijding maritieme ongevallen"
+
+  functie:
+    werkwoord: "definieert"
+    object: "begrip gevaar waterstaatswerken"
+    subject: "wet"
+
+  externe_refs:
+    - naar: "BWBR0037162"
+      wet: "Wet bestrijding maritieme ongevallen"
+      context: "lex specialis - uitsluiting"
+
+---
+
+artikel_19.14:
+  nummer: "19.14"
+  titel: "(calamiteitenplan beheer waterstaatswerken)"
+  bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.14"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.14/Lid1"
+      structuur:
+        volledige_tekst: "De beheerder zorgt voor het houden van oefeningen om doeltreffend te kunnen optreden bij gevaar voor waterstaatswerken. Hij stelt voor de waterstaatswerken een calamiteitenplan vast, dat voldoet aan bij algemene maatregel van bestuur gestelde regels."
+      logica:
+        type: "verplichting"
+        norm: "Beheerder houdt oefeningen en stelt calamiteitenplan vast"
+        dubbele_verplichting: ["oefeningen", "calamiteitenplan"]
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.14/Lid2"
+      structuur:
+        volledige_tekst: "Het calamiteitenplan wordt afgestemd op de voor het betrokken gebied vastgestelde crisisplannen, bedoeld in artikel 16 van de Wet veiligheidsregio's, en rampbestrijdingsplannen, bedoeld in artikel 17 van die wet."
+      logica:
+        type: "verplichting"
+        norm: "Afstemming op crisisplannen veiligheidsregio"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.14/Lid3"
+      structuur:
+        volledige_tekst: "De besturen van de veiligheidsregio's waarin de waterstaatswerken liggen, worden in de gelegenheid gesteld hun zienswijze over het ontwerp van het calamiteitenplan naar voren te brengen."
+      logica:
+        type: "verplichting"
+        norm: "Zienswijze veiligheidsregio's"
+        procedure: "voorafgaand aan vaststelling"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "calamiteitenplan waterbeheerder"
+    subject: "beheerder waterstaatswerk"
+
+  externe_refs:
+    - naar: "BWBR0027466"
+      wet: "Wet veiligheidsregio's"
+      artikelen: ["16", "17"]
+      context: "afstemming crisis-/rampbestrijdingsplannen"
+
+---
+
+artikel_19.15:
+  nummer: "19.15"
+  titel: "(maatregelen beheerder bij gevaar voor waterstaatswerken)"
+  bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid1"
+      structuur:
+        volledige_tekst: "De beheerder is bij gevaar voor waterstaatswerken, zolang de daardoor ontstane situatie dit vergt, bevoegd de maatregelen te treffen die hij nodig oordeelt, zo nodig in afwijking van wettelijke voorschriften, met uitzondering van de Grondwet of internationaalrechtelijke verplichtingen."
+      logica:
+        type: "machtiging"
+        norm: "Beheerder mag afwijken van wettelijke voorschriften bij gevaar"
+        brede_bevoegdheid: true
+        absolute_grenzen: ["Grondwet", "internationaal recht"]
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid2"
+      structuur:
+        volledige_tekst: "Als het waterschapsbestuur gebruikmaakt van deze bevoegdheid, meldt het dit onverwijld aan gedeputeerde staten of, als van deze bevoegdheid gebruik is gemaakt in verband met gevaar voor een primaire waterkering, aan Onze Minister van Infrastructuur en Waterstaat."
+      logica:
+        type: "verplichting"
+        norm: "Onverwijlde melding aan toezichthouder"
+        differentiatie: "GS of Minister I&W (bij primaire kering)"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid3"
+      structuur:
+        volledige_tekst: "De beheerder brengt, zodra de feitelijke omstandigheden dat toelaten, het waterstaatswerk weer zoveel mogelijk in overeenstemming met de in de legger voorgeschreven staat."
+      logica:
+        type: "verplichting"
+        norm: "Herstelplicht naar legger-staat"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid4"
+      structuur:
+        aanhef: "De beheerder zorgt voor een evaluatie van de toepassing van het eerste en derde lid en zendt een verslag van deze evaluatie ter kennisneming aan:"
+        onderdelen:
+          a:
+            tekst: "gedeputeerde staten of, als de evaluatie betrekking heeft op een primaire waterkering, Onze Minister van Infrastructuur en Waterstaat,"
+            bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid4/Onderdeela"
+          b:
+            tekst: "de besturen van de veiligheidsregio's waarin de waterstaatswerken zijn gelegen."
+            bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.15/Lid4/Onderdeelb"
+      logica:
+        type: "verplichting"
+        norm: "Evaluatieverslag naar toezichthouder en veiligheidsregio"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "afwijking wettelijke voorschriften bij watergevaar"
+    subject: "waterbeheerder"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 19.15 bevat de kern van het noodrecht voor waterbeheer: de beheerder
+      mag bij gevaar voor waterstaatswerken ALLES doen wat nodig is, ook
+      in afwijking van wettelijke voorschriften. Alleen Grondwet en internationaal
+      recht blijven absolute grenzen. Na de noodsituatie: herstel naar legger-staat
+      en evaluatieverslag. Dit is een van de meest vergaande noodbevoegdheden
+      in het Nederlandse recht.
+
+---
+
+artikel_19.16:
+  nummer: "19.16"
+  titel: "(instructiebesluit bij gevaar voor waterstaatswerken)"
+  bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid1"
+      structuur:
+        volledige_tekst: "Gedeputeerde staten kunnen, als naar hun oordeel een waterschapsbestuur niet of niet voldoende optreedt bij gevaar voor waterstaatswerken, aan dat bestuur een instructie geven als bedoeld in artikel 2.33."
+      logica:
+        type: "machtiging"
+        norm: "GS kunnen instructie geven bij inadequaat optreden waterschap"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid2"
+      structuur:
+        volledige_tekst: "Als dit vanwege spoedeisende omstandigheden nodig is, kan de commissaris van de Koning die instructie geven, zolang het gevaar voortduurt en gedeputeerde staten van die bevoegdheid geen gebruik maken."
+      logica:
+        type: "machtiging"
+        norm: "CdK kan instructie geven bij spoed"
+        conditie:
+          type: "indien"
+          tekst: "spoedeisend + GS handelen niet"
+          effect: "subsidiaire bevoegdheid CdK"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid3"
+      structuur:
+        volledige_tekst: "Op een instructie als bedoeld in het eerste en tweede lid is artikel 2.36, eerste lid, aanhef en onder a, van toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Beroepsregels instructiebesluit"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid4"
+      structuur:
+        aanhef: "Onze Minister van Infrastructuur en Waterstaat kan aan het waterschapsbestuur een instructie geven als bedoeld in artikel 2.34 als naar zijn oordeel:"
+        onderdelen:
+          a:
+            tekst: "gedeputeerde staten of de commissaris van de Koning ten onrechte niet of niet voldoende gebruikmaken van de bevoegdheid, bedoeld in het eerste of tweede lid, en"
+            bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid4/Onderdeela"
+          b:
+            tekst: "het waterschapsbestuur niet of niet voldoende optreedt bij gevaar voor een primaire waterkering."
+            bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid4/Onderdeelb"
+      logica:
+        type: "machtiging"
+        norm: "Minister I&W als ultieme toezichthouder primaire keringen"
+        cumulatief: ["GS/CdK handelen niet adequaat", "primaire waterkering in gevaar"]
+
+    5:
+      bron_path: "/Hoofdstuk19/Afdeling19.4/Artikel19.16/Lid5"
+      structuur:
+        volledige_tekst: "Op een instructie als bedoeld in het vierde lid is artikel 2.36, tweede lid, aanhef en onder a, van toepassing."
+      logica:
+        type: "verwijzing"
+        norm: "Beroepsregels rijksinstructie"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "instructiebevoegdheid bij inadequaat waterbeheer"
+    subject: "GS / CdK / Minister I&W"
+
+  interne_refs:
+    - naar: "artikel 2.33"
+      type: "grondslag"
+      context: "provinciale instructie"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33"
+    - naar: "artikel 2.34"
+      type: "grondslag"
+      context: "rijksinstructie"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34"
+    - naar: "artikel 2.36"
+      type: "verwijzing"
+      context: "beroepsregels instructies"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.36"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 19.16 bevat de escalatieladder bij gevaar voor waterkeringen:
+      1. Waterschap moet optreden (art. 19.15)
+      2. GS kunnen instructie geven als waterschap faalt
+      3. CdK kan bij spoed instructie geven
+      4. Minister I&W kan instructie geven bij primaire keringen
+         als provincie ook faalt
+      Dit is interbestuurlijk toezicht in noodsituaties.
+
+---
+
+# AFDELING 19.5: BUITENGEWONE OMSTANDIGHEDEN
+
+artikel_19.17:
+  nummer: "19.17"
+  titel: "(in- en buitenwerkingstelling regulering bij schaarste)"
+  bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid1"
+      structuur:
+        volledige_tekst: "Onverminderd de artikelen 7, eerste lid, en 8, eerste lid, van de Coördinatiewet uitzonderingstoestanden kan, als buitengewone omstandigheden dit noodzakelijk maken, bij koninklijk besluit, op voordracht van Onze Minister-President, artikel 19.18 of 19.19 in werking worden gesteld."
+      logica:
+        type: "machtiging"
+        norm: "KB kan art. 19.18/19.19 activeren bij buitengewone omstandigheden"
+        procedure: "voordracht Minister-President"
+        conditie:
+          type: "onverminderd"
+          tekst: "Onverminderd Coördinatiewet uitzonderingstoestanden"
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid2"
+      structuur:
+        volledige_tekst: "Wanneer het in het eerste lid bedoelde besluit is genomen, wordt onverwijld een voorstel van wet aan de Tweede Kamer der Staten-Generaal gezonden over het voortduren van de werking van de bij dat besluit in werking gestelde regels."
+      logica:
+        type: "verplichting"
+        norm: "Onverwijld wetsvoorstel aan Tweede Kamer"
+        parlementaire_controle: true
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid3"
+      structuur:
+        aanhef: "De regels die op grond van het eerste lid in werking zijn gesteld, worden bij koninklijk besluit, op voordracht van Onze Minister-President, onverwijld buiten werking gesteld:"
+        onderdelen:
+          a:
+            tekst: "als het voorstel van wet door een van beide kamers der Staten-Generaal wordt verworpen, of"
+            bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid3/Onderdeela"
+          b:
+            tekst: "zodra de omstandigheden dit toelaten."
+            bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid3/Onderdeelb"
+      logica:
+        type: "verplichting"
+        norm: "Buitenwerkingstelling bij verwerping of einde omstandigheden"
+
+    4:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.17/Lid4"
+      structuur:
+        volledige_tekst: "Een besluit als bedoeld in het eerste en derde lid wordt op de daarin te bepalen wijze bekendgemaakt en treedt in werking onmiddellijk na de bekendmaking. Het besluit wordt in ieder geval geplaatst in het Staatsblad."
+      logica:
+        type: "bepaling"
+        norm: "Onmiddellijke inwerkingtreding, publicatie Staatsblad"
+
+  functie:
+    werkwoord: "regelt"
+    object: "activering noodwetgeving"
+    subject: "wet"
+
+  externe_refs:
+    - naar: "BWBR0007981"
+      wet: "Coördinatiewet uitzonderingstoestanden"
+      artikelen: ["7 lid 1", "8 lid 1"]
+      context: "parallel noodrecht"
+
+---
+
+artikel_19.18:
+  nummer: "19.18"
+  titel: "(regulering prioritering uitvoering projecten bij schaarste)"
+  bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.18"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.18/Lid1"
+      structuur:
+        volledige_tekst: "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties stelt in overeenstemming met Onze andere Ministers die het aangaat, bij ministeriële regeling vast aan welke projecten bij schaarste aan arbeidskrachten, geldmiddelen of materialen uitvoering kan worden gegeven."
+      logica:
+        type: "machtiging"
+        norm: "Minister BZK stelt prioritering projecten vast"
+        schaarste_types: ["arbeidskrachten", "geldmiddelen", "materialen"]
+
+    2:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.18/Lid2"
+      structuur:
+        volledige_tekst: "Bij de regeling kunnen regels worden gesteld over, en zo nodig in afwijking van, het bepaalde bij of krachtens de hoofdstukken 4 en 5."
+      logica:
+        type: "machtiging"
+        norm: "Afwijking van hoofdstukken 4 en 5 mogelijk"
+        effect: "derogatie vergunningstelsel"
+
+    3:
+      bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.18/Lid3"
+      structuur:
+        volledige_tekst: "Bij de regeling kan worden bepaald dat het verboden is een project uit te voeren zonder toestemming van Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties en, voor zover van toepassing, van Onze andere Ministers die het aangaat."
+      logica:
+        type: "machtiging"
+        norm: "Projectuitvoeringsverbod zonder ministeriële toestemming"
+        vergaand: true
+
+  functie:
+    werkwoord: "regelt"
+    object: "projectprioritering bij schaarste"
+    subject: "Minister BZK"
+
+  interne_refs:
+    - naar: "hoofdstuk 4"
+      type: "begrenzing"
+      context: "afwijking algemene regels mogelijk"
+      bron_path: "/Hoofdstuk4"
+    - naar: "hoofdstuk 5"
+      type: "begrenzing"
+      context: "afwijking vergunningstelsel mogelijk"
+      bron_path: "/Hoofdstuk5"
+
+---
+
+artikel_19.19:
+  nummer: "19.19"
+  titel: "(defensie)"
+  bron_path: "/Hoofdstuk19/Afdeling19.5/Artikel19.19"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Onze Minister van Defensie stelt bij regeling vast welke voor de uitoefening van defensietaken vereiste activiteiten worden verricht, waarbij voor zover noodzakelijk de bij of krachtens deze wet gestelde regels over het verrichten van die activiteiten buiten toepassing blijven."
+      logica:
+        type: "machtiging"
+        norm: "Minister Defensie kan Omgevingswet buiten toepassing verklaren"
+        scope: "defensietaken"
+        vergaand: true
+
+  functie:
+    werkwoord: "machtigt"
+    object: "buiten-toepassing-verklaring Omgevingswet voor defensie"
+    subject: "Minister van Defensie"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 19.19 is de ultieme uitzonderingsbepaling: voor defensietaken
+      kan de Minister van Defensie de gehele Omgevingswet buiten toepassing
+      verklaren. Dit is noodrecht in zuivere vorm, alleen activeerbaar via
+      de procedure van art. 19.17 (KB + parlementaire controle).
+
+---
+
+# HOOFDSTUK-ANALYSE
+
+paragraaf_analyse:
+  structuur:
+    artikelen_count: 20
+    afdelingen_count: 7
+    totaal_leden: 43
+
+  patronen:
+    escalatieladder:
+      beschrijving: "Oplopende bevoegdheden naar ernst situatie"
+      evidence:
+        - "19.0: bijzondere omstandigheden (locaal, beperkt)"
+        - "19.1-19.2a: voorval-regimes (reactief)"
+        - "19.3: alarmeringswaarden (waarschuwing)"
+        - "19.4: watergevaar (vergaande bevoegdheden)"
+        - "19.5: buitengewone omstandigheden (noodwetgeving)"
+
+    veroorzaker_vs_eigenaar:
+      beschrijving: "Differentie in adressaat naar type voorval"
+      evidence:
+        - "19.1: veroorzaker (causaal verband)"
+        - "19.2a: eigenaar/erfpachter (zakelijk verband)"
+
+    48_uur_regel:
+      beschrijving: "Tijdelijke noodregels vervallen automatisch na 48 uur"
+      evidence: ["art. 19.12 lid 3"]
+
+    parlementaire_controle:
+      beschrijving: "Buitengewone bevoegdheden onder parlementaire controle"
+      evidence: ["art. 19.17 lid 2-3"]
+
+    absolute_grenzen:
+      beschrijving: "Grondwet en internationaal recht als absolute grenzen"
+      evidence: ["art. 19.15 lid 1"]
+
+  relaties:
+    intern:
+      - van: "art. 19.2"
+        naar: "art. 18.2-18.4"
+        type: "grondslag"
+        context: "koppeling noodbevoegdheid aan handhavingstaak"
+      - van: "art. 19.16"
+        naar: "art. 2.33-2.34"
+        type: "grondslag"
+        context: "instructiebevoegdheid"
+      - van: "art. 19.18"
+        naar: "hoofdstukken 4-5"
+        type: "derogatie"
+        context: "afwijking bij schaarste"
+
+    extern:
+      - naar: "Kernenergiewet"
+        context: "lex specialis nucleaire voorvallen"
+      - naar: "Wet bestrijding maritieme ongevallen"
+        context: "lex specialis maritieme voorvallen"
+      - naar: "Wet veiligheidsregio's"
+        context: "afstemming calamiteitenplannen"
+      - naar: "Coördinatiewet uitzonderingstoestanden"
+        context: "parallel noodrecht"
+
+  routes:
+    entry_points:
+      - artikel: "19.0"
+        vraag: "Wat zijn bijzondere omstandigheden?"
+      - artikel: "19.1"
+        vraag: "Wat is een ongewoon voorval?"
+      - artikel: "19.10"
+        vraag: "Wat zijn alarmeringswaarden?"
+      - artikel: "19.15"
+        vraag: "Wat mag waterbeheerder bij gevaar?"
+    exit_points:
+      - naar: "hoofdstuk 18"
+        context: "handhavingsbevoegdheden (art. 18.2-18.4)"
+      - naar: "hoofdstuk 2"
+        context: "instructiebevoegdheden (art. 2.33-2.34)"
+
+  actoren:
+    - actor: "commissaris van de Koning"
+      rol: "bevoegd gezag luchtverontreiniging, noodregels 48 uur"
+    - actor: "waterbeheerder"
+      rol: "vergaande noodbevoegdheden waterstaatswerken"
+    - actor: "gedeputeerde staten"
+      rol: "toezicht waterschappen, verlenging noodregels"
+    - actor: "Minister van Defensie"
+      rol: "buiten-toepassing-verklaring Omgevingswet"
+    - actor: "Minister-President"
+      rol: "voordracht KB activering noodwetgeving"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    noodrecht_hierarchie:
+      observatie: "Vijf niveaus noodrecht: bijzonder → voorval → alarm → watergevaar → buitengewoon"
+      implicatie: "Navigatie moet eerst situatie kwalificeren om juiste regime te vinden"
+
+    veroorzaker_vs_zakelijk:
+      observatie: "Ongewoon voorval = veroorzaker; bodemvondst = eigenaar/erfpachter"
+      implicatie: "Type voorval bepaalt wie aangesproken wordt"
+
+    waterbeheerder_noodbevoegdheid:
+      observatie: "Art. 19.15 bevat een van de verste bevoegdheden in NL recht"
+      implicatie: "Alleen Grondwet en internationaal recht als absolute grenzen"
+
+  schema_verbeteringen:
+    - "Nood-activeringstype toevoegen aan conditie-schema"
+    - "Escalatieladder als apart schema-element"
+    - "Tijdslimieten (48 uur) structureel vastleggen"

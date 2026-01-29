@@ -1,0 +1,935 @@
+# Chapter 18 - Handhaving en uitvoering
+# V2 Atomic Extraction
+# Artikelen 18.1-18.27
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+hoofdstuk: 18
+titel: "Handhaving en uitvoering"
+bron_path: "/Hoofdstuk18"
+
+# =============================================================================
+# CRITICAL PATTERN: "WIE VERLEENT = WIE HANDHAAFT"
+# =============================================================================
+
+kern_principe:
+  beschrijving: |
+    Chapter 18 implements the principle "wie verleent = wie handhaaft":
+    - The authority that grants permission (Ch5) also enforces (Ch18)
+    - The authority that sets rules (Ch4) also enforces those rules
+
+    This creates seamless accountability: one authority for entire lifecycle.
+
+  wettelijke_grondslag:
+    - artikel: "18.2 lid 1"
+      tekst: "activiteit waarvoor algemene regels zijn gesteld → BG op grond van § 4.1.3"
+    - artikel: "18.2 lid 2"
+      tekst: "activiteit waarvoor vergunning vereist → BG op grond van § 5.1.2"
+
+# =============================================================================
+# AFDELING 18.1: BESTUURSRECHTELIJKE HANDHAVING
+# =============================================================================
+
+afdeling_18.1:
+  nummer: "18.1"
+  titel: "Bestuursrechtelijke handhaving"
+  bron_path: "/Hoofdstuk18/Afdeling18.1"
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.1.1 - HANDHAVINGSTAAK EN HANDHAVINGSBEVOEGDHEID
+  # ---------------------------------------------------------------------------
+  paragraaf_18.1.1:
+    nummer: "18.1.1"
+    titel: "Bestuursrechtelijke handhavingstaak en handhavingsbevoegdheid"
+    bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1"
+
+    artikelen:
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.1 - INHOUD HANDHAVINGSTAAK
+      # -----------------------------------------------------------------------
+      artikel_18.1:
+        nummer: "18.1"
+        titel: "(inhoud handhavingstaak)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.1"
+        inwerking: "2024-01-01"
+
+        structuur:
+          aanhef: "De bestuursrechtelijke handhavingstaak omvat:"
+          onderdelen:
+            a:
+              tekst: "het houden van toezicht op de naleving van het bepaalde bij of krachtens deze wet, met inbegrip van het verzamelen en registreren van gegevens die hiervoor van belang zijn,"
+              bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.1/Onderdeela"
+            b:
+              tekst: "het behandelen van klachten over de naleving van het bepaalde bij of krachtens deze wet, en"
+              bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.1/Onderdeelb"
+            c:
+              tekst: "het opleggen en ten uitvoer leggen van een bestuurlijke sanctie vanwege enig handelen of nalaten in strijd met het bepaalde bij of krachtens deze wet."
+              bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.1/Onderdeelc"
+
+        logica:
+          type: definitie
+          norm: "Definitie handhavingstaak in drie onderdelen"
+          onderdelen:
+            toezicht: "houden van toezicht + gegevensverzameling"
+            klachten: "behandelen van klachten"
+            sancties: "opleggen en uitvoeren bestuurlijke sancties"
+
+        functie:
+          werkwoord: definieert
+          subject: "wet"
+          object: "handhavingstaak"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.1 definieert de DRIE PIJLERS van bestuursrechtelijke handhaving:
+            1. TOEZICHT - preventief, incl. gegevensverzameling
+            2. KLACHTEN - reactief op signalen burgers
+            3. SANCTIES - repressief, oplegging + uitvoering
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.2 - TOEDELING HANDHAVINGSTAAK (KERNREGEL)
+      # -----------------------------------------------------------------------
+      artikel_18.2:
+        nummer: "18.2"
+        titel: "(toedeling handhavingstaak)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid1"
+            structuur:
+              volledige_tekst: "Als sprake is van een activiteit waarvoor op grond van paragraaf 4.1.1 algemene regels zijn gesteld, berust de bestuursrechtelijke handhavingstaak bij het op grond van paragraaf 4.1.3 voor die activiteit bevoegde gezag."
+            logica:
+              type: toedeling
+              conditie:
+                type: indien
+                tekst: "activiteit waarvoor algemene regels zijn gesteld (§ 4.1.1)"
+              norm: "Handhavingstaak berust bij BG van § 4.1.3"
+              koppeling: "Ch4 (regels) → Ch18 (handhaving)"
+
+          2:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid2"
+            structuur:
+              volledige_tekst: "Als sprake is van een activiteit waarvoor een omgevingsvergunning is vereist, berust de bestuursrechtelijke handhavingstaak bij het op grond van paragraaf 5.1.2 voor die omgevingsvergunning bevoegde gezag."
+            logica:
+              type: toedeling
+              conditie:
+                type: indien
+                tekst: "activiteit waarvoor omgevingsvergunning is vereist"
+              norm: "Handhavingstaak berust bij BG van § 5.1.2"
+              koppeling: "Ch5 (vergunning) → Ch18 (handhaving)"
+
+          3:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid3"
+            structuur:
+              volledige_tekst: "Voor zover een projectbesluit geldt als omgevingsvergunning voor activiteiten ter uitvoering van het projectbesluit als bedoeld in artikel 5.52, tweede lid, onder a, berust de bestuursrechtelijke handhavingstaak bij het bestuursorgaan dat het projectbesluit heeft vastgesteld."
+            logica:
+              type: toedeling
+              conditie:
+                type: voor_zover
+                tekst: "projectbesluit geldt als omgevingsvergunning"
+              norm: "Handhavingstaak bij bestuursorgaan dat projectbesluit vaststelde"
+
+          4:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid4"
+            structuur:
+              volledige_tekst: "Voor een gedoogplicht als bedoeld in hoofdstuk 10 berust de bestuursrechtelijke handhavingstaak alleen bij een bestuursorgaan voor zover bij algemene maatregel van bestuur die taak aan dat bestuursorgaan is opgedragen."
+            logica:
+              type: toedeling
+              conditie:
+                type: voor_zover
+                tekst: "gedoogplicht (hoofdstuk 10)"
+              norm: "Handhavingstaak alleen indien AMvB dat opdraagt"
+              delegatie: "bij AMvB"
+
+          5:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid5"
+            structuur:
+              volledige_tekst: "In de overige gevallen berust de bestuursrechtelijke handhavingstaak bij het college van burgemeester en wethouders."
+            logica:
+              type: default
+              norm: "VANGNET: B&W is default handhaver"
+              patroon: "DEFAULT gemeente TENZIJ specifieke toedeling"
+
+          6:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.2/Lid6"
+            structuur:
+              volledige_tekst: "Bij algemene maatregel van bestuur kan, met inachtneming van de grenzen van artikel 2.3, de bestuursrechtelijke handhavingstaak aan een ander bestuursorgaan worden opgedragen."
+            logica:
+              type: machtiging
+              norm: "AMvB KAN andere toedeling bepalen"
+              begrenzing: "met inachtneming van artikel 2.3 (subsidiariteit)"
+
+        functie:
+          werkwoord: toedeelt
+          subject: "wet"
+          object: "handhavingstaak"
+          bevoegd_gezag: "volgt uit Ch4/Ch5"
+
+        interne_refs:
+          - naar: "paragraaf 4.1.1"
+            type: koppeling
+            context: "activiteit waarvoor algemene regels zijn gesteld"
+          - naar: "paragraaf 4.1.3"
+            type: verwijzing
+            context: "bevoegd gezag voor activiteit"
+          - naar: "paragraaf 5.1.2"
+            type: koppeling
+            context: "bevoegd gezag voor omgevingsvergunning"
+          - naar: "artikel 5.52"
+            type: verwijzing
+            context: "projectbesluit als omgevingsvergunning"
+          - naar: "artikel 2.3"
+            type: begrenzing
+            context: "subsidiariteitsgrenzen"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.2 is de KERNREGEL voor handhavingstoedeling.
+
+            BESLISBOOM:
+            1. Activiteit met algemene regels (§ 4.1.1)?
+               → BG van § 4.1.3 handhaaft
+            2. Activiteit met vergunningplicht?
+               → BG van § 5.1.2 handhaaft
+            3. Projectbesluit als vergunning?
+               → Bestuursorgaan dat projectbesluit vaststelde
+            4. Gedoogplicht (Ch10)?
+               → Alleen indien AMvB opdraagt
+            5. OVERIG?
+               → B&W (DEFAULT)
+
+            Dit implementeert "WIE VERLEENT = WIE HANDHAAFT".
+
+            KRITIEK: lid 5 maakt gemeente VANGNET-handhaver.
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.3 - MEDE-HANDHAVINGSTAAK
+      # -----------------------------------------------------------------------
+      artikel_18.3:
+        nummer: "18.3"
+        titel: "(toedeling mede-handhavingstaak)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.3"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.3/Lid1"
+            structuur:
+              volledige_tekst: "In bij algemene maatregel van bestuur aangewezen gevallen berust de bestuursrechtelijke handhavingstaak ook bij het bestuursorgaan dat op grond van artikel 16.16, eerste lid, heeft beslist over instemming met de voorgenomen beslissing op de aanvraag om een omgevingsvergunning voor een activiteit, of dat op grond van artikel 16.16, derde of vierde lid, heeft bepaald dat instemming niet is vereist, voor zover het gaat om de naleving van de voorschriften van de omgevingsvergunning voor die activiteit."
+            logica:
+              type: machtiging
+              norm: "Instemmend bestuursorgaan OOK handhaver (bij AMvB-aanwijzing)"
+              conditie:
+                type: voor_zover
+                tekst: "naleving voorschriften omgevingsvergunning"
+              meervoudig_bevoegd_gezag: true
+
+          2:
+            bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.3/Lid2"
+            structuur:
+              volledige_tekst: "Bij algemene maatregel van bestuur kan de bestuursrechtelijke handhavingstaak met het oog op een doelmatige uitoefening daarvan ook in andere gevallen worden opgedragen aan een bestuursorgaan dat die taak naast het bij of krachtens artikel 18.2 aangewezen bestuursorgaan uitoefent. Het opdragen van de bestuursrechtelijke handhavingstaak kan daarbij worden beperkt tot een te onderscheiden activiteit of deel van een activiteit waarop de regel die of het besluit dat wordt gehandhaafd betrekking heeft."
+            logica:
+              type: machtiging
+              norm: "AMvB KAN mede-handhaver aanwijzen"
+              doel: "doelmatige uitoefening"
+              beperking_mogelijk: "tot specifieke (deel)activiteit"
+
+        functie:
+          werkwoord: machtigt
+          subject: "wet"
+          object: "mede-handhavingstaak"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.3 creëert MEDE-HANDHAVING: meerdere BG's kunnen handhaven.
+
+            Lid 1: Instemmend bestuursorgaan (art. 16.16) kan ook handhaver zijn
+            Lid 2: AMvB kan aanvullende mede-handhavers aanwijzen
+
+            DIT IS ANDERS DAN ART. 18.2: daar is één BG, hier zijn er meerdere.
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.4 - BESTUURSDWANGBEVOEGDHEID MINISTER
+      # -----------------------------------------------------------------------
+      artikel_18.4:
+        nummer: "18.4"
+        titel: "(bestuursdwangbevoegdheid Minister)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.4"
+        inwerking: "2024-01-01"
+
+        structuur:
+          volledige_tekst: "Onze Minister die het aangaat is bevoegd tot oplegging van een last onder bestuursdwang ter handhaving van het bepaalde bij of krachtens deze wet voor zover bij hem de bestuursrechtelijke handhavingstaak daarvan berust."
+
+        logica:
+          type: bevoegdheidsverlening
+          norm: "Minister is bevoegd tot last onder bestuursdwang"
+          conditie:
+            type: voor_zover
+            tekst: "handhavingstaak bij hem berust"
+
+        functie:
+          werkwoord: machtigt
+          subject: "wet"
+          object: "bestuursdwangbevoegdheid Minister"
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.4a - HERSTELSANCTIE EN RECHTSOPVOLGER
+      # -----------------------------------------------------------------------
+      artikel_18.4a:
+        nummer: "18.4a"
+        titel: "(herstelsanctie en rechtsopvolger)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.4a"
+        inwerking: "2024-01-01"
+
+        structuur:
+          volledige_tekst: "Het bestuursorgaan dat een besluit neemt tot het opleggen van een last onder bestuursdwang of een last onder dwangsom gericht op naleving van een bij of krachtens deze wet gestelde regel kan daarbij bepalen dat het besluit ook geldt voor de rechtsopvolgers van degene aan wie de last wordt opgelegd. In dat geval kan het bestuursorgaan het besluit tegen de rechtsopvolgers ten uitvoer leggen en de kosten van die tenuitvoerlegging of een verbeurde dwangsom bij die rechtsopvolgers invorderen."
+
+        logica:
+          type: machtiging
+          norm: "Last KAN gelden voor rechtsopvolgers"
+          effect: "Ten uitvoerlegging en invordering tegen rechtsopvolgers mogelijk"
+
+        functie:
+          werkwoord: machtigt
+          subject: "bestuursorgaan"
+          object: "doorwerking last naar rechtsopvolger"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.4a voorkomt ontsnapping via eigendomsoverdracht.
+
+            PRAKTIJK: verkoop object ontslaat koper niet van last.
+            Dit is cruciaal voor effectieve handhaving.
+
+      # -----------------------------------------------------------------------
+      # ARTIKEL 18.5 - NIET OVERGAAN VAN BEVOEGDHEID
+      # -----------------------------------------------------------------------
+      artikel_18.5:
+        nummer: "18.5"
+        titel: "(niet overgaan van bevoegdheid tot handhaving)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.1/Artikel18.5"
+        inwerking: "2024-01-01"
+
+        structuur:
+          aanhef: "Als een beschikking tot oplegging van een bestuurlijke sanctie is gegeven en vervolgens een ander bestuursorgaan daartoe bevoegd wordt, blijft het bestuursorgaan dat de beschikking heeft gegeven bevoegd totdat:"
+          onderdelen:
+            a:
+              tekst: "de beschikking onherroepelijk is geworden en ten uitvoer is gelegd,"
+            b:
+              tekst: "de beschikking is ingetrokken, of"
+            c:
+              tekst: "als de beschikking gaat om de oplegging van een last onder dwangsom:"
+              sub_onderdelen:
+                1:
+                  tekst: "de dwangsom is ingevorderd, of"
+                2:
+                  tekst: "de bij de beschikking opgelegde last onder dwangsom is opgeheven."
+
+        logica:
+          type: continuiteit
+          norm: "Oorspronkelijk BG blijft bevoegd tot afronding"
+          patroon: "EENS BEGONNEN, ALTIJD AFMAKEN"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.5 creëert CONTINUITEITSPRINCIPE voor handhaving.
+
+            Parallel aan art. 5.13 (vergunning): "eens bevoegd, altijd bevoegd"
+            Voorkomt dat lopende handhaving vastloopt bij bevoegdheidsovergang.
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.1.2 - TOEZICHTHOUDERS
+  # ---------------------------------------------------------------------------
+  paragraaf_18.1.2:
+    nummer: "18.1.2"
+    titel: "Aanwijzing en bevoegdheid toezichthouders"
+    bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.2"
+
+    artikelen:
+
+      artikel_18.6:
+        nummer: "18.6"
+        titel: "(aanwijzing toezichthouder)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.2/Artikel18.6"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Met het toezicht op de naleving van het bepaalde bij of krachtens deze wet zijn belast de personen die daartoe bij besluit van het college van burgemeester en wethouders, het dagelijks bestuur van een waterschap, gedeputeerde staten, Onze Minister die het aangaat of andere met de uitvoering van deze wet belaste bestuursorganen zijn aangewezen."
+            logica:
+              type: machtiging
+              norm: "Toezichthouders worden aangewezen bij besluit"
+              aanwijzende_organen:
+                - B&W
+                - dagelijks bestuur waterschap
+                - gedeputeerde staten
+                - Minister
+                - andere belaste bestuursorganen
+
+          2:
+            structuur:
+              volledige_tekst: "Van een besluit tot aanwijzing van toezichthouders wordt mededeling gedaan door plaatsing in het gemeenteblad, het waterschapsblad, het provinciaal blad of de Staatscourant."
+            logica:
+              type: verplichting
+              norm: "Aanwijzingsbesluit moet worden gepubliceerd"
+
+      artikel_18.7:
+        nummer: "18.7"
+        titel: "(bevoegdheid binnentreden woning)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.2/Artikel18.7"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Een krachtens artikel 18.6 aangewezen toezichthouder is bevoegd met medeneming van de benodigde apparatuur een woning te betreden zonder toestemming van de bewoner, voor zover hem deze bevoegdheid in het besluit tot aanwijzing is toegekend."
+            logica:
+              type: bevoegdheidsverlening
+              norm: "Binnentreden woning mogelijk INDIEN in aanwijzingsbesluit"
+              conditie:
+                type: voor_zover
+                tekst: "bevoegdheid in aanwijzingsbesluit is toegekend"
+              grondwet_relevant: true  # Art. 12 Gw huisrecht
+
+          2:
+            structuur:
+              volledige_tekst: "De in het eerste lid bedoelde bevoegdheid wordt in een besluit tot aanwijzing alleen toegekend voor zover het toezicht op de naleving van een bij of krachtens deze wet gesteld voorschrift dit vereist, gelet op de door dat voorschrift beschermde belangen."
+            logica:
+              type: begrenzing
+              norm: "Binnentredingsbevoegdheid alleen indien noodzakelijk"
+              toetsing: "proportionaliteit (beschermde belangen)"
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.1.3 - INTREKKING BEGUNSTIGENDE BESCHIKKING
+  # ---------------------------------------------------------------------------
+  paragraaf_18.1.3:
+    nummer: "18.1.3"
+    titel: "Intrekking begunstigende beschikking"
+    bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.3"
+
+    artikelen:
+
+      artikel_18.10:
+        nummer: "18.10"
+        titel: "(bevoegdheid intrekken begunstigende beschikking)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.3/Artikel18.10"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Het bevoegd gezag kan een beschikking geheel of gedeeltelijk intrekken als in strijd met die beschikking of met de voor de activiteit waarvoor de beschikking is gegeven, geldende regels is of wordt gehandeld."
+            logica:
+              type: machtiging
+              norm: "BG KAN beschikking intrekken bij strijd met beschikking/regels"
+              sanctie_type: "intrekking"
+
+          3:
+            structuur:
+              volledige_tekst: "Voordat het bevoegd gezag toepassing geeft aan het eerste of tweede lid, biedt het de overtreder de gelegenheid binnen een bepaalde termijn zijn handelen alsnog in overeenstemming te brengen met die beschikking of die regels."
+            logica:
+              type: verplichting
+              norm: "EERST begunstigingstermijn, DAN intrekking"
+              patroon: "hoor en wederhoor"
+
+          4:
+            structuur:
+              aanhef: "Het bevoegd gezag kan een beschikking ook geheel of gedeeltelijk intrekken:"
+              onderdelen:
+                a:
+                  tekst: "als de beschikking is gegeven op basis van een onjuiste of onvolledige opgave van gegevens,"
+                b:
+                  tekst: "in gevallen als bedoeld in artikel 5.37, tweede lid: als de activiteit wordt verricht door een ander dan degene aan wie de omgevingsvergunning is verleend."
+            logica:
+              type: machtiging
+              norm: "Intrekking OOK bij onjuiste gegevens of andere verrichter"
+              geen_begunstigingstermijn: true
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.10 is de INTREKKINGSSANCTIE.
+
+            DEFAULT: begunstigingstermijn vereist (lid 3)
+            UITZONDERING: onjuiste gegevens / andere verrichter (lid 4) - geen termijn
+
+            Dit is NAAST bestuursdwang/dwangsom, niet IPVV.
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.1.4 - BESTUURLIJKE BOETE
+  # ---------------------------------------------------------------------------
+  paragraaf_18.1.4:
+    nummer: "18.1.4"
+    titel: "Bestuurlijke boete"
+    bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.4"
+
+    boetecategorieën:
+      beschrijving: |
+        Art. 18.11-18.15 bevatten SECTORSPECIFIEKE boetebepalingen met
+        verschillende maxima, gekoppeld aan Sr-categorieën.
+
+      overzicht:
+        - artikel: "18.11"
+          sector: "Seveso-richtlijn milieuregels"
+          maximum: "6e categorie Sr (of 10% omzet indien meer)"
+
+        - artikel: "18.12"
+          sector: "bouwen, slopen, gebruik bouwwerken"
+          maximum_default: "2e categorie Sr"
+          maximum_zwaar: "4e categorie Sr (bij bedreiging leefbaarheid/gevaar)"
+
+        - artikel: "18.13"
+          sector: "erfgoed"
+          maximum: "5e categorie Sr"
+
+        - artikel: "18.14"
+          sector: "beperkingengebied luchthaven"
+          maximum: "5e categorie Sr"
+
+        - artikel: "18.15"
+          sector: "beperkingengebied spoor"
+          maximum: "via Spoorwegwet/Wet lokaal spoor"
+
+        - artikel: "18.15a"
+          sector: "handel dieren/planten/hout"
+          maximum_np: "1e categorie Sr"
+          maximum_rp: "2e categorie Sr"
+
+    artikelen:
+
+      artikel_18.11:
+        nummer: "18.11"
+        titel: "(bestuurlijke boete bij overtreding milieuregels Seveso-richtlijn)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.4/Artikel18.11"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Het bevoegd gezag kan een bestuurlijke boete opleggen bij overtreding van de op grond van artikel 4.3, eerste lid, aanhef en onder b, en vierde lid, in verbinding met het eerste lid, aanhef en onder b, gestelde regels ter uitvoering van de artikelen 5 en 7 tot en met 12 van de Seveso-richtlijn."
+            logica:
+              type: machtiging
+              norm: "BG KAN boete opleggen voor Seveso-overtredingen"
+              eu_implementatie: "Seveso-richtlijn art. 5, 7-12"
+
+          2:
+            structuur:
+              volledige_tekst: "De bestuurlijke boete bedraagt ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht, of, als dat meer is, ten hoogste tien procent van de omzet van de onderneming in het boekjaar voorafgaande aan het boekjaar waarin de bestuurlijke boete wordt opgelegd."
+            logica:
+              type: normering
+              norm: "Maximum: 6e categorie Sr OF 10% omzet (hoogste van beide)"
+              handhaving_categorie: ZWAAR
+
+        interne_refs:
+          - naar: "artikel 4.3"
+            type: grondslag
+            context: "milieubelastende activiteiten"
+
+      artikel_18.12:
+        nummer: "18.12"
+        titel: "(bestuurlijke boete bij overtreding regels over bouwen, slopen, gebruik en in stand houden van bouwwerken)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.4/Artikel18.12"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              aanhef: "Het bevoegd gezag kan een bestuurlijke boete opleggen bij overtreding van:"
+              onderdelen:
+                a:
+                  tekst: "op grond van artikel 4.1, eerste lid, in een omgevingsplan gestelde regels over het gebruik of de staat van open erven of terreinen of het gebruik van gebouwen, of over het tegengaan van hinder,"
+                b:
+                  tekst: "op grond van artikel 4.3, eerste lid, aanhef en onder a, en vierde lid, gestelde regels over bouwactiviteiten, sloopactiviteiten en het gebruik en in stand houden van bouwwerken."
+            logica:
+              type: machtiging
+              norm: "BG KAN boete opleggen voor bouw/sloop-overtredingen"
+
+          2:
+            structuur:
+              volledige_tekst: "De bestuurlijke boete bedraagt ten hoogste het bedrag dat is vastgesteld voor de tweede categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht."
+            logica:
+              type: normering
+              norm: "DEFAULT maximum: 2e categorie Sr"
+              handhaving_categorie: LICHT
+
+          3:
+            structuur:
+              volledige_tekst: "Als de overtreding een bedreiging van de leefbaarheid of een gevaar voor de gezondheid of veiligheid veroorzaakt, kan het bevoegd gezag de boete verhogen tot ten hoogste het bedrag dat is vastgesteld voor de vierde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht."
+            logica:
+              type: machtiging
+              conditie:
+                type: indien
+                tekst: "bedreiging leefbaarheid of gevaar gezondheid/veiligheid"
+              norm: "Verhoging mogelijk tot 4e categorie Sr"
+              handhaving_categorie: MIDDEL
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.12 bevat VARIABEL boetemaximum:
+            - DEFAULT: 2e categorie (€ 4.500)
+            - VERHOOGD: 4e categorie (€ 22.500) bij gevaar
+
+            Dit is de "bouw-boete" voor illegaal bouwen/slopen.
+
+      artikel_18.16:
+        nummer: "18.16"
+        titel: "(afstemming bestuurlijke boete en strafrechtelijke handhaving)"
+        bron_path: "/Hoofdstuk18/Afdeling18.1/Paragraaf18.1.4/Artikel18.16"
+        inwerking: "2024-01-01"
+
+        structuur:
+          volledige_tekst: "Als de ernst van een overtreding of de omstandigheden waaronder zij is begaan daartoe aanleiding geven, legt het bevoegd gezag de gedraging voor aan het openbaar ministerie."
+
+        logica:
+          type: verplichting
+          norm: "Bij ernstige overtreding: voorleggen aan OM"
+          keuze: "bestuursrechtelijk OF strafrechtelijk (ne bis in idem)"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.16 creëert AFSTEMMINGSPLICHT met OM.
+
+            ERNST bepaalt keuze:
+            - Licht → bestuurlijke boete
+            - Zwaar → strafrechtelijke vervolging
+
+            Dit voorkomt dubbele bestraffing (ne bis in idem).
+
+# =============================================================================
+# AFDELING 18.2: STRAFRECHTELIJKE HANDHAVING
+# =============================================================================
+
+afdeling_18.2:
+  nummer: "18.2"
+  titel: "Strafrechtelijke handhaving"
+  bron_path: "/Hoofdstuk18/Afdeling18.2"
+
+  artikelen:
+
+    artikel_18.17:
+      nummer: "18.17"
+      titel: "(toepasselijkheid Nederlandse strafwet)"
+      bron_path: "/Hoofdstuk18/Afdeling18.2/Artikel18.17"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          structuur:
+            volledige_tekst: "Onverminderd het recht van andere staten om overeenkomstig het VN-Zeerechtverdrag tot rechtsvervolging over te gaan, is de Nederlandse strafwet van toepassing op een ieder die in of boven de exclusieve economische zone in strijd handelt met een bij of krachtens deze wet gesteld voorschrift."
+          logica:
+            type: rechtsgrondslag
+            norm: "Nederlandse strafwet van toepassing in EEZ"
+            internationaal: "VN-Zeerechtverdrag"
+
+# =============================================================================
+# AFDELING 18.3: KWALITEITSBEVORDERING EN AFSTEMMING
+# =============================================================================
+
+afdeling_18.3:
+  nummer: "18.3"
+  titel: "Kwaliteitsbevordering en afstemming uitvoering en handhaving"
+  bron_path: "/Hoofdstuk18/Afdeling18.3"
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.3.1 - REIKWIJDTE
+  # ---------------------------------------------------------------------------
+  paragraaf_18.3.1:
+    nummer: "18.3.1"
+    titel: "Reikwijdte afdeling 18.3"
+    bron_path: "/Hoofdstuk18/Afdeling18.3/Paragraaf18.3.1"
+
+    artikelen:
+
+      artikel_18.18:
+        nummer: "18.18"
+        titel: "(reikwijdte afdeling 18.3)"
+        bron_path: "/Hoofdstuk18/Afdeling18.3/Paragraaf18.3.1/Artikel18.18"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Deze afdeling is van toepassing op het verrichten van werkzaamheden voor de uitoefening van bevoegdheden door het bevoegd gezag in het kader van de uitvoeringstaak, bedoeld in het tweede lid, en de handhavingstaak, bedoeld in artikel 18.1."
+            logica:
+              type: toepassingsbereik
+              norm: "Afdeling 18.3 geldt voor uitvoerings- EN handhavingstaak"
+
+          2:
+            structuur:
+              aanhef: "De uitvoeringstaak omvat in ieder geval:"
+              onderdelen:
+                a:
+                  tekst: "het stellen van maatwerkvoorschriften en het verbinden van voorschriften aan een omgevingsvergunning, bedoeld in artikel 4.5,"
+                b:
+                  tekst: "het beoordelen van en beslissen op een aanvraag om een omgevingsvergunning, bedoeld in de paragrafen 5.1.2 en 5.1.3,"
+                c:
+                  tekst: "de toepassing van paragraaf 5.1.5,"
+                d:
+                  tekst: "het uitbrengen van advies, bedoeld in de artikelen 16.15 tot en met 16.19."
+            logica:
+              type: definitie
+              norm: "Uitvoeringstaak = maatwerkvoorschriften + vergunningverlening + advies"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.18 definieert wat onder Afd 18.3 valt:
+            - UITVOERINGSTAAK: vergunningverlening, maatwerk, advies
+            - HANDHAVINGSTAAK: toezicht, klachten, sancties (art. 18.1)
+
+            Dit is de scope voor omgevingsdiensten.
+
+  # ---------------------------------------------------------------------------
+  # PARAGRAAF 18.3.3 - OMGEVINGSDIENSTEN
+  # ---------------------------------------------------------------------------
+  paragraaf_18.3.3:
+    nummer: "18.3.3"
+    titel: "Kwaliteit uitvoering en handhaving; omgevingsdiensten"
+    bron_path: "/Hoofdstuk18/Afdeling18.3/Paragraaf18.3.3"
+
+    artikelen:
+
+      artikel_18.21:
+        nummer: "18.21"
+        titel: "(instelling van omgevingsdiensten)"
+        bron_path: "/Hoofdstuk18/Afdeling18.3/Paragraaf18.3.3/Artikel18.21"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Gedeputeerde staten en de colleges van burgemeester en wethouders van de gemeenten die behoren tot een of meer regio's als bedoeld in artikel 8 van de Wet veiligheidsregio's of tot een kring van bij regeling van Onze Minister van Infrastructuur en Waterstaat en Onze Minister van Justitie en Veiligheid aangewezen gemeenten, stellen voor een doelmatige en doeltreffende uitoefening van de uitvoeringstaak en de handhavingstaak voor die regio, regio's of kring een omgevingsdienst in."
+            logica:
+              type: verplichting
+              norm: "GS + B&W MOETEN omgevingsdienst instellen"
+              doel: "doelmatige en doeltreffende uitoefening"
+              territorium: "veiligheidsregio of aangewezen kring"
+
+          2:
+            structuur:
+              volledige_tekst: "Een omgevingsdienst wordt ingesteld als een openbaar lichaam als bedoeld in artikel 8, eerste lid, in verbinding met artikel 52 of 74 van de Wet gemeenschappelijke regelingen."
+            logica:
+              type: vormvereiste
+              norm: "Omgevingsdienst = openbaar lichaam via Wgr"
+
+        functie:
+          werkwoord: verplicht
+          subject: "GS + B&W"
+          object: "instellen omgevingsdienst"
+
+        externe_refs:
+          - naar: "BWBR0027466"
+            wet: "Wet veiligheidsregio's"
+            artikel: "8"
+          - naar: "BWBR0003740"
+            wet: "Wet gemeenschappelijke regelingen"
+            artikel: "8, 52, 74"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.21 creëert VERPLICHTE omgevingsdiensten.
+
+            Dit is BIJZONDER: wet verplicht tot gemeenschappelijke regeling.
+            Veiligheidsregio-indeling bepaalt territoir.
+
+            DOEL: professionalisering en onafhankelijkheid handhaving.
+
+      artikel_18.22:
+        nummer: "18.22"
+        titel: "(omgevingsdiensten met basistakenpakket of met bijzondere taken)"
+        bron_path: "/Hoofdstuk18/Afdeling18.3/Paragraaf18.3.3/Artikel18.22"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            structuur:
+              volledige_tekst: "Bij algemene maatregel van bestuur wordt vastgesteld welke tot de uitvoeringstaak en de handhavingstaak behorende of daarmee samenhangende werkzaamheden in ieder geval aan een omgevingsdienst worden opgedragen."
+            logica:
+              type: delegatie
+              norm: "AMvB bepaalt BASISTAKENPAKKET"
+              delegatie: "bij AMvB"
+
+          2:
+            structuur:
+              aanhef: "Bij de maatregel worden omgevingsdiensten aangewezen waaraan met uitsluiting van andere omgevingsdiensten de uitoefening van de uitvoeringstaak en de handhavingstaak wordt opgedragen voor activiteiten:"
+              onderdelen:
+                a:
+                  tekst: "met betrekking tot installaties als bedoeld in bijlage I, categorie 4, bij de richtlijn industriële emissies, en"
+                b:
+                  tekst: "waarop de Seveso-richtlijn van toepassing is."
+            logica:
+              type: aanwijzing
+              norm: "SPECIALE omgevingsdiensten voor IPPC cat.4 en Seveso"
+              exclusiviteit: "met uitsluiting van andere"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 18.22 creëert TWEE SPOREN:
+            1. BASISTAKENPAKKET - alle omgevingsdiensten
+            2. BIJZONDERE TAKEN - speciale omgevingsdiensten (Brzo/IPPC)
+
+            Dit is KWALITEITSBORGING voor complexe installaties.
+
+# =============================================================================
+# HOOFDSTUK-ANALYSE
+# =============================================================================
+
+hoofdstuk_analyse:
+
+  structuur:
+    afdelingen: 3
+    paragrafen: 9
+    artikelen: 27  # 18.1-18.27
+
+  kern_patronen:
+
+    wie_verleent_handhaaft:
+      beschrijving: |
+        KERNPRINCIPE: de autoriteit die verleent, handhaaft ook.
+
+        Art. 18.2 koppelt handhaving aan:
+        - § 4.1.3 (BG voor algemene regels)
+        - § 5.1.2 (BG voor vergunning)
+
+        Dit creëert ONGEDEELDE VERANTWOORDELIJKHEID.
+      evidence:
+        - art. 18.2 lid 1 (regels)
+        - art. 18.2 lid 2 (vergunning)
+
+    default_gemeente:
+      beschrijving: |
+        VANGNET: B&W is default handhaver (art. 18.2 lid 5).
+
+        Parallel aan:
+        - Art. 4.9 (gemeente default voor regels)
+        - Art. 5.8 (gemeente default voor vergunning)
+
+        SUBSIDIARITEIT in drie sporen.
+      evidence:
+        - art. 18.2 lid 5
+
+    sanctie_ladder:
+      beschrijving: |
+        HANDHAVINGSLADDER (licht → zwaar):
+
+        1. Waarschuwing (informeel)
+        2. Last onder dwangsom (preventief)
+        3. Last onder bestuursdwang (feitelijke uitvoering)
+        4. Intrekking beschikking (art. 18.10)
+        5. Bestuurlijke boete (punitief, art. 18.11-18.15)
+        6. Strafrechtelijke vervolging (art. 18.16 → OM)
+
+        Art. 18.16 regelt keuze bestuursrecht vs strafrecht.
+      evidence:
+        - art. 18.4 (bestuursdwang)
+        - art. 18.10 (intrekking)
+        - art. 18.11-18.15 (boetes)
+        - art. 18.16 (afstemming OM)
+
+    omgevingsdiensten_verplicht:
+      beschrijving: |
+        UNIEK: wet verplicht tot gemeenschappelijke regeling.
+
+        Art. 18.21 dwingt instelling omgevingsdiensten.
+        Art. 18.22 bepaalt basistakenpakket + speciale diensten.
+
+        DOEL: professionalisering, onafhankelijkheid, kwaliteit.
+      evidence:
+        - art. 18.21 (instelling)
+        - art. 18.22 (takenpakket)
+        - art. 18.23 (kwaliteit)
+
+  relaties:
+    intern:
+      - van: "art. 18.2"
+        naar: "§ 4.1.3"
+        type: "koppeling"
+        context: "BG voor regels = handhaver"
+      - van: "art. 18.2"
+        naar: "§ 5.1.2"
+        type: "koppeling"
+        context: "BG voor vergunning = handhaver"
+      - van: "art. 18.2"
+        naar: "art. 2.3"
+        type: "begrenzing"
+        context: "subsidiariteitsgrenzen"
+      - van: "art. 18.11"
+        naar: "art. 4.3"
+        type: "grondslag"
+        context: "milieubelastende activiteiten"
+
+    extern:
+      - naar: "Wet veiligheidsregio's"
+        context: "territoir omgevingsdiensten"
+      - naar: "Wet gemeenschappelijke regelingen"
+        context: "rechtsvorm omgevingsdiensten"
+      - naar: "Seveso-richtlijn / IPPC-richtlijn"
+        context: "speciale omgevingsdiensten"
+
+  routes:
+    entry_points:
+      - artikel: "18.1"
+        vraag: "Wat is de handhavingstaak?"
+      - artikel: "18.2"
+        vraag: "Wie handhaaft bij een activiteit?"
+      - artikel: "18.11-18.15"
+        vraag: "Kan een boete worden opgelegd?"
+      - artikel: "18.21"
+        vraag: "Wat zijn omgevingsdiensten?"
+    exit_points:
+      - naar: "§ 4.1.3"
+        context: "BG voor algemene regels"
+      - naar: "§ 5.1.2"
+        context: "BG voor vergunning"
+      - naar: "Ch19"
+        context: "bijzondere omstandigheden / noodbevoegdheden"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+
+    wie_verleent_handhaaft_principe:
+      observatie: |
+        Art. 18.2 implementeert "wie verleent = wie handhaaft" door:
+        - Lid 1: koppeling aan § 4.1.3 (regels)
+        - Lid 2: koppeling aan § 5.1.2 (vergunning)
+
+        Dit creëert consistentie door hele lifecycle.
+      implicatie: |
+        Navigator kan directe link leggen:
+        Vraag "wie handhaaft X?" → check art. 4.9-4.12 OF art. 5.8-5.11
+
+    drie_sporen_default_gemeente:
+      observatie: |
+        Gemeente is DEFAULT in drie parallelle regelingen:
+        - Art. 4.9: algemene regels
+        - Art. 5.8: vergunning
+        - Art. 18.2 lid 5: handhaving
+
+        SUBSIDIARITEITSTRAP is CONSISTENT.
+      implicatie: |
+        Navigator kan vereenvoudigen: bij twijfel, begin bij gemeente.
+
+    boetecategorieën_per_sector:
+      observatie: |
+        Art. 18.11-18.15 bevat SECTORSPECIFIEKE boetes:
+        - Seveso: 6e cat. / 10% omzet
+        - Bouw: 2e-4e cat. (variabel)
+        - Erfgoed: 5e cat.
+        - Luchthaven: 5e cat.
+        - Spoor: via sectorwet
+        - Flora/fauna: 1e-2e cat.
+      implicatie: |
+        Navigator moet per sector naar juiste artikel routeren.
+
+  schema_verbeteringen:
+    - "Toevoegen: handhaving_koppeling: 'regels' | 'vergunning' | 'projectbesluit' voor art. 18.2-type"
+    - "Toevoegen: boete_maximum: bedrag of Sr-categorie"
+    - "Toevoegen: omgevingsdienst_taak: 'basis' | 'bijzonder' voor art. 18.22"

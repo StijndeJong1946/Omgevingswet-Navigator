@@ -1,0 +1,127 @@
+# Afdeling 16.4a - Passende beoordeling Natura 2000
+# V2 Atomic Extraction
+# Artikel 16.53c
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 16.4a
+titel: "Passende beoordeling Natura 2000"
+bron_path: "/Hoofdstuk16/Afdeling16.4a"
+
+artikelen:
+
+  artikel_16.53c:
+    nummer: "16.53c"
+    titel: "(passende beoordeling)"
+    bron_path: "/Hoofdstuk16/Afdeling16.4a/Artikel16.53c"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.4a/Artikel16.53c/Lid1"
+        structuur:
+          volledige_tekst: "Voor een plan of een project als bedoeld in artikel 6, derde lid, van de habitatrichtlijn maakt het bestuursorgaan dat het plan vaststelt, de aanvrager van de betrokken omgevingsvergunning, of het bevoegd gezag voor het projectbesluit een passende beoordeling als bedoeld in artikel 6, derde lid, van die richtlijn, van de gevolgen voor het Natura 2000-gebied."
+        logica:
+          type: verplichting
+          norm: "Passende beoordeling VERPLICHT voor plannen/projecten met mogelijke significante effecten op Natura 2000"
+          kernbegrip: "habitatrichtlijn art. 6 lid 3"
+          actor_optie:
+            - "bestuursorgaan (voor plan)"
+            - "aanvrager vergunning (voor project)"
+            - "bevoegd gezag (voor projectbesluit)"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.4a/Artikel16.53c/Lid2"
+        structuur:
+          aanhef: "In afwijking van het eerste lid hoeft geen passende beoordeling te worden gemaakt, als:"
+          onderdelen:
+            a:
+              tekst: "het plan of het project een herhaling of voortzetting is van een ander plan of project, of"
+              bron_path: "/Hoofdstuk16/Afdeling16.4a/Artikel16.53c/Lid2/Onderdeela"
+            b:
+              tekst: "het plan deel uitmaakt van een ander plan,"
+              bron_path: "/Hoofdstuk16/Afdeling16.4a/Artikel16.53c/Lid2/Onderdeelb"
+          afsluiting: "mits voor dat andere plan of project een passende beoordeling is gemaakt en een nieuwe passende beoordeling redelijkerwijs geen nieuwe gegevens en inzichten kan opleveren over de significante gevolgen van dat plan of project."
+        logica:
+          type: uitzondering
+          norm: "GEEN passende beoordeling bij herhaling/voortzetting/onderdeel"
+          conditie:
+            type: mits
+            tekst: "mits eerder passende beoordeling gemaakt en nieuwe beoordeling geen nieuwe inzichten"
+          default: "passende beoordeling verplicht"
+          uitzondering: "vrijgesteld bij geldige eerdere beoordeling"
+
+    externe_refs:
+      - naar: "Habitatrichtlijn"
+        wet: "92/43/EEG"
+        artikel: "6 lid 3"
+        context: "passende beoordeling Natura 2000"
+
+    functie:
+      werkwoord: verplicht
+      subject: "bestuursorgaan/aanvrager/bevoegd gezag"
+      object: "passende beoordeling"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.53c implementeert de PASSENDE BEOORDELING uit de Habitatrichtlijn.
+
+        Lid 1: VERPLICHTING tot passende beoordeling voor:
+        - Plannen/projecten met mogelijk significante effecten op Natura 2000-gebieden
+        - De beoordeling wordt gemaakt door:
+          * Bestuursorgaan (voor plannen)
+          * Aanvrager (voor vergunningen)
+          * Bevoegd gezag (voor projectbesluiten)
+
+        Lid 2: UITZONDERING bij herhaling/voortzetting/onderdeel:
+        - Mits eerder al passende beoordeling gemaakt
+        - EN nieuwe beoordeling geen nieuwe inzichten zou opleveren
+
+        Dit is de wettelijke grondslag voor de stikstoftoets en andere
+        Natura 2000-toetsingen in het omgevingsrecht.
+
+        KOPPELING met art. 16.36 lid 2: Als passende beoordeling nodig,
+        is ook plan-MER verplicht.
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 1
+    leden_count: 2
+
+  patronen:
+    eu_implementatie:
+      beschrijving: "Directe implementatie Habitatrichtlijn art. 6 lid 3"
+      evidence: ["art. 16.53c"]
+
+    stikstof_grondslag:
+      beschrijving: "Wettelijke basis voor stikstoftoetsing"
+      evidence: ["art. 16.53c koppeling met Natura 2000"]
+
+    koppeling_plan_mer:
+      beschrijving: "Passende beoordeling triggert plan-MER-plicht"
+      evidence: ["art. 16.36 lid 2"]
+
+  kritieke_verwijzingen:
+    - naar: "Habitatrichtlijn art. 6 lid 3"
+      context: "EU-rechtelijke grondslag"
+    - naar: "art. 16.36 lid 2"
+      context: "koppeling met plan-MER-plicht"
+    - naar: "art. 8.74a-8.74e Bkl"
+      context: "stikstof depositie-regeling"
+
+  routes:
+    entry_points:
+      - artikel: "16.53c"
+        vraag: "Wanneer is passende beoordeling verplicht?"
+        vraag_2: "Hoe werkt de stikstoftoets?"
+    exit_points:
+      - naar: "Habitatrichtlijn"
+        context: "EU-rechtelijk kader"
+      - naar: "art. 16.36"
+        context: "plan-MER-plicht bij passende beoordeling"
+      - naar: "AERIUS"
+        context: "rekentool voor stikstofdepositie"

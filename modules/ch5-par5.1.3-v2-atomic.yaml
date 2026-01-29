@@ -1,0 +1,1155 @@
+# =============================================================================
+# PARAGRAAF 5.1.3 - DE BEOORDELING VAN DE AANVRAAG
+# PRECISE ATOMIC EXTRACTION v2
+# =============================================================================
+# Extraction date: 2026-01-29
+# Source: Omgevingswet.xml lines 4909-5273
+# Method: Lid-level atomic with full legal logic capture
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  afdeling_titel: "De omgevingsvergunning"
+  paragraaf: "5.1.3"
+  paragraaf_titel: "De beoordeling van de aanvraag"
+  artikel_range: "5.17 - 5.33a"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3"
+  extraction_version: 2
+  schema: "lid-atomic-v2"
+
+# =============================================================================
+# ARTIKEL 5.17 - INGETROKKEN
+# =============================================================================
+
+artikel_5.17:
+  nummer: "5.17"
+  titel: null
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.17"
+  inwerking: "2024-01-01"
+  status: INGETROKKEN
+  redactie: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+# =============================================================================
+# ARTIKEL 5.18 - HUB: BEOORDELINGSREGELS VIA AMvB
+# =============================================================================
+
+artikel_5.18:
+  nummer: "5.18"
+  titel: "(beoordelingsregels aanvraag artikel 5.1-activiteiten bij algemene maatregel van bestuur)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.18"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.18/Lid1"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur worden regels gesteld over het verlenen of weigeren van een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.1."
+
+      logica:
+        type: delegatie
+        norm: "AMvB STELT regels (verplicht)"
+        object: "verlenen of weigeren omgevingsvergunning"
+        scope: "alle art. 5.1 activiteiten"
+        delegatie_naar: "Bkl (beoordelingsregels)"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.18/Lid2"
+      structuur:
+        volledige_tekst: "Daarbij kunnen regels worden gesteld over de motivering van de beslissing tot het verlenen of weigeren."
+
+      logica:
+        type: machtiging
+        norm: "AMvB KAN motiveringsregels stellen"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.18/Lid3"
+      structuur:
+        volledige_tekst: "Artikel 2.32, tweede tot en met zesde lid, is van overeenkomstige toepassing op die regels."
+
+      logica:
+        type: verwijzing
+        norm: "instructieregelbepalingen van toepassing"
+        verwijst_naar: "art. 2.32 lid 2-6"
+
+  functie:
+    werkwoord: delegeert
+    object: "beoordelingsregels aan AMvB"
+    hub_status: true
+    uitwerking_in: ["5.20", "5.21", "5.22", "5.23", "5.24", "5.26", "5.27", "5.28", "5.29", "5.29a"]
+
+  logica_samenvatting:
+    patroon: |
+      ART. 5.18 = HUB-ARTIKEL
+      - Stelt vast DAT AMvB beoordelingsregels moet stellen
+      - Artikelen 5.20-5.29a specificeren MET HET OOG OP WAT
+
+  interne_refs:
+    - naar: "artikel 5.1"
+      type: grondslag
+      context: "activiteiten waarvoor regels gelden"
+    - naar: "artikel 2.32, tweede tot en met zesde lid"
+      type: verwijzing
+      context: "procedurebepalingen van toepassing"
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Bkl"
+      voor: "beoordelingsregels verlenen/weigeren"
+      verplicht: true
+
+# =============================================================================
+# ARTIKEL 5.19 - BEOORDELINGSREGELS VIA OMGEVINGSVERORDENING
+# =============================================================================
+
+artikel_5.19:
+  nummer: "5.19"
+  titel: "(beoordelingsregels aanvraag artikel 5.1-activiteiten in omgevingsverordening)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.19"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.19/Lid1"
+      structuur:
+        volledige_tekst: "Bij omgevingsverordening kunnen regels worden gesteld over het verlenen of weigeren van een omgevingsvergunning voor een milieubelastende activiteit, tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval."
+
+      logica:
+        type: machtiging
+        norm: "provincie KAN beoordelingsregels stellen"
+        scope: "milieubelastende activiteit"
+        conditie:
+          type: tenzij
+          tekst: "tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval"
+          effect: "art. 5.26 lid 4 gevallen zijn uitgesloten"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.19/Lid2"
+      structuur:
+        volledige_tekst: "Bij het stellen van de regels worden de grenzen van artikel 2.3, tweede lid, in acht genomen. Artikel 2.32, eerste, vijfde en zesde lid, is van overeenkomstige toepassing op die regels, waarbij een verzoek als bedoeld in artikel 2.32, eerste lid, ook door Onze Minister die het aangaat kan worden gedaan."
+
+      logica:
+        type: begrenzing
+        norm: "subsidiariteitsgrenzen in acht nemen"
+        verwijst_naar: "art. 2.3 lid 2"
+
+  functie:
+    werkwoord: machtigt
+    object: "provinciale beoordelingsregels"
+    bevoegd_gezag: provincie
+
+  interne_refs:
+    - naar: "artikel 5.26, vierde lid"
+      type: uitzondering
+    - naar: "artikel 2.3, tweede lid"
+      type: begrenzing
+    - naar: "artikel 2.32, eerste, vijfde en zesde lid"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.20 - BEOORDELINGSREGELS BOUWACTIVITEIT
+# =============================================================================
+
+artikel_5.20:
+  nummer: "5.20"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag bouwactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20/Lid1"
+      structuur:
+        aanhef: "Voor een bouwactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:"
+        onderdelen:
+          a:
+            tekst: "het waarborgen van de veiligheid,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20/Lid1/Onderdeela"
+          b:
+            tekst: "het beschermen van de gezondheid,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20/Lid1/Onderdeelb"
+          c:
+            tekst: "duurzaamheid en bruikbaarheid."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20/Lid1/Onderdeelc"
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - veiligheid
+          - gezondheid
+          - duurzaamheid
+          - bruikbaarheid
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.20/Lid2"
+      structuur:
+        volledige_tekst: "De regels strekken ertoe dat de omgevingsvergunning alleen wordt verleend als aannemelijk is dat wordt voldaan aan de regels over bouwactiviteiten, bedoeld in artikel 4.3, eerste lid, aanhef en onder a, of daarover gestelde maatwerkregels, voor zover die regels betrekking hebben op de kwaliteit van bouwwerken."
+
+      logica:
+        type: toetsingskader
+        norm: "vergunning alleen als aannemelijk is dat voldaan wordt aan..."
+        criterium: "aannemelijk"
+        toets_aan: "art. 4.3 lid 1.a + maatwerkregels"
+        beperking: "voor zover betrekking op kwaliteit bouwwerken"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels bouwactiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: bouwactiviteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+    - naar: "artikel 4.3, eerste lid, aanhef en onder a"
+      type: toetsingskader
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.21 - BEOORDELINGSREGELS OMGEVINGSPLANACTIVITEIT
+# =============================================================================
+
+artikel_5.21:
+  nummer: "5.21"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag omgevingsplanactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid1"
+      structuur:
+        volledige_tekst: "Voor een omgevingsplanactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de doelen van de wet."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP doelen van de wet"
+        verwijst_naar: "art. 1.3 (maatschappelijke doelen)"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2"
+      structuur:
+        aanhef: "De regels strekken er in ieder geval toe dat:"
+        onderdelen:
+          a:
+            tekst: "de omgevingsvergunning wordt verleend met toepassing van daarvoor in het omgevingsplan gestelde regels,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2/Onderdeela"
+          b:
+            tekst: "de omgevingsvergunning ook kan worden verleend met het oog op een evenwichtige toedeling van functies aan locaties,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2/Onderdeelb"
+          c:
+            tekst: "op de beslissing of de omgevingsvergunning in een geval als bedoeld onder b kan worden verleend als het gaat om een omgevingsplanactiviteit anders dan van provinciaal of nationaal belang geheel en als het gaat om een omgevingsplanactiviteit van provinciaal of nationaal belang gedeeltelijk van overeenkomstige toepassing zijn:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2/Onderdeelc"
+            sub_onderdelen:
+              1:
+                tekst: "de op grond van de artikelen 2.22 en 2.24 gestelde regels over omgevingsplannen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2/Onderdeelc/Onderdeel1"
+              2:
+                tekst: "de op grond van de artikelen 2.33 en 2.34 gegeven instructies over omgevingsplannen."
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid2/Onderdeelc/Onderdeel2"
+
+      logica:
+        type: toetsingskader
+        norm: "IN IEDER GEVAL..."
+        sporen:
+          spoor_a: "binnenplans: toepassing omgevingsplan regels"
+          spoor_b: "buitenplans: evenwichtige toedeling functies"
+        bij_buitenplans:
+          niet_prov_nat_belang: "art. 2.22, 2.24 GEHEEL van toepassing"
+          prov_nat_belang: "art. 2.22, 2.24 GEDEELTELIJK van toepassing"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid3"
+      structuur:
+        volledige_tekst: "De regels, bedoeld in het tweede lid, aanhef en onder c, onder 1°, strekken er ook toe dat als in een op grond van artikel 2.22 gestelde regel toepassing is gegeven aan artikel 2.32, eerste lid, een verzoek als bedoeld in laatstbedoeld lid ook kan worden gedaan door Onze Minister die het aangaat."
+
+      logica:
+        type: procedureel
+        norm: "Minister kan ook verzoek doen"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.21/Lid4"
+      structuur:
+        volledige_tekst: "Van het tweede lid kan worden afgeweken voor een omgevingsplanactiviteit die betrekking heeft op een maatwerkregel."
+
+      logica:
+        type: uitzondering
+        norm: "afwijking mogelijk voor maatwerkregel"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels omgevingsplanactiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: omgevingsplanactiviteit
+
+  logica_samenvatting:
+    twee_sporen: |
+      BINNENPLANS (a): toepassen regels uit omgevingsplan
+      BUITENPLANS (b): evenwichtige toedeling functies aan locaties
+
+      Bij buitenplans: instructieregels van toepassing (c)
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+    - naar: "artikelen 2.22 en 2.24"
+      type: toetsingskader
+    - naar: "artikelen 2.33 en 2.34"
+      type: toetsingskader
+    - naar: "artikel 2.32, eerste lid"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.22 - BEOORDELINGSREGELS RIJKSMONUMENTENACTIVITEIT
+# =============================================================================
+
+artikel_5.22:
+  nummer: "5.22"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag rijksmonumentenactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22"
+      structuur:
+        aanhef: "Voor een rijksmonumentenactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het behoud van cultureel erfgoed en in dat kader tot:"
+        onderdelen:
+          a:
+            tekst: "het voorkomen van ontsiering, beschadiging, sloop of verplaatsing van monumenten en archeologische monumenten,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22/Onderdeela"
+          b:
+            tekst: "het bevorderen van het gebruik van monumenten, zo nodig door wijziging van die monumenten, rekening houdend met de monumentale waarden,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22/Onderdeelb"
+          c:
+            tekst: "het conserveren en in stand houden van archeologische monumenten, bij voorkeur in situ."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22/Onderdeelc"
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP behoud cultureel erfgoed"
+        beschermde_belangen:
+          - voorkomen ontsiering/beschadiging/sloop/verplaatsing
+          - bevorderen gebruik (met inachtneming monumentale waarden)
+          - conserveren/in stand houden (bij voorkeur in situ)
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels rijksmonumentenactiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: rijksmonumentenactiviteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.23 - BEOORDELINGSREGELS ONTGRONDINGSACTIVITEIT
+# =============================================================================
+
+artikel_5.23:
+  nummer: "5.23"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag ontgrondingsactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.23"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.23"
+      structuur:
+        volledige_tekst: "Voor een ontgrondingsactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de doelen van de wet."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP doelen van de wet"
+        verwijst_naar: "art. 1.3"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels ontgrondingsactiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: ontgrondingsactiviteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.24 - BEOORDELINGSREGELS WATERACTIVITEIT
+# =============================================================================
+
+artikel_5.24:
+  nummer: "5.24"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag wateractiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid1"
+      structuur:
+        aanhef: "Voor een wateractiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:"
+        onderdelen:
+          a:
+            tekst: "het voorkomen en waar nodig beperken van overstromingen, wateroverlast en waterschaarste,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid1/Onderdeela"
+          b:
+            tekst: "het beschermen en verbeteren van de chemische en ecologische kwaliteit van watersystemen,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid1/Onderdeelb"
+          c:
+            tekst: "het vervullen van maatschappelijke functies door watersystemen,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid1/Onderdeelc"
+          d:
+            tekst: "het beschermen van de doelmatige werking van een zuiveringtechnisch werk."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid1/Onderdeeld"
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - voorkomen/beperken overstromingen, wateroverlast, waterschaarste
+          - chemische en ecologische waterkwaliteit
+          - maatschappelijke functies watersystemen
+          - doelmatige werking zuiveringtechnisch werk
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid2"
+      structuur:
+        volledige_tekst: "Op het stellen van de regels voor lozingsactiviteiten op een oppervlaktewaterlichaam en lozingsactiviteiten op een zuiveringtechnisch werk is artikel 4.23, tweede lid, van overeenkomstige toepassing."
+
+      logica:
+        type: verwijzing
+        norm: "art. 4.23 lid 2 van toepassing op lozingsactiviteiten"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid3"
+      structuur:
+        volledige_tekst: "Voor een stortingsactiviteit op zee worden de regels ook gesteld ter uitvoering van het Londen-protocol en het Ospar-verdrag."
+
+      logica:
+        type: verplichting
+        norm: "OOK ter uitvoering van..."
+        eu_implementatie: true
+        verdragen:
+          - Londen-protocol
+          - Ospar-verdrag
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.24/Lid4"
+      structuur:
+        volledige_tekst: "In afwijking van het eerste lid worden de regels voor een beperkingengebiedactiviteit met betrekking tot een waterstaatswerk, voor zover die plaatsvindt buiten het provinciaal en gemeentelijk ingedeelde gebied, gesteld met het oog op de doelen van de wet."
+
+      logica:
+        type: uitzondering
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van het eerste lid"
+        scope: "beperkingengebiedactiviteit waterstaatswerk buiten prov/gem gebied"
+        effect: "doelen van de wet ipv lid 1 criteria"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels wateractiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: wateractiviteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+    - naar: "artikel 4.23, tweede lid"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.25 - INGETROKKEN
+# =============================================================================
+
+artikel_5.25:
+  nummer: "5.25"
+  titel: null
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.25"
+  inwerking: "2024-01-01"
+  status: INGETROKKEN
+  redactie: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+# =============================================================================
+# ARTIKEL 5.26 - BEOORDELINGSREGELS MILIEUBELASTENDE ACTIVITEIT
+# =============================================================================
+
+artikel_5.26:
+  nummer: "5.26"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag milieubelastende activiteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.26"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.26/Lid1"
+      structuur:
+        volledige_tekst: "Voor een milieubelastende activiteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het waarborgen van de veiligheid, het beschermen van de gezondheid en het beschermen van het milieu."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - veiligheid
+          - gezondheid
+          - milieu
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.26/Lid2"
+      structuur:
+        volledige_tekst: "Op het stellen van deze regels is artikel 4.22, tweede lid, van overeenkomstige toepassing."
+
+      logica:
+        type: verwijzing
+        norm: "art. 4.22 lid 2 van toepassing"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.26/Lid3"
+      structuur:
+        volledige_tekst: "Ook strekken deze regels ertoe dat op de beslissing of de omgevingsvergunning kan worden verleend van toepassing zijn de op grond van artikel 5.19, eerste lid, in de omgevingsverordening gestelde regels over het verlenen of weigeren van een omgevingsvergunning voor een milieubelastende activiteit."
+
+      logica:
+        type: koppeling
+        norm: "ook provinciale regels van toepassing"
+        verwijst_naar: "art. 5.19 lid 1"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.26/Lid4"
+      structuur:
+        volledige_tekst: "In afwijking van het tweede lid strekken de regels voor daartoe bij algemene maatregel van bestuur aangewezen gevallen van milieubelastende activiteiten er alleen toe dat de beoordeling of sprake is van aanzienlijke milieueffecten, bedoeld in artikel 16.43, tweede lid, plaatsvindt."
+
+      logica:
+        type: uitzondering
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van het tweede lid"
+        scope: "AMvB-aangewezen gevallen"
+        effect: "alleen m.e.r.-beoordeling"
+        verwijst_naar: "art. 16.43 lid 2"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels milieubelastende activiteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: milieubelastende_activiteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+    - naar: "artikel 4.22, tweede lid"
+      type: verwijzing
+    - naar: "artikel 5.19, eerste lid"
+      type: koppeling
+    - naar: "artikel 16.43, tweede lid"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.27 - BEOORDELINGSREGELS MIJNBOUWLOCATIEACTIVITEIT
+# =============================================================================
+
+artikel_5.27:
+  nummer: "5.27"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag mijnbouwlocatieactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.27"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.27/Lid1"
+      structuur:
+        aanhef: "Voor een mijnbouwlocatieactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op:"
+        onderdelen:
+          a:
+            tekst: "het waarborgen van de veiligheid,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.27/Lid1/Onderdeela"
+          b:
+            tekst: "een evenwichtige toedeling van functies aan locaties."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.27/Lid1/Onderdeelb"
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - veiligheid
+          - evenwichtige toedeling functies
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.27/Lid2"
+      structuur:
+        volledige_tekst: "Op het stellen van deze regels is artikel 4.24, tweede lid, en derde lid, aanhef en onder b, van overeenkomstige toepassing."
+
+      logica:
+        type: verwijzing
+        norm: "art. 4.24 lid 2 en lid 3.b van toepassing"
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels mijnbouwlocatieactiviteit"
+    refereert_aan: "artikel 5.18"
+    activiteit: mijnbouwlocatieactiviteit
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+    - naar: "artikel 4.24, tweede lid, en derde lid, aanhef en onder b"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.28 - BEOORDELINGSREGELS BEPERKINGENGEBIEDACTIVITEIT (NIET WATER)
+# =============================================================================
+
+artikel_5.28:
+  nummer: "5.28"
+  titel: "(artikel 5.18 beoordelingsregels beperkingengebiedactiviteit anders dan een wateractiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28"
+      structuur:
+        aanhef: "Voor een beperkingengebiedactiviteit met betrekking tot:"
+        onderdelen:
+          a:
+            tekst: "een weg,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28/Onderdeela"
+          b:
+            tekst: "een luchthaven,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28/Onderdeelb"
+          c:
+            tekst: "een spoorweg,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28/Onderdeelc"
+          d:
+            tekst: "een mijnbouwinstallatie in een waterstaatswerk,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.28/Onderdeeld"
+        afsluiting: "worden de regels, bedoeld in artikel 5.18, gesteld met het oog op het behoeden van de staat en werking daarvan voor nadelige gevolgen van activiteiten, waartoe ook het belang van verruiming of wijziging van de onder a tot en met d genoemde werken en objecten kan behoren."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - behoeden staat en werking voor nadelige gevolgen
+          - belang van verruiming/wijziging
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels beperkingengebiedactiviteit (niet water)"
+    refereert_aan: "artikel 5.18"
+    activiteit: beperkingengebiedactiviteit
+    scope: "weg, luchthaven, spoorweg, mijnbouwinstallatie"
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.29 - BEOORDELINGSREGELS NATURA 2000 EN FLORA-FAUNA
+# =============================================================================
+
+artikel_5.29:
+  nummer: "5.29"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag Natura 2000-activiteit en flora- en fauna-activiteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29/Lid1"
+      structuur:
+        volledige_tekst: "Voor een Natura 2000-activiteit en een flora- en fauna-activiteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de natuurbescherming."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP natuurbescherming"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29/Lid2"
+      structuur:
+        volledige_tekst: "Deze regels strekken in ieder geval tot uitvoering van artikel 6, tweede, derde en vierde lid, en artikel 16 van de habitatrichtlijn en artikel 9 van de vogelrichtlijn."
+
+      logica:
+        type: verplichting
+        norm: "IN IEDER GEVAL ter uitvoering van..."
+        eu_implementatie: true
+        richtlijnen:
+          - habitatrichtlijn_art_6_lid_2_3_4
+          - habitatrichtlijn_art_16
+          - vogelrichtlijn_art_9
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29/Lid3"
+      structuur:
+        volledige_tekst: "De regels kunnen ertoe strekken dat de omgevingsvergunning alleen wordt verleend als geregistreerde stikstofdepositieruimte aan de Natura 2000-activiteit wordt toegedeeld."
+
+      logica:
+        type: machtiging
+        norm: "regels KUNNEN stikstoftoedeling vereisen"
+        stikstof_gerelateerd: true
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels Natura 2000 en flora-fauna"
+    refereert_aan: "artikel 5.18"
+    activiteit: ["natura_2000_activiteit", "flora_fauna_activiteit"]
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.29a - BEOORDELINGSREGELS JACHTGEWEER EN VALKENIERS
+# =============================================================================
+
+artikel_5.29a:
+  nummer: "5.29a"
+  titel: "(artikel 5.18 beoordelingsregels aanvraag jachtgeweeractiviteit en valkeniersactiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.29a"
+      structuur:
+        volledige_tekst: "Voor een jachtgeweeractiviteit of een valkeniersactiviteit worden de regels, bedoeld in artikel 5.18, gesteld met het oog op de natuurbescherming of de veiligheid."
+
+      logica:
+        type: doelbepaling
+        norm: "regels MET HET OOG OP..."
+        beschermde_belangen:
+          - natuurbescherming
+          - veiligheid
+
+  functie:
+    werkwoord: specificeert
+    object: "beoordelingsregels jachtgeweer en valkeniers"
+    refereert_aan: "artikel 5.18"
+    activiteit: ["jachtgeweeractiviteit", "valkeniersactiviteit"]
+
+  interne_refs:
+    - naar: "artikel 5.18"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.30 - BEOORDELINGSREGELS ART. 5.3/5.4 ACTIVITEITEN
+# =============================================================================
+
+artikel_5.30:
+  nummer: "5.30"
+  titel: "(beoordelingsregels artikel 5.3- en 5.4-activiteiten)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.30"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.30"
+      structuur:
+        volledige_tekst: "Voor zover de aanvraag betrekking heeft op een activiteit als bedoeld in artikel 5.3 of 5.4, kan de omgevingsvergunning alleen worden verleend of geweigerd op de gronden die zijn bepaald in de waterschapsverordening respectievelijk de omgevingsverordening."
+
+      logica:
+        type: beperking
+        norm: "ALLEEN op gronden uit verordening"
+        scope: "art. 5.3 (waterschap) en art. 5.4 (provincie) activiteiten"
+        effect: "beoordelingskader volledig bij verordening"
+
+  functie:
+    werkwoord: begrenst
+    object: "beoordelingsruimte voor decentrale activiteiten"
+    activiteit: ["art_5.3_activiteit", "art_5.4_activiteit"]
+
+  interne_refs:
+    - naar: "artikel 5.3"
+      type: verwijzing
+    - naar: "artikel 5.4"
+      type: verwijzing
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.31 - WEIGERING VANWEGE WET BIBOB
+# =============================================================================
+
+artikel_5.31:
+  nummer: "5.31"
+  titel: "(weigeren vergunning vanwege Wet bibob)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid1"
+      structuur:
+        aanhef: "Het bevoegd gezag kan de omgevingsvergunning weigeren in het geval en onder de voorwaarden, bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, voor zover de aanvraag betrekking heeft op:"
+        onderdelen:
+          a:
+            tekst: "een bouwactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid1/Onderdeela"
+          b:
+            tekst: "een omgevingsplanactiviteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid1/Onderdeelb"
+          c:
+            tekst: "een milieubelastende activiteit,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid1/Onderdeelc"
+          d:
+            tekst: "een activiteit als bedoeld in artikel 5.3."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid1/Onderdeeld"
+
+      logica:
+        type: machtiging
+        norm: "BG KAN weigeren op grond van Wet bibob"
+        scope: "bouw, omgevingsplan, milieu, waterschap"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid2"
+      structuur:
+        volledige_tekst: "Voor de toepassing van het eerste lid wordt onder betrokkene als bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur ook verstaan degene die op grond van feiten en omstandigheden redelijkerwijs met de aanvrager van de omgevingsvergunning kan worden gelijkgesteld."
+
+      logica:
+        type: definitie
+        norm: "uitbreiding begrip 'betrokkene'"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.31/Lid3"
+      structuur:
+        volledige_tekst: "Voordat toepassing wordt gegeven aan het eerste lid, kan het bevoegd gezag het bureau, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, vragen om een advies als bedoeld in artikel 9 van die wet."
+
+      logica:
+        type: machtiging
+        norm: "BG KAN LBB-advies vragen"
+
+  functie:
+    werkwoord: machtigt
+    object: "integriteitsweigering"
+    instrument: "Wet bibob"
+
+  interne_refs:
+    - naar: "artikel 5.3"
+      type: verwijzing
+
+  externe_refs:
+    - naar: "BWBR0013798"
+      wet: "Wet bevordering integriteitsbeoordelingen door het openbaar bestuur"
+      artikel: "3"
+      context: "weigeringsgrond"
+    - naar: "BWBR0013798"
+      wet: "Wet bibob"
+      artikel: "8, 9"
+      context: "LBB-advies"
+
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.32 - WEIGERING VANWEGE GEZONDHEIDSRISICO'S
+# =============================================================================
+
+artikel_5.32:
+  nummer: "5.32"
+  titel: "(weigeren vergunning vanwege ernstige gezondheidsrisico's)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.32"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.32"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag kan een omgevingsvergunning weigeren als naar zijn oordeel sprake is van bijzondere omstandigheden waardoor het verlenen van de vergunning zou leiden tot ernstige nadelige of mogelijk ernstige nadelige gevolgen voor de gezondheid."
+
+      logica:
+        type: machtiging
+        norm: "BG KAN weigeren bij ernstige gezondheidsrisico's"
+        conditie:
+          type: wanneer
+          tekst: "bijzondere omstandigheden waardoor... ernstige nadelige... gevolgen voor gezondheid"
+        beoordelingsruimte: "naar zijn oordeel"
+        vangnetbepaling: true
+
+  functie:
+    werkwoord: machtigt
+    object: "gezondheidsweigering"
+
+  interne_refs: []
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.33 - VERLENEN/WEIGEREN VANWEGE INSTEMMING
+# =============================================================================
+
+artikel_5.33:
+  nummer: "5.33"
+  titel: "(verlenen of weigeren vergunning vanwege instemming)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.33"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.33"
+      structuur:
+        volledige_tekst: "Voor zover de aanvraag betrekking heeft op een activiteit waarvoor de beslissing op de aanvraag op grond van artikel 16.16 instemming van een ander bestuursorgaan behoeft, wordt de omgevingsvergunning verleend of geweigerd met inachtneming van het besluit over de instemming."
+
+      logica:
+        type: verplichting
+        norm: "inachtneming instemmingsbesluit"
+        verwijst_naar: "art. 16.16"
+        effect: "instemming bindt BG"
+
+  functie:
+    werkwoord: bindt
+    object: "beslissing aan instemming ander bestuursorgaan"
+
+  interne_refs:
+    - naar: "artikel 16.16"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.33a - GEDEELTELIJKE VERLENING
+# =============================================================================
+
+artikel_5.33a:
+  nummer: "5.33a"
+  titel: "(gedeeltelijke verlening omgevingsvergunning bij aanvraag meer activiteiten)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.33a"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.33a/Lid1"
+      structuur:
+        volledige_tekst: "Voor zover de aanvraag betrekking heeft op meer dan een activiteit wordt als er een bij of krachtens deze paragraaf gestelde regel is op grond waarvan voor een deel van die activiteiten de omgevingsvergunning moet worden geweigerd, de vergunning alleen geweigerd voor die activiteiten en voor de overige activiteiten verleend."
+
+      logica:
+        type: regel
+        norm: "gedeeltelijke verlening/weigering"
+        scope: "meervoudige aanvraag"
+        effect: "splitsing mogelijk: weigeren voor deel, verlenen voor rest"
+        default: "gedeeltelijke verlening"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.33a/Lid2"
+      structuur:
+        volledige_tekst: "In afwijking van het eerste lid wordt de omgevingsvergunning in haar geheel geweigerd op verzoek of met instemming van de aanvrager."
+
+      logica:
+        type: uitzondering
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van het eerste lid"
+        trigger: "verzoek of instemming aanvrager"
+        effect: "gehele weigering"
+
+  functie:
+    werkwoord: regelt
+    object: "gedeeltelijke verlening bij meervoudige aanvraag"
+
+  interne_refs: []
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# PARAGRAAF-NIVEAU ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+
+  structuur:
+    artikelen_count: 16  # excl. 5.17, 5.25 (ingetrokken)
+    totaal_leden: ~25
+    ingetrokken: ["5.17", "5.25"]
+
+  patronen:
+
+    hub_spoke_structuur:
+      beschrijving: "Art. 5.18 = hub, art. 5.20-5.29a = spokes"
+      hub: "5.18"
+      hub_functie: "AMvB STELT beoordelingsregels"
+      spokes:
+        - artikel: "5.20"
+          activiteit: bouwactiviteit
+          oog_op: ["veiligheid", "gezondheid", "duurzaamheid", "bruikbaarheid"]
+        - artikel: "5.21"
+          activiteit: omgevingsplanactiviteit
+          oog_op: ["doelen wet", "evenwichtige toedeling"]
+        - artikel: "5.22"
+          activiteit: rijksmonumentenactiviteit
+          oog_op: ["behoud cultureel erfgoed"]
+        - artikel: "5.23"
+          activiteit: ontgrondingsactiviteit
+          oog_op: ["doelen wet"]
+        - artikel: "5.24"
+          activiteit: wateractiviteit
+          oog_op: ["waterkwantiteit", "waterkwaliteit", "maatschappelijke functies", "zuivering"]
+        - artikel: "5.26"
+          activiteit: milieubelastende_activiteit
+          oog_op: ["veiligheid", "gezondheid", "milieu"]
+        - artikel: "5.27"
+          activiteit: mijnbouwlocatieactiviteit
+          oog_op: ["veiligheid", "evenwichtige toedeling"]
+        - artikel: "5.28"
+          activiteit: beperkingengebiedactiviteit
+          oog_op: ["staat en werking infrastructuur"]
+        - artikel: "5.29"
+          activiteit: ["natura_2000", "flora_fauna"]
+          oog_op: ["natuurbescherming"]
+        - artikel: "5.29a"
+          activiteit: ["jachtgeweer", "valkeniers"]
+          oog_op: ["natuurbescherming", "veiligheid"]
+
+    decentrale_ruimte:
+      beschrijving: "Art. 5.19 en 5.30 geven provincie/waterschap eigen beoordelingsruimte"
+      art_5.19: "provincie KAN beoordelingsregels milieubelastend"
+      art_5.30: "art. 5.3/5.4 activiteiten ALLEEN beoordeeld op gronden uit verordening"
+
+    weigeringsgronden:
+      beschrijving: "Aanvullende weigeringsgronden buiten beoordelingsregels"
+      art_5.31: "Wet bibob"
+      art_5.32: "ernstige gezondheidsrisico's (vangnet)"
+      art_5.33: "instemming ander bestuursorgaan"
+
+    meervoudige_aanvraag:
+      beschrijving: "Art. 5.33a regelt splitsing bij deels weigeren"
+      default: "gedeeltelijke verlening"
+      uitzondering: "gehele weigering op verzoek aanvrager"
+
+  relaties:
+    intern:
+      - van: "5.20-5.29a"
+        naar: "5.18"
+        type: "uitwerking (met het oog op)"
+      - van: "5.26 lid 3"
+        naar: "5.19"
+        type: "koppeling provinciale regels"
+      - van: "5.30"
+        naar: ["5.3", "5.4"]
+        type: "beperking tot verordening"
+      - van: "5.33"
+        naar: "16.16"
+        type: "instemming"
+
+    extern:
+      - naar: "Ch4"
+        context: "art. 4.22, 4.23, 4.24 van toepassing verklaard"
+      - naar: "Wet bibob"
+        context: "art. 5.31"
+      - naar: "EU richtlijnen"
+        context: "art. 5.29 (habitatrichtlijn, vogelrichtlijn)"
+
+  routes:
+    entry_point:
+      artikel: "5.18"
+      vraag: "Hoe wordt mijn aanvraag beoordeeld?"
+      logica: "start bij 5.18, dan naar specifiek artikel per activiteit"
+
+    exit_points:
+      - naar: "AMvB (Bkl)"
+        context: "specifieke beoordelingsregels"
+      - naar: "Ch16"
+        context: "procedure na beoordeling"
+      - naar: "par. 5.1.4"
+        context: "inhoud vergunning na verlening"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+
+    1_hub_spoke_patroon:
+      observatie: "Art. 5.18 is hub, art. 5.20-5.29a zijn spokes"
+      implicatie: |
+        Navigation voor "hoe wordt beoordeeld?" moet:
+        1. Starten bij art. 5.18 (AMvB stelt regels)
+        2. Routeren naar specifiek artikel per activiteittype
+        3. Elk spoke-artikel geeft "met het oog op" criteria
+
+    2_beschermde_belangen_mapping:
+      observatie: "Elk artikel specificeert eigen beschermde belangen"
+      implicatie: |
+        Kan matrix bouwen: activiteit → beschermde belangen
+        - Bouw: veiligheid, gezondheid, duurzaamheid
+        - Milieu: veiligheid, gezondheid, milieu
+        - Natuur: natuurbescherming
+        - Water: kwantiteit, kwaliteit, functies
+        etc.
+
+    3_decentrale_ruimte_beperkt:
+      observatie: "Art. 5.19 geeft provincie beperkte ruimte (alleen milieubelastend)"
+      implicatie: |
+        Centraal/decentraal onderscheid in beoordelingsregels:
+        - Centraal: AMvB voor alle art. 5.1 activiteiten
+        - Decentraal: art. 5.3/5.4 volledig, art. 5.19 beperkt
+
+    4_vangnetbepaling:
+      observatie: "Art. 5.32 is vangnet voor gezondheid"
+      implicatie: |
+        Los van beoordelingsregels kan BG altijd weigeren
+        bij "bijzondere omstandigheden" + "ernstige gezondheidsrisico's"
+
+  schema_verbeteringen:
+
+    beoordelingsregels_schema:
+      activiteit: "naam"
+      hub_artikel: "5.18"
+      spoke_artikel: "5.XX"
+      oog_op: ["lijst beschermde belangen"]
+      delegatie_naar: "Bkl/verordening"
+      aanvullende_weigeringsgronden: ["5.31", "5.32"]
+
+  volgende_extractie:
+    paragraaf: "5.1.4"
+    titel: "Inhoud en werking"
+    artikelen: "5.34 - 5.43"
+    focus: "vergunningvoorschriften, termijnen, werking"

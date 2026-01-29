@@ -1,0 +1,598 @@
+# Chapter 8: Aanvullende regels populatiebeheer, schadebestrijding en jacht - V2 Atomic Extraction
+# Schema version: v2
+# Extraction date: 2026-01-29
+# Source: BWBR0037885 (Omgevingswet)
+# Articles: 8.1-8.5
+
+schema_version: 2
+bron: BWBR0037885
+
+---
+hoofdstuk_8:
+  nummer: "8"
+  titel: "Aanvullende regels populatiebeheer, schadebestrijding en jacht"
+  bron_path: "/Hoofdstuk8"
+  inwerking: "2024-01-01"
+
+  # =============================================================================
+  # ARTIKEL 8.1: FAUNABEHEEREENHEDEN EN FAUNABEHEERPLANNEN
+  # =============================================================================
+  artikel_8.1:
+    nummer: "8.1"
+    titel: "(faunabeheereenheden en faunabeheerplannen)"
+    bron_path: "/Hoofdstuk8/Artikel8.1"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk8/Artikel8.1/Lid1"
+        structuur:
+          volledige_tekst: "Binnen een provincie zijn er een of meer faunabeheereenheden."
+
+        logica:
+          type: "verplichting"
+          norm: "Elke provincie heeft faunabeheereenheden"
+          organisatie: "provinciaal niveau"
+
+      2:
+        bron_path: "/Hoofdstuk8/Artikel8.1/Lid2"
+        structuur:
+          volledige_tekst: "Een faunabeheereenheid stelt voor haar werkgebied een faunabeheerplan vast. Het faunabeheerplan behoeft de goedkeuring van gedeputeerde staten van de provincie waarin het werkgebied van de faunabeheereenheid is gelegen."
+
+        logica:
+          type: "verplichting"
+          norm: "Faunabeheerplan verplicht, goedkeuring GS vereist"
+          goedkeuring: "gedeputeerde staten"
+          bevoegd_gezag: "provincie"
+
+      3:
+        bron_path: "/Hoofdstuk8/Artikel8.1/Lid3"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur worden regels gesteld over faunabeheereenheden en faunabeheerplannen. De regels strekken ter waarborging van een transparante, samenhangende en regionaal ingebedde uitvoering van het duurzaam beheer van populaties van in het wild levende dieren, uitvoering van schadebestrijding door grondgebruikers en uitoefening van de jacht door jachthouders. De regels gaan in ieder geval over de rechtsvorm en de samenstelling van het bestuur van een faunabeheereenheid. Bij omgevingsverordening worden nadere regels gesteld over faunabeheereenheden en faunabeheerplannen."
+
+        logica:
+          type: "delegatie"
+          norm: "Nadere regels bij AMvB en omgevingsverordening"
+          doelstelling:
+            - "transparantie"
+            - "samenhang"
+            - "regionale inbedding"
+            - "duurzaam beheer"
+          verplichte_onderwerpen:
+            - "rechtsvorm faunabeheereenheid"
+            - "samenstelling bestuur"
+
+      4:
+        bron_path: "/Hoofdstuk8/Artikel8.1/Lid4"
+        structuur:
+          volledige_tekst: "Voor de uitvoering van de regels van de algemene maatregel van bestuur en van de omgevingsverordening, bedoeld in het derde lid, zijn gedeputeerde staten het bevoegd gezag."
+
+        logica:
+          type: "bepaling"
+          norm: "GS is bevoegd gezag voor uitvoering"
+          bevoegd_gezag: "gedeputeerde staten"
+
+      5:
+        bron_path: "/Hoofdstuk8/Artikel8.1/Lid5"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin Onze Minister voor Natuur en Stikstof beslist over de goedkeuring van een faunabeheerplan, bevoegd is tot het stellen van nadere regels als bedoeld in het derde lid, vierde zin, of het bevoegd gezag, bedoeld in het vierde lid, is. Hierbij worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+
+        logica:
+          type: "machtiging"
+          norm: "Minister kan bevoegdheid naar zich toe trekken"
+          conditie:
+            type: "voor_zover"
+            tekst: "gevallen aangewezen bij AMvB"
+          begrenzing: "art. 2.3 lid 3 (subsidiariteit)"
+          bevoegd_gezag_alternatief: "Minister voor Natuur en Stikstof"
+
+    functie:
+      werkwoord: "regelt"
+      object: "faunabeheereenheden en -plannen"
+      subject: "organisatie faunabeheer"
+      bevoegd_gezag: "provincie (default) / rijk (uitzondering)"
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "rijk"
+        voor: "regels faunabeheereenheden"
+      - type: "bij omgevingsverordening"
+        naar: "provincie"
+        voor: "nadere regels faunabeheereenheden"
+
+    interne_refs:
+      - naar: "artikel 2.3, derde lid"
+        type: "begrenzing"
+        context: "subsidiariteitsgrens rijksbevoegdheid"
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+    actoren:
+      - actor: "faunabeheereenheid"
+        rol: "vaststeller faunabeheerplan"
+      - actor: "gedeputeerde staten"
+        rol: "goedkeuring en bevoegd gezag"
+      - actor: "Minister voor Natuur en Stikstof"
+        rol: "bevoegd gezag in uitzonderingsgevallen"
+
+  # =============================================================================
+  # ARTIKEL 8.2: WILDBEHEEREENHEDEN
+  # =============================================================================
+  artikel_8.2:
+    nummer: "8.2"
+    titel: "(bijzondere bepaling over aansluitplicht bij wildbeheereenheid)"
+    bron_path: "/Hoofdstuk8/Artikel8.2"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid1"
+        structuur:
+          volledige_tekst: "Jachthouders aan wie een omgevingsvergunning voor een jachtgeweeractiviteit is verleend, organiseren zich met anderen in een wildbeheereenheid."
+
+        logica:
+          type: "verplichting"
+          norm: "Aansluitplicht jachthouders bij wildbeheereenheid"
+          subject: "jachthouders met jachtgeweervergunning"
+          verplicht_lidmaatschap: true
+
+      2:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid2"
+        structuur:
+          volledige_tekst: "Een wildbeheereenheid heeft de rechtsvorm van een vereniging."
+
+        logica:
+          type: "bepaling"
+          norm: "Wildbeheereenheid is vereniging"
+          rechtsvorm: "vereniging"
+
+      3:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid3"
+        structuur:
+          volledige_tekst: "Een wildbeheereenheid geeft uitvoering aan het faunabeheerplan, bedoeld in artikel 8.1, tweede lid, en bevordert dat het duurzaam beheer van populaties van in het wild levende dieren, de bestrijding van schadeveroorzakende dieren en de jacht worden uitgevoerd in samenwerking met, en ten dienste van, grondgebruikers of terreinbeheerders."
+
+        logica:
+          type: "bepaling"
+          norm: "Taak wildbeheereenheid"
+          taken:
+            - "uitvoering faunabeheerplan"
+            - "duurzaam populatiebeheer"
+            - "schadebestrijding"
+            - "jacht"
+          samenwerking: "met grondgebruikers/terreinbeheerders"
+
+      4:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid4"
+        structuur:
+          volledige_tekst: "Ook grondgebruikers en terreinbeheerders kunnen lid worden van de vereniging."
+
+        logica:
+          type: "machtiging"
+          norm: "Grondgebruikers/terreinbeheerders kunnen lid worden"
+          facultatief_lidmaatschap: true
+
+      5:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid5"
+        structuur:
+          aanhef: "Bij omgevingsverordening worden regels gesteld over wildbeheereenheden. Deze regels hebben in ieder geval betrekking op:"
+          onderdelen:
+            a:
+              tekst: "de omvang en begrenzing van het gebied waarover zich de zorg van de wildbeheereenheid kan uitstrekken, en"
+              bron_path: "/Hoofdstuk8/Artikel8.2/Lid5/Onderdeela"
+            b:
+              tekst: "de gevallen waarin en voorwaarden waaronder jachthouders zijn uitgezonderd van het eerste lid."
+              bron_path: "/Hoofdstuk8/Artikel8.2/Lid5/Onderdeelb"
+
+        logica:
+          type: "delegatie"
+          norm: "Nadere regels bij omgevingsverordening"
+          verplichte_onderwerpen:
+            - "omvang en begrenzing werkgebied"
+            - "uitzonderingen aansluitplicht"
+
+      6:
+        bron_path: "/Hoofdstuk8/Artikel8.2/Lid6"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin Onze Minister voor Natuur en Stikstof bevoegd is tot het stellen van regels als bedoeld in het vijfde lid. Hierbij worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+
+        logica:
+          type: "machtiging"
+          norm: "Minister kan regels stellen in uitzonderingsgevallen"
+          begrenzing: "art. 2.3 lid 3 (subsidiariteit)"
+
+    functie:
+      werkwoord: "regelt"
+      object: "wildbeheereenheden"
+      subject: "organisatie jachthouders"
+
+    delegeert:
+      - type: "bij omgevingsverordening"
+        naar: "provincie"
+        voor: "regels wildbeheereenheden"
+      - type: "bij AMvB"
+        naar: "rijk"
+        voor: "aanwijzing rijksbevoegdheid"
+
+    interne_refs:
+      - naar: "artikel 8.1, tweede lid"
+        type: "verwijzing"
+        context: "faunabeheerplan"
+        bron_path: "/Hoofdstuk8/Artikel8.1"
+      - naar: "artikel 2.3, derde lid"
+        type: "begrenzing"
+        context: "subsidiariteit"
+        bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+  # =============================================================================
+  # ARTIKEL 8.3: DE JACHT
+  # =============================================================================
+  artikel_8.3:
+    nummer: "8.3"
+    titel: "(bijzondere bepaling over de jacht)"
+    bron_path: "/Hoofdstuk8/Artikel8.3"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk8/Artikel8.3/Lid1"
+        structuur:
+          aanhef: "Gerechtigd tot het uitoefenen van de jacht in een jachtveld zijn, elkaar uitsluitend:"
+          onderdelen:
+            a:
+              tekst: "de eigenaar van de grond,"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeela"
+            b:
+              tekst: "de erfpachter of vruchtgebruiker van de grond, tenzij de eigenaar zich bij het vestigen van het erfpachtrecht of het recht op vruchtgebruik het jachtrecht heeft voorbehouden en tenzij het jachtrecht ten tijde van het vestigen van het erfpachtrecht of het recht op vruchtgebruik al was verhuurd,"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeelb"
+            c:
+              tekst: "de pachter van de grond, tenzij de verpachter bij het aangaan van de pachtovereenkomst niet tot het uitoefenen van de jacht gerechtigd was of zich het recht tot de uitoefening van de jacht heeft voorbehouden en tenzij ten tijde van het aangaan van de pachtovereenkomst het jachtrecht al was verhuurd, of"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeelc"
+            d:
+              tekst: "degene die het jachtrecht bij schriftelijke en gedagtekende overeenkomst voor een periode van ten minste zes jaar en ten hoogste twaalf jaar heeft gehuurd van de ten tijde van het aangaan van de huurovereenkomst tot de uitoefening van de jacht gerechtigde:"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeeld"
+              sub_onderdelen:
+                1:
+                  tekst: "eigenaar, erfpachter, vruchtgebruiker of pachter van de grond, met toestemming van de grondgebruiker als de verhuurder niet ook grondgebruiker is, of"
+                  bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeeld/Onderdeel1"
+                2:
+                  tekst: "huurder van het jachtrecht, met toestemming van de eigenaar, erfpachter, vruchtgebruiker of pachter die het jachtrecht aan deze huurder heeft verhuurd en mits het jachtrecht in zijn geheel wordt weder verhuurd."
+                  bron_path: "/Hoofdstuk8/Artikel8.3/Lid1/Onderdeeld/Onderdeel2"
+
+        logica:
+          type: "definitie"
+          norm: "Limitatieve opsomming jachtgerechtigden"
+          exclusiviteit: "elkaar uitsluitend"
+          jachtgerechtigden:
+            primair:
+              - "eigenaar"
+            secundair_met_voorwaarden:
+              - "erfpachter/vruchtgebruiker (tenzij voorbehoud)"
+              - "pachter (tenzij voorbehoud)"
+            afgeleid:
+              - "huurder jachtrecht (6-12 jaar)"
+
+      2:
+        bron_path: "/Hoofdstuk8/Artikel8.3/Lid2"
+        structuur:
+          volledige_tekst: "In de huurovereenkomst, bedoeld in het eerste lid, onder d, kan niet worden afgeweken van artikel 226, eerste, tweede en derde lid, van Boek 7 van het Burgerlijk Wetboek. Zij bevat geen beding van optie of verlenging."
+
+        logica:
+          type: "verbod"
+          norm: "Dwingend recht huurovereenkomst jachtrecht"
+          verboden:
+            - "afwijking van art. 7:226 BW"
+            - "optie-beding"
+            - "verlengingsbeding"
+
+      3:
+        bron_path: "/Hoofdstuk8/Artikel8.3/Lid3"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kan worden geregeld in welke gevallen het is toegestaan dat de periode, bedoeld in het eerste lid, onder d, korter is dan zes jaar."
+
+        logica:
+          type: "delegatie"
+          norm: "AMvB kan kortere huurperiode toestaan"
+
+      4:
+        bron_path: "/Hoofdstuk8/Artikel8.3/Lid4"
+        structuur:
+          aanhef: "De jacht is alleen toegestaan op dieren van de volgende soorten:"
+          onderdelen:
+            a:
+              tekst: "klein wild: fazanten (Phasianus colchicus), hazen (Lepus Europaeus),"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid4/Onderdeela"
+            b:
+              tekst: "waterwild: wilde eenden (Anas platyrhynchos),"
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid4/Onderdeelb"
+            c:
+              tekst: "overig wild: houtduiven (Columba palumbus), konijnen (Oryctolagus cuniculus)."
+              bron_path: "/Hoofdstuk8/Artikel8.3/Lid4/Onderdeelc"
+
+        logica:
+          type: "verbod"
+          norm: "Jacht alleen op limitatief opgesomde soorten"
+          limitatief: true
+          jachtwild:
+            klein_wild:
+              - "fazant (Phasianus colchicus)"
+              - "haas (Lepus Europaeus)"
+            waterwild:
+              - "wilde eend (Anas platyrhynchos)"
+            overig_wild:
+              - "houtduif (Columba palumbus)"
+              - "konijn (Oryctolagus cuniculus)"
+
+    functie:
+      werkwoord: "regelt"
+      object: "jachtrecht"
+      subject: "wie mag jagen en waarop"
+
+    externe_refs:
+      - naar: "BWBR0005290"
+        wet: "Burgerlijk Wetboek Boek 7"
+        artikel: "226, eerste, tweede en derde lid"
+        context: "dwingend huurrecht"
+        type: "verwijzing"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 8.3 regelt het JACHTRECHT met twee kernvragen:
+
+        1. WIE mag jagen? (lid 1)
+           - Primair: eigenaar grond
+           - Afgeleid: erfpachter/vruchtgebruiker/pachter (tenzij voorbehoud)
+           - Gehuurd: huurder jachtrecht (6-12 jaar)
+           - EXCLUSIVITEIT: deze categorieën sluiten elkaar uit
+
+        2. WAAROP mag gejaagd? (lid 4)
+           - LIMITATIEVE LIJST van 5 soorten
+           - Klein wild: fazant, haas
+           - Waterwild: wilde eend
+           - Overig: houtduif, konijn
+
+        Dit is de KERN van jachtregulering in de Omgevingswet.
+
+  # =============================================================================
+  # ARTIKEL 8.4: AANSPRAKELIJKHEIDSVERZEKERING
+  # =============================================================================
+  artikel_8.4:
+    nummer: "8.4"
+    titel: "(bijzondere bepaling over aansprakelijkheidsverzekering jachtgeweren)"
+    bron_path: "/Hoofdstuk8/Artikel8.4"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk8/Artikel8.4/Lid1"
+        structuur:
+          volledige_tekst: "Degene die schade heeft geleden als gevolg van het gebruik van een geweer ter uitvoering van deze wet heeft tegenover de verzekeraar door wie de burgerrechtelijke aansprakelijkheid voor die schade is gedekt, een eigen recht op schadevergoeding tot het beloop van een bij algemene maatregel van bestuur te bepalen maximumbedrag. Het tenietgaan van zijn schuld aan de verzekerde bevrijdt de verzekeraar niet tegenover de benadeelde, tenzij deze schadeloos is gesteld."
+
+        logica:
+          type: "recht"
+          norm: "Direct action: eigen recht benadeelde tegenover verzekeraar"
+          direct_action: true
+          bescherming_benadeelde: true
+
+      2:
+        bron_path: "/Hoofdstuk8/Artikel8.4/Lid2"
+        structuur:
+          volledige_tekst: "Geen uit de bepalingen van het Burgerlijk Wetboek over de verzekeringsovereenkomst of uit deze overeenkomst zelf voortvloeiende nietigheid of voortvloeiend verweer of verval kan door een verzekeraar aan een benadeelde worden tegengeworpen."
+
+        logica:
+          type: "verbod"
+          norm: "Verzekeraar kan geen verweren tegenwerpen aan benadeelde"
+          bescherming_benadeelde: true
+          sterke_positie_benadeelde: true
+
+      3:
+        bron_path: "/Hoofdstuk8/Artikel8.4/Lid3"
+        structuur:
+          volledige_tekst: "De verzekeraar die de schade van een benadeelde geheel of ten dele vergoedt, hoewel de aansprakelijkheid voor die schade niet door een met hem gesloten overeenkomst was gedekt, heeft voor het bedrag van de schadevergoeding verhaal op degene die voor de schade aansprakelijk is."
+
+        logica:
+          type: "recht"
+          norm: "Verhaalsrecht verzekeraar op aansprakelijke"
+          regres: true
+
+      4:
+        bron_path: "/Hoofdstuk8/Artikel8.4/Lid4"
+        structuur:
+          volledige_tekst: "Als de overeenkomst een beding inhoudt dat de verzekerde persoonlijk voor een deel in de vergoeding van de schade zal bijdragen, blijft de verzekeraar toch tegenover de benadeelde gehouden tot betaling van de schadeloosstelling die op grond van de overeenkomst ten laste van de verzekerde blijft."
+
+        logica:
+          type: "bepaling"
+          norm: "Eigen risico verzekerde raakt benadeelde niet"
+          bescherming_benadeelde: true
+
+    functie:
+      werkwoord: "regelt"
+      object: "aansprakelijkheidsverzekering jachtgeweren"
+      subject: "bescherming benadeelden"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 8.4 creëert STERKE BESCHERMING voor slachtoffers van jachtongevallen:
+
+        DIRECT ACTION (lid 1-2):
+        - Benadeelde kan rechtstreeks verzekeraar aanspreken
+        - Geen verweren van verzekeraar mogelijk
+
+        REGRES (lid 3):
+        - Verzekeraar kan verhalen op werkelijk aansprakelijke
+
+        EIGEN RISICO (lid 4):
+        - Raakt positie benadeelde niet
+
+  # =============================================================================
+  # ARTIKEL 8.5: AFPALINGSRECHT EENDENKOOIEN
+  # =============================================================================
+  artikel_8.5:
+    nummer: "8.5"
+    titel: "(afpalingsrecht eendenkooien)"
+    bron_path: "/Hoofdstuk8/Artikel8.5"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk8/Artikel8.5/Lid1"
+        structuur:
+          volledige_tekst: "Het is ieder ander dan de kooiker van een eendenkooi, waarvoor op 31 maart 1977 een recht van afpaling gold, of degene die handelt met toestemming van die kooiker, verboden binnen de afpalingkring van die kooi activiteiten te verrichten waardoor eenden binnen de afpalingkring kunnen worden verontrust."
+
+        logica:
+          type: "verbod"
+          norm: "Verbod verstoring eenden binnen afpalingkring"
+          beschermd_recht: "afpalingsrecht"
+          referentiedatum: "31 maart 1977"
+          conditie:
+            type: "tenzij"
+            tekst: "toestemming kooiker"
+          historisch_recht: true
+
+      2:
+        bron_path: "/Hoofdstuk8/Artikel8.5/Lid2"
+        structuur:
+          aanhef: "Het verbod, bedoeld in het eerste lid, is, als redelijkerwijs niet kan worden gevergd dat de activiteiten niet, op andere wijze of op een ander tijdstip worden verricht, niet van toepassing op activiteiten verricht:"
+          onderdelen:
+            a:
+              tekst: "ter uitvoering van openbare werken,"
+              bron_path: "/Hoofdstuk8/Artikel8.5/Lid2/Onderdeela"
+            b:
+              tekst: "bij het gebruik en onderhoud van dat wat door die werken is tot stand gebracht, of"
+              bron_path: "/Hoofdstuk8/Artikel8.5/Lid2/Onderdeelb"
+            c:
+              tekst: "ter uitoefening van een beroep of bedrijf."
+              bron_path: "/Hoofdstuk8/Artikel8.5/Lid2/Onderdeelc"
+
+        logica:
+          type: "uitzondering"
+          norm: "Uitzonderingen op verstoringsverbod"
+          conditie:
+            type: "indien"
+            tekst: "redelijkerwijs niet anders kan"
+          uitzonderingen:
+            - "openbare werken"
+            - "gebruik/onderhoud openbare werken"
+            - "beroep/bedrijf"
+
+      3:
+        bron_path: "/Hoofdstuk8/Artikel8.5/Lid3"
+        structuur:
+          volledige_tekst: "Degene die activiteiten als bedoeld in het tweede lid verricht, vergoedt de schade die daaruit voor het gebruik van de eendenkooi voortvloeit aan de kooiker, tenzij anders met de kooiker is overeengekomen."
+
+        logica:
+          type: "verplichting"
+          norm: "Schadevergoedingsplicht bij uitzondering"
+          default: "vergoeding aan kooiker"
+          uitzondering: "andersluidende overeenkomst"
+
+    functie:
+      werkwoord: "beschermt"
+      object: "afpalingsrecht eendenkooien"
+      subject: "historisch jachtrecht"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 8.5 beschermt het HISTORISCHE AFPALINGSRECHT van eendenkooien:
+
+        PEILDATUM: 31 maart 1977
+        - Alleen kooien met toen bestaand afpalingsrecht
+
+        VERBOD: Verstoring eenden binnen afpalingkring
+
+        UITZONDERINGEN: Openbare werken, beroep/bedrijf
+        - Maar dan WEL schadevergoeding
+
+        Dit is een FOSSIEL RECHT dat alleen nog geldt voor oude kooien.
+
+# =============================================================================
+# HOOFDSTUK ANALYSE
+# =============================================================================
+hoofdstuk_analyse:
+  structuur:
+    artikelen_count: 5
+    totaal_leden: 21
+
+  kern_thema: "Organisatie en regulering faunabeheer en jacht"
+
+  drie_pijlers:
+    organisatie:
+      beschrijving: "Faunabeheereenheden en wildbeheereenheden"
+      artikelen: ["8.1", "8.2"]
+      bevoegd_gezag: "provincie (GS)"
+
+    jachtrecht:
+      beschrijving: "Wie mag jagen en waarop"
+      artikelen: ["8.3"]
+      kern_elementen:
+        - "jachtgerechtigden (exclusief)"
+        - "jachtwild (limitatief)"
+
+    bescherming:
+      beschrijving: "Aansprakelijkheid en historische rechten"
+      artikelen: ["8.4", "8.5"]
+      kern_elementen:
+        - "direct action benadeelde"
+        - "afpalingsrecht eendenkooien"
+
+  patronen:
+    provincie_centraal:
+      beschrijving: "GS is consistent bevoegd gezag"
+      evidence: ["art. 8.1 lid 2, 4", "art. 8.2 lid 5"]
+
+    subsidiariteit_rijksuitzondering:
+      beschrijving: "Minister kan bevoegdheid overnemen (art. 2.3 lid 3 grenzen)"
+      evidence: ["art. 8.1 lid 5", "art. 8.2 lid 6"]
+
+    limitatieve_opsommingen:
+      beschrijving: "Jachtgerechtigden en jachtwild zijn limitatief opgesomd"
+      evidence: ["art. 8.3 lid 1", "art. 8.3 lid 4"]
+
+    historisch_recht:
+      beschrijving: "Afpalingsrecht eendenkooien met peildatum 1977"
+      evidence: ["art. 8.5"]
+
+  relaties:
+    intern:
+      - van: "art. 8.2"
+        naar: "art. 8.1"
+        type: "uitwerking"
+        context: "WBE voert faunabeheerplan uit"
+    extern:
+      - naar: "art. 2.3 lid 3"
+        context: "subsidiariteitsgrens rijksbevoegdheid"
+      - naar: "art. 7:226 BW"
+        context: "huurrecht jachtrecht"
+
+  routes:
+    entry_points:
+      - artikel: "8.1"
+        vraag: "Hoe is faunabeheer georganiseerd?"
+      - artikel: "8.3"
+        vraag: "Wie mag jagen en waarop?"
+    exit_points:
+      - naar: "Ch. 5 (vergunning)"
+        context: "jachtgeweeractiviteit (omgevingsvergunning)"
+      - naar: "Bal/Bkl"
+        context: "nadere regels faunabeheer"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    organisatie_twee_niveaus:
+      observatie: "Faunabeheereenheid (provinciaal) + wildbeheereenheid (lokaal)"
+      implicatie: "Gelaagde organisatie faunabeheer"
+
+    jachtwild_vijf_soorten:
+      observatie: "Art. 8.3 lid 4: alleen fazant, haas, wilde eend, houtduif, konijn"
+      implicatie: "Zeer beperkte jachtmogelijkheden"
+
+    direct_action_jachtongevallen:
+      observatie: "Art. 8.4: benadeelde kan rechtstreeks verzekeraar aanspreken"
+      implicatie: "Sterke bescherming slachtoffers"
+
+    fossiel_afpalingsrecht:
+      observatie: "Art. 8.5: peildatum 31 maart 1977"
+      implicatie: "Historisch recht, geen nieuwe rechten"
+
+  schema_verbeteringen:
+    - "Toevoegen: historisch_recht als logica-type"
+    - "Toevoegen: direct_action als beschermingsmechanisme"
+    - "Toevoegen: limitatief als kenmerk opsommingen"

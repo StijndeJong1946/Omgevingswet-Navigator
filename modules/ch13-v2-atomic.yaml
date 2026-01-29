@@ -1,0 +1,1726 @@
+# Chapter 13: Financiële bepalingen - V2 Atomic Extraction
+# Extracted: 2026-01-29
+# Schema: v2 (lid-level logica, bron_path traceability)
+# Source: BWBR0037885 (Omgevingswet)
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_13:
+  nummer: "13"
+  titel: "Financiële bepalingen"
+  bron_path: "/Hoofdstuk13"
+  inwerking: "2024-01-01"
+
+  # === STRUCTURE ===
+  afdelingen:
+    - nummer: "13.1"
+      titel: "Leges"
+      artikelen: ["13.1", "13.1a", "13.2", "13.2a"]
+    - nummer: "13.2"
+      titel: "Vergoeding en verhaal van kosten"
+      artikelen: ["13.3", "13.3a", "13.3b", "13.3c", "13.3d", "13.3e"]
+    - nummer: "13.2a"
+      titel: "Heffingen"
+      artikelen: ["13.4", "13.4a", "13.4b"]
+    - nummer: "13.3"
+      titel: "Financiële bepalingen vanwege omgevingsvergunningen"
+      artikelen: ["13.5", "13.6"]
+    - nummer: "13.4"
+      titel: "Vergoeding voor adviezen van de Commissie voor de milieueffectrapportage"
+      artikelen: ["13.7"]
+    - nummer: "13.5"
+      titel: "Financiële bepalingen landinrichting"
+      artikelen: ["13.7a", "13.8", "13.9", "13.10"]
+    - nummer: "13.6"
+      titel: "Kostenverhaal bij bouwactiviteiten en activiteiten vanwege gebruikswijzigingen"
+      paragrafen:
+        - nummer: "13.6.1"
+          titel: "Kostenverhaalsplicht en verbod"
+          artikelen: ["13.11", "13.12"]
+        - nummer: "13.6.2"
+          titel: "Kostenverhaal langs privaatrechtelijke weg"
+          artikelen: ["13.13"]
+        - nummer: "13.6.3"
+          titel: "Kostenverhaal langs publiekrechtelijke weg"
+          artikelen: ["13.14", "13.15", "13.16", "13.17", "13.18", "13.19", "13.20", "13.21"]
+    - nummer: "13.7"
+      titel: "Financiële bijdragen voor ontwikkelingen van een gebied"
+      artikelen: ["13.22", "13.23", "13.24"]
+
+# =============================================================================
+# AFDELING 13.1: LEGES
+# =============================================================================
+
+artikel_13.1:
+  nummer: "13.1"
+  titel: "(heffen van rechten Rijk)"
+  bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid1"
+      structuur:
+        volledige_tekst: "Onze Minister die het aangaat kan ter dekking van de kosten voor het door hem in behandeling nemen van een aanvraag om een besluit, voor onderzoeken of verrichtingen die op verzoek van betrokkenen plaatsvinden en voor de afgifte van een document, ringen, merken of merktekens voor dieren op grond van deze wet rechten heffen van de aanvrager of van degene ten behoeve van wie die aanvraag wordt gedaan."
+      logica:
+        type: machtiging
+        norm: "Minister kan rechten heffen voor besluitbehandeling en afgifte documenten"
+        subject: "Minister die het aangaat"
+        object: "rechten voor behandeling aanvraag, onderzoeken, afgifte documenten"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid2"
+      structuur:
+        volledige_tekst: "Onze Minister die het aangaat kan ter dekking van de kosten voor de uitvoering van controles of verificaties op grond van Europese cites-regelgeving, Europese flegt-regelgeving of Europese houtregelgeving, rechten heffen van de eigenaar, vervoerder, verhandelaar, importeur of diens gemachtigde."
+      logica:
+        type: machtiging
+        norm: "Minister kan rechten heffen voor CITES/FLEGT/houtcontroles"
+        subject: "Minister die het aangaat"
+        object: "rechten voor EU-regelgeving controles"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid3"
+      structuur:
+        volledige_tekst: "De tarieven worden zodanig vastgesteld dat de geraamde baten van de rechten niet uitgaan boven de geraamde kosten."
+      logica:
+        type: begrenzing
+        norm: "Tarieven zijn kostendekkend, niet hoger"
+        principe: kostendekkendheidsbeginsel
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid4"
+      structuur:
+        volledige_tekst: "De bevoegdheid, bedoeld in het eerste lid, berust voor omgevingsvergunningen voor jachtgeweeractiviteiten bij de korpschef."
+      logica:
+        type: bevoegdheidstoekenning
+        norm: "Korpschef heft rechten voor jachtgeweervergunningen"
+        uitzondering_op: "lid 1"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid5"
+      structuur:
+        volledige_tekst: "Onze Minister voor Natuur en Stikstof kan bij regeling bepalen dat de bevoegdheid om rechten te heffen voor de afgifte van ringen, merken of merktekens, bedoeld in het eerste lid, berust bij organisaties die zijn aangewezen op grond van artikel 4.36, derde lid."
+      logica:
+        type: delegatie
+        norm: "Minister kan hefbevoegdheid voor ringen/merken overdragen aan aangewezen organisaties"
+
+    6:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid6"
+      structuur:
+        aanhef: "Bij ministeriële regeling worden:"
+        onderdelen:
+          a:
+            tekst: "de besluiten, documenten, ringen, merken of merktekens voor dieren, en onderzoeken of verrichtingen aangewezen waarvoor rechten worden geheven"
+            bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid6/Onderdeela"
+          b:
+            tekst: "de tarieven voor te heffen rechten vastgesteld"
+            bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid6/Onderdeelb"
+          c:
+            tekst: "regels gesteld over hoe die rechten worden geheven"
+            bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1/Lid6/Onderdeelc"
+      logica:
+        type: delegatie
+        norm: "Ministeriële regeling bepaalt aangewezen zaken, tarieven en wijze van heffing"
+
+  functie:
+    werkwoord: machtigt
+    object: heffen van leges door Rijk
+    subject: Minister die het aangaat
+
+  delegeert:
+    - type: "bij ministeriële regeling"
+      naar: "Or / ministeriele regeling"
+      voor: "aanwijzing besluiten/tarieven/wijze heffing"
+
+  actoren:
+    - actor: minister
+      rol: "heffingsbevoegde Rijk"
+    - actor: korpschef
+      rol: "heffingsbevoegde jachtgeweervergunningen"
+
+artikel_13.1a:
+  nummer: "13.1a"
+  titel: "(heffen van rechten gemeente, waterschap en provincie)"
+  bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1a/Lid1"
+      structuur:
+        volledige_tekst: "Een gemeente, waterschap of provincie kan rechten heffen voor het in behandeling nemen van een aanvraag om een omgevingsvergunning, wijziging van voorschriften van een omgevingsvergunning of intrekking van een omgevingsvergunning. Een provincie kan ook rechten heffen voor het in behandeling nemen van een verzoek om tegemoetkoming in schade aangericht door in het wild levende dieren als bedoeld in artikel 15.53."
+      logica:
+        type: machtiging
+        norm: "Decentrale overheden kunnen leges heffen voor vergunningbehandeling"
+        subject: "gemeente, waterschap of provincie"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1a/Lid2"
+      structuur:
+        aanhef: "Als rechten door een bestuursorgaan van de gemeente worden geheven:"
+        onderdelen:
+          a:
+            tekst: "is hoofdstuk XV, paragrafen 1 en 4, van de Gemeentewet van toepassing, met dien verstande dat de rechten worden aangemerkt als gemeentelijke belastingen"
+          b:
+            tekst: "is artikel 229b van de Gemeentewet van overeenkomstige toepassing"
+      logica:
+        type: verwijzing
+        norm: "Gemeentewet van toepassing op gemeentelijke leges"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1a/Lid3"
+      structuur:
+        aanhef: "Als rechten door een bestuursorgaan van het waterschap worden geheven:"
+        onderdelen:
+          a:
+            tekst: "zijn de artikelen 110, 111 en 115a en hoofdstuk XVIII van de Waterschapswet van toepassing"
+          b:
+            tekst: "is artikel 115, derde lid, van de Waterschapswet van overeenkomstige toepassing"
+      logica:
+        type: verwijzing
+        norm: "Waterschapswet van toepassing op waterschapsleges"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.1a/Lid4"
+      structuur:
+        aanhef: "Als rechten door een bestuursorgaan van de provincie worden geheven:"
+        onderdelen:
+          a:
+            tekst: "is hoofdstuk XV, paragrafen 1 en 3, van de Provinciewet van toepassing"
+          b:
+            tekst: "is artikel 225 van de Provinciewet van overeenkomstige toepassing"
+      logica:
+        type: verwijzing
+        norm: "Provinciewet van toepassing op provinciale leges"
+
+  functie:
+    werkwoord: machtigt
+    object: heffen van leges door decentrale overheden
+    subject: gemeente, waterschap, provincie
+
+  externe_refs:
+    - naar: "BWBR0005416"
+      wet: "Gemeentewet"
+      artikel: "229b"
+    - naar: "BWBR0005108"
+      wet: "Waterschapswet"
+      artikel: "110, 111, 115, 115a"
+    - naar: "BWBR0005645"
+      wet: "Provinciewet"
+      artikel: "225"
+
+artikel_13.2:
+  nummer: "13.2"
+  titel: "(berekening en bedragen rechten en doelbelastingen)"
+  bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de berekening en de bedragen van de op grond van:"
+        onderdelen:
+          a:
+            tekst: "de artikelen 228a en 229, eerste lid, onder b, van de Gemeentewet"
+          b:
+            tekst: "artikel 115, eerste lid, onder b en c, van de Waterschapswet"
+          c:
+            tekst: "artikel 223, eerste lid, onder b, van de Provinciewet"
+          d:
+            tekst: "de artikelen 13.1 en 13.1a"
+        afsluiting: "te heffen rechten en belastingen inzake de uitoefening van taken en bevoegdheden op grond van deze wet."
+      logica:
+        type: delegatie
+        norm: "AMvB kan regels stellen over berekening en bedragen rechten"
+
+  functie:
+    werkwoord: delegeert
+    object: regelgeving over berekening rechten
+    subject: AMvB
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "regels over berekening en bedragen rechten"
+
+artikel_13.2a:
+  nummer: "13.2a"
+  titel: "(betalingsverplichting instemmingsbevoegdheid)"
+  bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2a/Lid1"
+      structuur:
+        aanhef: "Een bestuursorgaan waarvan op grond van artikel 16.16, eerste lid, instemming is vereist voor een voorgenomen beslissing op een aanvraag om een besluit, kan het bevoegd gezag verplichten tot betaling van een geldsom voor het uitbrengen van advies en het in behandeling nemen van het verzoek om instemming als:"
+        onderdelen:
+          a:
+            tekst: "het bestuursorgaan bevoegd gezag voor de aanvraag zou zijn als die alleen betrekking zou hebben op de activiteit waarvoor instemming is vereist"
+          b:
+            tekst: "het bestuursorgaan in het geval, bedoeld onder a, rechten kan heffen voor het in behandeling nemen van de aanvraag"
+      logica:
+        type: machtiging
+        norm: "Instemmend bestuursorgaan kan kosten in rekening brengen bij bevoegd gezag"
+        conditie:
+          type: indien
+          tekst: "als bestuursorgaan zelf BG zou zijn voor die activiteit"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2a/Lid2"
+      structuur:
+        aanhef: "Het bestuursorgaan kan een verplichting tot betaling van een geldsom ook opleggen als het verzoek om instemming achterwege blijft omdat:"
+        onderdelen:
+          a:
+            tekst: "het gaat om een door het bestuursorgaan aangewezen geval als bedoeld in artikel 16.16, derde lid"
+          b:
+            tekst: "het bestuursorgaan bij het uitbrengen van het advies met toepassing van artikel 16.16, vierde lid, heeft bepaald dat instemming niet is vereist"
+      logica:
+        type: machtiging
+        norm: "Ook kosten als instemming niet nodig blijkt maar advies wel is uitgebracht"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.1/Artikel13.2a/Lid3"
+      structuur:
+        volledige_tekst: "De geldsom is gelijk aan de rechten die het bestuursorgaan in het geval, bedoeld in het eerste lid, onder a, als bevoegd gezag zou heffen voor het in behandeling nemen van de aanvraag."
+      logica:
+        type: begrenzing
+        norm: "Geldsom gelijk aan normale leges"
+
+  functie:
+    werkwoord: machtigt
+    object: kostenverhaal bij instemming
+    subject: instemmend bestuursorgaan
+
+  interne_refs:
+    - naar: "artikel 16.16"
+      type: grondslag
+      context: "instemmingsbevoegdheid"
+
+# =============================================================================
+# AFDELING 13.2: VERGOEDING EN VERHAAL VAN KOSTEN
+# =============================================================================
+
+artikel_13.3:
+  nummer: "13.3"
+  titel: "(vergoeding van extra kosten bestuursorganen)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3/Lid1"
+      structuur:
+        volledige_tekst: "Als een bestuursorgaan bij de uitoefening van een taak of bevoegdheid op grond van deze wet extra kosten heeft gemaakt als gevolg van een verzoek om een besluit of maatregel als bedoeld in artikel 15.1, eerste lid, een instructie of instructieregel die gaat over een in die instructie of instructieregel aangegeven locatie of een besluit over instemming van een ander bestuursorgaan, en over de toedeling van die kosten geen overeenstemming is bereikt, kan het bij dat bestuursorgaan verzoeken om de door hem gemaakte kosten geheel of gedeeltelijk te vergoeden voor zover die kosten zijn gemaakt in verband met de behartiging van een belang van dat andere bestuursorgaan."
+      logica:
+        type: machtiging
+        norm: "Bestuursorgaan kan vergoeding extra kosten verzoeken bij ander bestuursorgaan"
+        conditie:
+          type: indien
+          tekst: "geen overeenstemming over kostenverdeling"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3/Lid2"
+      structuur:
+        aanhef: "De vergoeding kan worden toegekend voor zover:"
+        onderdelen:
+          a:
+            tekst: "de kosten redelijkerwijs niet voor rekening behoren te blijven van de rechtspersoon waartoe het bestuursorgaan behoort"
+          b:
+            tekst: "de vergoeding niet voldoende op een andere manier is verzekerd"
+          c:
+            tekst: "de vergoeding niet op grond van een wettelijk voorschrift is uitgesloten"
+      logica:
+        type: begrenzing
+        norm: "Drie cumulatieve voorwaarden voor vergoeding"
+
+  functie:
+    werkwoord: machtigt
+    object: interbestuurlijke kostenvergoeding
+    subject: bestuursorgaan dat extra kosten maakt
+
+artikel_13.3a:
+  nummer: "13.3a"
+  titel: "(verhaal van kosten bij verontreiniging fysieke leefomgeving)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a/Lid1"
+      structuur:
+        volledige_tekst: "De Staat of een provincie, gemeente of waterschap kan in bij algemene maatregel van bestuur aangewezen gevallen de voor rekening van die rechtspersoon komende kosten die het gevolg zijn van verontreiniging, aantasting, verstoring of beschadiging van daarbij aangewezen onderdelen van de fysieke leefomgeving verhalen op degene door wiens onrechtmatige daad de verontreiniging, aantasting, verstoring of beschadiging is veroorzaakt of op degene die anders op grond van burgerlijk recht buiten overeenkomst aansprakelijk is voor de gevolgen daarvan."
+      logica:
+        type: machtiging
+        norm: "Overheid kan saneringskosten verhalen op veroorzaker"
+        grondslag: "onrechtmatige daad of andere aansprakelijkheid"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a/Lid2"
+      structuur:
+        volledige_tekst: "Als sprake is van ongerechtvaardigde verrijking, kan een rechtspersoon als bedoeld in het eerste lid de voor rekening van die rechtspersoon komende kosten verhalen."
+      logica:
+        type: machtiging
+        norm: "Verhaal ook mogelijk bij ongerechtvaardigde verrijking"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a/Lid3"
+      structuur:
+        aanhef: "In gevallen waarin de veroorzaker van de verontreiniging, aantasting, verstoring of beschadiging niet op grond van een onrechtmatige daad aansprakelijk is, kunnen de in het eerste lid bedoelde kosten toch worden verhaald als de veroorzaker:"
+        onderdelen:
+          a:
+            tekst: "op het moment dat hij de verontreiniging, aantasting, verstoring of beschadiging veroorzaakte, de ernstige gevaren van de activiteit kende of behoorde te kennen"
+          b:
+            tekst: "vanwege deze ernstige gevaren ernstig verwijtbaar activiteiten die de ernstige verontreiniging, aantasting, verstoring of beschadiging hebben veroorzaakt, niet heeft nagelaten"
+      logica:
+        type: machtiging
+        norm: "Ook verhaal bij ernstige verwijtbaarheid zonder onrechtmatige daad"
+        conditie:
+          type: indien
+          tekst: "kennis van gevaren EN ernstige verwijtbaarheid"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3a/Lid4"
+      structuur:
+        aanhef: "Als de activiteit bij het uitoefenen van beroep of bedrijf is verricht, moet daarbij als het gaat om de ernstige verwijtbaarheid in het bijzonder in aanmerking worden genomen:"
+        onderdelen:
+          a:
+            tekst: "de op het moment van de verontreiniging, aantasting, verstoring of beschadiging gebruikelijke bedrijfsvoering met betrekking tot die activiteit"
+          b:
+            tekst: "de op het moment van de verontreiniging, aantasting, verstoring of beschadiging bestaande en voor de veroorzaker redelijkerwijs toepasbare alternatieven"
+      logica:
+        type: uitleg
+        norm: "Toetsingskader voor ernstige verwijtbaarheid in beroep/bedrijf"
+
+  functie:
+    werkwoord: machtigt
+    object: verhaal saneringskosten
+    subject: Staat, provincie, gemeente, waterschap
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "aanwijzing gevallen en onderdelen fysieke leefomgeving"
+
+artikel_13.3b:
+  nummer: "13.3b"
+  titel: "(verhaal kosten waterstaatswerken of zuiveringtechnische werken)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3b"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3b/Lid1"
+      structuur:
+        volledige_tekst: "De kosten in verband met schade, toegebracht aan een waterstaatswerk of een zuiveringtechnisch werk in beheer bij het Rijk of bij een provincie, gemeente of waterschap, waarvoor een eigenaar of gebruiker van een vaartuig aansprakelijk is, worden door de beheerder geraamd."
+      logica:
+        type: bepaling
+        norm: "Beheerder raamt schadekosten aan waterstaatswerk door vaartuig"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3b/Lid2"
+      structuur:
+        volledige_tekst: "Als het geraamde bedrag niet aan de beheerder wordt betaald of geen financiële zekerheid wordt gesteld voor betaling daarvan binnen een redelijke termijn, is hij bevoegd, zo nodig met behulp van de sterke arm, het voortzetten van de reis, het ondernemen van de terugtocht of het aanvangen van een nieuwe reis te beletten, ook als het vaartuig inmiddels buiten zijn ambtsgebied is gebracht."
+      logica:
+        type: machtiging
+        norm: "Beheerder kan vaartuig aanhouden bij niet-betaling schade"
+        bijzonderheid: "met sterke arm, ook buiten ambtsgebied"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3b/Lid3"
+      structuur:
+        volledige_tekst: "Als blijkt dat de werkelijke kosten minder bedragen dan het betaalde bedrag, wordt het overschot, vermeerderd met de wettelijke rente, uitgekeerd aan degene die heeft betaald."
+      logica:
+        type: verplichting
+        norm: "Terugbetaling overschot met rente"
+
+  functie:
+    werkwoord: regelt
+    object: kostenverhaal schade waterstaatswerken door vaartuigen
+    subject: beheerder waterstaatswerk
+
+artikel_13.3c:
+  nummer: "13.3c"
+  titel: "(schadevergoedingsovereenkomst)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3c"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3c/Lid1"
+      structuur:
+        volledige_tekst: "De rechtspersoon waartoe het bestuursorgaan behoort dat vergoeding van schade als bedoeld in artikel 4:126, eerste lid, van de Algemene wet bestuursrecht in samenhang met artikel 15.1, eerste lid, toekent, kan met degene die de activiteit verricht overeenkomen dat de door het bestuursorgaan toe te kennen schadevergoeding en de daarmee samenhangende kosten geheel of gedeeltelijk voor rekening komen van degene die de activiteit verricht."
+      logica:
+        type: machtiging
+        norm: "Overheid kan schadevergoedingsplicht contractueel afwentelen op initiatiefnemer"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3c/Lid2"
+      structuur:
+        volledige_tekst: "Degene die de activiteit verricht en met wie een overeenkomst als bedoeld in het eerste lid is gesloten, is belanghebbende bij het besluit tot toekenning van de schadevergoeding."
+      logica:
+        type: bepaling
+        norm: "Initiatiefnemer met overeenkomst is belanghebbende bij schadebesluit"
+
+  functie:
+    werkwoord: machtigt
+    object: contractuele afwenteling nadeelcompensatie
+    subject: rechtspersoon bestuursorgaan
+
+artikel_13.3d:
+  nummer: "13.3d"
+  titel: "(verhalen van schadevergoeding bij beschikking)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3d"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3d"
+      structuur:
+        aanhef: "Als een bestuursorgaan schadevergoeding heeft betaald als gevolg van een besluit als bedoeld in artikel 15.1 dat op aanvraag is genomen of een regel als bedoeld in artikel 15.1, eerste lid, onder d tot en met h, waarbij een activiteit is toegestaan, kan het bestuursorgaan dat bevoegd is om te beslissen op de aanvraag om schadevergoeding in bij algemene maatregel van bestuur aan te wijzen gevallen de schadevergoeding bij beschikking geheel of gedeeltelijk in rekening brengen bij de aanvrager van dat besluit of degene die de toegestane activiteit verricht, tenzij:"
+        onderdelen:
+          a:
+            tekst: "de schadevergoeding redelijkerwijze voor rekening behoort te blijven van het bestuursorgaan"
+          b:
+            tekst: "de schadevergoeding voldoende op een andere manier is verzekerd"
+      logica:
+        type: machtiging
+        norm: "Bestuursorgaan kan nadeelcompensatie bij beschikking verhalen op initiatiefnemer"
+        conditie:
+          type: tenzij
+          tekst: "tenzij voor rekening overheid of anderszins verzekerd"
+
+  functie:
+    werkwoord: machtigt
+    object: publiekrechtelijk verhaal nadeelcompensatie
+    subject: bevoegd gezag
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "aanwijzing gevallen voor verhaal bij beschikking"
+
+artikel_13.3e:
+  nummer: "13.3e"
+  titel: "(gebruiksvergoeding door initiatiefnemer)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e"
+  inwerking: "2026-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid1"
+      structuur:
+        aanhef: "De rechthebbende ontvangt van de initiatiefnemer een redelijke gebruiksvergoeding voor zover die vergoeding niet is inbegrepen in de vergoeding van de schade, bedoeld in artikel 15.14, eerste lid:"
+        onderdelen:
+          a:
+            tekst: "bij een gedoogplicht als bedoeld in artikel 10.14, tenzij de initiatiefnemer is: 1° transmissie- of distributiesysteembeheerder, 2° warmtenetbeheerder, of 3° waterstofnetbeheerder"
+            bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid1/Onderdeela"
+          b:
+            tekst: "bij een gedoogplicht als bedoeld in artikel 10.21, tenzij de initiatiefnemer een bestuursorgaan is"
+            bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid1/Onderdeelb"
+      logica:
+        type: verplichting
+        norm: "Initiatiefnemer betaalt gebruiksvergoeding bij gedoogplicht"
+        conditie:
+          type: tenzij
+          tekst: "netbeheerder of bestuursorgaan"
+        uitzondering: "netbeheerders en bestuursorganen vrijgesteld"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid2"
+      structuur:
+        volledige_tekst: "Bij ministeriële regeling worden regels gesteld over de toepassing van het eerste lid, waaronder over de hoogte van de gebruiksvergoeding."
+      logica:
+        type: delegatie
+        norm: "Hoogte gebruiksvergoeding bij ministeriële regeling"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid3"
+      structuur:
+        volledige_tekst: "Op een vordering tot gebruiksvergoeding is de civiele rechter bevoegd binnen wiens rechtsgebied de onroerende zaak geheel of in hoofdzaak is gelegen."
+      logica:
+        type: bevoegdheidsbepaling
+        norm: "Civiele rechter bevoegd voor gebruiksvergoedingsvorderingen"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.2/Artikel13.3e/Lid4"
+      structuur:
+        volledige_tekst: "Artikel 10.1 is van overeenkomstige toepassing op dit artikel."
+      logica:
+        type: verwijzing
+        norm: "Begrippen uit art. 10.1 van toepassing"
+
+  functie:
+    werkwoord: verplicht
+    object: gebruiksvergoeding bij gedoogplichten
+    subject: initiatiefnemer
+
+  interne_refs:
+    - naar: "artikel 10.14"
+      type: grondslag
+      context: "gedoogplicht kabels en leidingen"
+    - naar: "artikel 10.21"
+      type: grondslag
+      context: "gedoogplicht anders dan kabels en leidingen"
+    - naar: "artikel 15.14"
+      type: grondslag
+      context: "schadevergoeding gedoogplichten"
+
+# =============================================================================
+# AFDELING 13.2a: HEFFINGEN
+# =============================================================================
+
+artikel_13.4:
+  nummer: "13.4"
+  titel: "(grondwaterbeschermingsheffing)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4/Lid1"
+      structuur:
+        volledige_tekst: "Bij provinciale verordening kan als belasting een heffing worden ingesteld ter bestrijding van de kosten die zijn gemaakt voor de vergoeding van schade als bedoeld in artikel 4:126, eerste lid, van de Algemene wet bestuursrecht in samenhang met artikel 15.1, eerste lid, vanwege regels in een omgevingsverordening over het beschermen van de kwaliteit van het grondwater in grondwaterbeschermingsgebieden voor de bereiding van voor menselijke consumptie bestemd water..."
+      logica:
+        type: machtiging
+        norm: "Provincie kan grondwaterbeschermingsheffing instellen voor nadeelcompensatiekosten"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4/Lid2"
+      structuur:
+        volledige_tekst: "De heffing wordt geheven van de houder van een omgevingsvergunning voor een wateronttrekkingsactiviteit, als het gaat om het onttrekken van grondwater door een daarvoor bestemde voorziening, als bedoeld in artikel 5.1, tweede lid, onder d."
+      logica:
+        type: bepaling
+        norm: "Heffingsplichtige is vergunninghouder grondwateronttrekking"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4/Lid3"
+      structuur:
+        volledige_tekst: "De grondslag van de heffing is de onttrokken hoeveelheid grondwater."
+      logica:
+        type: bepaling
+        norm: "Heffingsgrondslag is onttrokken hoeveelheid"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4/Lid4"
+      structuur:
+        volledige_tekst: "Tot het instellen van een heffing wordt overgegaan binnen een jaar nadat een besluit waarbij de schadevergoeding, bedoeld in het eerste lid, is toegekend, in werking is getreden."
+      logica:
+        type: termijn
+        norm: "Instelling heffing binnen 1 jaar na schadevergoedingsbesluit"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4/Lid5"
+      structuur:
+        volledige_tekst: "De heffing wordt jaarlijks geheven gedurende een termijn van ten hoogste tien jaar. In de provinciale verordening kan worden bepaald dat de heffing op verzoek van de heffingplichtige voor de op het tijdstip van indiening van het verzoek nog niet aangevangen jaren waarover de heffing wordt geheven, ineens kan worden voldaan volgens in de verordening te stellen regels."
+      logica:
+        type: begrenzing
+        norm: "Maximaal 10 jaar, jaarlijks of ineens"
+
+  functie:
+    werkwoord: machtigt
+    object: grondwaterbeschermingsheffing door provincie
+    subject: provincie
+
+artikel_13.4a:
+  nummer: "13.4a"
+  titel: "(ontgrondingenheffing)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a/Lid1"
+      structuur:
+        aanhef: "Bij provinciale verordening kan als belasting een heffing worden ingesteld ter bestrijding van de kosten die zijn gemaakt voor:"
+        onderdelen:
+          a:
+            tekst: "de vergoeding van schade als bedoeld in artikel 4:126 Awb in samenhang met artikel 15.1 eerste lid, veroorzaakt door ontgrondingsvergunning"
+          b:
+            tekst: "onderzoek naar het verband tussen ontgrondingsactiviteit en schade aan onroerende zaken"
+          c:
+            tekst: "de bepaling van de omvang van de schade"
+      logica:
+        type: machtiging
+        norm: "Provincie kan ontgrondingenheffing instellen"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a/Lid2"
+      structuur:
+        volledige_tekst: "De heffing wordt geheven van de houder van een omgevingsvergunning voor een ontgrondingsactiviteit als bedoeld in artikel 5.1, eerste lid, aanhef en onder c."
+      logica:
+        type: bepaling
+        norm: "Heffingsplichtige is ontgrondingsvergunninghouder"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a/Lid3"
+      structuur:
+        volledige_tekst: "De grondslag van de heffing is de hoeveelheid te winnen vaste stoffen, gemeten in profiel van ontgraving, die is toegestaan op grond van de omgevingsvergunning. Een heffing kan slechts eenmaal worden geheven."
+      logica:
+        type: bepaling
+        norm: "Grondslag is vergunde winhoeveelheid, eenmalige heffing"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a/Lid4"
+      structuur:
+        volledige_tekst: "Als de omgevingsvergunning wordt vernietigd of ingetrokken of de daaraan verbonden voorschriften worden gewijzigd in die zin dat de toegestane te winnen hoeveelheid vaste stoffen wordt verminderd, vindt op verzoek van de heffingplichtige teruggaaf van de heffing plaats."
+      logica:
+        type: bepaling
+        norm: "Teruggaaf bij vernietiging/intrekking/vermindering vergunning"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4a/Lid5"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur worden regels gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de hoeveelheid te winnen vaste stoffen waarbij geen heffing is verschuldigd"
+          b:
+            tekst: "de hoogte van het bedrag waarbij geen teruggave van de heffing plaatsvindt"
+          c:
+            tekst: "de wijze van heffing"
+      logica:
+        type: delegatie
+        norm: "AMvB stelt drempelwaarden en heffingswijze"
+
+  functie:
+    werkwoord: machtigt
+    object: ontgrondingenheffing door provincie
+    subject: provincie
+
+artikel_13.4b:
+  nummer: "13.4b"
+  titel: "(grondwateronttrekkingsheffing)"
+  bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4b"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4b/Lid1"
+      structuur:
+        aanhef: "Bij provinciale verordening kan als belasting een heffing worden ingesteld op het onttrekken van grondwater ter bestrijding van kosten die door de provincie zijn gemaakt voor:"
+        onderdelen:
+          a:
+            tekst: "maatregelen die direct verband houden met het voorkomen en tegengaan van nadelige gevolgen van het onttrekken van grondwater en het in de bodem brengen van water"
+          b:
+            tekst: "noodzakelijke onderzoeken voor het grondwaterbeleid en de vaststelling van schade als bedoeld in artikel 15.13 lid 1"
+          c:
+            tekst: "het houden van een register met gegevens over het onttrekken van grondwater"
+          d:
+            tekst: "de vergoeding van schade uit grondwateronttrekking waarvoor GS bevoegd gezag is"
+      logica:
+        type: machtiging
+        norm: "Provincie kan algemene grondwateronttrekkingsheffing instellen"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4b/Lid2"
+      structuur:
+        aanhef: "De heffing wordt geheven van degenen die bij de verordening zijn aangewezen. Daartoe behoren:"
+        onderdelen:
+          a:
+            tekst: "de houder van een omgevingsvergunning voor wateronttrekkingsactiviteit"
+          b:
+            tekst: "degene die melding heeft gedaan voor grondwateronttrekking"
+          c:
+            tekst: "in andere gevallen: degene voor wie de onttrekking plaatsvindt"
+      logica:
+        type: bepaling
+        norm: "Heffingsplichtige: vergunninghouder, melder of feitelijke onttrekker"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4b/Lid3"
+      structuur:
+        volledige_tekst: "De grondslag van de heffing is de onttrokken hoeveelheid water. Als op grond van vergunningvoorschriften water in de bodem wordt gebracht, wordt voor het vaststellen van de grondslag de in de bodem gebrachte hoeveelheid water in mindering gebracht op de onttrokken hoeveelheid volgens de bij de verordening te stellen regels."
+      logica:
+        type: bepaling
+        norm: "Grondslag is netto-onttrekking (na aftrek infiltratie)"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.2a/Artikel13.4b/Lid4"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kan worden bepaald dat het bij de maatregel aan te geven onttrekken van grondwater is vrijgesteld van de heffing. Bij de maatregel kunnen regels worden gesteld over de kosten van noodzakelijke onderzoeken."
+      logica:
+        type: delegatie
+        norm: "AMvB kan vrijstellingen bepalen"
+
+  functie:
+    werkwoord: machtigt
+    object: grondwateronttrekkingsheffing door provincie
+    subject: provincie
+
+# =============================================================================
+# AFDELING 13.3: FINANCIELE BEPALINGEN OMGEVINGSVERGUNNINGEN
+# =============================================================================
+
+artikel_13.5:
+  nummer: "13.5"
+  titel: "(financiële zekerheid)"
+  bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5/Lid1"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur worden gevallen aangewezen waarin aan een omgevingsvergunning die betrekking heeft op een activiteit die significante nadelige gevolgen voor de fysieke leefomgeving kan hebben, het voorschrift wordt of kan worden verbonden dat degene die de activiteit verricht, financiële zekerheid stelt:"
+        onderdelen:
+          a:
+            tekst: "voor het nakomen van verplichtingen die op grond van de omgevingsvergunning voor diegene gelden"
+          b:
+            tekst: "ter dekking van zijn aansprakelijkheid voor schade aan de fysieke leefomgeving als gevolg van die activiteit"
+      logica:
+        type: verplichting
+        norm: "AMvB wijst gevallen aan voor verplichte financiële zekerheid bij vergunning"
+        doel: "nakomen verplichtingen of dekking aansprakelijkheid"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5/Lid2"
+      structuur:
+        volledige_tekst: "Als degene die de activiteit verricht een openbaar lichaam is, wordt geen voorschrift over financiële zekerheid aan een omgevingsvergunning verbonden, tenzij bij algemene maatregel van bestuur anders is bepaald."
+      logica:
+        type: uitzondering
+        norm: "Openbare lichamen vrijgesteld van financiële zekerheid"
+        conditie:
+          type: tenzij
+          tekst: "AMvB anders bepaalt"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5/Lid3"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur worden regels gesteld over de toepassing van het eerste lid. In ieder geval worden regels gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de vorm waarin financiële zekerheid wordt gesteld"
+          b:
+            tekst: "de hoogte van het bedrag waarvoor financiële zekerheid wordt gesteld"
+          c:
+            tekst: "hoe lang de financiële zekerheid in stand wordt gehouden"
+      logica:
+        type: delegatie
+        norm: "AMvB regelt vorm, hoogte en duur financiële zekerheid"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5/Lid4"
+      structuur:
+        volledige_tekst: "Als een voorschrift als bedoeld in het eerste lid aan een omgevingsvergunning is verbonden en de verplichting niet wordt nageleefd of schade is ontstaan, kan het bevoegd gezag de kosten of een deel van de kosten die zijn gemaakt om naleving af te dwingen of de schade te herstellen verhalen op de gestelde financiële zekerheid. Het bevoegd gezag kan het te verhalen bedrag invorderen bij dwangbevel."
+      logica:
+        type: machtiging
+        norm: "Bevoegd gezag kan kosten verhalen op financiële zekerheid, met dwangbevel"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.5/Lid5"
+      structuur:
+        volledige_tekst: "Aan een besluit tot gehele of gedeeltelijke intrekking van een omgevingsvergunning als bedoeld in het eerste lid kan een voorschrift als bedoeld in het eerste lid worden verbonden. Bij dat besluit kan worden bepaald dat een voorschrift als bedoeld in het eerste lid gedurende een in het besluit te bepalen termijn blijft gelden."
+      logica:
+        type: machtiging
+        norm: "Financiële zekerheid kan doorlopen na intrekking vergunning"
+
+  functie:
+    werkwoord: verplicht
+    object: financiële zekerheid bij omgevingsvergunning
+    subject: vergunninghouder
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "aanwijzing gevallen, vorm, hoogte en duur financiële zekerheid"
+
+artikel_13.6:
+  nummer: "13.6"
+  titel: "(financiële voorschriften voor een ontgrondingsactiviteit)"
+  bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.3/Artikel13.6"
+      structuur:
+        aanhef: "Onverminderd artikel 13.5 kan aan een omgevingsvergunning voor een ontgrondingsactiviteit het voorschrift worden verbonden dat:"
+        onderdelen:
+          a:
+            tekst: "in plaats van de plicht tot het herstellen of realiseren van een toestand een bepaald bedrag ineens of in gedeelten wordt betaald"
+          b:
+            tekst: "de kosten van het beheer van onroerende zaken die zijn ontgrond geheel of gedeeltelijk worden betaald"
+          c:
+            tekst: "de kosten voor de aanpassing van de inrichting van de omgeving van de ontgronde onroerende zaken en van het beheer van de aangepaste omgeving, voor zover zij het gevolg zijn van de ontgronding, geheel of gedeeltelijk worden betaald"
+      logica:
+        type: machtiging
+        norm: "Bijzondere financiële voorschriften mogelijk bij ontgrondingsvergunning"
+        conditie:
+          type: onverminderd
+          tekst: "art. 13.5 blijft van toepassing"
+
+  functie:
+    werkwoord: machtigt
+    object: financiële voorschriften ontgrondingsvergunning
+    subject: bevoegd gezag
+
+# =============================================================================
+# AFDELING 13.4: VERGOEDING ADVIEZEN CIE M.E.R.
+# =============================================================================
+
+artikel_13.7:
+  nummer: "13.7"
+  titel: "(vergoeding voor adviezen van de Commissie voor de milieueffectrapportage)"
+  bron_path: "/Hoofdstuk13/Afdeling13.4/Artikel13.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.4/Artikel13.7/Lid1"
+      structuur:
+        volledige_tekst: "De kosten van de Commissie voor de milieueffectrapportage en het bureau van de commissie worden gedekt uit door de commissie vast te stellen en in rekening te brengen tarieven voor de uit te brengen adviezen."
+      logica:
+        type: bepaling
+        norm: "Commissie m.e.r. wordt gefinancierd uit tarieven voor adviezen"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.4/Artikel13.7/Lid2"
+      structuur:
+        volledige_tekst: "De tarieven hebben een rechtstreeks verband met de adviezen, belopen niet meer dan nodig is ter dekking van de voor de adviezen gemaakte kosten en behoeven de goedkeuring van Onze Minister van Infrastructuur en Waterstaat."
+      logica:
+        type: begrenzing
+        norm: "Tarieven kostendekkend, goedkeuring Minister IenW vereist"
+        principe: kostendekkendheidsbeginsel
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.4/Artikel13.7/Lid3"
+      structuur:
+        volledige_tekst: "De artikelen 10:28 tot en met 10:31 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing op de goedkeuring."
+      logica:
+        type: verwijzing
+        norm: "Awb-goedkeuringsregime van toepassing"
+
+  functie:
+    werkwoord: regelt
+    object: financiering Commissie m.e.r.
+    subject: Commissie voor de milieueffectrapportage
+
+  actoren:
+    - actor: "Commissie voor de milieueffectrapportage"
+      rol: "adviseur en tariefsteller"
+    - actor: "Minister van IenW"
+      rol: "goedkeuring tarieven"
+
+# =============================================================================
+# AFDELING 13.5: FINANCIELE BEPALINGEN LANDINRICHTING
+# =============================================================================
+
+artikel_13.7a:
+  nummer: "13.7a"
+  titel: "(positie zakelijk gerechtigden)"
+  bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.7a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.7a"
+      structuur:
+        volledige_tekst: "Artikel 12.2 is van overeenkomstige toepassing."
+      logica:
+        type: verwijzing
+        norm: "Zakelijk gerechtigden behandeld als eigenaar voor kosten landinrichting"
+
+  functie:
+    werkwoord: verwijst
+    object: positie zakelijk gerechtigden
+    subject: financiële bepalingen landinrichting
+
+  interne_refs:
+    - naar: "artikel 12.2"
+      type: grondslag
+      context: "zakelijk gerechtigden gelijkgesteld aan eigenaren"
+
+artikel_13.8:
+  nummer: "13.8"
+  titel: "(kosten landinrichting)"
+  bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.8"
+      structuur:
+        volledige_tekst: "De kosten van landinrichting als bedoeld in artikel 12.3 worden gedragen door de provincie, voor zover zij niet op grond van de artikelen 13.9 en 13.10 worden gedragen door andere openbare lichamen of eigenaren."
+      logica:
+        type: bepaling
+        norm: "Provincie draagt landinrichtingskosten, behoudens doorberekening aan anderen"
+        default: "provincie betaalt"
+        uitzondering: "doorberekening aan openbare lichamen of eigenaren"
+
+  functie:
+    werkwoord: bepaalt
+    object: kostendragende partij landinrichting
+    subject: provincie
+
+  interne_refs:
+    - naar: "artikel 12.3"
+      type: grondslag
+      context: "definitie landinrichting"
+    - naar: "artikel 13.9"
+      type: verwijzing
+      context: "kostenverdeling andere lichamen/eigenaren"
+    - naar: "artikel 13.10"
+      type: verwijzing
+      context: "heffing en invordering"
+
+artikel_13.9:
+  nummer: "13.9"
+  titel: "(andere openbare lichamen en eigenaren)"
+  bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9/Lid1"
+      structuur:
+        volledige_tekst: "Ten laste van andere openbare lichamen dan de provincie komen de kosten waartoe zij zich op grond van 12.17, tweede lid, of op een andere manier bij overeenkomst hebben verplicht."
+      logica:
+        type: bepaling
+        norm: "Openbare lichamen dragen kosten waartoe zij zich verplicht hebben"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9/Lid2"
+      structuur:
+        volledige_tekst: "Ten laste van de eigenaren van de in een herverkaveling betrokken onroerende zaken gezamenlijk komen de kosten van herverkaveling die zijn gemaakt voor het herverkavelingsblok."
+      logica:
+        type: bepaling
+        norm: "Eigenaren dragen gezamenlijk herverkavelingskosten"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9/Lid3"
+      structuur:
+        aanhef: "Op de kosten die ten laste van de eigenaren komen, worden in mindering gebracht:"
+        onderdelen:
+          a:
+            tekst: "kosten van herverkaveling die door een subsidie of andere overheidsbijdrage worden gedekt"
+          b:
+            tekst: "kosten van herverkaveling waarvan de betaling bij overeenkomst is verzekerd"
+          c:
+            tekst: "bedragen die op grond van artikel 12.32 door een openbaar lichaam of andere rechtspersonen zijn betaald voor de toewijzing van percelen voor voorzieningen van openbaar nut..."
+      logica:
+        type: bepaling
+        norm: "Aftrekposten op eigenaarsbijdrage"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9/Lid4"
+      structuur:
+        volledige_tekst: "De kosten die ten laste van de eigenaren gezamenlijk komen, worden over de eigenaren omgeslagen zoals bepaald in het besluit geldelijke regelingen. Elke eigenaar is schuldplichtig voor de over hem omgeslagen kosten."
+      logica:
+        type: verplichting
+        norm: "Omslag kosten over eigenaren conform besluit geldelijke regelingen"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.9/Lid5"
+      structuur:
+        volledige_tekst: "Nadat de beroepstermijn voor het besluit geldelijke regelingen is verstreken, of, als beroep is ingesteld, op het beroep is beslist, worden de kosten die over de eigenaren worden omgeslagen gecorrigeerd met een door gedeputeerde staten vastgestelde correctiefactor."
+      logica:
+        type: bepaling
+        norm: "Correctiefactor na definitief worden besluit geldelijke regelingen"
+
+  functie:
+    werkwoord: bepaalt
+    object: kostenverdeling landinrichting
+    subject: openbare lichamen en eigenaren
+
+artikel_13.10:
+  nummer: "13.10"
+  titel: "(heffing en invordering kosten landinrichting)"
+  bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid1"
+      structuur:
+        volledige_tekst: "Op de heffing en de invordering van de over de eigenaren omgeslagen kosten zijn de artikelen 227, 227a, 228, 228b, 228c, 232, 232aa, 232b, 232c, 232d, 232e, 232f en 232h van de Provinciewet van overeenkomstige toepassing."
+      logica:
+        type: verwijzing
+        norm: "Provinciewet-regime voor heffing en invordering"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid2"
+      structuur:
+        volledige_tekst: "De omgeslagen kosten worden geheven bij wege van aanslag."
+      logica:
+        type: bepaling
+        norm: "Heffing bij aanslag"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid3"
+      structuur:
+        volledige_tekst: "Als de over een eigenaar omgeslagen kosten geringer zijn dan een bij provinciale verordening vast te stellen bedrag, worden deze kosten niet geheven."
+      logica:
+        type: begrenzing
+        norm: "Drempelbedrag onder welke geen heffing"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid4"
+      structuur:
+        volledige_tekst: "Als voor eenzelfde onroerende zaak twee of meer eigenaren kostenplichtig zijn en het derde lid op geen van hen van toepassing is, kan de belastingaanslag op naam van een van hen worden gesteld..."
+      logica:
+        type: bepaling
+        norm: "Bij meerdere eigenaren: hoofdelijke aansprakelijkheid"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid5"
+      structuur:
+        volledige_tekst: "Bezwaar en beroep als bedoeld in hoofdstuk V, afdeling 1 of afdeling 2, van de Algemene wet inzake rijksbelastingen, kunnen niet de hoogte van de omgeslagen kosten betreffen."
+      logica:
+        type: begrenzing
+        norm: "Geen bezwaar/beroep tegen hoogte omslag, alleen tegen besluit geldelijke regelingen"
+
+    6:
+      bron_path: "/Hoofdstuk13/Afdeling13.5/Artikel13.10/Lid6"
+      structuur:
+        volledige_tekst: "Artikel 17, tweede lid, tweede zin, van de Invorderingswet 1990 blijft buiten toepassing."
+      logica:
+        type: uitzondering
+        norm: "Invorderingswet-bepaling niet van toepassing"
+
+  functie:
+    werkwoord: regelt
+    object: heffing en invordering landinrichtingskosten
+    subject: provincie
+
+# =============================================================================
+# AFDELING 13.6: KOSTENVERHAAL BOUWACTIVITEITEN
+# =============================================================================
+
+artikel_13.11:
+  nummer: "13.11"
+  titel: "(verhalen van kosten)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.11/Lid1"
+      structuur:
+        aanhef: "Op degene die bij algemene maatregel van bestuur aan te wijzen bouwactiviteiten of activiteiten met het oog op het gebruik op grond van een nieuw toegedeelde functie verricht, verhaalt het bestuursorgaan de kosten die het vanwege bij die maatregel aangewezen kostensoorten maakt, voor zover:"
+        onderdelen:
+          a:
+            tekst: "de kostensoorten toerekenbaar zijn aan het kostenverhaalsgebied"
+            bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.11/Lid1/Onderdeela"
+          b:
+            tekst: "de kosten proportioneel zijn in verhouding tot het profijt dat het kostenverhaalsgebied van de kostensoorten heeft"
+            bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.11/Lid1/Onderdeelb"
+      logica:
+        type: verplichting
+        norm: "Bestuursorgaan VERHAALT kosten op initiatiefnemer"
+        conditie:
+          type: voor_zover
+          tekst: "toerekenbaar EN proportioneel"
+        criteria:
+          - toerekenbaarheid
+          - proportionaliteit
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.11/Lid2"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur wordt bepaald in welke gevallen het bestuursorgaan kan besluiten om de kosten niet te verhalen."
+      logica:
+        type: delegatie
+        norm: "AMvB bepaalt uitzonderingsgevallen"
+
+  functie:
+    werkwoord: verplicht
+    object: kostenverhaal bij bouwactiviteiten
+    subject: bestuursorgaan
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "aanwijzing bouwactiviteiten, kostensoorten en uitzonderingen"
+
+artikel_13.12:
+  nummer: "13.12"
+  titel: "(verbod activiteit te verrichten)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.12"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.1/Artikel13.12"
+      structuur:
+        volledige_tekst: "Het is verboden een op grond van artikel 13.11, eerste lid, aangewezen activiteit te verrichten, voordat de op grond van deze afdeling verschuldigde kosten zijn betaald."
+      logica:
+        type: verbod
+        norm: "Geen bouwactiviteit voordat kosten zijn betaald"
+        handhavingsinstrument: true
+
+  functie:
+    werkwoord: verbiedt
+    object: bouwen zonder kostenbetaling
+    subject: initiatiefnemer
+
+artikel_13.13:
+  nummer: "13.13"
+  titel: "(kostenverhaal bij overeenkomst)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.2/Artikel13.13"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.2/Artikel13.13/Lid1"
+      structuur:
+        volledige_tekst: "De rechtspersoon waarvan het bestuursorgaan een orgaan is, kan met degene die kosten is verschuldigd een overeenkomst aangaan over kostenverhaal."
+      logica:
+        type: machtiging
+        norm: "Privaatrechtelijke overeenkomst voor kostenverhaal mogelijk"
+        route: privaatrechtelijk
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.2/Artikel13.13/Lid2"
+      structuur:
+        volledige_tekst: "Bij de overeenkomst kan worden bepaald dat de betaling geheel of gedeeltelijk na aanvang van de activiteit plaatsvindt, mits aan de overeenkomst voorwaarden worden verbonden over het stellen van aanvullende zekerheden voor de betaling. In dat geval geldt het verbod, bedoeld in artikel 13.12, niet."
+      logica:
+        type: bepaling
+        norm: "Overeenkomst kan uitgestelde betaling toestaan met zekerheid"
+        effect: "verbod art. 13.12 vervalt"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.2/Artikel13.13/Lid3"
+      structuur:
+        volledige_tekst: "Paragraaf 13.6.3 is niet van toepassing voor zover het verhalen van kosten als bedoeld in artikel 13.11, eerste lid, is verzekerd vanwege een overeenkomst als bedoeld in het eerste lid."
+      logica:
+        type: uitzondering
+        norm: "Overeenkomst gaat voor publiekrechtelijk kostenverhaal"
+
+  functie:
+    werkwoord: machtigt
+    object: privaatrechtelijk kostenverhaal
+    subject: gemeente
+
+artikel_13.14:
+  nummer: "13.14"
+  titel: "(kostenverhaal met tijdvak in omgevingsplan, omgevingsvergunning en projectbesluit)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.14"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.14/Lid1"
+      structuur:
+        aanhef: "In het omgevingsplan:"
+        onderdelen:
+          a:
+            tekst: "worden kostenverhaalsgebieden aangewezen waarvoor de kosten, bedoeld in artikel 13.11, eerste lid, worden gemaakt"
+          b:
+            tekst: "wordt per kostenverhaalsgebied bepaald welke kostensoorten waarvan het gebied ten dele profijt heeft, naar evenredigheid aan dat kostenverhaalsgebied worden toegerekend"
+          c:
+            tekst: "wordt per kostenverhaalsgebied een raming van de kosten opgenomen"
+          d:
+            tekst: "wordt per kostenverhaalsgebied een raming van de opbrengsten van alle daarin gelegen gronden opgenomen"
+          e:
+            tekst: "worden per kostenverhaalsgebied regels gesteld over: 1° de verdeling van de kosten over de activiteiten, en 2° de eindafrekening van de kosten"
+      logica:
+        type: verplichting
+        norm: "Omgevingsplan regelt kostenverhaal per kostenverhaalsgebied met tijdvak"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.14/Lid2"
+      structuur:
+        volledige_tekst: "Als de te verhalen kosten, verminderd met de door het bestuursorgaan ontvangen of te ontvangen bijdragen en subsidies van derden, hoger zijn dan de opbrengsten van de gronden binnen het kostenverhaalsgebied, kan het bestuursorgaan die kosten slechts verhalen tot ten hoogste het bedrag van die opbrengsten."
+      logica:
+        type: begrenzing
+        norm: "Kostenverhaal begrensd tot grondopbrengsten (macro-aftopping)"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.14/Lid3"
+      structuur:
+        aanhef: "Het eerste en tweede lid zijn van overeenkomstige toepassing op:"
+        onderdelen:
+          a:
+            tekst: "een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, voor zover sprake is van een activiteit die in strijd is met een in het omgevingsplan aan een locatie toegedeelde functie"
+          b:
+            tekst: "een projectbesluit"
+      logica:
+        type: verwijzing
+        norm: "Ook van toepassing op bopa-vergunning en projectbesluit"
+
+  functie:
+    werkwoord: verplicht
+    object: publiekrechtelijk kostenverhaal met tijdvak
+    subject: gemeente
+
+artikel_13.15:
+  nummer: "13.15"
+  titel: "(kostenverhaal zonder tijdvak in omgevingsplan)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.15/Lid1"
+      structuur:
+        aanhef: "Als voor een kostenverhaalsgebied in een omgevingsplan geen tijdvak voor de uitvoering van de werken, werkzaamheden en maatregelen en de activiteiten is vastgesteld, is artikel 13.14, eerste lid, van overeenkomstige toepassing, met dien verstande dat:"
+        onderdelen:
+          a:
+            tekst: "de raming kan inhouden dat alleen het maximum van de globaal te verhalen kosten als geheel per kostenverhaalsgebied wordt opgenomen"
+          b:
+            tekst: "artikel 13.14, onder d, buiten toepassing kan blijven"
+      logica:
+        type: bepaling
+        norm: "Vereenvoudigd regime voor kostenverhaal zonder tijdvak"
+        bijzonderheid: "globale raming toegestaan"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.15/Lid2"
+      structuur:
+        aanhef: "Bij toepassing van het eerste lid:"
+        onderdelen:
+          a:
+            tekst: "houdt de verdeling, bedoeld in artikel 13.14, eerste lid, onder e, onder 1°, ook in dat per activiteit het maximum van de te verhalen kosten wordt opgenomen"
+          b:
+            tekst: "is artikel 13.14, tweede lid, niet van toepassing en geldt in plaats daarvan dat de kosten worden verhaald tot ten hoogste het bedrag van de waardevermeerdering van de locatie waar de activiteit wordt verricht"
+      logica:
+        type: bepaling
+        norm: "Begrenzing op waardevermeerdering (micro-aftopping)"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.15/Lid3"
+      structuur:
+        volledige_tekst: "Bij het op grond van artikel 13.11, eerste lid, aanhef, bij algemene maatregel van bestuur aanwijzen van kostensoorten kan onderscheid worden gemaakt tussen kostenverhaalsgebieden waarvoor wel een tijdvak en die waarvoor geen tijdvak voor de uitvoering van de werken, werkzaamheden en maatregelen en de activiteiten is opgenomen."
+      logica:
+        type: delegatie
+        norm: "AMvB kan onderscheid maken in kostensoorten naar tijdvak-status"
+
+  functie:
+    werkwoord: regelt
+    object: kostenverhaal zonder tijdvak
+    subject: gemeente
+
+artikel_13.16:
+  nummer: "13.16"
+  titel: "(verdeling van de kosten)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.16"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.16"
+      structuur:
+        volledige_tekst: "De verschuldigde geldsom wordt berekend door de kosten over de activiteiten te verdelen naar rato van de opbrengsten van de gronden."
+      logica:
+        type: bepaling
+        norm: "Kostenverdeling naar rato van grondopbrengsten"
+        methode: "pro rata"
+
+  functie:
+    werkwoord: bepaalt
+    object: kostenverdelingsmethode
+    subject: kostenverhaal
+
+artikel_13.17:
+  nummer: "13.17"
+  titel: "(opbrengsten, waardevermeerdering en inbrengwaarde van gronden)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.17"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.17/Lid1"
+      structuur:
+        volledige_tekst: "De opbrengsten, bedoeld in artikel 13.14, tweede lid, de waardevermeerdering, bedoeld in artikel 13.15, tweede lid, en de inbrengwaarde van de gronden, bedoeld in artikel 13.18, tweede lid, onder a, worden geraamd op basis van objectief bepaalbare maatstaven."
+      logica:
+        type: verplichting
+        norm: "Objectieve raming vereist"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.17/Lid2"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur worden nadere regels gesteld over de in het eerste lid bedoelde ramingen."
+      logica:
+        type: delegatie
+        norm: "AMvB stelt taxatieregels"
+
+  functie:
+    werkwoord: regelt
+    object: taxatiemethodiek kostenverhaal
+    subject: AMvB
+
+artikel_13.18:
+  nummer: "13.18"
+  titel: "(wijze van kostenverhaal)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.18"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.18/Lid1"
+      structuur:
+        volledige_tekst: "Als er geen overeenkomst is aangegaan, wordt de verschuldigde geldsom door het college van burgemeesters en wethouders, gedeputeerde staten of Onze Minister die het aangaat bij beschikking vastgesteld volgens hetgeen daarover is bepaald in of op grond van deze wet en in het omgevingsplan, de omgevingsvergunning, bedoeld in artikel 13.14, derde lid, onder a, of het projectbesluit."
+      logica:
+        type: bepaling
+        norm: "Kostenverhaal bij beschikking als geen overeenkomst"
+        bevoegd_gezag: "B&W, GS of Minister"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.18/Lid2"
+      structuur:
+        aanhef: "Als toepassing is gegeven aan artikel 13.14 worden in mindering gebracht:"
+        onderdelen:
+          a:
+            tekst: "de inbrengwaarde van de gronden waarop de aanvraag betrekking heeft"
+          b:
+            tekst: "de kosten die door de aanvrager zijn gemaakt, voor zover die kosten gelijk zijn aan of lager zijn dan de raming van de kosten in het omgevingsplan"
+      logica:
+        type: bepaling
+        norm: "Aftrekposten: inbrengwaarde en zelf gemaakte kosten"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.18/Lid3"
+      structuur:
+        volledige_tekst: "Als toepassing is gegeven aan artikel 13.15, bevat de beschikking een raming van de kosten en van de waardevermeerdering waarop de verschuldigde geldsom is gebaseerd."
+      logica:
+        type: verplichting
+        norm: "Beschikking bevat onderbouwing bij kostenverhaal zonder tijdvak"
+
+  functie:
+    werkwoord: regelt
+    object: beschikking kostenverhaal
+    subject: B&W, GS, Minister
+
+artikel_13.19:
+  nummer: "13.19"
+  titel: "(betaling na aanvang activiteit)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.19"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.19/Lid1"
+      structuur:
+        volledige_tekst: "Bij de beschikking kan worden bepaald dat de betaling geheel of gedeeltelijk na aanvang van de activiteit plaatsvindt, mits aan de beschikking voorschriften worden verbonden over het stellen van aanvullende zekerheden voor de betaling van de verschuldigde geldsom. Het verbod, bedoeld in artikel 13.12, geldt dan niet."
+      logica:
+        type: machtiging
+        norm: "Uitgestelde betaling mogelijk bij beschikking met zekerheid"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.19/Lid2"
+      structuur:
+        volledige_tekst: "Bij het uitblijven van betaling kan het bestuursorgaan de verschuldigde geldsom invorderen bij dwangbevel."
+      logica:
+        type: machtiging
+        norm: "Invordering bij dwangbevel mogelijk"
+
+  functie:
+    werkwoord: machtigt
+    object: uitgestelde betaling en dwangbevel
+    subject: bestuursorgaan
+
+artikel_13.20:
+  nummer: "13.20"
+  titel: "(voorwaarden eindafrekening)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid1"
+      structuur:
+        volledige_tekst: "De regeling voor de eindafrekening, bedoeld in artikel 13.14, eerste lid, onder e, onder 2°, leidt er niet toe dat er een aanvullende geldsom is verschuldigd."
+      logica:
+        type: begrenzing
+        norm: "Geen nabetaling bij eindafrekening"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid2"
+      structuur:
+        volledige_tekst: "Als een opnieuw berekende geldsom meer dan vijf procent lager is dan de op grond van de beschikking betaalde geldsom, betaalt het bestuursorgaan binnen vier weken na de eindafrekening het verschil, voor zover het groter is dan vijf procent, naar evenredigheid terug met rente."
+      logica:
+        type: verplichting
+        norm: "Terugbetaling bij >5% verschil, met rente"
+        drempel: "5%"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid3"
+      structuur:
+        volledige_tekst: "Als toepassing is gegeven aan artikel 13.15 en de opnieuw berekende geldsom is gebaseerd op andere kosten dan de kosten waarop de bij beschikking vastgestelde verschuldigde geldsom op grond van artikel 13.18, derde lid, is gebaseerd, vindt geen terugbetaling plaats voor zover..."
+      logica:
+        type: uitzondering
+        norm: "Geen terugbetaling bij kostenverhaal zonder tijdvak onder voorwaarden"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid4"
+      structuur:
+        volledige_tekst: "Op verzoek van een belanghebbende heeft eindafrekening van een locatie plaats als dat verzoek ten minste vijf jaar na betaling van de verschuldigde geldsom wordt gedaan."
+      logica:
+        type: recht
+        norm: "Recht op eindafrekening na 5 jaar"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid5"
+      structuur:
+        volledige_tekst: "De eindafrekeningen, bedoeld in het vierde lid, kunnen jaarlijks op hetzelfde tijdstip plaatshebben."
+      logica:
+        type: bepaling
+        norm: "Jaarlijkse gebundelde eindafrekening mogelijk"
+
+    6:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.20/Lid6"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur worden nadere regels gesteld over een eindafrekening als bedoeld in het derde lid."
+      logica:
+        type: delegatie
+        norm: "AMvB regelt eindafrekening zonder tijdvak"
+
+  functie:
+    werkwoord: regelt
+    object: eindafrekening kostenverhaal
+    subject: bestuursorgaan
+
+artikel_13.21:
+  nummer: "13.21"
+  titel: "(hoogte en begrenzing van kostensoorten)"
+  bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.21"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.6/Paragraaf13.6.3/Artikel13.21"
+      structuur:
+        volledige_tekst: "Bij regeling van Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties worden regels gesteld over de hoogte en de begrenzing van een of meer van de kostensoorten. Daarbij kan onderscheid worden gemaakt naar het type locatie en de aard en omvang van de activiteit."
+      logica:
+        type: delegatie
+        norm: "Ministeriële regeling stelt kostenpla(fond)s"
+
+  functie:
+    werkwoord: delegeert
+    object: kostensoortenplafonds
+    subject: Minister BZK
+
+  delegeert:
+    - type: "bij ministeriële regeling"
+      naar: "Or"
+      voor: "hoogte en begrenzing kostensoorten"
+
+# =============================================================================
+# AFDELING 13.7: FINANCIELE BIJDRAGEN GEBIEDSONTWIKKELING
+# =============================================================================
+
+artikel_13.22:
+  nummer: "13.22"
+  titel: "(financiële bijdragen voor ontwikkelingen van een gebied)"
+  bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.22"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.22/Lid1"
+      structuur:
+        volledige_tekst: "Het college van burgemeester en wethouders, gedeputeerde staten of Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties kunnen in een overeenkomst over bij algemene maatregel van bestuur aangewezen activiteiten bepalingen opnemen over financiële bijdragen voor ontwikkelingen van een gebied op basis van een omgevingsvisie of programma."
+      logica:
+        type: machtiging
+        norm: "Privaatrechtelijke afspraken over financiële bijdragen gebiedsontwikkeling"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.22/Lid2"
+      structuur:
+        volledige_tekst: "Op de overeenkomst is artikel 16.138 van overeenkomstige toepassing."
+      logica:
+        type: verwijzing
+        norm: "Procedurele bepaling van toepassing"
+
+  functie:
+    werkwoord: machtigt
+    object: privaatrechtelijke financiële bijdragen gebiedsontwikkeling
+    subject: B&W, GS, Minister BZK
+
+artikel_13.23:
+  nummer: "13.23"
+  titel: "(verhaal van financiële bijdragen in omgevingsplan)"
+  bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23/Lid1"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur kunnen categorieën ontwikkelingen ter verbetering van de kwaliteit van de fysieke leefomgeving worden aangewezen waarvoor in een omgevingsplan kan worden bepaald dat een financiële bijdrage wordt verhaald op degene die een activiteit als bedoeld in artikel 13.11 verricht, voor zover:"
+        onderdelen:
+          a:
+            tekst: "er een functionele samenhang tussen de activiteit en de beoogde ontwikkelingen is"
+          b:
+            tekst: "de bekostiging van de ontwikkelingen niet anderszins is verzekerd"
+      logica:
+        type: machtiging
+        norm: "Publiekrechtelijk verhaal financiële bijdragen mogelijk"
+        conditie:
+          type: voor_zover
+          tekst: "functionele samenhang EN niet anderszins verzekerd"
+
+    2:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23/Lid2"
+      structuur:
+        volledige_tekst: "Het omgevingsplan bepaalt dat financiële bijdragen alleen worden besteed aan ontwikkelingen waarvoor die bijdragen zijn verhaald en voorziet erin dat periodiek aan het publiek verantwoording wordt afgelegd over de besteding van de verhaalde financiële bijdragen."
+      logica:
+        type: verplichting
+        norm: "Oormerking en verantwoording financiële bijdragen"
+
+    3:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23/Lid3"
+      structuur:
+        aanhef: "Het bedrag dat ten hoogste aan financiële bijdragen kan worden verhaald is in ieder geval niet hoger dan:"
+        onderdelen:
+          a:
+            tekst: "de opbrengsten verminderd met inbrengwaarde (met tijdvak)"
+          b:
+            tekst: "de waardevermeerdering (zonder tijdvak)"
+      logica:
+        type: begrenzing
+        norm: "Financiële bijdrage begrensd tot waardetoename"
+
+    4:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23/Lid4"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de maximale hoogte van de financiële bijdrage"
+          b:
+            tekst: "de eindafrekening van financiële bijdragen"
+      logica:
+        type: delegatie
+        norm: "AMvB kan nadere regels stellen"
+
+    5:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.23/Lid5"
+      structuur:
+        volledige_tekst: "In een omgevingsvisie of programma kan voor de locatie waar de activiteit wordt verricht een onderbouwing van de functionele samenhang, bedoeld in het eerste lid, onder a, worden vastgelegd."
+      logica:
+        type: bepaling
+        norm: "Onderbouwing functionele samenhang in visie/programma mogelijk"
+
+  functie:
+    werkwoord: machtigt
+    object: publiekrechtelijk verhaal financiële bijdragen
+    subject: gemeente
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "categorieën ontwikkelingen, maxima en eindafrekening"
+
+artikel_13.24:
+  nummer: "13.24"
+  titel: "(wijze van verhaal van financiële bijdragen)"
+  bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.24"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk13/Afdeling13.7/Artikel13.24"
+      structuur:
+        aanhef: "Een financiële bijdrage als bedoeld in artikel 13.23 wordt vastgesteld bij de beschikking, bedoeld in artikel 13.18, eerste lid, volgens hetgeen daarover in het omgevingsplan is bepaald, voor zover:"
+        onderdelen:
+          a:
+            tekst: "met degene die de activiteit verricht geen overeenkomst over kostenverhaal als bedoeld in artikel 13.13, eerste lid, is gesloten"
+          b:
+            tekst: "de onder a bedoelde activiteit is toegelaten anders dan op grond van een projectbesluit of een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit van provinciaal of nationaal belang"
+          c:
+            tekst: "de financiële bijdrage niet anderszins is verzekerd"
+          d:
+            tekst: "het niet gaat om kosten waarop afdeling 13.6 van toepassing is"
+      logica:
+        type: bepaling
+        norm: "Financiële bijdrage in beschikking als geen overeenkomst/projectbesluit/bopa"
+
+  functie:
+    werkwoord: regelt
+    object: beschikking financiële bijdragen
+    subject: gemeente
+
+# =============================================================================
+# PARAGRAAF-ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+  structuur:
+    artikelen_count: 24
+    afdelingen_count: 8
+    paragrafen_count: 3
+
+  patronen:
+    twee_routes_kostenverhaal:
+      beschrijving: "Privaatrechtelijk (overeenkomst) gaat voor publiekrechtelijk (beschikking)"
+      evidence: ["art. 13.13", "art. 13.18"]
+      implicatie: "Gemeente moet eerst proberen privaatrechtelijk te regelen"
+
+    kostendekkendheid:
+      beschrijving: "Leges en heffingen mogen niet meer dan kostendekkend zijn"
+      evidence: ["art. 13.1 lid 3", "art. 13.7 lid 2"]
+      principe: "kostendekkendheidsbeginsel"
+
+    macro_micro_aftopping:
+      beschrijving: "Kostenverhaal begrensd tot grondopbrengsten (macro) of waardevermeerdering (micro)"
+      evidence: ["art. 13.14 lid 2", "art. 13.15 lid 2"]
+      implicatie: "Overheid kan geen negatieve exploitatie afdwingen"
+
+    publiekrechtelijk_verhaal_met_dwangbevel:
+      beschrijving: "Bij beschikking vastgestelde kosten inbaar met dwangbevel"
+      evidence: ["art. 13.5 lid 4", "art. 13.19 lid 2"]
+      handhavingsinstrument: true
+
+  relaties:
+    intern:
+      - van: "art. 13.11"
+        naar: "art. 13.12"
+        type: "sanctie"
+        context: "verbod bouwen zonder betaling"
+      - van: "art. 13.13"
+        naar: "art. 13.14-13.21"
+        type: "alternatief"
+        context: "privaatrechtelijk vs publiekrechtelijk"
+      - van: "art. 13.8-13.10"
+        naar: "Ch12"
+        type: "uitwerking"
+        context: "financiële kant landinrichting"
+
+    extern:
+      - naar: "Ch15"
+        context: "nadeelcompensatie waarvoor kosten verhaald"
+      - naar: "Ch5"
+        context: "omgevingsvergunning waarvoor leges"
+      - naar: "Ch12"
+        context: "landinrichtingskosten"
+
+  routes:
+    entry_points:
+      - artikel: "13.1"
+        vraag: "Hoeveel kost een vergunning?"
+      - artikel: "13.5"
+        vraag: "Moet ik zekerheid stellen?"
+      - artikel: "13.11"
+        vraag: "Moet ik bijdragen aan kosten bouwrijp maken?"
+      - artikel: "13.23"
+        vraag: "Moet ik bijdragen aan gebiedsontwikkeling?"
+    exit_points:
+      - naar: "Ch5"
+        context: "terug naar vergunning"
+      - naar: "Ch15"
+        context: "naar schadevergoedingsregime"
+      - naar: "Ob"
+        context: "naar uitvoeringsregels AMvB"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    kostenverhaal_dualiteit:
+      observatie: "Twee parallelle systemen: privaatrechtelijk (overeenkomst) en publiekrechtelijk (beschikking)"
+      implicatie: "Navigator moet beide routes kunnen tonen"
+
+    aftopping_mechanismen:
+      observatie: "Macro-aftopping (grondopbrengsten) en micro-aftopping (waardevermeerdering)"
+      implicatie: "Financiële risico's voor overheid begrensd"
+
+    functionele_samenhang:
+      observatie: "Financiële bijdragen alleen bij bewezen functionele samenhang met gebiedsontwikkeling"
+      implicatie: "Onderbouwing in omgevingsvisie/programma cruciaal"
+
+  schema_verbeteringen:
+    - "Toevoegen: kostenverhaal_route (privaatrechtelijk/publiekrechtelijk)"
+    - "Toevoegen: aftopping_type (macro/micro)"
+    - "Toevoegen: dwangbevel_mogelijk (ja/nee)"

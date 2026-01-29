@@ -1,0 +1,945 @@
+# =============================================================================
+# PARAGRAAF 5.1.2 - REIKWIJDTE AANVRAAG EN BEVOEGD GEZAG
+# PRECISE ATOMIC EXTRACTION v2
+# =============================================================================
+# Extraction date: 2026-01-29
+# Source: Omgevingswet.xml lines 4603-4909
+# Method: Lid-level atomic with full legal logic capture
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+_metadata:
+  chapter: 5
+  afdeling: "5.1"
+  afdeling_titel: "De omgevingsvergunning"
+  paragraaf: "5.1.2"
+  paragraaf_titel: "Reikwijdte aanvraag omgevingsvergunning en aanwijzing bevoegd gezag"
+  artikel_range: "5.7 - 5.16"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2"
+  extraction_version: 2
+  schema: "lid-atomic-v2"
+
+# =============================================================================
+# ARTIKEL 5.7 - AANVRAAG LOS OF GELIJKTIJDIG
+# =============================================================================
+
+artikel_5.7:
+  nummer: "5.7"
+  titel: "(aanvraag los of gelijktijdig)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid1"
+      structuur:
+        volledige_tekst: "Een aanvraag om een omgevingsvergunning kan naar keuze van de aanvrager op een of meer activiteiten betrekking hebben."
+
+      logica:
+        type: machtiging
+        norm: "aanvrager heeft keuzevrijheid"
+        subject: "aanvrager"
+        effect: "bundeling mogelijk maar niet verplicht"
+        default: "vrije keuze"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid2"
+      structuur:
+        volledige_tekst: "Met het oog op een doelmatig waterbeheer wordt een omgevingsvergunning voor wateractiviteiten, in bij algemene maatregel van bestuur aangewezen gevallen, los aangevraagd van de omgevingsvergunning voor andere activiteiten als bedoeld in de artikelen 5.1 en 5.4."
+
+      logica:
+        type: verplichting
+        norm: "wateractiviteiten LOS aanvragen"
+        conditie:
+          type: voor_zover
+          tekst: "in bij algemene maatregel van bestuur aangewezen gevallen"
+          effect: "AMvB bepaalt wanneer losse aanvraag verplicht"
+        doel: "doelmatig waterbeheer"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid3"
+      structuur:
+        volledige_tekst: "Een omgevingsvergunning voor een activiteit waarbij de locatie van ondergeschikt belang is, wordt, in bij algemene maatregel van bestuur aangewezen gevallen, los aangevraagd van de omgevingsvergunning voor andere activiteiten."
+
+      logica:
+        type: verplichting
+        norm: "locatie-onafhankelijke activiteiten LOS aanvragen"
+        conditie:
+          type: voor_zover
+          tekst: "in bij algemene maatregel van bestuur aangewezen gevallen"
+        criterium: "locatie van ondergeschikt belang"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid4"
+      structuur:
+        aanhef: "Een omgevingsvergunning voor een milieubelastende activiteit en een omgevingsvergunning voor een wateractiviteit, met uitzondering van een als wateractiviteit aan te merken beperkingengebiedactiviteit, worden gelijktijdig aangevraagd als:"
+        onderdelen:
+          a:
+            tekst: "die activiteiten betrekking hebben op dezelfde ippc-installatie, of"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid4/Onderdeela"
+          b:
+            tekst: "op die activiteiten de Seveso-richtlijn van toepassing is."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid4/Onderdeelb"
+
+      logica:
+        type: verplichting
+        norm: "GELIJKTIJDIG aanvragen verplicht"
+        conditie:
+          type: wanneer
+          tekst: "ippc-installatie of Seveso-richtlijn"
+        doel: "gecoördineerde beoordeling zware industrie"
+
+    5:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7/Lid5"
+      structuur:
+        volledige_tekst: "Dit artikel is van overeenkomstige toepassing op aanvragen om wijziging van de voorschriften van een omgevingsvergunning."
+
+      logica:
+        type: verwijzing
+        norm: "analoge toepassing op wijzigingsaanvragen"
+
+  functie:
+    werkwoord: regelt
+    object: "bundeling vs scheiding van aanvragen"
+    subject: "aanvrager"
+
+  logica_samenvatting:
+    hierarchie: |
+      1. Default: vrije keuze aanvrager (lid 1)
+      2. UITZONDERING los: wateractiviteiten indien AMvB (lid 2)
+      3. UITZONDERING los: locatie-onafhankelijk indien AMvB (lid 3)
+      4. UITZONDERING gelijktijdig: IPPC/Seveso (lid 4)
+
+  interne_refs:
+    - naar: "artikel 5.1"
+      type: verwijzing
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+    - naar: "artikel 5.4"
+      type: verwijzing
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing gevallen losse aanvraag"
+
+# =============================================================================
+# ARTIKEL 5.8 - DEFAULT BEVOEGD GEZAG: GEMEENTE
+# =============================================================================
+
+artikel_5.8:
+  nummer: "5.8"
+  titel: "(bevoegd gezag gemeente aanvraag één activiteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.8"
+      structuur:
+        volledige_tekst: "Het college van burgemeester en wethouders beslist op de aanvraag om een omgevingsvergunning die betrekking heeft op één activiteit, tenzij op grond van artikel 5.9, 5.9a, 5.10, 5.11 of 5.13 een ander bestuursorgaan is aangewezen."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "college B&W is bevoegd gezag"
+        bevoegd_gezag: gemeente
+        scope: "aanvraag met ÉÉN activiteit"
+        conditie:
+          type: tenzij
+          tekst: "tenzij op grond van artikel 5.9, 5.9a, 5.10, 5.11 of 5.13 een ander bestuursorgaan is aangewezen"
+          effect: "uitzondering voor water, jacht, provincie, Rijk, eerder bevoegd"
+        default: "gemeente"
+        uitzonderingen:
+          - "5.9: wateractiviteiten → waterschap/GS/Minister I&W"
+          - "5.9a: jachtgeweeractiviteit → korpschef"
+          - "5.10: provinciaal belang → GS"
+          - "5.11: nationaal belang → Minister"
+          - "5.13: eerder verleend → behoud BG"
+
+  functie:
+    werkwoord: wijst_aan
+    object: "bevoegd gezag"
+    subject: "college van burgemeester en wethouders"
+    bevoegd_gezag: gemeente
+
+  logica_samenvatting:
+    patroon: |
+      SUBSIDIARITEITSREGEL VERANKERD:
+      - DEFAULT = gemeente (laagste niveau)
+      - Uitzonderingen expliciet in artikelen 5.9-5.13
+
+  interne_refs:
+    - naar: "artikel 5.9"
+      type: uitzondering
+      context: "wateractiviteiten"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9"
+    - naar: "artikel 5.9a"
+      type: uitzondering
+      context: "jachtgeweeractiviteit"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9a"
+    - naar: "artikel 5.10"
+      type: uitzondering
+      context: "provinciaal belang"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10"
+    - naar: "artikel 5.11"
+      type: uitzondering
+      context: "nationaal belang"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11"
+    - naar: "artikel 5.13"
+      type: uitzondering
+      context: "eerder bevoegd gezag"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.13"
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.9 - BEVOEGD GEZAG WATERACTIVITEITEN
+# =============================================================================
+
+artikel_5.9:
+  nummer: "5.9"
+  titel: "(bevoegd gezag aanvraag één wateractiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur worden met het oog op een doelmatig waterbeheer voor wateractiviteiten gevallen aangewezen waarin het dagelijks bestuur van het waterschap, gedeputeerde staten of Onze Minister van Infrastructuur en Waterstaat op de aanvraag beslissen."
+
+      logica:
+        type: delegatie
+        norm: "AMvB wijst bevoegd gezag aan voor wateractiviteiten"
+        doel: "doelmatig waterbeheer"
+        mogelijke_bevoegde_gezagen:
+          - dagelijks_bestuur_waterschap
+          - gedeputeerde_staten
+          - minister_iw
+
+  functie:
+    werkwoord: delegeert
+    object: "aanwijzing bevoegd gezag wateractiviteiten"
+    naar: "AMvB"
+
+  interne_refs: []
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing bevoegd gezag wateractiviteiten"
+
+# =============================================================================
+# ARTIKEL 5.9a - BEVOEGD GEZAG JACHTGEWEERACTIVITEIT
+# =============================================================================
+
+artikel_5.9a:
+  nummer: "5.9a"
+  titel: "(bevoegd gezag aanvraag één jachtgeweeractiviteit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.9a"
+      structuur:
+        volledige_tekst: "De korpschef beslist op de aanvraag om een omgevingsvergunning voor een jachtgeweeractiviteit."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "korpschef is bevoegd gezag"
+        bevoegd_gezag: "korpschef"
+        scope: "jachtgeweeractiviteit"
+        bijzonderheid: "enige niet-bestuursorgaan uit Awb-systematiek"
+
+  functie:
+    werkwoord: wijst_aan
+    object: "bevoegd gezag jachtgeweeractiviteit"
+    subject: "korpschef"
+
+  interne_refs: []
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.10 - BEVOEGD GEZAG PROVINCIE
+# =============================================================================
+
+artikel_5.10:
+  nummer: "5.10"
+  titel: "(bevoegd gezag provincie aanvraag één activiteit anders dan in artikel 5.9)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin gedeputeerde staten op de aanvraag beslissen:"
+        onderdelen:
+          a:
+            tekst: "omgevingsplanactiviteiten van provinciaal belang,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeela"
+          b:
+            tekst: "ontgrondingsactiviteiten:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelb"
+            sub_onderdelen:
+              1:
+                tekst: "in het winterbed van een tot de rijkswateren behorende rivier,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelb/Onderdeel1"
+              2:
+                tekst: "buiten de rijkswateren,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelb/Onderdeel2"
+          c:
+            tekst: "milieubelastende activiteiten:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelc"
+            sub_onderdelen:
+              1:
+                tekst: "met betrekking tot een ippc-installatie,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelc/Onderdeel1"
+              2:
+                tekst: "met betrekking tot een andere milieubelastende installatie,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelc/Onderdeel2"
+              3:
+                tekst: "waarop de Seveso-richtlijn van toepassing is,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelc/Onderdeel3"
+              4:
+                tekst: "die gevolgen hebben of kunnen hebben voor het grondwater,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelc/Onderdeel4"
+          d:
+            tekst: "beperkingengebiedactiviteiten met betrekking tot:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeeld"
+            sub_onderdelen:
+              1:
+                tekst: "burgerluchthavens van regionale betekenis,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeeld/Onderdeel1"
+              2:
+                tekst: "lokale spoorwegen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeeld/Onderdeel2"
+          e:
+            tekst: "Natura 2000-activiteiten en flora- en fauna-activiteiten,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeele"
+          f:
+            tekst: "activiteiten als bedoeld in artikel 5.4."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid1/Onderdeelf"
+
+      logica:
+        type: delegatie
+        norm: "AMvB wijst gevallen aan voor GS-bevoegdheid"
+        bevoegd_gezag: "gedeputeerde staten"
+        activiteiten_count: 6
+        criteria: "provinciaal belang, zware industrie, natuur"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid2"
+      structuur:
+        volledige_tekst: "Bij de aanwijzing van gevallen worden de grenzen van artikel 2.3, tweede lid, in acht genomen."
+
+      logica:
+        type: begrenzing
+        norm: "grenzen subsidiariteit in acht nemen"
+        verwijst_naar: "art. 2.3 lid 2"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.10/Lid3"
+      structuur:
+        volledige_tekst: "In afwijking van het eerste lid, aanhef en onder d, aanhef en onder 2°, worden, als op grond van artikel 20, derde lid, van de Wet personenvervoer 2000 een gebied is aangewezen, bij algemene maatregel van bestuur gevallen aangewezen waarin het dagelijks bestuur van het openbaar lichaam, bedoeld in laatstbedoeld lid, beslist op de aanvraag om een omgevingsvergunning voor een beperkingengebiedactiviteit met betrekking tot een lokale spoorweg in dat gebied."
+
+      logica:
+        type: uitzondering
+        norm: "afwijking voor vervoerregio's"
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van het eerste lid, aanhef en onder d, aanhef en onder 2°"
+        bevoegd_gezag: "dagelijks bestuur openbaar lichaam (vervoerregio)"
+
+  functie:
+    werkwoord: wijst_aan
+    object: "bevoegd gezag provinciale gevallen"
+    subject: "gedeputeerde staten"
+    bevoegd_gezag: provincie
+
+  interne_refs:
+    - naar: "artikel 5.4"
+      type: verwijzing
+      context: "omgevingsverordening-activiteiten"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+    - naar: "artikel 2.3, tweede lid"
+      type: begrenzing
+      context: "subsidiariteitsgrenzen"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+  externe_refs:
+    - naar: "BWBR0011470"
+      wet: "Wet personenvervoer 2000"
+      artikel: "20, derde lid"
+      context: "aangewezen vervoerregio"
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing gevallen GS-bevoegdheid"
+
+# =============================================================================
+# ARTIKEL 5.11 - BEVOEGD GEZAG RIJK
+# =============================================================================
+
+artikel_5.11:
+  nummer: "5.11"
+  titel: "(bevoegd gezag Rijk aanvraag één activiteit anders dan in artikel 5.9)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur worden voor de volgende activiteiten gevallen aangewezen waarin een van Onze daarbij aangewezen Ministers op de aanvraag beslist:"
+        onderdelen:
+          a:
+            tekst: "omgevingsplanactiviteiten van nationaal belang,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeela"
+          b:
+            tekst: "rijksmonumentenactiviteiten met betrekking tot een archeologisch monument,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelb"
+          c:
+            tekst: "ontgrondingsactiviteiten in de rijkswateren, met uitzondering van de gevallen, bedoeld in artikel 5.10, eerste lid, onder b, onder 1°,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelc"
+          d:
+            tekst: "milieubelastende activiteiten:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeeld"
+            sub_onderdelen:
+              1:
+                tekst: "met betrekking tot een mijnbouwwerk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeeld/Onderdeel1"
+              2:
+                tekst: "waarbij nationale veiligheidsbelangen of andere vitale nationale belangen zijn betrokken,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeeld/Onderdeel2"
+              3:
+                tekst: "als het gaat om het op of in de bodem brengen van meststoffen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeeld/Onderdeel3"
+          e:
+            tekst: "mijnbouwlocatieactiviteiten,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeele"
+          f:
+            tekst: "beperkingengebiedactiviteiten met betrekking tot:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelf"
+            sub_onderdelen:
+              1:
+                tekst: "wegen in beheer bij het Rijk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelf/Onderdeel1"
+              2:
+                tekst: "andere luchthavens dan burgerluchthavens van regionale betekenis,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelf/Onderdeel2"
+              3:
+                tekst: "hoofdspoorwegen en bijzondere spoorwegen,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelf/Onderdeel3"
+              4:
+                tekst: "mijnbouwinstallaties in een waterstaatswerk,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelf/Onderdeel4"
+          g:
+            tekst: "Natura 2000-activiteiten en flora- en fauna-activiteiten van nationaal belang,"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelg"
+          h:
+            tekst: "activiteiten die niet vallen onder de onderdelen a tot en met g en die geheel of in hoofdzaak plaatsvinden in:"
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelh"
+            sub_onderdelen:
+              1:
+                tekst: "de territoriale zee voor zover gelegen buiten het provinciaal en gemeentelijk ingedeelde gebied,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelh/Onderdeel1"
+              2:
+                tekst: "de exclusieve economische zone,"
+                bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeelh/Onderdeel2"
+          i:
+            tekst: "een valkeniersactiviteit."
+            bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid1/Onderdeeli"
+
+      logica:
+        type: delegatie
+        norm: "AMvB wijst gevallen aan voor Minister-bevoegdheid"
+        bevoegd_gezag: "Minister (verschilt per activiteit)"
+        activiteiten_count: 9
+        criteria: "nationaal belang, rijksinfrastructuur, zee/EEZ"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid2"
+      structuur:
+        volledige_tekst: "Bij de aanwijzing van gevallen worden de grenzen van artikel 2.3, derde lid, in acht genomen."
+
+      logica:
+        type: begrenzing
+        norm: "grenzen subsidiariteit in acht nemen"
+        verwijst_naar: "art. 2.3 lid 3"
+        verschil_art_5.10: "lid 3 ipv lid 2 - strengere toets voor Rijk"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.11/Lid3"
+      structuur:
+        volledige_tekst: "In afwijking van de artikelen 5.8, 5.10 en 5.13 en van het eerste lid kan Onze Minister van Infrastructuur en Waterstaat in andere gevallen dan bedoeld in het eerste lid, onder d, onder 2°, beslissen op een aanvraag om een omgevingsvergunning als dat nodig is voor nationale veiligheidsbelangen of andere vitale nationale belangen."
+
+      logica:
+        type: noodbevoegdheid
+        norm: "Minister I&W kan bevoegdheid naar zich toetrekken"
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van de artikelen 5.8, 5.10 en 5.13 en van het eerste lid"
+        trigger: "nationale veiligheidsbelangen of andere vitale nationale belangen"
+        bevoegd_gezag: "Minister van Infrastructuur en Waterstaat"
+        uitsluiting: "niet voor gevallen lid 1.d.2° (die zijn al nationaal veiligheidsbelang)"
+
+  functie:
+    werkwoord: wijst_aan
+    object: "bevoegd gezag nationale gevallen"
+    subject: "Minister"
+    bevoegd_gezag: rijk
+
+  interne_refs:
+    - naar: "artikel 5.8"
+      type: uitzondering
+      context: "afwijking van gemeente-bevoegdheid"
+    - naar: "artikel 5.10"
+      type: uitzondering
+      context: "afwijking van provincie-bevoegdheid"
+    - naar: "artikel 5.10, eerste lid, onder b, onder 1°"
+      type: begrenzing
+      context: "winterbed rijkswateren → provincie"
+    - naar: "artikel 5.13"
+      type: uitzondering
+      context: "afwijking van eerder bevoegd gezag"
+    - naar: "artikel 2.3, derde lid"
+      type: begrenzing
+      context: "subsidiariteitsgrenzen"
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing gevallen Minister-bevoegdheid"
+
+# =============================================================================
+# ARTIKEL 5.12 - BEVOEGD GEZAG MEERVOUDIGE AANVRAAG
+# =============================================================================
+
+artikel_5.12:
+  nummer: "5.12"
+  titel: "(bevoegd gezag aanvraag meer activiteiten)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.12"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.12/Lid1"
+      structuur:
+        volledige_tekst: "Op de aanvraag om een omgevingsvergunning die betrekking heeft op meer dan een activiteit wordt beslist door een bestuursorgaan dat op grond van artikel 5.8, 5.9, 5.10 of 5.11, eerste lid, aanhef en onder a tot en met h, voor ten minste een van die activiteiten bevoegd zou zijn op een aanvraag te beslissen. Hierbij worden de volgende leden in acht genomen."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "bevoegd gezag van één van de activiteiten"
+        scope: "aanvraag met MEER DAN ÉÉN activiteit"
+        routing: "wie voor ten minste één bevoegd is"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.12/Lid2"
+      structuur:
+        volledige_tekst: "Als het college van burgemeester en wethouders een bestuursorgaan is als bedoeld in het eerste lid, beslist het college op de aanvraag, tenzij bij algemene maatregel van bestuur een ander van de betrokken bestuursorganen wordt aangewezen. Bij die aanwijzing worden de grenzen van artikel 2.3 in acht genomen. Bij die maatregel kan, in afwijking van het eerste lid en met inachtneming van de grenzen van artikel 2.3, ook een ander bestuursorgaan dan een van de betrokken bestuursorganen worden aangewezen."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "gemeente blijft default, tenzij AMvB anders"
+        conditie:
+          type: tenzij
+          tekst: "tenzij bij algemene maatregel van bestuur een ander van de betrokken bestuursorganen wordt aangewezen"
+        default: "college B&W"
+        uitzondering: "AMvB kan ander BG aanwijzen"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.12/Lid3"
+      structuur:
+        volledige_tekst: "In andere gevallen dan bedoeld in het tweede lid, wordt op de aanvraag beslist door het betrokken bestuursorgaan dat bij algemene maatregel van bestuur wordt aangewezen. Bij die maatregel kan, in afwijking van het eerste lid en met inachtneming van de grenzen van artikel 2.3, ook een ander bestuursorgaan dan een van de betrokken bestuursorganen worden aangewezen."
+
+      logica:
+        type: delegatie
+        norm: "AMvB wijst bevoegd gezag aan"
+        scope: "gevallen zonder gemeente-betrokkenheid"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.12/Lid4"
+      structuur:
+        volledige_tekst: "In afwijking van het eerste tot en met derde lid en van artikel 5.13 kan Onze Minister van Infrastructuur en Waterstaat op de aanvraag beslissen als dat nodig is voor nationale veiligheidsbelangen of andere vitale nationale belangen."
+
+      logica:
+        type: noodbevoegdheid
+        norm: "Minister I&W kan bevoegdheid naar zich toetrekken"
+        conditie:
+          type: in_afwijking_van
+          tekst: "in afwijking van het eerste tot en met derde lid en van artikel 5.13"
+        trigger: "nationale veiligheidsbelangen of andere vitale nationale belangen"
+
+  functie:
+    werkwoord: routeert
+    object: "bevoegd gezag bij meervoudige aanvraag"
+
+  logica_samenvatting:
+    routing_hierarchie: |
+      MEERVOUDIGE AANVRAAG ROUTING:
+      1. Gemeente betrokken? → Gemeente (lid 2), tenzij AMvB
+      2. Geen gemeente? → AMvB wijst aan (lid 3)
+      3. Altijd: nationale veiligheid → Minister I&W (lid 4)
+
+  interne_refs:
+    - naar: "artikel 5.8"
+      type: grondslag
+    - naar: "artikel 5.9"
+      type: grondslag
+    - naar: "artikel 5.10"
+      type: grondslag
+    - naar: "artikel 5.11, eerste lid, aanhef en onder a tot en met h"
+      type: grondslag
+    - naar: "artikel 5.13"
+      type: uitzondering
+    - naar: "artikel 2.3"
+      type: begrenzing
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing bevoegd gezag meervoudige aanvraag"
+
+# =============================================================================
+# ARTIKEL 5.13 - EENS BEVOEGD GEZAG ALTIJD BEVOEGD GEZAG
+# =============================================================================
+
+artikel_5.13:
+  nummer: "5.13"
+  titel: "(eens bevoegd gezag altijd bevoegd gezag)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.13"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.13/Lid1"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin gedeputeerde staten of Onze Minister die het aangaat beslissen op elke aanvraag om een omgevingsvergunning die betrekking heeft op een locatie waarvoor een door hen eerder verleende omgevingsvergunning geldt."
+
+      logica:
+        type: machtiging
+        norm: "AMvB KAN gevallen aanwijzen voor behoud bevoegdheid"
+        effect: "wie eerder verleende, behoudt bevoegdheid voor die locatie"
+        beperking: "alleen GS of Minister, niet gemeente"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.13/Lid2"
+      structuur:
+        volledige_tekst: "Het eerste lid is niet van toepassing als de aanvraag om een omgevingsvergunning betrekking heeft op een activiteit als bedoeld in artikel 5.9 of 5.9a."
+
+      logica:
+        type: uitzondering
+        norm: "niet van toepassing op water en jachtgeweer"
+        uitgezonderd:
+          - "artikel 5.9: wateractiviteiten"
+          - "artikel 5.9a: jachtgeweeractiviteit"
+
+  functie:
+    werkwoord: continueert
+    object: "bevoegd gezag op basis van eerder verleend"
+
+  logica_samenvatting:
+    principe: |
+      CONTINUÏTEITSBEGINSEL:
+      - Provincie/Rijk die eerder verleende, blijft bevoegd voor die locatie
+      - Voorkomt versnippering bij uitbreidingen
+      - NIET voor water/jacht (apart circuit)
+
+  interne_refs:
+    - naar: "artikel 5.9"
+      type: uitzondering
+    - naar: "artikel 5.9a"
+      type: uitzondering
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "aanwijzing gevallen continuïteitsbevoegdheid"
+
+# =============================================================================
+# ARTIKEL 5.14 - GRONDGEBIEDOVERSTIJGENDE AANVRAAG
+# =============================================================================
+
+artikel_5.14:
+  nummer: "5.14"
+  titel: "(bevoegd gezag grondgebiedoverstijgende aanvraag)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.14"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.14"
+      structuur:
+        volledige_tekst: "Als een aanvraag om een omgevingsvergunning betrekking heeft op een activiteit die op het grondgebied van meer dan een gemeente, waterschap of provincie plaatsvindt, wordt op die aanvraag beslist door het daarvoor op grond van artikel 5.8, 5.9, 5.10, 5.12 of 5.13 aangewezen bestuursorgaan van de gemeente, het waterschap of de provincie waar de activiteit in hoofdzaak zal worden verricht."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "BG waar activiteit IN HOOFDZAAK plaatsvindt"
+        scope: "grondgebiedoverstijgende activiteit"
+        criterium: "in hoofdzaak"
+        routing: "normale routing (5.8-5.13) + locatiebepaling"
+
+  functie:
+    werkwoord: routeert
+    object: "bevoegd gezag bij grensoverschrijding"
+
+  interne_refs:
+    - naar: "artikel 5.8"
+      type: grondslag
+    - naar: "artikel 5.9"
+      type: grondslag
+    - naar: "artikel 5.10"
+      type: grondslag
+    - naar: "artikel 5.12"
+      type: grondslag
+    - naar: "artikel 5.13"
+      type: grondslag
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.15 - BEVOEGD GEZAG PARAGRAAF 5.1.5
+# =============================================================================
+
+artikel_5.15:
+  nummer: "5.15"
+  titel: "(bevoegd gezag toepassing paragraaf 5.1.5)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.15"
+      structuur:
+        volledige_tekst: "Het bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen, is ook bevoegd tot toepassing van paragraaf 5.1.5."
+
+      logica:
+        type: bevoegdheidstoewijzing
+        norm: "bevoegd gezag aanvraag = bevoegd gezag par. 5.1.5"
+        scope: "wijziging/intrekking vergunning"
+        logica: "volgt aanvraagbevoegdheid"
+
+  functie:
+    werkwoord: verbindt
+    object: "bevoegdheid aanvraag en wijziging/intrekking"
+
+  interne_refs:
+    - naar: "paragraaf 5.1.5"
+      type: verwijzing
+      context: "wijziging en intrekking omgevingsvergunning"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5"
+
+  externe_refs: []
+  delegeert: []
+
+# =============================================================================
+# ARTIKEL 5.16 - FLEXIBILITEITSREGELING BEVOEGD GEZAG
+# =============================================================================
+
+artikel_5.16:
+  nummer: "5.16"
+  titel: "(flexibiliteitsregeling bevoegd gezag)"
+  bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.16"
+  inwerking: "2024-01-01"
+
+  leden:
+
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.16/Lid1"
+      structuur:
+        volledige_tekst: "Een bestuursorgaan dat bevoegd is om op een aanvraag om een omgevingsvergunning te beslissen of bevoegd is tot toepassing van paragraaf 5.1.5, kan die bevoegdheid aan een ander bestuursorgaan overdragen, als dat bestuursorgaan daarmee instemt."
+
+      logica:
+        type: machtiging
+        norm: "vrijwillige overdracht bevoegdheid mogelijk"
+        conditie:
+          type: mits
+          tekst: "als dat bestuursorgaan daarmee instemt"
+        vereiste: "instemming ontvangend orgaan"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.16/Lid2"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de toepassing van het eerste lid."
+
+      logica:
+        type: delegatie
+        norm: "AMvB kan nadere regels stellen"
+
+  functie:
+    werkwoord: machtigt
+    object: "vrijwillige bevoegdheidsoverdracht"
+
+  logica_samenvatting:
+    flexibiliteit: |
+      MAATWERK MOGELIJK:
+      - Bevoegd gezag kan overdragen aan ander
+      - Vereist instemming ontvanger
+      - AMvB kan nadere regels stellen
+
+  interne_refs:
+    - naar: "paragraaf 5.1.5"
+      type: verwijzing
+
+  externe_refs: []
+
+  delegeert:
+    - type: "bij algemene maatregel van bestuur"
+      naar: "Ob"
+      voor: "regels over bevoegdheidsoverdracht"
+
+# =============================================================================
+# PARAGRAAF-NIVEAU ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+
+  structuur:
+    artikelen_count: 10
+    totaal_leden: 19
+    totaal_onderdelen: ~55
+
+  patronen:
+
+    subsidiariteitshierarchie:
+      beschrijving: "Trappenmodel bevoegd gezag"
+      niveaus:
+        1_gemeente: "art. 5.8 - default"
+        2_waterschap: "art. 5.9 - water"
+        3_korpschef: "art. 5.9a - jachtgeweer"
+        4_provincie: "art. 5.10 - provinciaal belang"
+        5_rijk: "art. 5.11 - nationaal belang"
+      override: "art. 5.11.lid3, 5.12.lid4 - vitale belangen"
+
+    routing_logica:
+      beschrijving: "Beslisboom bevoegd gezag"
+      stap_1: "Eén activiteit? → art. 5.8-5.11"
+      stap_2: "Meer activiteiten? → art. 5.12"
+      stap_3: "Grensoverschrijdend? → art. 5.14 (in hoofdzaak)"
+      stap_4: "Eerder verleend? → art. 5.13 (continuïteit)"
+      stap_5: "Overdracht gewenst? → art. 5.16 (flexibiliteit)"
+
+    tenzij_patroon:
+      beschrijving: "Art. 5.8 is prototype TENZIJ-artikel"
+      default: gemeente
+      uitzonderingen: "[5.9, 5.9a, 5.10, 5.11, 5.13]"
+
+    delegatie_naar_amvb:
+      beschrijving: "Substantiële delegatie naar Ob"
+      artikelen_met_delegatie:
+        - "5.7: los/gelijktijdig aanvragen"
+        - "5.9: wateractiviteiten BG"
+        - "5.10: provinciale gevallen"
+        - "5.11: rijksgevallen"
+        - "5.12: meervoudige aanvraag"
+        - "5.13: continuïteit"
+        - "5.16: overdracht"
+
+  relaties:
+    intern:
+      - van: "5.8"
+        naar: ["5.9", "5.9a", "5.10", "5.11", "5.13"]
+        type: "tenzij-verwijzing"
+      - van: "5.12"
+        naar: ["5.8", "5.9", "5.10", "5.11"]
+        type: "grondslag meervoudig"
+      - van: "5.14"
+        naar: ["5.8", "5.9", "5.10", "5.12", "5.13"]
+        type: "grondslag grensoverschrijding"
+
+    extern:
+      - naar: "art. 2.3"
+        context: "subsidiariteitsbeginsel begrenst aanwijzingen"
+
+  routes:
+    entry_point:
+      artikel: "5.8"
+      vraag: "Wie is bevoegd gezag?"
+      logica: "Start bij gemeente, check uitzonderingen"
+
+    exit_points:
+      - naar: "par. 5.1.3"
+        context: "beoordeling na bepaling BG"
+      - naar: "par. 5.1.5"
+        context: "wijziging/intrekking (via 5.15)"
+      - naar: "Ch16"
+        context: "procedure na bepaling BG"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+
+    1_subsidiariteitstrap:
+      observatie: "Art. 5.8-5.11 implementeren subsidiariteitsbeginsel uit art. 2.3"
+      implicatie: |
+        Navigation moet "wie is bevoegd gezag?" beantwoorden door:
+        1. Start bij gemeente (5.8)
+        2. Check wateractiviteit → 5.9
+        3. Check jachtgeweer → 5.9a
+        4. Check provinciaal belang → 5.10
+        5. Check nationaal belang → 5.11
+        6. Check eerder verleend → 5.13
+
+    2_meervoudig_routing:
+      observatie: "Art. 5.12 behandelt complexe situatie meervoudige aanvraag"
+      implicatie: |
+        Routing wordt: gemeente blijft default ook bij meervoudig,
+        tenzij AMvB anders. Bij conflict: AMvB bepaalt.
+
+    3_noodbevoegdheid:
+      observatie: "Art. 5.11 lid 3 en 5.12 lid 4 bevatten 'vitale belangen' override"
+      implicatie: |
+        Minister I&W kan ALTIJD bevoegdheid naar zich toetrekken
+        voor nationale veiligheidsbelangen. Dit doorbreekt alle routing.
+
+    4_continuiteit:
+      observatie: "Art. 5.13 voorkomt 'pingpongen' bij uitbreidingen"
+      implicatie: |
+        Wie eerder verleende (GS/Minister), behoudt bevoegdheid
+        voor die locatie. Praktisch voor grote installaties.
+
+  schema_verbeteringen:
+
+    bevoegd_gezag_velden:
+      - default_bg: "wie is default bevoegd"
+      - uitzonderingen: ["lijst van uitzonderingsartikelen"]
+      - override: "wie kan altijd doorbreken"
+
+    routing_schema:
+      stap: nummer
+      artikel: "grondslag"
+      vraag: "wat moet getoetst"
+      uitkomst_ja: "route naar"
+      uitkomst_nee: "route naar"
+
+  volgende_extractie:
+    paragraaf: "5.1.3"
+    titel: "De beoordeling van de aanvraag"
+    artikelen: "5.17 - 5.31"
+    focus: "beoordelingsregels per activiteittype"

@@ -1,0 +1,759 @@
+# =============================================================================
+# CHAPTER 1: ALGEMENE BEPALINGEN - V2 ATOMIC EXTRACTION
+# =============================================================================
+# Source: Omgevingswet (BWBR0037885)
+# Scope: Art. 1.1 - 1.8
+# Schema: v2 (lid-level logica, bron_path, conditie typing)
+# Extracted: 2026-01-29
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_1:
+  nummer: "1"
+  titel: "Algemene bepalingen"
+  bron_path: "/Hoofdstuk1"
+  inwerking: "2024-01-01"
+
+  structuur:
+    - afdeling: "1.1"
+      titel: "Begripsbepalingen"
+      artikelen: ["1.1"]
+    - afdeling: "1.2"
+      titel: "Toepassingsgebied en doelen"
+      artikelen: ["1.2", "1.3", "1.4", "1.5"]
+    - afdeling: "1.3"
+      titel: "Zorg voor de fysieke leefomgeving"
+      artikelen: ["1.6", "1.7", "1.7a", "1.8"]
+
+# =============================================================================
+# AFDELING 1.1: BEGRIPSBEPALINGEN
+# =============================================================================
+
+afdeling_1_1:
+  nummer: "1.1"
+  titel: "Begripsbepalingen"
+  bron_path: "/Hoofdstuk1/Afdeling1.1"
+  inwerking: "2024-01-01"
+
+  artikel_1_1:
+    nummer: "1.1"
+    titel: "(begripsbepalingen)"
+    bron_path: "/Hoofdstuk1/Afdeling1.1/Artikel1.1"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk1/Afdeling1.1/Artikel1.1/Lid1"
+        structuur:
+          volledige_tekst: "De bijlage bij deze wet bevat begripsbepalingen voor de toepassing van deze wet en de daarop berustende bepalingen."
+        logica:
+          type: "definitie"
+          norm: "begripsbepalingen staan in bijlage"
+          effect: "alle definities centraal vastgelegd in Bijlage"
+
+      2:
+        bron_path: "/Hoofdstuk1/Afdeling1.1/Artikel1.1/Lid2"
+        structuur:
+          volledige_tekst: "Begripsbepalingen die zijn opgenomen in een bijlage bij een algemene maatregel van bestuur op grond van deze wet zijn ook van toepassing op een ministeriële regeling op grond van deze wet, tenzij in die regeling anders is bepaald."
+        logica:
+          type: "definitie"
+          norm: "AMvB-begrippen gelden ook voor ministeriële regelingen"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij in die regeling anders is bepaald"
+            effect: "ministeriële regeling kan afwijken van AMvB-begrippen"
+          default: "AMvB-begrippen van toepassing"
+          uitzondering: "ministeriële regeling bepaalt anders"
+
+    functie:
+      werkwoord: "definieert"
+      object: "begrippenstelsel Omgevingswet"
+      subject: "alle rechtsubjecten"
+
+    interne_refs:
+      - naar: "Bijlage"
+        type: "grondslag"
+        context: "De bijlage bij deze wet"
+        bron_path: "/Bijlage"
+
+# =============================================================================
+# AFDELING 1.2: TOEPASSINGSGEBIED EN DOELEN
+# =============================================================================
+
+afdeling_1_2:
+  nummer: "1.2"
+  titel: "Toepassingsgebied en doelen"
+  bron_path: "/Hoofdstuk1/Afdeling1.2"
+  inwerking: "2024-01-01"
+
+  artikel_1_2:
+    nummer: "1.2"
+    titel: "(fysieke leefomgeving)"
+    bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid1"
+        structuur:
+          aanhef: "Deze wet gaat over:"
+          onderdelen:
+            a:
+              tekst: "de fysieke leefomgeving, en"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid1/Onderdeela"
+            b:
+              tekst: "activiteiten die gevolgen hebben of kunnen hebben voor de fysieke leefomgeving."
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid1/Onderdeelb"
+        logica:
+          type: "definitie"
+          norm: "scope van de wet"
+          objecten:
+            - "fysieke leefomgeving zelf"
+            - "activiteiten met (potentiële) gevolgen"
+
+      2:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2"
+        structuur:
+          aanhef: "De fysieke leefomgeving omvat in ieder geval:"
+          onderdelen:
+            a:
+              tekst: "bouwwerken,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeela"
+            b:
+              tekst: "infrastructuur,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelb"
+            c:
+              tekst: "watersystemen,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelc"
+            d:
+              tekst: "water,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeeld"
+            e:
+              tekst: "bodem,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeele"
+            f:
+              tekst: "lucht,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelf"
+            g:
+              tekst: "landschappen,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelg"
+            h:
+              tekst: "natuur,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelh"
+            i:
+              tekst: "cultureel erfgoed,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeeli"
+            j:
+              tekst: "werelderfgoed."
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid2/Onderdeelj"
+        logica:
+          type: "definitie"
+          norm: "10 componenten fysieke leefomgeving"
+          conditie:
+            type: "in_ieder_geval"
+            tekst: "in ieder geval"
+            effect: "niet-limitatieve opsomming - uitbreiding mogelijk"
+          componenten_count: 10
+
+      3:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid3"
+        structuur:
+          aanhef: "Als gevolgen voor de fysieke leefomgeving worden in ieder geval aangemerkt gevolgen die kunnen voortvloeien uit:"
+          onderdelen:
+            a:
+              tekst: "het wijzigen van onderdelen van de fysieke leefomgeving of het gebruik daarvan,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid3/Onderdeela"
+            b:
+              tekst: "het gebruik van natuurlijke hulpbronnen,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid3/Onderdeelb"
+            c:
+              tekst: "activiteiten waardoor emissies, hinder of risico's worden veroorzaakt,"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid3/Onderdeelc"
+            d:
+              tekst: "het nalaten van activiteiten."
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid3/Onderdeeld"
+        logica:
+          type: "definitie"
+          norm: "wat zijn 'gevolgen'"
+          conditie:
+            type: "in_ieder_geval"
+            tekst: "in ieder geval"
+            effect: "niet-limitatieve opsomming"
+          gevolgen_types:
+            - "wijzigen onderdelen of gebruik"
+            - "gebruik natuurlijke hulpbronnen"
+            - "emissies, hinder, risico's"
+            - "nalaten (ook inactiviteit!)"
+
+      4:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.2/Lid4"
+        structuur:
+          volledige_tekst: "Als gevolgen voor de fysieke leefomgeving worden ook aangemerkt gevolgen voor de mens, voor zover deze wordt of kan worden beïnvloed door of via onderdelen van de fysieke leefomgeving."
+        logica:
+          type: "definitie"
+          norm: "gevolgen voor mens via fysieke leefomgeving"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor zover deze wordt of kan worden beïnvloed door of via onderdelen"
+            effect: "alleen indirecte menselijke gevolgen - via fysieke leefomgeving"
+          critical_insight: "GEEN directe gezondheidsregulering - alleen via milieu-route"
+
+    functie:
+      werkwoord: "definieert"
+      object: "fysieke leefomgeving en gevolgen"
+      subject: "wet"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.2 definieert het materiële toepassingsgebied van de Omgevingswet via
+        vier leden die samen de scope bepalen:
+
+        Lid 1: Twee objecten - de fysieke leefomgeving zelf EN activiteiten met gevolgen
+        Lid 2: 10 componenten (niet-limitatief!) - van bouwwerken tot werelderfgoed
+        Lid 3: 4 soorten gevolgen (niet-limitatief!) - inclusief NALATEN
+        Lid 4: Menselijke gevolgen - alleen INDIRECT via fysieke leefomgeving
+
+        KRITISCH: "in ieder geval" maakt lijsten open - rechter kan uitbreiden.
+        KRITISCH: Nalaten ook gevolg = zorgplicht ook bij inactiviteit.
+        KRITISCH: Geen directe gezondheidsregulering - altijd via milieu.
+
+  artikel_1_3:
+    nummer: "1.3"
+    titel: "(maatschappelijke doelen van de wet)"
+    bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.3"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.3"
+        structuur:
+          aanhef: "Deze wet is, met het oog op duurzame ontwikkeling, de bewoonbaarheid van het land en de bescherming en verbetering van het leefmilieu, gericht op het in onderlinge samenhang:"
+          onderdelen:
+            a:
+              tekst: "bereiken en in stand houden van een veilige en gezonde fysieke leefomgeving en een goede omgevingskwaliteit, ook vanwege de intrinsieke waarde van de natuur, en"
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.3/Onderdeela"
+            b:
+              tekst: "doelmatig beheren, gebruiken en ontwikkelen van de fysieke leefomgeving ter vervulling van maatschappelijke behoeften."
+              bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.3/Onderdeelb"
+        logica:
+          type: "definitie"
+          norm: "duale doelstelling Omgevingswet"
+          kader_doelen:
+            - "duurzame ontwikkeling"
+            - "bewoonbaarheid van het land"
+            - "bescherming en verbetering leefmilieu"
+          operationele_doelen:
+            a: "BESCHERMING: veilige + gezonde + goede kwaliteit + intrinsieke natuurwaarde"
+            b: "BENUTTING: doelmatig beheren, gebruiken, ontwikkelen"
+          relatie: "in onderlinge samenhang"
+          critical_insight: "Beide doelen GELIJKWAARDIG - geen hiërarchie"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "maatschappelijke doelen"
+      subject: "de wet"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.3 bevat de DUALE DOELSTELLING van de Omgevingswet:
+
+        BESCHERMING (a): veilige, gezonde fysieke leefomgeving + goede omgevingskwaliteit
+          - Inclusief intrinsieke waarde natuur (ecocentrisch element)
+
+        BENUTTING (b): doelmatig beheren, gebruiken, ontwikkelen
+          - Ter vervulling maatschappelijke behoeften (antropocentrisch element)
+
+        "In onderlinge samenhang" = beide doelen moeten worden afgewogen
+        Geen wettelijke voorrang - afweging per geval.
+
+        Kaderdoelen (duurzame ontwikkeling, bewoonbaarheid, leefmilieu) zijn
+        GRONDWETTELIJK verankerd (art. 21 Gw).
+
+  artikel_1_4:
+    nummer: "1.4"
+    titel: "(verhouding tot andere wetgeving)"
+    bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.4"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.4"
+        structuur:
+          volledige_tekst: "Deze wet is niet van toepassing op onderwerpen met betrekking tot de fysieke leefomgeving of onderdelen daarvan, die bij of krachtens een andere wet uitputtend zijn geregeld, tenzij uit de bepalingen van deze wet anders blijkt."
+        logica:
+          type: "begrenzing"
+          norm: "lex specialis derogat legi generali"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij uit de bepalingen van deze wet anders blijkt"
+            effect: "Omgevingswet kan expliciet voorrang nemen"
+          default: "uitputtende bijzondere wet gaat voor"
+          uitzondering: "expliciete bepaling Omgevingswet"
+          critical_insight: "Voorkomt samenloop met bijv. Mijnbouwwet, Kernenergiewet"
+
+    functie:
+      werkwoord: "begrenst"
+      object: "toepassingsgebied tov andere wetten"
+      subject: "de wet"
+
+  artikel_1_5:
+    nummer: "1.5"
+    titel: "(toepassing in de exclusieve economische zone en internationaal)"
+    bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.5"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.5/Lid1"
+        structuur:
+          volledige_tekst: "Deze wet is van toepassing in de exclusieve economische zone, met uitzondering van artikel 5.1, eerste lid, aanhef en onder a en b, en tweede lid, aanhef en onder a."
+        logica:
+          type: "begrenzing"
+          norm: "wet geldt in EEZ"
+          conditie:
+            type: "in_afwijking_van"
+            tekst: "met uitzondering van artikel 5.1, eerste lid, aanhef en onder a en b, en tweede lid, aanhef en onder a"
+            effect: "bepaalde omgevingsvergunningplichten gelden NIET in EEZ"
+          uitzonderingen_art_5_1:
+            - "lid 1 onder a: bouwactiviteit"
+            - "lid 1 onder b: omgevingsplanactiviteit"
+            - "lid 2 onder a: bouwactiviteit"
+
+      2:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.5/Lid2"
+        structuur:
+          volledige_tekst: "Een op grond van deze wet bij algemene maatregel van bestuur of ministeriële regeling gestelde regel is van toepassing in de exclusieve economische zone als dat bij die regel is bepaald."
+        logica:
+          type: "delegatie"
+          norm: "EEZ-toepassing via AMvB/regeling"
+          conditie:
+            type: "indien"
+            tekst: "als dat bij die regel is bepaald"
+            effect: "opt-in systeem voor EEZ-toepassing van uitvoeringsregels"
+
+      3:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.5/Lid3"
+        structuur:
+          volledige_tekst: "Een bij of krachtens deze wet gestelde regel over stortingsactiviteiten op zee is ook van toepassing op in Nederland geregistreerde vaartuigen en luchtvaartuigen die zich buiten Nederland en de exclusieve economische zone bevinden."
+        logica:
+          type: "begrenzing"
+          norm: "extraterritoriale werking - stortingsactiviteiten"
+          scope: "NL-geregistreerde vaartuigen/luchtvaartuigen"
+          gebieden: "buiten NL én buiten EEZ"
+          grondslag: "vlaggenstaatjurisdictie"
+
+      4:
+        bron_path: "/Hoofdstuk1/Afdeling1.2/Artikel1.5/Lid4"
+        structuur:
+          volledige_tekst: "Een bij of krachtens deze wet gestelde regel over het vangen, doden of verwerken van walvissen is ook van toepassing op in Nederland geregistreerde vaartuigen die zich buiten Nederland en de exclusieve economische zone bevinden."
+        logica:
+          type: "begrenzing"
+          norm: "extraterritoriale werking - walvisregels"
+          scope: "NL-geregistreerde vaartuigen"
+          gebieden: "buiten NL én buiten EEZ"
+          grondslag: "IWC-verdrag implementatie"
+
+    functie:
+      werkwoord: "begrenst"
+      object: "geografische werkingssfeer"
+      subject: "de wet"
+
+    interne_refs:
+      - naar: "artikel 5.1"
+        type: "begrenzing"
+        context: "met uitzondering van artikel 5.1, eerste lid, aanhef en onder a en b"
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.5 regelt de GEOGRAFISCHE SCOPE van de Omgevingswet:
+
+        Lid 1: Wet geldt in EEZ MAAR zonder bouw-/omgevingsplanactiviteiten (art. 5.1)
+          - Logisch: geen omgevingsplan in zee
+
+        Lid 2: AMvB/regelingen gelden alleen in EEZ als expliciet bepaald
+          - Opt-in systeem
+
+        Lid 3-4: EXTRATERRITORIALE werking voor:
+          - Stortingsactiviteiten op zee (OSPAR-verdrag)
+          - Walvisregels (IWC-verdrag)
+          - Via vlaggenstaatjurisdictie
+
+# =============================================================================
+# AFDELING 1.3: ZORG VOOR DE FYSIEKE LEEFOMGEVING
+# =============================================================================
+
+afdeling_1_3:
+  nummer: "1.3"
+  titel: "Zorg voor de fysieke leefomgeving"
+  bron_path: "/Hoofdstuk1/Afdeling1.3"
+  inwerking: "2024-01-01"
+
+  artikel_1_6:
+    nummer: "1.6"
+    titel: "(zorgplicht voor een ieder)"
+    bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.6"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.6"
+        structuur:
+          volledige_tekst: "Een ieder draagt voldoende zorg voor de fysieke leefomgeving."
+        logica:
+          type: "verplichting"
+          norm: "algemene zorgplicht"
+          subject: "een ieder"
+          object: "fysieke leefomgeving"
+          kwalificatie: "voldoende zorg"
+          critical_insight: "ABSTRACTE norm - geen concrete gedragsnorm"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "zorg voor fysieke leefomgeving"
+      subject: "een ieder"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.6 is de ALGEMENE ZORGPLICHT - kern van Afdeling 1.3.
+
+        "Een ieder" = natuurlijke personen + rechtspersonen + overheden
+        "Voldoende zorg" = open norm, in te vullen door rechter
+
+        NIET direct handhaafbaar - te abstract.
+        Werkt als:
+        - Interpretatiekader voor specifieke regels
+        - Vangnet bij niet-geregelde situaties
+        - Basis voor art. 1.7 concretisering
+
+  artikel_1_7:
+    nummer: "1.7"
+    titel: "(activiteit met nadelige gevolgen)"
+    bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7"
+        structuur:
+          aanhef: "Een ieder die weet of redelijkerwijs kan vermoeden dat zijn activiteit nadelige gevolgen kan hebben voor de fysieke leefomgeving, is verplicht:"
+          onderdelen:
+            a:
+              tekst: "alle maatregelen te nemen die redelijkerwijs van hem kunnen worden gevraagd om die gevolgen te voorkomen,"
+              bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7/Onderdeela"
+            b:
+              tekst: "voor zover die gevolgen niet kunnen worden voorkomen: die gevolgen zoveel mogelijk te beperken of ongedaan te maken,"
+              bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7/Onderdeelb"
+            c:
+              tekst: "als die gevolgen onvoldoende kunnen worden beperkt: die activiteit achterwege te laten voor zover dat redelijkerwijs van hem kan worden gevraagd."
+              bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7/Onderdeelc"
+        logica:
+          type: "verplichting"
+          norm: "geconcretiseerde zorgplicht"
+          subject: "een ieder die weet of redelijkerwijs kan vermoeden"
+          trigger: "activiteit met (potentiële) nadelige gevolgen"
+          cascade:
+            1_voorkomen:
+              verplichting: "alle redelijke maatregelen om te voorkomen"
+              kwalificatie: "redelijkerwijs gevraagd"
+            2_beperken:
+              trigger: "voorkomen niet mogelijk"
+              verplichting: "zoveel mogelijk beperken of ongedaan maken"
+            3_achterwege_laten:
+              trigger: "onvoldoende beperkt"
+              verplichting: "activiteit achterwege laten"
+              kwalificatie: "voor zover redelijkerwijs gevraagd"
+          critical_insight: "HIËRARCHISCHE cascade: voorkomen > beperken > stoppen"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "maatregelen bij nadelige gevolgen"
+      subject: "een ieder"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.7 concretiseert de zorgplicht uit art. 1.6 met een DRIETRAPS-CASCADE:
+
+        TRAP 1 (onder a): VOORKOMEN
+          - Primaire verplichting
+          - "alle maatregelen" maar "redelijkerwijs gevraagd"
+
+        TRAP 2 (onder b): BEPERKEN
+          - Pas als voorkomen niet kan
+          - "zoveel mogelijk beperken of ongedaan maken"
+
+        TRAP 3 (onder c): STOPPEN
+          - Pas als beperken onvoldoende
+          - Activiteit achterwege laten
+          - Nog steeds: "redelijkerwijs gevraagd" - dus proportionaliteit
+
+        TRIGGER: "weet of redelijkerwijs kan vermoeden"
+          - Objectieve kenbaarheidsnorm
+          - Niet: daadwerkelijke kennis vereist
+
+        KRITISCH: Art. 1.7 is wél handhaafbaar (concreter dan art. 1.6)
+
+  artikel_1_7a:
+    nummer: "1.7a"
+    titel: "(verbod activiteit met aanzienlijke nadelige gevolgen)"
+    bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a/Lid1"
+        structuur:
+          volledige_tekst: "Het is verboden een activiteit te verrichten of na te laten als door het verrichten of nalaten daarvan aanzienlijke nadelige gevolgen voor de fysieke leefomgeving ontstaan of dreigen te ontstaan."
+        logica:
+          type: "verbod"
+          norm: "verbod aanzienlijke nadelige gevolgen"
+          subject: "een ieder"
+          object: "activiteiten EN nalaten"
+          drempel: "aanzienlijke nadelige gevolgen"
+          trigger: "ontstaan of dreigen te ontstaan"
+          critical_insight: "ABSOLUTE verbodsnorm - geen proportionaliteitstoets"
+
+      2:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a/Lid2"
+        structuur:
+          aanhef: "Bij algemene maatregel van bestuur wordt de toepassing van het eerste lid uitgewerkt of begrensd. De uitwerking of begrenzing strekt in ieder geval ter uitvoering van de richtlijn milieustrafrecht en heeft betrekking op:"
+          onderdelen:
+            a:
+              tekst: "de omvang van de nadelige gevolgen voor de fysieke leefomgeving,"
+              bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a/Lid2/Onderdeela"
+            b:
+              tekst: "de gevallen waarin het eerste lid van toepassing is."
+              bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a/Lid2/Onderdeelb"
+        logica:
+          type: "delegatie"
+          norm: "uitwerking via AMvB"
+          delegeert_aan: "algemene maatregel van bestuur"
+          onderwerpen:
+            - "omvang nadelige gevolgen"
+            - "gevallen van toepassing"
+          grondslag: "richtlijn milieustrafrecht"
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "activiteiten met aanzienlijke nadelige gevolgen"
+      subject: "een ieder"
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "nader te bepalen"
+        voor: "uitwerking verbod aanzienlijke gevolgen"
+        actor: "Rijksoverheid"
+        mechanisme: "uitwerking/begrenzing"
+
+    externe_refs:
+      - naar: "richtlijn milieustrafrecht"
+        wet: "EU"
+        context: "ter uitvoering van de richtlijn milieustrafrecht"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.7a is NIEUW per 2024 - implementatie EU-richtlijn milieustrafrecht.
+
+        Lid 1: ABSOLUUT VERBOD op aanzienlijke nadelige gevolgen
+          - Anders dan art. 1.7: geen "redelijkerwijs" proportionaliteitstoets
+          - Zowel verrichten ALS nalaten
+          - "Dreigen te ontstaan" = ook preventief
+
+        Lid 2: Delegatie aan AMvB voor:
+          - Wat is "aanzienlijk"?
+          - Welke gevallen?
+
+        VERSCHIL met art. 1.7:
+        - Art. 1.7: relatieve zorgplicht met proportionaliteit
+        - Art. 1.7a: absoluut verbod bij drempeloverschrijding
+
+        STRAFRECHTELIJK relevant: dit verbod is grondslag voor milieustrafrecht
+
+  artikel_1_8:
+    nummer: "1.8"
+    titel: "(verhouding tot specifieke regels)"
+    bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.8"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.8/Lid1"
+        structuur:
+          volledige_tekst: "Aan de verplichtingen, bedoeld in de artikelen 1.6 en 1.7, wordt in ieder geval voldaan, voor zover bij wettelijk voorschrift of besluit specifieke regels zijn gesteld met het oog op de doelen van de wet, en die regels worden nageleefd."
+        logica:
+          type: "definitie"
+          norm: "safe harbour via naleving specifieke regels"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor zover bij wettelijk voorschrift of besluit specifieke regels zijn gesteld"
+            effect: "specifieke regels vervangen zorgplicht"
+          cummulatief:
+            - "specifieke regels gesteld"
+            - "met het oog op doelen van de wet"
+            - "regels worden nageleefd"
+          gevolg: "naleving = voldaan aan zorgplicht"
+          critical_insight: "Compliance defence - geen dubbele toetsing"
+
+      2:
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.8/Lid2"
+        structuur:
+          volledige_tekst: "Artikel 1.7a is niet van toepassing voor zover bij wettelijk voorschrift of besluit specifieke regels zijn gesteld met het oog op de doelen van de wet."
+        logica:
+          type: "begrenzing"
+          norm: "art. 1.7a wijkt voor specifieke regels"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor zover bij wettelijk voorschrift of besluit specifieke regels zijn gesteld"
+            effect: "art. 1.7a niet van toepassing bij specifieke regulering"
+          verschil_met_lid_1: "art. 1.7a vereist NIET dat regels worden nageleefd"
+          critical_insight: "NALEVING niet vereist - enkele regulering volstaat voor uitsluiting"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "verhouding zorgplicht tot specifieke regels"
+      subject: "de wet"
+
+    interne_refs:
+      - naar: "artikel 1.6"
+        type: "verwijzing"
+        context: "verplichtingen, bedoeld in de artikelen 1.6"
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.6"
+      - naar: "artikel 1.7"
+        type: "verwijzing"
+        context: "en 1.7"
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7"
+      - naar: "artikel 1.7a"
+        type: "verwijzing"
+        context: "Artikel 1.7a is niet van toepassing"
+        bron_path: "/Hoofdstuk1/Afdeling1.3/Artikel1.7a"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 1.8 regelt de VERHOUDING tussen zorgplicht en specifieke regels:
+
+        Lid 1: Safe harbour voor art. 1.6 en 1.7
+          - ALS specifieke regels + nageleefd → voldaan aan zorgplicht
+          - "In ieder geval" = minimumnorm
+          - KRITISCH: naleving vereist
+
+        Lid 2: Uitsluiting art. 1.7a
+          - Specifieke regels → art. 1.7a niet van toepassing
+          - KRITISCH: naleving NIET vereist
+          - Enkele regulering volstaat
+
+        VERSCHIL tussen leden:
+        - Lid 1: compliance defence (moet naleven)
+        - Lid 2: regulatory defence (regulering volstaat)
+
+        Dit voorkomt dat art. 1.7a alsnog als vangnet werkt waar
+        de wetgever al specifiek heeft gereguleerd.
+
+# =============================================================================
+# HOOFDSTUK-LEVEL ANALYSE
+# =============================================================================
+
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 3
+    artikelen_count: 8
+
+  patronen:
+    definitie_piramide:
+      beschrijving: "Begrippen → Scope → Doelen → Verhoudingen"
+      evidence: ["art. 1.1", "art. 1.2", "art. 1.3", "art. 1.4"]
+      implicatie: "Elk volgend artikel bouwt op vorige definities"
+
+    zorgplicht_cascade:
+      beschrijving: "Algemeen → Concreet → Absoluut → Verhouding"
+      structuur:
+        art_1_6: "abstracte zorgplicht (niet direct handhaafbaar)"
+        art_1_7: "geconcretiseerde zorgplicht met proportionaliteit"
+        art_1_7a: "absoluut verbod aanzienlijke gevolgen"
+        art_1_8: "verhouding tot specifieke regels"
+      evidence: ["art. 1.6", "art. 1.7", "art. 1.7a", "art. 1.8"]
+
+    open_normen:
+      beschrijving: "'In ieder geval' structuur maakt lijsten niet-limitatief"
+      evidence: ["art. 1.2 lid 2", "art. 1.2 lid 3"]
+      implicatie: "Rechter kan componenten/gevolgen toevoegen"
+
+    duale_doelstelling:
+      beschrijving: "Bescherming EN Benutting als gelijkwaardige doelen"
+      evidence: ["art. 1.3"]
+      implicatie: "Geen wettelijke hiërarchie - afweging per geval"
+
+  relaties:
+    intern:
+      - van: "art. 1.1"
+        naar: "Bijlage"
+        type: "grondslag"
+        context: "begripsbepalingen"
+      - van: "art. 1.5"
+        naar: "art. 5.1"
+        type: "begrenzing"
+        context: "EEZ-uitzonderingen"
+      - van: "art. 1.8"
+        naar: "art. 1.6, 1.7, 1.7a"
+        type: "verhouding"
+        context: "safe harbour mechanisme"
+
+  routes:
+    entry_points:
+      - artikel: "1.2"
+        vraag: "Wat valt onder de Omgevingswet?"
+      - artikel: "1.3"
+        vraag: "Wat zijn de doelen van de wet?"
+      - artikel: "1.6"
+        vraag: "Wat is de zorgplicht?"
+      - artikel: "1.7"
+        vraag: "Wat moet ik doen bij nadelige gevolgen?"
+
+    exit_points:
+      - naar: "Hoofdstuk 2"
+        context: "bevoegdheidsverdeling bestuursorganen"
+      - naar: "Hoofdstuk 5"
+        context: "omgevingsvergunning (art. 5.1 via art. 1.5)"
+      - naar: "Bijlage"
+        context: "begripsbepalingen (via art. 1.1)"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    zorgplicht_drietrap:
+      observatie: |
+        Afdeling 1.3 kent drie niveaus van zorgplicht:
+        1. Art. 1.6: abstract (niet direct handhaafbaar)
+        2. Art. 1.7: concreet met proportionaliteit
+        3. Art. 1.7a: absoluut verbod
+      implicatie: |
+        Navigator moet kunnen differentiëren tussen niveaus.
+        Art. 1.7a is strafrechtelijk relevant via richtlijn milieustrafrecht.
+
+    open_normen_patroon:
+      observatie: |
+        "In ieder geval" in art. 1.2 lid 2 en lid 3 maakt lijsten open.
+        Rechter kan uitbreiden buiten de 10 componenten.
+      implicatie: |
+        Navigator mag lijsten niet als limitatief presenteren.
+
+    safe_harbour_mechanisme:
+      observatie: |
+        Art. 1.8 lid 1: naleving specifieke regels = voldaan aan zorgplicht
+        Art. 1.8 lid 2: regulering volstaat voor uitsluiting art. 1.7a
+      implicatie: |
+        Belangrijk onderscheid: compliance vs regulatory defence.
+
+    menselijke_gevolgen_indirect:
+      observatie: |
+        Art. 1.2 lid 4: gevolgen voor mens alleen "via" fysieke leefomgeving
+      implicatie: |
+        Geen directe gezondheidsregulering - altijd via milieu-route.
+
+  schema_verbeteringen:
+    - "Toegevoegd: conditie type 'in_ieder_geval' voor niet-limitatieve lijsten"
+    - "Toegevoegd: cascade structuur voor art. 1.7 drietraps-logica"

@@ -1,0 +1,532 @@
+# Paragraaf 5.1.4 & 5.1.5 - Inhoud, werking & Lifecycle
+# V2 Atomic Extraction
+# Artikelen 5.34-5.43
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: "5.1"
+paragrafen: ["5.1.4", "5.1.5"]
+titel: "Inhoud en werking / Actualisering, wijziging, intrekking en revisievergunning"
+bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4 + Paragraaf5.1.5"
+
+# =============================================================================
+# PARAGRAAF 5.1.4 - INHOUD EN WERKING
+# =============================================================================
+paragraaf_5_1_4:
+  titel: "Inhoud en werking"
+  functie: "Bepaalt WAT de vergunning bevat en voor WIE deze geldt"
+
+artikelen:
+
+  artikel_5.34:
+    nummer: "5.34"
+    titel: "(voorschriften omgevingsvergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid1"
+        structuur:
+          volledige_tekst: "Aan een omgevingsvergunning worden de voorschriften verbonden die nodig zijn voor de regels, bedoeld in de artikelen 5.18, 5.19, 5.30 en 5.31."
+        logica:
+          type: verplichting
+          norm: "Voorschriften VERPLICHT die voortvloeien uit beoordelingsregels"
+          key_concept: "beoordelingsregels → voorschriften"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid2"
+        structuur:
+          aanhef: "Onverminderd de artikelen 13.5, eerste tot en met vijfde lid, en 13.6 worden bij of krachtens algemene maatregel van bestuur voor daarbij aangewezen activiteiten regels gesteld over de toepassing van het eerste lid. Daarbij worden in ieder geval regels gesteld over:"
+          onderdelen:
+            a:
+              tekst: "voorschriften die strekken tot toepassing van andere technieken dan die waarover bij de aanvraag gegevens of bescheiden zijn verstrekt,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid2/Onderdeela"
+            b:
+              tekst: "voorschriften die, ook al houden deze verband met regels als bedoeld in het eerste lid, niet aan de omgevingsvergunning kunnen worden verbonden."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid2/Onderdeelb"
+        logica:
+          type: delegatiegrondslag
+          norm: "AMvB regelt nadere voorschriften-regels"
+          delegatie_aan: "AMvB"
+
+      3:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid3"
+        structuur:
+          aanhef: "Regels over het verbinden van voorschriften aan een omgevingsvergunning kunnen ook worden gesteld bij:"
+          onderdelen:
+            a:
+              tekst: "omgevingsplan, voor zover het gaat om een omgevingsvergunning voor een omgevingsplanactiviteit,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid3/Onderdeela"
+            b:
+              tekst: "waterschapsverordening, voor zover het gaat om een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.3,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid3/Onderdeelb"
+            c:
+              tekst: "omgevingsverordening, voor zover het gaat om een omgevingsvergunning voor: 1° een milieubelastende activiteit, tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval, 2° een activiteit als bedoeld in artikel 5.4."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid3/Onderdeelc"
+        logica:
+          type: delegatiegrondslag
+          norm: "Decentrale regels KAN voorschriften-regels stellen"
+          delegatie_aan:
+            - "omgevingsplan (OPA)"
+            - "waterschapsverordening (art. 5.3)"
+            - "omgevingsverordening (art. 5.4, milieubelastend)"
+
+      4:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.34/Lid4"
+        structuur:
+          volledige_tekst: "Bij het stellen van regels als bedoeld in het derde lid, aanhef en onder c, worden de grenzen van artikel 2.3, tweede lid, in acht genomen."
+        logica:
+          type: begrenzing
+          norm: "Provinciale voorschriften-regels binnen subsidiariteit"
+          begrenzing: "art. 2.3 lid 2"
+
+    interne_refs:
+      - naar: "art. 5.18, 5.19, 5.30, 5.31"
+        context: "beoordelingsregels"
+      - naar: "art. 13.5, 13.6"
+        context: "financiële zekerheid"
+      - naar: "art. 5.3"
+        context: "waterschapsverordening vergunning"
+      - naar: "art. 5.4"
+        context: "omgevingsverordening vergunning"
+
+  artikel_5.35:
+    nummer: "5.35"
+    titel: null
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.35"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+    status: "ingetrokken"
+    opmerking: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+  artikel_5.36:
+    nummer: "5.36"
+    titel: "(termijnstelling in omgevingsvergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid1"
+        structuur:
+          volledige_tekst: "In een omgevingsvergunning voor een voortdurende activiteit kan worden bepaald dat die vergunning geldt voor een daarbij gestelde termijn."
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN termijn stellen voor voortdurende activiteit"
+          key_distinction: "voortdurende activiteit → termijn vergunning zelf"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid2"
+        structuur:
+          volledige_tekst: "In een omgevingsvergunning voor een aflopende activiteit kan worden bepaald dat de vergunninghouder na afloop van een bij de vergunning gestelde termijn, de voor de verlening van de vergunning bestaande toestand heeft hersteld of een andere, in de omgevingsvergunning omschreven, toestand heeft gerealiseerd."
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN herstelplicht na afloop aflopende activiteit"
+          key_distinction: "aflopende activiteit → verplichtingen na afloop"
+
+      3:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid3"
+        structuur:
+          volledige_tekst: "In een omgevingsvergunning kan worden bepaald dat daarbij aangewezen voorschriften nadat de vergunning haar gelding heeft verloren, tijdens een daarbij gestelde termijn van kracht blijven."
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN nawerking voorschriften bepalen"
+
+      4:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid4"
+        structuur:
+          aanhef: "Bij algemene maatregel van bestuur worden gevallen aangewezen waarin een termijn als bedoeld in het eerste of tweede lid wordt gesteld. Bij de maatregel kunnen over die termijn worden geregeld:"
+          onderdelen:
+            a:
+              tekst: "de maximale duur,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid4/Onderdeela"
+            b:
+              tekst: "de gevallen waarin verlenging mogelijk is."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36/Lid4/Onderdeelb"
+        logica:
+          type: delegatiegrondslag
+          norm: "AMvB VERPLICHT termijnstelling-gevallen aanwijzen"
+          delegatie_aan: "AMvB"
+
+  artikel_5.36a:
+    nummer: "5.36a"
+    titel: "(termijnstelling seizoensgebonden en drijvende bouwwerken)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a/Lid1"
+        structuur:
+          aanhef: "In een omgevingsvergunning voor een bouwactiviteit voor een seizoensgebonden bouwwerk of voor een omgevingsplanactiviteit bestaande uit een bouwactiviteit voor een seizoensgebonden bouwwerk:"
+          onderdelen:
+            a:
+              tekst: "kan worden bepaald dat het bouwwerk op grond van die vergunning gedurende opeenvolgende kalenderjaren kan worden gebouwd en gesloopt, en"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a/Lid1/Onderdeela"
+            b:
+              tekst: "wordt bepaald binnen welke opeenvolgende tijdvakken van een kalenderjaar het bouwen en slopen van het bouwwerk plaatsvindt."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a/Lid1/Onderdeelb"
+        logica:
+          type: bijzondere_regeling
+          norm: "Seizoensgebonden bouwwerken: meerjarige bouw/sloop + tijdvakken VERPLICHT"
+          conditie_type: cumulatief
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a/Lid2"
+        structuur:
+          volledige_tekst: "Een omgevingsvergunning voor een bouwactiviteit voor een drijvend bouwwerk of voor een omgevingsplanactiviteit bestaande uit een bouwactiviteit voor een drijvend bouwwerk omvat ook de toestemming om het bouwwerk in verband met werkzaamheden te verplaatsen en op dezelfde locatie terug te plaatsen."
+        logica:
+          type: automatisch_rechtsgevolg
+          norm: "Drijvend bouwwerk: verplaatsing voor werkzaamheden AUTOMATISCH toegestaan"
+
+      3:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36a/Lid3"
+        structuur:
+          volledige_tekst: "In een omgevingsvergunning voor een bouwactiviteit voor een drijvend bouwwerk of voor een omgevingsplanactiviteit bestaande uit een bouwactiviteit voor een drijvend bouwwerk kan worden bepaald dat het bouwwerk op grond van die vergunning ook in andere gevallen dan bedoeld in het tweede lid kan worden verplaatst en op dezelfde locatie kan worden teruggeplaatst."
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN ruimere verplaatsingstoestemming verlenen"
+
+  artikel_5.36b:
+    nummer: "5.36b"
+    titel: "(conversie omgevingsvergunning wateractiviteit vanwege nieuwe vergunningplicht stortingsactiviteit op zee)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36b"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    structuur:
+      volledige_tekst: "Als het verbod, bedoeld in artikel 5.1, eerste lid, om zonder omgevingsvergunning een stortingsactiviteit op zee te verrichten door een wijziging van bijlage 4 bij het Londen-protocol van toepassing wordt op een activiteit waarvoor al een omgevingsvergunning voor een lozingsactiviteit op een oppervlaktewaterlichaam of voor een beperkingengebiedactiviteit met betrekking tot een waterstaatswerk als bedoeld in artikel 5.1, tweede lid, is verleend, geldt die omgevingsvergunning als omgevingsvergunning voor een stortingsactiviteit op zee, mits in die bijlage bij het Londen-protocol is bepaald dat voor die activiteit een vergunning kan worden verleend."
+
+    logica:
+      type: conversiebepaling
+      norm: "Bestaande watervergunning CONVERTEERT naar stortingsvergunning"
+      trigger: "Londen-protocol wijziging"
+      voorwaarde: "bijlage 4 staat vergunningverlening toe"
+
+  artikel_5.37:
+    nummer: "5.37"
+    titel: "(normadressaat omgevingsvergunning en aanwijzing vergunninghouder)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37/Lid1"
+        structuur:
+          volledige_tekst: "Een omgevingsvergunning geldt voor degene die de activiteit verricht waarop zij betrekking heeft. Diegene is vergunninghouder en draagt zorg voor de naleving van de vergunningvoorschriften."
+        logica:
+          type: hoofdregel
+          norm: "Vergunning is ZAAKSGEBONDEN (volgt activiteit)"
+          key_concept: "normadressaat = degene die activiteit verricht"
+          zorgplicht: "vergunninghouder draagt zorg voor naleving"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37/Lid2"
+        structuur:
+          volledige_tekst: "Als een aangevraagde of verleende omgevingsvergunning zal gaan gelden voor een ander dan de aanvrager of de vergunninghouder, informeert de aanvrager respectievelijk de vergunninghouder ten minste vier weken van tevoren het bevoegd gezag daarover. Bij ministeriële regeling worden regels gesteld over de gegevens die daarbij worden verstrekt."
+        logica:
+          type: verplichting
+          norm: "Overdracht vergunning: 4 weken van tevoren BG informeren"
+          termijn: "4 weken vooraf"
+
+      3:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37/Lid3"
+        structuur:
+          volledige_tekst: "In afwijking van het eerste lid, eerste zin, kan het bevoegd gezag in de omgevingsvergunning bepalen dat deze alleen geldt voor degene aan wie zij is verleend, als de persoon van de vergunninghouder van belang is voor de toepassing van de regels over het verlenen of weigeren van de omgevingsvergunning."
+        logica:
+          type: uitzondering
+          norm: "BG KAN persoonsgebondenheid bepalen"
+          trigger: "persoon van belang voor verlening/weigering"
+          afwijking_van: "lid 1 (zaaksgebondenheid)"
+
+  artikel_5.37a:
+    nummer: "5.37a"
+    titel: "(verantwoordelijkheidsverdeling vergunninghouders)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37a"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.4"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37a/Lid1"
+        structuur:
+          volledige_tekst: "In afwijking van artikel 5.37, eerste lid, kan het bevoegd gezag in de omgevingsvergunning bepalen dat een vergunninghouder alleen zorg draagt voor de naleving van de vergunningvoorschriften voor de activiteit die of het deel van de activiteit dat hij verricht, voor zover de activiteit of het deel van de activiteit te onderscheiden is, tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval."
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN verantwoordelijkheid splitsen bij meerdere vergunninghouders"
+          voorwaarde: "activiteitdeel te onderscheiden"
+          uitzondering: "AMvB-aangewezen gevallen"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.37a/Lid2"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kunnen nadere regels worden gesteld over de toepassing van het eerste lid."
+        logica:
+          type: delegatiegrondslag
+          norm: "AMvB KAN nadere regels verantwoordelijkheidsverdeling"
+
+# =============================================================================
+# PARAGRAAF 5.1.5 - ACTUALISERING, WIJZIGING, INTREKKING
+# =============================================================================
+paragraaf_5_1_5:
+  titel: "Actualisering, wijziging, intrekking en revisievergunning"
+  functie: "Regelt LIFECYCLE van de vergunning na verlening"
+
+artikelen_5_1_5:
+
+  artikel_5.38:
+    nummer: "5.38"
+    titel: "(actualisering omgevingsvergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid1"
+        structuur:
+          aanhef: "Voor zover een omgevingsvergunning betrekking heeft op:"
+          onderdelen:
+            a:
+              tekst: "een stortingsactiviteit op zee,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid1/Onderdeela"
+            b:
+              tekst: "een milieubelastende activiteit, tenzij het gaat om een op grond van artikel 5.26, vierde lid, aangewezen geval,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid1/Onderdeelb"
+            c:
+              tekst: "een lozingsactiviteit op: 1° een oppervlaktewaterlichaam, 2° een zuiveringtechnisch werk,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid1/Onderdeelc"
+          afsluiting: "beziet het bevoegd gezag regelmatig of de voorschriften van de vergunning nog toereikend zijn gezien de ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu en de ontwikkelingen met betrekking tot de kwaliteit van het milieu."
+        logica:
+          type: verplichting
+          norm: "BG VERPLICHT regelmatig voorschriften toereikendheid bezien"
+          scope:
+            - "stortingsactiviteit op zee"
+            - "milieubelastende activiteit"
+            - "lozingsactiviteit"
+          trigger: "technische ontwikkelingen + milieukwaliteit"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid2"
+        structuur:
+          volledige_tekst: "Onder ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu wordt ook verstaan de vaststelling van nieuwe of herziene conclusies over beste beschikbare technieken, bedoeld in artikel 13, vijfde en zevende lid, van de richtlijn industriële emissies."
+        logica:
+          type: definitie
+          norm: "BBT-conclusies = technische ontwikkelingen"
+          key_concept: "beste beschikbare technieken"
+
+      3:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38/Lid3"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur worden met het oog op het beschermen van het milieu regels gesteld over de wijze waarop het eerste lid wordt toegepast voor daarbij aangewezen activiteiten. Bij de maatregel kan worden bepaald dat daarbij gestelde regels alleen gelden in daarbij aangewezen gevallen."
+        logica:
+          type: delegatiegrondslag
+          norm: "AMvB regelt nadere actualiserings-regels"
+
+    externe_refs:
+      - naar: "Richtlijn industriële emissies"
+        artikel: "13 lid 5, 7"
+        context: "BBT-conclusies"
+
+  artikel_5.39:
+    nummer: "5.39"
+    titel: "(verplichting tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.39"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+
+    structuur:
+      aanhef: "Het bevoegd gezag wijzigt de voorschriften van een omgevingsvergunning of trekt een omgevingsvergunning in:"
+      onderdelen:
+        a:
+          tekst: "in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,"
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.39/Onderdeela"
+        b:
+          tekst: "voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald."
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.39/Onderdeelb"
+
+    logica:
+      type: verplichting
+      norm: "BG VERPLICHT wijziging/intrekking in bepaalde gevallen"
+      werkwoord: "wijzigt... of trekt in"
+      key_distinction: "IMPERATIEF (moet)"
+      conditie_type: alternatief
+
+    interne_refs:
+      - naar: "art. 5.3, 5.4"
+        context: "decentrale vergunning-gronden"
+
+  artikel_5.40:
+    nummer: "5.40"
+    titel: "(bevoegdheid tot wijziging voorschriften omgevingsvergunning en intrekking omgevingsvergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid1"
+        structuur:
+          aanhef: "Het bevoegd gezag kan de voorschriften van een omgevingsvergunning wijzigen:"
+          onderdelen:
+            a:
+              tekst: "in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid1/Onderdeela"
+            b:
+              tekst: "voor een activiteit als bedoeld in artikel 5.31, eerste lid: als het gaat om het wegnemen of beperken van gevaar, bedoeld in artikel 3, zevende lid, van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, waarbij artikel 5.31, tweede en derde lid, van overeenkomstige toepassing is,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid1/Onderdeelb"
+            c:
+              tekst: "voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid1/Onderdeelc"
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN voorschriften wijzigen"
+          werkwoord: "kan"
+          key_distinction: "FACULTATIEF (mag)"
+
+      2:
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2"
+        structuur:
+          aanhef: "In andere gevallen dan bedoeld in artikel 18.10 kan het bevoegd gezag een omgevingsvergunning intrekken:"
+          onderdelen:
+            a:
+              tekst: "in gevallen of op gronden die bij algemene maatregel van bestuur worden bepaald,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeela"
+            b:
+              tekst: "als gedurende een jaar of een in de vergunning bepaalde langere termijn geen activiteiten zijn verricht met gebruikmaking van de vergunning,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeelb"
+            c:
+              tekst: "op verzoek van de vergunninghouder,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeelc"
+            d:
+              tekst: "voor een activiteit als bedoeld in artikel 5.31, eerste lid: in het geval en onder de voorwaarden, bedoeld in artikel 3 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, waarbij artikel 5.31, tweede en derde lid, van overeenkomstige toepassing is,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeeld"
+            e:
+              tekst: "voor een milieubelastende activiteit of een wateractiviteit waarvoor met toepassing van artikel 16.7, eerste lid, aanhef en onder b, gecoördineerd omgevingsvergunningen zijn verleend: als de omgevingsvergunning voor de samenhangende wateractiviteit respectievelijk de milieubelastende activiteit is ingetrokken,"
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeele"
+            f:
+              tekst: "voor een activiteit als bedoeld in artikel 5.3 of 5.4: in gevallen of op gronden die in de waterschapsverordening respectievelijk de omgevingsverordening zijn bepaald."
+              bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.40/Lid2/Onderdeelf"
+        logica:
+          type: bevoegdheid
+          norm: "BG KAN vergunning intrekken"
+          conditie_type: alternatief
+
+    interne_refs:
+      - naar: "art. 18.10"
+        context: "handhavings-intrekking"
+      - naar: "art. 5.31"
+        context: "Bibob"
+      - naar: "art. 16.7 lid 1b"
+        context: "gecoördineerde vergunningen"
+
+    externe_refs:
+      - naar: "Wet Bibob"
+        wet: "BWBR0013798"
+        artikel: "3"
+
+  artikel_5.41:
+    nummer: "5.41"
+    titel: "(toepassing artikelen 5.39 en 5.40 op verzoek instemmingsorgaan)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.41"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+
+    structuur:
+      volledige_tekst: "Het bevoegd gezag wijzigt de voorschriften van een omgevingsvergunning voor een activiteit of trekt de omgevingsvergunning voor een activiteit in met toepassing van artikel 5.39 of 5.40, op verzoek van het bestuursorgaan dat op grond van artikel 16.16, eerste lid, heeft beslist over instemming met de voorgenomen beslissing op de aanvraag om de omgevingsvergunning voor die activiteit of dat op grond van artikel 16.16, derde of vierde lid, heeft bepaald dat instemming niet is vereist."
+
+    logica:
+      type: bevoegdheid_instemmingsorgaan
+      norm: "Instemmingsorgaan KAN wijziging/intrekking initiëren"
+      mechanisme: "verzoek aan BG"
+
+    interne_refs:
+      - naar: "art. 5.39, 5.40"
+        context: "wijziging/intrekking"
+      - naar: "art. 16.16"
+        context: "instemming"
+
+  artikel_5.42:
+    nummer: "5.42"
+    titel: "(invulling AMvB artikelen 5.39 en 5.40)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.42"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+    opmerking: "Structureert AMvB-delegatie voor art. 5.39/5.40"
+
+    logica:
+      type: structuurbepaling
+      norm: "Kader voor AMvB-invulling wijziging/intrekking"
+
+  artikel_5.43:
+    nummer: "5.43"
+    titel: "(revisievergunning)"
+    bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.43"
+    inwerking: "2024-01-01"
+    paragraaf: "5.1.5"
+
+    structuur:
+      volledige_tekst: "Als voor een of meer activiteiten verschillende omgevingsvergunningen van kracht zijn, kan het bevoegd gezag, in het belang van een doelmatige uitvoering en handhaving, ambtshalve een omgevingsvergunning verlenen die de eerder verleende omgevingsvergunningen vervangt."
+
+    logica:
+      type: bevoegdheid
+      norm: "BG KAN ambtshalve revisievergunning verlenen"
+      doel: "doelmatige uitvoering en handhaving"
+      key_concept: "consolidatie vergunningen"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    paragrafen_count: 2
+    artikelen_count: 12
+    artikelen_actief: 11
+    leden_count: 22
+
+  patronen:
+    afdeling_5_1_flow:
+      beschrijving: "Volledige vergunning-lifecycle"
+      flow:
+        - "5.1.1 WAT is vergunningplichtig?"
+        - "5.1.2 WIE beslist?"
+        - "5.1.3 HOE wordt beoordeeld?"
+        - "5.1.4 WAT bevat de vergunning?"
+        - "5.1.5 HOE verandert de vergunning?"
+
+    zaaksgebondenheid:
+      beschrijving: "Vergunning volgt activiteit, niet persoon"
+      evidence: ["art. 5.37 lid 1"]
+      uitzondering: "art. 5.37 lid 3 (persoonsgebondenheid)"
+
+    imperatief_vs_facultatief:
+      beschrijving: "Onderscheid verplichting vs bevoegdheid"
+      art_5_39: "wijzigt/trekt in (MOET)"
+      art_5_40: "kan wijzigen/intrekken (MAG)"
+      key_concept: true
+
+    lifecycle_pattern:
+      beschrijving: "Vergunning kan worden geactualiseerd, gewijzigd, ingetrokken of geconsolideerd"
+      fasen:
+        - "ACTUALISERING (5.38) - regelmatig bezien"
+        - "WIJZIGING (5.39 verplichting / 5.40 bevoegdheid)"
+        - "INTREKKING (5.39 verplichting / 5.40 bevoegdheid)"
+        - "REVISIE (5.43) - consolidatie"
+
+  kritieke_verwijzingen:
+    - naar: "art. 5.18, 5.19, 5.30, 5.31"
+      context: "beoordelingsregels → voorschriften"
+    - naar: "art. 13.5, 13.6"
+      context: "financiële zekerheid"
+    - naar: "art. 18.10"
+      context: "handhavings-intrekking"
+    - naar: "art. 16.16"
+      context: "instemming"
+    - naar: "Wet Bibob"
+      context: "integriteitsbeoordeling"

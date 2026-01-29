@@ -1,0 +1,1000 @@
+# =============================================================================
+# CHAPTER 10: GEDOOGPLICHTEN - V2 ATOMIC EXTRACTION
+# =============================================================================
+# Source: Omgevingswet (BWBR0037885)
+# Scope: Art. 10.1 - 10.29
+# Schema: v2 (lid-level logica, bron_path, conditie typing)
+# Extracted: 2026-01-29
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_10:
+  nummer: "10"
+  titel: "Gedoogplichten"
+  bron_path: "/Hoofdstuk10"
+  inwerking: "2024-01-01"
+
+  structuur:
+    - afdeling: "10.1"
+      titel: "Algemene bepalingen"
+      artikelen: ["10.1", "10.1a"]
+    - afdeling: "10.2"
+      titel: "Gedoogplichten van rechtswege"
+      artikelen: ["10.2", "10.3", "10.4", "10.5", "10.6", "10.7", "10.8", "10.9", "10.10", "10.10a", "10.10b", "10.10c", "10.10d", "10.10e", "10.10f", "10.10g", "10.10h", "10.10i", "10.10j"]
+    - afdeling: "10.3"
+      titel: "Bij beschikking op te leggen gedoogplichten"
+      paragrafen:
+        - nummer: "10.3.1"
+          titel: "Algemene bepalingen"
+          artikelen: ["10.11", "10.12"]
+        - nummer: "10.3.2"
+          titel: "Gedoogplichten"
+          artikelen: ["10.13", "10.13a", "10.13b", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19", "10.19a", "10.21", "10.21a"]
+        - nummer: "10.3.3"
+          titel: "De gedoogplichtbeschikking"
+          artikelen: ["10.22", "10.23"]
+        - nummer: "10.3.4"
+          titel: "Bijzondere bepalingen"
+          artikelen: ["10.24", "10.25", "10.27", "10.28"]
+    - afdeling: "10.4"
+      titel: "Overig"
+      artikelen: ["10.29"]
+
+# =============================================================================
+# AFDELING 10.1: ALGEMENE BEPALINGEN
+# =============================================================================
+
+afdeling_10_1:
+  nummer: "10.1"
+  titel: "Algemene bepalingen"
+  bron_path: "/Hoofdstuk10/Afdeling10.1"
+  inwerking: "2024-01-01"
+
+  artikel_10_1:
+    nummer: "10.1"
+    titel: "(begripsbepalingen)"
+    bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1"
+        structuur:
+          aanhef: "In dit hoofdstuk en de daarop berustende bepalingen wordt verstaan onder:"
+          onderdelen:
+            initiatiefnemer:
+              tekst: "degene onder wiens verantwoordelijkheid een werk van algemeen belang waarvoor een gedoogplicht is opgelegd, tot stand wordt gebracht of wordt opgeruimd"
+              bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1/Onderdeel_1"
+            rechthebbende:
+              tekst: "degene die enig recht heeft op de onroerende zaak waarin, waarop, waarboven of waaronder activiteiten worden verricht of een werk tot stand wordt gebracht"
+              bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1/Onderdeel_2"
+            tot_stand_brengen:
+              tekst: "aanleggen, in stand houden, wijzigen, verplaatsen of uitvoeren"
+              bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1/Onderdeel_3"
+            werk_van_algemeen_belang:
+              tekst: "werk of activiteit als bedoeld in paragraaf 10.3.2"
+              bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1/Onderdeel_4"
+        logica:
+          type: "definitie"
+          norm: "begripsbepalingen gedoogplichten"
+          critical_insight: "Breed begrip 'tot stand brengen' = aanleggen + onderhouden + wijzigen"
+
+  artikel_10_1a:
+    nummer: "10.1a"
+    titel: "(toegang tot de onroerende zaak)"
+    bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1a"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.1/Artikel10.1a"
+        structuur:
+          volledige_tekst: "Voor activiteiten als bedoeld in de afdelingen 10.2 en 10.3 en de activiteiten, genoemd in de gedoogplichtbeschikking, heeft de initiatiefnemer of diens gemachtigde toegang tot de onroerende zaak voor zover dat redelijkerwijs voor de uitvoering daarvan nodig is."
+        logica:
+          type: "machtiging"
+          norm: "toegangsrecht initiatiefnemer"
+          scope: "zowel van rechtswege als bij beschikking"
+          beperking: "redelijkerwijs nodig"
+
+# =============================================================================
+# AFDELING 10.2: GEDOOGPLICHTEN VAN RECHTSWEGE
+# =============================================================================
+
+afdeling_10_2:
+  nummer: "10.2"
+  titel: "Gedoogplichten van rechtswege"
+  bron_path: "/Hoofdstuk10/Afdeling10.2"
+  inwerking: "2025-10-29"
+
+  kernprincipe: |
+    Deze gedoogplichten gelden AUTOMATISCH - geen beschikking nodig.
+    Rechthebbende moet dulden zonder dat overheid besluit neemt.
+
+  artikel_10_2:
+    nummer: "10.2"
+    titel: "(gedoogplichten wegen en waterstaatswerken)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid1"
+        structuur:
+          aanhef: "Een rechthebbende gedoogt voor wegen en waterstaatswerken:"
+          onderdelen:
+            a:
+              tekst: "het door of namens de beheerder verrichten van onderhouds- en herstelwerkzaamheden aan de weg of het waterstaatswerk"
+              bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid1/Onderdeela"
+            b:
+              tekst: "het door of namens de beheerder aanbrengen en in stand houden van meetmiddelen, seinen, merken, verkeerstekens of andere tekens"
+              bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid1/Onderdeelb"
+            c:
+              tekst: "graaf- of meetwerkzaamheden voor het maken van ontwerpen voor aanleggen, onderhouden of wijzigen"
+              bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid1/Onderdeelc"
+            d:
+              tekst: "het door of namens de beheerder aanleggen en in stand houden van elektrische geleidingen"
+              bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid1/Onderdeeld"
+              uitzondering: "niet in afgesloten tuinen/erven bij bewoonde percelen"
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht wegen/waterstaatswerken"
+          subject: "rechthebbende"
+          actor: "beheerder"
+
+      2:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.2/Lid2"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt voor waterstaatswerken het door of namens het bevoegd gezag op grond van de Scheepvaartverkeerswet aanbrengen en in stand houden van verkeerstekens."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht verkeerstekens waterstaatswerken"
+          grondslag: "Scheepvaartverkeerswet"
+
+  artikel_10_3:
+    nummer: "10.3"
+    titel: "(gedoogplichten waterbeheer)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.3"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.3/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt bij gronden, gelegen aan of in een oppervlaktewaterlichaam waarvan het onderhoud wordt verricht door of namens de beheerder: het ontvangen op die gronden van specie of maaisel, dat vanwege regulier onderhoud van dat oppervlaktewaterlichaam wordt verwijderd."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht specie/maaisel"
+          locatie: "gronden aan/in oppervlaktewaterlichaam"
+
+      3:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.3/Lid3"
+        structuur:
+          aanhef: "Een rechthebbende gedoogt bij gronden waar het grondwater invloed ondervindt van een wateractiviteit bestaande uit:"
+          onderdelen:
+            a:
+              tekst: "het onttrekken van grondwater door een daarvoor bestemde voorziening, of"
+            b:
+              tekst: "het in de bodem brengen van water, ter aanvulling van het grondwater, in samenhang met dat onttrekken"
+          afsluiting: "voor zover die activiteit wordt verricht op grond van een omgevingsvergunning of als daarvoor een melding vereist is"
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht grondwateronttrekking"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor zover op grond van vergunning of melding"
+
+      4:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.3/Lid4"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt bij gronden, gelegen in of deel uitmakend van een oppervlaktewaterlichaam of bergingsgebied: wateroverlast en overstromingen door de afvoer of tijdelijke berging van oppervlaktewater."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht waterberging"
+          locatie: "oppervlaktewaterlichaam of bergingsgebied"
+          critical_insight: "Geen schadevergoeding voor normale wateroverlast!"
+
+      5:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.3/Lid5"
+        structuur:
+          aanhef: "Een rechthebbende gedoogt maatregelen, in het kader van het beschermen van de kwaliteit van grondwaterlichamen, opgenomen in:"
+          onderdelen:
+            a:
+              tekst: "een regionaal waterprogramma als bedoeld in artikel 3.8"
+            b:
+              tekst: "een programma van een waterschap als bedoeld in artikel 3.7"
+            c:
+              tekst: "een programma van het college van burgemeester en wethouders"
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht grondwaterbescherming via programma"
+
+  artikel_10_4:
+    nummer: "10.4"
+    titel: "informatieplicht voorgenomen activiteiten"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.4"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.4"
+        structuur:
+          volledige_tekst: "Bij activiteiten als bedoeld in de artikelen 10.2 en 10.3, eerste lid, informeert de beheerder de rechthebbende ten minste achtenveertig uur van tevoren schriftelijk over de voorgenomen activiteiten, tenzij dit door het spoedeisende karakter van die activiteiten niet mogelijk is."
+        logica:
+          type: "verplichting"
+          norm: "48-uurs informatieplicht"
+          subject: "beheerder"
+          termijn: "48 uur vooraf schriftelijk"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij door spoedeisend karakter niet mogelijk"
+            effect: "spoed = geen vooraankondiging nodig"
+
+  artikel_10_5:
+    nummer: "10.5"
+    titel: "(bevoegdheid tot betreden plaatsen)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.5"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.5/Lid1"
+        structuur:
+          volledige_tekst: "De met de inspectie van watersystemen of onderdelen daarvan belaste personen, werkzaam onder verantwoordelijkheid van de beheerder, zijn bevoegd, met medeneming van de benodigde apparatuur, elke plaats te betreden met uitzondering van woningen zonder toestemming van de bewoner."
+        logica:
+          type: "machtiging"
+          norm: "betredingsbevoegdheid waterinspectie"
+          uitzondering: "woningen zonder toestemming"
+
+      2:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.5/Lid2"
+        structuur:
+          volledige_tekst: "Onze Minister van Infrastructuur en Waterstaat of het dagelijks bestuur van een waterschap is bevoegd tot het geven van een machtiging als bedoeld in artikel 3, tweede lid, van de Algemene wet op het binnentreden tot het zonder toestemming van de bewoner binnentreden in een woning..."
+        logica:
+          type: "machtiging"
+          norm: "binnentredingmachtiging woningen"
+          bevoegde_gezagen:
+            - "Minister I&W"
+            - "dagelijks bestuur waterschap"
+          voorwaarde: "woning deel van waterstaatswerk"
+
+  artikel_10_6:
+    nummer: "10.6"
+    titel: "(gedoogplichten Wet milieubeheer)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.6"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.6/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende op een onroerende zaak waar maatregelen als bedoeld in artikel 8.49, eerste en tweede lid, van de Wet milieubeheer voor een gesloten stortplaats worden getroffen, gedoogt dat activiteiten worden verricht vanwege die maatregelen."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht gesloten stortplaatsen"
+          grondslag: "Wm 8.49"
+
+      2:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.6/Lid2"
+        structuur:
+          volledige_tekst: "Een rechthebbende op een onroerende zaak waar een beroepshalve of bedrijfsmatig verrichte activiteit wordt verricht of waar sprake is van milieuschade of een onmiddellijke dreiging daarvan, gedoogt dat preventieve of herstelmaatregelen als bedoeld in titel 17.2 van de Wet milieubeheer worden getroffen."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht milieuschade herstel"
+          grondslag: "Wm titel 17.2"
+
+  artikel_10_7:
+    nummer: "10.7"
+    titel: "(gedoogplicht Wet luchtvaart)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.7"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.7"
+        structuur:
+          volledige_tekst: "De exploitant van een luchthaven gedoogt op de luchthaven elektronische, meteorologische en andere hulpmiddelen, bestemd voor de uitoefening van de taken van de LVNL en het KNMI."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht luchtvaart hulpmiddelen"
+          subject: "luchthavenexploitant"
+          actoren: ["LVNL", "KNMI"]
+
+  artikel_10_8:
+    nummer: "10.8"
+    titel: "(gedoogplichten Spoorwegwet en Wet lokaal spoor)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.8"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.8/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende op infrastructuur, anders dan hoofdspoorwegen, waarvan het beheer bij of krachtens de wet is opgedragen aan een openbaar lichaam gedoogt aanraking, doorsnijding of overbrugging van die infrastructuur door hoofdspoorwegen."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht spoorwegkruisingen"
+
+      3:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.8/Lid3"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt het beheer van lokale spoorweginfrastructuur voor zover dit voor de goede uitvoering van dat beheer nodig is."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht lokaal spoor beheer"
+
+  artikel_10_9:
+    nummer: "10.9"
+    titel: "(gedoogplicht Mijnbouwwet)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.9"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.9"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt dat de houder van een vergunning voor het opsporen van CO₂-opslagcomplexen, het opsporen of winnen van delfstoffen of aardwarmte of het opslaan van stoffen in de ondergrond activiteiten verricht, voor zover die activiteiten plaatsvinden op een diepte van meer dan honderd meter beneden de oppervlakte."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht mijnbouw > 100m diep"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor zover op diepte > 100 meter"
+            effect: "alleen diepe ondergrond"
+          critical_insight: "Oppervlakte-eigenaar moet diepe winning dulden"
+
+  artikel_10_10:
+    nummer: "10.10"
+    titel: "(gedoogplicht zwemwater)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10"
+    inwerking: "2024-01-01"
+
+    leden:
+      geen_leden:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10"
+        structuur:
+          volledige_tekst: "Een rechthebbende op een onroerende zaak waarin of waarop tekens met voorlichting ter uitvoering van de zwemwaterrichtlijn worden geplaatst, gedoogt het aanbrengen en in stand houden van die tekens."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht zwemwater voorlichting"
+          grondslag: "zwemwaterrichtlijn"
+
+  artikel_10_10a:
+    nummer: "10.10a"
+    titel: "(gedoogplicht maatregelen toevalsvondst bodemverontreiniging)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10a"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10a/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt dat tijdelijke beschermingsmaatregelen als bedoeld in artikel 19.9c worden uitgevoerd ter voorkoming of beperking van onaanvaardbare risico's voor de gezondheid als gevolg van blootstelling aan verontreiniging van de bodem."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht tijdelijke bodemmaatregelen"
+          doel: "gezondheidsrisico's beperken"
+
+  artikel_10_10b:
+    nummer: "10.10b"
+    titel: "(gedoogplicht natuurgebieden)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10b"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10b/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende op een onroerende zaak waarvoor door het provinciebestuur of een van Onze Ministers feitelijke handelingen worden verricht die nodig zijn gelet op de instandhoudingsdoelstellingen voor een Natura 2000-gebied of een bijzonder nationaal natuurgebied, gedoogt het treffen van deze maatregelen."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht N2000 maatregelen"
+          doel: "instandhoudingsdoelstellingen"
+
+      2:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10b/Lid2"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag informeert een rechthebbende ten minste vier weken van tevoren schriftelijk over de voorgenomen maatregelen."
+        logica:
+          type: "verplichting"
+          norm: "4-weken informatieplicht"
+          termijn: "4 weken vooraf"
+
+  # Artikelen 10.10c-10.10j betreffen landinrichting en voorbereidende werkzaamheden
+  # Samengevat in patronen
+
+  artikel_10_10i:
+    nummer: "10.10i"
+    titel: "(gedoogplichten waterstoftransportnet)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10i"
+    inwerking: "2026-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10i/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt dat gasleidingen die op grond van een overeenkomst of gedoogplichtbeschikking aanwezig zijn, ook worden gebruikt voor het transport van waterstofgas door de aangewezen beheerder van het landelijk transportnet voor waterstofgas."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht waterstof in gasleidingen"
+          critical_insight: "Energietransitie: bestaande gasleidingen → waterstof"
+
+  artikel_10_10j:
+    nummer: "10.10j"
+    titel: "(gedoogplicht vanwege het maken van een ontwerp)"
+    bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10j"
+    inwerking: "2026-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10j/Lid1"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt het uitvoeren van meetwerkzaamheden of graafwerkzaamheden, het aanbrengen van tekens of het verrichten van onderzoek als die activiteiten nodig zijn voor het maken van een ontwerp voor de aanleg, instandhouding, wijziging, verplaatsing of opruiming van een werk van algemeen belang als bedoeld in de artikelen 10.13, 10.14 of 10.15."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht ontwerpvoorbereiding"
+
+      2:
+        bron_path: "/Hoofdstuk10/Afdeling10.2/Artikel10.10j/Lid2"
+        structuur:
+          volledige_tekst: "De initiatiefnemer informeert de rechthebbende ten minste vier dagen van tevoren schriftelijk over de voorgenomen activiteiten."
+        logica:
+          type: "verplichting"
+          norm: "4-dagen informatieplicht"
+
+# =============================================================================
+# AFDELING 10.3: BIJ BESCHIKKING OP TE LEGGEN GEDOOGPLICHTEN
+# =============================================================================
+
+afdeling_10_3:
+  nummer: "10.3"
+  titel: "Bij beschikking op te leggen gedoogplichten"
+  bron_path: "/Hoofdstuk10/Afdeling10.3"
+  inwerking: "2024-01-01"
+
+  kernprincipe: |
+    Deze gedoogplichten vereisen een BESCHIKKING van het bevoegd gezag.
+    Art. 10.11 stelt de cumulatieve criteria voor oplegging.
+
+  paragraaf_10_3_1:
+    nummer: "10.3.1"
+    titel: "Algemene bepalingen"
+    bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1"
+
+    artikel_10_11:
+      nummer: "10.11"
+      titel: "(toepassingscriteria)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11"
+          structuur:
+            aanhef: "Een gedoogplicht op grond van deze afdeling kan worden opgelegd als voor een werk van algemeen belang:"
+            onderdelen:
+              a:
+                tekst: "voor bepaalde of onbepaalde tijd gebruik moet worden gemaakt van een onroerende zaak,"
+                bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11/Onderdeela"
+              b:
+                tekst: "met de rechthebbende ondanks een redelijke poging daartoe geen schriftelijke overeenstemming is bereikt over het gebruik daarvan,"
+                bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11/Onderdeelb"
+              c:
+                tekst: "het gebruik van de onroerende zaak niet meer zal worden belemmerd dan redelijkerwijs nodig is, en"
+                bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11/Onderdeelc"
+              d:
+                tekst: "de belangen van de rechthebbende redelijkerwijs onteigening niet vorderen."
+                bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.11/Onderdeeld"
+          logica:
+            type: "definitie"
+            norm: "vier cumulatieve criteria voor gedoogplicht"
+            criteria:
+              a_noodzaak: "gebruik onroerende zaak noodzakelijk"
+              b_onderhandeling: "redelijke poging tot overeenstemming gefaald"
+              c_proportionaliteit: "minimale belemmering"
+              d_subsidiariteit: "onteigening niet gerechtvaardigd"
+            critical_insight: "VIER CUMULATIEF - allemaal vereist"
+
+      functie:
+        werkwoord: "begrenst"
+        object: "oplegging gedoogplicht"
+        subject: "bevoegd gezag"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 10.11 is de POORTWACHTER voor alle gedoogplichten bij beschikking.
+
+          Vier cumulatieve vereisten:
+          a. NOODZAAK: gebruik onroerende zaak vereist
+          b. ONDERHANDELING GEFAALD: redelijke poging tot overeenstemming
+          c. PROPORTIONALITEIT: niet meer belemmering dan nodig
+          d. SUBSIDIARITEIT: onteigening niet gerechtvaardigd
+
+          KRITISCH: Gedoogplicht is LICHTER dan onteigening.
+          Als belangen rechthebbende onteigening vorderen → geen gedoogplicht maar Ch11.
+
+    artikel_10_12:
+      nummer: "10.12"
+      titel: "(op aanvraag en ambtshalve)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.12"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.1/Artikel10.12"
+          structuur:
+            volledige_tekst: "Het opleggen van een gedoogplicht op grond van deze afdeling geschiedt op aanvraag van de initiatiefnemer of ambtshalve, als de initiatiefnemer op grond van deze wet zelf bevoegd is om voor het werk van algemeen belang een gedoogplicht op te leggen."
+          logica:
+            type: "definitie"
+            norm: "aanvraag of ambtshalve"
+            aanvraag: "door initiatiefnemer"
+            ambtshalve: "als initiatiefnemer zelf bevoegd gezag is"
+
+  paragraaf_10_3_2:
+    nummer: "10.3.2"
+    titel: "Gedoogplichten"
+    bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2"
+
+    # Bevoegdheidsverdeling per type werk
+    bevoegdheden_overzicht:
+      minister_iw:
+        - "hoofdspoorwegen (10.13.1a)"
+        - "drinkwaterinfrastructuur (10.13.1b)"
+        - "projectbesluit Rijk (10.13.1c)"
+        - "afvalwatertransport waterschap/gemeente (10.13.1d-e)"
+        - "lokaal spoor (10.13.1f)"
+        - "mijnbouwwerken (10.14.1)"
+        - "energiesystemen (10.14.2)"
+        - "ontgrondingen (10.16.1-2)"
+        - "luchtverontreiniging meting (10.18)"
+        - "andere werken algemeen belang (10.21)"
+      waterschap:
+        - "projectbesluit waterschap (10.13.2)"
+        - "waterstaatswerken (10.17)"
+      minister_ocw:
+        - "archeologisch onderzoek (10.19.1)"
+      minister_defensie:
+        - "defensiewerken (10.19a)"
+      bw:
+        - "archeologisch onderzoek omgevingsplan (10.19.2)"
+        - "stortplaatsen (10.13a)"
+        - "bodemonderzoek nazorg (10.13b)"
+        - "bodemverontreiniging zorgplicht (10.21a)"
+      gs:
+        - "ontgrondingen provinciaal (10.16.3)"
+      beheerder:
+        - "wateronderzoek (10.17)"
+
+    artikel_10_13:
+      nummer: "10.13"
+      titel: "(gedoogplichten infrastructuur en water)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.13"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.13/Lid1"
+          structuur:
+            aanhef: "Onze Minister van Infrastructuur en Waterstaat kan aan een rechthebbende een gedoogplicht opleggen voor het tot stand brengen of opruimen van:"
+            onderdelen:
+              a:
+                tekst: "een werk voor hoofdspoorwegen"
+              b:
+                tekst: "infrastructuur nodig voor de productie en distributie van drinkwater"
+              c:
+                tekst: "een werk ter uitvoering van een projectbesluit waarop artikel 5.46, eerste lid, van toepassing is"
+              d:
+                tekst: "een werk voor het transport van afvalwater, uitgevoerd door een waterschap"
+              e:
+                tekst: "een werk voor het transport van afvalwater, hemelwater of grondwater, uitgevoerd door een gemeente"
+              f:
+                tekst: "lokale spoorweginfrastructuur"
+          logica:
+            type: "machtiging"
+            norm: "gedoogplicht infrastructuur/water"
+            bevoegd_gezag: "Minister I&W"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.13/Lid2"
+          structuur:
+            volledige_tekst: "Het dagelijks bestuur van een waterschap kan een gedoogplicht opleggen voor een werk ter uitvoering van een projectbesluit waarop artikel 5.46, tweede lid, van toepassing is."
+          logica:
+            type: "machtiging"
+            norm: "gedoogplicht waterschapsprojectbesluit"
+            bevoegd_gezag: "dagelijks bestuur waterschap"
+
+    artikel_10_14:
+      nummer: "10.14"
+      titel: "(gedoogplichten energie en mijnbouw)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.14"
+      inwerking: "2026-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.14/Lid1"
+          structuur:
+            aanhef: "Onze Minister van Infrastructuur en Waterstaat kan, na overleg met Onze Minister van Economische Zaken en Klimaat, aan een rechthebbende een gedoogplicht opleggen voor:"
+            onderdelen:
+              a:
+                tekst: "een mijnbouwwerk"
+              b:
+                tekst: "werken bestemd voor het opsporen van CO₂-opslagcomplexen"
+          logica:
+            type: "machtiging"
+            norm: "gedoogplicht mijnbouw"
+            bevoegd_gezag: "Minister I&W"
+            overleg: "Minister EZK"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.14/Lid2"
+          structuur:
+            aanhef: "Onze Minister van Infrastructuur en Waterstaat kan, na overleg met Onze Minister voor Klimaat en Energie, aan een rechthebbende een gedoogplicht opleggen voor:"
+            onderdelen:
+              a:
+                tekst: "transmissie-/distributiesysteem Energiewet"
+              b:
+                tekst: "windpark"
+              c:
+                tekst: "kernenergieinstallatie"
+              d:
+                tekst: "warmtelevering"
+              e:
+                tekst: "landelijk waterstoftransportnet"
+          logica:
+            type: "machtiging"
+            norm: "gedoogplicht energie"
+            bevoegd_gezag: "Minister I&W"
+            overleg: "Minister Klimaat en Energie"
+            critical_insight: "Energietransitie: windparken, waterstof, warmte"
+
+    artikel_10_21:
+      nummer: "10.21"
+      titel: "(gedoogplicht andere werken van algemeen belang)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.21"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.21/Lid1"
+          structuur:
+            volledige_tekst: "Onze Minister van Infrastructuur en Waterstaat kan aan een rechthebbende een gedoogplicht opleggen voor het tot stand brengen of opruimen van een werk van algemeen belang dat geen werk of activiteit is als bedoeld in de artikelen 10.13 tot en met 10.19a, als het belang van de openbare veiligheid, het belang van het beschermen van de fysieke leefomgeving, zwaarwegende economische belangen of zwaarwegende andere maatschappelijke belangen dit rechtvaardigen."
+          logica:
+            type: "machtiging"
+            norm: "vangnet gedoogplicht"
+            bevoegd_gezag: "Minister I&W"
+            voorwaarde: "openbare veiligheid / fysieke leefomgeving / economisch / maatschappelijk"
+            critical_insight: "VANGNETBEPALING voor niet-genoemde werken"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.2/Artikel10.21/Lid2"
+          structuur:
+            volledige_tekst: "Als de oplegging van een gedoogplicht een belang dient waarvoor de zorg niet bij Onze Minister van Infrastructuur en Waterstaat berust, beslist Onze Minister van Infrastructuur en Waterstaat in overeenstemming met Onze Minister die het aangaat."
+          logica:
+            type: "verplichting"
+            norm: "overeenstemming met bevoegde Minister"
+
+  paragraaf_10_3_3:
+    nummer: "10.3.3"
+    titel: "De gedoogplichtbeschikking"
+    bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3"
+
+    artikel_10_22:
+      nummer: "10.22"
+      titel: "(inhoud gedoogplichtbeschikking)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.22"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.22/Lid1"
+          structuur:
+            aanhef: "Een gedoogplichtbeschikking bevat in ieder geval een beschrijving van:"
+            onderdelen:
+              a:
+                tekst: "de onroerende zaak waarop de beschikking betrekking heeft"
+              b:
+                tekst: "het werk van algemeen belang waarvoor de beschikking geldt"
+              c:
+                tekst: "de te verrichten activiteiten en de voorbereiding daarvan"
+              d:
+                tekst: "de plichten van de rechthebbende"
+              e:
+                tekst: "de rechten en plichten van de initiatiefnemer"
+          logica:
+            type: "verplichting"
+            norm: "verplichte inhoud beschikking"
+            elementen:
+              - "onroerende zaak"
+              - "werk"
+              - "activiteiten"
+              - "plichten rechthebbende"
+              - "rechten/plichten initiatiefnemer"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.22/Lid2"
+          structuur:
+            volledige_tekst: "De gedoogplichtbeschikking vermeldt of er voor bepaalde of onbepaalde tijd gebruik wordt gemaakt van de onroerende zaak."
+          logica:
+            type: "verplichting"
+            norm: "vermelding duur"
+
+        3:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.22/Lid3"
+          structuur:
+            volledige_tekst: "Als dat voor de instandhouding van het werk van algemeen belang nodig is, kan in de gedoogplichtbeschikking een gebied rondom het werk worden vastgesteld waarin in de beschikking te noemen activiteiten niet zijn toegestaan zonder voorafgaande toestemming van de initiatiefnemer."
+          logica:
+            type: "machtiging"
+            norm: "beschermingszone"
+            critical_insight: "Kan activiteitenbeperking rondom werk opleggen"
+
+        4:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.22/Lid4"
+          structuur:
+            volledige_tekst: "Aan een gedoogplichtbeschikking kunnen voorschriften worden verbonden."
+          logica:
+            type: "machtiging"
+            norm: "voorschriften mogelijk"
+
+    artikel_10_23:
+      nummer: "10.23"
+      titel: "(wijziging van een gedoogplichtbeschikking)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.23"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.23/Lid1"
+          structuur:
+            volledige_tekst: "Op verzoek van de rechthebbende kan de gedoogplichtbeschikking worden gewijzigd als het gaat om de locatie van het werk van algemeen belang binnen de desbetreffende onroerende zaak."
+          logica:
+            type: "machtiging"
+            norm: "wijziging locatie op verzoek rechthebbende"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.23/Lid2"
+          structuur:
+            volledige_tekst: "Het eerste lid is alleen van toepassing als de rechthebbende ondanks een redelijke poging daartoe geen overeenstemming heeft bereikt met de initiatiefnemer."
+          logica:
+            type: "begrenzing"
+            norm: "onderhandelingseis"
+            parallel_met: "art. 10.11 onder b"
+
+        3:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.3/Artikel10.23/Lid3"
+          structuur:
+            volledige_tekst: "Het verzoek wordt in ieder geval afgewezen als het werk van algemeen belang redelijkerwijs niet op een andere locatie tot stand kan worden gebracht."
+          logica:
+            type: "definitie"
+            norm: "afwijzingsgrond"
+
+  paragraaf_10_3_4:
+    nummer: "10.3.4"
+    titel: "Bijzondere bepalingen"
+    bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4"
+
+    artikel_10_25:
+      nummer: "10.25"
+      titel: "(rechtsopvolging)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.25"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.25"
+          structuur:
+            volledige_tekst: "De in de gedoogplichtbeschikking opgenomen rechten en plichten van de rechthebbende en van de initiatiefnemer rusten ook op hun rechtsopvolgers."
+          logica:
+            type: "definitie"
+            norm: "kwalitatieve werking"
+            critical_insight: "Gedoogplicht volgt de zaak, niet de persoon"
+
+    artikel_10_27:
+      nummer: "10.27"
+      titel: "(opruimen van een werk van algemeen belang)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.27"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.27/Lid1"
+          structuur:
+            volledige_tekst: "Als de gedoogplichtbeschikking voor een werk van algemeen belang is ingetrokken, ruimt de initiatiefnemer dat werk op, tenzij met degene op wie de gedoogplicht rustte anders is overeengekomen."
+          logica:
+            type: "verplichting"
+            norm: "opruimplicht na intrekking"
+            conditie:
+              type: "tenzij"
+              tekst: "tenzij anders overeengekomen"
+
+        2:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.27/Lid2"
+          structuur:
+            volledige_tekst: "Bij de opruiming wordt de onroerende zaak zoveel als mogelijk teruggebracht in de staat van voor de aanleg van het werk van algemeen belang."
+          logica:
+            type: "verplichting"
+            norm: "herstel naar oude staat"
+
+    artikel_10_28:
+      nummer: "10.28"
+      titel: "(eigendom van een werk van algemeen belang)"
+      bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.28"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk10/Afdeling10.3/Paragraaf10.3.4/Artikel10.28"
+          structuur:
+            volledige_tekst: "Artikel 20, tweede lid, van Boek 5 van het Burgerlijk Wetboek is van overeenkomstige toepassing op werken van algemeen belang die met toepassing van een gedoogplichtbeschikking worden aangelegd."
+          logica:
+            type: "definitie"
+            norm: "eigendom blijft bij initiatiefnemer"
+            grondslag: "BW 5:20 lid 2"
+            critical_insight: "Werk wordt GEEN eigendom grondeigenaar (uitzondering op natrekking)"
+
+# =============================================================================
+# AFDELING 10.4: OVERIG
+# =============================================================================
+
+afdeling_10_4:
+  nummer: "10.4"
+  titel: "Overig"
+  bron_path: "/Hoofdstuk10/Afdeling10.4"
+  inwerking: "2024-01-01"
+
+  artikel_10_29:
+    nummer: "10.29"
+    titel: "(gedoogplicht maatregelen populaties dieren en planten)"
+    bron_path: "/Hoofdstuk10/Afdeling10.4/Artikel10.29"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk10/Afdeling10.4/Artikel10.29/Lid1"
+        structuur:
+          volledige_tekst: "Gedeputeerde staten of Onze Minister voor Natuur en Stikstof kan besluiten dat personen die ter uitvoering van een omgevingsvergunning voor een flora- en fauna-activiteit om de omvang te beperken van de populatie van dieren, toegang hebben tot de gronden waar de dieren aanwezig zijn."
+        logica:
+          type: "machtiging"
+          norm: "toegangsbesluit populatiebeheer"
+          bevoegde_gezagen:
+            - "GS"
+            - "Minister Natuur en Stikstof"
+
+      3:
+        bron_path: "/Hoofdstuk10/Afdeling10.4/Artikel10.29/Lid3"
+        structuur:
+          volledige_tekst: "Een rechthebbende gedoogt de aanwezigheid op zijn gronden van personen of groepen van personen als bedoeld in het eerste en tweede lid."
+        logica:
+          type: "verplichting"
+          norm: "gedoogplicht populatiebeheer toegang"
+
+      4:
+        bron_path: "/Hoofdstuk10/Afdeling10.4/Artikel10.29/Lid4"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag informeert een rechthebbende ten minste achtenveertig uur van tevoren schriftelijk over de voorgenomen maatregelen."
+        logica:
+          type: "verplichting"
+          norm: "48-uurs informatieplicht"
+
+# =============================================================================
+# HOOFDSTUK-LEVEL ANALYSE
+# =============================================================================
+
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 4
+    artikelen_count: 29
+
+  patronen:
+    tweesporig_systeem:
+      beschrijving: "Van rechtswege (automatisch) vs Bij beschikking (besluit nodig)"
+      evidence: ["Afd 10.2 vs Afd 10.3"]
+      implicatie: |
+        Afd 10.2: rechthebbende moet direct dulden
+        Afd 10.3: eerst beschikking, dan dulden
+        Afd 10.2 = lichter regime (standaard beheer)
+        Afd 10.3 = zwaarder regime (werken algemeen belang)
+
+    vier_criteria_test:
+      beschrijving: "Art. 10.11 als poortwachter voor Afd 10.3"
+      evidence: ["art. 10.11"]
+      criteria:
+        - "noodzaak: gebruik onroerende zaak vereist"
+        - "onderhandeling gefaald: redelijke poging"
+        - "proportionaliteit: minimale belemmering"
+        - "subsidiariteit: onteigening niet gerechtvaardigd"
+      implicatie: "Alle vier CUMULATIEF vereist"
+
+    informatieplicht_termijnen:
+      beschrijving: "Verschillende vooraankondigingstermijnen"
+      termijnen:
+        48_uur: "wegen/waterstaatswerken (10.4), populatiebeheer (10.29)"
+        4_weken: "N2000 maatregelen (10.10b)"
+        4_dagen: "ontwerpvoorbereiding (10.10j)"
+      uitzondering: "spoedeisend = geen termijn"
+
+    bevoegdheidsverdeling:
+      beschrijving: "Gefragmenteerde bevoegdheid over meerdere organen"
+      hoofdregel: "Minister I&W voor meeste werken"
+      uitzonderingen:
+        - "waterschap: waterstaatswerken"
+        - "B&W: bodem, stortplaatsen, archeologie omgevingsplan"
+        - "Minister OCW: archeologie algemeen"
+        - "Minister Defensie: defensiewerken"
+        - "GS: ontgrondingen provinciaal"
+
+    eigendom_uitzondering:
+      beschrijving: "Art. 10.28: werk wordt geen eigendom grondeigenaar"
+      evidence: ["art. 10.28"]
+      implicatie: "Doorbreking natrekkingsregel BW 5:20"
+
+    subsidiariteit_onteigening:
+      beschrijving: "Gedoogplicht is LICHTER alternatief voor onteigening"
+      evidence: ["art. 10.11 onder d"]
+      implicatie: |
+        Als belangen rechthebbende onteigening vorderen → niet gedoogplicht maar Ch11
+        Gedoogplicht = dulden gebruik
+        Onteigening = eigendomsovergang
+
+  relaties:
+    intern:
+      - van: "art. 10.11"
+        naar: "art. 10.13-10.21a"
+        type: "criteria → toepassing"
+      - van: "art. 10.22"
+        naar: "art. 10.25"
+        type: "beschikking → rechtsopvolging"
+    extern:
+      - naar: "Ch11 Onteigening"
+        context: "subsidiariteit: gedoogplicht lichter dan onteigening"
+      - naar: "Ch5 art. 5.46"
+        context: "projectbesluit als grondslag gedoogplicht"
+      - naar: "Ch16"
+        context: "procedure gedoogplichtbeschikking"
+
+  routes:
+    entry_points:
+      - artikel: "10.2-10.3"
+        vraag: "Moet ik onderhoud aan wegen/water dulden?"
+      - artikel: "10.11"
+        vraag: "Kan een gedoogplicht worden opgelegd voor mijn grond?"
+      - artikel: "10.9"
+        vraag: "Moet ik mijnbouw in de diepe ondergrond dulden?"
+
+    exit_points:
+      - naar: "Ch11 Onteigening"
+        context: "als belangen onteigening vorderen"
+      - naar: "Ch15 Schade"
+        context: "schadevergoeding bij gedoogplicht"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    tweesporig_systeem:
+      observatie: |
+        Ch10 kent twee fundamenteel verschillende regimes:
+        - Van rechtswege: geen besluit nodig, rechthebbende moet dulden
+        - Bij beschikking: besluit vereist met vier cumulatieve criteria
+      implicatie: |
+        Navigator moet onderscheid maken tussen automatische en besluit-vereiste plichten.
+
+    lichter_dan_onteigening:
+      observatie: |
+        Art. 10.11 onder d: gedoogplicht alleen als onteigening niet gerechtvaardigd.
+        Dit positioneert gedoogplicht als LICHTER instrument.
+      implicatie: |
+        Route: eerst gedoogplicht proberen, pas dan onteigening.
+
+    energietransitie_gedoogplichten:
+      observatie: |
+        Art. 10.10i en 10.14.2: specifieke gedoogplichten voor waterstof, windparken, warmte.
+        Dit faciliteert energietransitie infrastructuur.
+      implicatie: |
+        Navigator moet energietransitie-route integreren.
+
+  schema_verbeteringen:
+    - "Toegevoegd: tweesporig_systeem patroon"
+    - "Toegevoegd: bevoegdheidsverdeling matrix"

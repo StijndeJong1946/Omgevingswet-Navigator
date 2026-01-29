@@ -1,0 +1,268 @@
+# Afdeling 16.1 - Elektronisch verkeer en gebruik van gegevens en methoden
+# V2 Atomic Extraction
+# Artikelen 16.1-16.6
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 16.1
+titel: "Elektronisch verkeer en gebruik van gegevens en methoden"
+bron_path: "/Hoofdstuk16/Afdeling16.1"
+
+# =============================================================================
+# PARAGRAAF 16.1.1: ELEKTRONISCH VERKEER
+# =============================================================================
+paragraaf_16.1.1:
+  nummer: "16.1.1"
+  titel: "Elektronisch verkeer"
+  bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1"
+
+  artikelen:
+
+    artikel_16.1:
+      nummer: "16.1"
+      titel: "(elektronisch verkeer)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.1"
+      inwerking: "2026-01-01"  # Let op: latere inwerkingtreding!
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.1/Lid1"
+          structuur:
+            volledige_tekst: "Een elektronische aanvraag om een besluit of een melding op grond van deze wet wordt in bij algemene maatregel van bestuur aangewezen gevallen ingediend of gedaan via de landelijke voorziening, bedoeld in artikel 20.21, tenzij bij die maatregel anders is bepaald."
+          logica:
+            type: verplichting
+            norm: "Elektronische aanvraag/melding via landelijke voorziening (DSO)"
+            conditie:
+              type: tenzij
+              tekst: "tenzij bij die maatregel anders is bepaald"
+            default: "indienen via DSO"
+            uitzondering: "AMvB bepaalt anders"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.1/Lid2"
+          structuur:
+            volledige_tekst: "Het elektronisch voldoen aan een andere informatieverplichting dan een melding of het elektronisch verzenden van een ander bericht op grond van deze wet kan in bij algemene maatregel van bestuur aangewezen gevallen plaatsvinden op de bij die maatregel aangegeven wijze."
+          logica:
+            type: machtiging
+            norm: "Andere elektronische berichten KAN via AMvB-aangewezen wijze"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.1/Lid3"
+          structuur:
+            volledige_tekst: "Bij de maatregel kunnen in afwijking van de artikelen 2:7, tweede lid, en 2:8 van de Algemene wet bestuursrecht gevallen worden aangewezen waarin het verkeer, bedoeld in het eerste en tweede lid, alleen elektronisch kan plaatsvinden."
+          logica:
+            type: delegatie
+            norm: "AMvB KAN verplicht elektronisch verkeer aanwijzen"
+            conditie:
+              type: in_afwijking_van
+              tekst: "in afwijking van artikelen 2:7 en 2:8 Awb"
+            kernbegrip: "digitale verplichting"
+
+      functie:
+        werkwoord: bepaalt
+        subject: "Rijk (via AMvB)"
+        object: "elektronisch verkeer"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "2:7, 2:8"
+          context: "afwijking elektronisch verkeer"
+
+      interne_refs:
+        - naar: "artikel 20.21"
+          type: verwijzing
+          context: "landelijke voorziening (DSO)"
+          bron_path: "/Hoofdstuk20/Afdeling20.5/Paragraaf20.5.2/Artikel20.21"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.1 is de BASIS voor digitaal verkeer met de overheid.
+
+          Lid 1: Aanvragen/meldingen via DSO (landelijke voorziening)
+          Lid 2: Andere berichten via AMvB-aangewezen wijze
+          Lid 3: AMvB kan VERPLICHT elektronisch verkeer voorschrijven
+
+          LET OP: Inwerkingtreding 2026-01-01 (later dan rest wet)
+          Dit artikel maakt de digitale verplichting juridisch mogelijk.
+
+    artikel_16.2:
+      nummer: "16.2"
+      titel: "(totstandkoming consolidatie omgevingsplan)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.2"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Ter uitvoering van artikel 19 van de Bekendmakingswet rust op een bestuursorgaan dat met toepassing van artikel 4.16, 5.52 of 16.21 een omgevingsplan wijzigt ook de verplichting om deze wijziging te verwerken in een nieuwe geconsolideerde versie van het omgevingsplan."
+
+      logica:
+        type: verplichting
+        norm: "Bestuursorgaan MOET wijziging verwerken in geconsolideerde versie"
+        trigger: "wijziging omgevingsplan via art. 4.16, 5.52 of 16.21"
+        kernbegrip: "consolidatieplicht"
+
+      externe_refs:
+        - naar: "BWBR0004287"
+          wet: "Bekendmakingswet"
+          artikel: "19"
+
+      interne_refs:
+        - naar: "artikel 4.16"
+          type: verwijzing
+          bron_path: "/Hoofdstuk4/Afdeling4.2/Artikel4.16"
+        - naar: "artikel 5.52"
+          type: verwijzing
+          bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52"
+        - naar: "artikel 16.21"
+          type: verwijzing
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21"
+
+    artikel_16.3:
+      nummer: "16.3"
+      titel: "(ingetrokken)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.3"
+      inwerking: "2024-01-01"
+      status: "ingetrokken"
+
+      structuur:
+        volledige_tekst: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+      logica:
+        type: vervallen
+        norm: "Artikel ingetrokken"
+
+    artikel_16.4:
+      nummer: "16.4"
+      titel: "(ingetrokken)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.1/Artikel16.4"
+      inwerking: "2024-01-01"
+      status: "ingetrokken"
+
+      structuur:
+        volledige_tekst: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/172."
+
+      logica:
+        type: vervallen
+        norm: "Artikel ingetrokken"
+
+# =============================================================================
+# PARAGRAAF 16.1.2: GEBRUIK VAN GEGEVENS EN METHODEN
+# =============================================================================
+paragraaf_16.1.2:
+  nummer: "16.1.2"
+  titel: "Gebruik van gegevens en methoden"
+  bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2"
+
+  artikelen:
+
+    artikel_16.5:
+      nummer: "16.5"
+      titel: "(houdbaarheid onderzoeksgegevens)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.5"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.5/Lid1"
+          structuur:
+            volledige_tekst: "Bij het nemen van een besluit op grond van deze wet kan in ieder geval gebruik worden gemaakt van rapporten met gegevens, onderzoeken of inventarisaties die bij het ontwerpbesluit of, bij het ontbreken daarvan, bij de aanvraag zijn gebruikt en die bij de vaststelling van het besluit niet ouder zijn dan twee jaar."
+          logica:
+            type: machtiging
+            norm: "Gegevens ≤ 2 jaar oud MOGEN worden gebruikt"
+            conditie:
+              type: in_ieder_geval
+              tekst: "in ieder geval"
+            termijn: "twee jaar"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.5/Lid2"
+          structuur:
+            volledige_tekst: "Bij het nemen van besluit op grond van deze wet kan ook gebruik worden gemaakt van gegevens uit rapporten die bij de vaststelling van het besluit ouder zijn dan twee jaar als wordt onderbouwd dat de gegevens nog actueel zijn."
+          logica:
+            type: machtiging
+            norm: "Gegevens > 2 jaar oud MOGEN worden gebruikt mits onderbouwd actueel"
+            conditie:
+              type: indien
+              tekst: "als wordt onderbouwd dat de gegevens nog actueel zijn"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.5/Lid3"
+          structuur:
+            volledige_tekst: "Het eerste lid is niet van toepassing op besluiten die betrekking hebben op een Natura 2000-activiteit of flora- en fauna-activiteit."
+          logica:
+            type: uitzondering
+            norm: "2-jaar regel NIET van toepassing op Natura 2000/flora-fauna"
+            scope: "Natura 2000-activiteit, flora- en fauna-activiteit"
+            kernbegrip: "strengere actueel-eis voor natuur"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.5 regelt de HOUDBAARHEID van onderzoeksgegevens.
+
+          Lid 1: Hoofdregel - gegevens ≤ 2 jaar oud bruikbaar
+          Lid 2: Uitzondering - ouder dan 2 jaar mits onderbouwd actueel
+          Lid 3: NATUUR-UITZONDERING - lid 1 niet van toepassing op Natura 2000
+
+          Praktisch belang: voorkomt steeds nieuwe onderzoeken bij vertraging.
+          Let op: voor natuur gelden strengere eisen (altijd actueel).
+
+    artikel_16.6:
+      nummer: "16.6"
+      titel: "(beoordeling van gevolgen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.1/Paragraaf16.1.2/Artikel16.6"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Bij ministeriële regeling kunnen regels worden gesteld over de meet- en rekenmethoden en uitgangspunten aan de hand waarvan op het moment van het nemen van een besluit de gevolgen van dat besluit worden beoordeeld."
+
+      logica:
+        type: delegatie
+        norm: "Ministeriële regeling KAN meet-/rekenmethoden voorschrijven"
+        kernbegrip: "standaardisatie beoordelingsmethoden"
+
+      delegeert:
+        - type: "bij ministeriële regeling"
+          naar: "minister"
+          voor: "meet- en rekenmethoden"
+          actor: "minister"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 6
+    actieve_artikelen: 4
+    ingetrokken_artikelen: 2
+    paragrafen: 2
+
+  patronen:
+    digitalisering_verplichting:
+      beschrijving: "Elektronisch verkeer via DSO, kan verplicht worden"
+      evidence: ["art. 16.1 lid 1-3"]
+
+    houdbaarheid_gegevens:
+      beschrijving: "2-jaar regel voor onderzoeksgegevens, strenger voor natuur"
+      evidence: ["art. 16.5"]
+
+    consolidatieplicht:
+      beschrijving: "Wijzigingen moeten in geconsolideerde versie verwerkt"
+      evidence: ["art. 16.2"]
+
+  kritieke_verwijzingen:
+    - art_16.1: "Koppeling met art. 20.21 (DSO landelijke voorziening)"
+    - art_16.2: "Koppeling met Bekendmakingswet art. 19"
+    - art_16.5_lid_3: "Strenger regime voor Natura 2000"
+
+  routes:
+    entry_points:
+      - artikel: "16.1"
+        vraag: "Hoe dien ik elektronisch in?"
+      - artikel: "16.5"
+        vraag: "Hoe oud mogen onderzoeksgegevens zijn?"
+    exit_points:
+      - naar: "art. 20.21"
+        context: "DSO landelijke voorziening"
+      - naar: "Omgevingsbesluit"
+        context: "AMvB met aangewezen gevallen"

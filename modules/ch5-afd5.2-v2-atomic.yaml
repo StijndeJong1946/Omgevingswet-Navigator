@@ -1,0 +1,1433 @@
+# Omgevingswet Afdeling 5.2 - Projectprocedure
+# V2 Atomic Extraction - 2026-01-29
+# Schema: ATOMIC_EXTRACTION_SCHEMA.md v2
+
+schema_version: 2
+bron: BWBR0037885
+
+meta:
+  afdeling: "5.2"
+  titel: "Projectprocedure"
+  bron_path: "/Hoofdstuk5/Afdeling5.2"
+  artikelen: "5.44-5.55"
+  schema_versie: "v2"
+  extractie_datum: "2026-01-29"
+
+structuur:
+  paragrafen:
+    - nummer: "5.2.1"
+      titel: "Algemene bepalingen voor het projectbesluit"
+      artikelen: ["5.44", "5.44a", "5.44b", "5.45", "5.45a", "5.46"]
+    - nummer: "5.2.2"
+      titel: "Voornemen, verkenning en voorkeursbeslissing"
+      artikelen: ["5.47", "5.48", "5.49", "5.50"]
+    - nummer: "5.2.3"
+      titel: "Projectbesluit"
+      artikelen: ["5.51", "5.52", "5.53", "5.53a", "5.54"]
+    - nummer: "5.2.4"
+      titel: "Gemeentelijke projecten van publiek belang"
+      artikelen: ["5.55"]
+
+# =============================================================================
+# PARAGRAAF 5.2.1 - ALGEMENE BEPALINGEN VOOR HET PROJECTBESLUIT
+# =============================================================================
+
+artikel_5.44:
+  nummer: "5.44"
+  titel: "(bevoegd gezag projectbesluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44/Lid1"
+      structuur:
+        volledige_tekst: |
+          Voor het uitvoeren van een project en het in werking hebben of in stand houden daarvan
+          kan een projectbesluit worden vastgesteld. Een projectbesluit wordt vastgesteld door
+          het dagelijks bestuur van het waterschap of gedeputeerde staten of door Onze Minister
+          die het aangaat, in overeenstemming met Onze Minister van Binnenlandse Zaken en
+          Koninkrijksrelaties.
+      logica:
+        type: "machtiging"
+        norm: "projectbesluit KAN worden vastgesteld"
+        default: "geen verplichting tot projectbesluit"
+        actoren_bevoegd:
+          - "dagelijks bestuur waterschap"
+          - "gedeputeerde staten"
+          - "minister die het aangaat (+ BZK overeenstemming)"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44/Lid2"
+      structuur:
+        volledige_tekst: |
+          Overeenstemming als bedoeld in het eerste lid is niet vereist voor een besluit tot
+          uitwerking van een projectbesluit als bedoeld in artikel 5.54 en voor een besluit
+          tot wijziging van een projectbesluit. Bij regeling van Onze Minister van Binnenlandse
+          Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister die het aangaat,
+          kunnen categorieën projecten worden aangewezen waarvoor geen overeenstemming is
+          vereist voor de vaststelling van een projectbesluit. Onze Minister van Binnenlandse
+          Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister die het aangaat,
+          kan daarnaast ook in andere gevallen bepalen dat geen overeenstemming is vereist
+          voor het vaststellen van een projectbesluit.
+      logica:
+        type: "uitzondering"
+        norm: "overeenstemming NIET vereist"
+        conditie:
+          type: "voor_zover"
+          tekst: "uitwerking art. 5.54 of wijziging projectbesluit"
+        delegatie:
+          - naar: "ministeriële regeling BZK"
+            voor: "categorieën projecten zonder overeenstemming"
+          - naar: "BZK besluit"
+            voor: "individuele gevallen zonder overeenstemming"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44/Lid3"
+      structuur:
+        volledige_tekst: |
+          Bij het vaststellen van een projectbesluit door gedeputeerde staten of Onze Minister
+          die het aangaat, worden de grenzen van artikel 2.3 in acht genomen.
+      logica:
+        type: "verplichting"
+        norm: "grenzen artikel 2.3 in acht nemen"
+        conditie:
+          type: "wanneer"
+          tekst: "vaststelling door GS of minister"
+        effect: "subsidiariteitstoets verplicht"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44/Lid4"
+      structuur:
+        volledige_tekst: |
+          Het dagelijks bestuur van het waterschap kan een projectbesluit alleen vaststellen
+          met het oog op de taken, bedoeld in artikel 2.17, eerste lid, aanhef en onder a.
+      logica:
+        type: "begrenzing"
+        norm: "waterschap ALLEEN voor watertaken"
+        conditie:
+          type: "voor_zover"
+          tekst: "taken artikel 2.17 lid 1 sub a"
+        effect: "beperking tot functioneel taakgebied"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "vaststellen projectbesluit"
+    subject: "waterschap, provincie, rijk"
+
+  interne_refs:
+    - naar: "artikel 5.54"
+      type: "verwijzing"
+      context: "uitwerking projectbesluit"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.54"
+    - naar: "artikel 2.3"
+      type: "begrenzing"
+      context: "subsidiariteitstoets"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+    - naar: "artikel 2.17"
+      type: "begrenzing"
+      context: "watertaken waterschap"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17"
+
+  actoren:
+    - actor: "waterschap"
+      rol: "bevoegd gezag (watertaken)"
+    - actor: "provincie"
+      rol: "bevoegd gezag (provinciaal belang)"
+    - actor: "rijk"
+      rol: "bevoegd gezag (nationaal belang, met BZK)"
+    - actor: "minister BZK"
+      rol: "overeenstemming vereist / kan vrijstellen"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.44 definieert de bevoegdheidsverdeling voor projectbesluiten met drie niveaus:
+      - Waterschap: ALLEEN voor watertaken (art. 2.17 lid 1 sub a)
+      - GS: voor provinciaal belang (met subsidiariteitstoets art. 2.3)
+      - Minister: voor nationaal belang (BZK overeenstemming vereist)
+
+      Kritiek punt: BZK-overeenstemming is regel, maar kan worden weggelaten bij:
+      1. Uitwerking van projectbesluit (art. 5.54)
+      2. Wijziging van projectbesluit
+      3. Aangewezen categorieën (ministeriële regeling)
+      4. Individueel besluit BZK
+
+# -----------------------------------------------------------------------------
+
+artikel_5.44a:
+  nummer: "5.44a"
+  titel: "(voorrangsregel bevoegd gezag projectbesluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a/Lid1"
+      structuur:
+        volledige_tekst: |
+          Gedeputeerde staten van de provincie waar het project in hoofdzaak wordt uitgevoerd,
+          zijn bevoegd om het projectbesluit vast te stellen.
+      logica:
+        type: "aanwijzing"
+        norm: "GS van hoofdlocatie = bevoegd"
+        criterium: "in hoofdzaak uitgevoerd"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a/Lid2"
+      structuur:
+        volledige_tekst: |
+          Het dagelijks bestuur van het waterschap waar het project in hoofdzaak wordt uitgevoerd,
+          is bevoegd om het projectbesluit vast te stellen.
+      logica:
+        type: "aanwijzing"
+        norm: "DB waterschap van hoofdlocatie = bevoegd"
+        criterium: "in hoofdzaak uitgevoerd"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a/Lid3"
+      structuur:
+        volledige_tekst: |
+          Als gedeputeerde staten van een of meer provincies en het dagelijks bestuur van een
+          of meer waterschappen gezamenlijk een project willen uitvoeren, zijn gedeputeerde
+          staten van de provincie waar het project geheel of in hoofdzaak wordt uitgevoerd
+          bevoegd om het projectbesluit vast te stellen.
+      logica:
+        type: "voorrang"
+        norm: "bij gezamenlijk: GS gaat voor waterschap"
+        conditie:
+          type: "wanneer"
+          tekst: "GS + waterschap gezamenlijk"
+        effect: "provincie krijgt voorrang"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a/Lid4"
+      structuur:
+        volledige_tekst: |
+          Als Onze Minister die het aangaat, in overeenstemming met Onze Minister van
+          Binnenlandse Zaken en Koninkrijksrelaties, en gedeputeerde staten van een of meer
+          provincies of het dagelijks bestuur van een of meer waterschappen gezamenlijk een
+          project willen uitvoeren, is Onze Minister die het aangaat, in overeenstemming met
+          Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, bevoegd om het
+          projectbesluit vast te stellen.
+      logica:
+        type: "voorrang"
+        norm: "bij gezamenlijk: Rijk gaat voor GS/waterschap"
+        conditie:
+          type: "wanneer"
+          tekst: "minister + GS/waterschap gezamenlijk"
+        effect: "rijk krijgt voorrang"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "voorrangsregels bevoegd gezag"
+    subject: "meerdere bestuursorganen"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.44a lost bevoegdheidsconflicten op bij grensoverschrijdende projecten:
+      - Hoofdregel: bestuursorgaan van "hoofdlocatie" is bevoegd
+      - Bij GS + waterschap: GS heeft voorrang
+      - Bij Rijk + GS/waterschap: Rijk heeft voorrang
+
+      Hiërarchie: Rijk > Provincie > Waterschap
+
+# -----------------------------------------------------------------------------
+
+artikel_5.44b:
+  nummer: "5.44b"
+  titel: "(flexibiliteitsregeling projectbesluit Rijk)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44b"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44b/Lid1"
+      structuur:
+        volledige_tekst: |
+          Onze Minister die het aangaat, in overeenstemming met Onze Minister van Binnenlandse
+          Zaken en Koninkrijksrelaties, kan de bevoegdheid om een projectbesluit vast te stellen
+          overdragen aan gedeputeerde staten van de provincie waar het project geheel of in
+          hoofdzaak wordt uitgevoerd, als deze daarmee instemmen.
+      logica:
+        type: "machtiging"
+        norm: "minister KAN bevoegdheid overdragen aan GS"
+        conditie:
+          type: "mits"
+          tekst: "GS stemmen in"
+        effect: "vrijwillige delegatie naar beneden"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44b/Lid2"
+      structuur:
+        volledige_tekst: |
+          Bij algemene maatregel van bestuur kunnen regels worden gesteld over de toepassing
+          van het eerste lid.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "regels over bevoegdheidsoverdracht"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "bevoegdheidsoverdracht Rijk naar provincie"
+    subject: "minister"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.44b biedt flexibiliteit: het Rijk KAN rijksprojectbesluit-bevoegdheid
+      overdragen aan GS, mits GS instemt. Dit is GEEN delegatie van rechtswege maar
+      een vrijwillige overdracht per geval of via AMvB-categorieën.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.45:
+  nummer: "5.45"
+  titel: "(coördinatie uitvoeringsbesluiten)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid1"
+      structuur:
+        volledige_tekst: |
+          Het bevoegd gezag voor het projectbesluit kan bepalen dat artikel 16.7 van toepassing
+          is op de coördinatie van de besluiten ter uitvoering van het projectbesluit.
+      logica:
+        type: "machtiging"
+        norm: "bevoegd gezag KAN coördinatieregeling activeren"
+        verwijzing: "artikel 16.7"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid2"
+      structuur:
+        volledige_tekst: |
+          Artikel 16.7 is van toepassing op de coördinatie van besluiten ter uitvoering van
+          projectbesluiten als bedoeld in artikel 5.46.
+      logica:
+        type: "verplichting"
+        norm: "coördinatie VERPLICHT voor art. 5.46 projecten"
+        conditie:
+          type: "voor_zover"
+          tekst: "projectbesluiten artikel 5.46 (hoofdinfrastructuur)"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid3"
+      structuur:
+        volledige_tekst: |
+          Als het coördinerend bestuursorgaan treedt het bevoegd gezag voor het projectbesluit op.
+      logica:
+        type: "aanwijzing"
+        norm: "bevoegd gezag projectbesluit = coördinerend bestuursorgaan"
+        default: "wie besluit neemt, coördineert"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid4"
+      structuur:
+        aanhef: "In afwijking van het derde lid treden als het coördinerend bestuursorgaan op:"
+        onderdelen:
+          a:
+            tekst: |
+              gedeputeerde staten: als het dagelijks bestuur van het waterschap bevoegd is
+              om het projectbesluit vast te stellen
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid4/Onderdeela"
+          b:
+            tekst: |
+              Onze Minister die het aangaat: als hij op grond van artikel 5.44, eerste lid,
+              of op grond van artikel 5.44a, vierde lid, bevoegd is om het projectbesluit
+              in overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties
+              vast te stellen.
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45/Lid4/Onderdeelb"
+      logica:
+        type: "uitzondering"
+        norm: "afwijkende coördinator"
+        effect: |
+          - Waterschap projectbesluit → GS coördineert
+          - Rijks projectbesluit → minister coördineert
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "coördinatie uitvoeringsbesluiten"
+    subject: "bevoegd gezag projectbesluit"
+
+  interne_refs:
+    - naar: "artikel 16.7"
+      type: "verwijzing"
+      context: "coördinatieregeling"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7"
+    - naar: "artikel 5.46"
+      type: "verwijzing"
+      context: "verplichte coördinatie hoofdinfrastructuur"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46"
+    - naar: "artikel 5.44"
+      type: "verwijzing"
+      context: "bevoegdheidsbepaling"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44"
+    - naar: "artikel 5.44a"
+      type: "verwijzing"
+      context: "voorrangsregels"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.44a"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.45 regelt coördinatie van uitvoeringsbesluiten:
+      - Facultatief: bevoegd gezag KAN art. 16.7 activeren
+      - Verplicht: voor art. 5.46 projecten (hoofdinfrastructuur)
+
+      Coördinator = bevoegd gezag, MAAR:
+      - Waterschap projectbesluit → GS coördineert (opschaling)
+      - Rijks projectbesluit → minister coördineert
+
+# -----------------------------------------------------------------------------
+
+artikel_5.45a:
+  nummer: "5.45a"
+  titel: "(bevoegdheid tot indeplaatstreding)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid1"
+      structuur:
+        aanhef: |
+          Als gedeputeerde staten als het coördinerend bestuursorgaan voor de besluiten ter
+          uitvoering van een projectbesluit optreden, kunnen zij in plaats van het oorspronkelijk
+          bevoegde bestuursorgaan voorzien in het nemen van een besluit, als dat bestuursorgaan
+          geen bestuursorgaan van het Rijk is en:
+        onderdelen:
+          a:
+            tekst: "dat bestuursorgaan een besluit niet of niet tijdig heeft genomen"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid1/Onderdeela"
+          b:
+            tekst: "het besluit van dat bestuursorgaan de uitvoering van het projectbesluit belemmert"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid1/Onderdeelb"
+      logica:
+        type: "machtiging"
+        norm: "GS KAN in de plaats treden"
+        conditie:
+          type: "wanneer"
+          tekst: "niet-tijdig of belemmerend besluit"
+        uitzondering: "niet bij Rijksbestuursorganen"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid2"
+      structuur:
+        aanhef: |
+          Als Onze Minister die het aangaat als het coördinerend bestuursorgaan voor de besluiten
+          ter uitvoering van een projectbesluit optreedt, kan hij in plaats van het oorspronkelijk
+          bevoegde bestuursorgaan voorzien in het nemen van een besluit, als:
+        onderdelen:
+          a:
+            tekst: "dat bestuursorgaan een besluit niet of niet tijdig heeft genomen"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid2/Onderdeela"
+          b:
+            tekst: "het besluit van dat bestuursorgaan de uitvoering van het projectbesluit belemmert"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid2/Onderdeelb"
+      logica:
+        type: "machtiging"
+        norm: "minister KAN in de plaats treden"
+        conditie:
+          type: "wanneer"
+          tekst: "niet-tijdig of belemmerend besluit"
+        scope: "alle bestuursorganen"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid3"
+      structuur:
+        volledige_tekst: |
+          Bij de toepassing van het eerste of tweede lid treedt het besluit van het coördinerend
+          bestuursorgaan in de plaats van het besluit dat het oorspronkelijk bevoegde
+          bestuursorgaan had moeten nemen of heeft genomen.
+      logica:
+        type: "rechtsgevolg"
+        effect: "vervanging origineel besluit"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45a/Lid4"
+      structuur:
+        volledige_tekst: |
+          Als het oorspronkelijk bevoegde bestuursorgaan voor het in behandeling nemen van een
+          aanvraag om een besluit waarvoor toepassing is gegeven aan het eerste of tweede lid
+          rechten heeft geheven, stort dat bestuursorgaan de ontvangen rechten in de kas van
+          de provincie waartoe het coördinerend bestuursorgaan behoort respectievelijk in de
+          kas van het Rijk.
+      logica:
+        type: "verplichting"
+        norm: "restitutie leges aan coördinerend niveau"
+        effect: "financiële afwikkeling bij indeplaatstreding"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "indeplaatstreding bij uitvoeringsbesluiten"
+    subject: "coördinerend bestuursorgaan"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.45a geeft een krachtig instrument: INDEPLAATSTREDING.
+
+      Triggers:
+      1. Niet of niet-tijdig besluit
+      2. Belemmerend besluit
+
+      Bevoegd tot indeplaatstreding:
+      - GS: kan alle niet-Rijks bestuursorganen vervangen
+      - Minister: kan ALLE bestuursorganen vervangen (inclusief GS)
+
+      Belangrijk: dit is een sterker instrument dan instructies (art. 2.34)
+      omdat het een directe vervanging is, niet een opdracht tot herstel.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.46:
+  nummer: "5.46"
+  titel: "(projectbesluit voor hoofdinfrastructuur en primaire waterkeringen)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1"
+      structuur:
+        aanhef: |
+          Onze Minister van Infrastructuur en Waterstaat, in overeenstemming met Onze Minister
+          van Binnenlandse Zaken en Koninkrijksrelaties, stelt voor werken met een nationaal
+          belang in ieder geval een projectbesluit vast voor de volgende projecten:
+        onderdelen:
+          a:
+            tekst: "de aanleg van een autoweg of autosnelweg, spoorweg of vaarweg"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeela"
+          b:
+            tekst: "een wijziging van een autoweg of autosnelweg, die bestaat uit:"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelb"
+            sub_onderdelen:
+              1:
+                tekst: "de ombouw van een weg tot autosnelweg"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelb/Onderdeel1"
+              2:
+                tekst: "de uitbreiding van een weg met een of meer rijstroken, als het uit te breiden weggedeelte twee knooppunten of aansluitingen met elkaar verbindt"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelb/Onderdeel2"
+          c:
+            tekst: "een wijziging van een spoorweg die bestaat uit:"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelc"
+            sub_onderdelen:
+              1:
+                tekst: "een uitbreiding van die spoorweg met een of meer sporen, als het uit te breiden spoorweggedeelte twee aansluitingen met elkaar verbindt"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelc/Onderdeel1"
+              2:
+                tekst: "de aanleg van spoorwegbouwkundige bouwwerken"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelc/Onderdeel2"
+              3:
+                tekst: "de aanleg van een verbindingsboog"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelc/Onderdeel3"
+              4:
+                tekst: "een geheel van onderling samenhangende maatregelen voor die spoorweg"
+                bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelc/Onderdeel4"
+          d:
+            tekst: "het opnieuw in gebruik nemen van een al aangelegde spoorweg van vijf kilometer of meer"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeeld"
+          e:
+            tekst: "een wijziging van een vaarweg die bestaat uit een vergroting of verdieping waardoor het ruimteoppervlak van de vaarweg met ten minste twintig procent toeneemt of de vaarweg blijvend wordt verdiept waarbij meer dan vijf miljoen kubieke meter grond wordt verzet"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeele"
+          f:
+            tekst: "de aanleg, verlegging of versterking van primaire waterkeringen die in beheer zijn bij het Rijk"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid1/Onderdeelf"
+      logica:
+        type: "verplichting"
+        norm: "minister I&W STELT IN IEDER GEVAL projectbesluit vast"
+        conditie:
+          type: "in_ieder_geval"
+          tekst: "voor genoemde hoofdinfrastructuur projecten"
+        effect: "verplicht projectbesluit voor grote infrastructuur"
+        bevoegd_gezag: "rijk"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.46/Lid2"
+      structuur:
+        volledige_tekst: |
+          Het dagelijks bestuur van het waterschap stelt in ieder geval een projectbesluit vast
+          voor de aanleg, verlegging of versterking van primaire waterkeringen die niet onder
+          het eerste lid, aanhef en onder f, vallen.
+      logica:
+        type: "verplichting"
+        norm: "DB waterschap STELT IN IEDER GEVAL projectbesluit vast"
+        conditie:
+          type: "voor_zover"
+          tekst: "primaire waterkeringen niet-Rijksbeheer"
+        effect: "verplicht projectbesluit voor waterschapskeringen"
+        bevoegd_gezag: "waterschap"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "projectbesluit voor hoofdinfrastructuur"
+    subject: "minister I&W, waterschap"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.46 maakt projectbesluiten VERPLICHT voor:
+
+      RIJKSPROJECTEN (lid 1):
+      - Aanleg autowegen, snelwegen, spoorwegen, vaarwegen
+      - Significante wijzigingen (ombouw, uitbreiding tussen knooppunten)
+      - Spooruitbreidingen, bouwkundige werken, verbindingsbogen
+      - Heringebruikname spoor ≥5km
+      - Vaarwegvergroting ≥20% of verdieping ≥5mln m³
+      - Rijks primaire waterkeringen
+
+      WATERSCHAPSPROJECTEN (lid 2):
+      - Primaire waterkeringen (niet-Rijks)
+
+      Dit zijn de "grote projecten" waarvoor de projectprocedure niet facultatief is.
+
+# =============================================================================
+# PARAGRAAF 5.2.2 - VOORNEMEN, VERKENNING EN VOORKEURSBESLISSING
+# =============================================================================
+
+artikel_5.47:
+  nummer: "5.47"
+  titel: "(voornemen)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid1"
+      structuur:
+        aanhef: |
+          Het bevoegd gezag geeft kennis van zijn voornemen om een verkenning uit te voeren
+          naar een mogelijk bestaande of toekomstige opgave in de fysieke leefomgeving en om:
+        onderdelen:
+          a:
+            tekst: "een projectbesluit vast te stellen zonder daaraan voorafgaande voorkeursbeslissing"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid1/Onderdeela"
+          b:
+            tekst: "een projectbesluit vast te stellen en ter voorbereiding daarvan een voorkeursbeslissing te nemen"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid1/Onderdeelb"
+      logica:
+        type: "verplichting"
+        norm: "bevoegd gezag GEEFT KENNIS van voornemen"
+        keuze: "met of zonder voorkeursbeslissing"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid2"
+      structuur:
+        volledige_tekst: |
+          Bij algemene maatregel van bestuur of bij besluit van het bevoegd gezag kan worden
+          bepaald wanneer een voorkeursbeslissing in ieder geval wordt genomen.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "verplichte voorkeursbeslissing"
+          - naar: "besluit bevoegd gezag"
+            voor: "verplichte voorkeursbeslissing"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid3"
+      structuur:
+        volledige_tekst: |
+          Bij het voornemen stelt het bevoegd gezag met het oog op de verkenning een ieder in
+          de gelegenheid, binnen een door hem te stellen termijn, mogelijke oplossingen voor
+          de opgave voor te dragen. Het bevoegd gezag geeft daarbij uitgangspunten aan voor
+          het redelijkerwijs in beschouwing nemen van die oplossingen.
+      logica:
+        type: "verplichting"
+        norm: "participatie VERPLICHT bij voornemen"
+        effect: "iedereen kan oplossingen voordragen"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid4"
+      structuur:
+        volledige_tekst: |
+          Uiterlijk bij aanvang van de verkenning geeft het bevoegd gezag, onverminderd het
+          derde lid, kennis van de wijze waarop burgers, bedrijven, maatschappelijke
+          organisaties en bestuursorganen zullen worden betrokken.
+      logica:
+        type: "verplichting"
+        norm: "participatieproces BEKENDMAKEN"
+        conditie:
+          type: "onverminderd"
+          tekst: "derde lid"
+
+    5:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47/Lid5"
+      structuur:
+        volledige_tekst: |
+          Bij of krachtens algemene maatregel van bestuur worden nadere regels gesteld over
+          het bepaalde in het vierde lid.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "nadere regels participatie"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "kennisgeving voornemen en participatie"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.47 is de START van de projectprocedure:
+      1. Kennisgeving voornemen (verplicht)
+      2. Keuze: met of zonder voorkeursbeslissing
+      3. Participatie: iedereen mag oplossingen voordragen
+      4. Bekendmaking participatiewijze
+
+      De voorkeursbeslissing kan verplicht worden gesteld via AMvB.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.48:
+  nummer: "5.48"
+  titel: "(verkenning)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid1"
+      structuur:
+        aanhef: "Bij de verkenning vergaart het bevoegd gezag de nodige kennis en inzichten over:"
+        onderdelen:
+          a:
+            tekst: "de aard van de opgave"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid1/Onderdeela"
+          b:
+            tekst: "de voor de fysieke leefomgeving relevante ontwikkelingen"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid1/Onderdeelb"
+          c:
+            tekst: "de mogelijke oplossingen voor die opgave"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid1/Onderdeelc"
+      logica:
+        type: "verplichting"
+        norm: "verkenning MOET kennis vergaren"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid2"
+      structuur:
+        volledige_tekst: |
+          Degene die een mogelijke oplossing als bedoeld in artikel 5.47, derde lid, heeft
+          voorgedragen, kan daarbij verzoeken dat het bevoegd gezag daarover advies vraagt
+          aan een onafhankelijke deskundige. Het bevoegd gezag kan ook ambtshalve een
+          onafhankelijke deskundige verzoeken te adviseren.
+      logica:
+        type: "recht"
+        norm: "voordrager KAN onafhankelijk advies vragen"
+        effect: "second opinion mogelijkheid"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48/Lid3"
+      structuur:
+        volledige_tekst: |
+          Het bevoegd gezag beslist of de voorgedragen mogelijke oplossingen redelijkerwijs
+          in beschouwing moeten worden genomen.
+      logica:
+        type: "machtiging"
+        norm: "bevoegd gezag BESLIST over meeweging oplossingen"
+        effect: "discretionaire bevoegdheid"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "verkenningsfase inhoud"
+    subject: "bevoegd gezag"
+
+  interne_refs:
+    - naar: "artikel 5.47"
+      type: "verwijzing"
+      context: "voorgedragen oplossingen"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.48 definieert de VERKENNINGSFASE:
+      - Doel: kennis vergaren over opgave, ontwikkelingen, oplossingen
+      - Bijzonder: voordragers kunnen onafhankelijk advies vragen (second opinion)
+      - Bevoegd gezag beslist welke oplossingen "redelijkerwijs" meewegen
+
+# -----------------------------------------------------------------------------
+
+artikel_5.49:
+  nummer: "5.49"
+  titel: "(voorkeursbeslissing)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49"
+      structuur:
+        aanhef: "De voorkeursbeslissing houdt in:"
+        onderdelen:
+          a:
+            tekst: "het uitvoeren van een project"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49/Onderdeela"
+          b:
+            tekst: "een oplossing zonder project"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49/Onderdeelb"
+          c:
+            tekst: "een combinatie van de onderdelen a of b met de uitvoering van andere projecten"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49/Onderdeelc"
+          d:
+            tekst: "het niet uitwerken van een oplossing"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49/Onderdeeld"
+      logica:
+        type: "definitie"
+        norm: "mogelijke uitkomsten voorkeursbeslissing"
+        opties:
+          - "wel project"
+          - "oplossing zonder project"
+          - "combinatie"
+          - "niets doen"
+
+  functie:
+    werkwoord: "definieert"
+    object: "inhoud voorkeursbeslissing"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.49 definieert de vier mogelijke uitkomsten van de voorkeursbeslissing:
+      a) Project uitvoeren
+      b) Oplossing zonder project
+      c) Combinatie met andere projecten
+      d) Niets doen
+
+      De voorkeursbeslissing is een TUSSENMOMENT voordat het definitieve
+      projectbesluit wordt genomen.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.50:
+  nummer: "5.50"
+  titel: "(uitwerken of wijzigen projectbesluit zonder paragraaf 5.2.2)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.50"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.50"
+      structuur:
+        volledige_tekst: |
+          Deze paragraaf is niet van toepassing op een uitwerking van een projectbesluit als
+          bedoeld in artikel 5.54 of een wijziging van een projectbesluit.
+      logica:
+        type: "uitzondering"
+        norm: "verkenningsfase NIET voor uitwerking/wijziging"
+        conditie:
+          type: "tenzij"
+          tekst: "uitwerking art. 5.54 of wijziging"
+        effect: "snellere procedure voor wijzigingen"
+
+  functie:
+    werkwoord: "begrenst"
+    object: "toepassingsbereik verkenningsfase"
+    subject: "uitwerking en wijziging projectbesluit"
+
+  interne_refs:
+    - naar: "artikel 5.54"
+      type: "verwijzing"
+      context: "uitwerking projectbesluit"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.54"
+
+# =============================================================================
+# PARAGRAAF 5.2.3 - PROJECTBESLUIT
+# =============================================================================
+
+artikel_5.51:
+  nummer: "5.51"
+  titel: "(inhoud projectbesluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.51"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.51"
+      structuur:
+        volledige_tekst: |
+          In het projectbesluit wordt aangegeven hoe burgers, bedrijven, maatschappelijke
+          organisaties en bestuursorganen bij de voorbereiding zijn betrokken en wat de
+          resultaten zijn van de uitgevoerde verkenning, waarbij in ieder geval wordt ingegaan
+          op de door derden voorgedragen mogelijke oplossingen en de daarover door deskundigen
+          uitgebrachte adviezen.
+      logica:
+        type: "verplichting"
+        norm: "projectbesluit MOET motiveren"
+        inhoud:
+          - "participatie beschrijving"
+          - "verkenningsresultaten"
+          - "behandeling voorgedragen oplossingen"
+          - "behandeling deskundigenadviezen"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "motiveringsinhoud projectbesluit"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.51 stelt MOTIVERINGSEISEN aan het projectbesluit:
+      - Hoe was participatie georganiseerd?
+      - Wat waren de verkenningsresultaten?
+      - Wat is gedaan met voorgedragen oplossingen?
+      - Wat is gedaan met deskundigenadviezen?
+
+      Dit borgt verantwoording over de vroege fasen van de procedure.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.52:
+  nummer: "5.52"
+  titel: "(integraal besluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52/Lid1"
+      structuur:
+        volledige_tekst: |
+          Het projectbesluit wijzigt het omgevingsplan met regels die nodig zijn voor het
+          uitvoeren en in werking hebben of in stand houden van het project.
+      logica:
+        type: "rechtsgevolg"
+        norm: "projectbesluit WIJZIGT omgevingsplan"
+        effect: "directe planologische doorwerking"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52/Lid2"
+      structuur:
+        aanhef: |
+          Voor zover dat uitdrukkelijk in het projectbesluit is bepaald, geldt het projectbesluit:
+        onderdelen:
+          a:
+            tekst: "als omgevingsvergunning voor activiteiten ter uitvoering van het projectbesluit"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52/Lid2/Onderdeela"
+          b:
+            tekst: "als een bij algemene maatregel van bestuur aangewezen besluit"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52/Lid2/Onderdeelb"
+      logica:
+        type: "machtiging"
+        norm: "projectbesluit KAN gelden als vergunning/besluit"
+        conditie:
+          type: "voor_zover"
+          tekst: "uitdrukkelijk in projectbesluit bepaald"
+        effect: "integraal besluit mogelijkheid"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52/Lid3"
+      structuur:
+        volledige_tekst: |
+          Bij de maatregel kunnen regels worden aangewezen die van toepassing zijn op het
+          daarin aangewezen besluit.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "regels voor aangewezen besluiten"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "integrale werking projectbesluit"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.52 is het HART van de projectprocedure: het INTEGRALE BESLUIT.
+
+      Drie functies in één besluit:
+      1. Wijziging omgevingsplan (lid 1) - altijd
+      2. Omgevingsvergunning (lid 2a) - indien uitdrukkelijk bepaald
+      3. Andere besluiten (lid 2b) - via AMvB aangewezen
+
+      Dit is de STROOMLIJNING van de projectprocedure: één besluit vervangt
+      meerdere afzonderlijke besluiten. Vergelijk met de oude Tracéwet/Crisis-
+      en herstelwet constructies.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.53:
+  nummer: "5.53"
+  titel: "(beoordelingsregels)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53/Lid1"
+      structuur:
+        volledige_tekst: |
+          Voor de toepassing van artikel 5.52, eerste lid, zijn de artikelen 4.1 en 4.2,
+          eerste lid, en de paragrafen 4.1.2 en 4.3.1 van overeenkomstige toepassing.
+      logica:
+        type: "verwijzing"
+        norm: "hoofdstuk 4 regels gelden voor planwijziging"
+        effect: "evenwichtige toedeling functies (art. 4.2) geldt"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53/Lid2"
+      structuur:
+        volledige_tekst: |
+          Voor de toepassing van artikel 5.52, tweede lid, onder a, zijn de paragrafen 5.1.3
+          tot en met 5.1.5 en de op grond daarvan gestelde regels van overeenkomstige toepassing.
+      logica:
+        type: "verwijzing"
+        norm: "beoordelingsregels vergunningen gelden"
+        effect: "§ 5.1.3-5.1.5 toepassen bij vergunningdeel"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53/Lid3"
+      structuur:
+        volledige_tekst: |
+          Als de uitvoering van een projectbesluit, vastgesteld door gedeputeerde staten,
+          onevenredig wordt belemmerd door regels die bij of krachtens een andere regeling
+          van een gemeente dan een omgevingsplan of bij of krachtens een regeling van een
+          waterschap zijn vastgesteld, kunnen die regels bij het projectbesluit of bij
+          besluit van gedeputeerde staten om dringende redenen buiten toepassing worden gelaten.
+      logica:
+        type: "machtiging"
+        norm: "GS KAN gemeente/waterschap regels buiten toepassing laten"
+        conditie:
+          type: "voor_zover"
+          tekst: "onevenredige belemmering"
+        voorwaarde: "dringende redenen"
+        effect: "doorbreking regelingen lager niveau"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53/Lid4"
+      structuur:
+        volledige_tekst: |
+          Als de uitvoering van een projectbesluit, vastgesteld door Onze Minister die het
+          aangaat, in overeenstemming met Onze Minister van Binnenlandse Zaken en
+          Koninkrijksrelaties, onevenredig wordt belemmerd door regels die bij of krachtens
+          een andere regeling van een gemeente dan een omgevingsplan of bij of krachtens een
+          regeling van een provincie of waterschap zijn vastgesteld, kunnen die regels bij
+          het projectbesluit of bij besluit van Onze Minister die het aangaat, in
+          overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties,
+          respectievelijk Onze Minister die het aangaat, om dringende redenen buiten
+          toepassing worden gelaten.
+      logica:
+        type: "machtiging"
+        norm: "minister KAN gemeente/provincie/waterschap regels buiten toepassing laten"
+        conditie:
+          type: "voor_zover"
+          tekst: "onevenredige belemmering"
+        voorwaarde: "dringende redenen"
+        effect: "doorbreking regelingen alle lagere niveaus"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "beoordelingsregels en doorbreking"
+    subject: "bevoegd gezag projectbesluit"
+
+  interne_refs:
+    - naar: "artikel 5.52"
+      type: "verwijzing"
+      context: "integraal besluit"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52"
+    - naar: "artikel 4.1"
+      type: "verwijzing"
+      context: "algemene regels"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1/Artikel4.1"
+    - naar: "artikel 4.2"
+      type: "verwijzing"
+      context: "evenwichtige toedeling"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1/Artikel4.2"
+    - naar: "paragraaf 4.1.2"
+      type: "verwijzing"
+      context: "instructieregels"
+      bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.2"
+    - naar: "paragraaf 4.3.1"
+      type: "verwijzing"
+      context: "programma's"
+      bron_path: "/Hoofdstuk4/Afdeling4.3/Paragraaf4.3.1"
+    - naar: "paragraaf 5.1.3-5.1.5"
+      type: "verwijzing"
+      context: "beoordelingsregels vergunningen"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.53 regelt twee zaken:
+
+      1. WELKE REGELS gelden voor het projectbesluit:
+         - Lid 1: H4 regels voor planwijziging (art. 4.1, 4.2, § 4.1.2, § 4.3.1)
+         - Lid 2: § 5.1.3-5.1.5 voor vergunningdeel
+
+      2. DOORBREKING lagere regelingen (leden 3-4):
+         - GS kan gemeente/waterschap regels opzij zetten
+         - Minister kan gemeente/provincie/waterschap regels opzij zetten
+         - Voorwaarde: "onevenredige belemmering" + "dringende redenen"
+
+      Dit is een KRACHTIG instrument: het projectbesluit kan dwars door
+      andere regelingen heen breken.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.53a:
+  nummer: "5.53a"
+  titel: "(geen belemmering projectbesluit en voorbereidingsbesluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid1"
+      structuur:
+        volledige_tekst: |
+          Artikel 4.19a, eerste, tweede, vierde en vijfde lid, is van overeenkomstige toepassing
+          op een projectbesluit dat wordt vastgesteld door het dagelijks bestuur van een waterschap.
+      logica:
+        type: "verwijzing"
+        norm: "waterschapsprojectbesluit mag niet belemmeren door hoger besluit"
+        verwijzing: "artikel 4.19a"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid2"
+      structuur:
+        aanhef: |
+          In een projectbesluit of een voorbereidingsbesluit dat wordt vastgesteld door
+          gedeputeerde staten worden geen regels gesteld die:
+        onderdelen:
+          a:
+            tekst: "het uitvoeren van een project belemmeren waarvoor een projectbesluit is vastgesteld door een bestuursorgaan van het Rijk"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid2/Onderdeela"
+          b:
+            tekst: "in strijd zijn met regels die in het omgevingsplan zijn opgenomen op grond van een voorbereidingsbesluit van een bestuursorgaan van het Rijk"
+            bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid2/Onderdeelb"
+      logica:
+        type: "verbod"
+        norm: "GS projectbesluit MAG NIET belemmeren"
+        object:
+          - "rijksprojectbesluit"
+          - "rijksvoorbereidingsbesluit"
+
+    3:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid3"
+      structuur:
+        volledige_tekst: |
+          In een projectbesluit van het Rijk wordt een termijn gesteld voor de toepassing van
+          het tweede lid. Als het bestuursorgaan het nodig acht voor de uitvoering van het
+          project, kan de termijn eenmaal worden verlengd.
+      logica:
+        type: "verplichting"
+        norm: "rijksprojectbesluit STELT TERMIJN"
+        effect: "tijdsgebonden bescherming"
+
+    4:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.53a/Lid4"
+      structuur:
+        volledige_tekst: |
+          Het tweede lid, aanhef en onder a, is niet van toepassing voor zover een instructieregel
+          als bedoeld in artikel 2.24 of een instructie als bedoeld in artikel 2.34 het stellen
+          van dergelijke regels vergt.
+      logica:
+        type: "uitzondering"
+        norm: "instructieregel/instructie gaat voor"
+        conditie:
+          type: "voor_zover"
+          tekst: "instructie(regel) het vergt"
+        effect: "instructie kan GS dwingen tot belemmerende regels"
+
+  functie:
+    werkwoord: "verbiedt"
+    object: "belemmering hoger projectbesluit"
+    subject: "lager bestuursorgaan"
+
+  interne_refs:
+    - naar: "artikel 4.19a"
+      type: "verwijzing"
+      context: "geen belemmering"
+      bron_path: "/Hoofdstuk4/Afdeling4.3/Paragraaf4.3.1/Artikel4.19a"
+    - naar: "artikel 2.24"
+      type: "verwijzing"
+      context: "instructieregels"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24"
+    - naar: "artikel 2.34"
+      type: "verwijzing"
+      context: "instructies"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.53a borgt de HIËRARCHIE van projectbesluiten:
+      - Waterschap mag niet belemmeren (via art. 4.19a)
+      - GS mag Rijksproject niet belemmeren
+      - Bescherming is TIJDELIJK (termijn in rijksbesluit)
+
+      UITZONDERING: als instructieregel of instructie het vergt, kan GS
+      wél regels stellen die rijksproject belemmeren.
+
+# -----------------------------------------------------------------------------
+
+artikel_5.54:
+  nummer: "5.54"
+  titel: "(uitwerking binnen besluit)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.54"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.54/Lid1"
+      structuur:
+        volledige_tekst: |
+          Bij een projectbesluit kan worden bepaald dat het besluit met inachtneming van de
+          daarbij gestelde randvoorwaarden door het bevoegd gezag kan worden uitgewerkt.
+      logica:
+        type: "machtiging"
+        norm: "projectbesluit KAN uitwerkingsmogelijkheid bevatten"
+        conditie:
+          type: "mits"
+          tekst: "randvoorwaarden gesteld"
+
+    2:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.54/Lid2"
+      structuur:
+        volledige_tekst: |
+          Deze uitwerking maakt deel uit van het projectbesluit en kan, zolang de uitwerking
+          nog niet is verwezenlijkt, worden vervangen door een nieuwe uitwerking.
+      logica:
+        type: "rechtsgevolg"
+        norm: "uitwerking = deel van projectbesluit"
+        effect: "vervanging mogelijk zolang niet gerealiseerd"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "uitwerking projectbesluit"
+    subject: "bevoegd gezag"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.54 biedt FLEXIBILITEIT: het projectbesluit kan uitwerkingsruimte bevatten.
+      - Uitwerking binnen gestelde randvoorwaarden
+      - Uitwerking is ONDERDEEL van het projectbesluit
+      - Kan worden vervangen zolang niet verwezenlijkt
+
+      Vergelijk met uitwerkingsplicht onder oude WRO: detail kan later worden ingevuld.
+
+# =============================================================================
+# PARAGRAAF 5.2.4 - GEMEENTELIJKE PROJECTEN VAN PUBLIEK BELANG
+# =============================================================================
+
+artikel_5.55:
+  nummer: "5.55"
+  titel: "(gemeentelijk project van publiek belang)"
+  bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.4/Artikel5.55"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.4/Artikel5.55"
+      structuur:
+        volledige_tekst: |
+          Als het opnemen van regels in het omgevingsplan die gericht zijn op het uitvoeren
+          en in werking hebben of in stand houden van een project van publiek belang wordt
+          voorbereid met overeenkomstige toepassing van de artikelen 5.45, eerste en derde lid,
+          5.47, 5.48, 5.49 en 5.51, is artikel 16.87 van overeenkomstige toepassing.
+      logica:
+        type: "machtiging"
+        norm: "gemeente KAN projectprocedure toepassen via omgevingsplan"
+        conditie:
+          type: "voor_zover"
+          tekst: "overeenkomstige toepassing art. 5.45, 5.47-5.49, 5.51"
+        effect: "art. 16.87 (beroep in één instantie) geldt"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "gemeentelijke projectprocedure"
+    subject: "gemeente"
+
+  interne_refs:
+    - naar: "artikel 5.45"
+      type: "verwijzing"
+      context: "coördinatie"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45"
+    - naar: "artikel 5.47"
+      type: "verwijzing"
+      context: "voornemen"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.47"
+    - naar: "artikel 5.48"
+      type: "verwijzing"
+      context: "verkenning"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.48"
+    - naar: "artikel 5.49"
+      type: "verwijzing"
+      context: "voorkeursbeslissing"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.2/Artikel5.49"
+    - naar: "artikel 5.51"
+      type: "verwijzing"
+      context: "inhoud projectbesluit"
+      bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.51"
+    - naar: "artikel 16.87"
+      type: "verwijzing"
+      context: "beroep in één instantie"
+      bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.87"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 5.55 is de GEMEENTELIJKE VARIANT van de projectprocedure.
+
+      Gemeente kan GEEN projectbesluit nemen (alleen waterschap/provincie/rijk).
+      Maar gemeente KAN de projectprocedure-elementen toepassen bij
+      omgevingsplanwijziging voor "project van publiek belang".
+
+      Voordeel: art. 16.87 (beroep in één instantie bij Raad van State)
+      wordt van toepassing, wat versnelling oplevert.
+
+      Dit is de opvolger van de oude "coördinatieprocedure" onder Wro.
+
+# =============================================================================
+# AFDELING-NIVEAU ANALYSE
+# =============================================================================
+
+afdeling_analyse:
+  structuur:
+    paragrafen_count: 4
+    artikelen_count: 13  # 5.44, 5.44a, 5.44b, 5.45, 5.45a, 5.46, 5.47, 5.48, 5.49, 5.50, 5.51, 5.52, 5.53, 5.53a, 5.54, 5.55
+    totaal_leden: 38
+
+  patronen:
+    bevoegdheid_hiërarchie:
+      beschrijving: "Drie-lagen systeem met voorrangsregels"
+      structuur: |
+        Rijk > Provincie > Waterschap
+        - Art. 5.44: basisverdeling
+        - Art. 5.44a: voorrangsregels bij conflict
+        - Art. 5.44b: flexibiliteit (delegatie naar beneden)
+
+    procedurele_fasen:
+      beschrijving: "Gestructureerde fasen met keuzemoment"
+      fasen:
+        1_voornemen: "art. 5.47"
+        2_verkenning: "art. 5.48"
+        3_voorkeursbeslissing: "art. 5.49 (optioneel)"
+        4_projectbesluit: "art. 5.51-5.54"
+      snelroute: "art. 5.50 - uitwerking/wijziging zonder fasen 1-3"
+
+    integraal_besluit:
+      beschrijving: "Eén besluit voor meerdere functies"
+      evidence: "art. 5.52"
+      functies:
+        - "wijziging omgevingsplan"
+        - "omgevingsvergunning"
+        - "andere aangewezen besluiten"
+
+    doorbreking_regelingen:
+      beschrijving: "Hoger niveau kan lager doorbreken"
+      evidence: "art. 5.53 lid 3-4, art. 5.53a"
+      werking: |
+        - GS kan gemeente/waterschap regels opzij zetten
+        - Minister kan alle lagere regels opzij zetten
+        - Voorwaarde: onevenredige belemmering + dringende redenen
+
+    indeplaatstreding:
+      beschrijving: "Coördinator kan besluiten vervangen"
+      evidence: "art. 5.45a"
+      triggers:
+        - "niet-tijdig besluit"
+        - "belemmerend besluit"
+
+    verplichte_projectbesluiten:
+      beschrijving: "Bepaalde projecten vereisen projectbesluit"
+      evidence: "art. 5.46"
+      categorieen:
+        - "hoofdinfrastructuur (autowegen, spoorwegen, vaarwegen)"
+        - "primaire waterkeringen"
+
+  relaties:
+    intern:
+      - van: "art. 5.44"
+        naar: "art. 2.3"
+        type: "begrenzing"
+        context: "subsidiariteitstoets"
+      - van: "art. 5.53"
+        naar: "art. 4.1, 4.2, § 4.1.2, § 4.3.1"
+        type: "verwijzing"
+        context: "beoordelingsregels planwijziging"
+      - van: "art. 5.53"
+        naar: "§ 5.1.3-5.1.5"
+        type: "verwijzing"
+        context: "beoordelingsregels vergunning"
+      - van: "art. 5.45"
+        naar: "art. 16.7"
+        type: "verwijzing"
+        context: "coördinatieregeling"
+      - van: "art. 5.53a"
+        naar: "art. 2.24, 2.34"
+        type: "uitzondering"
+        context: "instructie kan belemmering vergen"
+
+    extern:
+      - naar: "Omgevingsbesluit"
+        context: "nadere regels participatie (art. 5.47 lid 5)"
+      - naar: "ministeriële regeling BZK"
+        context: "categorieën zonder overeenstemming (art. 5.44 lid 2)"
+
+  routes:
+    entry_points:
+      - artikel: "5.44"
+        vraag: "Wie is bevoegd gezag voor projectbesluit?"
+      - artikel: "5.46"
+        vraag: "Is projectbesluit verplicht?"
+      - artikel: "5.52"
+        vraag: "Wat omvat het projectbesluit?"
+      - artikel: "5.55"
+        vraag: "Kan gemeente projectprocedure toepassen?"
+
+    exit_points:
+      - naar: "art. 16.7"
+        context: "coördinatieregeling"
+      - naar: "art. 16.87"
+        context: "beroep in één instantie"
+      - naar: "§ 5.1.3-5.1.5"
+        context: "beoordelingsregels vergunning"
+      - naar: "H4"
+        context: "beoordelingsregels planwijziging"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    projectbesluit_als_doorbraak_instrument:
+      observatie: |
+        Het projectbesluit is meer dan een planfiguur - het is een
+        "doorbraak-instrument" dat lagere regelingen kan overrulen
+        (art. 5.53) en waarbij hogere organen lagere kunnen vervangen
+        (art. 5.45a).
+      implicatie: |
+        Voor grote projecten kan het projectbesluit ALLE obstakels
+        doorbreken, inclusief gemeentelijke verordeningen,
+        waterschapsverordeningen en provinciale verordeningen.
+
+    gemeente_geen_projectbesluit:
+      observatie: |
+        Gemeente kan GEEN projectbesluit nemen (art. 5.44 noemt
+        alleen waterschap, GS, minister). Art. 5.55 biedt een
+        alternatief via omgevingsplanwijziging met projectprocedure-elementen.
+      implicatie: |
+        Bij navigatie "wie kan welk besluit nemen" is dit een
+        essentieel onderscheid. Gemeente kan wel de procedure
+        toepassen, maar niet het rechtsfiguur "projectbesluit".
+
+    integraal_besluit_keuze:
+      observatie: |
+        Art. 5.52 maakt de integrale werking FACULTATIEF: het
+        projectbesluit wijzigt altijd het omgevingsplan (lid 1),
+        maar de vergunningfunctie (lid 2a) geldt alleen "voor zover
+        uitdrukkelijk bepaald".
+      implicatie: |
+        Bevoegd gezag kiest per geval of projectbesluit ook als
+        vergunning geldt, of dat separate vergunningen nodig blijven.
+
+    hiërarchie_bescherming_en_doorbreking:
+      observatie: |
+        De wet bevat TWEE mechanismen:
+        1. Bescherming hoger: lager mag hoger niet belemmeren (art. 5.53a)
+        2. Doorbreking lager: hoger kan lager opzij zetten (art. 5.53 lid 3-4)
+      implicatie: |
+        Dit is een asymmetrisch systeem: hogere overheden hebben
+        zowel bescherming als doorbrekingsmacht.
+
+  schema_verbeteringen:
+    - "Toevoegen: projectbesluit als apart besluittype naast vergunning/plan"
+    - "Toevoegen: procedurele fase-tracking (voornemen/verkenning/voorkeur/besluit)"
+    - "Toevoegen: doorbreking_bevoegdheid veld bij actoren"

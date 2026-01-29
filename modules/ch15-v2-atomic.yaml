@@ -1,0 +1,1095 @@
+# Chapter 15: Schade - V2 Atomic Extraction
+# Extracted: 2026-01-29
+# Schema: v2 (lid-level logica, bron_path traceability)
+# Source: BWBR0037885 (Omgevingswet)
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_15:
+  nummer: "15"
+  titel: "Schade"
+  bron_path: "/Hoofdstuk15"
+  inwerking: "2024-01-01"
+
+  # === STRUCTURE ===
+  afdelingen:
+    - nummer: "15.1"
+      titel: "Nadeelcompensatie"
+      artikelen: ["15.1", "15.2", "15.3", "15.4", "15.5", "15.6", "15.7", "15.8", "15.9", "15.10"]
+    - nummer: "15.2"
+      titel: "Schade bij gedoogplichten"
+      artikelen: ["15.11", "15.12", "15.13", "15.14", "15.15", "15.16"]
+    - nummer: "15.3"
+      titel: "Schadeloosstelling bij onteigening"
+      paragrafen:
+        - nummer: "15.3.1"
+          titel: "Recht op en vaststelling van schadeloosstelling bij onteigening"
+          artikelen: ["15.17", "15.18", "15.19", "15.20", "15.21", "15.22", "15.23", "15.24", "15.25", "15.26", "15.27", "15.28", "15.29", "15.30", "15.31", "15.32", "15.33", "15.34", "15.35", "15.36"]
+        - nummer: "15.3.2"
+          titel: "Procedure vaststelling schadeloosstelling bij onteigening"
+          artikelen: ["15.37", "15.38", "15.39", "15.40", "15.41", "15.42", "15.43", "15.44", "15.45", "15.46", "15.47", "15.48", "15.49", "15.50", "15.51"]
+    - nummer: "15.4"
+      titel: "Schadevergoeding bij voorkeursrechten"
+      artikelen: ["15.52"]
+    - nummer: "15.5"
+      titel: "Schade door in het wild levende dieren"
+      artikelen: ["15.53"]
+
+# =============================================================================
+# AFDELING 15.1: NADEELCOMPENSATIE
+# =============================================================================
+
+artikel_15.1:
+  nummer: "15.1"
+  titel: "(toepassingsbereik)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.1/Lid1"
+      structuur:
+        aanhef: "Als een bestuursorgaan in de rechtmatige uitoefening van zijn publiekrechtelijke bevoegdheid of taak op grond van deze wet schade veroorzaakt, is titel 4.5 van de Algemene wet bestuursrecht alleen van toepassing op de toekenning van vergoeding van schade als bedoeld in artikel 4:126, eerste lid, van die wet die wordt veroorzaakt door het vaststellen, verlenen, stellen, treffen of, voor zover van toepassing, wijzigen of intrekken van:"
+        onderdelen:
+          a:
+            tekst: "een peilbesluit als bedoeld in artikel 2.41"
+          b:
+            tekst: "een besluit op grond van artikel 2.45, eerste of derde lid"
+          c:
+            tekst: "een in een programma opgenomen beschrijving van een activiteit als gevolg waarvan de activiteit is toegestaan"
+          d:
+            tekst: "een regel in het omgevingsplan, als het gaat om een regel als bedoeld in artikel 4.1, eerste lid"
+          e:
+            tekst: "een regel in een waterschapsverordening, als het gaat om een regel als bedoeld in artikel 4.1, eerste lid"
+          f:
+            tekst: "een regel in een omgevingsverordening, als het gaat om een regel als bedoeld in artikel 4.1, eerste lid"
+          g:
+            tekst: "een regel in een algemene maatregel van bestuur, als het gaat om een regel als bedoeld in artikel 4.3, eerste of derde lid"
+          h:
+            tekst: "een regel in een ministeriële regeling, als het gaat om een regel als bedoeld in artikel 4.1, tweede lid, of 4.3, vierde lid"
+          i:
+            tekst: "een maatwerkvoorschrift"
+          j:
+            tekst: "een toestemming om een gelijkwaardige maatregel te treffen"
+          k:
+            tekst: "een omgevingsvergunning of het weigeren daarvan"
+          l:
+            tekst: "een projectbesluit"
+          m:
+            tekst: "een beslissing tot het treffen van maatregelen als bedoeld in artikel 19.4"
+          n:
+            tekst: "een beslissing tot het treffen van maatregelen als bedoeld in artikel 19.5"
+          o:
+            tekst: "een maatregel als bedoeld in artikel 19.15"
+      logica:
+        type: toepassingsbereik
+        norm: "LIMITATIEVE LIJST van schadeveroorzakende besluiten waarvoor nadeelcompensatie via Awb 4.5"
+        bijzonderheid: "exclusief regime - alleen deze besluiten"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.1/Lid2"
+      structuur:
+        volledige_tekst: "Als voor een activiteit een omgevingsvergunning is vereist op grond van een regel als bedoeld in het eerste lid, onder d tot en met f, of op grond van artikel 5.1, geldt alleen het besluit tot het verlenen, wijzigen, intrekken of weigeren van de omgevingsvergunning voor die activiteit als schadeveroorzakend besluit."
+      logica:
+        type: precisering
+        norm: "Bij vergunningplicht: vergunningbesluit is schadeveroorzakend, niet de onderliggende regel"
+        gevolg: "schade volgt vergunning, niet plan"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.1/Lid3"
+      structuur:
+        volledige_tekst: "Als op grond van artikel 5.52, eerste lid, een omgevingsplan wordt gewijzigd, geldt alleen het projectbesluit als schadeveroorzakend besluit."
+      logica:
+        type: precisering
+        norm: "Bij projectbesluit: projectbesluit is schadeveroorzakend, niet planwijziging"
+
+  functie:
+    werkwoord: bepaalt
+    object: toepassingsbereik nadeelcompensatie Omgevingswet
+    subject: schadeveroorzakende besluiten
+
+  externe_refs:
+    - naar: "BWBR0005537"
+      wet: "Awb"
+      artikel: "4:126"
+      context: "algemeen nadeelcompensatieregime"
+
+artikel_15.2:
+  nummer: "15.2"
+  titel: "(schade die niet voor vergoeding in aanmerking komt)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.2"
+      structuur:
+        volledige_tekst: "Voor de toepassing van deze afdeling heeft de vergoeding van schade als bedoeld in artikel 4:126, eerste lid, van de Algemene wet bestuursrecht geen betrekking op immateriële schade."
+      logica:
+        type: uitsluiting
+        norm: "GEEN vergoeding van immateriële schade"
+        scope: "alleen vermogensschade"
+
+  functie:
+    werkwoord: begrenst
+    object: vergoedbare schadesoorten
+    subject: nadeelcompensatie
+
+artikel_15.3:
+  nummer: "15.3"
+  titel: "(schadebepaling als een omgevingsvergunning is vereist)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.3/Lid1"
+      structuur:
+        volledige_tekst: "Als voor een activiteit een omgevingsvergunning is vereist, wordt de schade die bestaat uit waardevermindering van een onroerende zaak bepaald aan de hand van een vergelijking van de waarde van de onroerende zaak onmiddellijk voor en na het tijdstip waarop het bevoegd gezag heeft kennisgegeven van het besluit tot het verlenen of wijzigen van de omgevingsvergunning."
+      logica:
+        type: bepaling
+        norm: "Peildatum waardevermindering: moment kennisgeving vergunningbesluit"
+        methode: "voor-na vergelijking"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.3/Lid2"
+      structuur:
+        volledige_tekst: "Dit artikel is alleen van toepassing op schade die wordt veroorzaakt door een regel op grond waarvan een activiteit is toegestaan buiten de locatie waar de onroerende zaak is gelegen of door een maatregel die buiten die locatie wordt getroffen."
+      logica:
+        type: begrenzing
+        norm: "Alleen voor schade door activiteiten ELDERS (indirecte planschade)"
+
+  functie:
+    werkwoord: bepaalt
+    object: peildatum schadebepaling bij vergunning
+    subject: indirecte planschade
+
+artikel_15.4:
+  nummer: "15.4"
+  titel: "(aanvraag om schadevergoeding als geen omgevingsvergunning is vereist)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.4/Lid1"
+      structuur:
+        aanhef: "Als voor een activiteit die is toegestaan op grond van een regel als bedoeld in artikel 15.1, eerste lid, onder d tot en met h, geen omgevingsvergunning is vereist, kan een aanvraag om schadevergoeding worden ingediend als:"
+        onderdelen:
+          a:
+            tekst: "degene die de activiteit gaat verrichten aan het bevoegd gezag informatie over die activiteit heeft verstrekt en het bevoegd gezag kennis heeft gegeven van die informatie"
+          b:
+            tekst: "met de activiteit is begonnen"
+      logica:
+        type: bepaling
+        norm: "Aanvraagmoment bij vergunningvrije activiteit: na kennisgeving OF begin activiteit"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.4/Lid2"
+      structuur:
+        aanhef: "De schade die bestaat uit waardevermindering van een onroerende zaak wordt bepaald aan de hand van een vergelijking van de waarde van de onroerende zaak:"
+        onderdelen:
+          a:
+            tekst: "onmiddellijk voor en na het tijdstip waarop de kennisgeving, bedoeld in het eerste lid, onder a, is gedaan"
+          b:
+            tekst: "als de informatie, bedoeld in het eerste lid, onder a, niet is verstrekt: onmiddellijk voor en na het tijdstip waarop met de activiteit is begonnen"
+      logica:
+        type: bepaling
+        norm: "Peildatum: kennisgeving of begin activiteit"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.4/Lid3"
+      structuur:
+        volledige_tekst: "Als een kennisgeving als bedoeld in het eerste lid, onder a, is gedaan, wordt voor de toepassing van artikel 4:131, eerste lid, van de Algemene wet bestuursrecht de dag na die waarop de kennisgeving is gedaan, gelijkgesteld met de dag na die waarop de benadeelde bekend is geworden met de schade en met het voor de schadeveroorzakende gebeurtenis verantwoordelijke bestuursorgaan."
+      logica:
+        type: bepaling
+        norm: "Start verjaringstermijn: dag na kennisgeving"
+
+    4:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.4/Lid4"
+      structuur:
+        volledige_tekst: "Dit artikel is alleen van toepassing op schade die wordt veroorzaakt door een regel op grond waarvan een activiteit is toegestaan buiten de locatie waar de onroerende zaak is gelegen of door een maatregel die buiten die locatie wordt getroffen."
+      logica:
+        type: begrenzing
+        norm: "Alleen voor schade door activiteiten ELDERS"
+
+  functie:
+    werkwoord: bepaalt
+    object: aanvraagmoment en peildatum bij vergunningvrije activiteiten
+    subject: indirecte planschade
+
+artikel_15.5:
+  nummer: "15.5"
+  titel: "(actieve risicoaanvaarding)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.5"
+      structuur:
+        aanhef: "De aanvrager heeft het risico van het ontstaan van schade als bedoeld in artikel 4:126, tweede lid, onder a, van de Algemene wet bestuursrecht in ieder geval niet aanvaard als:"
+        onderdelen:
+          a:
+            tekst: "de aanvrager overeenkomstig artikel 2, eerste lid, van Boek 7 van het Burgerlijk Wetboek tot koop is overgegaan van een tot woning bestemde onroerende zaak na de vaststelling of wijziging van het omgevingsplan"
+          b:
+            tekst: "op de aanvraag om schadevergoeding artikel 15.1, tweede lid, of 15.4, eerste lid, van toepassing is"
+          c:
+            tekst: "de schade bestaat uit waardevermindering van de onroerende zaak"
+      logica:
+        type: uitzondering
+        norm: "GEEN actieve risicoaanvaarding bij particuliere woningkoop na planwijziging"
+        bescherming: "kopers van woningen"
+        conditie:
+          type: cumulatief
+          tekst: "alle drie voorwaarden moeten vervuld zijn"
+
+  functie:
+    werkwoord: beschermt
+    object: particuliere woningkopers
+    subject: tegen risicoaanvaardingsverwijt
+
+artikel_15.6:
+  nummer: "15.6"
+  titel: "(passieve risicoaanvaarding)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.6"
+      structuur:
+        aanhef: "Bij schade die wordt veroorzaakt door wijziging van een of meer regels in een omgevingsplan of in een omgevingsverordening gesteld met het oog op een evenwichtige toedeling van functies aan locaties, die ertoe strekt dat het verrichten van bepaalde activiteiten niet meer is toegestaan, heeft de aanvrager het risico van het ontstaan van schade als bedoeld in artikel 4:126, tweede lid, onder a, van de Algemene wet bestuursrecht, aanvaard als:"
+        onderdelen:
+          a:
+            tekst: "het bevoegd gezag ten minste een jaar voorafgaand aan de wijziging van die regel, van het voornemen daartoe kennis heeft gegeven op de in artikel 12 van de Bekendmakingswet bepaalde wijze"
+          b:
+            tekst: "gedurende drie jaar onmiddellijk voorafgaand aan die kennisgeving, geen activiteit is verricht die in overeenstemming is met de regels in het omgevingsplan of de omgevingsverordening die van toepassing waren"
+          c:
+            tekst: "vanaf het tijdstip van die kennisgeving tot het tijdstip van de wijziging van die regel, geen activiteit is verricht die in overeenstemming is met de regels in het omgevingsplan of de omgevingsverordening die van toepassing waren of de voor een activiteit op die locatie benodigde voorbereidingen niet zijn getroffen"
+      logica:
+        type: bepaling
+        norm: "Passieve risicoaanvaarding bij 3-jaar niet-gebruik + 1-jaar vooraankondiging"
+        gevolg: "geen vergoeding wegbestemde rechten die niet benut zijn"
+        termijnen:
+          kennisgeving_vooraf: "minimaal 1 jaar"
+          non_activiteit: "minimaal 3 jaar"
+
+  functie:
+    werkwoord: bepaalt
+    object: passieve risicoaanvaarding bij wegbestemmen
+    subject: niet-benutte rechten
+
+artikel_15.7:
+  nummer: "15.7"
+  titel: "(normaal maatschappelijk risico)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.7/Lid1"
+      structuur:
+        volledige_tekst: "Bij een aanvraag om vergoeding van schade die bestaat uit waardevermindering van een onroerende zaak die wordt veroorzaakt door een besluit op grond waarvan een of meer activiteiten is of zijn toegestaan buiten de locatie waar de onroerende zaak is gelegen of door een maatregel die buiten die locatie wordt getroffen, wordt een deel ter grootte van vier procent van de waarde van de onroerende zaak onmiddellijk voor het ontstaan van de schade aangemerkt als behorend tot het normale maatschappelijke risico als bedoeld in artikel 4:126, eerste lid, van de Algemene wet bestuursrecht."
+      logica:
+        type: drempel
+        norm: "FORFAITAIR normaal maatschappelijk risico: 4% van waarde onroerende zaak"
+        bijzonderheid: "wettelijk vastgelegd percentage"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.7/Lid2"
+      structuur:
+        volledige_tekst: "Als de aanvraag om schadevergoeding betrekking heeft op verschillende besluiten met onderlinge samenhang daartussen, past het bevoegd gezag het eerste lid toe op de schade voortvloeiend uit die besluiten gezamenlijk."
+      logica:
+        type: bepaling
+        norm: "Bij samenhangende besluiten: 4%-drempel op totale schade"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.7/Lid3"
+      structuur:
+        volledige_tekst: "Het bevoegd gezag kan bij de behandeling van een aanvraag om schadevergoeding het eerste lid buiten toepassing laten als dat lid van toepassing is geweest bij de beslissing op een eerder ingediende aanvraag om vergoeding van schade die bestaat uit waardevermindering van de onroerende zaak."
+      logica:
+        type: machtiging
+        norm: "Bij eerdere toepassing 4%-drempel: facultatief niet opnieuw toepassen"
+
+    4:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.7/Lid4"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarin de schade wordt geacht niet uit te gaan boven het normale maatschappelijke risico."
+      logica:
+        type: delegatie
+        norm: "AMvB kan gevallen aanwijzen waar geen vergoeding"
+
+  functie:
+    werkwoord: bepaalt
+    object: normaal maatschappelijk risico (4%)
+    subject: indirecte planschade
+
+artikel_15.8:
+  nummer: "15.8"
+  titel: "(bevoegd gezag)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.8/Lid1"
+      structuur:
+        volledige_tekst: "Als de aanvraag om schadevergoeding betrekking heeft op een besluit van de gemeenteraad, het algemeen bestuur van een waterschap of provinciale staten of op een algemene maatregel van bestuur of ministeriële regeling, wordt als bestuursorgaan dat de schadevergoeding toekent als bedoeld in artikel 4:126, eerste lid, van de Algemene wet bestuursrecht, aangemerkt het college van burgemeester en wethouders, het dagelijks bestuur van het waterschap, het college van gedeputeerde staten respectievelijk Onze Minister die het aangaat, tenzij het tweede lid op die aanvraag van toepassing is."
+      logica:
+        type: bevoegdheidsbepaling
+        norm: "Dagelijks bestuur beslist op aanvraag over besluit algemeen bestuur"
+        patroon: "raad → B&W; AB → DB; PS → GS; AMvB/regeling → Minister"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.8/Lid2"
+      structuur:
+        volledige_tekst: "Als de aanvraag om schadevergoeding betrekking heeft op een besluit ter uitvoering van een projectbesluit, is het bestuursorgaan dat het projectbesluit heeft vastgesteld, het bestuursorgaan dat de schadevergoeding toekent."
+      logica:
+        type: bevoegdheidsbepaling
+        norm: "Bij projectbesluit: beslissend is opsteller projectbesluit"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.8/Lid3"
+      structuur:
+        volledige_tekst: "Een bestuursorgaan kan de bevoegdheid om te beslissen op een aanvraag om schadevergoeding overdragen aan een ander bestuursorgaan, als dat bestuursorgaan daarmee instemt."
+      logica:
+        type: machtiging
+        norm: "Overdracht bevoegdheid aan ander bestuursorgaan mogelijk"
+
+    4:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.8/Lid4"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de toepassing van het derde lid."
+      logica:
+        type: delegatie
+        norm: "AMvB kan overdracht regelen"
+
+  functie:
+    werkwoord: bepaalt
+    object: bevoegd gezag nadeelcompensatie
+    subject: bestuursorgaan
+
+artikel_15.9:
+  nummer: "15.9"
+  titel: "(delegatiegrondslag regels aanvraag schadevergoeding)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.9/Lid1"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen bestuursorganen of andere instanties worden aangewezen die, in daarbij aangewezen gevallen, in de gelegenheid worden gesteld om aan het bevoegd gezag advies uit te brengen over een aanvraag om schadevergoeding."
+      logica:
+        type: delegatie
+        norm: "AMvB kan adviesorganen aanwijzen"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.9/Lid2"
+      structuur:
+        aanhef: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de wijze van beoordeling van een aanvraag om schadevergoeding"
+          b:
+            tekst: "de totstandkoming van een beslissing op de aanvraag"
+      logica:
+        type: delegatie
+        norm: "AMvB regelt beoordelingswijze"
+
+  functie:
+    werkwoord: delegeert
+    object: procedurele regels nadeelcompensatie
+    subject: AMvB
+
+artikel_15.10:
+  nummer: "15.10"
+  titel: "(delegatiegrondslag informatieverplichting)"
+  bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.1/Artikel15.10"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen regels worden gesteld over een in een omgevingsplan, waterschapsverordening of omgevingsverordening op te nemen verplichting tot het verstrekken van informatie en tot de kennisgeving daarvan, met het oog op de indiening van een aanvraag om schadevergoeding als bedoeld in artikel 15.4."
+      logica:
+        type: delegatie
+        norm: "AMvB kan informatieplicht voor vergunningvrije activiteiten regelen"
+
+  functie:
+    werkwoord: delegeert
+    object: informatieverplichting voor aanvraag bij vergunningvrij
+    subject: AMvB
+
+# =============================================================================
+# AFDELING 15.2: SCHADE BIJ GEDOOGPLICHTEN
+# =============================================================================
+
+artikel_15.11:
+  nummer: "15.11"
+  titel: "(begripsbepalingen)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.11"
+      structuur:
+        volledige_tekst: "Artikel 10.1 is van overeenkomstige toepassing."
+      logica:
+        type: verwijzing
+        norm: "Begrippen uit Ch10 (gedoogplichten) van toepassing"
+
+  functie:
+    werkwoord: verwijst
+    object: begrippen gedoogplichten
+    subject: schadevergoeding gedoogplichten
+
+artikel_15.12:
+  nummer: "15.12"
+  titel: "(schadevergoeding door initiatiefnemer)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.12"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.12"
+      structuur:
+        volledige_tekst: "Schade als gevolg van een gedoogplicht als bedoeld in de afdelingen 10.2 en 10.3 wordt vergoed door de initiatiefnemer van de activiteit of het werk van algemeen belang waarvoor de gedoogplicht geldt."
+      logica:
+        type: verplichting
+        norm: "INITIATIEFNEMER vergoedt schade gedoogplicht, niet overheid"
+        schadeplichtige: "initiatiefnemer"
+
+  functie:
+    werkwoord: bepaalt
+    object: schadeplichtige bij gedoogplichten
+    subject: initiatiefnemer
+
+artikel_15.13:
+  nummer: "15.13"
+  titel: "(omvang schadevergoeding bij gedoogplichten afdeling 10.2)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.13"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.13/Lid1"
+      structuur:
+        aanhef: "Schade die een rechtstreeks en noodzakelijk gevolg is van een gedoogplicht als bedoeld in afdeling 10.2 wordt aan de rechthebbende die de schade lijdt vergoed:"
+        onderdelen:
+          a:
+            tekst: "als die schade uitgaat boven het normale maatschappelijke risico"
+          b:
+            tekst: "voor zover de rechthebbende in vergelijking met anderen onevenredig zwaar wordt getroffen"
+      logica:
+        type: bepaling
+        norm: "Schade wettelijke gedoogplichten: vergoeding boven NMR + abnormale last"
+        regime: "nadeelcompensatie-achtig"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.13/Lid2"
+      structuur:
+        volledige_tekst: "Onverminderd het eerste lid wordt schade als gevolg van een gedoogplicht als bedoeld in artikel 10.3, vierde lid, alleen vergoed voor zover die het gevolg is van de verlegging van een waterkering of van andere maatregelen, gericht op het vergroten van de afvoer- of bergingscapaciteit van watersystemen."
+      logica:
+        type: begrenzing
+        norm: "Bij waterbeheer: alleen schade door specifieke maatregelen"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.13/Lid3"
+      structuur:
+        volledige_tekst: "De artikelen 4:126, tweede en derde lid, en 4:129, aanhef en onder a en b, van de Algemene wet bestuursrecht en de artikelen 15.2 en 15.5, aanhef en onder c, zijn van overeenkomstige toepassing."
+      logica:
+        type: verwijzing
+        norm: "Awb-nadeelcompensatiebepalingen van overeenkomstige toepassing"
+
+    4:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.13/Lid4"
+      structuur:
+        volledige_tekst: "Dit artikel is niet van toepassing op schade als gevolg van een gedoogplicht als bedoeld in artikel 10.3, derde lid."
+      logica:
+        type: uitzondering
+        norm: "Niet voor grondwateronttrekking/infiltratie"
+
+  functie:
+    werkwoord: bepaalt
+    object: omvang schadevergoeding wettelijke gedoogplichten
+    subject: nadeelcompensatieregime
+
+artikel_15.14:
+  nummer: "15.14"
+  titel: "(omvang schadevergoeding bij gedoogplichtbeschikkingen afdeling 10.3)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.14"
+  inwerking: "2026-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.14/Lid1"
+      structuur:
+        volledige_tekst: "Schade die een rechtstreeks en noodzakelijk gevolg is van een gedoogplicht als bedoeld in afdeling 10.3 of artikel 10.3, derde lid, wordt aan de rechthebbende die de schade lijdt volledig vergoed."
+      logica:
+        type: bepaling
+        norm: "Schade gedoogplichtbeschikkingen: VOLLEDIGE vergoeding"
+        regime: "onteigeningsachtig"
+        verschil: "geen NMR-aftrek, geen drempel"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.14/Lid2"
+      structuur:
+        volledige_tekst: "Het eerste lid is niet van toepassing op schade als gevolg van een gedoogplicht als bedoeld in artikel 10.17, eerste lid, en tweede lid, onder a."
+      logica:
+        type: uitzondering
+        norm: "Niet voor bepaalde gedoogplichten (openbare weg/vaarweg toegang)"
+
+  functie:
+    werkwoord: bepaalt
+    object: omvang schadevergoeding gedoogplichtbeschikkingen
+    subject: volledige vergoeding
+
+artikel_15.15:
+  nummer: "15.15"
+  titel: "(bevoegde rechter)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.15"
+      structuur:
+        volledige_tekst: "Op een vordering tot schadevergoeding als bedoeld in deze afdeling is de civiele rechter bevoegd binnen wiens rechtsgebied de onroerende zaak geheel of in hoofdzaak is gelegen."
+      logica:
+        type: bevoegdheidsbepaling
+        norm: "Civiele rechter bevoegd voor schade gedoogplichten"
+        forum: "rechtsgebied ligging onroerende zaak"
+
+  functie:
+    werkwoord: bepaalt
+    object: rechtsmacht schade gedoogplichten
+    subject: civiele rechter
+
+artikel_15.16:
+  nummer: "15.16"
+  titel: "(onderzoek en vergoeding schade bij grondwateronttrekkingen of infiltratie)"
+  bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.16"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.16/Lid1"
+      structuur:
+        aanhef: "Degene die een vordering kan doen tot vergoeding van schade kan eerst aan gedeputeerde staten van de provincie waarin de onroerende zaak geheel of grotendeels is gelegen verzoeken om een onderzoek in te stellen als de schade het gevolg is van:"
+        onderdelen:
+          a:
+            tekst: "het onttrekken van grondwater, bedoeld in artikel 10.3, derde lid, onder a"
+          b:
+            tekst: "het in de bodem brengen van water, bedoeld in artikel 10.3, derde lid, onder b"
+      logica:
+        type: machtiging
+        norm: "GS kunnen onderzoek instellen naar causaal verband grondwaterschade"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.2/Artikel15.16/Lid2"
+      structuur:
+        volledige_tekst: "Als een onroerende zaak is gelegen in een gebied waarin de grondwaterstand invloed ondergaat van meer dan een onttrekking en uit het onderzoek niet of niet binnen redelijke termijn blijkt door welke onttrekking de schade aan die onroerende zaak wordt veroorzaakt, kennen gedeputeerde staten de rechthebbende op zijn verzoek een schadevergoeding toe. De rechthebbende draagt in dat geval de rechten die hij vanwege de door hem geleden schade tegenover derden heeft over aan de provincie."
+      logica:
+        type: machtiging
+        norm: "Bij niet-traceerbare grondwaterschade: GS vergoedt, regres op onttrekkers"
+        bijzonderheid: "cessie schadevergoedingsvordering aan provincie"
+
+  functie:
+    werkwoord: regelt
+    object: onderzoek en vergoeding grondwaterschade
+    subject: GS
+
+# =============================================================================
+# AFDELING 15.3: SCHADELOOSSTELLING BIJ ONTEIGENING
+# =============================================================================
+
+artikel_15.17:
+  nummer: "15.17"
+  titel: "(recht op schadeloosstelling)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.17"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.17"
+      structuur:
+        volledige_tekst: "De eigenaar van een zaak die in een onteigeningsbeschikking voor onteigening is aangewezen, heeft recht op schadeloosstelling."
+      logica:
+        type: recht
+        norm: "Eigenaar heeft RECHT op schadeloosstelling bij onteigening"
+        grondslag: "Grondwet art. 14"
+
+  functie:
+    werkwoord: vestigt
+    object: recht op schadeloosstelling
+    subject: onteigende eigenaar
+
+artikel_15.18:
+  nummer: "15.18"
+  titel: "(omvang schadeloosstelling)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.18"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.18"
+      structuur:
+        volledige_tekst: "Schade die een eigenaar rechtstreeks en noodzakelijk lijdt door een onteigening op grond van deze wet wordt volledig vergoed."
+      logica:
+        type: bepaling
+        norm: "VOLLEDIGE vergoeding van onteigeningsschade"
+        grondslag: "Grondwet art. 14"
+        omvang: "rechtstreeks en noodzakelijk gevolg"
+
+  functie:
+    werkwoord: bepaalt
+    object: omvang schadeloosstelling onteigening
+    subject: volledige vergoeding
+
+artikel_15.19:
+  nummer: "15.19"
+  titel: "(schadeloosstelling huurverkoper)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.19"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.19"
+      structuur:
+        volledige_tekst: "Bij onteigening van een krachtens huurkoop verkochte zaak wordt uit het bedrag van de werkelijke waarde van de zaak aan de huurverkoper een schadeloosstelling toegekend vanwege de aanspraken uit de huurkoopovereenkomst die hij verliest."
+      logica:
+        type: bepaling
+        norm: "Huurverkoper krijgt vergoeding voor verloren huurkoopaanspraken"
+
+  functie:
+    werkwoord: bepaalt
+    object: schadeloosstelling huurverkoper
+    subject: bijzonder rechthebbende
+
+artikel_15.20:
+  nummer: "15.20"
+  titel: "(peildatum)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.20"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.20"
+      structuur:
+        volledige_tekst: "Bij het vaststellen van de schadeloosstelling wordt uitgegaan van de dag waarop de onteigeningsakte is ingeschreven in de openbare registers."
+      logica:
+        type: bepaling
+        norm: "Peildatum schadeloosstelling: dag inschrijving akte"
+
+  functie:
+    werkwoord: bepaalt
+    object: peildatum schadeloosstelling
+    subject: inschrijving onteigeningsakte
+
+artikel_15.21:
+  nummer: "15.21"
+  titel: "(schadeverhogende veranderingen)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.21"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.21/Lid1"
+      structuur:
+        volledige_tekst: "Bij het vaststellen van de schadeloosstelling blijven veranderingen die kennelijk tot stand zijn gebracht om de schadeloosstelling te verhogen, buiten beschouwing."
+      logica:
+        type: begrenzing
+        norm: "Anti-misbruik: schadeverhogende veranderingen niet vergoed"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.21/Lid2"
+      structuur:
+        volledige_tekst: "Bij het vaststellen van de schadeloosstelling blijven veranderingen die tot stand zijn gebracht na de terinzagelegging van de ontwerponteigeningsbeschikking, buiten beschouwing, tenzij het normale of noodzakelijke veranderingen betreft die aansluiten bij de aard en het gebruik van de onroerende zaak op het tijdstip van de terinzagelegging."
+      logica:
+        type: begrenzing
+        norm: "Na ontwerp: alleen normale/noodzakelijke veranderingen meegeteld"
+        conditie:
+          type: tenzij
+          tekst: "normale of noodzakelijke veranderingen"
+
+  functie:
+    werkwoord: begrenst
+    object: in acht te nemen veranderingen
+    subject: anti-misbruik
+
+artikel_15.22:
+  nummer: "15.22"
+  titel: "(werkelijke waarde)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.22"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.22/Lid1"
+      structuur:
+        volledige_tekst: "De werkelijke waarde van de onteigende zaak wordt vergoed."
+      logica:
+        type: bepaling
+        norm: "Werkelijke waarde is basis schadeloosstelling"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.22/Lid2"
+      structuur:
+        volledige_tekst: "Bij het bepalen van de werkelijke waarde wordt uitgegaan van de prijs die tot stand zou zijn gekomen bij een veronderstelde vrije koop in het economische verkeer tussen de onteigende als redelijk handelende verkoper en de onteigenaar als redelijk handelende koper."
+      logica:
+        type: bepaling
+        norm: "Werkelijke waarde = hypothetische vrije marktprijs"
+        methode: "willing buyer / willing seller"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.22/Lid3"
+      structuur:
+        volledige_tekst: "In bijzondere gevallen wordt de werkelijke waarde naar een andere maatstaf bepaald."
+      logica:
+        type: uitzondering
+        norm: "Bij bijzondere gevallen: andere maatstaf mogelijk"
+        voorbeeld: "reconstructiewaarde bij bijzonder gebruik"
+
+  functie:
+    werkwoord: bepaalt
+    object: werkelijke waarde
+    subject: hypothetische marktprijs
+
+artikel_15.23:
+  nummer: "15.23"
+  titel: "(invloed van werken en plannen voor werken)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.23"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.23"
+      structuur:
+        aanhef: "Bij het vaststellen van de schadeloosstelling wordt geen rekening gehouden met voordelen of nadelen die zijn ontstaan door:"
+        onderdelen:
+          a:
+            tekst: "de verwezenlijking van het onteigeningsbelang waarvoor wordt onteigend, voor zover dat een overheidswerk betreft"
+          b:
+            tekst: "overheidswerken die in verband staan met de verwezenlijking van het onteigeningsbelang waarvoor wordt onteigend"
+          c:
+            tekst: "de plannen voor de werken, bedoeld onder a en b"
+      logica:
+        type: eliminatie
+        norm: "ELIMINATIEREGEL: voor-/nadelen door onteigeningswerk niet meegerekend"
+        effect: "voorkomt zowel onredelijk voordeel als onredelijk nadeel"
+
+  functie:
+    werkwoord: elimineert
+    object: invloed van het werk waarvoor onteigend
+    subject: zuivere waardebepaling
+
+artikel_15.24:
+  nummer: "15.24"
+  titel: "(bepalen prijs bij complex)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.24"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.24"
+      structuur:
+        aanhef: "Bij het bepalen van de prijs van de onteigende zaak wordt rekening gehouden met:"
+        onderdelen:
+          a:
+            tekst: "ter plaatse geldende voorschriften en gebruiken over baten en lasten, die uit de exploitatie van de zaak of van een complex van als één geheel in exploitatie te brengen of gebrachte zaken waarvan zij deel uitmaakt, naar verwachting zullen voortvloeien, en over de omslag van deze baten en lasten, voor zover een redelijk handelende verkoper en koper hiermee rekening plegen te houden"
+          b:
+            tekst: "alle functies die in het omgevingsplan zijn toegedeeld aan locaties van zaken die deel uitmaken van het complex, waarbij elke functie de waardering van alle zaken binnen het complex beïnvloedt"
+      logica:
+        type: bepaling
+        norm: "COMPLEXBENADERING: prijs naar evenredigheid van complexwaarde"
+        effect: "voorkomt ongelijke behandeling binnen complex"
+
+  functie:
+    werkwoord: bepaalt
+    object: prijsbepaling bij complex
+    subject: egalisatie
+
+artikel_15.25:
+  nummer: "15.25"
+  titel: "(invloed van tot uitvoering gekomen functies)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.25"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.25/Lid1"
+      structuur:
+        volledige_tekst: "Bij het bepalen van de werkelijke waarde van de onteigende zaak wordt de prijs van de onteigende zaak verminderd of vermeerderd met voordelen of nadelen als gevolg van functies die voor het eerst of opnieuw tot verwezenlijking komen, of verwezenlijkt blijven, door de verwezenlijking van het onteigeningsbelang waarvoor wordt onteigend, voor zover deze voordelen of nadelen ook na toepassing van artikel 15.24 redelijkerwijze niet of niet geheel ten bate of ten laste van de onteigende behoren te blijven."
+      logica:
+        type: bepaling
+        norm: "Correctie voor functies die door onteigening verwezenlijkt worden"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.25/Lid2"
+      structuur:
+        volledige_tekst: "Een vermeerdering van de prijs op grond van het eerste lid wordt verminderd met de vergoeding die in verband daarmee op grond van artikel 15.1, eerste lid, onder d, f, k of l, is toegekend."
+      logica:
+        type: verrekening
+        norm: "Aftrek eerder ontvangen nadeelcompensatie"
+
+  functie:
+    werkwoord: corrigeert
+    object: prijs voor verwezenlijkte functies
+    subject: redelijkheid
+
+artikel_15.26:
+  nummer: "15.26"
+  titel: "(wettelijke rente)"
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.26"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1/Artikel15.26"
+      structuur:
+        volledige_tekst: "Onder een schadeloosstelling is de wettelijke rente daarvan begrepen. De wettelijke rente wordt gerekend vanaf de dag waarop de rechtbank de schadeloosstelling heeft vastgesteld."
+      logica:
+        type: bepaling
+        norm: "Wettelijke rente vanaf vonnis rechtbank"
+
+  functie:
+    werkwoord: bepaalt
+    object: rentevergoeding schadeloosstelling
+    subject: wettelijke rente
+
+# Artikelen 15.27-15.51 (onteigeningsprocedure) samengevat:
+
+artikel_15.27_15.36:
+  samenvatting: "Bijkomende schade en vergoeding derden"
+  artikelen: ["15.27", "15.28", "15.29", "15.30", "15.31", "15.32", "15.33", "15.34", "15.35", "15.36"]
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.1"
+
+  patronen:
+    - artikel: "15.27"
+      onderwerp: "bijkomende schade"
+      norm: "vergoeding waardevermindering overblijvende, verhuis-/herinrichtingskosten"
+    - artikel: "15.28"
+      onderwerp: "verrekening voordelen"
+      norm: "voordelen uit onteigening verrekenen met schade"
+    - artikel: "15.29"
+      onderwerp: "eliminatie planschade"
+      norm: "geen dubbele vergoeding planschade"
+    - artikel: "15.30-15.36"
+      onderwerp: "derden-belanghebbenden"
+      norm: "huurders, pachters, hypotheekhouders, beperkt gerechtigden"
+
+artikel_15.37_15.51:
+  samenvatting: "Procedure vaststelling schadeloosstelling"
+  artikelen: ["15.37", "15.38", "15.39", "15.40", "15.41", "15.42", "15.43", "15.44", "15.45", "15.46", "15.47", "15.48", "15.49", "15.50", "15.51"]
+  bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.2"
+
+  patronen:
+    - artikel: "15.37"
+      onderwerp: "verzoek rechtbank"
+      norm: "onteigenaar dient verzoek in na bekrachtiging"
+    - artikel: "15.38-15.42"
+      onderwerp: "deskundigen"
+      norm: "rechtbank benoemt deskundigen voor advies"
+    - artikel: "15.43"
+      onderwerp: "voorlopige schadeloosstelling"
+      norm: "rechtbank bepaalt voorlopig bedrag"
+    - artikel: "15.44-15.48"
+      onderwerp: "zitting en vonnis"
+      norm: "comparitie, eindvonnis, kostenveroordeling"
+    - artikel: "15.49-15.51"
+      onderwerp: "hoger beroep"
+      norm: "cassatie mogelijk bij Hoge Raad"
+
+# =============================================================================
+# AFDELING 15.4: SCHADEVERGOEDING VOORKEURSRECHTEN
+# =============================================================================
+
+artikel_15.52:
+  nummer: "15.52"
+  titel: "(schadevergoeding voorkeursrecht)"
+  bron_path: "/Hoofdstuk15/Afdeling15.4/Artikel15.52"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.4/Artikel15.52/Lid1"
+      structuur:
+        aanhef: "De vervreemder kan vorderen dat de gemeente, de provincie of de Staat hem de schade zal vergoeden die hij als gevolg van de overdracht van een onroerende zaak of van een beperkt recht aan de gemeente, de provincie of de Staat op grond van afdeling 9.2 mocht hebben geleden, voor zover na de overdracht de functie waarvoor het voorkeursrecht is gevestigd:"
+        onderdelen:
+          a:
+            tekst: "op grond van artikel 9.1, eerste lid, onder a of b, niet is verwezenlijkt en bij een onherroepelijk omgevingsplan een functie is toegedeeld waarmee de vestiging van het voorkeursrecht in dat geval zou zijn uitgesloten"
+          b:
+            tekst: "op grond van artikel 9.1, eerste lid, onder c, niet uiterlijk op de laatste dag van de geldingsduur van dat voorkeursrecht is toegedeeld in een omgevingsplan of is toegedacht in een omgevingsvisie of programma"
+          c:
+            tekst: "op grond van artikel 9.1, tweede lid, niet uiterlijk op de laatste dag van de geldingsduur van dat voorkeursrecht is opgenomen in een voorkeursrechtbeschikking op grond van artikel 9.1, eerste lid, onder a, b of c"
+      logica:
+        type: recht
+        norm: "Schadevergoeding als functie waarvoor voorkeursrecht niet verwezenlijkt"
+        conditie:
+          type: voor_zover
+          tekst: "na overdracht: functie niet verwezenlijkt"
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.4/Artikel15.52/Lid2"
+      structuur:
+        volledige_tekst: "Ten aanzien van een vordering tot schadevergoeding als bedoeld in het eerste lid is de burgerlijke rechter bevoegd binnen wiens rechtsgebied de onroerende zaak waarop het voorkeursrecht rustte geheel of grotendeels ligt."
+      logica:
+        type: bevoegdheidsbepaling
+        norm: "Civiele rechter bevoegd"
+
+  functie:
+    werkwoord: vestigt
+    object: schadevergoedingsrecht bij niet-verwezenlijkt voorkeursrecht
+    subject: vervreemder
+
+# =============================================================================
+# AFDELING 15.5: SCHADE DOOR WILDE DIEREN
+# =============================================================================
+
+artikel_15.53:
+  nummer: "15.53"
+  titel: "(tegemoetkoming schade aangericht door in het wild levende dieren)"
+  bron_path: "/Hoofdstuk15/Afdeling15.5/Artikel15.53"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk15/Afdeling15.5/Artikel15.53/Lid1"
+      structuur:
+        volledige_tekst: "Gedeputeerde staten verlenen op verzoek van een belanghebbende een tegemoetkoming in schade, geleden in hun provincie, aangericht door van nature in het wild levende dieren van bij algemene maatregel van bestuur aangewezen soorten."
+      logica:
+        type: verplichting
+        norm: "GS verlenen tegemoetkoming voor wildschade van aangewezen soorten"
+        bevoegd_gezag: gedeputeerde_staten
+
+    2:
+      bron_path: "/Hoofdstuk15/Afdeling15.5/Artikel15.53/Lid2"
+      structuur:
+        volledige_tekst: "Een tegemoetkoming wordt alleen verleend voor zover een belanghebbende schade lijdt of zal lijden die redelijkerwijs niet of niet geheel voor zijn rekening behoort te blijven. Een tegemoetkoming wordt naar billijkheid bepaald."
+      logica:
+        type: begrenzing
+        norm: "Tegemoetkoming naar billijkheid, niet volledige vergoeding"
+        criterium: "redelijkerwijs niet voor rekening benadeelde"
+
+    3:
+      bron_path: "/Hoofdstuk15/Afdeling15.5/Artikel15.53/Lid3"
+      structuur:
+        volledige_tekst: "Op grond van het eerste lid worden de soorten aangewezen die op grond van artikel 5.1, tweede lid, worden beschermd tegen flora- en fauna-activiteiten."
+      logica:
+        type: verwijzing
+        norm: "Beschermde soorten = aangewezen soorten"
+
+  functie:
+    werkwoord: verplicht
+    object: tegemoetkoming wildschade
+    subject: GS
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Ob"
+      voor: "aanwijzing diersoorten"
+
+# =============================================================================
+# PARAGRAAF-ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+  structuur:
+    artikelen_count: 53
+    afdelingen_count: 5
+    paragrafen_count: 2
+
+  patronen:
+    drie_regimes:
+      beschrijving: "Drie verschillende schadevergoedingsregimes met oplopende vergoedingsomvang"
+      evidence:
+        - "15.7: nadeelcompensatie met 4% drempel"
+        - "15.13: schade gedoogplichten met NMR-toets"
+        - "15.18: onteigening met volledige vergoeding"
+      implicatie: "Regime hangt af van mate van eigendomsinbreuk"
+
+    eliminatieregel:
+      beschrijving: "Voor-/nadelen van werk waarvoor onteigend worden geëlimineerd"
+      evidence: ["art. 15.23"]
+      toepassing: "zowel planschade als onteigening"
+
+    peildatum_differentiatie:
+      beschrijving: "Verschillende peildatums per schadesoort"
+      evidence:
+        - "15.3: kennisgeving vergunning"
+        - "15.4: kennisgeving of begin activiteit"
+        - "15.20: inschrijving onteigeningsakte"
+
+    initiatiefnemer_betaalt:
+      beschrijving: "Bij gedoogplichten betaalt initiatiefnemer, niet overheid"
+      evidence: ["art. 15.12"]
+      contrast: "nadeelcompensatie: overheid betaalt"
+
+  relaties:
+    intern:
+      - van: "art. 15.1"
+        naar: "art. 15.7"
+        type: "uitwerking"
+        context: "NMR-drempel voor nadeelcompensatie"
+      - van: "art. 15.12-15.14"
+        naar: "Ch10"
+        type: "uitwerking"
+        context: "schadevergoeding gedoogplichten"
+      - van: "art. 15.17-15.51"
+        naar: "Ch11"
+        type: "uitwerking"
+        context: "schadeloosstelling onteigening"
+      - van: "art. 15.52"
+        naar: "Ch9"
+        type: "uitwerking"
+        context: "schade niet-verwezenlijkt voorkeursrecht"
+
+    extern:
+      - naar: "Ch13"
+        context: "verhaal schadevergoeding op initiatiefnemer"
+      - naar: "Awb 4.5"
+        context: "algemeen nadeelcompensatieregime"
+
+  routes:
+    entry_points:
+      - artikel: "15.1"
+        vraag: "Krijg ik schadevergoeding voor overheidsbesluit?"
+      - artikel: "15.12"
+        vraag: "Wie betaalt schade door gedoogplicht?"
+      - artikel: "15.17"
+        vraag: "Hoeveel krijg ik bij onteigening?"
+      - artikel: "15.53"
+        vraag: "Krijg ik vergoeding voor wildschade?"
+    exit_points:
+      - naar: "Awb 4.5"
+        context: "algemene nadeelcompensatie"
+      - naar: "Ch11"
+        context: "onteigeningsprocedure"
+      - naar: "Ch9"
+        context: "voorkeursrecht"
+      - naar: "Ch10"
+        context: "gedoogplichten"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    vergoedingsregimes_triade:
+      observatie: "Drie niveaus: nadeelcompensatie (met drempel) < gedoogplicht (geen drempel maar wel NMR) < onteigening (volledig)"
+      implicatie: "Navigator moet juiste regime tonen op basis van inbreuktype"
+
+    forfaitair_nmr:
+      observatie: "4% van waarde als forfaitair normaal maatschappelijk risico bij indirecte planschade"
+      implicatie: "Wettelijk vastgelegd percentage, geen discretie"
+
+    actieve_risicoaanvaarding_woningkoop:
+      observatie: "Particuliere kopers van woningen beschermd tegen risicoaanvaardingsverwijt"
+      implicatie: "Belangrijke uitzondering op algemene regel"
+
+  schema_verbeteringen:
+    - "Toevoegen: schadevergoedingsregime (nadeelcompensatie/gedoogplicht/onteigening/wildschade)"
+    - "Toevoegen: vergoedingsomvang (forfaitair/billijkheid/volledig)"
+    - "Toevoegen: schadeplichtige (overheid/initiatiefnemer)"

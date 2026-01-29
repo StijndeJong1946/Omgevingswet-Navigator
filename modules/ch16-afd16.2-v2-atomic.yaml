@@ -1,0 +1,1002 @@
+# Afdeling 16.2 - Coördinatie en betrokkenheid andere bestuursorganen
+# V2 Atomic Extraction
+# Artikelen 16.7-16.21
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 16.2
+titel: "Coördinatie en betrokkenheid andere bestuursorganen"
+bron_path: "/Hoofdstuk16/Afdeling16.2"
+
+# =============================================================================
+# PARAGRAAF 16.2.1: TOEPASSING AFDELING 3.5 AWB
+# =============================================================================
+paragraaf_16.2.1:
+  nummer: "16.2.1"
+  titel: "Toepassing afdeling 3.5 Algemene wet bestuursrecht"
+  bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1"
+
+  artikelen:
+
+    artikel_16.7:
+      nummer: "16.7"
+      titel: "(toepassing coördinatieregeling Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1"
+          structuur:
+            aanhef: "Afdeling 3.5 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van:"
+            onderdelen:
+              a:
+                tekst: "de beslissingen op aanvragen om een omgevingsvergunning of wijziging van de voorschriften van een omgevingsvergunning voor:"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1/Onderdeela"
+                sub_onderdelen:
+                  1:
+                    tekst: "een of meer op grond van artikel 5.7, tweede lid, aangewezen wateractiviteiten, en"
+                    bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1/Onderdeela/Onderdeel1"
+                  2:
+                    tekst: "een of meer andere activiteiten als bedoeld in de artikelen 5.1 en 5.4,"
+                    bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1/Onderdeela/Onderdeel2"
+                afsluiting: "die gelijktijdig zijn ingediend,"
+              b:
+                tekst: "de beslissingen op aanvragen om een omgevingsvergunning of wijziging van de voorschriften van een omgevingsvergunning voor een milieubelastende activiteit en voor een wateractiviteit waarvoor op grond van artikel 5.7, vierde lid, de verplichting geldt deze gelijktijdig in te dienen, of de beslissingen tot ambtshalve wijziging van die voorschriften,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1/Onderdeelb"
+              c:
+                tekst: "de besluiten ter uitvoering van een projectbesluit waarvoor dat op grond van artikel 5.45, eerste of tweede lid, is bepaald."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid1/Onderdeelc"
+          logica:
+            type: verplichting
+            norm: "Awb coördinatieregeling (afd 3.5) van toepassing op samenhangende besluiten"
+            kernbegrip: "gecoördineerde besluitvorming"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid2"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur wordt voor de gevallen, bedoeld in het eerste lid, onder a en b, het coördinerend bestuursorgaan, bedoeld in artikel 3:21, eerste lid, van de Algemene wet bestuursrecht, aangewezen."
+          logica:
+            type: delegatie
+            norm: "AMvB wijst coördinerend bestuursorgaan aan"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7/Lid3"
+          structuur:
+            volledige_tekst: "De artikelen 3:21, derde lid, en 3:23, eerste en derde lid, van de Algemene wet bestuursrecht zijn niet van toepassing op de gevallen, bedoeld in het eerste lid, onder a en b."
+          logica:
+            type: uitzondering
+            norm: "Specifieke Awb-bepalingen NIET van toepassing"
+            conditie:
+              type: in_afwijking_van
+              tekst: "artikelen 3:21 lid 3 en 3:23 lid 1 en 3 Awb niet van toepassing"
+
+      functie:
+        werkwoord: bepaalt
+        subject: "wetgever"
+        object: "toepassing Awb coördinatieregeling"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "afdeling 3.5, 3:21, 3:23"
+          context: "coördinatieregeling"
+
+      interne_refs:
+        - naar: "artikel 5.7"
+          type: verwijzing
+          context: "wateractiviteiten"
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.7"
+        - naar: "artikel 5.1"
+          type: verwijzing
+          context: "vergunningplichtige activiteiten"
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.1"
+        - naar: "artikel 5.45"
+          type: verwijzing
+          context: "projectbesluit"
+          bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45"
+
+      delegeert:
+        - type: "bij AMvB"
+          naar: "Omgevingsbesluit"
+          voor: "aanwijzing coördinerend bestuursorgaan"
+          actor: "Rijk"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.7 is de BASIS voor gecoördineerde besluitvorming.
+
+          Lid 1: Drie situaties waarin Awb coördinatieregeling van toepassing:
+          a) Gecombineerde water + andere activiteiten (gelijktijdig ingediend)
+          b) Milieubelastend + water (verplicht gelijktijdig ex art. 5.7 lid 4)
+          c) Uitvoeringsbesluiten projectbesluit (ex art. 5.45)
+
+          Lid 2: AMvB wijst coördinerend bestuursorgaan aan
+          Lid 3: Specifieke Awb-bepalingen uitgezonderd
+
+          KERN: Voorkomen van versnipperde besluitvorming bij samenhangende activiteiten.
+
+    artikel_16.8:
+      nummer: "16.8"
+      titel: "(koepelconcept)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8/Lid1"
+          structuur:
+            aanhef: "In een coördinatiebesluit als bedoeld in artikel 3:20, onder b, van de Algemene wet bestuursrecht kan, met het oog op de doelen van de wet en voor het optimaliseren van gebruiksruimte in een gebied, worden bepaald dat afdeling 3.5 van die wet van toepassing is op de voorbereiding van:"
+            onderdelen:
+              a:
+                tekst: "een omgevingsplan, waterschapsverordening of omgevingsverordening,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8/Lid1/Onderdeela"
+              b:
+                tekst: "een programma, en"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8/Lid1/Onderdeelb"
+              c:
+                tekst: "een projectbesluit of een omgevingsvergunning."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8/Lid1/Onderdeelc"
+          logica:
+            type: machtiging
+            norm: "Coördinatiebesluit KAN Awb-regeling toepassen op instrumenten"
+            conditie:
+              type: indien
+              tekst: "met het oog op doelen wet en optimaliseren gebruiksruimte"
+            kernbegrip: "koepelcoördinatie"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.8/Lid2"
+          structuur:
+            volledige_tekst: "Artikel 3:28 van de Algemene wet bestuursrecht is niet van toepassing op besluiten waartegen geen beroep kan worden ingesteld."
+          logica:
+            type: uitzondering
+            norm: "Awb 3:28 niet van toepassing indien geen beroep mogelijk"
+
+      functie:
+        werkwoord: machtigt
+        subject: "bestuursorgaan (coördinatiebesluit)"
+        object: "uitbreiding coördinatieregeling naar meerdere instrumenten"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "3:20, 3:28"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.8 maakt "KOEPELCOÖRDINATIE" mogelijk.
+
+          Een coördinatiebesluit kan bepalen dat de Awb coördinatieregeling
+          ook van toepassing is op:
+          - Omgevingsplan/verordeningen
+          - Programma's
+          - Projectbesluiten/vergunningen
+
+          DOEL: Optimaliseren gebruiksruimte in een gebied door
+          gelijktijdige voorbereiding van samenhangende besluiten.
+
+          Dit is facultatief (KAN), niet verplicht.
+
+# =============================================================================
+# PARAGRAAF 16.2.2: AANVULLENDE BEPALINGEN MILIEU + WATER
+# =============================================================================
+paragraaf_16.2.2:
+  nummer: "16.2.2"
+  titel: "Aanvullende bepalingen voor coördinatie van de vergunningverlening voor een milieubelastende activiteit en wateractiviteit in gevallen als bedoeld in artikel 16.7, eerste lid, onder b"
+  bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2"
+
+  artikelen:
+
+    artikel_16.9:
+      nummer: "16.9"
+      titel: "(toepassingsbereik paragraaf 16.2.2)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.9"
+      inwerking: "2024-01-01"
+
+      structuur:
+        aanhef: "Deze paragraaf is:"
+        onderdelen:
+          a:
+            tekst: "van toepassing op de beslissingen op aanvragen om een omgevingsvergunning, bedoeld in artikel 16.7, eerste lid, onder b,"
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.9/Onderdeela"
+          b:
+            tekst: "van overeenkomstige toepassing op de beslissingen op aanvragen om wijziging van de voorschriften van een omgevingsvergunning of de beslissingen tot ambtshalve wijziging van die voorschriften, bedoeld in artikel 16.7, eerste lid, onder b."
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.9/Onderdeelb"
+
+      logica:
+        type: definitie
+        norm: "Toepassingsbereik paragraaf 16.2.2"
+        kernbegrip: "scope milieu+water coördinatie"
+
+      interne_refs:
+        - naar: "artikel 16.7"
+          type: verwijzing
+          context: "lid 1 onder b"
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.1/Artikel16.7"
+
+    artikel_16.10:
+      nummer: "16.10"
+      titel: "(buiten behandeling laten aanvraag)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.10"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.10/Lid1"
+          structuur:
+            volledige_tekst: "Als maar één van de aanvragen om een omgevingsvergunning, bedoeld in artikel 16.7, eerste lid, onder b, is ingediend, laat het bevoegd gezag die aanvraag buiten behandeling, nadat de aanvrager eerst in de gelegenheid is gesteld de ontbrekende aanvraag in te dienen binnen een door het bevoegd gezag gestelde termijn."
+          logica:
+            type: verplichting
+            norm: "Bevoegd gezag LAAT aanvraag buiten behandeling bij ontbreken gekoppelde aanvraag"
+            conditie:
+              type: indien
+              tekst: "als maar één van de aanvragen is ingediend"
+            kernbegrip: "koppelingseis milieu+water"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.10/Lid2"
+          structuur:
+            volledige_tekst: "Als van beide aanvragen om een omgevingsvergunning, bedoeld in artikel 16.7, eerste lid, onder b, er één buiten behandeling wordt gelaten, laat het bevoegd gezag voor de andere aanvraag ook die aanvraag buiten behandeling."
+          logica:
+            type: verplichting
+            norm: "Bij buiten behandeling laten ene aanvraag, OOK andere buiten behandeling"
+            kernbegrip: "lot-verbondenheid aanvragen"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.10 waarborgt de KOPPELING tussen milieu- en wateraanvragen.
+
+          Lid 1: Ontbreekt één aanvraag → eerst herstelmogelijkheid, dan buiten behandeling
+          Lid 2: Valt één aanvraag weg → andere ook weg
+
+          Dit voorkomt dat milieu en water los van elkaar worden beoordeeld
+          terwijl ze wettelijk gekoppeld moeten zijn.
+
+    artikel_16.11:
+      nummer: "16.11"
+      titel: "(advies)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.11"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "De bestuursorganen die bevoegd gezag zijn met betrekking tot elk van de aanvragen, bedoeld in artikel 16.7, eerste lid, onder b, brengen aan elkaar een advies uit met het oog op de samenhang tussen de beslissingen op beide aanvragen."
+
+      logica:
+        type: verplichting
+        norm: "Bestuursorganen brengen WEDERZIJDS advies uit"
+        kernbegrip: "wederzijdse advisering"
+
+      functie:
+        werkwoord: verplicht
+        subject: "bestuursorganen (beide bevoegd gezag)"
+        object: "wederzijds adviseren met oog op samenhang"
+
+    artikel_16.12:
+      nummer: "16.12"
+      titel: "(termijn gelding omgevingsvergunningen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.12"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.12/Lid1"
+          structuur:
+            volledige_tekst: "Als in de omgevingsvergunning voor de wateractiviteit met toepassing van artikel 5.36, eerste lid, een termijn voor de gelding van de vergunning wordt gesteld, kan in de omgevingsvergunning voor de milieubelastende activiteit een gelijke termijn worden gesteld."
+          logica:
+            type: machtiging
+            norm: "Milieuvergunning KAN gelijke termijn krijgen als watervergunning"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.12/Lid2"
+          structuur:
+            volledige_tekst: "Als in de omgevingsvergunning voor de milieubelastende activiteit met toepassing van artikel 5.36, eerste lid, een termijn voor de gelding van de vergunning wordt gesteld, wordt in de omgevingsvergunning voor de wateractiviteit een gelijke termijn gesteld."
+          logica:
+            type: verplichting
+            norm: "Watervergunning MOET gelijke termijn krijgen als milieuvergunning"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.12 regelt TERMIJNSYNCHRONISATIE.
+
+          Lid 1: Water heeft termijn → milieu KAN gelijke termijn (facultatief)
+          Lid 2: Milieu heeft termijn → water MOET gelijke termijn (verplicht)
+
+          Asymmetrie: milieu bepaalt, water volgt.
+
+      interne_refs:
+        - naar: "artikel 5.36"
+          type: verwijzing
+          context: "termijn vergunning"
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.4/Artikel5.36"
+
+    artikel_16.13:
+      nummer: "16.13"
+      titel: "(instructie op initiatief algemeen bevoegd gezag)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.13"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.13/Lid1"
+          structuur:
+            volledige_tekst: "Als gedeputeerde staten of Onze Minister die het aangaat het bevoegd gezag zijn voor de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit, kunnen gedeputeerde staten respectievelijk Onze Minister die het aangaat, als dat vanwege de samenhang tussen de beslissingen op de beide aanvragen met het oog op het beschermen van het milieu geboden is, aan het bevoegd gezag voor de aanvraag om de omgevingsvergunning voor de wateractiviteit een instructie geven over de inhoud van die beslissing. Op de instructie zijn de artikelen 2.33 en 2.34 van overeenkomstige toepassing, waarbij kan worden afgeweken van regels als bedoeld in de artikelen 2.22 en 2.23."
+          logica:
+            type: machtiging
+            norm: "GS/Minister KAN instructie geven aan waterbeheerder"
+            conditie:
+              type: indien
+              tekst: "vanwege samenhang met oog op beschermen milieu geboden"
+            kernbegrip: "instructiebevoegdheid hoger gezag"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.13/Lid2"
+          structuur:
+            volledige_tekst: "De instructie wordt gegeven binnen acht weken na de dag waarop het ontwerpbesluit voor de beslissing op de aanvraag om de omgevingsvergunning voor de wateractiviteit overeenkomstig artikel 3:11, eerste lid, van de Algemene wet bestuursrecht ter inzage is gelegd en daarvan kennis is gegeven."
+          logica:
+            type: verplichting
+            norm: "Instructie binnen 8 weken na terinzagelegging"
+            termijn: "8 weken"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.13/Lid3"
+          structuur:
+            volledige_tekst: "Het eerste en tweede lid zijn van overeenkomstige toepassing als het college van burgemeester en wethouders bevoegd gezag is voor de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit, met dien verstande dat gedeputeerde staten op verzoek van het college van burgemeester en wethouders met overeenkomstige toepassing van artikel 2.33 een instructie kunnen geven aan het bevoegd gezag voor de aanvraag om de omgevingsvergunning voor de wateractiviteit."
+          logica:
+            type: machtiging
+            norm: "Bij gemeente als bevoegd gezag: GS kan op verzoek gemeente instructie geven"
+            kernbegrip: "instructie via provincie"
+
+      interne_refs:
+        - naar: "artikel 2.33"
+          type: verwijzing
+          context: "instructieregels"
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33"
+        - naar: "artikel 2.34"
+          type: verwijzing
+          context: "instructieregels"
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.13 geeft INSTRUCTIEBEVOEGDHEID aan hoger gezag.
+
+          Lid 1: GS/Minister (bevoegd voor milieu) KAN instructie geven aan waterbeheerder
+          Lid 2: Termijn: 8 weken na terinzagelegging ontwerpbesluit water
+          Lid 3: Bij gemeente als milieu-bevoegd: GS kan op verzoek gemeente instructie geven
+
+          Dit waarborgt coherentie tussen milieu- en waterbesluit.
+
+    artikel_16.14:
+      nummer: "16.14"
+      titel: "(instructie op initiatief bevoegd gezag water)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.14"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.14/Lid1"
+          structuur:
+            volledige_tekst: "Als het college van burgemeester en wethouders het bevoegd gezag is voor de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit, kunnen gedeputeerde staten, als dat vanwege de samenhang tussen de beslissingen op de beide aanvragen met het oog op het beschermen van het milieu geboden is, aan het college van burgemeester en wethouders, op verzoek van het bevoegd gezag voor de aanvraag om de omgevingsvergunning voor de wateractiviteit, een instructie geven over de inhoud van die beslissing. Op de instructie is artikel 2.33 van overeenkomstige toepassing, waarbij kan worden afgeweken van regels als bedoeld in de artikelen 2.22 en 2.23."
+          logica:
+            type: machtiging
+            norm: "GS KAN op verzoek waterbeheerder instructie geven aan gemeente"
+            conditie:
+              type: indien
+              tekst: "vanwege samenhang met oog op beschermen milieu geboden"
+            kernbegrip: "omgekeerde instructie"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2/Artikel16.14/Lid2"
+          structuur:
+            volledige_tekst: "De instructie wordt gegeven binnen acht weken na de dag waarop het ontwerpbesluit op de aanvraag om de omgevingsvergunning voor de milieubelastende activiteit overeenkomstig artikel 3:11, eerste lid, van de Algemene wet bestuursrecht ter inzage is gelegd en daarvan kennis is gegeven."
+          logica:
+            type: verplichting
+            norm: "Instructie binnen 8 weken na terinzagelegging"
+            termijn: "8 weken"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.14 is het SPIEGELBEELD van art. 16.13.
+
+          Hier vraagt de waterbeheerder aan GS om instructie te geven aan de gemeente.
+          Dit kan nodig zijn als de waterbelangen afstemming met het milieubesluit vereisen.
+
+          Termijn: ook 8 weken na terinzagelegging (maar nu van milieu-ontwerpbesluit).
+
+# =============================================================================
+# PARAGRAAF 16.2.2a: COÖRDINATIE OMGEVINGSPLAN + VERGUNNING
+# =============================================================================
+paragraaf_16.2.2a:
+  nummer: "16.2.2a"
+  titel: "Coördinatie omgevingsplan en omgevingsvergunning voor een omgevingsplanactiviteit"
+  bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2a"
+
+  artikelen:
+
+    artikel_16.14a:
+      nummer: "16.14a"
+      titel: "(coördinatie omgevingsplan en omgevingsvergunning)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.2a/Artikel16.14a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Als afdeling 3.5 van de Algemene wet bestuursrecht wordt toegepast op de voorbereiding van een omgevingsplan en de beslissing op een aanvraag om een omgevingsvergunning en de beslissing op die aanvraag wordt genomen gelijktijdig met of na de vaststelling van dat omgevingsplan, wordt bij de beslissing uitgegaan van de regels in dat omgevingsplan."
+
+      logica:
+        type: verplichting
+        norm: "Bij gecoördineerde besluitvorming: vergunning uitgaan van nieuw omgevingsplan"
+        conditie:
+          type: indien
+          tekst: "beslissing gelijktijdig met of na vaststelling omgevingsplan"
+        kernbegrip: "anticipatie op nieuw omgevingsplan"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "afdeling 3.5"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.14a lost een TIMING-PROBLEEM op.
+
+          Als omgevingsplan en vergunning gecoördineerd worden voorbereid:
+          → vergunning mag/moet uitgaan van het NIEUWE omgevingsplan
+
+          Dit voorkomt dat een vergunning moet worden geweigerd omdat het
+          'oude' omgevingsplan de activiteit niet toestaat, terwijl het
+          nieuwe plan dat wel zal doen.
+
+# =============================================================================
+# PARAGRAAF 16.2.3: BETROKKENHEID ANDERE BESTUURSORGANEN
+# =============================================================================
+paragraaf_16.2.3:
+  nummer: "16.2.3"
+  titel: "Betrokkenheid van andere bestuursorganen"
+  bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3"
+
+  artikelen:
+
+    artikel_16.15:
+      nummer: "16.15"
+      titel: "(advies)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15/Lid1"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur worden bestuursorganen of andere instanties aangewezen die, in daarbij aangewezen gevallen, in de gelegenheid worden gesteld om aan het bevoegd gezag of een ander bestuursorgaan advies uit te brengen over een aanvraag om een besluit op grond van deze wet."
+          logica:
+            type: delegatie
+            norm: "AMvB wijst adviseurs aan"
+            kernbegrip: "adviesrecht"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15/Lid2"
+          structuur:
+            volledige_tekst: "Bij een omgevingsplan, waterschapsverordening of omgevingsverordening kunnen bestuursorganen of andere instanties worden aangewezen die in de gelegenheid worden gesteld om aan het bevoegd gezag advies uit de brengen over een aanvraag om een omgevingsvergunning voor een omgevingsplanactiviteit of een activiteit als bedoeld in artikel 5.3 of 5.4."
+          logica:
+            type: machtiging
+            norm: "Decentrale regels KUNNEN adviseurs aanwijzen"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15/Lid3"
+          structuur:
+            aanhef: "Een bestuursorgaan of andere instantie wordt als adviseur aangewezen als dat wenselijk is vanwege:"
+            onderdelen:
+              a:
+                tekst: "de deskundigheid van het bestuursorgaan of de instantie, of"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15/Lid3/Onderdeela"
+              b:
+                tekst: "de door het bestuursorgaan te behartigen belangen, gelet op de aan dat bestuursorgaan toegedeelde taken voor de fysieke leefomgeving."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15/Lid3/Onderdeelb"
+          logica:
+            type: definitie
+            norm: "Criteria voor aanwijzing adviseur"
+            kernbegrip: "deskundigheid of taakbelangen"
+
+      delegeert:
+        - type: "bij AMvB"
+          naar: "Omgevingsbesluit"
+          voor: "aanwijzing adviseurs"
+          actor: "Rijk"
+        - type: "bij omgevingsplan"
+          naar: "gemeente"
+          voor: "aanwijzing adviseurs omgevingsplanactiviteiten"
+          actor: "gemeente"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.15 is de BASIS voor adviesrecht.
+
+          Lid 1: AMvB wijst adviseurs aan (Omgevingsbesluit)
+          Lid 2: Decentrale regels kunnen ook adviseurs aanwijzen
+          Lid 3: Criteria: deskundigheid of taakbelangen
+
+          Dit waarborgt dat relevante expertise wordt ingewonnen.
+
+    artikel_16.15a:
+      nummer: "16.15a"
+      titel: "(verplichte aanwijzing adviseurs)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        aanhef: "Op grond van artikel 16.15, eerste lid, worden in ieder geval als adviseur aangewezen:"
+        onderdelen:
+          a:
+            tekst: "een bestuursorgaan dat zijn bevoegdheid met toepassing van artikel 5.16 heeft overgedragen aan een ander bestuursorgaan, voor zover de aanvraag betrekking heeft op de activiteit of activiteiten die bepalend zijn geweest voor de aanwijzing van dat bestuursorgaan als bevoegd gezag,"
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeela"
+          b:
+            tekst: "de gemeenteraad als het gaat om:"
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelb"
+            sub_onderdelen:
+              1:
+                tekst: "een aanvraag om een omgevingsvergunning voor in door de gemeenteraad aangewezen gevallen van een buitenplanse omgevingsplanactiviteit,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelb/Onderdeel1"
+              2:
+                tekst: "een verzoek om een beslissing over instemming voor in door de gemeenteraad aangewezen gevallen over een voorgenomen beslissing op een aanvraag als bedoeld onder 1°, als die beslissing op grond van artikel 16.16 instemming van het college van burgemeester en wethouders behoeft,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelb/Onderdeel2"
+          c:
+            tekst: "de gemeentelijke commissie, bedoeld in artikel 17.9, als het gaat om:"
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelc"
+            sub_onderdelen:
+              1:
+                tekst: "een aanvraag om een omgevingsvergunning voor een rijksmonumentenactiviteit met betrekking tot een monument,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelc/Onderdeel1"
+              2:
+                tekst: "een aanvraag om een omgevingsvergunning voor een andere activiteit, in door de gemeenteraad aangewezen gevallen of als het college van burgemeester en wethouders daartoe aanleiding ziet,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeelc/Onderdeel2"
+          d:
+            tekst: "gedeputeerde staten als het gaat om een aanvraag om een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, in door hen aangewezen gevallen van een belang als bedoeld in artikel 2.3, tweede lid, onder a, dat is aangegeven in een door een bestuursorgaan van de provincie openbaar gemaakt document."
+            bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a/Onderdeeld"
+
+      logica:
+        type: verplichting
+        norm: "In ieder geval als adviseur aanwijzen"
+        conditie:
+          type: in_ieder_geval
+          tekst: "in ieder geval"
+        kernbegrip: "verplichte adviseurs"
+
+      interne_refs:
+        - naar: "artikel 16.15"
+          type: grondslag
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15"
+        - naar: "artikel 5.16"
+          type: verwijzing
+          context: "bevoegdheidsoverdracht"
+          bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.2/Artikel5.16"
+        - naar: "artikel 17.9"
+          type: verwijzing
+          context: "gemeentelijke commissie"
+          bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9"
+        - naar: "artikel 2.3"
+          type: verwijzing
+          context: "provinciaal belang"
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.15a bevat VERPLICHTE adviseurs:
+
+          a) Oorspronkelijk bevoegd gezag bij overdracht (ex art. 5.16)
+          b) Gemeenteraad bij buitenplanse omgevingsplanactiviteit
+          c) Monumentencommissie bij rijksmonumenten
+          d) GS bij provinciaal belang (buitenplans)
+
+          "In ieder geval" = MINIMUM, AMvB mag meer aanwijzen.
+
+    artikel_16.15b:
+      nummer: "16.15b"
+      titel: "(doorwerking advies gemeenteraad bij beslissingen op aanvragen omgevingsvergunning of instemming bij die beslissingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15b"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "In een geval als bedoeld in artikel 16.15a, onder b, worden de bij of krachtens deze wet gestelde regels over het beslissen op de aanvraag om de omgevingsvergunning of het verlenen of onthouden van instemming met inachtneming van het advies van de gemeenteraad toegepast."
+
+      logica:
+        type: verplichting
+        norm: "Beslissing MET INACHTNEMING van advies gemeenteraad"
+        kernbegrip: "bindende werking raadsadvies"
+
+      interne_refs:
+        - naar: "artikel 16.15a"
+          type: verwijzing
+          context: "onder b (gemeenteraad)"
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15a"
+
+    artikel_16.16:
+      nummer: "16.16"
+      titel: "(instemming)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid1"
+          structuur:
+            volledige_tekst: "Als een aanvraag om een besluit op grond van deze wet betrekking heeft op een bij algemene maatregel van bestuur aangewezen geval, behoeft de voorgenomen beslissing op de aanvraag instemming van het bestuursorgaan dat op grond van artikel 16.15 in de gelegenheid is gesteld advies uit te brengen. Bij de aanwijzing kan worden bepaald dat alleen een voorgenomen beslissing tot het toewijzen van de aanvraag instemming behoeft."
+          logica:
+            type: verplichting
+            norm: "Instemming vereist in AMvB-aangewezen gevallen"
+            kernbegrip: "instemmingsvereiste"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid2"
+          structuur:
+            aanhef: "Bij de maatregel worden gevallen aangewezen waarin instemming van het aangewezen bestuursorgaan wenselijk is vanwege:"
+            onderdelen:
+              a:
+                tekst: "de bijzondere deskundigheid van het bestuursorgaan,"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid2/Onderdeela"
+              b:
+                tekst: "door het bestuursorgaan te behartigen zwaarwegende belangen, gelet op de aan dat bestuursorgaan toegedeelde taken voor de fysieke leefomgeving, of"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid2/Onderdeelb"
+              c:
+                tekst: "door het provinciebestuur te behartigen provinciale belangen."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid2/Onderdeelc"
+          logica:
+            type: definitie
+            norm: "Criteria voor instemmingsvereiste"
+            kernbegrip: "deskundigheid, zwaarwegende belangen, provinciale belangen"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid3"
+          structuur:
+            volledige_tekst: "Bij de maatregel kan worden bepaald dat het aangewezen bestuursorgaan gevallen kan aanwijzen waarin instemming niet is vereist."
+          logica:
+            type: machtiging
+            norm: "AMvB KAN vrijstellingsbevoegdheid geven"
+
+        4:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid4"
+          structuur:
+            volledige_tekst: "Het aangewezen bestuursorgaan kan bij het op grond van artikel 16.15 uitgebrachte advies bepalen dat instemming niet is vereist."
+          logica:
+            type: machtiging
+            norm: "Bestuursorgaan KAN bij advies instemming niet-vereist verklaren"
+
+        5:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16/Lid5"
+          structuur:
+            volledige_tekst: "In afwijking van artikel 10:3, tweede lid, aanhef en onder c, van de Algemene wet bestuursrecht kan het aangewezen bestuursorgaan mandaat verlenen om te beslissen over de instemming."
+          logica:
+            type: machtiging
+            norm: "Mandaatverlening mogelijk voor instemmingsbesluit"
+            conditie:
+              type: in_afwijking_van
+              tekst: "in afwijking van artikel 10:3 lid 2 Awb"
+
+      delegeert:
+        - type: "bij AMvB"
+          naar: "Omgevingsbesluit"
+          voor: "aanwijzing instemmingsgevallen"
+          actor: "Rijk"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.16 regelt het INSTEMMINGSRECHT.
+
+          Lid 1: Instemming vereist in AMvB-gevallen
+          Lid 2: Criteria: deskundigheid, zwaarwegende belangen, provinciale belangen
+          Lid 3: AMvB kan vrijstellingsbevoegdheid geven
+          Lid 4: Bestuursorgaan kan bij advies instemming niet-vereist verklaren
+          Lid 5: Mandaat mogelijk (afwijking Awb)
+
+          Instemming = sterker dan advies: bindend vetorecht.
+
+    artikel_16.17:
+      nummer: "16.17"
+      titel: "(gronden verlenen of onthouden instemming)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.17"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.17/Lid1"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur worden gronden aangewezen voor het verlenen of onthouden van instemming."
+          logica:
+            type: delegatie
+            norm: "AMvB wijst instemmingsgronden aan"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.17/Lid2"
+          structuur:
+            volledige_tekst: "Artikel 10:27 van de Algemene wet bestuursrecht is niet van toepassing."
+          logica:
+            type: uitzondering
+            norm: "Awb 10:27 niet van toepassing"
+            conditie:
+              type: in_afwijking_van
+              tekst: "artikel 10:27 Awb niet van toepassing"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "10:27"
+
+    artikel_16.18:
+      nummer: "16.18"
+      titel: "(termijn instemming; geen fictieve instemming)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.18"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.18/Lid1"
+          structuur:
+            volledige_tekst: "Het besluit over instemming als bedoeld in artikel 16.16 wordt binnen vier weken na indiening van het verzoek om instemming bekendgemaakt door toezending aan het bevoegd gezag."
+          logica:
+            type: verplichting
+            norm: "Instemmingsbesluit binnen 4 weken"
+            termijn: "4 weken"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.18/Lid2"
+          structuur:
+            volledige_tekst: "Artikel 10:31, tweede tot en met vierde lid, van de Algemene wet bestuursrecht is niet van toepassing."
+          logica:
+            type: uitzondering
+            norm: "GEEN fictieve instemming"
+            conditie:
+              type: in_afwijking_van
+              tekst: "artikel 10:31 lid 2-4 Awb niet van toepassing"
+            kernbegrip: "geen lex silencio positivo"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "10:31"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.18 bevat CRUCIALE bepaling: GEEN fictieve instemming.
+
+          Lid 1: Termijn 4 weken
+          Lid 2: Awb 10:31 niet van toepassing = bij niet tijdig beslissen
+                 wordt instemming NIET geacht te zijn verleend
+
+          Dit voorkomt dat gevoelige besluiten worden genomen zonder
+          daadwerkelijke beoordeling door het instemmingsorgaan.
+
+    artikel_16.19:
+      nummer: "16.19"
+      titel: "(advies en instemming bij ambtshalve besluit tot wijziging of intrekking van eerder besluit op aanvraag)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.19"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.19/Lid1"
+          structuur:
+            volledige_tekst: "De artikelen 16.15 tot en met 16.18 en de op grond van de artikelen 16.15 tot en met 16.17 gestelde regels zijn van overeenkomstige toepassing op een ambtshalve besluit tot wijziging of intrekking van een eerder op aanvraag genomen besluit voor zover die artikelen en regels op de aanvraag om dat eerdere besluit van toepassing zijn geweest."
+          logica:
+            type: verplichting
+            norm: "Advies/instemming ook bij ambtshalve wijziging/intrekking"
+            kernbegrip: "symmetrie aanvraag/ambtshalve"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.19/Lid2"
+          structuur:
+            volledige_tekst: "Daarbij wordt voor een ambtshalve besluit als bedoeld in het eerste lid een voorgenomen ambtshalve besluit tot wijziging of intrekking van het eerdere besluit gelijkgesteld met een aanvraag om dat besluit."
+          logica:
+            type: definitie
+            norm: "Voorgenomen ambtshalve besluit = aanvraag"
+
+    artikel_16.20:
+      nummer: "16.20"
+      titel: "(advies en instemming bij projectbesluit)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20/Lid1"
+          structuur:
+            aanhef: "De artikelen 16.15 tot en met 16.19 en de op grond van de artikelen 16.15 tot en met 16.17 gestelde regels zijn van overeenkomstige toepassing op het uitbrengen van advies over het ontwerp van een projectbesluit en het verlenen van instemming met een voorgenomen projectbesluit, voor zover daarin wordt bepaald dat het geldt als omgevingsvergunning als bedoeld in artikel 5.52, tweede lid, onder a, waarbij geen instemming is vereist als:"
+            onderdelen:
+              a:
+                tekst: "een projectbesluit wordt vastgesteld door Onze Minister die het aangaat en dat projectbesluit geldt als een besluit waarmee een ander bestuursorgaan oorspronkelijk op grond van artikel 16.16 zou moeten instemmen, of"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20/Lid1/Onderdeela"
+              b:
+                tekst: "een projectbesluit wordt vastgesteld door gedeputeerde staten en het projectbesluit geldt als een besluit waarmee een ander bestuursorgaan, met uitzondering van een bestuursorgaan van het Rijk, oorspronkelijk op grond van artikel 16.16 zou moeten instemmen."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Advies/instemming bij projectbesluit met vergunningwerking"
+            uitzondering: "geen instemming nodig als hoger gezag besluit"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20/Lid2"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarbij de artikelen 16.15 en 16.19 en de op grond van artikel 16.15 gestelde regels niet van overeenkomstige toepassing zijn op het uitbrengen van advies over het ontwerp van een projectbesluit dat wordt vastgesteld door Onze Minister die het aangaat en een ander bestuursorgaan van het Rijk oorspronkelijk op grond van artikel 16.15 of 16.19 in de gelegenheid zou moeten worden gesteld om te adviseren."
+          logica:
+            type: delegatie
+            norm: "AMvB kan adviesplicht bij rijksprojectbesluiten uitsluiten"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.20/Lid3"
+          structuur:
+            volledige_tekst: "De artikelen 16.15 tot en met 16.19 zijn van overeenkomstige toepassing op het uitbrengen van advies over het ontwerp van een projectbesluit en het verlenen van instemming met een voorgenomen projectbesluit, voor zover daarin wordt bepaald dat het geldt als een besluit als bedoeld in artikel 5.52, tweede lid, onder b. Bij algemene maatregel van bestuur kunnen gevallen worden aangewezen waarbij instemming niet is vereist."
+          logica:
+            type: verplichting
+            norm: "Advies/instemming bij projectbesluit met andere besluitwerking"
+
+      interne_refs:
+        - naar: "artikel 5.52"
+          type: verwijzing
+          context: "projectbesluit als vergunning/besluit"
+          bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.3/Artikel5.52"
+        - naar: "artikel 16.16"
+          type: verwijzing
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.20 past advies/instemming toe op PROJECTBESLUITEN.
+
+          Lid 1: Projectbesluit met vergunningwerking (art. 5.52 lid 2 onder a)
+                 → advies/instemming vereist, TENZIJ hoger gezag besluit
+          Lid 2: AMvB kan adviesplicht bij Rijksprojectbesluiten uitsluiten
+          Lid 3: Projectbesluit met andere besluitwerking (art. 5.52 lid 2 onder b)
+                 → ook advies/instemming vereist
+
+          KERN: Subsidiariteit - hoger gezag hoeft geen instemming lager gezag.
+
+    artikel_16.21:
+      nummer: "16.21"
+      titel: "(reactieve interventie)"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid1"
+          structuur:
+            aanhef: "Gedeputeerde staten kunnen besluiten dat een onderdeel van een besluit tot vaststelling of wijziging van een omgevingsplan geen deel daarvan uitmaakt als:"
+            onderdelen:
+              a:
+                tekst: "zij over het onderdeel een zienswijze naar voren hebben gebracht en die zienswijze niet volledig in het omgevingsplan is overgenomen, of"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid1/Onderdeela"
+              b:
+                tekst: "in het onderdeel wijzigingen zijn aangebracht ten opzichte van het ontwerp, anders dan op grond van een zienswijze van gedeputeerde staten."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid1/Onderdeelb"
+          logica:
+            type: machtiging
+            norm: "GS KUNNEN onderdeel omgevingsplan uitsluiten"
+            conditie:
+              type: indien
+              tekst: "zienswijze niet overgenomen of wijziging t.o.v. ontwerp"
+            kernbegrip: "reactieve aanwijzing"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid2"
+          structuur:
+            aanhef: "Gedeputeerde staten kunnen alleen gebruik maken van die bevoegdheid voor zover:"
+            onderdelen:
+              a:
+                tekst: "dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties, en"
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid2/Onderdeela"
+              b:
+                tekst: "er sprake is van strijd met een belang als bedoeld in artikel 2.3, tweede lid, onder a, dat is aangegeven in een door een bestuursorgaan van de provincie openbaar gemaakt document."
+                bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid2/Onderdeelb"
+          logica:
+            type: begrenzing
+            norm: "Alleen bij evenwichtige toedeling EN provinciaal belang"
+            conditie:
+              type: voor_zover
+              tekst: "voor zover nodig voor evenwichtige toedeling en strijd met provinciaal belang"
+            kernbegrip: "dubbele voorwaarde"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid3"
+          structuur:
+            volledige_tekst: "Gedeputeerde staten vermelden in de motivering van het besluit de daaraan ten grondslag liggende feiten, omstandigheden en overwegingen die het provinciebestuur beletten het betrokken belang met inzet van andere aan hen toekomende bevoegdheden te beschermen."
+          logica:
+            type: verplichting
+            norm: "GS MOETEN motiveren waarom andere instrumenten niet volstaan"
+            kernbegrip: "ultimum remedium"
+
+        4:
+          bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.21/Lid4"
+          structuur:
+            volledige_tekst: "Het besluit wordt bekendgemaakt binnen vier weken nadat het besluit tot vaststelling of wijziging van het omgevingsplan is bekendgemaakt."
+          logica:
+            type: verplichting
+            norm: "Bekendmaking binnen 4 weken"
+            termijn: "4 weken"
+
+      interne_refs:
+        - naar: "artikel 2.3"
+          type: verwijzing
+          context: "provinciaal belang"
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.21 bevat de REACTIEVE AANWIJZING (voorheen: reactieve aanwijzing Wro).
+
+          Lid 1: GS kunnen onderdeel omgevingsplan uitsluiten als:
+                 a) zienswijze niet overgenomen, of
+                 b) wijziging t.o.v. ontwerp (niet door GS-zienswijze)
+
+          Lid 2: DUBBELE VOORWAARDE:
+                 a) nodig voor evenwichtige toedeling functies, EN
+                 b) strijd met in beleidsdocument aangewezen provinciaal belang
+
+          Lid 3: ULTIMUM REMEDIUM: GS moeten motiveren waarom andere
+                 bevoegdheden niet volstaan
+
+          Lid 4: Termijn: 4 weken na bekendmaking omgevingsplan
+
+          Dit is een ZWAAR instrument - alleen bij provinciaal belang en
+          als andere instrumenten niet volstaan.
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 16
+    paragrafen: 4
+    totaal_leden: 35
+
+  patronen:
+    coordinatie_awb:
+      beschrijving: "Toepassing Awb coördinatieregeling (afd 3.5) bij samenhangende besluiten"
+      evidence: ["art. 16.7", "art. 16.8"]
+
+    koppeling_milieu_water:
+      beschrijving: "Verplichte koppeling milieu- en watervergunning bij bepaalde activiteiten"
+      evidence: ["art. 16.9-16.14"]
+
+    advies_instemming_hierarchie:
+      beschrijving: "Advies (lichter) vs Instemming (zwaarder) als gradatie van betrokkenheid"
+      evidence: ["art. 16.15-16.18"]
+
+    reactieve_interventie:
+      beschrijving: "Provinciaal vangnet voor gemeentelijke omgevingsplannen"
+      evidence: ["art. 16.21"]
+
+    geen_fictieve_instemming:
+      beschrijving: "Geen lex silencio positivo bij instemming"
+      evidence: ["art. 16.18 lid 2"]
+
+  kritieke_verwijzingen:
+    - art_16.7: "Koppeling met Awb afdeling 3.5 (coördinatieregeling)"
+    - art_16.15_16.16: "Koppeling met Omgevingsbesluit voor aanwijzing adviseurs/instemming"
+    - art_16.21: "Koppeling met art. 2.3 (provinciaal belang)"
+
+  routes:
+    entry_points:
+      - artikel: "16.7"
+        vraag: "Wanneer is de Awb coördinatieregeling van toepassing?"
+      - artikel: "16.15"
+        vraag: "Wie moet adviseren bij een aanvraag?"
+      - artikel: "16.16"
+        vraag: "Wanneer is instemming vereist?"
+      - artikel: "16.21"
+        vraag: "Kan de provincie ingrijpen bij een omgevingsplan?"
+    exit_points:
+      - naar: "Omgevingsbesluit"
+        context: "aanwijzing adviseurs en instemmingsgevallen"
+      - naar: "art. 2.3"
+        context: "provinciaal belang voor reactieve aanwijzing"
+      - naar: "Awb afd 3.5"
+        context: "coördinatieregeling"
+
+  relatie_met_andere_afdelingen:
+    - naar: "Afdeling 16.1"
+      context: "elektronisch verkeer (DSO)"
+    - naar: "Afdeling 5.1"
+      context: "vergunningplichtige activiteiten"
+    - naar: "Afdeling 5.2"
+      context: "projectbesluit"
+    - naar: "Afdeling 2.5"
+      context: "instructieregels"

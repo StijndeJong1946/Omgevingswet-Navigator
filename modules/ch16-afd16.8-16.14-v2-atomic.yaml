@@ -1,0 +1,546 @@
+# Afdeling 16.8-16.14 - Domeinspecifieke Procedures
+# V2 Atomic Extraction
+# Artikelen 16.91-16.140
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdelingen: ["16.8", "16.9", "16.10", "16.11", "16.12", "16.13", "16.14"]
+titel: "Domeinspecifieke Procedures"
+bron_path: "/Hoofdstuk16/Afdeling16.8 t/m Afdeling16.14"
+
+# =============================================================================
+# AFDELING 16.8 - BEROEP VOORKEURSRECHT
+# =============================================================================
+afdeling_16_8:
+  nummer: "16.8"
+  titel: "Beroep voorkeursrecht"
+  bron_path: "/Hoofdstuk16/Afdeling16.8"
+
+  artikelen:
+    artikel_16.91:
+      nummer: "16.91"
+      bron_path: "/Hoofdstuk16/Afdeling16.8/Artikel16.91"
+      status: "ingetrokken"
+      opmerking: "Dit artikel treedt niet meer in werking. Het artikel is ingetrokken door Stb. 2020/262."
+
+    artikel_16.92:
+      nummer: "16.92"
+      titel: "(beroep)"
+      bron_path: "/Hoofdstuk16/Afdeling16.8/Artikel16.92"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.8/Artikel16.92/Lid1"
+          structuur:
+            volledige_tekst: "Als beroep aanhangig is tegen een voorkeursrechtbeschikking van het college van burgemeester en wethouders en die beschikking vervalt omdat voor de onroerende zaak een voorkeursrechtbeschikking van de gemeenteraad in werking is getreden, wordt het beroep geacht te zijn gericht tegen de voorkeursrechtbeschikking van de gemeenteraad."
+          logica:
+            type: processuele_conversie
+            norm: "Beroep tegen B&W-voorkeursrecht converteert naar raadsbesluit"
+            trigger: "raadsbesluit in werking getreden"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.8/Artikel16.92/Lid2"
+          structuur:
+            volledige_tekst: "Het eerste lid is van overeenkomstige toepassing als het beroep gericht is tegen een voorkeursrechtbeschikking van gedeputeerde staten en die beschikking vervalt omdat voor de onroerende zaak een voorkeursrechtbeschikking van provinciale staten in werking is getreden."
+          logica:
+            type: schakelbepaling
+            norm: "Zelfde conversie voor GS naar PS"
+
+# =============================================================================
+# AFDELING 16.9 - BEKRACHTIGINGSPROCEDURE ONTEIGENINGSBESCHIKKING
+# =============================================================================
+afdeling_16_9:
+  nummer: "16.9"
+  titel: "Bekrachtigingsprocedure onteigeningsbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.9"
+
+  paragrafen:
+    - nummer: "16.9.1"
+      titel: "Verzoek tot bekrachtiging"
+      artikelen: ["16.93", "16.94", "16.95", "16.96"]
+    - nummer: "16.9.2"
+      titel: "Vooronderzoek"
+      artikelen: ["16.97", "16.98", "16.99", "16.100"]
+    - nummer: "16.9.3"
+      titel: "Versnelde behandeling"
+      artikelen: ["16.101", "16.102"]
+    - nummer: "16.9.4"
+      titel: "Vereenvoudigde behandeling"
+      artikelen: ["16.103", "16.104"]
+    - nummer: "16.9.5"
+      titel: "Uitspraak"
+      artikelen: ["16.105", "16.106", "16.107", "16.108", "16.109", "16.110", "16.111", "16.112"]
+    - nummer: "16.9.6"
+      titel: "Overige bepalingen bekrachtigingsprocedure"
+      artikelen: ["16.113", "16.114", "16.115", "16.116"]
+
+  kern_artikelen:
+    artikel_16.93:
+      nummer: "16.93"
+      titel: "(verzoekschrift en stukken)"
+      bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.93"
+      inwerking: "2024-01-01"
+      paragraaf: "16.9.1"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.93/Lid1"
+          structuur:
+            volledige_tekst: "Het bestuursorgaan dat een onteigeningsbeschikking heeft gegeven, verzoekt de bestuursrechter deze te bekrachtigen."
+          logica:
+            type: verplichting
+            norm: "Bestuursorgaan MOET rechterlijke bekrachtiging verzoeken"
+            ratio: "Grondwettelijke waarborg onteigening"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.93/Lid2"
+          logica:
+            type: vormvereiste
+            norm: "Verzoekschrift moet naam, adres, dagtekening, omschrijving bevatten"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.93/Lid3"
+          logica:
+            type: bijlagen
+            norm: "Afschrift beschikking + betrokken stukken"
+
+    artikel_16.96:
+      nummer: "16.96"
+      titel: "(verzoektermijn)"
+      bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.96"
+      inwerking: "2024-01-01"
+      paragraaf: "16.9.1"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.1/Artikel16.96/Lid1"
+          structuur:
+            volledige_tekst: "De termijn voor het indienen van een verzoekschrift bedraagt zes weken."
+          logica:
+            type: termijn
+            norm: "Bekrachtigingsverzoek: 6 weken na terinzagelegging"
+
+    artikel_16.97:
+      nummer: "16.97"
+      titel: "(bedenkingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.2/Artikel16.97"
+      inwerking: "2024-01-01"
+      paragraaf: "16.9.2"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.2/Artikel16.97/Lid1"
+          structuur:
+            aanhef: "Belanghebbenden kunnen bij de rechtbank schriftelijk bedenkingen inbrengen tegen de onteigeningsbeschikking. Als belanghebbenden worden in ieder geval aangemerkt:"
+            onderdelen:
+              a: "eigenaren"
+              b: "erfpachters"
+              c: "opstallers"
+              d: "eigenaren van een heersend erf"
+              e: "rechthebbenden op rechten van gebruik en bewoning"
+              f: "rechthebbenden op rechten als bedoeld in artikel 150, vijfde lid, Overgangswet NBW"
+              g: "bezitters"
+              h: "huurkopers"
+              i: "huurders (incl. bevoegde onderhuurders)"
+              j: "pachters (incl. bevoegde onderpachters)"
+              k: "schuldeisers met vorderingsrecht ex art. 252 BW 6"
+          logica:
+            type: procesbelang
+            norm: "Brede kring belanghebbenden bij onteigening"
+            ratio: "Bescherming alle gerechtigden"
+
+    artikel_16.105:
+      nummer: "16.105"
+      titel: "(uitspraaktermijn)"
+      bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.5/Artikel16.105"
+      inwerking: "2024-01-01"
+      paragraaf: "16.9.5"
+
+      leden:
+        1:
+          logica:
+            type: termijn
+            norm: "Uitspraak binnen 6 maanden na afloop bedenkingentermijn (zonder bedenkingen)"
+
+        2:
+          logica:
+            type: termijn
+            norm: "Uitspraak binnen 6 maanden na reactie op bedenkingen (met bedenkingen)"
+
+        3:
+          logica:
+            type: termijn
+            norm: "Bij bestuurlijke lus: tussenuitspraak + einduitspraak elk 6 maanden"
+
+    artikel_16.107:
+      nummer: "16.107"
+      titel: "(ambtshalve basistoets)"
+      bron_path: "/Hoofdstuk16/Afdeling16.9/Paragraaf16.9.5/Artikel16.107"
+      inwerking: "2024-01-01"
+      paragraaf: "16.9.5"
+
+      structuur:
+        aanhef: "Ongeacht of tegen de onteigeningsbeschikking bedenkingen zijn ingebracht, wijst de rechtbank het verzoek in ieder geval af als:"
+        onderdelen:
+          a: "de onteigeningsbeschikking niet volgens de wettelijke vormvoorschriften is voorbereid,"
+          b: "het onteigeningsbelang, bedoeld in artikel 11.5, onder a, ontbreekt,"
+          c: "de noodzaak, bedoeld in artikel 11.5, onder b, ontbreekt, of"
+          d: "de urgentie, bedoeld in artikel 11.5, onder c, ontbreekt."
+
+      logica:
+        type: ambtshalve_toetsing
+        norm: "Rechtbank toetst AMBTSHALVE aan onteigeningscriteria"
+        criteria:
+          - "vormvoorschriften"
+          - "onteigeningsbelang"
+          - "noodzaak"
+          - "urgentie"
+
+# =============================================================================
+# AFDELING 16.10 - HOGER BEROEP ONTEIGENINGSBESCHIKKING
+# =============================================================================
+afdeling_16_10:
+  nummer: "16.10"
+  titel: "Hoger beroep onteigeningsbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.10"
+
+  kern_artikelen:
+    artikel_16.117:
+      nummer: "16.117"
+      titel: "(hoger beroep)"
+      bron_path: "/Hoofdstuk16/Afdeling16.10/Artikel16.117"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          logica:
+            type: rechtsmiddel
+            norm: "Hoger beroep mogelijk voor belanghebbenden en bestuursorgaan"
+
+        2:
+          logica:
+            type: schakelbepaling
+            norm: "Awb 6.2, 8.1-8.3, 8:104 e.v. van overeenkomstige toepassing"
+
+    artikel_16.118:
+      nummer: "16.118"
+      titel: "(hoger beroep belanghebbende na bedenkingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.10/Artikel16.118"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Geen hoger beroep kan worden ingesteld door een belanghebbende aan wie redelijkerwijs kan worden verweten dat hij geen bedenkingen tegen de onteigeningsbeschikking heeft ingebracht."
+
+      logica:
+        type: beperking
+        norm: "GEEN hoger beroep zonder eerdere bedenkingen"
+        ratio: "Onderdelentrechter / procesefficiëntie"
+
+    artikel_16.121:
+      nummer: "16.121"
+      titel: "(uitspraaktermijn)"
+      bron_path: "/Hoofdstuk16/Afdeling16.10/Artikel16.121"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "De hogerberoepsrechter doet uitspraak binnen zes maanden na afloop van de termijn waarbinnen andere partijen dan de indiener van het hogerberoepschrift een schriftelijke uiteenzetting over het hoger beroep konden geven."
+
+      logica:
+        type: termijn
+        norm: "Hoger beroep onteigening: uitspraak binnen 6 maanden"
+
+# =============================================================================
+# AFDELING 16.11 - GERECHTELIJKE VASTSTELLING PRIJS VOORKEURSRECHT
+# =============================================================================
+afdeling_16_11:
+  nummer: "16.11"
+  titel: "Gerechtelijke vaststelling van de prijs bij voorkeursrecht"
+  bron_path: "/Hoofdstuk16/Afdeling16.11"
+
+  kern_artikelen:
+    artikel_16.122:
+      nummer: "16.122"
+      titel: "(gerechtelijke vaststelling van prijs als bedoeld in artikel 9.16 en 9.18)"
+      bron_path: "/Hoofdstuk16/Afdeling16.11/Artikel16.122"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          logica:
+            type: procedure
+            norm: "Rechtbank benoemt deskundige(n) voor prijsadvies"
+
+        2:
+          logica:
+            type: schakelbepaling
+            norm: "Prijsoordeel conform art. 15.21-15.25 (schadeloosstelling onteigening)"
+
+    artikel_16.123:
+      nummer: "16.123"
+      titel: "(beschikking over prijs als bedoeld in artikel 9.16 en 9.18)"
+      bron_path: "/Hoofdstuk16/Afdeling16.11/Artikel16.123"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          logica:
+            type: termijn
+            norm: "Beschikking art. 9.16 verzoek: binnen 6 maanden"
+
+        2:
+          logica:
+            type: termijn
+            norm: "Beschikking art. 9.18 verzoek: binnen 6 maanden + prijs + persoonlijke omstandigheden"
+
+        3:
+          logica:
+            type: rechtsmiddel
+            norm: "Alleen beroep in cassatie mogelijk"
+
+        4:
+          logica:
+            type: kosten
+            norm: "Proceskosten ten laste verzoeker (compensatie mogelijk)"
+
+# =============================================================================
+# AFDELING 16.12 - BIJZONDERE PROCEDURES LANDINRICHTING
+# =============================================================================
+afdeling_16_12:
+  nummer: "16.12"
+  titel: "Bijzondere procedures voor landinrichting"
+  bron_path: "/Hoofdstuk16/Afdeling16.12"
+
+  paragrafen:
+    - nummer: "16.12.1"
+      titel: "Eigendom buiten herverkavelingsblok"
+      artikelen: ["16.124"]
+    - nummer: "16.12.2"
+      titel: "Eigendom en pachtverhoudingen binnen herverkavelingsblok"
+      artikelen: ["16.125", "16.126", "16.127", "16.128", "16.129", "16.130", "16.131", "16.132", "16.133", "16.134", "16.135", "16.136", "16.137"]
+
+  kern_artikelen:
+    artikel_16.124:
+      nummer: "16.124"
+      titel: "(akte van toedeling)"
+      bron_path: "/Hoofdstuk16/Afdeling16.12/Paragraaf16.12.1/Artikel16.124"
+      inwerking: "2024-01-01"
+      paragraaf: "16.12.1"
+
+      logica:
+        type: procedure
+        norm: "Notaris maakt akte voor toedeling buiten herverkavelingsblok"
+        gevolg: "Inschrijving = eigendomsovergang"
+
+    artikel_16.136:
+      nummer: "16.136"
+      titel: "(inhoud herverkavelingsakte)"
+      bron_path: "/Hoofdstuk16/Afdeling16.12/Paragraaf16.12.2/Artikel16.136"
+      inwerking: "2024-01-01"
+      paragraaf: "16.12.2"
+
+      leden:
+        1:
+          logica:
+            type: verplichting
+            norm: "Notaris maakt herverkavelingsakte na onherroepelijk ruilbesluit"
+
+        2:
+          logica:
+            type: inhoud
+            norm: "Herverkavelingsakte bevat: verbeelding, toedeling eigendom, vervallende hypotheken/beslagen"
+
+    artikel_16.137:
+      nummer: "16.137"
+      titel: "(inschrijving herverkavelingsakte)"
+      bron_path: "/Hoofdstuk16/Afdeling16.12/Paragraaf16.12.2/Artikel16.137"
+      inwerking: "2024-01-01"
+      paragraaf: "16.12.2"
+
+      leden:
+        2:
+          logica:
+            type: constitutief
+            norm: "Inschrijving herverkavelingsakte = eigendomsovergang + verkrijging beperkte rechten"
+
+# =============================================================================
+# AFDELING 16.13 - KENNISGEVING OVEREENKOMST KOSTENVERHAAL
+# =============================================================================
+afdeling_16_13:
+  nummer: "16.13"
+  titel: "Kennisgeving overeenkomst kostenverhaal"
+  bron_path: "/Hoofdstuk16/Afdeling16.13"
+
+  artikelen:
+    artikel_16.138:
+      nummer: "16.138"
+      titel: "(kennisgeving overeenkomst kostenverhaal)"
+      bron_path: "/Hoofdstuk16/Afdeling16.13/Artikel16.138"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Van de terinzagelegging van een overeenkomst als bedoeld in artikel 13.13, eerste lid, wordt binnen twee weken na het aangaan daarvan door het bevoegd gezag kennisgegeven op de in artikel 12 van de Bekendmakingswet bepaalde wijze."
+
+      logica:
+        type: verplichting
+        norm: "Kennisgeving kostenverhaalovereenkomst binnen 2 weken"
+        wijze: "Bekendmakingswet art. 12"
+
+# =============================================================================
+# AFDELING 16.14 - ALGEMENE DELEGATIEGRONDSLAGEN
+# =============================================================================
+afdeling_16_14:
+  nummer: "16.14"
+  titel: "Algemene delegatiegrondslagen procedurele en vormvereisten"
+  bron_path: "/Hoofdstuk16/Afdeling16.14"
+
+  artikelen:
+    artikel_16.139:
+      nummer: "16.139"
+      titel: "(delegatiegrondslag procedurele en vormvereisten)"
+      bron_path: "/Hoofdstuk16/Afdeling16.14/Artikel16.139"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          logica:
+            type: delegatiegrondslag
+            niveau: "AMvB"
+            onderwerpen:
+              - "besluiten"
+              - "omgevingsvisies, programma's"
+              - "informatieverplichtingen art. 4.3"
+              - "meldingen art. 4.4"
+              - "voornemens art. 5.47"
+              - "uitnodigingen onderhandeling art. 9.12"
+              - "MER-besluiten"
+              - "milieueffectrapporten"
+              - "kaarten art. 20.17"
+              - "monitoringsprogramma's art. 20.2"
+
+        2:
+          logica:
+            type: facultatieve_onderwerpen
+            voorbeelden:
+              - "wijze indienen aanvraag/melding"
+              - "bekendmaking"
+              - "kennisgeving, terinzagelegging"
+              - "participatie en overleg"
+              - "coördinatie andere staten"
+              - "uitvoering"
+              - "evaluatie en actualisatie"
+              - "rapportage"
+
+        3:
+          logica:
+            type: delegatiegrondslag
+            niveau: "ministeriële regeling"
+            onderwerpen:
+              - "gegevens en bescheiden bij aanvraag/melding"
+              - "toezending aan derden"
+              - "elektronische vormgeving"
+              - "modelbesluiten"
+
+    artikel_16.140:
+      nummer: "16.140"
+      titel: "(implementatie internationaalrechtelijke verplichtingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.14/Artikel16.140"
+      inwerking: "2024-01-01"
+
+      structuur:
+        aanhef: "Op grond van artikel 16.139 worden in ieder geval regels gesteld ter uitvoering van:"
+        onderdelen:
+          - "grondwaterrichtlijn"
+          - "habitatrichtlijn"
+          - "kaderrichtlijn water"
+          - "kaderrichtlijn mariene strategie"
+          - "kaderrichtlijn maritieme ruimtelijke planning"
+          - "mer-richtlijn"
+          - "nec-richtlijn"
+          - "richtlijn industriële emissies"
+          - "richtlijn luchtkwaliteit"
+          - "richtlijn omgevingslawaai"
+          - "richtlijn overstromingsrisico's"
+          - "richtlijn prioritaire stoffen"
+          - "SEA-protocol"
+          - "Seveso-richtlijn"
+          - "smb-richtlijn"
+          - "richtlijn winningsafval"
+          - "verdrag van Espoo"
+          - "verdrag van Granada"
+          - "verdrag van Valletta"
+          - "zwemwaterrichtlijn"
+
+      logica:
+        type: imperatieve_delegatie
+        norm: "VERPLICHTE regelstelling ter implementatie EU/internationaal recht"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    afdelingen_count: 7
+    artikelen_count: 50
+    paragrafen_count: 8
+
+  patronen:
+    rechterlijke_bekrachtiging_onteigening:
+      beschrijving: "Onteigening vereist rechterlijke bekrachtiging (Grondwet)"
+      evidence: ["afdeling 16.9"]
+      ratio: "Fundamentele waarborg eigendomsrecht"
+
+    ambtshalve_toetsing:
+      beschrijving: "Rechtbank toetst onteigening ambtshalve aan criteria art. 11.5"
+      evidence: ["art. 16.107"]
+      criteria: ["onteigeningsbelang", "noodzaak", "urgentie"]
+
+    processuele_versnelling:
+      beschrijving: "Versnelde behandeling en strikte termijnen voor onteigening"
+      evidence: ["art. 16.101", "art. 16.105", "art. 16.121"]
+
+    landinrichting_bijzondere_procedure:
+      beschrijving: "Aparte procedure voor herverkaveling/landinrichting"
+      evidence: ["afdeling 16.12"]
+      kenmerken:
+        - "grondkamer betrokkenheid"
+        - "herverkavelingsakte via notaris"
+        - "pachtverhouding-registratie"
+
+    delegatiegrondslag_breed:
+      beschrijving: "Brede AMvB/ministeriële regeling grondslag voor procedurele vereisten"
+      evidence: ["art. 16.139"]
+      ratio: "Flexibiliteit, implementatie EU-recht"
+
+  kritieke_verwijzingen:
+    - naar: "art. 11.5"
+      context: "onteigeningscriteria"
+    - naar: "art. 9.16 en 9.18"
+      context: "voorkeursrecht prijsvaststelling"
+    - naar: "art. 12.21"
+      context: "tijdelijk gebruik landinrichting"
+    - naar: "art. 13.13"
+      context: "kostenverhaalovereenkomst"
+    - naar: "EU-richtlijnen"
+      context: "verplichte implementatie"
+
+  routes:
+    entry_points:
+      - artikel: "16.93"
+        vraag: "Hoe werkt de bekrachtigingsprocedure voor onteigening?"
+      - artikel: "16.107"
+        vraag: "Wat toetst de rechter bij onteigening?"
+      - artikel: "16.122"
+        vraag: "Hoe wordt de prijs bij voorkeursrecht vastgesteld?"
+      - artikel: "16.136"
+        vraag: "Hoe werkt de herverkavelingsakte?"
+    exit_points:
+      - naar: "Hoofdstuk 11"
+        context: "onteigening materiële regels"
+      - naar: "Hoofdstuk 9"
+        context: "voorkeursrecht materiële regels"
+      - naar: "Hoofdstuk 12"
+        context: "landinrichting materiële regels"
+      - naar: "EU-richtlijnen"
+        context: "internationale verplichtingen"

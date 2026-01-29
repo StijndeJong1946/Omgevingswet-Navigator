@@ -1,0 +1,1359 @@
+# Omgevingswet Chapter 3 - Omgevingsvisies en programma's
+# V2 Atomic Extraction - 2026-01-29
+# Schema: ATOMIC_EXTRACTION_SCHEMA.md v2
+
+schema_version: 2
+bron: BWBR0037885
+
+meta:
+  hoofdstuk: "3"
+  titel: "Omgevingsvisies en programma's"
+  bron_path: "/Hoofdstuk3"
+  artikelen: "3.1-3.19"
+  schema_versie: "v2"
+  extractie_datum: "2026-01-29"
+
+structuur:
+  afdelingen:
+    - nummer: "3.1"
+      titel: "Omgevingsvisies"
+      artikelen: ["3.1", "3.2", "3.3"]
+    - nummer: "3.2"
+      titel: "Programma's"
+      paragrafen:
+        - nummer: "3.2.1"
+          titel: "Algemene bepalingen"
+          artikelen: ["3.4", "3.5"]
+        - nummer: "3.2.2"
+          titel: "Verplichte programma's"
+          artikelen: ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+        - nummer: "3.2.3"
+          titel: "Onverplichte programma's"
+          artikelen: ["3.14", "3.14a"]
+        - nummer: "3.2.4"
+          titel: "Programmatische aanpak"
+          artikelen: ["3.15", "3.16", "3.17", "3.18", "3.19"]
+
+# =============================================================================
+# AFDELING 3.1 - OMGEVINGSVISIES
+# =============================================================================
+
+artikel_3.1:
+  nummer: "3.1"
+  titel: "(vaststellen omgevingsvisie)"
+  bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid1"
+      structuur:
+        volledige_tekst: "De gemeenteraad stelt een gemeentelijke omgevingsvisie vast."
+      logica:
+        type: "verplichting"
+        norm: "gemeenteraad STELT VAST"
+        actor: "gemeenteraad"
+        object: "gemeentelijke omgevingsvisie"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid2"
+      structuur:
+        volledige_tekst: "Provinciale staten stellen een provinciale omgevingsvisie vast."
+      logica:
+        type: "verplichting"
+        norm: "provinciale staten STELT VAST"
+        actor: "provinciale staten"
+        object: "provinciale omgevingsvisie"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.1/Lid3"
+      structuur:
+        volledige_tekst: |
+          Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties stelt, in overeenstemming
+          met Onze Ministers die het aangaat, een nationale omgevingsvisie vast.
+      logica:
+        type: "verplichting"
+        norm: "minister BZK STELT VAST (in overeenstemming)"
+        actor: "minister BZK"
+        object: "nationale omgevingsvisie"
+        overeenstemming: "ministers die het aangaat"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "vaststelling omgevingsvisie"
+    subject: "alle overheidsniveaus"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.1 maakt omgevingsvisie VERPLICHT op alle drie niveaus:
+      - Gemeente: door gemeenteraad
+      - Provincie: door provinciale staten
+      - Rijk: door minister BZK (in overeenstemming)
+
+      Let op: NIET door dagelijks bestuur maar door VERTEGENWOORDIGEND orgaan.
+      Dit onderstreept het strategische karakter van de omgevingsvisie.
+
+  actoren:
+    - actor: "gemeenteraad"
+      rol: "vaststeller gemeentelijke visie"
+    - actor: "provinciale staten"
+      rol: "vaststeller provinciale visie"
+    - actor: "minister BZK"
+      rol: "vaststeller nationale visie"
+
+# -----------------------------------------------------------------------------
+
+artikel_3.2:
+  nummer: "3.2"
+  titel: "(inhoud omgevingsvisie)"
+  bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2"
+      structuur:
+        aanhef: |
+          Een omgevingsvisie bevat, mede voor de uitoefening van de taken en bevoegdheden,
+          bedoeld in artikel 2.1, eerste lid:
+        onderdelen:
+          a:
+            tekst: "een beschrijving van de hoofdlijnen van de kwaliteit van de fysieke leefomgeving"
+            bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeela"
+          b:
+            tekst: "de hoofdlijnen van de voorgenomen ontwikkeling, het gebruik, het beheer, de bescherming en het behoud van het grondgebied"
+            bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeelb"
+          c:
+            tekst: "de hoofdzaken van het voor de fysieke leefomgeving te voeren integrale beleid"
+            bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.2/Onderdeelc"
+      logica:
+        type: "verplichting"
+        norm: "omgevingsvisie BEVAT drie onderdelen"
+        inhoud:
+          - "hoofdlijnen kwaliteit (beschrijving)"
+          - "hoofdlijnen ontwikkeling/gebruik/beheer/bescherming/behoud"
+          - "hoofdzaken integraal beleid"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "verplichte inhoud omgevingsvisie"
+    subject: "alle niveaus"
+
+  interne_refs:
+    - naar: "artikel 2.1"
+      type: "verwijzing"
+      context: "taken en bevoegdheden"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.2 definieert de VERPLICHTE INHOUD van de omgevingsvisie:
+      - Kwaliteitsbeschrijving (is-situatie)
+      - Ontwikkelingslijnen (koers)
+      - Integraal beleid (beleidssamenhang)
+
+      Keyword "hoofdlijnen/hoofdzaken": strategisch niveau, geen detailregels.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.3:
+  nummer: "3.3"
+  titel: "(doorwerking beginselen)"
+  bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.1/Artikel3.3"
+      structuur:
+        volledige_tekst: |
+          In een omgevingsvisie wordt rekening gehouden met het voorzorgsbeginsel, het beginsel
+          van preventief handelen, het beginsel dat milieuaantastingen bij voorrang aan de bron
+          dienen te worden bestreden en het beginsel dat de vervuiler betaalt.
+      logica:
+        type: "verplichting"
+        norm: "rekening houden met vier EU-milieubeginselen"
+        beginselen:
+          - "voorzorgsbeginsel"
+          - "preventief handelen"
+          - "bronbeginsel"
+          - "vervuiler betaalt"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "doorwerking EU-beginselen"
+    subject: "alle omgevingsvisies"
+
+  externe_refs:
+    - naar: "VWEU artikel 191"
+      context: "EU-milieubeginselen"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.3 borgt de EU-milieubeginselen uit VWEU art. 191:
+      1. Voorzorgsbeginsel (bij onzekerheid: voorzichtig)
+      2. Preventief handelen (voorkomen beter dan genezen)
+      3. Bronbeginsel (aanpak bij de bron)
+      4. Vervuiler betaalt (kosten bij veroorzaker)
+
+      Dit is een minimumeis - visie mag verdergaan maar niet achterblijven.
+
+# =============================================================================
+# AFDELING 3.2 - PROGRAMMA'S
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PARAGRAAF 3.2.1 - ALGEMENE BEPALINGEN
+# -----------------------------------------------------------------------------
+
+artikel_3.4:
+  nummer: "3.4"
+  titel: "(vaststellen programma)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.4"
+      structuur:
+        volledige_tekst: |
+          Het college van burgemeester en wethouders, het algemeen bestuur van het waterschap,
+          gedeputeerde staten en Onze Minister die het aangaat kunnen programma's vaststellen.
+      logica:
+        type: "machtiging"
+        norm: "dagelijks bestuur KAN programma's vaststellen"
+        actoren:
+          - "B&W"
+          - "algemeen bestuur waterschap"
+          - "gedeputeerde staten"
+          - "minister die het aangaat"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "vaststellen programma's"
+    subject: "dagelijks bestuur alle niveaus"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.4 is de ALGEMENE GRONDSLAG voor programma's.
+
+      Contrast met art. 3.1 (omgevingsvisie):
+      - Visie: VERPLICHT door vertegenwoordigend orgaan
+      - Programma: FACULTATIEF door dagelijks bestuur
+
+      Dit maakt programma's operationeler/flexibeler dan visies.
+
+      Let op: waterschap "algemeen bestuur" (niet DB) - consistent met
+      Waterschapswet bestuursverdeling.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.5:
+  nummer: "3.5"
+  titel: "(inhoud programma)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.5"
+      structuur:
+        aanhef: |
+          Een programma bevat, mede voor de uitoefening van de taken en bevoegdheden, bedoeld
+          in artikel 2.1, eerste lid, voor een of meer onderdelen van de fysieke leefomgeving:
+        onderdelen:
+          a:
+            tekst: "een uitwerking van het te voeren beleid voor de ontwikkeling, het gebruik, het beheer, de bescherming of het behoud daarvan"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.5/Onderdeela"
+          b:
+            tekst: "maatregelen om aan een of meer omgevingswaarden te voldoen of een of meer andere doelstellingen voor de fysieke leefomgeving te bereiken"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.1/Artikel3.5/Onderdeelb"
+      logica:
+        type: "definitie"
+        norm: "programma bevat beleidsuitwerking en/of maatregelen"
+        inhoud:
+          - "beleidsuitwerking (onderdeel a)"
+          - "maatregelen voor omgevingswaarden/doelen (onderdeel b)"
+
+  functie:
+    werkwoord: "definieert"
+    object: "inhoud programma"
+    subject: "alle niveaus"
+
+  interne_refs:
+    - naar: "artikel 2.1"
+      type: "verwijzing"
+      context: "taken en bevoegdheden"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.1"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.5 definieert de twee functies van programma's:
+      a) BELEIDSUITWERKING: van visie naar concreet beleid
+      b) MAATREGELENPROGRAMMA: acties om doelen te halen
+
+      Dit maakt het programma de schakel tussen:
+      - Visie (strategisch) → Programma (operationeel) → Regels (normatief)
+
+# -----------------------------------------------------------------------------
+# PARAGRAAF 3.2.2 - VERPLICHTE PROGRAMMA'S
+# -----------------------------------------------------------------------------
+
+artikel_3.6:
+  nummer: "3.6"
+  titel: "(verplichte programma's gemeente)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid1"
+      structuur:
+        aanhef: |
+          Het college van burgemeester en wethouders van een gemeente, gelegen in een door
+          Onze Minister van Infrastructuur en Waterstaat aangewezen agglomeratie als bedoeld
+          in artikel 3, onder k, van de richtlijn omgevingslawaai, stelt een actieplan als
+          bedoeld in artikel 8 van die richtlijn vast voor de volgende geluidbronnen:
+        onderdelen:
+          a:
+            tekst: "wegen en daarin gelegen spoorwegen"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid1/Onderdeela"
+          b:
+            tekst: "andere spoorwegen"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid1/Onderdeelb"
+          c:
+            tekst: "luchthavens"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid1/Onderdeelc"
+          d:
+            tekst: "een activiteit of een samenstel van activiteiten, waarvoor een regel als bedoeld in artikel 2.22 of 2.24, eerste lid, of paragraaf 4.1.1 voor het geluid is gesteld"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid1/Onderdeeld"
+      logica:
+        type: "verplichting"
+        norm: "B&W in agglomeratie STELT actieplan geluid VAST"
+        conditie:
+          type: "voor_zover"
+          tekst: "gemeente in aangewezen agglomeratie"
+        effect: "EU-verplichting omgevingslawaai"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.6/Lid2"
+      structuur:
+        volledige_tekst: |
+          Het actieplan wordt vastgesteld aan de hand van de voor die geluidbronnen op grond
+          van artikel 20.17 vastgestelde geluidbelastingkaarten.
+      logica:
+        type: "verplichting"
+        norm: "actieplan gebaseerd op geluidbelastingkaarten"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "gemeentelijk actieplan geluid"
+    subject: "B&W in agglomeratie"
+
+  externe_refs:
+    - naar: "Richtlijn 2002/49/EG"
+      wet: "richtlijn omgevingslawaai"
+      context: "EU-verplichting actieplannen"
+
+  interne_refs:
+    - naar: "artikel 20.17"
+      type: "verwijzing"
+      context: "geluidbelastingkaarten"
+      bron_path: "/Hoofdstuk20/Afdeling20.3/Artikel20.17"
+
+# -----------------------------------------------------------------------------
+
+artikel_3.7:
+  nummer: "3.7"
+  titel: "(verplichte programma's waterschap)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.7"
+      structuur:
+        volledige_tekst: |
+          Het algemeen bestuur van het waterschap stelt voor de watersystemen die bij het
+          waterschap in beheer zijn een waterbeheerprogramma vast, waarbij het rekening houdt
+          met het regionale waterprogramma voor die watersystemen, voor zover het gaat om de
+          onderdelen die uitvoering geven aan de richtlijnen, genoemd in artikel 3.8, tweede lid.
+      logica:
+        type: "verplichting"
+        norm: "algemeen bestuur STELT waterbeheerprogramma VAST"
+        conditie:
+          type: "voor_zover"
+          tekst: "watersystemen in beheer"
+        samenhang: "regionaal waterprogramma (provinciale richtlijnuitvoering)"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "waterbeheerprogramma"
+    subject: "algemeen bestuur waterschap"
+
+  interne_refs:
+    - naar: "artikel 3.8"
+      type: "verwijzing"
+      context: "EU-waterrichtlijnen"
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8"
+
+# -----------------------------------------------------------------------------
+
+artikel_3.8:
+  nummer: "3.8"
+  titel: "(verplichte programma's provincie)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid1"
+      structuur:
+        aanhef: |
+          Gedeputeerde staten stellen ter uitvoering van de richtlijn omgevingslawaai,
+          overeenkomstig artikel 3.6, een actieplan vast voor de volgende geluidbronnen:
+        onderdelen:
+          a:
+            tekst: "belangrijke wegen als bedoeld in artikel 3, onder n, van die richtlijn"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid1/Onderdeela"
+            sub_onderdelen:
+              1:
+                tekst: "in beheer bij de provincie"
+              2:
+                tekst: "in beheer bij gemeente of waterschap buiten agglomeratie"
+          b:
+            tekst: "belangrijke spoorwegen (niet-hoofdspoor, niet-agglomeratie)"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid1/Onderdeelb"
+          c:
+            tekst: "burgerluchthavens van regionale betekenis"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid1/Onderdeelc"
+      logica:
+        type: "verplichting"
+        norm: "GS STELT actieplan geluid VAST voor provinciale bronnen"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid2"
+      structuur:
+        volledige_tekst: |
+          Gedeputeerde staten stellen ter uitvoering van de grondwaterrichtlijn, de kaderrichtlijn
+          water, de richtlijn overstromingsrisico's, de zwemwaterrichtlijn en andere Europese
+          richtlijnen over water regionale waterprogramma's vast.
+      logica:
+        type: "verplichting"
+        norm: "GS STELT regionale waterprogramma's VAST"
+        eu_richtlijnen:
+          - "grondwaterrichtlijn"
+          - "kaderrichtlijn water"
+          - "richtlijn overstromingsrisico's"
+          - "zwemwaterrichtlijn"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.8/Lid3"
+      structuur:
+        volledige_tekst: |
+          Gedeputeerde staten van de provincie waarin een Natura 2000-gebied ligt of, als dat
+          gebied in meer dan een provincie ligt, gedeputeerde staten van de provincie waarin
+          dat gebied grotendeels ligt, stellen voor dat gebied een beheerplan vast.
+      logica:
+        type: "verplichting"
+        norm: "GS STELT Natura 2000-beheerplan VAST"
+        conditie:
+          type: "voor_zover"
+          tekst: "N2000-gebied in provincie (of grotendeels)"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "provinciale programma's (geluid, water, natuur)"
+    subject: "gedeputeerde staten"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.8 bevat DRIE verplichte provinciale programma-typen:
+      1. Actieplan geluid (lid 1) - voor provinciale en regionale bronnen
+      2. Regionale waterprogramma's (lid 2) - EU-waterrichtlijnen
+      3. Natura 2000-beheerplannen (lid 3)
+
+      Dit is de kern van de EU-verplichtingen op provinciaal niveau.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.9:
+  nummer: "3.9"
+  titel: "(verplichte programma's Rijk)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid1"
+      structuur:
+        aanhef: "Onze Minister van Infrastructuur en Waterstaat stelt de volgende programma's vast:"
+        onderdelen:
+          a:
+            tekst: "een nationaal nec-programma als bedoeld in artikel 6 van de nec-richtlijn"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid1/Onderdeela"
+          b:
+            tekst: "actieplan geluid voor rijkswegen, hoofdspoorwegen, Schiphol en nationale luchthavens"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid1/Onderdeelb"
+      logica:
+        type: "verplichting"
+        norm: "minister I&W STELT nationale programma's VAST"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2"
+      structuur:
+        aanhef: "Onze Minister van Infrastructuur en Waterstaat stelt, in overeenstemming met Onze Ministers die het aangaat, de volgende programma's vast:"
+        onderdelen:
+          a:
+            tekst: "stroomgebiedsbeheerplannen (Rijn, Maas, Schelde, Eems)"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2/Onderdeela"
+          b:
+            tekst: "overstromingsrisicobeheerplannen"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2/Onderdeelb"
+          c:
+            tekst: "programma van maatregelen mariene strategie"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2/Onderdeelc"
+          d:
+            tekst: "maritiem ruimtelijk plan"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2/Onderdeeld"
+          e:
+            tekst: "nationaal waterprogramma"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid2/Onderdeele"
+      logica:
+        type: "verplichting"
+        norm: "minister I&W STELT waterprogramma's VAST (in overeenstemming)"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid3"
+      structuur:
+        volledige_tekst: |
+          Het beheerplan voor een Natura 2000-gebied dat geheel of gedeeltelijk wordt beheerd
+          door een van Onze andere Ministers dan Onze Minister voor Natuur en Stikstof of dat
+          eigendom is van de Staat der Nederlanden, wordt in afwijking van artikel 3.8, derde lid,
+          voor dat gebied of dat gedeelte vastgesteld door Onze Minister bij wie op grond van
+          artikel 2.19, vijfde lid, onder b, de taak berust om zorg te dragen voor het treffen
+          van maatregelen voor Natura 2000-gebieden.
+      logica:
+        type: "uitzondering"
+        norm: "N2000-beheerplan door rijksminister indien rijksbeheer"
+        conditie:
+          type: "in_afwijking_van"
+          tekst: "artikel 3.8 lid 3"
+
+    4:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid4"
+      structuur:
+        aanhef: "Onze Minister voor Natuur en Stikstof stelt een programma vast voor:"
+        onderdelen:
+          a:
+            tekst: "het verminderen van de depositie van stikstof op voor stikstof gevoelige habitats in Natura 2000-gebieden om te voldoen aan de omgevingswaarden, bedoeld in artikel 2.15a, eerste lid"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid4/Onderdeela"
+          b:
+            tekst: "het bereiken van de instandhoudingsdoelstellingen voor die habitats"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.9/Lid4/Onderdeelb"
+        afsluiting: |
+          Daarbij houdt Onze Minister rekening met de vereisten op economisch, sociaal en
+          cultureel gebied en met de regionale en lokale bijzonderheden.
+      logica:
+        type: "verplichting"
+        norm: "minister N&S STELT stikstofprogramma VAST"
+        doel: "omgevingswaarden art. 2.15a + instandhoudingsdoelen"
+        afweging: "economisch, sociaal, cultureel, regionaal/lokaal"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "nationale programma's"
+    subject: "ministers I&W, N&S"
+
+  interne_refs:
+    - naar: "artikel 2.15a"
+      type: "verwijzing"
+      context: "stikstof omgevingswaarden"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a"
+    - naar: "artikel 2.19"
+      type: "verwijzing"
+      context: "rijkstaak N2000"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.9 bevat de RIJKS-verplichtingen voor programma's:
+
+      Minister I&W:
+      - NEC-programma (luchtkwaliteit)
+      - Geluidactieplannen (rijkswegen, hoofdspoor, nationale luchthavens)
+      - Stroomgebiedsbeheerplannen (KRW)
+      - Overstromingsrisicobeheerplannen
+      - Mariene strategie
+      - Maritiem ruimtelijk plan
+      - Nationaal waterprogramma
+
+      Minister N&S:
+      - Stikstofprogramma (art. 2.15a omgevingswaarden)
+
+      Lid 4 is de wettelijke basis voor het stikstofbeleid met de
+      afwegingsclausule "economisch, sociaal, cultureel".
+
+# -----------------------------------------------------------------------------
+
+artikel_3.10:
+  nummer: "3.10"
+  titel: "(verplicht programma bij (dreigende) overschrijding van omgevingswaarde)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.10/Lid1"
+      structuur:
+        volledige_tekst: |
+          Als aannemelijk is dat niet wordt voldaan of niet zal worden voldaan aan een
+          omgevingswaarde, stelt het college van burgemeester en wethouders van de gemeente
+          waar dat het geval is een programma vast, gericht op het voldoen aan die omgevingswaarde.
+      logica:
+        type: "verplichting"
+        norm: "B&W STELT programma VAST bij (dreigende) overschrijding"
+        conditie:
+          type: "wanneer"
+          tekst: "aannemelijk is dat niet (zal) worden voldaan"
+        default: "gemeente verantwoordelijk"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.10/Lid2"
+      structuur:
+        aanhef: "In afwijking van het eerste lid:"
+        onderdelen:
+          a:
+            tekst: "stelt het algemeen bestuur van het waterschap of Onze Minister van Infrastructuur en Waterstaat het programma vast als de omgevingswaarde betrekking heeft op een watersysteem dat bij het waterschap of het Rijk in beheer is"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.10/Lid2/Onderdeela"
+          b:
+            tekst: "kan bij AMvB of omgevingsverordening een ander bestuursorgaan worden aangewezen of worden bepaald dat maatregelen worden getroffen i.p.v. programma"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.10/Lid2/Onderdeelb"
+      logica:
+        type: "uitzondering"
+        norm: "andere bevoegdheid bij water of via AMvB/verordening"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "programma bij overschrijding omgevingswaarde"
+    subject: "bevoegd bestuursorgaan"
+
+  interne_refs:
+    - naar: "artikel 2.3"
+      type: "begrenzing"
+      context: "subsidiariteitsgrens"
+      bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.10 is de TRIGGER voor actie bij (dreigende) normoverschrijding:
+      - Default: B&W van betrokken gemeente
+      - Uitzondering watersysteem: waterschap of I&W
+      - Via AMvB/verordening: ander orgaan of maatregelen i.p.v. programma
+
+      Dit is de operationalisering van de omgevingswaarden: als je dreigt
+      te falen, MOET je een programma maken om terug te komen.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.11:
+  nummer: "3.11"
+  titel: "(wijziging met oog op doelbereik)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.11"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.11/Lid1"
+      structuur:
+        volledige_tekst: |
+          Het bestuursorgaan dat een programma als bedoeld in deze paragraaf heeft vastgesteld,
+          wijzigt dat programma als uit de monitoring, bedoeld in artikel 20.1, eerste lid,
+          blijkt dat met dat programma niet aan de omgevingswaarde kan worden voldaan.
+      logica:
+        type: "verplichting"
+        norm: "bestuursorgaan WIJZIGT programma als monitoring faalt"
+        conditie:
+          type: "wanneer"
+          tekst: "monitoring toont dat programma niet werkt"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.11/Lid2"
+      structuur:
+        volledige_tekst: |
+          Het programma wordt zo gewijzigd dat binnen een passende termijn aan de
+          omgevingswaarde wordt voldaan.
+      logica:
+        type: "verplichting"
+        norm: "wijziging moet leiden tot compliance binnen passende termijn"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "programmawijziging bij falen"
+    subject: "vaststeller programma"
+
+  interne_refs:
+    - naar: "artikel 20.1"
+      type: "verwijzing"
+      context: "monitoring"
+      bron_path: "/Hoofdstuk20/Afdeling20.1/Artikel20.1"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.11 sluit de feedbackloop: monitoring → evaluatie → bijstelling.
+      Als programma niet werkt (monitoring art. 20.1), MOET het worden aangepast.
+      Dit is een continue verbetercyclus.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.12:
+  nummer: "3.12"
+  titel: "(uitvoering maatregelen)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.12"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.12"
+      structuur:
+        volledige_tekst: |
+          Bij algemene maatregel van bestuur kan worden bepaald dat de in de programma's
+          opgenomen maatregelen of de maatregelen, bedoeld in artikel 3.10, tweede lid,
+          onder b, onder 2°, uitgevoerd moeten worden of operationeel moeten zijn volgens
+          de daarbij te stellen regels.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "uitvoeringsregels maatregelen"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "uitvoeringsregels programmamaatregelen"
+    subject: "AMvB"
+
+# -----------------------------------------------------------------------------
+
+artikel_3.13:
+  nummer: "3.13"
+  titel: "(gezamenlijke vaststelling programma's)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.13"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.2/Artikel3.13"
+      structuur:
+        volledige_tekst: |
+          Bij algemene maatregel van bestuur kunnen bestuursorganen worden verplicht om
+          programma's als bedoeld in deze paragraaf gezamenlijk vast te stellen.
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "AMvB"
+            voor: "verplichting gezamenlijke vaststelling"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "verplichting gezamenlijke programma's"
+    subject: "AMvB"
+
+# -----------------------------------------------------------------------------
+# PARAGRAAF 3.2.3 - ONVERPLICHTE PROGRAMMA'S
+# -----------------------------------------------------------------------------
+
+artikel_3.14:
+  nummer: "3.14"
+  titel: "(gemeentelijk rioleringsprogramma)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.3/Artikel3.14"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.3/Artikel3.14"
+      structuur:
+        volledige_tekst: |
+          Het college van burgemeester en wethouders kan ter invulling van de taak, bedoeld
+          in artikel 2.16, eerste lid, onder a, onder 1° tot en met 3°, een gemeentelijk
+          rioleringsprogramma vaststellen.
+      logica:
+        type: "machtiging"
+        norm: "B&W KAN rioleringsprogramma vaststellen"
+        verwijzing: "taak artikel 2.16"
+
+  functie:
+    werkwoord: "machtigt"
+    object: "gemeentelijk rioleringsprogramma"
+    subject: "B&W"
+
+  interne_refs:
+    - naar: "artikel 2.16"
+      type: "verwijzing"
+      context: "gemeentelijke watertaken"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.14 is de opvolger van het vroegere GRP (gemeentelijk rioleringsplan).
+      Het is nu FACULTATIEF - gemeente kan het doen maar hoeft niet.
+      De onderliggende watertaak (art. 2.16) blijft verplicht.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.14a:
+  nummer: "3.14a"
+  titel: "(inrichtingsprogramma)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.3/Artikel3.14a"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.3/Artikel3.14a"
+      structuur:
+        volledige_tekst: |
+          Als gedeputeerde staten met betrekking tot een gebied overgaan tot landinrichting
+          als bedoeld in artikel 12.3, eerste lid, stellen zij een programma vast dat is
+          gericht op de verbetering van de inrichting van het gebied. Het inrichtingsprogramma
+          kan in ieder geval de maatregelen en voorzieningen, bedoeld in artikel 12.3, bevatten.
+      logica:
+        type: "verplichting"
+        norm: "GS STELT inrichtingsprogramma VAST bij landinrichting"
+        conditie:
+          type: "wanneer"
+          tekst: "GS gaat over tot landinrichting"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "inrichtingsprogramma"
+    subject: "GS bij landinrichting"
+
+  interne_refs:
+    - naar: "artikel 12.3"
+      type: "verwijzing"
+      context: "landinrichting"
+      bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3"
+
+# -----------------------------------------------------------------------------
+# PARAGRAAF 3.2.4 - PROGRAMMATISCHE AANPAK
+# -----------------------------------------------------------------------------
+
+artikel_3.15:
+  nummer: "3.15"
+  titel: "(toepassingsbereik programmatische aanpak)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15/Lid1"
+      structuur:
+        volledige_tekst: |
+          Deze paragraaf is van toepassing op programma's als bedoeld in het tweede tot en
+          met vierde lid.
+      logica:
+        type: "definitie"
+        norm: "toepassingsbereik § 3.2.4"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15/Lid2"
+      structuur:
+        volledige_tekst: |
+          Bij omgevingsplan kunnen programma's als bedoeld in artikel 3.16 worden aangewezen,
+          die betrekking hebben op omgevingswaarden van de gemeente als bedoeld in paragraaf 2.3.2
+          of een andere doelstelling voor de fysieke leefomgeving waarvoor in dat omgevingsplan
+          een regel over het verlenen of weigeren van een omgevingsvergunning voor een
+          omgevingsplanactiviteit is gesteld.
+      logica:
+        type: "machtiging"
+        norm: "omgevingsplan KAN programmatische aanpak aanwijzen"
+        scope: "gemeentelijke omgevingswaarden of vergunningdoelen"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15/Lid3"
+      structuur:
+        volledige_tekst: |
+          Bij omgevingsverordening kunnen programma's als bedoeld in artikel 3.16 worden
+          aangewezen, die betrekking hebben op omgevingswaarden van de provincie als bedoeld
+          in paragraaf 2.3.3 of een andere doelstelling voor de fysieke leefomgeving waarvoor
+          een regel als bedoeld in artikel 2.22, 5.19, eerste lid, of 5.30 is gesteld.
+      logica:
+        type: "machtiging"
+        norm: "omgevingsverordening KAN programmatische aanpak aanwijzen"
+        scope: "provinciale omgevingswaarden of vergunningdoelen"
+
+    4:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15/Lid4"
+      structuur:
+        volledige_tekst: |
+          Bij algemene maatregel van bestuur kunnen programma's als bedoeld in artikel 3.16
+          worden aangewezen, die betrekking hebben op omgevingswaarden van het Rijk als bedoeld
+          in paragraaf 2.3.4 of een andere doelstelling voor de fysieke leefomgeving waarvoor
+          een regel als bedoeld in artikel 2.24, eerste lid, of 5.18 is gesteld.
+      logica:
+        type: "machtiging"
+        norm: "AMvB KAN programmatische aanpak aanwijzen"
+        scope: "rijks omgevingswaarden of vergunningdoelen"
+
+    5:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.15/Lid5"
+      structuur:
+        volledige_tekst: |
+          Bij omgevingsplan, omgevingsverordening of algemene maatregel van bestuur wordt
+          bepaald welk bestuursorgaan een programma kan vaststellen.
+      logica:
+        type: "verplichting"
+        norm: "aanwijzing bevoegd bestuursorgaan"
+
+  functie:
+    werkwoord: "definieert"
+    object: "toepassingsbereik programmatische aanpak"
+    subject: "alle overheidsniveaus"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.15 definieert WANNEER de programmatische aanpak kan worden ingezet:
+      - Via omgevingsplan (gemeente): voor gemeentelijke omgevingswaarden
+      - Via omgevingsverordening (provincie): voor provinciale omgevingswaarden
+      - Via AMvB (Rijk): voor rijks omgevingswaarden
+
+      De aanwijzing bepaalt ook welk bestuursorgaan het programma vaststelt.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.16:
+  nummer: "3.16"
+  titel: "(inhoud en werking programmatische aanpak)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.16"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.16/Lid1"
+      structuur:
+        volledige_tekst: |
+          In een programma wordt aangegeven welke ruimte er, gelet op de omgevingswaarde of
+          de andere doelstelling, in een daarbij aangegeven gebied en periode beschikbaar
+          is voor activiteiten.
+      logica:
+        type: "verplichting"
+        norm: "programma geeft RUIMTE aan voor activiteiten"
+        effect: "saldering mogelijk binnen plafond"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.16/Lid2"
+      structuur:
+        aanhef: "Bij omgevingsplan, omgevingsverordening of algemene maatregel van bestuur wordt bepaald:"
+        onderdelen:
+          a:
+            tekst: "hoe de omgevingswaarde of de andere doelstelling bij de uitoefening van taken en bevoegdheden wordt betrokken"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.16/Lid2/Onderdeela"
+          b:
+            tekst: "in voorkomende gevallen, welke bepalingen geheel of gedeeltelijk buiten toepassing blijven"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.16/Lid2/Onderdeelb"
+      logica:
+        type: "delegatie"
+        delegatie:
+          - naar: "omgevingsplan/verordening/AMvB"
+            voor: "werkingsregels programmatische aanpak"
+        effect: "beoordelingsregels kunnen BUITEN TOEPASSING blijven"
+
+  functie:
+    werkwoord: "definieert"
+    object: "werking programmatische aanpak"
+    subject: "programma"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.16 is de KERN van de programmatische aanpak:
+
+      Lid 1: Het programma definieert de BESCHIKBARE RUIMTE voor activiteiten.
+      Lid 2b: Hierdoor kunnen BEOORDELINGSREGELS buiten toepassing blijven.
+
+      Dit is de salderingsmethode: in plaats van per-activiteit-beoordeling
+      wordt gekeken of de activiteit binnen het totale plafond past.
+      Bekendste voorbeeld: PAS (Programma Aanpak Stikstof - later vernietigd).
+
+# -----------------------------------------------------------------------------
+
+artikel_3.17:
+  nummer: "3.17"
+  titel: "(eisen aan programma bij programmatische aanpak)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1"
+      structuur:
+        aanhef: "Het programma bevat in ieder geval een beschrijving van:"
+        onderdelen:
+          a:
+            tekst: "het gebied waarvoor het programma geldt"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeela"
+          b:
+            tekst: "de periode waarop het programma betrekking heeft"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeelb"
+          c:
+            tekst: "de omgevingswaarde of de andere doelstelling waarvoor het programma wordt vastgesteld"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeelc"
+          d:
+            tekst: "de toestand van het onderdeel van de fysieke leefomgeving"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeeld"
+          e:
+            tekst: "de verwachte ontwikkelingen in het gebied"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeele"
+          f:
+            tekst: "de verwachte activiteiten die effect hebben"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeelf"
+          g:
+            tekst: "de gevolgen van ontwikkelingen en activiteiten"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeelg"
+          h:
+            tekst: "de maatregelen die bijdragen aan doelbereik"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid1/Onderdeelh"
+      logica:
+        type: "verplichting"
+        norm: "programma BEVAT acht verplichte onderdelen"
+        inhoud:
+          - "gebied"
+          - "periode"
+          - "doel"
+          - "toestand"
+          - "ontwikkelingen"
+          - "activiteiten"
+          - "gevolgen"
+          - "maatregelen"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.17/Lid2"
+      structuur:
+        volledige_tekst: |
+          Voor zover de maatregelen, bedoeld in het eerste lid, onder h, het wijzigen van de
+          voorschriften van een omgevingsvergunning of het intrekken van een omgevingsvergunning
+          omvatten, kan het programma ook een beschrijving bevatten van het moment waarop en
+          de voorwaarden waaronder daaraan uitvoering kan of moet worden gegeven.
+      logica:
+        type: "machtiging"
+        norm: "programma KAN vergunningwijziging/intrekking beschrijven"
+        effect: "voorwaardelijke vergunningaanpassing mogelijk"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "verplichte inhoud programmatische aanpak"
+    subject: "programma"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.17 stelt de INHOUDSEISEN aan programma's met programmatische aanpak:
+      - Ruimtelijk: welk gebied?
+      - Temporeel: welke periode?
+      - Doelgericht: welke omgevingswaarde/doel?
+      - Analytisch: wat is de huidige toestand?
+      - Prognostisch: wat zijn verwachte ontwikkelingen en activiteiten?
+      - Effectgericht: wat zijn de gevolgen?
+      - Maatregelen: wat gaat je doen om doel te halen?
+
+      Lid 2: Het programma kan ook voorwaarden voor vergunningwijziging/intrekking
+      bevatten, wat dynamisch vergunningenbeheer mogelijk maakt.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.18:
+  nummer: "3.18"
+  titel: "(uitvoeringsplicht bij programmatische aanpak)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18/Lid1"
+      structuur:
+        volledige_tekst: |
+          De bestuursorganen die daarvoor in het programma zijn aangewezen, zorgen voor de
+          uitvoering van de daarin opgenomen maatregelen binnen de daarbij aangegeven termijn.
+      logica:
+        type: "verplichting"
+        norm: "aangewezen bestuursorganen ZORGEN VOOR uitvoering"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18/Lid2"
+      structuur:
+        aanhef: "De uitvoeringsplicht geldt alleen:"
+        onderdelen:
+          a:
+            tekst: "voor zover uit het programma blijkt dat die bestuursorganen met het opnemen van de maatregelen hebben ingestemd"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18/Lid2/Onderdeela"
+          b:
+            tekst: "als deze volgt uit regels en instructies als bedoeld in de artikelen 2.23, 2.25, 2.33 en 2.34"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18/Lid2/Onderdeelb"
+      logica:
+        type: "begrenzing"
+        norm: "uitvoeringsplicht alleen bij instemming of instructie"
+        conditie:
+          type: "voor_zover"
+          tekst: "instemming of instructieplicht"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.18/Lid3"
+      structuur:
+        volledige_tekst: |
+          Het eerste en tweede lid zijn van overeenkomstige toepassing op een programma als
+          bedoeld in de artikelen 3.8, derde lid, en 3.9, derde en vierde lid.
+      logica:
+        type: "verwijzing"
+        effect: "ook N2000-beheerplannen en stikstofprogramma"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "uitvoering maatregelen"
+    subject: "aangewezen bestuursorganen"
+
+  interne_refs:
+    - naar: "artikel 2.23"
+      type: "verwijzing"
+      context: "instructieregels"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23"
+    - naar: "artikel 2.25"
+      type: "verwijzing"
+      context: "instructieregels Rijk"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25"
+    - naar: "artikel 2.33"
+      type: "verwijzing"
+      context: "instructies"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33"
+    - naar: "artikel 2.34"
+      type: "verwijzing"
+      context: "instructies"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.18 regelt de UITVOERINGSPLICHT bij programmatische aanpak:
+      - Hoofdregel: aangewezen organen voeren uit
+      - MAAR: alleen bij instemming OF instructieplicht
+
+      Dit is cruciaal: je kunt andere overheden niet dwingen tot uitvoering
+      tenzij ze instemmen of er een instructieregel/instructie aan ten
+      grondslag ligt. Dit respecteert de autonomie van decentrale overheden.
+
+# -----------------------------------------------------------------------------
+
+artikel_3.19:
+  nummer: "3.19"
+  titel: "(wijziging programma bij programmatische aanpak)"
+  bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid1"
+      structuur:
+        aanhef: "Het bestuursorgaan dat daarvoor in het programma is aangewezen, kan:"
+        onderdelen:
+          a:
+            tekst: "in dat programma opgenomen maatregelen, activiteiten of ontwikkelingen ambtshalve wijzigen of vervangen of laten vervallen"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid1/Onderdeela"
+          b:
+            tekst: "maatregelen, activiteiten of ontwikkelingen aan het programma toevoegen"
+            bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid1/Onderdeelb"
+        afsluiting: |
+          als aannemelijk wordt gemaakt dat die wijzigingen per saldo passen binnen, of in
+          ieder geval niet in strijd zijn met, het programma.
+      logica:
+        type: "machtiging"
+        norm: "aangewezen orgaan KAN programma wijzigen"
+        conditie:
+          type: "mits"
+          tekst: "per saldo passend of niet in strijd"
+        effect: "flexibiliteit binnen programma"
+
+    2:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid2"
+      structuur:
+        volledige_tekst: |
+          De bestuursorganen, bedoeld in artikel 3.18, eerste lid, kunnen verzoeken om een
+          wijziging van het programma. Bij dat verzoek wordt aannemelijk gemaakt dat is
+          voldaan aan het in het eerste lid opgenomen vereiste.
+      logica:
+        type: "recht"
+        norm: "uitvoerende organen KAN wijziging verzoeken"
+
+    3:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid3"
+      structuur:
+        volledige_tekst: |
+          Het eerste en tweede lid zijn van overeenkomstige toepassing op een programma als
+          bedoeld in artikel 3.9, vierde lid.
+      logica:
+        type: "verwijzing"
+        effect: "ook stikstofprogramma"
+
+    4:
+      bron_path: "/Hoofdstuk3/Afdeling3.2/Paragraaf3.2.4/Artikel3.19/Lid4"
+      structuur:
+        volledige_tekst: |
+          Het bestuursorgaan dat een programma heeft vastgesteld, wijzigt dat programma als
+          volgens dat bestuursorgaan uit de monitoring, bedoeld in artikel 20.1, eerste en
+          tweede lid, blijkt dat artikel 3.16, tweede lid, niet langer in redelijkheid op
+          dat programma van toepassing kan zijn.
+      logica:
+        type: "verplichting"
+        norm: "vaststeller WIJZIGT als monitoring aantoont dat PA niet meer werkt"
+        conditie:
+          type: "wanneer"
+          tekst: "art. 3.16 lid 2 niet langer redelijk toepasbaar"
+        effect: "einde programmatische aanpak als systeem faalt"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "wijzigingsregime programmatische aanpak"
+    subject: "aangewezen bestuursorgaan"
+
+  interne_refs:
+    - naar: "artikel 20.1"
+      type: "verwijzing"
+      context: "monitoring"
+      bron_path: "/Hoofdstuk20/Afdeling20.1/Artikel20.1"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 3.19 regelt het WIJZIGINGSREGIME bij programmatische aanpak:
+
+      Lid 1-2: FLEXIBILITEIT - wijzigingen mogelijk als ze "per saldo passen"
+      Lid 4: NOODREM - als monitoring toont dat PA niet meer werkt, MOET
+             het programma worden gewijzigd
+
+      Dit is de exit-strategie voor gevallen zoals het PAS (Programma Aanpak
+      Stikstof) dat door de Raad van State werd vernietigd omdat het niet
+      kon aantonen dat de doelen zouden worden gehaald.
+
+# =============================================================================
+# CHAPTER-NIVEAU ANALYSE
+# =============================================================================
+
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 2
+    paragrafen_count: 4
+    artikelen_count: 19
+
+  patronen:
+    instrument_hiërarchie:
+      beschrijving: "Visie → Programma → Regels cascade"
+      structuur: |
+        Omgevingsvisie (strategisch, verplicht, door raad/staten/minister)
+            ↓
+        Programma (operationeel, meestal facultatief, door dagelijks bestuur)
+            ↓
+        Regels (normatief, in omgevingsplan/verordening/AMvB)
+
+    verplicht_vs_facultatief:
+      beschrijving: "Onderscheid in programma-verplichtingen"
+      structuur: |
+        VERPLICHT (§ 3.2.2):
+        - Actieplannen geluid (EU-richtlijn)
+        - Waterbeheerprogramma's (EU-richtlijn)
+        - N2000-beheerplannen
+        - Stikstofprogramma
+        - Programma bij overschrijding omgevingswaarde
+
+        FACULTATIEF (§ 3.2.3):
+        - Rioleringsprogramma
+        - Inrichtingsprogramma
+
+    programmatische_aanpak:
+      beschrijving: "Alternatief voor per-activiteit-beoordeling"
+      structuur: |
+        Kern: programma definieert "beschikbare ruimte" (art. 3.16 lid 1)
+        Effect: beoordelingsregels kunnen buiten toepassing blijven (art. 3.16 lid 2b)
+        Voorwaarde: monitoring moet aantonen dat systeem werkt
+        Exit: wijzigingsplicht als monitoring faalt (art. 3.19 lid 4)
+
+    eu_doorwerking:
+      beschrijving: "EU-verplichtingen als verplichte programma's"
+      richtlijnen:
+        - "richtlijn omgevingslawaai (geluidactieplannen)"
+        - "kaderrichtlijn water (stroomgebiedsbeheerplannen)"
+        - "richtlijn overstromingsrisico's"
+        - "grondwaterrichtlijn"
+        - "zwemwaterrichtlijn"
+        - "NEC-richtlijn"
+        - "kaderrichtlijn mariene strategie"
+        - "kaderrichtlijn maritieme ruimtelijke planning"
+        - "Habitatrichtlijn (N2000-beheerplannen)"
+
+  relaties:
+    intern:
+      - van: "art. 3.1-3.3"
+        naar: "art. 2.1"
+        type: "verwijzing"
+        context: "taken en bevoegdheden"
+      - van: "art. 3.10"
+        naar: "art. 2.3"
+        type: "begrenzing"
+        context: "subsidiariteit"
+      - van: "art. 3.18"
+        naar: "art. 2.23, 2.25, 2.33, 2.34"
+        type: "verwijzing"
+        context: "uitvoeringsplicht via instructies"
+      - van: "art. 3.11, 3.19"
+        naar: "art. 20.1"
+        type: "verwijzing"
+        context: "monitoring"
+
+    extern:
+      - naar: "VWEU art. 191"
+        context: "EU-milieubeginselen"
+      - naar: "Richtlijn 2002/49/EG"
+        context: "omgevingslawaai"
+      - naar: "Richtlijn 2000/60/EG"
+        context: "kaderrichtlijn water"
+
+  routes:
+    entry_points:
+      - artikel: "3.1"
+        vraag: "Wie stelt de omgevingsvisie vast?"
+      - artikel: "3.4"
+        vraag: "Wie kan programma's vaststellen?"
+      - artikel: "3.10"
+        vraag: "Wat als omgevingswaarde dreigt te worden overschreden?"
+      - artikel: "3.16"
+        vraag: "Wat is een programmatische aanpak?"
+
+    exit_points:
+      - naar: "art. 2.1"
+        context: "taken en bevoegdheden"
+      - naar: "art. 20.1"
+        context: "monitoring"
+      - naar: "Ch5"
+        context: "vergunningverlening bij PA"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    visie_vs_programma:
+      observatie: |
+        Scherpe scheiding:
+        - Visie: verplicht, strategisch, door vertegenwoordigend orgaan
+        - Programma: vaak facultatief, operationeel, door dagelijks bestuur
+      implicatie: |
+        Navigatie: "strategisch beleid?" → visie; "uitvoering?" → programma
+
+    programmatische_aanpak_als_saldering:
+      observatie: |
+        § 3.2.4 creëert mogelijkheid om beoordelingsregels buiten toepassing
+        te laten als activiteit past binnen programma-ruimte.
+      implicatie: |
+        Dit is de wettelijke basis voor saldering. Let op: na PAS-uitspraak
+        is kritische monitoring vereist (art. 3.19 lid 4).
+
+    eu_driver_voor_verplichte_programmas:
+      observatie: |
+        Vrijwel alle verplichte programma's (§ 3.2.2) vloeien voort uit
+        EU-richtlijnen. De Omgevingswet is hier vooral doorgeefluik.
+      implicatie: |
+        Bij vraag "is programma verplicht?" → check EU-richtlijn achtergrond.
+
+  schema_verbeteringen:
+    - "Toevoegen: instrument_type (visie/programma/regels) in navigatie"
+    - "Toevoegen: eu_grondslag veld voor EU-richtlijn achtergrond"
+    - "Toevoegen: programmatische_aanpak flag voor PA-programma's"

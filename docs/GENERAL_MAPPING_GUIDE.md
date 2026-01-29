@@ -1052,11 +1052,11 @@ BG-besluit (maatwerkvoorschrift via 4.5)
 | ch5-par5.1.1-atomic.yaml | ✅ Complete | verbod + tenzij/voor zover |
 | ch5-par5.1.2-atomic.yaml | ✅ Complete | default + tenzij decision tree |
 | ch5-par5.1.3-atomic.yaml | ✅ Complete | hub-and-spoke (5.18 → 5.20-5.29a) |
-| ch5-par5.1.4-5.1.5-atomic.yaml | ✅ Complete | imperatief vs facultatief |
-| ch5-afd5.2-atomic.yaml | ✅ Complete | projectbesluit = integraal |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete V2 | imperatief vs facultatief, lifecycle pattern |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete V2 | projectbesluit = integraal, hiërarchie, doorbreking |
 | ch4-afd4.1-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij |
-| ch4-afd4.2-4.3-atomic.yaml | ✅ Complete | Ch4 ↔ Ch5 parallel |
-| ch16-afd16.5-atomic.yaml | ✅ Complete | procedure duality, loket, lex silencio |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete V2 | Ch4 ↔ Ch5 parallel, hub-and-spoke 4.3, voorbescherming |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete V2 | procedure duality, loket, lex silencio, termijn_structure |
 | ch16-afd16.7-atomic.yaml | ✅ Complete | inwerkingtreding spectrum |
 
 ### Afdeling 16.1 - Elektronisch verkeer en gegevens (2026-01-29)
@@ -1207,15 +1207,15 @@ Gronden voor instemming:
 | ch5-par5.1.1-atomic.yaml | ✅ Complete | verbod + tenzij/voor zover |
 | ch5-par5.1.2-atomic.yaml | ✅ Complete | default + tenzij decision tree |
 | ch5-par5.1.3-atomic.yaml | ✅ Complete | hub-and-spoke (5.18 → 5.20-5.29a) |
-| ch5-par5.1.4-5.1.5-atomic.yaml | ✅ Complete | imperatief vs facultatief |
-| ch5-afd5.2-atomic.yaml | ✅ Complete | projectbesluit = integraal |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete V2 | imperatief vs facultatief, lifecycle pattern |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete V2 | projectbesluit = integraal, hiërarchie, doorbreking |
 | ch4-afd4.1-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij |
-| ch4-afd4.2-4.3-atomic.yaml | ✅ Complete | Ch4 ↔ Ch5 parallel |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete V2 | Ch4 ↔ Ch5 parallel, hub-and-spoke 4.3, voorbescherming |
 | ch16-afd16.1-atomic.yaml | ✅ Complete | houdbaarheid data, DSO |
 | ch16-afd16.2-atomic.yaml | ✅ Complete | advies vs instemming, reactieve interventie |
 | ch16-afd16.3-atomic.yaml | ✅ Complete | UOV-standaard, actio popularis |
 | ch16-afd16.4-atomic.yaml | ✅ Complete | dual-track MER, tiering, Commissie asymmetrie |
-| ch16-afd16.5-atomic.yaml | ✅ Complete | procedure duality, loket, lex silencio |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete V2 | procedure duality, loket, lex silencio, termijn_structure |
 | ch16-afd16.7-atomic.yaml | ✅ Complete | inwerkingtreding spectrum |
 | ch16-afd16.4a-atomic.yaml | ✅ Complete | passende beoordeling, Habitatrichtlijn |
 | ch16-afd16.6-16.6a-atomic.yaml | ✅ Complete | projectprocedure, kostenverhaal |
@@ -1464,19 +1464,19 @@ Instructieregel (algemeen, preventief)
 | ch5-par5.1.1-atomic.yaml | ✅ Complete | verbod + tenzij/voor zover |
 | ch5-par5.1.2-atomic.yaml | ✅ Complete | default + tenzij decision tree |
 | ch5-par5.1.3-atomic.yaml | ✅ Complete | hub-and-spoke (5.18 → 5.20-5.29a) |
-| ch5-par5.1.4-5.1.5-atomic.yaml | ✅ Complete | imperatief vs facultatief |
-| ch5-afd5.2-atomic.yaml | ✅ Complete | projectbesluit = integraal |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete V2 | imperatief vs facultatief, lifecycle pattern |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete V2 | projectbesluit = integraal, hiërarchie, doorbreking |
 | ch4-afd4.1-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij |
-| ch4-afd4.2-4.3-atomic.yaml | ✅ Complete | Ch4 ↔ Ch5 parallel |
-| ch16-afd16.1-atomic.yaml | ✅ Complete | houdbaarheid data, DSO |
-| ch16-afd16.2-atomic.yaml | ✅ Complete | advies vs instemming, reactieve interventie |
-| ch16-afd16.3-atomic.yaml | ✅ Complete | UOV-standaard, actio popularis |
-| ch16-afd16.4-atomic.yaml | ✅ Complete | dual-track MER, tiering, Commissie asymmetrie |
-| ch16-afd16.4a-atomic.yaml | ✅ Complete | passende beoordeling, Habitatrichtlijn |
-| ch16-afd16.5-atomic.yaml | ✅ Complete | procedure duality, loket, lex silencio |
-| ch16-afd16.6-16.6a-atomic.yaml | ✅ Complete | projectprocedure, kostenverhaal |
-| ch16-afd16.7-atomic.yaml | ✅ Complete | inwerkingtreding spectrum |
-| ch16-afd16.8-16.14-atomic.yaml | ✅ Complete | domain-specific (voorkeursrecht, onteigening, etc.) |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete V2 | Ch4 ↔ Ch5 parallel, hub-and-spoke 4.3, voorbescherming |
+| ch16-afd16.1-v2-atomic.yaml | ✅ Complete V2 | houdbaarheid data, DSO |
+| ch16-afd16.2-v2-atomic.yaml | ✅ Complete V2 | advies vs instemming, reactieve interventie, Awb 3.5 coördinatie |
+| ch16-afd16.3-v2-atomic.yaml | ✅ Complete V2 | UOV-standaard, actio popularis, rechterlijke bekrachtiging |
+| ch16-afd16.4-v2-atomic.yaml | ✅ Complete V2 | dual-track MER, tiering, Commissie asymmetrie |
+| ch16-afd16.4a-v2-atomic.yaml | ✅ Complete V2 | passende beoordeling, Habitatrichtlijn art. 6 lid 3 |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete V2 | procedure duality, loket, lex silencio, termijn_structure |
+| ch16-afd16.6-16.6a-v2-atomic.yaml | ✅ Complete V2 | projectprocedure UOV, waterschap GS-goedkeuring, kostenverhaal aanhouding |
+| ch16-afd16.7-v2-atomic.yaml | ✅ Complete V2 | inwerkingtreding spectrum, uitgestelde inwerkingtreding, beroepsbundeling |
+| ch16-afd16.8-16.14-v2-atomic.yaml | ✅ Complete V2 | rechterlijke bekrachtiging onteigening, landinrichting, delegatiegrondslag |
 | **ch2-afd2.1-atomic.yaml** | ✅ Complete | subsidiariteit, doelgebondenheid, 19 belangen |
 | **ch2-afd2.2-atomic.yaml** | ✅ Complete | one-plan-principle, exclusiviteit |
 | **ch2-afd2.3-atomic.yaml** | ✅ Complete | omgevingswaarden, resultaat vs inspanning, stikstof |
@@ -1593,19 +1593,19 @@ Ch18 ←→ Ch2: 18.2 lid 6 → 2.3 (subsidiariteitsgrens)
 | ch5-par5.1.1-atomic.yaml | ✅ Complete | verbod + tenzij/voor zover |
 | ch5-par5.1.2-atomic.yaml | ✅ Complete | default + tenzij decision tree |
 | ch5-par5.1.3-atomic.yaml | ✅ Complete | hub-and-spoke (5.18 → 5.20-5.29a) |
-| ch5-par5.1.4-5.1.5-atomic.yaml | ✅ Complete | imperatief vs facultatief |
-| ch5-afd5.2-atomic.yaml | ✅ Complete | projectbesluit = integraal |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete V2 | imperatief vs facultatief, lifecycle pattern |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete V2 | projectbesluit = integraal, hiërarchie, doorbreking |
 | ch4-afd4.1-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij |
-| ch4-afd4.2-4.3-atomic.yaml | ✅ Complete | Ch4 ↔ Ch5 parallel |
-| ch16-afd16.1-atomic.yaml | ✅ Complete | houdbaarheid data, DSO |
-| ch16-afd16.2-atomic.yaml | ✅ Complete | advies vs instemming, reactieve interventie |
-| ch16-afd16.3-atomic.yaml | ✅ Complete | UOV-standaard, actio popularis |
-| ch16-afd16.4-atomic.yaml | ✅ Complete | dual-track MER, tiering, Commissie asymmetrie |
-| ch16-afd16.4a-atomic.yaml | ✅ Complete | passende beoordeling, Habitatrichtlijn |
-| ch16-afd16.5-atomic.yaml | ✅ Complete | procedure duality, loket, lex silencio |
-| ch16-afd16.6-16.6a-atomic.yaml | ✅ Complete | projectprocedure, kostenverhaal |
-| ch16-afd16.7-atomic.yaml | ✅ Complete | inwerkingtreding spectrum |
-| ch16-afd16.8-16.14-atomic.yaml | ✅ Complete | domain-specific (voorkeursrecht, onteigening, etc.) |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete V2 | Ch4 ↔ Ch5 parallel, hub-and-spoke 4.3, voorbescherming |
+| ch16-afd16.1-v2-atomic.yaml | ✅ Complete V2 | houdbaarheid data, DSO |
+| ch16-afd16.2-v2-atomic.yaml | ✅ Complete V2 | advies vs instemming, reactieve interventie, Awb 3.5 coördinatie |
+| ch16-afd16.3-v2-atomic.yaml | ✅ Complete V2 | UOV-standaard, actio popularis, rechterlijke bekrachtiging |
+| ch16-afd16.4-v2-atomic.yaml | ✅ Complete V2 | dual-track MER, tiering, Commissie asymmetrie |
+| ch16-afd16.4a-v2-atomic.yaml | ✅ Complete V2 | passende beoordeling, Habitatrichtlijn art. 6 lid 3 |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete V2 | procedure duality, loket, lex silencio, termijn_structure |
+| ch16-afd16.6-16.6a-v2-atomic.yaml | ✅ Complete V2 | projectprocedure UOV, waterschap GS-goedkeuring, kostenverhaal aanhouding |
+| ch16-afd16.7-v2-atomic.yaml | ✅ Complete V2 | inwerkingtreding spectrum, uitgestelde inwerkingtreding, beroepsbundeling |
+| ch16-afd16.8-16.14-v2-atomic.yaml | ✅ Complete V2 | rechterlijke bekrachtiging onteigening, landinrichting, delegatiegrondslag |
 | ch2-afd2.1-atomic.yaml | ✅ Complete | subsidiariteit, doelgebondenheid, 19 belangen |
 | ch2-afd2.2-atomic.yaml | ✅ Complete | one-plan-principle, exclusiviteit |
 | ch2-afd2.3-atomic.yaml | ✅ Complete | omgevingswaarden, resultaat vs inspanning, stikstof |
@@ -1613,6 +1613,7 @@ Ch18 ←→ Ch2: 18.2 lid 6 → 2.3 (subsidiariteitsgrens)
 | ch2-afd2.5-atomic.yaml | ✅ Complete | instructieregels vs instructies, indeplaatstreding |
 | ch2-afd2.6-atomic.yaml | ✅ Complete | water, natuur, stikstofdepositieruimte |
 | **ch18-atomic.yaml** | ✅ Complete | wie verleent=handhaaft, omgevingsdiensten, boetecategorieën |
+| **ch3-v2-atomic.yaml** | ✅ Complete V2 | visie vs programma, programmatische aanpak, EU-doorwerking |
 
 ### CHAPTER 18 COMPLETE
 
@@ -1637,6 +1638,135 @@ The extraction of Ch2, Ch4, Ch5, Ch16, and Ch18 confirms a **STRUCTURAL PATTERN*
 | Ch18 | 18.2 | B&W | AMvB kan afwijken (lid 6) |
 
 **Navigation implication**: Always start at default, check for explicit exceptions.
+
+---
+
+## AFDELING 5.2 V2 - PROJECTPROCEDURE (Extraction 2026-01-29)
+
+### Structure Overview
+
+| Paragraaf | Articles | Function | Key Pattern |
+|-----------|----------|----------|-------------|
+| **5.2.1** | 5.44-5.46 | Algemene bepalingen | Bevoegdheid hiërarchie, verplichte projecten |
+| **5.2.2** | 5.47-5.50 | Voornemen, verkenning, voorkeursbeslissing | Procedurefasen |
+| **5.2.3** | 5.51-5.54 | Projectbesluit | Integraal besluit, doorbreking |
+| **5.2.4** | 5.55 | Gemeentelijke projecten | Via omgevingsplan route |
+
+### Key Discovery: Bevoegdheid Hiërarchie (Art. 5.44-5.44b)
+
+```
+Projectbesluit bevoegdheid:
+├── Waterschap: ALLEEN watertaken (art. 2.17)
+├── GS: provinciaal belang (subsidiariteitstoets art. 2.3)
+└── Minister: nationaal belang (+ BZK overeenstemming)
+    │
+    └── BZK overeenstemming NIET vereist voor:
+        ├── Uitwerking (art. 5.54)
+        ├── Wijziging
+        └── Aangewezen categorieën (ministeriële regeling)
+
+VOORRANGSREGELS (art. 5.44a):
+├── Bij conflict: "hoofdlocatie" bepaalt
+├── GS + waterschap → GS wint
+└── Rijk + GS/waterschap → Rijk wint
+```
+
+**CRITICAL**: Gemeente kan GEEN projectbesluit nemen - alleen omgevingsplanroute (art. 5.55)
+
+### Verplichte Projectbesluiten (Art. 5.46)
+
+| Categorie | Bevoegd gezag | Voorbeelden |
+|-----------|---------------|-------------|
+| Hoofdinfrastructuur | Minister I&W | Autowegen, spoorwegen, vaarwegen |
+| Primaire waterkeringen (Rijk) | Minister I&W | Rijkswaterkeringen |
+| Primaire waterkeringen (overig) | Waterschap | Waterschapskeringen |
+
+### Procedurele Fasen (§ 5.2.2)
+
+```
+Art. 5.47 VOORNEMEN
+    │   └── Participatie: iedereen mag oplossingen voordragen
+    ▼
+Art. 5.48 VERKENNING
+    │   └── Second opinion recht via onafhankelijke deskundige
+    ▼
+Art. 5.49 VOORKEURSBESLISSING (optioneel)
+    │   └── Uitkomsten: project / geen project / combinatie / niets
+    ▼
+Art. 5.51-5.54 PROJECTBESLUIT
+        └── Integraal besluit
+
+SNELROUTE (art. 5.50):
+├── Uitwerking projectbesluit → skip fasen 1-3
+└── Wijziging projectbesluit → skip fasen 1-3
+```
+
+### INTEGRAAL BESLUIT Pattern (Art. 5.52)
+
+**Het projectbesluit combineert meerdere functies in één besluit:**
+
+| Lid | Functie | Karakter |
+|-----|---------|----------|
+| 1 | Wijzigt omgevingsplan | ALTIJD |
+| 2a | Geldt als omgevingsvergunning | INDIEN BEPAALD |
+| 2b | Geldt als ander aangewezen besluit | VIA AMvB |
+
+**Implicatie**: één besluit, één procedure, één rechtsbescherming
+
+### DOORBREKING Mechanismen (Art. 5.53, 5.53a)
+
+```
+DOORBREKING LAGER NIVEAU (art. 5.53 lid 3-4):
+├── GS kan opzij zetten:
+│   ├── Gemeente regels (behalve omgevingsplan)
+│   └── Waterschap regels
+└── Minister kan opzij zetten:
+    ├── Gemeente regels
+    ├── Provincie regels
+    └── Waterschap regels
+
+VOORWAARDE: "onevenredige belemmering" + "dringende redenen"
+
+BESCHERMING HOGER NIVEAU (art. 5.53a):
+├── Waterschap mag Rijksprojectbesluit niet belemmeren
+└── GS mag Rijksprojectbesluit niet belemmeren
+    │
+    UITZONDERING: als instructieregel/instructie het vergt
+```
+
+### INDEPLAATSTREDING (Art. 5.45a)
+
+**Sterkste coördinatie-instrument:**
+
+| Coördinator | Kan vervangen | Triggers |
+|-------------|---------------|----------|
+| GS | Alle behalve Rijk | Niet-tijdig / belemmerend besluit |
+| Minister | ALLE organen | Niet-tijdig / belemmerend besluit |
+
+**Sterker dan instructie (art. 2.34)**: directe vervanging, geen opdracht
+
+### Gemeentelijke Route (Art. 5.55)
+
+```
+Gemeente kan GEEN projectbesluit, MAAR:
+    │
+    └── Omgevingsplanwijziging met:
+        ├── Overeenkomstige toepassing art. 5.45, 5.47-5.49, 5.51
+        └── Art. 16.87 (beroep in één instantie) wordt van toepassing
+
+VOORDEEL: versnelde rechtsbescherming bij grote gemeentelijke projecten
+```
+
+### Cross-Chapter Connections (Afd 5.2)
+
+```
+Afd 5.2 ←→ Ch2: 5.44 lid 3 → 2.3 (subsidiariteitstoets)
+Afd 5.2 ←→ Ch4: 5.53 lid 1 → 4.1, 4.2, §4.1.2, §4.3.1 (beoordelingsregels plan)
+Afd 5.2 ←→ Afd 5.1: 5.53 lid 2 → §5.1.3-5.1.5 (beoordelingsregels vergunning)
+Afd 5.2 ←→ Ch16: 5.45 → 16.7 (coördinatieregeling)
+Afd 5.2 ←→ Ch16: 5.55 → 16.87 (beroep in één instantie)
+Afd 5.2 ←→ Afd 2.5: 5.53a → 2.24, 2.34 (instructies kunnen doorwerken)
+```
 
 ---
 
@@ -1729,16 +1859,16 @@ Ch3 ←→ Ch20: 3.11 → 20.1 (monitoring → wijziging)
 | ch5-par5.1.1-atomic.yaml | ✅ Complete | verbod + tenzij/voor zover |
 | ch5-par5.1.2-atomic.yaml | ✅ Complete | default + tenzij decision tree |
 | ch5-par5.1.3-atomic.yaml | ✅ Complete | hub-and-spoke (5.18 → 5.20-5.29a) |
-| ch5-par5.1.4-5.1.5-atomic.yaml | ✅ Complete | imperatief vs facultatief |
-| ch5-afd5.2-atomic.yaml | ✅ Complete | projectbesluit = integraal |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete V2 | imperatief vs facultatief, lifecycle pattern |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete V2 | projectbesluit = integraal, hiërarchie, doorbreking |
 | ch4-afd4.1-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij |
-| ch4-afd4.2-4.3-atomic.yaml | ✅ Complete | Ch4 ↔ Ch5 parallel |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete V2 | Ch4 ↔ Ch5 parallel, hub-and-spoke 4.3, voorbescherming |
 | ch16-afd16.1-atomic.yaml | ✅ Complete | houdbaarheid data, DSO |
 | ch16-afd16.2-atomic.yaml | ✅ Complete | advies vs instemming, reactieve interventie |
 | ch16-afd16.3-atomic.yaml | ✅ Complete | UOV-standaard, actio popularis |
 | ch16-afd16.4-atomic.yaml | ✅ Complete | dual-track MER, tiering, Commissie asymmetrie |
 | ch16-afd16.4a-atomic.yaml | ✅ Complete | passende beoordeling, Habitatrichtlijn |
-| ch16-afd16.5-atomic.yaml | ✅ Complete | procedure duality, loket, lex silencio |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete V2 | procedure duality, loket, lex silencio, termijn_structure |
 | ch16-afd16.6-16.6a-atomic.yaml | ✅ Complete | projectprocedure, kostenverhaal |
 | ch16-afd16.7-atomic.yaml | ✅ Complete | inwerkingtreding spectrum |
 | ch16-afd16.8-16.14-atomic.yaml | ✅ Complete | domain-specific |
@@ -1749,7 +1879,12 @@ Ch3 ←→ Ch20: 3.11 → 20.1 (monitoring → wijziging)
 | ch2-afd2.5-atomic.yaml | ✅ Complete | instructieregels |
 | ch2-afd2.6-atomic.yaml | ✅ Complete | water, natuur, stikstofdepositieruimte |
 | ch18-atomic.yaml | ✅ Complete | wie verleent=handhaaft, omgevingsdiensten |
-| **ch3-atomic.yaml** | ✅ Complete | omgevingsvisie, programma's, programmatische aanpak, stikstofprogramma |
+| **ch3-v2-atomic.yaml** | ✅ Complete V2 | omgevingsvisie, programma's, programmatische aanpak, EU-doorwerking |
+| **ch5-par5.1.1-v2-atomic.yaml** | ✅ V2 | TENZIJ vs VOOR ZOVER, lid-level logica, handhavingshiërarchie |
+| **ch5-par5.1.2-v2-atomic.yaml** | ✅ V2 | subsidiariteitstrap, noodbevoegdheid, beslisboom |
+| **ch5-par5.1.3-v2-atomic.yaml** | ✅ V2 | hub-spoke beoordelingsregels, beschermde_belangen |
+| **ch4-afd4.1-v2-atomic.yaml** | ✅ V2 | 4.3 hub, 4.9 default+tenzij, Ch4↔Ch5 parallel, maatwerk-hiërarchie |
+| **ch16-par16.5-v2-atomic.yaml** | ✅ V2 | loketfunctie, default+tenzij procedure, lex silencio exclusie, termijnen |
 
 ### CHAPTER 3 COMPLETE
 
@@ -1757,8 +1892,8 @@ All 2 afdelingen of Chapter 3 (Strategische instrumenten) have been extracted:
 
 | Afdeling | Articles | Module | Key Patterns |
 |----------|----------|--------|--------------|
-| 3.1 | 3.1-3.3 | ch3-atomic | omgevingsvisie verplicht op elk niveau |
-| 3.2 | 3.4-3.19 | ch3-atomic | verplichte/onverplichte programma's, programmatische aanpak |
+| 3.1 | 3.1-3.3 | ch3-v2-atomic | omgevingsvisie verplicht op elk niveau |
+| 3.2 | 3.4-3.19 | ch3-v2-atomic | verplichte/onverplichte programma's, programmatische aanpak |
 
 ### Stikstof-Complex Complete
 
@@ -1776,42 +1911,114 @@ Art. 16.53c (passende beoordeling)
 
 ---
 
-## CHAPTER 1 - ALGEMENE BEPALINGEN (Extraction 2026-01-29)
+## CHAPTER 1 - ALGEMENE BEPALINGEN V2 (Extraction 2026-01-29)
 
 ### Structure Overview
 
 | Afdeling | Articles | Function | Key Pattern |
 |----------|----------|----------|-------------|
-| **1.1** | 1.1 | Begripsbepalingen | Bijlage-systematiek |
-| **1.2** | 1.2-1.5 | Toepassingsgebied en doelen | Dubbele doelstelling |
-| **1.3** | 1.6-1.8 | Zorg fysieke leefomgeving | Zorgplicht-hiërarchie |
+| **1.1** | 1.1 | Begripsbepalingen | Bijlage-systematiek, AMvB-doorwerking |
+| **1.2** | 1.2-1.5 | Toepassingsgebied en doelen | 10 componenten, duale doelstelling, EEZ-scope |
+| **1.3** | 1.6-1.8 | Zorg fysieke leefomgeving | Zorgplicht-hiërarchie met 3 niveaus |
 
-### Art. 1.2 - Fysieke leefomgeving (10 onderdelen)
+### Art. 1.2 - Fysieke leefomgeving (10 componenten - NIET LIMITATIEF)
 
-bouwwerken | infrastructuur | watersystemen | water | bodem | lucht | landschappen | natuur | cultureel erfgoed | werelderfgoed
+```
+"in ieder geval" = open lijst - rechter kan uitbreiden
 
-### Art. 1.3 - Dubbele doelstelling
+bouwwerken | infrastructuur | watersystemen | water | bodem
+lucht | landschappen | natuur | cultureel erfgoed | werelderfgoed
+```
 
-| Pool | Elementen |
-|------|-----------|
-| **a. BESCHERMEN** | veilig, gezond, omgevingskwaliteit, intrinsieke waarde natuur |
-| **b. BENUTTEN** | doelmatig beheren/gebruiken/ontwikkelen, maatschappelijke behoeften |
+**Lid 3 - Gevolgen** (ook NIET limitatief):
+- Wijzigen onderdelen/gebruik
+- Gebruik natuurlijke hulpbronnen
+- Emissies, hinder, risico's
+- **Nalaten** (ook inactiviteit is "activiteit"!)
 
-### Zorgplicht-hiërarchie
+**Lid 4 - Menselijke gevolgen**:
+- Alleen INDIRECT via fysieke leefomgeving
+- Geen directe gezondheidsregulering
 
-| Artikel | Type | Handhaafbaar |
-|---------|------|--------------|
-| 1.6 | Algemene zorgplicht | Indirect |
-| 1.7 | Voorkomen → beperken → stoppen | Direct |
-| 1.7a | Absoluut verbod (aanzienlijk) | Strafrecht |
+### Art. 1.3 - Duale doelstelling (GELIJKWAARDIG)
+
+| Pool | Elementen | Karakter |
+|------|-----------|----------|
+| **a. BESCHERMEN** | veilig, gezond, omgevingskwaliteit, intrinsieke waarde natuur | Ecocentrisch |
+| **b. BENUTTEN** | doelmatig beheren/gebruiken/ontwikkelen, maatschappelijke behoeften | Antropocentrisch |
+
+**"In onderlinge samenhang"** = beide doelen moeten worden afgewogen, geen wettelijke hiërarchie
+
+Kaderdoelen (GW art. 21): duurzame ontwikkeling, bewoonbaarheid, leefmilieu
+
+### Art. 1.4 - Lex Specialis
+
+```
+Omgevingswet NIET van toepassing als:
+├── Ander wet regelt uitputtend
+└── TENZIJ Omgevingswet expliciet anders bepaalt
+
+Voorbeelden andere wetten: Mijnbouwwet, Kernenergiewet
+```
+
+### Art. 1.5 - Geografische Scope
+
+| Gebied | Toepassing | Uitzonderingen |
+|--------|------------|----------------|
+| Nederland | Volledig | - |
+| EEZ | Ja | Art. 5.1 lid 1a/b, lid 2a (bouw/omgevingsplan) |
+| Buiten EEZ | Extraterritoriaal | Alleen stortingsactiviteiten + walvisregels |
+
+### Zorgplicht-hiërarchie (Afd 1.3) - V2 DIEPTE
+
+| Niveau | Artikel | Norm | Proportionaliteit | Handhaving |
+|--------|---------|------|-------------------|------------|
+| **ABSTRACT** | 1.6 | "voldoende zorg" | - | Niet direct |
+| **CONCREET** | 1.7 | voorkomen → beperken → stoppen | "redelijkerwijs" | Bestuursrecht |
+| **ABSOLUUT** | 1.7a | verbod aanzienlijke gevolgen | Geen | **Strafrecht** |
+
+**Art. 1.7 - Drietraps-cascade**:
+```
+TRAP 1 (a): VOORKOMEN
+    ↓ (kan niet)
+TRAP 2 (b): BEPERKEN of ongedaan maken
+    ↓ (onvoldoende)
+TRAP 3 (c): STOPPEN (activiteit achterwege laten)
+
+Trigger: "weet of redelijkerwijs kan vermoeden"
+         → objectieve kenbaarheidsnorm
+```
+
+**Art. 1.7a - EU Richtlijn Milieustrafrecht**:
+- NIEUW per 2024
+- Absoluut verbod - geen proportionaliteitstoets
+- AMvB definieert "aanzienlijk" + "gevallen"
+
+**Art. 1.8 - Safe Harbour Mechanisme**:
+
+| Lid | Situatie | Vereiste | Effect |
+|-----|----------|----------|--------|
+| 1 | Art. 1.6/1.7 | Specifieke regels + NALEVING | Voldaan aan zorgplicht |
+| 2 | Art. 1.7a | Specifieke regels (geen naleving nodig) | Art. 1.7a niet van toepassing |
+
+**KRITISCH verschil**: Lid 1 = compliance defence, Lid 2 = regulatory defence
+
+### Cross-Chapter Connections (Ch1)
+
+```
+Ch1 ←→ Bijlage: 1.1 → begripsbepalingen
+Ch1 ←→ Ch5: 1.5 → 5.1 (EEZ-uitzonderingen)
+Ch1 ←→ Ch2: 1.3 → 2.1 (doelgebondenheid bestuursorganen)
+Ch1 ←→ Ch18: 1.7a → 18.* (strafrechtelijke handhaving)
+```
 
 ---
 
-## Module Status (Updated with Ch1)
+## Module Status (Updated with Ch1 V2)
 
 | Module | Status |
 |--------|--------|
-| **ch1-atomic.yaml** | ✅ Complete |
+| **ch1-v2-atomic.yaml** | ✅ Complete V2 |
 | ch2-afd2.1-2.6-atomic.yaml (6 files) | ✅ Complete |
 | ch3-atomic.yaml | ✅ Complete |
 | ch4-afd4.1-4.3-atomic.yaml (2 files) | ✅ Complete |
@@ -1927,9 +2134,9 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 
 | Module | Status |
 |--------|--------|
-| **ch1-atomic.yaml** | ✅ Complete |
+| **ch1-v2-atomic.yaml** | ✅ Complete V2 |
 | ch2-afd2.1-2.6-atomic.yaml (6 files) | ✅ Complete |
-| ch3-atomic.yaml | ✅ Complete |
+| ch3-v2-atomic.yaml | ✅ Complete V2 |
 | ch4-afd4.1-4.3-atomic.yaml (2 files) | ✅ Complete |
 | ch5-*.yaml (5 files) | ✅ Complete |
 | ch16-*.yaml (8 files) | ✅ Complete |
@@ -1937,6 +2144,181 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 | ch19-atomic.yaml | ✅ Complete |
 | ch20-atomic.yaml | ✅ Complete |
 | **ch22-ch23-atomic.yaml** | ✅ Complete |
+| **ch9-v2-atomic.yaml** | ✅ Complete V2 |
+| **ch10-v2-atomic.yaml** | ✅ Complete V2 |
+
+---
+
+## CHAPTER 10 - GEDOOGPLICHTEN V2 (Extraction 2026-01-29)
+
+### Structure Overview
+
+| Afdeling | Articles | Function | Key Pattern |
+|----------|----------|----------|-------------|
+| **10.1** | 10.1-10.1a | Algemene bepalingen | Begrippen, toegangsrecht |
+| **10.2** | 10.2-10.10j | Van rechtswege | Automatisch - geen beschikking |
+| **10.3** | 10.11-10.28 | Bij beschikking | Vier cumulatieve criteria |
+| **10.4** | 10.29 | Overig | Populatiebeheer |
+
+### Tweesporig Systeem
+
+```
+GEDOOGPLICHTEN:
+├── VAN RECHTSWEGE (Afd 10.2)
+│   └── Automatisch - geen besluit nodig
+│       ├── wegen/waterstaatswerken (10.2)
+│       ├── waterbeheer (10.3)
+│       ├── mijnbouw > 100m (10.9)
+│       ├── landinrichting (10.10c-10.10g)
+│       └── waterstoftransport (10.10i)
+│
+└── BIJ BESCHIKKING (Afd 10.3)
+    └── Besluit vereist - art. 10.11 criteria
+        ├── infrastructuur/water (10.13)
+        ├── energie/mijnbouw (10.14)
+        ├── waterstaatswerken (10.17)
+        └── vangnet (10.21)
+```
+
+### Art. 10.11 - Vier Cumulatieve Criteria
+
+| Criterium | Inhoud |
+|-----------|--------|
+| **a. Noodzaak** | Gebruik onroerende zaak vereist |
+| **b. Onderhandeling** | Redelijke poging gefaald |
+| **c. Proportionaliteit** | Minimale belemmering |
+| **d. Subsidiariteit** | Onteigening niet gerechtvaardigd |
+
+**KRITISCH**: Alle vier cumulatief vereist. Als belangen onteigening vorderen → Ch11, niet Ch10.
+
+### Bevoegdheidsverdeling
+
+| Bevoegd gezag | Werken |
+|---------------|--------|
+| **Minister I&W** | Spoor, drinkwater, energie, mijnbouw, vangnet |
+| **Minister OCW** | Archeologie |
+| **Minister Defensie** | Defensiewerken |
+| **Waterschap** | Waterstaatswerken |
+| **B&W** | Bodem, stortplaatsen |
+| **GS** | Ontgrondingen provinciaal |
+
+### Informatieplicht Termijnen
+
+| Termijn | Situatie |
+|---------|----------|
+| **48 uur** | Wegen/water (10.4), populatiebeheer (10.29) |
+| **4 weken** | N2000 maatregelen (10.10b) |
+| **4 dagen** | Ontwerpvoorbereiding (10.10j) |
+| **Geen** | Spoedeisend |
+
+### Key Discovery: Lichter dan Onteigening
+
+```
+Belangen rechthebbende:
+├── Vorderen NIET onteigening → GEDOOGPLICHT (Ch10)
+│   └── Dulden gebruik, eigendom blijft
+│
+└── Vorderen WEL onteigening → ONTEIGENING (Ch11)
+    └── Eigendomsovergang
+```
+
+### Cross-Chapter Connections
+
+```
+Ch10 ←→ Ch5: 10.13 → 5.46 (projectbesluit als grondslag)
+Ch10 ←→ Ch11: 10.11d → onteigening als zwaardere optie
+Ch10 ←→ Ch15: gedoogplicht → schadevergoeding
+Ch10 ←→ Ch16: procedure gedoogplichtbeschikking
+```
+
+---
+
+## CHAPTER 9 - VOORKEURSRECHT V2 (Extraction 2026-01-29)
+
+### Structure Overview
+
+| Afdeling | Articles | Function | Key Pattern |
+|----------|----------|----------|-------------|
+| **9.1** | 9.1-9.5 | Vestiging en gelding | Drie-niveau hiërarchie, grondslag-afhankelijke duur |
+| **9.2** | 9.6-9.22 | Vervreemding na vestiging | Aanbiedingsplicht, uitzonderingen, procedure |
+
+### Bevoegdheid Hiërarchie
+
+```
+VESTIGING:                    UITVOERING:
+├── Gemeente: gemeenteraad    ├── Gemeente: B&W
+├── Provincie: PS             ├── Provincie: GS
+└── Rijk: Minister BZK        └── Rijk: Minister BZK
+
+EXCLUSIVITEIT (art. 9.2):
+Rijk > Provincie > Gemeente
+- Hoger niveau blokkeert lager
+- Hoger niveau doet lager vervallen
+```
+
+### Grondslag-Geldingsduur Matrix
+
+| Grondslag | Basis | Maximum | Upgrade |
+|-----------|-------|---------|---------|
+| **c. Beschikking** | 3 jaar | 3 jaar | → b of a |
+| **b. Visie/programma** | 3 jaar | 3 jaar | → a |
+| **a. Omgevingsplan** | 5 jaar | 10 jaar | +5 verlenging |
+| **Voorlopig (lid 2)** | 3 maanden | 3 maanden | → definitief |
+
+### Procedure bij Vervreemding
+
+```
+Art. 9.7: AANBIEDINGSPLICHT (hoofdregel)
+        ↓
+Art. 9.12: Uitnodiging tot onderhandeling
+        ↓
+Art. 9.13: BG beslist binnen 6 weken
+        ↓
+    ┌───┴───┐
+    ↓       ↓
+BEREID   NIET BEREID / TERMIJN
+    ↓           ↓
+Onderhandeling  Vrije vervreemding 3 jaar
+    ↓           (of verval bij 5+ jaar plan)
+Art. 9.16: Prijsprocedure rechtbank
+```
+
+### Uitzonderingen op Aanbiedingsplicht (art. 9.8)
+
+| Type | Situatie |
+|------|----------|
+| Familie | Echtgenoot, partner, bloed-/aanverwanten tot 2e graad, pleegkind |
+| Erfrecht | Boedelverdeling, testament |
+| Overheid | Verkoop aan gemeente/provincie/Staat/aangewezen rechtspersoon |
+| Gedwongen | Executie, rechterlijk bevel |
+| Pachter | Bestaand voorkeursrecht pachter |
+| Contract | Ingeschreven overeenkomst van voor beschikking |
+| Hardheid | Gewichtige redenen (art. 9.10) |
+
+### Eigenaarsbescherming
+
+| Recht | Artikel | Situatie |
+|-------|---------|----------|
+| **Prijsvaststelling** | 9.16 | Impasse in onderhandeling → rechtbank |
+| **Gedwongen koop** | 9.18 | Persoonlijke omstandigheden → overheid moet kopen |
+| **Vrije vervreemding** | 9.14, 9.17 | Na weigering/termijnoverschrijding → 3 jaar vrij |
+
+### Anti-Ontwijking
+
+| Mechanisme | Artikel | Werking |
+|------------|---------|---------|
+| **Nietigheid** | 9.22 | Frauduleuze transacties kunnen nietig worden verklaard |
+| **Notaris poortwachter** | 9.21 | Verklaring vereist voor inschrijving kadaster |
+| **Cooldown** | 9.3 | 2 jaar wachttijd na verval voor hervestiging |
+
+### Cross-Chapter Connections
+
+```
+Ch9 ←→ Ch16: 9.3 → 16.82a (inschrijvingstermijn)
+Ch9 ←→ Ch16: 9.20 → 16.123 (prijsvaststelling)
+Ch9 ←→ Ch2: 9.1 → omgevingsplan/visie (grondslag)
+Ch9 ←→ Ch3: 9.1 → programma (grondslag)
+```
 
 ---
 
@@ -2053,9 +2435,9 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 |---------|-------|----------|----------|
 | **Ch8** | Populatiebeheer, schadebestrijding en jacht | 8.1-8.5 | Fauna management |
 | **Ch9** | Voorkeursrecht | 9.1-9.22 | Preferential purchase rights |
-| **Ch10** | Gedoogplichten | 10.1-10.30 | Toleration obligations |
-| **Ch11** | Landinrichting | 11.1-11.97 | Land consolidation |
-| **Ch12** | Onteigening | 12.1-12.41 | Expropriation |
+| **Ch10** | Gedoogplichten | 10.1-10.29 | Toleration obligations |
+| **Ch11** | Onteigening | 11.1-11.21 | Expropriation |
+| **Ch12** | Landinrichting | 12.1-12.82 | Land consolidation |
 
 ### Instrument Hierarchy (licht → zwaar)
 
@@ -2063,8 +2445,8 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 |---|------------|--------|----------|
 | 1 | **Voorkeursrecht** (Ch9) | Overheid krijgt eerste koopoptie | blijft bij eigenaar |
 | 2 | **Gedoogplicht** (Ch10) | Eigenaar moet activiteit toestaan | blijft bij eigenaar |
-| 3 | **Landinrichting** (Ch11) | Kavelruil ter verbetering inrichting | ruil tussen eigenaren |
-| 4 | **Onteigening** (Ch12) | Gedwongen eigendomsovergang | gaat naar overheid |
+| 3 | **Onteigening** (Ch11) | Gedwongen eigendomsovergang | gaat naar overheid |
+| 4 | **Landinrichting** (Ch12) | Kavelruil ter verbetering inrichting | ruil tussen eigenaren |
 
 ### Key Patterns
 
@@ -2072,9 +2454,9 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 
 **Art. 10.2 - Gedoogplichten van rechtswege**: Automatische gedoogplicht voor wegen, waterstaatswerken, nutsleidingen
 
-**Art. 12.2 - Onteigening grondslag**: Uitvoering omgevingsplan, omgevingsvisie, of projectbesluit
+**Art. 11.6 - Onteigening grondslag**: Planologische titel vereist (omgevingsplan/vergunning/projectbesluit)
 
-**Art. 12.30 - Volledige schadeloosstelling**: Waarde + waardevermindering overblijvende + bijkomende schade
+**Art. 11.5 - Drie criteria**: Onteigeningsbelang + noodzaak + urgentie (cumulatief)
 
 ---
 
@@ -2121,6 +2503,218 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 **Art. 15.7 - Normaal maatschappelijk risico**: 4% drempel voor waardevermindering onroerende zaak.
 
 **Art. 17.9 - Gemeentelijke adviescommissie**: Verplichte commissie voor rijksmonumenten (vervangt welstands- en monumentencommissie).
+
+---
+
+## V2 ATOMIC EXTRACTION SCHEMA (2026-01-29)
+
+### Schema Enhancement Rationale
+
+The v1 atomic extraction captured artikel structure but missed critical **legal logic** that determines how norms apply. V2 schema adds:
+
+| Enhancement | Purpose | Critical For |
+|-------------|---------|--------------|
+| `bron_path` | XML traceability | Source verification |
+| `lid-level logica` | Capture logic per lid | Complex articles like 5.1, 5.5 |
+| `conditie.type` | Distinguish TENZIJ vs VOOR ZOVER | Burden of proof determination |
+| `afsluiting` capture | Don't truncate closing text | Where conditions often appear |
+| `sub_onderdelen` | Nested lists | Preserve hierarchy |
+| `handhaving_categorie` | ZWAAR/MIDDEL/LICHT | Enforcement priority |
+
+### Critical Discovery: TENZIJ vs VOOR ZOVER
+
+**Discovered during Art. 5.1 v2 extraction** - This distinction is FUNDAMENTAL to understanding Dutch administrative law:
+
+| Keyword | Dutch | Default State | Legal Effect | Example |
+|---------|-------|---------------|--------------|---------|
+| **TENZIJ** | unless | Norm APPLIES | Exception REMOVES norm | Art. 5.1 lid 1: forbidden UNLESS AMvB exempts |
+| **VOOR ZOVER** | insofar as | Norm DOESN'T apply | Scope ACTIVATES norm | Art. 5.1 lid 2: forbidden FOR CASES WHERE AMvB designates |
+
+**Practical implications**:
+
+```
+TENZIJ (Art. 5.1 lid 1):
+├── DEFAULT: Activity is forbidden (vergunningplichtig)
+├── Burden: Initiator must prove exemption applies
+└── AMvB: Lists EXEMPTIONS (vrijstellingen)
+
+VOOR ZOVER (Art. 5.1 lid 2):
+├── DEFAULT: Activity is NOT forbidden (vergunningvrij)
+├── Burden: Government must designate specific cases
+└── AMvB: Lists DESIGNATED CASES (aanwijzingen)
+```
+
+**Schema capture**:
+```yaml
+conditie:
+  type: tenzij  # or voor_zover
+  effect: "AMvB kan gevallen VRIJSTELLEN"  # or AANWIJZEN
+  delegatie_richting: "wet → AMvB vrijstelling"
+default: "vergunningplichtig"
+uitzondering: "vrijgesteld indien AMvB aanwijst"
+```
+
+### Subsidiariteitstrap Pattern (from § 5.1.2)
+
+The v2 extraction revealed the exact **subsidiariteitstrap** (decentralization ladder):
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    SUBSIDIARITEITSTRAP                          │
+│                                                                 │
+│   Art. 5.8 (DEFAULT)                                            │
+│   ┌─────────────────────────────────────────────────────────┐   │
+│   │  B&W (gemeente) beslist op aanvraag                     │   │
+│   └─────────────────────────────────────────────────────────┘   │
+│              │                                                  │
+│              │ TENZIJ                                           │
+│              ▼                                                  │
+│   ┌─────────────────────────────────────────────────────────┐   │
+│   │  Art. 5.9: wateractiviteit                              │   │
+│   │  → dagelijks bestuur waterschap / GS / Minister         │   │
+│   └─────────────────────────────────────────────────────────┘   │
+│              │ TENZIJ                                           │
+│              ▼                                                  │
+│   ┌─────────────────────────────────────────────────────────┐   │
+│   │  Art. 5.10: provinciaal belang (AMvB aanwijst)          │   │
+│   │  → GS (grenzen art. 2.3 lid 2)                          │   │
+│   └─────────────────────────────────────────────────────────┘   │
+│              │ TENZIJ                                           │
+│              ▼                                                  │
+│   ┌─────────────────────────────────────────────────────────┐   │
+│   │  Art. 5.11: nationaal belang (AMvB aanwijst)            │   │
+│   │  → Minister (grenzen art. 2.3 lid 3)                    │   │
+│   └─────────────────────────────────────────────────────────┘   │
+│              │                                                  │
+│              │ + Art. 5.12: Meervoudige aanvraag               │
+│              │   → Hoogste niveau in aanvraag beslist          │
+│              │                                                  │
+│              │ + Art. 5.13: Continuïteitsprincipe              │
+│              │   → "Eens bevoegd, altijd bevoegd"              │
+│              │                                                  │
+│              │ + Art. 5.14: Grensoverschrijdend                │
+│              │   → Zwaartepunt bepaalt BG                      │
+│              │                                                  │
+│              │ + Art. 5.16: Noodbevoegdheid                    │
+│              │   → Minister I&W kan overnemen (nationale       │
+│              │     veiligheid, rampen, calamiteiten)           │
+│              │                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Key article**: Art. 2.3 (subsidiariteitsbeginsel) is referenced as boundary condition for exceptions.
+
+### Hub-Spoke Pattern: Beoordelingsregels (from § 5.1.3)
+
+Art. 5.18 functions as **central hub** with activity-specific **spokes**:
+
+```
+                         ┌─── 5.20 bouwactiviteit
+                         │    └─ veiligheid, gezondheid, duurzaamheid
+                         │
+                         ├─── 5.21 omgevingsplanactiviteit
+                         │    └─ toetsing aan omgevingsplan
+                         │
+                         ├─── 5.22 rijksmonumentenactiviteit
+                         │    └─ cultureel erfgoed belangen
+                         │
+          ┌──────────────┼─── 5.23 ontgrondingsactiviteit
+          │              │
+          │              ├─── 5.24 wateractiviteit
+    5.18 ─┤              │    └─ waterbeheer, ecologie
+   (HUB)  │              │
+          │              ├─── 5.26 milieubelastende activiteit
+          │              │    └─ BBT, effectbeoordeling
+          │              │
+          │              ├─── 5.27 mijnbouwlocatieactiviteit
+          │              │
+          │              ├─── 5.28 beperkingengebiedactiviteit
+          │              │
+          └──────────────┼─── 5.29 Natura 2000 / flora-fauna
+                         │    └─ passende beoordeling (ADC)
+                         │
+                         └─── 5.29a jachtgerelateerd
+```
+
+**Each spoke specifies**:
+- `beschermde_belangen`: What interests are protected
+- `bron_beoordelingsregels`: Where to find detailed rules (typically Bkl)
+- Link back to 5.18 as grondslag
+
+### Handhavingshiërarchie (from Art. 5.5)
+
+Art. 5.5 creates a three-tier enforcement system captured with `handhaving_categorie`:
+
+| Categorie | Lid | Protected Interests | Examples |
+|-----------|-----|---------------------|----------|
+| **ZWAAR** | 1 | veiligheid, gezondheid, milieu, waterkwaliteit, monumenten | Seveso, IPPC |
+| **MIDDEL** | 2 | overige activiteiten | Bouw, ontgronding, Natura 2000 |
+| **LICHT** | 3 | jacht | Jachtgeweer, valkeniers |
+
+**Practical use**: Determines enforcement priority and sanction severity under Ch18.
+
+### V2 Extraction Files Created
+
+| File | Paragraaf | Key V2 Enhancements |
+|------|-----------|---------------------|
+| `ch5-par5.1.1-v2-atomic.yaml` | § 5.1.1 | TENZIJ vs VOOR ZOVER at lid-level, handhavingshiërarchie |
+| `ch5-par5.1.2-v2-atomic.yaml` | § 5.1.2 | Subsidiariteitstrap with exact decision tree |
+| `ch5-par5.1.3-v2-atomic.yaml` | § 5.1.3 | Hub-spoke pattern, beschermde_belangen per activity |
+
+### Ch4 ↔ Ch5 Structural Parallel (from Afd 4.1 v2)
+
+The v2 extraction of Afdeling 4.1 confirms a **structural parallel** with Afdeling 5.1:
+
+| Chapter 4 (Regels) | Chapter 5 (Vergunning) | Function |
+|--------------------|------------------------|----------|
+| Art. 4.3 | Art. 5.1 | Activity list (HUB) |
+| Art. 4.9 | Art. 5.8 | Default: gemeente (TENZIJ) |
+| Art. 4.10 | Art. 5.9 | Water exception |
+| Art. 4.11 | Art. 5.10 | Province exception |
+| Art. 4.12 | Art. 5.11 | National exception |
+| Art. 4.13 | Art. 5.13 | Combination/continuity |
+| Art. 4.13a | Art. 5.16 | Flexibility (transfer) |
+
+**Activity list alignment**:
+```
+Art. 4.3 lid 1           Art. 5.1
+─────────────────        ─────────
+a. bouwactiviteit    →   lid 2a
+b. milieubelastend   →   lid 2b
+c. lozing            →   lid 2c
+d. wateronttrekking  →   lid 2d
+e. mijnbouw          →   lid 2e
+f. beperkingsgebied  →   lid 2f
+j. Natura 2000       →   lid 1e
+k. jacht/faunabeheer →   lid 1f-g
+```
+
+**Navigation implication**: For any activity, check BOTH:
+- Art. 4.3 → which rules apply (via Bal/Bkl/Bbl)
+- Art. 5.1 → is permit required
+
+Often the SAME bevoegd gezag handles both.
+
+### Navigation Implications from V2
+
+1. **Route by condition type**:
+   - TENZIJ → Check for exemptions in AMvB
+   - VOOR ZOVER → Check if case is designated in AMvB
+
+2. **Follow subsidiariteitstrap**:
+   - Always start at gemeente (5.8)
+   - Check explicit exceptions (5.9, 5.10, 5.11, 5.13)
+   - For multiple activities, apply 5.12 (highest level wins)
+
+3. **Use hub-spoke for assessment**:
+   - Identify activity type from 5.1
+   - Route to specific spoke article (5.20-5.29a)
+   - Apply beschermde_belangen from that spoke
+
+4. **Enforcement prioritization**:
+   - Map violation to handhaving_categorie
+   - ZWAAR → immediate action (Ch18)
+   - LICHT → proportional response
 
 ---
 
@@ -2211,3 +2805,1256 @@ Ch3 (bijsturen)  Ch19 (noodmaatregelen)
 | 23 | Slotbepalingen | Meta-regels | ✅ |
 
 **Extraction complete: 19 of 23 chapters (4 reserved/empty)**
+
+---
+
+## AFDELING 2.5 V2 EXTRACTION (2026-01-29)
+
+### Doorwerking van beleid - Policy Implementation Mechanisms
+
+Afdeling 2.5 implements the **intergovernmental hierarchy** (subsidiariteitstrap) through two distinct mechanisms:
+
+| § | Mechanism | Instrument | Character | Articles |
+|---|-----------|------------|-----------|----------|
+| **2.5.1** | Instructieregels | in verordening/AMvB | ALGEMEEN, vooraf | 2.22-2.32 |
+| **2.5.2** | Instructies | concreet besluit | INDIVIDUEEL, achteraf | 2.33-2.35 |
+| **2.5.3** | Sancties | indeplaatstreding/vernietiging | ULTIMUM REMEDIUM | 2.36-2.37 |
+
+### Critical Pattern: Instructieregels vs Instructies
+
+**§ 2.5.1 INSTRUCTIEREGELS** (algemene normstelling):
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Art. 2.22/2.24: GRONDSLAG                                      │
+│  ├─ Provincie (2.22) → gemeente/waterschap                      │
+│  └─ Rijk (2.24) → provincie/gemeente/waterschap                 │
+│                                                                 │
+│  Art. 2.23/2.25: INHOUD                                         │
+│  ├─ Verplichte onderwerpen (13 categorieën bij Rijk)            │
+│  ├─ Provinciaal/nationaal belang (begrenzing)                   │
+│  └─ Art. 2.23 lid 4: GEEN individuele opdrachten                │
+│                                                                 │
+│  Art. 2.26-2.31a: SECTORSPECIFIEK                               │
+│  ├─ Erfgoed, veiligheid, werelderfgoed                          │
+│  ├─ Luchthavens, geluid, zwemwater                              │
+│  └─ Stedelijk afvalwater, natuur (incl. stikstof!)              │
+│                                                                 │
+│  Art. 2.32: ONTHEFFING                                          │
+│  └─ Evenredigheidstoets: "onevenredig belemmerd"                │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**§ 2.5.2 INSTRUCTIES** (individuele sturing):
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Art. 2.33/2.34: GRONDSLAG                                      │
+│  ├─ GS → gemeenteraad/waterschapsbestuur (2.33)                 │
+│  └─ Minister → provincie/gemeente/waterschap (2.34)             │
+│                                                                 │
+│  Art. 2.35: TOEPASSING                                          │
+│  ├─ Lid 1: NIET voor herhaalde toepassing (→ instructieregels)  │
+│  └─ Lid 2: Belang moet openbaar zijn gemaakt                    │
+│                                                                 │
+│  SUBSIDIARITEIT: Art. 2.33 lid 4 / Art. 2.34 lid 6              │
+│  └─ Instructie NIET als Gemeentewet/Provinciewet/Waterschapswet │
+│     regulier toezicht mogelijk maakt                            │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Escalatieladder Interbestuurlijk Toezicht
+
+```
+Level 1: INSTRUCTIE (zacht)
+   ↓ geen gevolg binnen termijn
+Level 2: INDEPLAATSTREDING (art. 2.36)
+   ├─ GS treedt in de plaats van waterschap (lid 1)
+   └─ Minister treedt in de plaats van waterschap (lid 2)
+   ↓ achteraf onrechtmatig bevonden
+Level 3: VERNIETIGING (art. 2.37)
+   └─ Koninklijk besluit vernietigt waterschapsbesluit
+```
+
+**Let op**: Art. 2.36-2.37 gaan ALLEEN over waterschappen. Voor gemeente/provincie: Gemeentewet/Provinciewet.
+
+### Sectorale Verplichte Instructieregels (Art. 2.26-2.31a)
+
+| Artikel | Sector | Doel | EU-richtlijn |
+|---------|--------|------|--------------|
+| 2.26 | Cultureel erfgoed | rijksmonumenten, stads-/dorpsgezichten | - |
+| 2.27 | Externe veiligheid | aandachtsgebieden (Bkl 5.12-5.16) | Seveso |
+| 2.28 | Werelderfgoed | UNESCO-bescherming | - |
+| 2.29 | Luchthavens | Schiphol, regionale, militaire | Chicago |
+| 2.29a | Geluid | geluidproductieplafonds | - |
+| 2.30 | Zwemlocaties | aanwijzing, badseizoen | Zwemwaterrichtlijn |
+| 2.31 | Stedelijk afvalwater | openbare riolen | Richtlijn stedelijk afvalwater |
+| 2.31a | Natuur | N2000, soorten, **stikstofdepositie** | Vogel-/Habitatrichtlijn |
+
+**Kritiek**: Art. 2.31a lid 2 (stikstofdepositieruimte) is FACULTATIEF ("kunnen worden gesteld"), niet verplicht!
+
+### Art. 2.32 Ontheffingsmechanisme
+
+```yaml
+# Ontheffingspatroon
+DEFAULT: instructieregel geldt
+TENZIJ: ontheffing verleend
+
+# Wie verleent?
+provinciale_instructieregel:
+  verlener: gedeputeerde_staten
+  aanvrager: gemeente/waterschap
+
+rijks_instructieregel:
+  verlener: Minister (of GS bij provinciale locatiebepaling)
+  aanvrager: gemeente/waterschap/provincie
+
+# Criterium (art. 2.32 lid 5)
+toetsing: evenredigheid
+norm: "onevenredig belemmerd in verhouding tot belang"
+```
+
+### Navigation Routes (Afd 2.5)
+
+| Vraag | Entry Point | Route |
+|-------|-------------|-------|
+| "Hoe werkt provinciaal beleid door naar gemeenten?" | Art. 2.22 | → 2.23 (inhoud) → 2.32 (ontheffing) |
+| "Hoe werkt rijksbeleid door naar lagere overheden?" | Art. 2.24 | → 2.25 (inhoud) → 2.26-2.31a (specifiek) |
+| "Kan de provincie een gemeente een aanwijzing geven?" | Art. 2.33 | → 2.35 (begrenzingen) → evt. 2.36 (indeplaatstreding) |
+| "Is er ontheffing mogelijk van instructieregels?" | Art. 2.32 | → specifieke voorwaarden per lid |
+| "Wat als waterschap instructie niet opvolgt?" | Art. 2.36 | → indeplaatstreding, evt. → 2.37 vernietiging |
+
+### Cross-Chapter Connections
+
+```
+Art. 2.3 (subsidiariteit)
+    ↓ grenzen voor
+Art. 2.22/2.24 (instructieregels)
+    ↓ doorwerking naar
+Art. 4.1/4.2 (omgevingsverordening/omgevingsplan)
+    ↓ toepassing via
+Art. 5.8-5.11 (bevoegd gezag vergunning)
+    ↓ handhaving via
+Hoofdstuk 18 (handhavingsladder)
+```
+
+### V2 Extraction Files Summary
+
+| File | Version | Key Patterns |
+|------|---------|--------------|
+| `ch5-par5.1.1-v2-atomic.yaml` | V2 | TENZIJ vs VOOR ZOVER, handhavingshiërarchie |
+| `ch5-par5.1.2-v2-atomic.yaml` | V2 | Subsidiariteitstrap, beslisboom |
+| `ch5-par5.1.3-v2-atomic.yaml` | V2 | Hub-spoke beoordelingsregels |
+| `ch4-afd4.1-v2-atomic.yaml` | V2 | 4.3 hub, Ch4↔Ch5 parallel |
+| `ch16-par16.5-v2-atomic.yaml` | V2 | Loketfunctie, lex silencio exclusie |
+| **`ch2-afd2.5-v2-atomic.yaml`** | V2 | Instructieregels vs instructies, escalatieladder |
+| **`ch18-v2-atomic.yaml`** | V2 | WIE VERLEENT=WIE HANDHAAFT, boetecategorieën, omgevingsdiensten |
+
+---
+
+## CHAPTER 18 V2 EXTRACTION (2026-01-29)
+
+### Core Principle: "Wie Verleent = Wie Handhaaft"
+
+Art. 18.2 implements seamless accountability through direct coupling:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ACTIVITY WITH GENERAL RULES (§ 4.1.1)?                         │
+│  ├─ Art. 18.2 lid 1: BG from § 4.1.3 enforces                   │
+│  └─ Links to: Art. 4.9 (gemeente) / 4.10-4.12 (exceptions)      │
+│                                                                 │
+│  ACTIVITY WITH PERMIT REQUIREMENT (Ch5)?                        │
+│  ├─ Art. 18.2 lid 2: BG from § 5.1.2 enforces                   │
+│  └─ Links to: Art. 5.8 (gemeente) / 5.9-5.11 (exceptions)       │
+│                                                                 │
+│  DEFAULT (Art. 18.2 lid 5):                                     │
+│  └─ B&W is fallback enforcer                                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Enforcement Ladder (licht → zwaar)
+
+| Level | Instrument | Legal Basis | Character |
+|-------|------------|-------------|-----------|
+| 1 | Warning | informal | preventief |
+| 2 | Last onder dwangsom | Awb 5:32 | preventief |
+| 3 | Last onder bestuursdwang | Art. 18.4 | feitelijk |
+| 4 | Intrekking beschikking | Art. 18.10 | beëindiging |
+| 5 | Bestuurlijke boete | Art. 18.11-18.15 | punitief |
+| 6 | Strafrechtelijke vervolging | Art. 18.16 → OM | punitief |
+
+### Boete Categories by Sector
+
+| Article | Sector | Maximum | Sr Category |
+|---------|--------|---------|-------------|
+| 18.11 | Seveso-richtlijn | 6e cat. OR 10% omzet | ZWAAR |
+| 18.12 | Bouw/sloop | 2e cat. (→ 4e bij gevaar) | LICHT-MIDDEL |
+| 18.13 | Erfgoed | 5e cat. | MIDDEL |
+| 18.14 | Luchthaven | 5e cat. | MIDDEL |
+| 18.15 | Spoor | via Spoorwegwet | via sectorwet |
+| 18.15a | Flora/fauna handel | 1e-2e cat. | LICHT |
+
+### Omgevingsdiensten (Art. 18.21-18.24)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  VERPLICHTE INSTELLING (Art. 18.21)                             │
+│  ├─ GS + B&W MOETEN omgevingsdienst instellen                   │
+│  ├─ Territoir: veiligheidsregio of aangewezen kring             │
+│  └─ Rechtsvorm: openbaar lichaam via Wgr                        │
+│                                                                 │
+│  TAKEN (Art. 18.22)                                             │
+│  ├─ BASISTAKENPAKKET: alle omgevingsdiensten (bij AMvB)         │
+│  └─ BIJZONDERE TAKEN: speciale diensten voor:                   │
+│      ├─ IPPC categorie 4 installaties                           │
+│      └─ Seveso-inrichtingen                                     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Three-Pillar Consistency
+
+| Domain | Default Gemeente | Exception Pattern |
+|--------|------------------|-------------------|
+| Rules (Ch4) | Art. 4.9 B&W | Art. 4.10-4.12 TENZIJ |
+| Permits (Ch5) | Art. 5.8 B&W | Art. 5.9-5.11 TENZIJ |
+| Enforcement (Ch18) | Art. 18.2 lid 5 B&W | Art. 18.2 lid 1-4 TENZIJ |
+
+---
+
+## V2 SCHEMA UPDATE: DOORWERKING PATTERNS
+
+Based on Afd 2.5 extraction, add to schema:
+
+```yaml
+# For doorwerking-related articles
+doorwerking:
+  type: instructieregel | instructie
+  richting: rijk_naar_provincie | rijk_naar_gemeente | rijk_naar_waterschap | provincie_naar_gemeente | provincie_naar_waterschap
+  karakter: algemeen | individueel
+  instrument_doel: omgevingsverordening | omgevingsplan | waterschapsverordening | projectbesluit
+
+# For sanctie articles
+interbestuurlijk_toezicht:
+  niveau: instructie | indeplaatstreding | vernietiging
+  actor: gedeputeerde_staten | minister | kroon
+  target: gemeente | waterschap | provincie
+
+# For sectorale verplichtingen
+sectorale_verplichting:
+  sector: erfgoed | veiligheid | werelderfgoed | luchthavens | geluid | zwemwater | afvalwater | natuur
+  eu_implementatie: boolean
+  richtlijn: string  # if applicable
+```
+
+---
+
+## CHAPTER 11 V2 EXTRACTION: ONTEIGENING (2026-01-29)
+
+### Grondbeleid Trilogy Complete
+
+Chapter 11 completes the "grondbeleid drieluik" (land policy triptych):
+
+| Instrument | Chapter | Karakter | Eigendom | Ingrijpendheid |
+|------------|---------|----------|----------|----------------|
+| **Voorkeursrecht** | Ch9 | Vrijwillige verkoop, overheid eerste koper | blijft bij eigenaar | LICHT |
+| **Gedoogplicht** | Ch10 | Eigenaar moet activiteit dulden | blijft bij eigenaar | MIDDEL |
+| **Onteigening** | Ch11 | Gedwongen eigendomsovergang | gaat naar overheid | ZWAAR |
+
+### Core Structure: 5 Afdelingen
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  AFDELING 11.1: ALGEMENE BEPALINGEN                             │
+│  ├─ Art. 11.1: Grondwettelijke basis (art. 14 Gw)               │
+│  └─ Art. 11.2: Wie kan onteigenaar zijn (5 categorieën)         │
+│                                                                 │
+│  AFDELING 11.2: ONTEIGENINGSBESCHIKKING                         │
+│  ├─ Art. 11.3: Aanwijzing te onteigenen zaken                   │
+│  ├─ Art. 11.4: Bevoegd gezag (gemeenteraad/waterschap/PS/Min)   │
+│  ├─ Art. 11.5: DRIE CUMULATIEVE CRITERIA ← kerntoets            │
+│  │   ├─ (a) onteigeningsbelang → Art. 11.6 (planologische titel)│
+│  │   ├─ (b) noodzaak → Art. 11.7-11.10 (minnelijk/zelfrealisatie)│
+│  │   └─ (c) urgentie → Art. 11.11 (3-jaar-termijn)              │
+│  └─ Art. 11.12-11.13: Verval en procedurele uitsluiting         │
+│                                                                 │
+│  AFDELING 11.3: SCHADELOOSSTELLING                              │
+│  └─ Art. 11.14: Route naar afd. 15.3 (civiele rechter)          │
+│                                                                 │
+│  AFDELING 11.4: ONTEIGENINGSAKTE                                │
+│  ├─ Art. 11.15-11.17: Verlijden en ondertekening                │
+│  ├─ Art. 11.18: ZUIVERENDE WERKING (vrij van alle lasten)       │
+│  └─ Art. 11.19-11.20: Lasten en inbezitstelling                 │
+│                                                                 │
+│  AFDELING 11.5: NIET VERWEZENLIJKEN                             │
+│  └─ Art. 11.21: TERUGLEVERING bij niet-verwezenlijking          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Critical Pattern: Criteria Triade (Art. 11.5)
+
+Art. 11.5 is the **central gatekeeper** for all expropriation:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              DRIE CUMULATIEVE CRITERIA (Art. 11.5)              │
+│                                                                 │
+│  1. ONTEIGENINGSBELANG (Art. 11.6)                              │
+│     ├─ Omgevingsplan (onder uitsluiting bestaand gebruik)       │
+│     ├─ Buitenplanse omgevingsvergunning, OF                     │
+│     └─ Projectbesluit                                           │
+│     → PLANOLOGISCHE TITEL VEREIST                               │
+│                                                                 │
+│  2. NOODZAAK (Art. 11.7-11.10)                                  │
+│     ├─ Minnelijke verwerving geprobeerd? (lid 1)                │
+│     ├─ Zelfrealisatie door eigenaar? (lid 2)                    │
+│     │   └─ Anti-misbruik: vervalt na 3 jaar non-realisatie      │
+│     ├─ Openbare orde: eerst Woningwet-bevoegdheden (11.8)       │
+│     ├─ Opiumwet: eerst Woningwet-bevoegdheden (11.9)            │
+│     └─ Leefbaarheid: eerst Woningwet-bevoegdheden (11.10)       │
+│     → ULTIMUM REMEDIUM VERPLICHT                                │
+│                                                                 │
+│  3. URGENTIE (Art. 11.11)                                       │
+│     └─ Binnen 3 jaar na inschrijving akte: begin verwezenlijking│
+│     → GEEN VOORRAAD-ONTEIGENING                                 │
+│                                                                 │
+│  ALLE DRIE moeten voldaan zijn!                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Eigenaarsbescherming Mechanismen
+
+| Mechanisme | Artikel | Werking |
+|------------|---------|---------|
+| **Zelfrealisatierecht** | 11.7 lid 2 | Eigenaar kan zelf bestemming verwezenlijken |
+| **Volledige gebouw/erf** | 11.3 lid 2 | Bij gedeeltelijke onteigening: uitbreiding op verzoek |
+| **Betaling vooraf** | 11.16 lid 1c | Geen overdracht zonder schadeloosstelling |
+| **Teruglevering** | 11.21 | Bij niet-verwezenlijking: terugkoop of extra schadevergoeding |
+
+### Termijnensysteem (3-jaar patroon)
+
+```
+VOORAF (besluitvorming):
+├─ Art. 11.7 lid 3: Zelfrealisatierecht vervalt na 3 jaar non-realisatie
+├─ Art. 11.11: Urgentie ontbreekt als niet binnen 3 jaar begonnen
+└─ Art. 11.12: Beschikking vervalt na 12 maanden zonder verzoek rechtbank
+
+ACHTERAF (uitvoering):
+├─ Art. 11.15: Verzoek verlijden binnen 2 maanden na voldoen voorwaarden
+├─ Art. 11.21 lid 1: Aanbod teruglevering als niet binnen 3 jaar begonnen
+└─ Art. 11.21 lid 4: Keuzerecht onteigende als geen aanbod binnen 3 maanden
+```
+
+### Zuiverende Werking (Art. 11.18)
+
+```
+INSCHRIJVING ONTEIGENINGSAKTE
+         │
+         ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  EIGENDOM VRIJ VAN ALLE LASTEN EN RECHTEN                       │
+│  ├─ Hypotheken: vervallen (ambtshalve doorroyement)             │
+│  ├─ Beslagen: vervallen (ambtshalve doorroyement)               │
+│  ├─ Beperkte rechten: vervallen                                 │
+│  │                                                              │
+│  └─ UITZONDERING: Erfdienstbaarheden (mits in akte opgenomen)   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Bevoegdheidsverdeling (Art. 11.4)
+
+| Bevoegd Gezag | Bestuursorgaan | Begrenzing |
+|---------------|----------------|------------|
+| **Gemeente** | gemeenteraad | geen (default) |
+| **Waterschap** | algemeen bestuur | alleen voor waterschapstaken (art. 2.17) |
+| **Provincie** | provinciale staten | provinciaal belang OF doelmatigheid |
+| **Rijk** | Minister die het aangaat | nationaal belang OF doelmatigheid |
+
+### Drie Rechtelijke Sporen
+
+```
+SPOOR 1: BESTUURSRECHTER (beschikking)
+├─ Bekrachtiging onteigeningsbeschikking
+└─ Hoger beroep: ABRvS
+
+SPOOR 2: CIVIELE RECHTER (schadeloosstelling)
+├─ Verzoek vaststelling schadeloosstelling (art. 11.14)
+└─ Procedure: afdeling 15.3
+
+SPOOR 3: VOORZIENINGENRECHTER (executie)
+├─ Inbezitstelling na inschrijving akte (art. 11.20)
+└─ Geen hogere voorziening!
+```
+
+### Navigation Routes
+
+| Vraag | Entry Point | Route |
+|-------|-------------|-------|
+| "Mag dit onteigend worden?" | Art. 11.5 | → 11.6 (grondslag) → 11.7-11.11 (noodzaak/urgentie) |
+| "Wie mag onteigenen?" | Art. 11.4 | → check bestuurslaag en begrenzing |
+| "Kan de eigenaar zelf realiseren?" | Art. 11.7 lid 2 | → check criteria → evt. 11.7 lid 3 (anti-misbruik) |
+| "Wanneer krijg ik schadeloosstelling?" | Art. 11.14 | → 11.16 (voorwaarden) → afd. 15.3 |
+| "Wat als onteigenaar niet verwezenlijkt?" | Art. 11.21 | → teruglevering OF extra schadevergoeding |
+
+### Cross-Chapter Connections
+
+```
+Ch9 (Voorkeursrecht) ──────────────┐
+                                   │
+Ch10 (Gedoogplicht) ───────────────┼──► Ch11 (Onteigening)
+                                   │         │
+Grondwet art. 14 ──────────────────┘         │
+                                             ▼
+                                       Ch15 afd. 15.3
+                                    (Schadeloosstelling)
+```
+
+### Module Status Update
+
+| Module | Status |
+|--------|--------|
+| ch1-v2-atomic.yaml | ✅ Complete |
+| ch9-v2-atomic.yaml | ✅ Complete |
+| ch10-v2-atomic.yaml | ✅ Complete |
+| ch11-v2-atomic.yaml | ✅ Complete |
+| ch12-v2-atomic.yaml | ✅ Complete |
+| ch8-v2-atomic.yaml | ✅ Complete |
+| ch13-v2-atomic.yaml | ✅ Complete |
+| ch15-v2-atomic.yaml | ✅ Complete |
+| ch17-v2-atomic.yaml | ✅ Complete |
+| ch19-v2-atomic.yaml | ✅ Complete |
+| **ch20-v2-atomic.yaml** | ✅ Complete |
+| **ch22-v2-atomic.yaml** | ✅ Complete |
+| **ch23-v2-atomic.yaml** | ✅ Complete |
+
+---
+
+## CHAPTER 12 V2 EXTRACTION: LANDINRICHTING (2026-01-29)
+
+### Instrument Positioning in Grondbeleid
+
+| # | Instrument | Chapter | Karakter | Effect |
+|---|------------|---------|----------|--------|
+| 1 | Voorkeursrecht | Ch9 | Aankoopprioriteit | Eigendom blijft |
+| 2 | Gedoogplicht | Ch10 | Toleratieplicht | Eigendom blijft |
+| 3 | **Landinrichting** | **Ch12** | **Collectieve herordening** | **Ruil, geen afname** |
+| 4 | Onteigening | Ch11 | Eigendomsontneming | Eigendom gaat over |
+
+### Core Structure: 6 Afdelingen
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  AFDELING 12.1: ALGEMENE BEPALINGEN                             │
+│  ├─ § 12.1.1: Begripsbepalingen (rechthebbende, zakelijk ger.)  │
+│  └─ § 12.1.2: Algemene bepalingen landinrichting                │
+│                                                                 │
+│  AFDELING 12.2: INRICHTINGSBESLUIT                              │
+│  ├─ § 12.2.1: Vaststelling en inhoud                            │
+│  └─ § 12.2.2: Toedeling eigendom/beheer/onderhoud               │
+│                                                                 │
+│  AFDELING 12.3: UITVOERING VAN LANDINRICHTING                   │
+│  ├─ § 12.3.1: Algemene bepalingen                               │
+│  └─ § 12.3.2: Verrichten werkzaamheden                          │
+│                                                                 │
+│  AFDELING 12.4: HERVERKAVELING ← KERN                           │
+│  ├─ § 12.4.1: Algemene bepalingen                               │
+│  ├─ § 12.4.2: Het ruilbesluit (12.22-12.35)                     │
+│  └─ § 12.4.3: Besluit geldelijke regelingen (12.36-12.41)       │
+│                                                                 │
+│  AFDELING 12.5: OVERIGE BEPALINGEN                              │
+│                                                                 │
+│  AFDELING 12.6: KAVELRUIL ← VRIJWILLIG ALTERNATIEF              │
+│  └─ Art. 12.44-12.47: Kavelruilovereenkomst                     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Critical Pattern: 5%-Korting (Art. 12.29)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  KORTING: COLLECTIEVE EIGENDOMSBIJDRAGE (Art. 12.29)            │
+│                                                                 │
+│  TOTALE OPPERVLAKTE HERVERKAVELINGSBLOK                         │
+│           │                                                     │
+│           ▼                                                     │
+│  MAX 5% VERMINDERD VOOR:                                        │
+│  ├─ (a) Openbare wegen en waterstaatswerken                     │
+│  ├─ (b) Samenhangende voorzieningen                             │
+│  ├─ (c) Natuur/landschap/erfgoed                                │
+│  └─ (d) Andere voorzieningen van openbaar nut                   │
+│           │                                                     │
+│           ▼                                                     │
+│  PROPORTIONELE VERDELING (Art. 12.30)                           │
+│  └─ Elke eigenaar levert evenredig percentage in                │
+│                                                                 │
+│  VOORDEEL T.O.V. ONTEIGENING:                                   │
+│  ├─ Geen volledige schadeloosstelling per perceel               │
+│  ├─ Collectieve lastenverdeling                                 │
+│  └─ Sneller en goedkoper                                        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Eigenaarsbescherming Triade (Art. 12.26, 12.30)
+
+| Bescherming | Artikel | Inhoud |
+|-------------|---------|--------|
+| **Aard behoud** | 12.26 lid 1 | Recht van dezelfde aard als inbreng |
+| **Hoedanigheid behoud** | 12.26 lid 2 | Gelijke hoedanigheid, gelijkwaardige gebruiksmogelijkheden |
+| **Oppervlakte behoud** | 12.30 | Gelijke oppervlakte minus proportionele korting |
+
+**Maximum inlevering**: Max 5% kleiner dan inbreng (art. 12.30 lid 3)
+
+### Vrijwillig vs Van Bovenaf
+
+| Instrument | Basis | Initiatief | Karakter |
+|------------|-------|------------|----------|
+| **Herverkaveling** | Afd. 12.4 | GS (van bovenaf) | Publiekrechtelijk |
+| **Kavelruil** | Afd. 12.6 | Eigenaren (vrijwillig) | Privaatrechtelijk |
+
+**Kavelruil vereisten** (art. 12.44):
+- Drie of meer eigenaren
+- Notariële akte
+- Inschrijving openbare registers
+- Medeondertekening hypotheekhouders/beslagleggers
+
+### Absolute Uitzonderingen
+
+| Object | Artikel | Effect |
+|--------|---------|--------|
+| **Begraafplaatsen** | 12.10 lid 1 | Geen wijziging rechten/gebruikstoestand |
+| **Militaire locaties** | 12.5 | Toestemming Minister Defensie vereist |
+| **Gebouwen** | 12.10 lid 2 | Toestemming eigenaar vereist |
+
+### Navigation Routes
+
+| Vraag | Entry Point | Route |
+|-------|-------------|-------|
+| "Wat is landinrichting?" | Art. 12.3 | → 12.4 (bevoegdheid) → 12.7 (inrichtingsbesluit) |
+| "Hoeveel mag ik kwijtraken?" | Art. 12.29 | → 12.30 (max 5% totaal) |
+| "Kan ik vrijwillig ruilen?" | Art. 12.44 | → 12.47 (landelijk gebied) |
+| "Wie is bevoegd?" | Art. 12.4/12.20 | → GS is bevoegd gezag |
+
+### Cross-Chapter Connections
+
+```
+Ch10 (Gedoogplichten) ──────► Art. 10.10c-10.10g
+                              (gedoogplichten landinrichting)
+                                      │
+                                      ▼
+                              Ch12 (Landinrichting)
+                                      │
+                                      ├──► Ch13 (Financiën)
+                                      │    (kostenverdeling)
+                                      │
+                                      └──► Ch16 (Procedures)
+                                           (§ 16.12.2 landinrichting)
+```
+
+---
+
+## CHAPTER 8 V2 EXTRACTION: POPULATIEBEHEER, SCHADEBESTRIJDING EN JACHT (2026-01-29)
+
+### Instrument Positioning in Domain-Specific Chapters
+
+| Chapter | Domain | Karakter | Bevoegd Gezag |
+|---------|--------|----------|---------------|
+| **Ch 8** | Fauna management | Provincie-centraal | GS/PS |
+| Ch 9 | Voorkeursrecht | Aankoopprioriteit | Gemeente |
+| Ch 10 | Gedoogplichten | Toleratieplicht | Diverse |
+| Ch 11 | Onteigening | Eigendomsontneming | Diverse |
+| Ch 12 | Landinrichting | Collectieve herordening | GS |
+
+### Core Structure: 5 Artikelen (Compact Chapter)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Art. 8.1: FAUNABEHEEREENHEDEN EN FAUNABEHEERPLANNEN            │
+│  ├─ Lid 1: Provinciale Staten stellen bij omgevingsverordening: │
+│  │   ├─ (a) grens van faunabeheereenheden                       │
+│  │   ├─ (b) vereisten aan samenstelling faunabeheereenheid      │
+│  │   └─ (c) vereisten aan inhoud faunabeheerplan                │
+│  ├─ Lid 2: Faunabeheereenheid stelt vast: faunabeheerplan       │
+│  │         TENZIJ omgevingsverordening dit aan PS opdraagt      │
+│  └─ Lid 3: Inwerkingtreding: na goedkeuring door GS             │
+│                                                                 │
+│  Art. 8.2: WILDBEHEEREENHEDEN (AANSLUITPLICHT)                  │
+│  ├─ Lid 1: PS stellen grens van wildbeheereenheden vast         │
+│  ├─ Lid 2: Jachthouder is VERPLICHT AANGESLOTEN bij wildbeheer  │
+│  │         → Conditie: voor gronden binnen grenzen              │
+│  └─ Lid 3: Wildbeheereenheden geven UITVOERING aan              │
+│            faunabeheerplan                                      │
+│                                                                 │
+│  Art. 8.3: DE JACHT ← LIMITATIEVE OPSOMMINGEN                   │
+│  ├─ Lid 1: JACHTHOUDER = wie gerechtigd is tot jagen, is één:   │
+│  │   ├─ (a) EIGENAAR: wie gebruik van jachtrecht niet verloren  │
+│  │   ├─ (b) GERECHTIGDE: via zakelijk gebruiksrecht             │
+│  │   ├─ (c) PACHTER: bij gemengde/verpachte landbouwbedrijven   │
+│  │   └─ (d) HUURDER: van jachtrecht door eigenaar               │
+│  ├─ Lid 2: BEPERKINGEN op jachtrecht:                           │
+│  │   ├─ (a) Terreinen ≤ 40 hectare: 1 jachthouder max           │
+│  │   └─ (b) Grotere terreinen: bij AMvB                         │
+│  ├─ Lid 3: JACHTWILD (limitatief):                              │
+│  │   haas, fazant, wilde eend, houtduif, konijn                 │
+│  └─ Lid 4: Regeling jachtseizoen bij AMvB                       │
+│                                                                 │
+│  Art. 8.4: AANSPRAKELIJKHEIDSVERZEKERING JACHTGEWEREN           │
+│  ├─ Lid 1: VERZEKERINGSPLICHT voor jachtgeweerhouder            │
+│  │         → EUR 1.000.000 per gebeurtenis                      │
+│  ├─ Lid 2: Polis bij door AFM toegelaten verzekeraar            │
+│  └─ Lid 3: DIRECT ACTION: benadeelde kan rechtstreeks van       │
+│            verzekeraar vorderen                                 │
+│                                                                 │
+│  Art. 8.5: AFPALINGSRECHT EENDENKOOIEN                          │
+│  └─ Historisch recht: afpaling op 1130 meter                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Critical Pattern: Provincie-Centrale Organisatie
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              PROVINCIALE REGIE (Art. 8.1-8.2)                   │
+│                                                                 │
+│  PROVINCIALE STATEN                                             │
+│  ├─ Stelt grenzen vast van:                                     │
+│  │   ├─ Faunabeheereenheden (art. 8.1 lid 1a)                   │
+│  │   └─ Wildbeheereenheden (art. 8.2 lid 1)                     │
+│  ├─ Bepaalt vereisten aan:                                      │
+│  │   ├─ Samenstelling faunabeheereenheid (art. 8.1 lid 1b)      │
+│  │   └─ Inhoud faunabeheerplan (art. 8.1 lid 1c)                │
+│  └─ Kan zelf faunabeheerplan vaststellen (art. 8.1 lid 2 TENZIJ)│
+│                                                                 │
+│  GEDEPUTEERDE STATEN                                            │
+│  └─ Keurt faunabeheerplan goed (art. 8.1 lid 3)                 │
+│                                                                 │
+│  FAUNABEHEEREENHEID                                             │
+│  └─ Stelt faunabeheerplan vast (art. 8.1 lid 2 default)         │
+│                                                                 │
+│  WILDBEHEEREENHEID                                              │
+│  └─ Voert faunabeheerplan uit (art. 8.2 lid 3)                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Limitatieve Opsommingen (Rechtszekerheid)
+
+| Subject | Artikel | Lijst |
+|---------|---------|-------|
+| **Jachtgerechtigden** | 8.3 lid 1 | Eigenaar, zakelijk gerechtigde, pachter, huurder |
+| **Jachtwild** | 8.3 lid 3 | Haas, fazant, wilde eend, houtduif, konijn |
+| **Beperkingen** | 8.3 lid 2 | ≤40 ha: 1 jachthouder; >40 ha: bij AMvB |
+
+**Juridische betekenis**: Gesloten lijsten - wat niet genoemd is, valt erbuiten.
+
+### Verzekeringsplicht met Direct Action (Art. 8.4)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  AANSPRAKELIJKHEIDSVERZEKERING (Art. 8.4)                       │
+│                                                                 │
+│  VERPLICHTING (lid 1):                                          │
+│  ├─ Wie: Jachtgeweerhouder                                      │
+│  ├─ Waarvoor: Schade aan personen en zaken                      │
+│  └─ Minimum: EUR 1.000.000 per gebeurtenis                      │
+│                                                                 │
+│  VERZEKERAAR (lid 2):                                           │
+│  └─ Door AFM toegelaten tot uitoefening bedrijf                 │
+│                                                                 │
+│  DIRECT ACTION (lid 3):                                         │
+│  ├─ Benadeelde kan RECHTSTREEKS vorderen van verzekeraar        │
+│  ├─ Geen omweg via jachtgeweerhouder nodig                      │
+│  └─ Gelijk aan WAM-systematiek in verkeersrecht                 │
+│                                                                 │
+│  PROCESSUELE POSITIE:                                           │
+│  └─ Benadeelde → rechtstreeks → verzekeraar                     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Historisch Recht: Afpalingsrecht (Art. 8.5)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  EENDENKOOIEN - AFPALINGSRECHT                                  │
+│                                                                 │
+│  GERECHTIGDE: Rechthebbende op eendenkooi                       │
+│                                                                 │
+│  RECHT: Afpaling (verbod jachtbedrijf rond kooi)                │
+│  AFSTAND: 1130 meter                                            │
+│                                                                 │
+│  HISTORISCHE OORSPRONG:                                         │
+│  ├─ Middeleeuwse kooiers                                        │
+│  └─ Bescherming tegen verstoring door nabije jacht              │
+│                                                                 │
+│  PRAKTISCHE WERKING:                                            │
+│  └─ Binnen 1130m van kooi mag geen jacht worden uitgeoefend     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Navigation Routes
+
+| Vraag | Entry Point | Route |
+|-------|-------------|-------|
+| "Wie mag jagen?" | Art. 8.3 lid 1 | → check categorie (a)-(d) |
+| "Op welke dieren mag gejaagd?" | Art. 8.3 lid 3 | → limitatieve lijst |
+| "Moet ik me aansluiten?" | Art. 8.2 lid 2 | → ja, als jachthouder binnen grenzen |
+| "Wie stelt faunabeheerplan vast?" | Art. 8.1 lid 2-3 | → faunabeheereenheid, tenzij PS; goedkeuring GS |
+| "Is jachtgeweer verzekerd?" | Art. 8.4 | → verplicht EUR 1M, direct action mogelijk |
+
+### Cross-Chapter Connections
+
+```
+Ch 5 (Vergunningen) ──────► Art. 5.1 lid 2
+                            (jacht activiteiten)
+                                   │
+                                   ▼
+                           Ch 8 (Jacht)
+                                   │
+                                   ├──► Bal (specifieke regels)
+                                   │
+                                   └──► Omgevingsverordening
+                                        (faunabeheereenheden)
+```
+
+### Schema Update: New Patterns from Ch8
+
+```yaml
+# For limitatieve opsommingen
+limitatieve_lijst:
+  type: jachtgerechtigden | jachtwild | andere
+  opsomming: [list of items]
+  juridisch_effect: gesloten_systeem
+
+# For verzekeringsverplichting
+verzekering:
+  plicht: boolean
+  minimum: EUR amount
+  direct_action: boolean
+  toezichthouder: AFM | DNB | other
+
+# For historische rechten
+historisch_recht:
+  type: afpalingsrecht | andere
+  gerechtigde: who
+  object: what
+  afstand_of_maat: specific measurement
+```
+
+---
+
+## CHAPTER 2 V2 EXTRACTION: TAKEN EN BEVOEGDHEDEN (2026-01-29)
+
+### Complete V2 Upgrade for Chapter 2
+
+All 6 afdelingen now have V2 atomic extractions with full schema compliance:
+
+| Afdeling | Articles | V2 File | Key Patterns |
+|----------|----------|---------|--------------|
+| **2.1** | 2.1-2.3 | ch2-afd2.1-v2-atomic.yaml | Subsidiariteitsbeginsel, doelgebondenheid |
+| **2.2** | 2.4-2.8 | ch2-afd2.2-v2-atomic.yaml | One-plan-principle, exclusiviteit |
+| **2.3** | 2.9-2.15a | ch2-afd2.3-v2-atomic.yaml | Omgevingswaarden, stikstof (resultaatsverplichting) |
+| **2.4** | 2.16-2.21a | ch2-afd2.4-v2-atomic.yaml | Taaktoedeling per bestuurslaag |
+| **2.5** | 2.22-2.37 | ch2-afd2.5-v2-atomic.yaml | Instructieregels vs instructies |
+| **2.6** | 2.38-2.46 | ch2-afd2.6-v2-atomic.yaml | Bijzondere taken (water, geluid, natuur) |
+
+### NEW PATTERN: Subsidiariteitsladder (Art. 2.3)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  SUBSIDIARITEITSBEGINSEL (Art. 2.3)                             │
+│                                                                 │
+│  DEFAULT: Gemeente                                              │
+│     │                                                           │
+│     ├─ "tenzij daarover andere regels zijn gesteld"             │
+│     │                                                           │
+│     ▼                                                           │
+│  PROVINCIE (lid 2) - alleen als nodig voor:                     │
+│     ├─ (a) provinciaal belang EN gemeente kan niet behartigen   │
+│     └─ (b) doelmatige uitoefening OF internationale verplichting│
+│     │                                                           │
+│     ▼                                                           │
+│  RIJK (lid 3) - alleen als nodig voor:                          │
+│     ├─ (a) nationaal belang EN prov/gem kan niet behartigen     │
+│     └─ (b) doelmatige uitoefening OF internationale verplichting│
+│     │                                                           │
+│     ▼                                                           │
+│  RIJK (lid 4) - altijd voor niet-ingedeeld gebied (zee, EEZ)    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### NEW PATTERN: Omgevingswaarden Hierarchie (Afd 2.3)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  OMGEVINGSWAARDEN HIËRARCHIE                                    │
+│                                                                 │
+│  NIVEAU 1: WET (art. 2.15a)                                     │
+│  └─ Stikstof: 40% (2025) → 50% (2030) → 74% (2035)              │
+│     ├─ RESULTAATSVERPLICHTING (lid 2)                           │
+│     └─ Enige wettelijk verankerde omgevingswaarde               │
+│                                                                 │
+│  NIVEAU 2: RIJK - AMvB (art. 2.14-2.15)                         │
+│  └─ Verplicht: luchtkwaliteit, waterkwaliteit, zwemwater,       │
+│     waterveiligheid (primaire waterkeringen), geluid rijksinfra │
+│     ├─ EU-grondslag voor veel waarden                           │
+│     └─ Waterveiligheid: ≤1:100.000 sterftekans in 2050          │
+│                                                                 │
+│  NIVEAU 3: PROVINCIE - Omgevingsverordening (art. 2.12-2.13a)   │
+│  └─ Verplicht: regionale waterkeringen, geluidproductieplafonds │
+│     provinciale wegen/spoorwegen                                │
+│     └─ Mits binnen grenzen art. 2.3 lid 2 (subsidiariteit)      │
+│                                                                 │
+│  NIVEAU 4: GEMEENTE - Omgevingsplan (art. 2.11-2.11a)           │
+│  └─ Verplicht: geluidproductieplafonds industrieterreinen       │
+│     └─ Geen aanvulling/afwijking van hogere niveaus             │
+│        TENZIJ hoger niveau dit expliciet toestaat               │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### NEW PATTERN: Taaktoedeling Water (Cross-Afdeling)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  WATERTAKEN VERDELING (Art. 2.16-2.19, 2.38-2.42)               │
+│                                                                 │
+│  GEMEENTE (art. 2.16):                                          │
+│  ├─ Hemelwater (inzameling)                                     │
+│  ├─ Grondwater (maatregelen openbaar gebied)                    │
+│  └─ Riolering (inzameling & transport)                          │
+│                                                                 │
+│  WATERSCHAP (art. 2.17):                                        │
+│  ├─ Beheer watersystemen (regionale wateren)                    │
+│  └─ Zuivering stedelijk afvalwater                              │
+│      └─ Kan bij gezamenlijk besluit naar gemeente (lid 3)       │
+│                                                                 │
+│  PROVINCIE (art. 2.18):                                         │
+│  ├─ Coördinatie gemeente/waterschap                             │
+│  ├─ Toezicht waterschapsbeheer (excl. primaire keringen)        │
+│  ├─ Zwemwaterbeheer                                             │
+│  └─ Toedeling regionale wateren aan waterschappen               │
+│                                                                 │
+│  RIJK (art. 2.19):                                              │
+│  ├─ Rijkswateren (beheer)                                       │
+│  ├─ Kustlijnbeheer                                              │
+│  ├─ Toezicht primaire waterkeringen                             │
+│  └─ Technische leidraden primaire waterkeringen                 │
+│                                                                 │
+│  BIJZONDERE INSTRUMENTEN (art. 2.39-2.42):                      │
+│  ├─ Legger (technisch beheerregister)                           │
+│  ├─ Peilbesluit (waterstanden/bandbreedten)                     │
+│  └─ Verdringingsreeks (rangorde bij waterschaarste)             │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### NEW PATTERN: Stikstof Mechanisme (Art. 2.15a + 2.46)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  STIKSTOFMECHANISME (Art. 2.15a + 2.46)                         │
+│                                                                 │
+│  OMGEVINGSWAARDEN (art. 2.15a):                                 │
+│  ├─ 2025: 40% areaal onder KDW                                  │
+│  ├─ 2030: 50% areaal onder KDW                                  │
+│  ├─ 2035: 74% areaal onder KDW                                  │
+│  └─ Type: RESULTAATSVERPLICHTING (moet gehaald worden)          │
+│                                                                 │
+│  STIKSTOFDEPOSITIERUIMTE (art. 2.46):                           │
+│  ├─ Registratie door Minister (of aangewezen bestuursorgaan)    │
+│  ├─ Voorwaarde: AANVULLENDE maatregelen (additionaliteit)       │
+│  ├─ Toedeling bij vergunningverlening Natura 2000-activiteit    │
+│  └─ Ruimte ≥ toename depositie (strikte toets)                  │
+│                                                                 │
+│  KOPPELING MET HOOFDSTUK 5:                                     │
+│  └─ Natura 2000-activiteit = vergunningplichtig (art. 5.1)      │
+│      └─ Stikstofdepositie = toetsingscriterium                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Cross-Chapter Connections Discovered
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  CHAPTER 2 HUB-FUNCTIE                                          │
+│                                                                 │
+│  Art. 2.3 (subsidiariteit) ◄──────────────────────────────────► │
+│  ├─ Art. 2.22 (instructieregels provincie) - "met inachtneming" │
+│  ├─ Art. 2.24 (instructieregels Rijk) - "met inachtneming"      │
+│  ├─ Art. 2.12 (omgevingswaarden prov) - "met inachtneming"      │
+│  └─ Art. 2.14 (omgevingswaarden Rijk) - "met inachtneming"      │
+│                                                                 │
+│  Art. 2.15a (stikstof) ◄──────────────────────────────────────► │
+│  ├─ Art. 2.46 (stikstofdepositieruimte)                         │
+│  ├─ Art. 3.9 (programma stikstof)                               │
+│  └─ Art. 5.1 (Natura 2000-vergunning)                           │
+│                                                                 │
+│  Art. 2.44 (natuurgebieden) ◄─────────────────────────────────► │
+│  ├─ Art. 5.1 (Natura 2000-activiteit vergunning)                │
+│  ├─ Art. 2.18 (provinciale natuurtaak)                          │
+│  └─ Art. 2.19 (rijksnatuurtaak)                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Module Status Update (2026-01-29)
+
+| Module | Status | Schema |
+|--------|--------|--------|
+| ch2-afd2.1-v2-atomic.yaml | ✅ Complete | V2 |
+| ch2-afd2.2-v2-atomic.yaml | ✅ Complete | V2 |
+| ch2-afd2.3-v2-atomic.yaml | ✅ Complete | V2 |
+| ch2-afd2.4-v2-atomic.yaml | ✅ Complete | V2 |
+| ch2-afd2.5-v2-atomic.yaml | ✅ Complete | V2 |
+| ch2-afd2.6-v2-atomic.yaml | ✅ Complete | V2 |
+
+**Chapter 2 Coverage**: 37 articles (2.1-2.46, excluding 2.22-2.37 which was already V2)
+
+---
+
+## CHAPTER 16 V2 UPGRADE (2026-01-29)
+
+### Progress Summary
+
+Chapter 16 (Procedures) contains 14 afdelingen with 174 articles total. V2 upgrade in progress.
+
+### Key Patterns Discovered
+
+#### 1. Coördinatie Mechanisme (Art. 16.7-16.8)
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              AWB AFD 3.5 COÖRDINATIE                            │
+├─────────────────────────────────────────────────────────────────┤
+│  Verplichte coördinatie (art. 16.7):                            │
+│  ├─ Water + andere activiteiten (gelijktijdig ingediend)        │
+│  ├─ Milieu + water (verplicht gelijktijdig ex art. 5.7 lid 4)   │
+│  └─ Projectbesluit uitvoeringsbesluiten                         │
+│                                                                 │
+│  Facultatieve koepelcoördinatie (art. 16.8):                    │
+│  └─ Kan worden uitgebreid naar plan + programma + vergunning    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+#### 2. Advies vs Instemming Hiërarchie (Art. 16.15-16.18)
+
+| Instrument | Bindendheid | Gevolg ontbreken | Voorbeeld |
+|------------|-------------|------------------|-----------|
+| **Advies** | Lichter | Besluit kan toch genomen worden | Art. 16.15 |
+| **Instemming** | Zwaarder | Besluit kan NIET zonder | Art. 16.16 |
+
+**Kritiek: GEEN fictieve instemming** (art. 16.18 lid 2) - bij niet tijdig beslissen wordt instemming NIET geacht verleend.
+
+#### 3. Reactieve Aanwijzing (Art. 16.21)
+
+```
+Gemeente stelt omgevingsplan vast
+           ↓
+  GS heeft zienswijze ingediend
+           ↓
+ Zienswijze niet/niet volledig overgenomen
+           ↓
+     GS kan onderdeel UITSLUITEN
+           ↓
+┌─────────────────────────────────────────┐
+│ DUBBELE VOORWAARDE:                     │
+│ 1. Nodig voor evenwichtige toedeling    │
+│ 2. Strijd met provinciaal belang        │
+│    (aangegeven in openbaar document)    │
+└─────────────────────────────────────────┘
+           ↓
+  Ultimum remedium: motiveren waarom
+  andere bevoegdheden niet volstaan
+```
+
+#### 4. Plan-MER vs Project-MER Onderscheid (Art. 16.34-16.53b)
+
+| Aspect | Plan-MER (§ 16.4.1) | Project-MER (§ 16.4.2) |
+|--------|---------------------|------------------------|
+| **Wie maakt** | Bevoegd gezag | Initiatiefnemer |
+| **Commissie m.e.r.** | Verplicht advies | Facultatief |
+| **Trigger** | Kader voor projecten | Concrete activiteit |
+| **Alternatieven** | Strategische keuzes | Projectalternatieven |
+
+#### 5. Passende Beoordeling (Art. 16.53c)
+
+```
+Plan/project met mogelijk significante effecten op Natura 2000
+                        ↓
+            Passende beoordeling VERPLICHT
+                        ↓
+         Koppeling met art. 16.36 lid 2:
+         Als passende beoordeling → plan-MER ook verplicht
+```
+
+### Module Status (Chapter 16 V2)
+
+| Module | Status | Articles | Key Content |
+|--------|--------|----------|-------------|
+| ch16-afd16.1-v2-atomic.yaml | ✅ Complete | 16.1-16.6 | Elektronisch verkeer, DSO, houdbaarheid gegevens |
+| ch16-afd16.2-v2-atomic.yaml | ✅ Complete | 16.7-16.21 | Coördinatie, advies/instemming, reactieve aanwijzing |
+| ch16-afd16.3-v2-atomic.yaml | ✅ Complete | 16.22-16.33l | Totstandkomingsprocedures, Awb 3.4 |
+| ch16-afd16.4-v2-atomic.yaml | ✅ Complete | 16.34-16.53b | Milieueffectrapportage (plan-MER + project-MER) |
+| ch16-afd16.4a-v2-atomic.yaml | ✅ Complete | 16.53c | Passende beoordeling Natura 2000 |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete | 16.54-16.68 | Omgevingsvergunning procedure, loket, lex silencio |
+| ch16-afd16.6-16.6a-v2-atomic.yaml | ✅ Complete | 16.70-16.76 | Projectprocedure, kostenverhaalsbeschikking |
+| ch16-afd16.7-v2-atomic.yaml | ✅ Complete | 16.77-16.90 | Beslistermijn, inwerkingtreding, beroep |
+| ch16-afd16.8-16.14-v2-atomic.yaml | ✅ Complete | 16.91-16.140 | Domain-specific (onteigening, landinrichting) |
+
+**Articles completed V2**: 174 (of 174 total) - CHAPTER 16 COMPLETE
+
+---
+
+## NEW PATTERNS FROM V2 EXTRACTIONS (2026-01-29)
+
+### Pattern 12: VOORBESCHERMING HIËRARCHIE (from Afd 4.2)
+
+Art. 4.15-4.19b implements **voorbereidingsbescherming** - protective measures before formal planning is complete:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              VOORBESCHERMING HIËRARCHIE                         │
+│                                                                 │
+│  ART. 4.16: PROVINCIE OVER GEMEENTE                             │
+│  ├─ PS kan: activiteiten verbieden of voorwaarden stellen       │
+│  ├─ Scope: "ter bescherming van provinciale belangen"           │
+│  └─ Effect: Omgevingsplan wijziging AUTOMATISCH bij             │
+│             vaststelling omgevingsverordening                   │
+│                                                                 │
+│  ART. 4.17: RIJK OVER ALLEN                                     │
+│  ├─ Minister kan: activiteiten verbieden of voorwaarden stellen │
+│  ├─ Scope: "ter bescherming van nationale belangen"             │
+│  └─ Effect: Omgevingsplan/verordening wijziging AUTOMATISCH     │
+│                                                                 │
+│  ART. 4.18-4.19: PROCEDUREEL                                    │
+│  ├─ 4.18: Bekendmaking door kennisgeving                        │
+│  └─ 4.19: Verval na 2 jaar (verlenging 2 jaar mogelijk)         │
+│                                                                 │
+│  HIËRARCHIE: Rijk > Provincie > Gemeente                        │
+│  Hogere overheid kan lagere instrumenten DOORBREKEN             │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Pattern 13: ZAAKSGEBONDENHEID (from § 5.1.4)
+
+Art. 5.37 establishes **zaaksgebondenheid** - the permit follows the activity, not the person:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              ZAAKSGEBONDENHEID (Art. 5.37)                       │
+│                                                                 │
+│  NORMADRESSAAT (lid 1):                                         │
+│  └─ "degene die de activiteit verricht"                         │
+│      NOT: de aanvrager of vergunninghouder                      │
+│                                                                 │
+│  PRAKTISCH EFFECT:                                              │
+│  ├─ Overdracht eigendom → vergunning gaat mee                   │
+│  ├─ Geen aparte overdrachtsvergunning nodig                     │
+│  └─ Nieuwe eigenaar = nieuwe normadressaat                      │
+│                                                                 │
+│  UITZONDERING (Art. 5.37a):                                     │
+│  └─ Bij meervoudige activiteiten kan BG verantwoordelijkheden   │
+│     verdelen tussen meerdere partijen                           │
+│                                                                 │
+│  VERGELIJK: Zaaksgebondenheid vs persoonsgebondenheid           │
+│  ├─ Zaaksgebonden: omgevingsvergunning (Ow)                     │
+│  └─ Persoonsgebonden: rijbewijs, paspoort (andere wetten)       │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Pattern 14: LIFECYCLE PATTERN (from § 5.1.5)
+
+Art. 5.38-5.43 defines the **complete lifecycle** of an omgevingsvergunning:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              VERGUNNING LIFECYCLE                                │
+│                                                                 │
+│  1. ACTUALISERING (Art. 5.38)                                   │
+│     └─ Periodieke review van voorschriften                      │
+│        └─ Trigger: tijdsverloop, nieuwe inzichten               │
+│                                                                 │
+│  2. WIJZIGING (Art. 5.39-5.40)                                  │
+│     ├─ Art. 5.39: IMPERATIEF (MOET wijzigen/intrekken)          │
+│     │   ├─ Strijdigheid met wettelijk voorschrift               │
+│     │   ├─ Niet naleven voorschriften                           │
+│     │   └─ BBT/BKE geëvolueerd                                  │
+│     └─ Art. 5.40: FACULTATIEF (KAN wijzigen/intrekken)          │
+│         ├─ Op verzoek vergunninghouder                          │
+│         ├─ Nieuwe inzichten                                     │
+│         └─ 3 jaar niet-gebruik                                  │
+│                                                                 │
+│  3. INTREKKING (Art. 5.39-5.40)                                 │
+│     └─ Volgt zelfde imperatief/facultatief onderscheid          │
+│                                                                 │
+│  4. REVISIEVERGUNNING (Art. 5.43)                               │
+│     └─ Consolidatie: vervangt meerdere vergunningen             │
+│        door één coherente vergunning                            │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Key distinction discovered**:
+
+| Type | Artikel | Signaalwoord | Betekenis |
+|------|---------|--------------|-----------|
+| **Imperatief** | 5.39 | "wijzigt", "trekt in" | MOET handelen |
+| **Facultatief** | 5.40 | "kan wijzigen", "kan intrekken" | MAG handelen |
+
+### Pattern 15: HUB-AND-SPOKE 4.3 met 27 Internationale Verplichtingen (from Afd 4.3)
+
+Art. 4.3 functions as **central activity hub** with Art. 4.20-4.36 as **activity-specific spokes**:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              HUB-AND-SPOKE PATTERN (Ch4)                         │
+│                                                                 │
+│                         ART. 4.3 (HUB)                          │
+│                    17 activiteitcategorieën                     │
+│                              │                                  │
+│      ┌───────────┬───────────┼───────────┬───────────┐         │
+│      │           │           │           │           │         │
+│      ▼           ▼           ▼           ▼           ▼         │
+│   4.20-4.21   4.22-4.25   4.26-4.27   4.28-4.31   4.32-4.36   │
+│   Int'l       Bouw        Water       Milieu      Natuur      │
+│   27 verpl.   activiteit  activiteit  belastend   bescherming │
+│                                                                 │
+│  ART. 4.20: INTERNATIONALE VERPLICHTINGEN (27 stuks!)          │
+│  ├─ EU Richtlijnen: 23 stuks                                   │
+│  │   ├─ Seveso III (2012/18/EU)                                │
+│  │   ├─ IPPC/IED (2010/75/EU)                                  │
+│  │   ├─ Kaderrichtlijn Water (2000/60/EG)                      │
+│  │   ├─ Habitatrichtlijn (92/43/EEG)                           │
+│  │   └─ ... en 19 andere                                       │
+│  └─ Internationale Verdragen: 4 stuks                          │
+│      ├─ OSPAR                                                   │
+│      ├─ London Protocol                                         │
+│      ├─ MARPOL                                                  │
+│      └─ BWM-verdrag                                             │
+│                                                                 │
+│  SPOKE ARTIKELEN:                                               │
+│  ├─ 4.21: bouwwerken (veiligheid, gezondheid, duurzaamheid)    │
+│  ├─ 4.22: infrastructurele werken                              │
+│  ├─ 4.23: installaties (IED-scope)                             │
+│  ├─ 4.24: milieubelastende activiteiten                        │
+│  ├─ 4.26-4.27: wateractiviteiten                               │
+│  ├─ 4.28-4.31: beperkingengebiedactiviteiten                   │
+│  └─ 4.32-4.36: Natura 2000, flora/fauna                        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Pattern 16: LOKETFUNCTIE EN TERMIJNSTART (from Afd 16.5)
+
+Art. 16.54-16.56 establishes the **loket** (service desk) principle:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              LOKETFUNCTIE (Art. 16.54)                           │
+│                                                                 │
+│  INDIENINGSPUNT (wie ontvangt aanvraag):                        │
+│  ├─ Gemeente: altijd toegestaan                                 │
+│  ├─ Waterschap: bij wateractiviteiten                           │
+│  └─ OOK ALS zij niet bevoegd gezag zijn!                        │
+│                                                                 │
+│  KRITISCH: LOKETDATUM = TERMIJNSTART                            │
+│  ├─ Art. 16.54 lid 1: "Loket zendt door naar BG"               │
+│  └─ Termijn begint bij ontvangst LOKET, niet BG!               │
+│                                                                 │
+│  PRAKTISCH EFFECT:                                              │
+│  ┌────────────────────────────────────────────────────┐         │
+│  │  Aanvrager → Gemeente → (doorsturen) → Provincie   │         │
+│  │              ↑                                      │         │
+│  │              DAG 0 (termijn start)                 │         │
+│  └────────────────────────────────────────────────────┘         │
+│                                                                 │
+│  DOORZENDPLICHT:                                                │
+│  └─ Loket MOET onverwijld doorsturen naar bevoegd gezag         │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Pattern 17: PROCEDURE DUALITEIT (from § 16.5.2-16.5.3)
+
+Art. 16.62-16.65 establishes **two tracks** for permit procedures:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              PROCEDURE DUALITEIT                                 │
+│                                                                 │
+│  ART. 16.62: DEFAULT + TENZIJ                                   │
+│  ├─ DEFAULT: Reguliere procedure (§ 16.5.2)                     │
+│  │   ├─ Termijn: 8 weken (+ 6 weken verlenging)                 │
+│  │   ├─ Met instemming: 12 weken (+ 6 weken)                    │
+│  │   └─ Geen zienswijzeprocedure                                │
+│  │                                                              │
+│  └─ TENZIJ: Uitgebreide procedure (§ 16.5.3)                    │
+│      ├─ Awb afdeling 3.4 van toepassing                         │
+│      ├─ Wel zienswijzeprocedure                                 │
+│      ├─ 6 maanden + 6 weken verlenging                          │
+│      └─ Bij AMvB aangewezen gevallen                            │
+│                                                                 │
+│  KRITIEK: LEX SILENCIO EXCLUSIE (Art. 16.64 lid 4)              │
+│  ├─ Awb § 4.1.3.3 NIET van toepassing                           │
+│  ├─ Geen vergunning van rechtswege bij termijnoverschrijding    │
+│  └─ Bewuste ontwerpkeuze Omgevingswet                           │
+│                                                                 │
+│  RATIO:                                                          │
+│  ├─ Milieu/natuur te belangrijk voor automatische verlening     │
+│  └─ Initiatiefnemer kan dwangsom vorderen bij overschrijding    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Pattern 18: BBT-KOPPELING (from § 5.1.4-5.1.5)
+
+Art. 5.38-5.39 links permits to **Best Beschikbare Technieken** (BBT):
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              BBT-KOPPELING                                       │
+│                                                                 │
+│  ACTUALISATIEPLICHT (Art. 5.38):                                │
+│  └─ Voorschriften moeten actueel blijven t.a.v. BBT             │
+│                                                                 │
+│  WIJZIGINGSPLICHT (Art. 5.39 lid 2):                            │
+│  ├─ (a) Strijdigheid met wettelijk voorschrift                  │
+│  ├─ (b) BBT/BKE is geëvolueerd                                  │
+│  └─ (c) Nieuwe wetenschappelijke inzichten                      │
+│                                                                 │
+│  DOORWERKING:                                                    │
+│  ├─ EU publiceert BREF-documenten                               │
+│  ├─ BREF → BBT-conclusies                                       │
+│  ├─ BBT-conclusies → wijziging Bal                              │
+│  └─ Bal wijziging → vergunningvoorschriften moeten volgen       │
+│                                                                 │
+│  TERMIJN: 4 jaar na publicatie BBT-conclusies                   │
+│  └─ Vergunning moet zijn aangepast                              │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## MODULE STATUS V2 (Final Update 2026-01-29)
+
+### Chapter 4 V2 Complete
+
+| Module | Status | Key Patterns |
+|--------|--------|--------------|
+| ch4-afd4.1-v2-atomic.yaml | ✅ Complete | 4.3 hub, 4.9 default+tenzij, Ch4↔Ch5 parallel |
+| ch4-afd4.2-4.3-v2-atomic.yaml | ✅ Complete | Voorbescherming hiërarchie, hub-and-spoke 4.3, 27 int'l verplichtingen |
+
+### Chapter 5 V2 Complete
+
+| Module | Status | Key Patterns |
+|--------|--------|--------------|
+| ch5-par5.1.1-v2-atomic.yaml | ✅ Complete | TENZIJ vs VOOR ZOVER, handhavingshiërarchie |
+| ch5-par5.1.2-v2-atomic.yaml | ✅ Complete | Subsidiariteitstrap, beslisboom |
+| ch5-par5.1.3-v2-atomic.yaml | ✅ Complete | Hub-spoke beoordelingsregels |
+| ch5-par5.1.4-5.1.5-v2-atomic.yaml | ✅ Complete | Zaaksgebondenheid, lifecycle pattern, imperatief vs facultatief, BBT-koppeling |
+| ch5-afd5.2-v2-atomic.yaml | ✅ Complete | Projectbesluit integraal, doorbreking, hiërarchie |
+
+### Chapter 16 V2 Complete
+
+| Module | Status | Key Patterns |
+|--------|--------|--------------|
+| ch16-afd16.1-v2-atomic.yaml | ✅ Complete | DSO, houdbaarheid gegevens |
+| ch16-afd16.2-v2-atomic.yaml | ✅ Complete | Advies vs instemming, reactieve aanwijzing |
+| ch16-afd16.3-v2-atomic.yaml | ✅ Complete | UOV-standaard, actio popularis |
+| ch16-afd16.4-v2-atomic.yaml | ✅ Complete | Plan-MER vs project-MER |
+| ch16-afd16.4a-v2-atomic.yaml | ✅ Complete | Passende beoordeling |
+| ch16-afd16.5-v2-atomic.yaml | ✅ Complete | Loketfunctie, procedure dualiteit, lex silencio exclusie |
+| ch16-afd16.6-16.6a-v2-atomic.yaml | ✅ Complete | Projectprocedure UOV, kostenverhaal aanhouding |
+| ch16-afd16.7-v2-atomic.yaml | ✅ Complete | Inwerkingtreding spectrum, beroepsbundeling |
+| ch16-afd16.8-16.14-v2-atomic.yaml | ✅ Complete | Domain-specific (onteigening, landinrichting) |
+
+---

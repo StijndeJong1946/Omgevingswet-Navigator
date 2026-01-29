@@ -1,0 +1,1106 @@
+# Paragraaf 16.5 - De omgevingsvergunning (procedures)
+# V2 ATOMIC EXTRACTION - WITH LID-LEVEL LOGICA
+# Schema version: v2
+# Extracted: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+
+_metadata:
+  chapter: 16
+  afdeling: "16.5"
+  titel: "De omgevingsvergunning"
+  artikel_range: "16.54 - 16.68"
+  schema_version: "v2"
+  paragrafen:
+    - nummer: "16.5.1"
+      titel: "Algemeen"
+      artikelen: "16.54-16.61"
+    - nummer: "16.5.2"
+      titel: "Reguliere voorbereidingsprocedure"
+      artikelen: "16.62-16.64a"
+    - nummer: "16.5.3"
+      titel: "Toepassing afdeling 3.4 Awb"
+      artikelen: "16.65-16.68"
+    - nummer: "16.5.4"
+      titel: "Exploitatievoorschriften"
+      status: "vervallen"
+
+# =============================================================================
+# PARAGRAAF 16.5.1 - ALGEMEEN
+# =============================================================================
+
+artikelen:
+
+  16.54:
+    nummer: "16.54"
+    titel: "(indienen aanvraag)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54/Lid1"
+        structuur:
+          volledige_tekst: "De aanvraag om een omgevingsvergunning wordt ingediend bij het college van burgemeester en wethouders van de gemeente waar de activiteit of activiteiten geheel of in hoofdzaak zullen worden verricht. Als de aanvraag betrekking heeft op een of meer wateractiviteiten, kan de aanvraag in plaats van bij het college ook worden ingediend bij het dagelijks bestuur van het waterschap waar de activiteit of activiteiten geheel of in hoofdzaak zullen worden verricht. Als een ander bestuursorgaan dan het college of het dagelijks bestuur het bevoegd gezag is, kan de aanvraag ook bij dat bestuursorgaan worden ingediend."
+        logica:
+          type: "definitie"
+          norm: "Gemeente is LOKET voor alle aanvragen"
+          conditie:
+            type: "ook_als"
+            tekst: "Als een ander bestuursorgaan het bevoegd gezag is"
+            effect: "Loketfunctie ontkoppeld van BG-functie"
+          default: "indienen bij B&W"
+          uitzondering: "wateractiviteit → ook bij waterschap mogelijk"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54/Lid2"
+        structuur:
+          volledige_tekst: "In afwijking van het eerste lid wordt de aanvraag om een omgevingsvergunning voor een jachtgeweeractiviteit ingediend bij de korpschef."
+        logica:
+          type: "uitzondering"
+          norm: "Jachtgeweer: indienen bij korpschef"
+          conditie:
+            type: "in_afwijking_van"
+            tekst: "In afwijking van het eerste lid"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54/Lid3"
+        structuur:
+          volledige_tekst: "Dit artikel is van overeenkomstige toepassing op een aanvraag om wijziging van de voorschriften van een omgevingsvergunning of om intrekking van een omgevingsvergunning."
+        logica:
+          type: "definitie"
+          norm: "Zelfde loket voor wijziging/intrekking"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "indieningslocatie aanvraag"
+      subject: "aanvrager"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.54 vestigt de LOKETFUNCTIE:
+
+        HOOFDREGEL (lid 1): Aanvraag bij B&W van de gemeente
+        - Dit geldt ONGEACHT wie bevoegd gezag is
+        - Loket ≠ bevoegd gezag
+
+        ALTERNATIEVEN:
+        - Wateractiviteit → ook bij waterschap
+        - Ander BG → ook rechtstreeks bij BG
+        - Jachtgeweer → korpschef (lid 2)
+
+        Dit voorkomt dat burger moet uitzoeken wie BG is.
+
+    interne_refs:
+      - naar: "artikel 5.1"
+        type: "impliciet"
+        context: "vergunningplichtige activiteiten"
+
+    actoren:
+      - actor: "gemeente"
+        rol: "loket voor alle aanvragen"
+      - actor: "waterschap"
+        rol: "alternatief loket voor wateractiviteiten"
+      - actor: "korpschef"
+        rol: "loket voor jachtgeweeractiviteit"
+
+  16.54a:
+    nummer: "16.54a"
+    titel: "(ontvangst aanvraag)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid1"
+        structuur:
+          volledige_tekst: "Als gebruik wordt gemaakt van de mogelijkheid, bedoeld in artikel 16.54, eerste lid, om de aanvraag in te dienen bij het college van burgemeester en wethouders van de gemeente of het dagelijks bestuur van het waterschap terwijl een ander bestuursorgaan het bevoegd gezag is, wordt voor de toepassing van deze afdeling als de dag van ontvangst aangemerkt de dag van ontvangst bij het college of het dagelijks bestuur."
+        logica:
+          type: "definitie"
+          norm: "Ontvangstdatum bij LOKET = startdatum termijn"
+          conditie:
+            type: "wanneer"
+            tekst: "Als de aanvraag bij het loket is ingediend terwijl ander BG bevoegd is"
+            effect: "Termijn begint bij loket, niet bij BG"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid2"
+        structuur:
+          volledige_tekst: "Het bestuursorgaan waarbij de aanvraag is ingediend, zendt de aanvrager onverwijld een bewijs van ontvangst, waarin de dag van ontvangst van de aanvraag wordt vermeld."
+        logica:
+          type: "verplichting"
+          norm: "Loket MOET onverwijld ontvangstbewijs zenden"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid3"
+        structuur:
+          aanhef: "Het bestuursorgaan dat het bevoegd gezag is, deelt de aanvrager dit na ontvangst van de aanvraag zo spoedig mogelijk mee. In de mededeling wordt ook vermeld:"
+          onderdelen:
+            a:
+              tekst: "de procedure ter voorbereiding van het besluit"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid3/Onderdeela"
+            b:
+              tekst: "de beslistermijn die van toepassing is"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid3/Onderdeelb"
+            c:
+              tekst: "de tegen het besluit openstaande rechtsmiddelen"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54a/Lid3/Onderdeelc"
+        logica:
+          type: "verplichting"
+          norm: "BG MOET aanvrager informeren over procedure, termijn, rechtsmiddelen"
+
+    functie:
+      werkwoord: "regelt"
+      object: "ontvangst en doorzending aanvraag"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.54a bepaalt het TERMIJN-STARTPUNT:
+
+        KRITIEK: Dag van ontvangst bij LOKET = start beslistermijn
+        - Ook als loket ≠ bevoegd gezag
+        - Dit beschermt de aanvrager
+
+        INFORMATIEPLICHTEN:
+        - Loket → ontvangstbewijs (onverwijld)
+        - BG → mededeling wie BG is + procedure + termijn + rechtsmiddelen
+
+    interne_refs:
+      - naar: "artikel 16.54, eerste lid"
+        type: "verwijzing"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54"
+
+  16.55:
+    nummer: "16.55"
+    titel: "(aanvraagvereisten)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid1"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kunnen nadere regels worden gesteld over de wijze van indienen van de aanvraag om een omgevingsvergunning."
+        logica:
+          type: "machtiging"
+          norm: "AMvB MAG regels stellen over indieningswijze"
+          delegatie_richting: "Ow → Omgevingsbesluit"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid2"
+        structuur:
+          volledige_tekst: "Bij ministeriële regeling worden regels gesteld over de door de aanvrager te verstrekken gegevens en bescheiden."
+        logica:
+          type: "verplichting"
+          norm: "Ministeriële regeling MOET gegevens/bescheiden regelen"
+          delegatie_richting: "Ow → Omgevingsregeling"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid3"
+        structuur:
+          volledige_tekst: "Voor een aanvraag om een omgevingsvergunning voor een activiteit als bedoeld in artikel 5.3 of 5.4 kunnen in de waterschapsverordening respectievelijk de omgevingsverordening ook regels worden gesteld over de door de aanvrager te verstrekken gegevens en bescheiden."
+        logica:
+          type: "machtiging"
+          norm: "Verordening MAG aanvullende gegevenseisen stellen"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor activiteit uit art. 5.3 of 5.4"
+            effect: "Alleen voor decentrale vergunningplichten"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid4"
+        structuur:
+          volledige_tekst: "Voor een aanvraag om een omgevingsvergunning voor een omgevingsplanactiviteit kunnen in het omgevingsplan ook regels worden gesteld over de door de aanvrager te verstrekken gegevens en bescheiden."
+        logica:
+          type: "machtiging"
+          norm: "Omgevingsplan MAG aanvullende gegevenseisen stellen"
+
+      5:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid5"
+        structuur:
+          volledige_tekst: "De gegevens en bescheiden, bedoeld in het tweede tot en met vierde lid, behoeven niet te worden verstrekt voor zover het bevoegd gezag al over die gegevens of bescheiden beschikt."
+        logica:
+          type: "begrenzing"
+          norm: "Geen dubbele gegevensverstrekking vereist"
+
+      6:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid6"
+        structuur:
+          volledige_tekst: "Op grond van het tweede lid worden in ieder geval regels gesteld over het bij de aanvraag verstrekken van gegevens over participatie van en overleg met derden."
+        logica:
+          type: "verplichting"
+          norm: "Ministeriële regeling MOET participatiegegevens regelen"
+          conditie:
+            type: "in_ieder_geval"
+            tekst: "in ieder geval"
+            effect: "Minimum-eis"
+
+      7:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55/Lid7"
+        structuur:
+          volledige_tekst: "De gemeenteraad kan gevallen van activiteiten aanwijzen waarin participatie van en overleg met derden verplicht is voordat een aanvraag om een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit waarvoor het college van burgemeester en wethouders bevoegd gezag is, kan worden ingediend."
+        logica:
+          type: "machtiging"
+          norm: "Gemeenteraad MAG participatieplicht opleggen voor bopa"
+          conditie:
+            type: "voor_zover"
+            tekst: "voor buitenplanse omgevingsplanactiviteit waarvoor B&W BG is"
+
+    functie:
+      werkwoord: "regelt"
+      object: "aanvraagvereisten"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.55 regelt de AANVRAAGVEREISTEN:
+
+        GELAAGDE STRUCTUUR:
+        - Lid 1: AMvB → indieningswijze (facultatief)
+        - Lid 2: Ministeriële regeling → gegevens/bescheiden (verplicht)
+        - Lid 3-4: Verordening/omgevingsplan → aanvullende eisen (facultatief)
+
+        PARTICIPATIE (lid 6-7):
+        - Or moet participatiegegevens vereisen (lid 6)
+        - Gemeenteraad kan participatieplicht instellen voor bopa (lid 7)
+
+        ONCE-ONLY (lid 5): Geen dubbele gegevensverstrekking.
+
+    interne_refs:
+      - naar: "artikel 5.3"
+        type: "verwijzing"
+        context: "decentrale vergunningplicht waterschap"
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.3"
+      - naar: "artikel 5.4"
+        type: "verwijzing"
+        context: "decentrale vergunningplicht provincie"
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.1/Artikel5.4"
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "Omgevingsbesluit"
+        voor: "indieningswijze"
+        actor: "Regering"
+      - type: "bij ministeriële regeling"
+        naar: "Omgevingsregeling"
+        voor: "gegevens en bescheiden"
+        actor: "Minister"
+
+  16.56:
+    nummer: "16.56"
+    titel: "(overleggen gegevens en bescheiden in verband met actualisering omgevingsvergunning)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.56"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.56/Lid1"
+        structuur:
+          aanhef: "De vergunninghouder verschaft op verzoek van het bevoegd gezag aan dat bevoegd gezag gegevens en bescheiden die nodig zijn voor:"
+          onderdelen:
+            a:
+              tekst: "het met toepassing van artikel 5.38 bezien of de voorschriften van de vergunning nog toereikend zijn gezien de ontwikkelingen van de technische mogelijkheden tot het beschermen van het milieu en de ontwikkelingen met betrekking tot de kwaliteit van het milieu"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.56/Lid1/Onderdeela"
+            b:
+              tekst: "het naar aanleiding van de toepassing van artikel 5.38 wijzigen van de voorschriften van een omgevingsvergunning, bedoeld in artikel 5.42, tweede lid"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.56/Lid1/Onderdeelb"
+        logica:
+          type: "verplichting"
+          norm: "Vergunninghouder MOET gegevens verstrekken voor actualisering"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.56/Lid2"
+        structuur:
+          volledige_tekst: "Artikel 16.55, vijfde lid, is van overeenkomstige toepassing."
+        logica:
+          type: "verwijzing"
+          norm: "Once-only ook bij actualisering"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "gegevensverstrekking bij actualisering"
+      subject: "vergunninghouder"
+
+    interne_refs:
+      - naar: "artikel 5.38"
+        type: "verwijzing"
+        context: "actualisering vergunning"
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.38"
+      - naar: "artikel 5.42, tweede lid"
+        type: "verwijzing"
+        context: "wijziging voorschriften"
+        bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.5/Artikel5.42"
+      - naar: "artikel 16.55, vijfde lid"
+        type: "verwijzing"
+        context: "once-only"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.55"
+
+  16.57:
+    nummer: "16.57"
+    titel: "(kennisgeving aanvraag)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.57"
+    inwerking: "2024-01-01"
+
+    leden:
+      enkelvoudig:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.57"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag geeft bij toepassing van titel 4.1 of afdeling 3.4 van de Algemene wet bestuursrecht ook onverwijld kennis van de aanvraag om een omgevingsvergunning op de in artikel 12 van de Bekendmakingswet bepaalde wijze. Daarbij wordt de dag van ontvangst van de aanvraag vermeld."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET kennisgeving publiceren"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "publicatie aanvraag"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "titel 4.1, afdeling 3.4"
+        context: "proceduretoepassing"
+      - naar: "BWBR0004287"
+        wet: "Bekendmakingswet"
+        artikel: "12"
+        context: "publicatiewijze"
+
+  16.58:
+    nummer: "16.58"
+    titel: "(beslissing over kerkelijk rijksmonument)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.58"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.58/Lid1"
+        structuur:
+          volledige_tekst: "Voor zover de aanvraag om een omgevingsvergunning betrekking heeft op een rijksmonumentenactiviteit en het rijksmonument of voorbeschermde rijksmonument een kerkelijk monument is als bedoeld in artikel 1.1 van de Erfgoedwet, neemt het bevoegd gezag pas een beslissing na overleg met de eigenaar."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET overleggen met eigenaar kerkelijk monument"
+          conditie:
+            type: "voor_zover"
+            tekst: "rijksmonumentenactiviteit + kerkelijk monument"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.58/Lid2"
+        structuur:
+          volledige_tekst: "Voor zover het gaat om een beslissing waarbij wezenlijke belangen van het belijden van de godsdienst of levensovertuiging in dat monument in het geding zijn, beslist het bevoegd gezag alleen in overeenstemming met de eigenaar."
+        logica:
+          type: "begrenzing"
+          norm: "Bij wezenlijke religieuze belangen: ALLEEN met instemming eigenaar"
+          conditie:
+            type: "voor_zover"
+            tekst: "wezenlijke belangen van het belijden van de godsdienst of levensovertuiging in het geding"
+            effect: "Veto-recht eigenaar bij religieuze kern"
+
+    functie:
+      werkwoord: "beschermt"
+      object: "religieuze functie kerkelijk monument"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.58 beschermt de GODSDIENSTVRIJHEID bij monumenten:
+        - Lid 1: overleg met eigenaar verplicht
+        - Lid 2: bij wezenlijke religieuze belangen → instemming vereist
+
+        Dit is een grondrechtelijke uitzondering op bestuursbevoegdheid.
+
+    externe_refs:
+      - naar: "BWBR0037521"
+        wet: "Erfgoedwet"
+        artikel: "1.1"
+        context: "definitie kerkelijk monument"
+
+  16.59:
+    nummer: "16.59"
+    titel: "(ingetrokken)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.59"
+    inwerking: "2024-01-01"
+    status: "ingetrokken"
+
+  16.60:
+    nummer: "16.60"
+    titel: "(ingetrokken)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.60"
+    inwerking: "2024-01-01"
+    status: "ingetrokken"
+
+  16.61:
+    nummer: "16.61"
+    titel: "(begin beslistermijn)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.61"
+    inwerking: "2024-01-01"
+
+    leden:
+      enkelvoudig:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.61"
+        structuur:
+          volledige_tekst: "Als een beslissing op de aanvraag om een omgevingsvergunning wordt aangehouden, wordt voor de toepassing van artikel 16.64, eerste lid, van deze wet of artikel 3:18, eerste lid, van de Algemene wet bestuursrecht in plaats van de dag van ontvangst van de aanvraag uitgegaan van de dag waarop de aanhouding eindigt."
+        logica:
+          type: "definitie"
+          norm: "Bij aanhouding: termijn start na einde aanhouding"
+          conditie:
+            type: "wanneer"
+            tekst: "Als een beslissing wordt aangehouden"
+            effect: "Termijn wordt verschoven"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "termijnverschuiving bij aanhouding"
+
+    interne_refs:
+      - naar: "artikel 16.64, eerste lid"
+        type: "verwijzing"
+        context: "beslistermijn"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "3:18, eerste lid"
+        context: "beslistermijn uitgebreide procedure"
+
+# =============================================================================
+# PARAGRAAF 16.5.2 - REGULIERE VOORBEREIDINGSPROCEDURE
+# =============================================================================
+
+  16.62:
+    nummer: "16.62"
+    titel: "(toepassingsbereik reguliere voorbereidingsprocedure)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.62"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.62/Lid1"
+        structuur:
+          volledige_tekst: "Deze paragraaf is van toepassing op de voorbereiding van de beslissing op een aanvraag om een omgevingsvergunning, tenzij paragraaf 16.5.3 daarop van toepassing is."
+        logica:
+          type: "definitie"
+          norm: "Reguliere procedure is DEFAULT"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij paragraaf 16.5.3 daarop van toepassing is"
+            effect: "Uitgebreide procedure verdringt reguliere"
+          default: "reguliere procedure"
+          uitzondering: "uitgebreide procedure (§ 16.5.3)"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.62/Lid2"
+        structuur:
+          volledige_tekst: "Deze paragraaf is van overeenkomstige toepassing op de voorbereiding van de beslissing op een aanvraag om wijziging van de voorschriften van een omgevingsvergunning of om intrekking van een omgevingsvergunning, tenzij paragraaf 16.5.3 daarop van toepassing is."
+        logica:
+          type: "definitie"
+          norm: "Ook wijziging/intrekking via reguliere procedure DEFAULT"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij paragraaf 16.5.3 daarop van toepassing is"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.62/Lid3"
+        structuur:
+          volledige_tekst: "Op de voorbereiding van de beslissing op een aanvraag om een omgevingsvergunning of op een wijziging of intrekking daarvan kan het bevoegd gezag afdeling 3.4 van de Algemene wet bestuursrecht niet bij besluit van toepassing verklaren, tenzij het gaat om een beslissing als bedoeld in artikel 16.65, vierde lid."
+        logica:
+          type: "begrenzing"
+          norm: "BG kan NIET zelf uitgebreide procedure kiezen"
+          conditie:
+            type: "tenzij"
+            tekst: "tenzij het gaat om een beslissing als bedoeld in artikel 16.65, vierde lid"
+            effect: "Uitzondering voor bopa met aanzienlijke gevolgen"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "toepassingsbereik reguliere procedure"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.62 bevat de CRUCIALE DEFAULT + TENZIJ structuur:
+
+        DEFAULT: Reguliere voorbereidingsprocedure (§ 16.5.2)
+        TENZIJ: Uitgebreide procedure (§ 16.5.3) van toepassing is
+
+        Lid 3 BEPERKT BG-discretie:
+        - BG kan NIET zelf Awb 3.4 van toepassing verklaren
+        - TENZIJ: bopa met aanzienlijke gevolgen (art. 16.65 lid 4)
+
+        Dit is KEUZE van de wetgever: snelheid boven participatie.
+
+    interne_refs:
+      - naar: "paragraaf 16.5.3"
+        type: "tenzij"
+        context: "uitgebreide procedure"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3"
+      - naar: "artikel 16.65, vierde lid"
+        type: "tenzij"
+        context: "bopa met aanzienlijke gevolgen"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "afdeling 3.4"
+        context: "uitgebreide procedure"
+
+  16.63:
+    nummer: "16.63"
+    titel: "(ingetrokken)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.63"
+    inwerking: "2024-01-01"
+    status: "ingetrokken"
+
+  16.64:
+    nummer: "16.64"
+    titel: "(beslistermijn en kennisgeving)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64/Lid1"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag beslist op de aanvraag om een omgevingsvergunning binnen acht weken of, als de voorgenomen beslissing op de aanvraag instemming als bedoeld in artikel 16.16 behoeft, binnen twaalf weken na ontvangst van de aanvraag."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET beslissen binnen 8 weken (12 weken bij instemming)"
+          default: "8 weken"
+          uitzondering: "12 weken bij instemmingsvereiste"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64/Lid2"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag kan de beslistermijnen, bedoeld in het eerste lid, eenmaal met ten hoogste zes weken verlengen. Dit besluit wordt bekendgemaakt binnen de beslistermijn."
+        logica:
+          type: "machtiging"
+          norm: "BG MAG termijn EENMAAL verlengen met max 6 weken"
+          conditie:
+            type: "mits"
+            tekst: "besluit wordt bekendgemaakt binnen de beslistermijn"
+            effect: "Late verlenging niet toegestaan"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64/Lid3"
+        structuur:
+          volledige_tekst: "Tegelijkertijd met of zo spoedig mogelijk na de bekendmaking van de beslissing op de aanvraag om een omgevingsvergunning geeft het bevoegd gezag kennis van dat besluit op de in artikel 12 van de Bekendmakingswet bepaalde wijze."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET besluit publiceren"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64/Lid4"
+        structuur:
+          volledige_tekst: "Met toepassing van artikel 28, eerste lid, laatste zinsnede, van de Dienstenwet is paragraaf 4.1.3.3 van de Algemene wet bestuursrecht niet van toepassing op de voorbereiding van de beslissing op de aanvraag."
+        logica:
+          type: "uitzondering"
+          norm: "GEEN LEX SILENCIO POSITIVO"
+          conditie:
+            type: "expliciet"
+            tekst: "paragraaf 4.1.3.3 van de Algemene wet bestuursrecht niet van toepassing"
+            effect: "Bij termijnoverschrijding GEEN automatische vergunning"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "beslistermijnen"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.64 regelt de BESLISTERMIJNEN voor reguliere procedure:
+
+        TERMIJNEN:
+        - Standaard: 8 weken
+        - Met instemming (art. 16.16): 12 weken
+        - Verlenging: +6 weken (eenmaal, binnen termijn bekendmaken)
+
+        Maximum: 8 + 6 = 14 weken of 12 + 6 = 18 weken
+
+        KRITIEK LID 4: LEX SILENCIO EXCLUSIE
+        Awb paragraaf 4.1.3.3 is NIET van toepassing
+        → Bij termijnoverschrijding ontstaat GEEN vergunning van rechtswege
+        → Dit is bewuste keuze: milieu/veiligheid boven snelheid
+
+    interne_refs:
+      - naar: "artikel 16.16"
+        type: "verwijzing"
+        context: "instemming"
+        bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.16"
+
+    externe_refs:
+      - naar: "BWBR0004287"
+        wet: "Bekendmakingswet"
+        artikel: "12"
+        context: "publicatiewijze"
+      - naar: "BWBR0026759"
+        wet: "Dienstenwet"
+        artikel: "28, eerste lid"
+        context: "lex silencio uitsluiting"
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "paragraaf 4.1.3.3"
+        context: "lex silencio positivo (UITGESLOTEN)"
+
+    termijnen:
+      regulier: "8 weken"
+      met_instemming: "12 weken"
+      verlenging: "+6 weken (eenmaal)"
+      maximum_regulier: "14 weken"
+      maximum_met_instemming: "18 weken"
+      lex_silencio: false
+
+  16.64a:
+    nummer: "16.64a"
+    titel: "(kennisgeving)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64a"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64a/Lid1"
+        structuur:
+          volledige_tekst: "Als het bevoegd gezag naar aanleiding van de aanvraag om een omgevingsvergunning van oordeel is dat geen omgevingsvergunning nodig is, wordt dat vermeld in de kennisgeving, bedoeld in artikel 16.64, derde lid."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET vermelden als geen vergunning nodig is"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64a/Lid2"
+        structuur:
+          volledige_tekst: "Als het gaat om een besluit tot verlening van een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, wordt dat vermeld in de kennisgeving, bedoeld in artikel 16.64, derde lid."
+        logica:
+          type: "verplichting"
+          norm: "BG MOET vermelden als het een bopa betreft"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "specifieke kennisgevingen"
+
+    interne_refs:
+      - naar: "artikel 16.64, derde lid"
+        type: "verwijzing"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.64"
+
+# =============================================================================
+# PARAGRAAF 16.5.3 - TOEPASSING AFDELING 3.4 AWB (UITGEBREIDE PROCEDURE)
+# =============================================================================
+
+  16.65:
+    nummer: "16.65"
+    titel: "(toepassing afdeling 3.4 Awb)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid1"
+        structuur:
+          aanhef: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van de beslissing op de aanvraag om een omgevingsvergunning:"
+          onderdelen:
+            a:
+              tekst: "als de aanvraag geheel of gedeeltelijk betrekking heeft op bij algemene maatregel van bestuur aangewezen gevallen van activiteiten"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid1/Onderdeela"
+            b:
+              tekst: "op verzoek of met instemming van de aanvrager"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid1/Onderdeelb"
+        logica:
+          type: "definitie"
+          norm: "Uitgebreide procedure bij AMvB-aanwijzing OF op verzoek aanvrager"
+          conditie:
+            type: "wanneer"
+            tekst: "bij AMvB aangewezen OF op verzoek aanvrager"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid2"
+        structuur:
+          aanhef: "Deze paragraaf is van overeenkomstige toepassing op de voorbereiding van de beslissing:"
+          onderdelen:
+            a:
+              tekst: "op een aanvraag om wijziging van de voorschriften van een omgevingsvergunning of om intrekking van een omgevingsvergunning"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid2/Onderdeela"
+            b:
+              tekst: "tot ambtshalve wijziging van de voorschriften van een omgevingsvergunning of tot ambtshalve intrekking van een omgevingsvergunning"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid2/Onderdeelb"
+        logica:
+          type: "definitie"
+          norm: "Ook voor wijziging/intrekking (op aanvraag en ambtshalve)"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid3"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur, bedoeld in het eerste lid, aanhef en onder a, worden in ieder geval aangewezen gevallen van activiteiten ter uitvoering van het verdrag van Aarhus."
+        logica:
+          type: "verplichting"
+          norm: "AMvB MOET Aarhus-gevallen aanwijzen"
+          conditie:
+            type: "in_ieder_geval"
+            tekst: "in ieder geval aangewezen"
+            effect: "Aarhus-verdrag verplicht participatie"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid4"
+        structuur:
+          aanhef: "Het bevoegd gezag kan afdeling 3.4 van de Algemene wet bestuursrecht bij besluit van toepassing verklaren op de voorbereiding van de beslissing op een aanvraag om een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit:"
+          onderdelen:
+            a:
+              tekst: "als het gaat om een activiteit die aanzienlijke gevolgen heeft of kan hebben voor de fysieke leefomgeving"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid4/Onderdeela"
+            b:
+              tekst: "waartegen naar verwachting verschillende belanghebbenden bedenkingen zullen hebben"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid4/Onderdeelb"
+        logica:
+          type: "machtiging"
+          norm: "BG MAG uitgebreide procedure kiezen voor bopa"
+          conditie:
+            type: "mits"
+            tekst: "aanzienlijke gevolgen EN naar verwachting bedenkingen"
+            effect: "Cumulatieve voorwaarden"
+
+      5:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65/Lid5"
+        structuur:
+          volledige_tekst: "Als toepassing wordt gegeven aan het vierde lid, stelt het bevoegd gezag, voorafgaand aan het nemen van het besluit, de aanvrager in de gelegenheid zijn zienswijze daarover naar voren te brengen."
+        logica:
+          type: "verplichting"
+          norm: "Aanvrager MOET eerst zienswijze kunnen geven op procedurekeuze"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "wanneer uitgebreide procedure van toepassing"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.65 bepaalt WANNEER de uitgebreide procedure geldt:
+
+        AUTOMATISCH (lid 1):
+        a. Bij AMvB aangewezen activiteiten (bijv. IPPC, Seveso, MER-plichtig)
+        b. Op verzoek/met instemming aanvrager
+
+        VERPLICHT AANWIJZEN (lid 3):
+        - Aarhus-verdrag activiteiten (participatierecht burgers)
+
+        BG-DISCRETIE (lid 4):
+        - Voor bopa's met aanzienlijke gevolgen + verwachte bedenkingen
+        - Beide voorwaarden moeten cumulatief vervuld zijn
+        - Aanvrager krijgt eerst zienswijze (lid 5)
+
+        Dit is de ENIGE uitzondering op art. 16.62 lid 3 (verbod BG-keuze).
+
+    interne_refs:
+      - naar: "artikel 16.62, derde lid"
+        type: "uitzondering"
+        context: "BG kan hier wél kiezen"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.2/Artikel16.62"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "afdeling 3.4"
+        context: "uitgebreide voorbereidingsprocedure"
+      - naar: "verdrag van Aarhus"
+        context: "participatieplicht"
+
+    delegeert:
+      - type: "bij AMvB"
+        naar: "Omgevingsbesluit"
+        voor: "aanwijzing gevallen uitgebreide procedure"
+        actor: "Regering"
+
+  16.66:
+    nummer: "16.66"
+    titel: "(aanvullende bepalingen)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66/Lid1"
+        structuur:
+          volledige_tekst: "Bij de toepassing van afdeling 3.4 van de Algemene wet bestuursrecht op de voorbereiding van de beslissing op de aanvraag om een omgevingsvergunning worden de volgende leden en artikel 16.67 in acht genomen."
+        logica:
+          type: "verwijzing"
+          norm: "Aanvullende regels bij uitgebreide procedure"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66/Lid2"
+        structuur:
+          volledige_tekst: "Als een ander bestuursorgaan als bedoeld in artikel 16.54, eerste lid, derde zin, het bevoegd gezag is, ligt het ontwerpbesluit, met de daarop betrekking hebbende stukken die redelijkerwijs nodig zijn voor een beoordeling van het ontwerpbesluit, ook ter inzage in de gemeente waar de activiteit of activiteiten geheel of in hoofdzaak zullen worden verricht."
+        logica:
+          type: "verplichting"
+          norm: "Terinzagelegging OOK in gemeente van activiteit"
+          conditie:
+            type: "wanneer"
+            tekst: "Als ander bestuursorgaan dan gemeente BG is"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66/Lid3"
+        structuur:
+          volledige_tekst: "De in artikel 3:18, tweede lid, van de Algemene wet bestuursrecht bedoelde redelijke termijn bedraagt ten hoogste zes weken. De termijn waarbinnen op de aanvraag wordt beslist, kan ten hoogste eenmaal worden verlengd."
+        logica:
+          type: "begrenzing"
+          norm: "Verlenging uitgebreide procedure max 6 weken, eenmaal"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66/Lid4"
+        structuur:
+          volledige_tekst: "Als het bevoegd gezag naar aanleiding van de aanvraag om een omgevingsvergunning van oordeel is dat geen omgevingsvergunning nodig is, wordt dat vermeld in de kennisgeving, bedoeld in artikel 3:12 of 3:44 van de Algemene wet bestuursrecht."
+        logica:
+          type: "verplichting"
+          norm: "Vermeld als geen vergunning nodig"
+
+      5:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.66/Lid5"
+        structuur:
+          volledige_tekst: "Als het gaat om een ontwerpbesluit of besluit tot verlening van een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit, wordt dat vermeld in de kennisgeving, bedoeld in artikel 3:12 of 3:44 van de Algemene wet bestuursrecht."
+        logica:
+          type: "verplichting"
+          norm: "Vermeld als het een bopa betreft"
+
+    functie:
+      werkwoord: "regelt"
+      object: "aanvullende bepalingen uitgebreide procedure"
+
+    interne_refs:
+      - naar: "artikel 16.54, eerste lid, derde zin"
+        type: "verwijzing"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.1/Artikel16.54"
+      - naar: "artikel 16.67"
+        type: "verwijzing"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.67"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "3:18, tweede lid"
+        context: "verlengingstermijn"
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "3:12, 3:44"
+        context: "kennisgeving"
+
+  16.67:
+    nummer: "16.67"
+    titel: "(openbaarheid informatie)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.67"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.67/Lid1"
+        structuur:
+          volledige_tekst: "Het bevoegd gezag stelt op verzoek van de aanvrager, voordat het stukken ter inzage legt die niet door de aanvrager zijn ingebracht, hem in de gelegenheid die stukken in te zien met het oog op toepassing van de artikelen 19.3 tot en met 19.5 van de Wet milieubeheer."
+        logica:
+          type: "verplichting"
+          norm: "Aanvrager MAG eerst stukken inzien voor vertrouwelijkheidsclaim"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.67/Lid2"
+        structuur:
+          volledige_tekst: "Tot deze stukken behoren niet de verslagen, bedoeld in artikel 3:17 van de Algemene wet bestuursrecht, en de afschriften van zienswijzen, die door anderen dan betrokken bestuursorganen naar voren zijn gebracht overeenkomstig artikel 3:15 van die wet."
+        logica:
+          type: "begrenzing"
+          norm: "Verslagen en zienswijzen vallen buiten inzagerecht"
+
+    functie:
+      werkwoord: "regelt"
+      object: "vertrouwelijkheid bij terinzagelegging"
+
+    externe_refs:
+      - naar: "BWBR0003245"
+        wet: "Wet milieubeheer"
+        artikel: "19.3-19.5"
+        context: "vertrouwelijkheid milieu-informatie"
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "3:15, 3:17"
+        context: "zienswijzen en verslagen"
+
+  16.68:
+    nummer: "16.68"
+    titel: "(uitzonderingen)"
+    bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.68"
+    inwerking: "2024-01-01"
+
+    leden:
+      enkelvoudig:
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.68"
+        structuur:
+          aanhef: "Het bevoegd gezag kan op een aanvraag om een omgevingsvergunning voor een activiteit die op grond van artikel 16.65 is aangewezen, afdeling 3.4 van de Algemene wet bestuursrecht en artikel 3:44 van die wet buiten toepassing laten als:"
+          onderdelen:
+            a:
+              tekst: "de aanvraag betrekking heeft op een activiteit waarvan de uitvoering door een bijzondere omstandigheid op korte termijn nodig is"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.68/Onderdeela"
+            b:
+              tekst: "nationale veiligheidsbelangen dat vereisen"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.68/Onderdeelb"
+            c:
+              tekst: "de uitvoering van een internationaalrechtelijke verplichting dat vereist"
+              bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.68/Onderdeelc"
+        logica:
+          type: "machtiging"
+          norm: "BG MAG uitgebreide procedure overslaan bij spoed/veiligheid"
+          conditie:
+            type: "voor_zover"
+            tekst: "bijzondere omstandigheid / nationale veiligheid / internationaalrechtelijke verplichting"
+            effect: "Uitzondering op uitzondering"
+
+    functie:
+      werkwoord: "machtigt"
+      object: "overslaan uitgebreide procedure"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 16.68 = NOODKLEP voor uitgebreide procedure:
+
+        Zelfs als uitgebreide procedure verplicht is (art. 16.65),
+        kan BG deze overslaan bij:
+        a. Spoed (bijzondere omstandigheid)
+        b. Nationale veiligheid
+        c. Internationaalrechtelijke verplichting
+
+        Dit is een UITZONDERING OP DE UITZONDERING.
+
+    interne_refs:
+      - naar: "artikel 16.65"
+        type: "uitzondering"
+        context: "uitgebreide procedure overslaan"
+        bron_path: "/Hoofdstuk16/Afdeling16.5/Paragraaf16.5.3/Artikel16.65"
+
+    externe_refs:
+      - naar: "BWBR0005537"
+        wet: "Awb"
+        artikel: "afdeling 3.4, artikel 3:44"
+        context: "uitgezonderd van toepassing"
+
+# =============================================================================
+# PARAGRAAF-ANALYSE
+# =============================================================================
+
+paragraaf_analyse:
+
+  structuur:
+    artikelen_count: 15  # 16.54-16.68 (minus ingetrokken)
+    paragrafen:
+      - "16.5.1": "Algemeen (16.54-16.61)"
+      - "16.5.2": "Reguliere procedure (16.62-16.64a)"
+      - "16.5.3": "Uitgebreide procedure (16.65-16.68)"
+      - "16.5.4": "Vervallen"
+
+  patronen:
+    default_tenzij:
+      beschrijving: "Art. 16.62 bevat DEFAULT + TENZIJ patroon"
+      evidence:
+        - "lid 1: 'tenzij paragraaf 16.5.3 daarop van toepassing is'"
+      parallellen: ["4.9", "5.8"]
+
+    loketfunctie:
+      beschrijving: "Art. 16.54 ontkoppelt loket van bevoegd gezag"
+      evidence:
+        - "Aanvraag bij B&W ook als ander BG bevoegd is"
+        - "Ontvangstdatum bij loket = termijnstart"
+      implicatie: "Burger hoeft BG niet te kennen"
+
+    lex_silencio_exclusie:
+      beschrijving: "Art. 16.64 lid 4 sluit automatische vergunning uit"
+      evidence:
+        - "Awb paragraaf 4.1.3.3 niet van toepassing"
+      implicatie: "Termijnoverschrijding ≠ vergunning van rechtswege"
+
+    procedure_dualiteit:
+      beschrijving: "Twee proceduretracks: regulier (default) vs uitgebreid"
+      evidence:
+        - "§ 16.5.2: regulier (8-14/18 weken)"
+        - "§ 16.5.3: uitgebreid (Awb 3.4)"
+      triggers_uitgebreid:
+        - "AMvB-aanwijzing"
+        - "Verzoek aanvrager"
+        - "BG-besluit voor bopa (art. 16.65 lid 4)"
+
+  relaties:
+    intern:
+      - van: "16.62"
+        naar: "16.65"
+        type: "default-uitzondering"
+        beschrijving: "regulier tenzij 16.65"
+      - van: "16.54"
+        naar: "16.54a"
+        type: "uitwerking"
+        beschrijving: "indienen → ontvangst/termijn"
+      - van: "16.55"
+        naar: "5.3, 5.4"
+        type: "verwijzing"
+        beschrijving: "aanvraagvereisten decentrale vergunningen"
+
+    extern:
+      - naar: "Ch5 § 5.1.2"
+        context: "BG-bepaling → loket-routing"
+      - naar: "Awb afd 3.4"
+        context: "uitgebreide procedure"
+      - naar: "Verdrag van Aarhus"
+        context: "participatieplicht"
+
+  routes:
+    entry_points:
+      - artikel: "16.54"
+        vraag: "Waar dien ik mijn aanvraag in?"
+      - artikel: "16.62"
+        vraag: "Welke procedure is van toepassing?"
+      - artikel: "16.64"
+        vraag: "Hoe lang duurt de procedure?"
+
+    exit_points:
+      - naar: "art. 16.79"
+        context: "inwerkingtreding besluit"
+      - naar: "art. 16.83-16.90"
+        context: "rechtsbescherming"
+
+  termijnen_overzicht:
+    reguliere_procedure:
+      standaard: "8 weken"
+      met_instemming: "12 weken"
+      verlenging: "+6 weken (eenmaal)"
+      maximum: "14 of 18 weken"
+    uitgebreide_procedure:
+      basis: "Awb 3:18 (6 weken na zienswijzetermijn)"
+      verlenging: "+6 weken (eenmaal)"
+    lex_silencio: false
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+    loketfunctie_ontkoppeling:
+      observatie: |
+        Art. 16.54 ontkoppelt LOKET van BEVOEGD GEZAG:
+        - Loket: B&W gemeente (altijd)
+        - BG: bepaald door § 5.1.2 (kan ander zijn)
+        - Termijn start bij loket, niet bij BG
+      implicatie: |
+        Navigator hoeft BG niet te bepalen voor indiening.
+        Wel relevant voor beoordeling en rechtsbescherming.
+
+    procedure_dualiteit:
+      observatie: |
+        Twee proceduretracks met duidelijke default:
+        1. Regulier (§ 16.5.2): DEFAULT, 8-14/18 weken
+        2. Uitgebreid (§ 16.5.3): TENZIJ AMvB/verzoek/bopa
+      implicatie: |
+        Navigator moet checken:
+        - Is activiteit in Ob Bijlage aangewezen? → uitgebreid
+        - Vraagt aanvrager uitgebreid? → uitgebreid
+        - Anders → regulier
+
+    lex_silencio_bewust_uitgesloten:
+      observatie: |
+        Art. 16.64 lid 4 sluit Awb 4.1.3.3 expliciet uit.
+        Dit betekent: GEEN vergunning van rechtswege bij termijnoverschrijding.
+      implicatie: |
+        Bij termijnoverschrijding:
+        - Aanvrager kan bezwaar maken tegen niet-tijdig beslissen
+        - Maar krijgt niet automatisch vergunning
+        - Beschermt milieu/veiligheid boven snelheid
+
+  schema_verbeteringen:
+    - "Termijnen-overzicht toevoegen aan v2 schema"
+    - "Loket vs BG onderscheid documenteren"
+    - "Procedurekeuze-beslisboom maken"

@@ -1,0 +1,1337 @@
+# Chapter 11: Onteigening - V2 Atomic Extraction
+# Schema version: v2
+# Extraction date: 2026-01-29
+# Source: BWBR0037885 (Omgevingswet)
+# Articles: 11.1-11.21
+
+schema_version: 2
+bron: BWBR0037885
+
+---
+hoofdstuk_11:
+  nummer: "11"
+  titel: "Onteigening"
+  bron_path: "/Hoofdstuk11"
+  inwerking: "2024-01-01"
+
+  # =============================================================================
+  # AFDELING 11.1: ALGEMENE BEPALINGEN
+  # =============================================================================
+  afdeling_11.1:
+    nummer: "11.1"
+    titel: "Algemene bepalingen"
+    bron_path: "/Hoofdstuk11/Afdeling11.1"
+
+    artikel_11.1:
+      nummer: "11.1"
+      titel: "(algemeen belang)"
+      bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.1"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.1"
+          structuur:
+            volledige_tekst: "Onteigening van onroerende zaken in het algemeen belang als bedoeld in artikel 14 van de Grondwet kan op grond van dit hoofdstuk plaatsvinden in het algemeen belang van het ontwikkelen, gebruiken of beheren van de fysieke leefomgeving."
+
+          logica:
+            type: "machtiging"
+            norm: "Onteigening kan plaatsvinden in het algemeen belang van de fysieke leefomgeving"
+            grondwettelijke_basis: "artikel 14 Grondwet"
+            doelgebonden: true
+            doel_limitatief:
+              - "ontwikkelen fysieke leefomgeving"
+              - "gebruiken fysieke leefomgeving"
+              - "beheren fysieke leefomgeving"
+
+      functie:
+        werkwoord: "machtigt"
+        object: "onteigening onroerende zaken"
+        subject: "overheid (onteigenaar)"
+        grondslag: "Grondwet art. 14"
+
+      externe_refs:
+        - naar: "BWBR0001840"
+          wet: "Grondwet"
+          artikel: "14"
+          context: "algemeen belang als bedoeld in artikel 14 van de Grondwet"
+          type: "grondslag"
+
+    artikel_11.2:
+      nummer: "11.2"
+      titel: "(onteigenaar)"
+      bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid1"
+          structuur:
+            volledige_tekst: "Onteigening kan plaatsvinden op naam van een onteigenaar."
+
+          logica:
+            type: "bepaling"
+            norm: "Onteigening geschiedt op naam van onteigenaar"
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2"
+          structuur:
+            aanhef: "Onteigenaar kunnen zijn:"
+            onderdelen:
+              a:
+                tekst: "een gemeente,"
+                bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2/Onderdeela"
+              b:
+                tekst: "een waterschap,"
+                bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2/Onderdeelb"
+              c:
+                tekst: "een provincie,"
+                bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2/Onderdeelc"
+              d:
+                tekst: "de Staat,"
+                bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2/Onderdeeld"
+              e:
+                tekst: "een andere rechtspersoon met volledige rechtsbevoegdheid waaraan de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving is toegestaan."
+                bron_path: "/Hoofdstuk11/Afdeling11.1/Artikel11.2/Lid2/Onderdeele"
+
+          logica:
+            type: "definitie"
+            norm: "Limitatieve opsomming wie onteigenaar kan zijn"
+            onteigenaars:
+              publiekrechtelijk:
+                - "gemeente"
+                - "waterschap"
+                - "provincie"
+                - "Staat"
+              privaatrechtelijk:
+                - "rechtspersoon met volledige rechtsbevoegdheid"
+            conditie_privaatrechtelijk:
+              tekst: "waaraan de verwezenlijking is toegestaan"
+              effect: "Moet toestemming hebben voor de beoogde ontwikkeling"
+
+      functie:
+        werkwoord: "definieert"
+        object: "onteigenaar"
+        subject: "kring van mogelijke onteigenaars"
+
+      actoren:
+        - actor: "gemeente"
+          rol: "potentiële onteigenaar"
+        - actor: "waterschap"
+          rol: "potentiële onteigenaar"
+        - actor: "provincie"
+          rol: "potentiële onteigenaar"
+        - actor: "Staat"
+          rol: "potentiële onteigenaar"
+        - actor: "rechtspersoon"
+          rol: "potentiële onteigenaar onder voorwaarden"
+
+  # =============================================================================
+  # AFDELING 11.2: ONTEIGENINGSBESCHIKKING
+  # =============================================================================
+  afdeling_11.2:
+    nummer: "11.2"
+    titel: "Onteigeningsbeschikking"
+    bron_path: "/Hoofdstuk11/Afdeling11.2"
+
+    artikel_11.3:
+      nummer: "11.3"
+      titel: "(aanwijzing van te onteigenen onroerende zaken)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid1"
+          structuur:
+            volledige_tekst: "De onteigeningsbeschikking wijst de te onteigenen onroerende zaken aan."
+
+          logica:
+            type: "verplichting"
+            norm: "Onteigeningsbeschikking moet onroerende zaken aanwijzen"
+            specificiteit: "object-aanduiding verplicht"
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid2"
+          structuur:
+            aanhef: "Op verzoek van de eigenaar neemt het bevoegd gezag in de onteigeningsbeschikking ook ter onteigening op:"
+            onderdelen:
+              a:
+                tekst: "een volledig gebouw, als de onteigenaar het voornemen heeft alleen een gedeelte van het gebouw te onteigenen,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid2/Onderdeela"
+              b:
+                tekst: "volledige erven:"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid2/Onderdeelb"
+                sub_onderdelen:
+                  1:
+                    tekst: "als de onteigenaar het voornemen heeft alleen een gedeelte van een erf te onteigenen en daardoor 25% of minder van de omvang overblijft of als het erf daardoor kleiner wordt dan 10 are, en"
+                    bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid2/Onderdeelb/Onderdeel1"
+                  2:
+                    tekst: "als het overgebleven erf niet onmiddellijk grenst aan een ander erf van dezelfde eigenaar."
+                    bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.3/Lid2/Onderdeelb/Onderdeel2"
+
+          logica:
+            type: "recht"
+            norm: "Eigenaar kan verzoeken om volledige onteigening bij gedeeltelijke onteigening"
+            eigenaarsbescherming: true
+            drempels:
+              gebouw: "gedeeltelijke onteigening voornemen"
+              erf_kwantitatief: "≤25% overblijvend OF <10 are"
+              erf_kwalitatief: "niet grenzend aan ander eigen erf"
+            cumulatieve_criteria_erf: true
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "inhoud onteigeningsbeschikking"
+        subject: "eigenaarsbescherming bij gedeeltelijke onteigening"
+
+    artikel_11.4:
+      nummer: "11.4"
+      titel: "(bevoegd gezag)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid1"
+          structuur:
+            aanhef: "Een onteigeningsbeschikking kan worden gegeven door:"
+            onderdelen:
+              a:
+                tekst: "de gemeenteraad van de gemeente waarin de onroerende zaak ligt,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid1/Onderdeela"
+              b:
+                tekst: "het algemeen bestuur van het waterschap waarin de onroerende zaak ligt,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid1/Onderdeelb"
+              c:
+                tekst: "provinciale staten van de provincie waarin de onroerende zaak ligt,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid1/Onderdeelc"
+              d:
+                tekst: "Onze Minister die het aangaat."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid1/Onderdeeld"
+
+          logica:
+            type: "machtiging"
+            norm: "Bevoegd gezag voor onteigeningsbeschikking"
+            bestuursorganen:
+              gemeente: "gemeenteraad"
+              waterschap: "algemeen bestuur"
+              provincie: "provinciale staten"
+              rijk: "Minister"
+            territorialiteitsbeginsel: "waar de onroerende zaak ligt"
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid2"
+          structuur:
+            volledige_tekst: "Het algemeen bestuur van een waterschap kan alleen een onteigeningsbeschikking geven met het oog op de taken, bedoeld in artikel 2.17, eerste lid, aanhef en onder a."
+
+          logica:
+            type: "begrenzing"
+            norm: "Waterschap: onteigening alleen voor waterschapstaken"
+            conditie:
+              type: "voor_zover"
+              tekst: "met het oog op de taken, bedoeld in artikel 2.17, eerste lid, aanhef en onder a"
+              effect: "Beperking tot watersysteem- en waterkeringsbeheer"
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid3"
+          structuur:
+            aanhef: "Provinciale staten kunnen alleen een onteigeningsbeschikking geven als:"
+            onderdelen:
+              a:
+                tekst: "het onteigeningsbelang een provinciaal belang betreft, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid3/Onderdeela"
+              b:
+                tekst: "dat doelmatig is."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid3/Onderdeelb"
+
+          logica:
+            type: "begrenzing"
+            norm: "Provincie: onteigening alleen bij provinciaal belang of doelmatigheid"
+            alternatieve_criteria: true
+            criteria:
+              - "provinciaal belang"
+              - "doelmatigheid"
+
+        4:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid4"
+          structuur:
+            aanhef: "Onze Minister die het aangaat kan alleen een onteigeningsbeschikking geven als:"
+            onderdelen:
+              a:
+                tekst: "het onteigeningsbelang een nationaal belang betreft, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid4/Onderdeela"
+              b:
+                tekst: "dat doelmatig is."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.4/Lid4/Onderdeelb"
+
+          logica:
+            type: "begrenzing"
+            norm: "Rijk: onteigening alleen bij nationaal belang of doelmatigheid"
+            alternatieve_criteria: true
+            criteria:
+              - "nationaal belang"
+              - "doelmatigheid"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "bevoegdheid onteigeningsbeschikking"
+        subject: "bestuursorganen"
+        bevoegd_gezag: "meervoudig (gemeente/waterschap/provincie/rijk)"
+
+      interne_refs:
+        - naar: "artikel 2.17"
+          type: "verwijzing"
+          context: "taken waterschap"
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17"
+
+      actoren:
+        - actor: "gemeenteraad"
+          rol: "bevoegd gezag onteigening"
+        - actor: "algemeen bestuur waterschap"
+          rol: "bevoegd gezag onteigening (beperkt)"
+        - actor: "provinciale staten"
+          rol: "bevoegd gezag onteigening (beperkt)"
+        - actor: "minister"
+          rol: "bevoegd gezag onteigening (beperkt)"
+
+    artikel_11.5:
+      nummer: "11.5"
+      titel: "(criteria: onteigeningsbelang, noodzaak en urgentie)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5"
+          structuur:
+            aanhef: "Een onteigeningsbeschikking kan alleen worden gegeven:"
+            onderdelen:
+              a:
+                tekst: "in het belang van het ontwikkelen, gebruiken of beheren van de fysieke leefomgeving,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5/Onderdeela"
+              b:
+                tekst: "als onteigening noodzakelijk is, en"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5/Onderdeelb"
+              c:
+                tekst: "als onteigening urgent is."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5/Onderdeelc"
+
+          logica:
+            type: "verplichting"
+            norm: "Drie cumulatieve criteria voor onteigeningsbeschikking"
+            cumulatieve_criteria: true
+            criteria:
+              - "onteigeningsbelang (fysieke leefomgeving)"
+              - "noodzaak"
+              - "urgentie"
+            default: "geen onteigening mogelijk"
+            uitzondering: "alleen bij alle drie criteria voldaan"
+
+      functie:
+        werkwoord: "begrenst"
+        object: "onteigeningsbeschikking"
+        subject: "drietal toetsingscriteria"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.5 vormt de kerntoets voor onteigening: DRIE CUMULATIEVE CRITERIA.
+          1. Onteigeningsbelang - moet gaan om fysieke leefomgeving (art. 11.6 werkt uit)
+          2. Noodzaak - geen alternatief voorhanden (art. 11.7-11.10 werken uit)
+          3. Urgentie - tijdig begin maken (art. 11.11 werkt uit)
+
+          Koppeling met art. 14 Grondwet: "in het algemeen belang" vereist.
+          Dit is de centrale poortwachter voor alle onteigening.
+
+    artikel_11.6:
+      nummer: "11.6"
+      titel: "(grondslagen onteigeningsbelang)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.6"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.6"
+          structuur:
+            aanhef: "Van een onteigeningsbelang is alleen sprake als de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving:"
+            onderdelen:
+              a:
+                tekst: "onder uitsluiting van de bestaande vorm van ontwikkeling, gebruik of beheer, mogelijk is gemaakt in een vastgesteld omgevingsplan,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.6/Onderdeela"
+              b:
+                tekst: "mogelijk is gemaakt in een verleende omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.6/Onderdeelb"
+              c:
+                tekst: "mogelijk is gemaakt door een vastgesteld projectbesluit."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.6/Onderdeelc"
+
+          logica:
+            type: "definitie"
+            norm: "Onteigeningsbelang vereist planologische titel"
+            alternatieve_grondslagen: true
+            grondslagen:
+              - grondslag: "omgevingsplan"
+                voorwaarde: "vastgesteld"
+                extra: "onder uitsluiting van bestaande gebruik"
+              - grondslag: "omgevingsvergunning buitenplanse omgevingsplanactiviteit"
+                voorwaarde: "verleend"
+              - grondslag: "projectbesluit"
+                voorwaarde: "vastgesteld"
+            planologische_titel_vereist: true
+
+      functie:
+        werkwoord: "definieert"
+        object: "onteigeningsbelang"
+        subject: "planologische grondslag"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.6 concretiseert criterium 1 uit art. 11.5: PLANOLOGISCHE TITEL VEREIST.
+          Geen onteigening zonder:
+          - Omgevingsplan dat nieuwe bestemming exclusief maakt, OF
+          - Buitenplanse omgevingsvergunning, OF
+          - Projectbesluit
+
+          Dit voorkomt onteigening "op hoop van zegen".
+
+    artikel_11.7:
+      nummer: "11.7"
+      titel: "(onderbouwing noodzaak)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid1"
+          structuur:
+            aanhef: "De noodzaak tot onteigening ontbreekt in ieder geval als:"
+            onderdelen:
+              a:
+                tekst: "de onteigenaar geen redelijke poging heeft gedaan tot minnelijke verwerving van de onroerende zaak vrij van rechten en lasten,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid1/Onderdeela"
+              b:
+                tekst: "de onteigenaar geen redelijke poging heeft gedaan om overeenstemming te bereiken over het vervallen van zakelijke of persoonlijke rechten op de onroerende zaak,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid1/Onderdeelb"
+              c:
+                tekst: "aannemelijk is dat op afzienbare termijn alsnog overeenstemming kan worden bereikt over de minnelijke verwerving van de onroerende zaak vrij van rechten en lasten en die overeenstemming zal leiden tot een spoedige levering daarvan, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid1/Onderdeelc"
+              d:
+                tekst: "aannemelijk is dat op afzienbare termijn alsnog overeenstemming kan worden bereikt over het vervallen van zakelijke of persoonlijke rechten op de onroerende zaak en die overeenstemming zal leiden tot het spoedig vervallen van die rechten."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid1/Onderdeeld"
+
+          logica:
+            type: "verbod"
+            norm: "Noodzaak ontbreekt als minnelijke verwerving nog mogelijk/niet geprobeerd"
+            minnelijke_verwerving_verplicht: true
+            blokkeergronden:
+              - "geen poging eigendom minnelijk te verwerven"
+              - "geen poging rechten te laten vervallen"
+              - "overeenstemming eigendom nog bereikbaar"
+              - "overeenstemming rechten nog bereikbaar"
+            ultimum_remedium: true
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid2"
+          structuur:
+            aanhef: "De noodzaak tot onteigening ontbreekt ook als de eigenaar van of een beperkt gerechtigde op de onroerende zaak:"
+            onderdelen:
+              a:
+                tekst: "aantoont bereid en in staat te zijn om de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving op zich te nemen,"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid2/Onderdeela"
+              b:
+                tekst: "daarvoor concrete en op uitvoering gerichte voornemens heeft en die aan het bevoegd gezag kenbaar heeft gemaakt, en"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid2/Onderdeelb"
+              c:
+                tekst: "de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving zal verwezenlijken op de door het bevoegd gezag beoogde wijze."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid2/Onderdeelc"
+
+          logica:
+            type: "recht"
+            norm: "Zelfrealisatierecht eigenaar blokkeert onteigening"
+            zelfrealisatie: true
+            cumulatieve_criteria: true
+            criteria:
+              - "bereid en in staat"
+              - "concrete, op uitvoering gerichte voornemens, kenbaar gemaakt"
+              - "verwezenlijking op beoogde wijze"
+            eigenaarsbescherming: true
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid3"
+          structuur:
+            aanhef: "Het tweede lid is niet van toepassing als het gaat om een onroerende zaak waarvoor:"
+            onderdelen:
+              a:
+                tekst: "niet eerder een onteigeningsbeschikking is gegeven vanwege het ontbreken van de noodzaak tot onteigening, bedoeld in artikel 11.5, onder b, in samenhang met dat lid, en binnen drie jaar na het kenbaar maken, bedoeld in dat lid, onder b, vanwege oorzaken die de eigenaar of beperkt gerechtigde had kunnen voorkomen geen begin is gemaakt met de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid3/Onderdeela"
+              b:
+                tekst: "in de bekrachtigingsprocedure of in hoger beroep het verzoek tot bekrachtiging van de onteigeningsbeschikking is afgewezen respectievelijk de onteigeningsbeschikking is vernietigd vanwege het kennelijk ontbreken van de noodzaak tot onteigening, bedoeld in artikel 11.5, onder b, in samenhang met dat lid, en binnen drie jaar na die uitspraak vanwege oorzaken die de eigenaar of beperkt gerechtigde had kunnen voorkomen geen begin is gemaakt met de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving."
+                bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.7/Lid3/Onderdeelb"
+
+          logica:
+            type: "uitzondering"
+            norm: "Zelfrealisatierecht vervalt bij niet-nakoming"
+            conditie:
+              type: "tenzij"
+              tekst: "niet binnen drie jaar begonnen met verwezenlijking"
+              effect: "Zelfrealisatierecht vervalt"
+            termijn: "3 jaar"
+            verwijtbaarheid_vereist: "vanwege oorzaken die eigenaar had kunnen voorkomen"
+            anti_misbruik: true
+
+      functie:
+        werkwoord: "definieert"
+        object: "noodzaak onteigening"
+        subject: "minnelijke verwerving en zelfrealisatie"
+
+      interne_refs:
+        - naar: "artikel 11.5"
+          type: "verwijzing"
+          context: "noodzaak tot onteigening"
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.5"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.7 concretiseert criterium 2 uit art. 11.5: NOODZAAK.
+          Twee blokkades voor onteigening:
+
+          1. MINNELIJKE VERWERVING (lid 1):
+             - Onteigenaar moet eerst proberen minnelijk te verwerven
+             - Zolang overeenstemming bereikbaar: geen onteigening
+
+          2. ZELFREALISATIE (lid 2):
+             - Eigenaar kan zelf de bestemming verwezenlijken
+             - Moet bereid, in staat, concreet voornemen hebben
+
+          ANTI-MISBRUIK (lid 3):
+             - Zelfrealisatierecht vervalt na 3 jaar non-realisatie
+             - Alleen bij verwijtbare niet-nakoming
+
+    artikel_11.8:
+      nummer: "11.8"
+      titel: "(onderbouwing noodzaak in verband met de openbare orde)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.8"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.8"
+          structuur:
+            volledige_tekst: "Als het onteigeningsbelang verband houdt met de handhaving van de openbare orde rond een gebouw als bedoeld in artikel 13b, tweede lid, van de Woningwet, die is verstoord door gedragingen in of in de onmiddellijke nabijheid van dat gebouw, ontbreekt de noodzaak tot onteigening, tenzij de uitoefening van de bevoegdheden, bedoeld in artikel 13b, tweede lid, van die wet, geen uitzicht heeft geboden op een duurzaam herstel van of duurzame voorkoming van ernstige verstoring van de openbare orde rond dat gebouw."
+
+          logica:
+            type: "begrenzing"
+            norm: "Onteigening voor openbare orde alleen als Woningwet-bevoegdheden niet werken"
+            conditie:
+              type: "tenzij"
+              tekst: "uitoefening bevoegdheden art. 13b Woningwet geen uitzicht op duurzaam herstel"
+              effect: "Dan mag wel onteigend worden"
+            default: "geen onteigening"
+            uitzondering: "wel onteigening als Woningwet-handhaving faalt"
+            subsidiariteit: true
+            ultimum_remedium: true
+
+      functie:
+        werkwoord: "begrenst"
+        object: "onteigening bij openbare orde"
+        subject: "subsidiariteit ten opzichte van Woningwet"
+
+      externe_refs:
+        - naar: "BWBR0005181"
+          wet: "Woningwet"
+          artikel: "13b, tweede lid"
+          context: "handhaving openbare orde gebouw"
+          type: "grondslag"
+
+    artikel_11.9:
+      nummer: "11.9"
+      titel: "(onderbouwing noodzaak in verband met de Opiumwet)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.9"
+      inwerking: "2026-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.9"
+          structuur:
+            volledige_tekst: "Als het onteigeningsbelang verband houdt met de handhaving van de artikelen 2, 2a, 3, 10a, eerste lid, aanhef en onder 3°, 10c, eerste lid, aanhef en onder 3°, en 11a van de Opiumwet in een gebouw als bedoeld in artikel 13b, tweede lid, van de Woningwet, ontbreekt de noodzaak tot onteigening, tenzij de uitoefening van de bevoegdheden, bedoeld in artikel 13b, tweede lid, van de Woningwet, geen uitzicht heeft geboden op het duurzaam achterwege blijven van een overtreding van artikel 2, 2a, 3, 10a, eerste lid, aanhef en onder 3°, 10c, eerste lid, aanhef en onder 3°, of 11a van de Opiumwet in het gebouw."
+
+          logica:
+            type: "begrenzing"
+            norm: "Onteigening voor Opiumwet alleen als Woningwet-bevoegdheden niet werken"
+            conditie:
+              type: "tenzij"
+              tekst: "uitoefening bevoegdheden art. 13b Woningwet geen uitzicht op duurzaam stoppen overtredingen"
+              effect: "Dan mag wel onteigend worden"
+            default: "geen onteigening"
+            uitzondering: "wel onteigening als Woningwet-handhaving faalt"
+            subsidiariteit: true
+            ultimum_remedium: true
+
+      functie:
+        werkwoord: "begrenst"
+        object: "onteigening bij drugsproblematiek"
+        subject: "subsidiariteit ten opzichte van Woningwet"
+
+      externe_refs:
+        - naar: "BWBR0001941"
+          wet: "Opiumwet"
+          artikel: "2, 2a, 3, 10a, 10c, 11a"
+          context: "handhaving drugsdelicten"
+          type: "verwijzing"
+        - naar: "BWBR0005181"
+          wet: "Woningwet"
+          artikel: "13b, tweede lid"
+          context: "handhaving drugspanden"
+          type: "grondslag"
+
+    artikel_11.10:
+      nummer: "11.10"
+      titel: "(onderbouwing noodzaak in verband met de leefbaarheid, gezondheid en veiligheid)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.10"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.10"
+          structuur:
+            volledige_tekst: "Als het onteigeningsbelang verband houdt met het opheffen van een overtreding als bedoeld in artikel 17 van de Woningwet in een gebouw of op een open erf of een terrein als bedoeld in dat artikel, ontbreekt de noodzaak tot onteigening, tenzij de uitoefening van de bevoegdheden, bedoeld in artikel 13b, tweede lid, van die wet, geen uitzicht heeft geboden op het duurzaam achterwege blijven van een zodanige overtreding."
+
+          logica:
+            type: "begrenzing"
+            norm: "Onteigening voor leefbaarheid alleen als Woningwet-bevoegdheden niet werken"
+            conditie:
+              type: "tenzij"
+              tekst: "uitoefening bevoegdheden art. 13b Woningwet geen uitzicht op duurzaam stoppen overtredingen"
+              effect: "Dan mag wel onteigend worden"
+            default: "geen onteigening"
+            uitzondering: "wel onteigening als Woningwet-handhaving faalt"
+            subsidiariteit: true
+            ultimum_remedium: true
+
+      functie:
+        werkwoord: "begrenst"
+        object: "onteigening bij leefbaarheidsproblemen"
+        subject: "subsidiariteit ten opzichte van Woningwet"
+
+      externe_refs:
+        - naar: "BWBR0005181"
+          wet: "Woningwet"
+          artikel: "17"
+          context: "overtreding leefbaarheid"
+          type: "verwijzing"
+        - naar: "BWBR0005181"
+          wet: "Woningwet"
+          artikel: "13b, tweede lid"
+          context: "handhaving"
+          type: "grondslag"
+
+    artikel_11.11:
+      nummer: "11.11"
+      titel: "(onderbouwing urgentie)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.11"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.11"
+          structuur:
+            volledige_tekst: "De urgentie ontbreekt in ieder geval als niet aannemelijk is dat binnen drie jaar na het inschrijven van de onteigeningsakte een begin wordt gemaakt met de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving waarvoor onteigening nodig is."
+
+          logica:
+            type: "verbod"
+            norm: "Urgentie ontbreekt als niet binnen 3 jaar begonnen met verwezenlijking"
+            termijn: "3 jaar na inschrijving onteigeningsakte"
+            toets: "aannemelijkheid begin verwezenlijking"
+            default: "geen onteigening bij ontbreken urgentie"
+            anti_voorraad_onteigening: true
+
+      functie:
+        werkwoord: "definieert"
+        object: "urgentie onteigening"
+        subject: "drie-jaar-termijn voor begin verwezenlijking"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.11 concretiseert criterium 3 uit art. 11.5: URGENTIE.
+          De drie-jaar-termijn voorkomt "voorraad-onteigening":
+          - Moet aannemelijk zijn dat binnen 3 jaar begonnen wordt
+          - Meetpunt: inschrijving onteigeningsakte
+
+          Spiegelbeeld van art. 11.21 (teruglevering bij niet-verwezenlijking).
+
+    artikel_11.12:
+      nummer: "11.12"
+      titel: "(vervallen onteigeningsbeschikking)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.12"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.12"
+          structuur:
+            volledige_tekst: "De onteigeningsbeschikking vervalt als de onteigenaar niet uiterlijk binnen twaalf maanden na het onherroepelijk worden van die beschikking de rechtbank binnen het rechtsgebied waarvan de te onteigenen onroerende zaak geheel of grotendeels ligt, verzoekt om de schadeloosstelling vast te stellen volgens afdeling 15.3."
+
+          logica:
+            type: "verval"
+            norm: "Onteigeningsbeschikking vervalt na 12 maanden zonder schadeloosstellingsverzoek"
+            termijn: "12 maanden na onherroepelijk worden"
+            rechtsgevolg: "van rechtswege verval"
+            actie_vereist: "verzoek rechtbank schadeloosstelling"
+            bevoegde_rechter: "rechtbank waar zaak ligt"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "verval onteigeningsbeschikking"
+        subject: "vervaltermijn"
+
+      interne_refs:
+        - naar: "afdeling 15.3"
+          type: "verwijzing"
+          context: "schadeloosstelling"
+          bron_path: "/Hoofdstuk15/Afdeling15.3"
+
+    artikel_11.13:
+      nummer: "11.13"
+      titel: "(geen coördinatie met andere besluiten)"
+      bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.13"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.2/Artikel11.13"
+          structuur:
+            volledige_tekst: "Artikel 3:20, aanhef en onder b, van de Algemene wet bestuursrecht en artikel 5.45, eerste lid, zijn niet van toepassing op een onteigeningsbeschikking."
+
+          logica:
+            type: "uitsluiting"
+            norm: "Onteigeningsbeschikking wordt niet gecoördineerd met andere besluiten"
+            uitsluiting:
+              - "art. 3:20 Awb (automatische coördinatie)"
+              - "art. 5.45 lid 1 Ow (projectbesluit-coördinatie)"
+            ratio: "Onteigening volgt eigen procedure"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "procedurele onafhankelijkheid"
+        subject: "onteigeningsbeschikking"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Algemene wet bestuursrecht"
+          artikel: "3:20, aanhef en onder b"
+          context: "coördinatie"
+          type: "uitsluiting"
+
+      interne_refs:
+        - naar: "artikel 5.45, eerste lid"
+          type: "uitsluiting"
+          context: "projectbesluit-coördinatie"
+          bron_path: "/Hoofdstuk5/Afdeling5.2/Paragraaf5.2.1/Artikel5.45"
+
+  # =============================================================================
+  # AFDELING 11.3: SCHADELOOSSTELLING BIJ ONTEIGENING
+  # =============================================================================
+  afdeling_11.3:
+    nummer: "11.3"
+    titel: "Schadeloosstelling bij onteigening"
+    bron_path: "/Hoofdstuk11/Afdeling11.3"
+
+    artikel_11.14:
+      nummer: "11.14"
+      titel: "(verzoekprocedure schadeloosstelling)"
+      bron_path: "/Hoofdstuk11/Afdeling11.3/Artikel11.14"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.3/Artikel11.14"
+          structuur:
+            volledige_tekst: "Nadat de onteigeningsbeschikking is bekendgemaakt, kan de onteigenaar de rechtbank binnen het rechtsgebied waarvan de te onteigenen onroerende zaak geheel of grotendeels ligt, verzoeken de schadeloosstelling vast te stellen volgens afdeling 15.3."
+
+          logica:
+            type: "machtiging"
+            norm: "Onteigenaar kan rechtbank verzoeken schadeloosstelling vast te stellen"
+            voorwaarde: "na bekendmaking onteigeningsbeschikking"
+            bevoegde_rechter: "rechtbank waar zaak ligt"
+            procedure: "verzoekschrift"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "verzoekprocedure schadeloosstelling"
+        subject: "toegang tot rechter"
+
+      interne_refs:
+        - naar: "afdeling 15.3"
+          type: "verwijzing"
+          context: "schadeloosstelling"
+          bron_path: "/Hoofdstuk15/Afdeling15.3"
+
+  # =============================================================================
+  # AFDELING 11.4: ONTEIGENINGSAKTE
+  # =============================================================================
+  afdeling_11.4:
+    nummer: "11.4"
+    titel: "Onteigeningsakte"
+    bron_path: "/Hoofdstuk11/Afdeling11.4"
+
+    artikel_11.15:
+      nummer: "11.15"
+      titel: "(verzoek verlijden onteigeningsakte)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.15"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.15"
+          structuur:
+            volledige_tekst: "Uiterlijk binnen twee maanden nadat aan alle voorwaarden, bedoeld in artikel 11.16, eerste lid, is voldaan, verzoekt de onteigenaar een notaris de onteigeningsakte te verlijden."
+
+          logica:
+            type: "verplichting"
+            norm: "Onteigenaar moet binnen 2 maanden verzoeken om verlijden akte"
+            termijn: "2 maanden na voldoen aan voorwaarden art. 11.16 lid 1"
+            actie_vereist: "verzoek aan notaris"
+
+      functie:
+        werkwoord: "verplicht"
+        object: "verzoek verlijden"
+        subject: "onteigenaar"
+
+      interne_refs:
+        - naar: "artikel 11.16, eerste lid"
+          type: "verwijzing"
+          context: "voorwaarden voor verlijden"
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16"
+
+    artikel_11.16:
+      nummer: "11.16"
+      titel: "(vereisten verlijden onteigeningsakte)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid1"
+          structuur:
+            aanhef: "Een onteigeningsakte kan alleen worden verleden als:"
+            onderdelen:
+              a:
+                tekst: "de onteigeningsbeschikking onherroepelijk is,"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid1/Onderdeela"
+              b:
+                tekst: "het besluit ter uitvoering waarvan de onteigening nodig is onherroepelijk is, en"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid1/Onderdeelb"
+              c:
+                tekst: "de voorlopige schadeloosstelling, bedoeld in artikel 15.43, of de overeengekomen schadeloosstelling die is opgenomen in een proces-verbaal, is betaald."
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid1/Onderdeelc"
+
+          logica:
+            type: "verplichting"
+            norm: "Drie cumulatieve voorwaarden voor verlijden onteigeningsakte"
+            cumulatieve_criteria: true
+            criteria:
+              - "onteigeningsbeschikking onherroepelijk"
+              - "uitvoeringsbesluit onherroepelijk"
+              - "schadeloosstelling betaald"
+            bescherming_onteigende: true
+            nulla_executio_sine_solutione: "geen overdracht zonder betaling"
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid2"
+          structuur:
+            aanhef: "De onherroepelijkheid van de onteigeningsbeschikking wordt aangetoond door het overleggen van:"
+            onderdelen:
+              a:
+                tekst: "de uitspraak in hoger beroep tegen een uitspraak op een verzoek tot bekrachtiging, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid2/Onderdeela"
+              b:
+                tekst: "een verklaring van de griffier van de Afdeling bestuursrechtspraak van de Raad van State waaruit blijkt dat tegen de uitspraak op het verzoek tot bekrachtiging binnen de beroepstermijn geen hoger beroep is ingesteld."
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid2/Onderdeelb"
+
+          logica:
+            type: "bewijs"
+            norm: "Onherroepelijkheid onteigeningsbeschikking aantonen"
+            alternatieve_bewijsmiddelen: true
+            bewijsmiddelen:
+              - "uitspraak hoger beroep"
+              - "griffiersverklaring geen hoger beroep"
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid3"
+          structuur:
+            aanhef: "De onherroepelijkheid van het besluit ter uitvoering waarvan de onteigening nodig is, wordt aangetoond door het overleggen van:"
+            onderdelen:
+              a:
+                tekst: "de uitspraak tegen dat besluit door de Afdeling bestuursrechtspraak van de Raad van State,"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid3/Onderdeela"
+              b:
+                tekst: "een verklaring van de griffier van de rechtbank of een verklaring van de griffier van de Afdeling bestuursrechtspraak van de Raad van State waaruit blijkt dat tegen dat besluit binnen de beroepstermijn geen beroep is ingesteld, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid3/Onderdeelb"
+              c:
+                tekst: "een verklaring van de griffier van de Afdeling bestuursrechtspraak van de Raad van State waaruit blijkt dat tegen de uitspraak op het beroep tegen het besluit binnen de beroepstermijn geen hoger beroep is ingesteld."
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid3/Onderdeelc"
+
+          logica:
+            type: "bewijs"
+            norm: "Onherroepelijkheid uitvoeringsbesluit aantonen"
+            alternatieve_bewijsmiddelen: true
+            bewijsmiddelen:
+              - "uitspraak ABRvS"
+              - "griffiersverklaring geen beroep"
+              - "griffiersverklaring geen hoger beroep"
+
+        4:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid4"
+          structuur:
+            aanhef: "De betaling van de voorlopige schadeloosstelling of de overeengekomen schadeloosstelling wordt aangetoond door het overleggen van een betalingsbewijs. Als betalingsbewijs geldt:"
+            onderdelen:
+              a:
+                tekst: "een bewijs dat de som van de voorlopige schadeloosstelling of de overeengekomen schadeloosstelling is overgeschreven op een rekening die de tot ontvangst gerechtigde aanhoudt bij een financiële onderneming die in Nederland op grond van de Wet op het financieel toezicht het bedrijf van bank mag uitoefenen,"
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid4/Onderdeela"
+              b:
+                tekst: "een consignatiebewijs als bedoeld in artikel 6, eerste lid, van de Wet op de consignatie van gelden, als niet genoegzaam bekend is wie tot ontvangst gerechtigd is of consignatie heeft plaatsgevonden op grond van de artikelen 15.49 en 15.50."
+                bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.16/Lid4/Onderdeelb"
+
+          logica:
+            type: "bewijs"
+            norm: "Betaling schadeloosstelling aantonen"
+            alternatieve_bewijsmiddelen: true
+            bewijsmiddelen:
+              - "bewijs overboeking naar bankrekening"
+              - "consignatiebewijs (als gerechtigde onbekend)"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "vereisten verlijden onteigeningsakte"
+        subject: "bescherming onteigende"
+
+      interne_refs:
+        - naar: "artikel 15.43"
+          type: "verwijzing"
+          context: "voorlopige schadeloosstelling"
+          bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.2/Artikel15.43"
+        - naar: "artikelen 15.49 en 15.50"
+          type: "verwijzing"
+          context: "consignatie"
+          bron_path: "/Hoofdstuk15/Afdeling15.3/Paragraaf15.3.3/Artikel15.49"
+
+      externe_refs:
+        - naar: "BWBR0003338"
+          wet: "Wet op de consignatie van gelden"
+          artikel: "6, eerste lid"
+          context: "consignatiebewijs"
+          type: "verwijzing"
+
+    artikel_11.17:
+      nummer: "11.17"
+      titel: "(ondertekening onteigeningsakte)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.17"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.17"
+          structuur:
+            volledige_tekst: "Een onteigeningsakte wordt ondertekend door de onteigenaar."
+
+          logica:
+            type: "bepaling"
+            norm: "Onteigeningsakte alleen ondertekend door onteigenaar"
+            geen_medewerking_onteigende_vereist: true
+            eenzijdige_akte: true
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "ondertekening"
+        subject: "eenzijdige akte"
+
+    artikel_11.18:
+      nummer: "11.18"
+      titel: "(rechtsgevolgen inschrijven onteigeningsakte)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.18"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.18/Lid1"
+          structuur:
+            volledige_tekst: "Met het inschrijven van een door een notaris verleden onteigeningsakte in de openbare registers verkrijgt de onteigenaar de eigendom vrij van alle lasten en rechten die met betrekking tot de zaak bestaan."
+
+          logica:
+            type: "rechtsgevolg"
+            norm: "Inschrijving leidt tot eigendomsverkrijging vrij van lasten en rechten"
+            moment: "inschrijving openbare registers"
+            effect: "zuiverende werking"
+            eigendomsovergang: true
+            vrij_van_lasten: true
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.18/Lid2"
+          structuur:
+            volledige_tekst: "De bewaarder van het kadaster en de openbare registers tekent ambtshalve de door de inschrijving van de onteigeningsakte niet meer bestaande inschrijvingen van hypotheken en beslagen aan in de basisregistratie kadaster en in de openbare registers."
+
+          logica:
+            type: "verplichting"
+            norm: "Bewaarder tekent ambtshalve vervallen inschrijvingen aan"
+            automatisch: true
+            doorroyement: "hypotheken en beslagen"
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.18/Lid3"
+          structuur:
+            volledige_tekst: "Erfdienstbaarheden kunnen op de onteigende zaak gevestigd blijven. Zij worden daarvoor in de onteigeningsakte opgenomen. Als zij niet door vestiging zijn ontstaan, worden de kadastrale aanduiding van het heersende erf en een omschrijving van de erfdienstbaarheid in de onteigeningsakte opgenomen."
+
+          logica:
+            type: "uitzondering"
+            norm: "Erfdienstbaarheden kunnen blijven bestaan"
+            conditie:
+              type: "mits"
+              tekst: "opgenomen in onteigeningsakte"
+              effect: "erfdienstbaarheden blijven gevestigd"
+            uitzondering_op_zuiverende_werking: true
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "rechtsgevolgen inschrijving"
+        subject: "eigendomsovergang en zuivering"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.18 regelt de ZUIVERENDE WERKING van onteigening:
+          - Lid 1: eigendom vrij van ALLE lasten en rechten
+          - Lid 2: automatisch doorroyement hypotheken/beslagen
+          - Lid 3: UITZONDERING voor erfdienstbaarheden (kunnen blijven)
+
+          Dit is het moment van de eigendomsovergang: inschrijving in openbare registers.
+
+    artikel_11.19:
+      nummer: "11.19"
+      titel: "(lasten en belastingen)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.19"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.19"
+          structuur:
+            volledige_tekst: "Waterschaps- en soortgelijke lasten en alle belastingen waarmee de onteigende zaak is bezwaard of die daarover worden betaald, gaan met ingang van de dag waarop de onteigeningsakte in de openbare registers is ingeschreven over op de onteigenaar."
+
+          logica:
+            type: "rechtsgevolg"
+            norm: "Lasten en belastingen gaan over op onteigenaar"
+            moment: "dag van inschrijving"
+            overgang:
+              - "waterschapslasten"
+              - "soortgelijke lasten"
+              - "alle belastingen"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "overgang lasten en belastingen"
+        subject: "moment van overgang"
+
+    artikel_11.20:
+      nummer: "11.20"
+      titel: "(inbezitstelling na inschrijving onteigeningsakte)"
+      bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.20"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.20/Lid1"
+          structuur:
+            volledige_tekst: "Op verzoek van de onteigenaar kan de voorzieningenrechter bij een in executoriale vorm afgegeven bevelschrift de nodige bevelen geven om de onteigenaar in het bezit van de onteigende onroerende zaak te stellen."
+
+          logica:
+            type: "machtiging"
+            norm: "Voorzieningenrechter kan inbezitstelling bevelen"
+            procedure: "verzoekschrift"
+            rechter: "voorzieningenrechter"
+            vorm: "executoriaal bevelschrift"
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.20/Lid2"
+          structuur:
+            volledige_tekst: "Bij zijn verzoek overlegt de onteigenaar een afschrift van de onteigeningsakte en een bewijs van inschrijving daarvan."
+
+          logica:
+            type: "verplichting"
+            norm: "Verzoek moet vergezeld gaan van akte en inschrijvingsbewijs"
+            bijlagen:
+              - "afschrift onteigeningsakte"
+              - "bewijs inschrijving"
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.4/Artikel11.20/Lid3"
+          structuur:
+            volledige_tekst: "Tegen een bevelschrift als bedoeld in het eerste lid staat geen hogere voorziening open."
+
+          logica:
+            type: "uitsluiting"
+            norm: "Geen hoger beroep tegen bevelschrift"
+            definitief: true
+            ratio: "snelle ontruiming"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "gedwongen inbezitstelling"
+        subject: "ontruimingsprocedure"
+
+  # =============================================================================
+  # AFDELING 11.5: NIET VERWEZENLIJKEN ONTEIGENINGSBELANG
+  # =============================================================================
+  afdeling_11.5:
+    nummer: "11.5"
+    titel: "Niet verwezenlijken onteigeningsbelang"
+    bron_path: "/Hoofdstuk11/Afdeling11.5"
+
+    artikel_11.21:
+      nummer: "11.21"
+      titel: "(rechtsgevolgen niet verwezenlijken onteigeningsbelang)"
+      bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid1"
+          structuur:
+            aanhef: "De onteigenaar biedt aan de onteigende de mogelijkheid het onteigende teruggeleverd te krijgen als vanwege oorzaken die de onteigenaar had kunnen voorkomen:"
+            onderdelen:
+              a:
+                tekst: "met de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving waarvoor werd onteigend niet binnen drie jaar nadat de onteigeningsakte is ingeschreven in de openbare registers een begin is gemaakt,"
+                bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid1/Onderdeela"
+              b:
+                tekst: "de werkzaamheden meer dan drie jaar zijn gestaakt, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid1/Onderdeelb"
+              c:
+                tekst: "op een andere manier kan worden aangetoond dat de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving waarvoor werd onteigend blijkbaar niet zal worden verwezenlijkt."
+                bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid1/Onderdeelc"
+
+          logica:
+            type: "verplichting"
+            norm: "Onteigenaar moet teruglevering aanbieden bij niet-verwezenlijking"
+            verwijtbaarheid: "oorzaken die onteigenaar had kunnen voorkomen"
+            alternatieve_gronden: true
+            gronden:
+              - "niet binnen 3 jaar begonnen"
+              - "werkzaamheden meer dan 3 jaar gestaakt"
+              - "anderszins blijkbaar niet verwezenlijking"
+            termijn: "3 jaar"
+            bescherming_onteigende: true
+
+        2:
+          bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid2"
+          structuur:
+            volledige_tekst: "Het onteigende wordt teruggeleverd in de toestand waarin het zich dan bevindt. De onteigende is gehouden om de schadeloosstelling terug te geven in evenredigheid tot de terugontvangen waarde."
+
+          logica:
+            type: "bepaling"
+            norm: "Teruglevering in actuele toestand met evenredige terugbetaling"
+            as_is: true
+            terugbetaling: "evenredig aan terugontvangen waarde"
+
+        3:
+          bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid3"
+          structuur:
+            volledige_tekst: "Als de onteigende te kennen geeft geen gebruik te maken van het aanbod tot teruglevering, bedoeld in het eerste lid, kan hij een door de rechtbank binnen het rechtsgebied waarvan de te onteigenen onroerende zaak geheel of grotendeels ligt naar billijkheid te bepalen schadeloosstelling boven de al ontvangen schadeloosstelling vorderen."
+
+          logica:
+            type: "recht"
+            norm: "Onteigende kan extra schadeloosstelling vorderen bij afwijzen teruglevering"
+            alternatief_voor_teruglevering: true
+            bepaling: "naar billijkheid door rechtbank"
+            bevoegde_rechter: "rechtbank waar zaak ligt"
+
+        4:
+          bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid4"
+          structuur:
+            aanhef: "Als de onteigenaar niet binnen drie maanden na afloop van de in het eerste lid bedoelde termijn van drie jaar een aanbod tot teruglevering heeft gedaan, kan de onteigende naar keuze:"
+            onderdelen:
+              a:
+                tekst: "bij de rechter het onteigende terugvorderen in de toestand waarin het zich bevindt, waarbij hij gehouden is om de schadeloosstelling terug te geven in evenredigheid tot de terugontvangen waarde, of"
+                bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid4/Onderdeela"
+              b:
+                tekst: "een door de rechter naar billijkheid te bepalen schadeloosstelling boven de al ontvangen schadeloosstelling vorderen."
+                bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid4/Onderdeelb"
+
+          logica:
+            type: "recht"
+            norm: "Onteigende kan zelf terugvordering of extra schadeloosstelling vorderen"
+            conditie:
+              type: "indien"
+              tekst: "onteigenaar niet binnen 3 maanden aanbod doet"
+              effect: "onteigende krijgt keuzerecht"
+            termijn_onteigenaar: "3 maanden na afloop 3-jaar-termijn"
+            keuzerecht_onteigende: true
+            opties:
+              - "terugvordering bij rechter"
+              - "extra schadeloosstelling naar billijkheid"
+
+        5:
+          bron_path: "/Hoofdstuk11/Afdeling11.5/Artikel11.21/Lid5"
+          structuur:
+            volledige_tekst: "Van de verwezenlijking van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving waarvoor werd onteigend, is ook sprake bij niet-ingrijpende aanpassingen of aanpassingen van geringe omvang van de beoogde vorm van ontwikkeling, gebruik of beheer van de fysieke leefomgeving of aanpassingen van die vorm die passen binnen het kader ter uitvoering waarvan tot onteigening is overgegaan."
+
+          logica:
+            type: "definitie"
+            norm: "Ruime uitleg 'verwezenlijking' bij kleine wijzigingen"
+            flexibiliteit: true
+            verwezenlijking_ook_bij:
+              - "niet-ingrijpende aanpassingen"
+              - "aanpassingen van geringe omvang"
+              - "aanpassingen binnen oorspronkelijk kader"
+            ratio: "voorkomt misbruik terugvorderingsrecht"
+
+      functie:
+        werkwoord: "bepaalt"
+        object: "teruglevering bij niet-verwezenlijking"
+        subject: "bescherming onteigende"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 11.21 sluit de cirkel met art. 11.11 (urgentie):
+
+          TERUGLEVERING verplicht als onteigenaar:
+          - Niet binnen 3 jaar begonnen (lid 1a)
+          - Langer dan 3 jaar gestopt (lid 1b)
+          - Anderszins niet gaat verwezenlijken (lid 1c)
+
+          ALLEEN bij verwijtbare oorzaken aan zijde onteigenaar.
+
+          KEUZERECHT onteigende (lid 3-4):
+          - Teruglevering in actuele staat, OF
+          - Extra schadeloosstelling naar billijkheid
+
+          FLEXIBILITEIT (lid 5):
+          - Kleine wijzigingen gelden nog steeds als "verwezenlijking"
+          - Voorkomt misbruik door onteigende
+
+# =============================================================================
+# PARAGRAAF/HOOFDSTUK ANALYSE
+# =============================================================================
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 5
+    artikelen_count: 21
+    totaal_leden: 27
+
+  kern_schema:
+    criteria_triade:
+      - criterium: "onteigeningsbelang"
+        artikel: "11.5 sub a, 11.6"
+        uitwerking: "planologische titel vereist"
+      - criterium: "noodzaak"
+        artikel: "11.5 sub b, 11.7-11.10"
+        uitwerking: "minnelijke verwerving, zelfrealisatie, subsidiariteit"
+      - criterium: "urgentie"
+        artikel: "11.5 sub c, 11.11"
+        uitwerking: "binnen 3 jaar beginnen"
+
+  patronen:
+    grondwettelijke_verankering:
+      beschrijving: "Art. 14 Grondwet als basis voor hele hoofdstuk"
+      evidence: ["art. 11.1"]
+
+    ultimum_remedium:
+      beschrijving: "Onteigening als laatste middel, subsidiariteit doorheen"
+      evidence: ["art. 11.7 lid 1", "art. 11.8", "art. 11.9", "art. 11.10"]
+
+    eigenaarsbescherming:
+      beschrijving: "Meerdere beschermingsmechanismen voor onteigende"
+      evidence:
+        - "zelfrealisatierecht (art. 11.7 lid 2)"
+        - "gedeeltelijke onteigening uitbreiding (art. 11.3 lid 2)"
+        - "vooraf betaling vereist (art. 11.16 lid 1c)"
+        - "teruglevering bij niet-verwezenlijking (art. 11.21)"
+
+    driesporen_rechter:
+      beschrijving: "Drie verschillende rechtelijke procedures"
+      sporen:
+        - "bekrachtiging onteigeningsbeschikking (bestuursrechter)"
+        - "schadeloosstelling (civiele rechter)"
+        - "inbezitstelling (voorzieningenrechter)"
+
+    termijnen_systeem:
+      beschrijving: "Consistent termijnenstelsel van 3 jaar + vervaltermijnen"
+      termijnen:
+        - "3 jaar zelfrealisatie (art. 11.7 lid 3)"
+        - "3 jaar urgentie (art. 11.11)"
+        - "12 maanden verval beschikking (art. 11.12)"
+        - "2 maanden verzoek verlijden (art. 11.15)"
+        - "3 maanden aanbod teruglevering (art. 11.21 lid 4)"
+        - "3 jaar begin verwezenlijking (art. 11.21 lid 1)"
+
+  relaties:
+    intern:
+      - van: "art. 11.5"
+        naar: "art. 11.6, 11.7-11.10, 11.11"
+        type: "uitwerking criteria"
+      - van: "art. 11.11"
+        naar: "art. 11.21"
+        type: "spiegelbeeld (vooraf/achteraf)"
+      - van: "art. 11.12"
+        naar: "afd. 15.3"
+        type: "procedure schadeloosstelling"
+    extern:
+      - naar: "art. 14 Grondwet"
+        context: "grondslag onteigening"
+      - naar: "art. 13b Woningwet"
+        context: "subsidiariteit openbare orde/drugs/leefbaarheid"
+      - naar: "Opiumwet art. 2, 2a, 3, 10a, 10c, 11a"
+        context: "drugsdelicten als onteigeningsbelang"
+
+  routes:
+    entry_points:
+      - artikel: "11.1"
+        vraag: "Wanneer mag er onteigend worden?"
+      - artikel: "11.4"
+        vraag: "Wie mag onteigenen?"
+      - artikel: "11.5"
+        vraag: "Aan welke criteria moet onteigening voldoen?"
+    exit_points:
+      - naar: "Ch. 15 (afd. 15.3)"
+        context: "schadeloosstelling"
+      - naar: "Ch. 9"
+        context: "voorkeursrecht als alternatief"
+      - naar: "Ch. 10"
+        context: "gedoogplicht als alternatief"
+
+  verhouding_grondbeleid:
+    drieluik:
+      - instrument: "voorkeursrecht (Ch. 9)"
+        karakter: "vrijwillige verkoop, maar overheid als eerste koper"
+        ingrijpendheid: "licht"
+      - instrument: "gedoogplicht (Ch. 10)"
+        karakter: "eigendom blijft, maar moet activiteit dulden"
+        ingrijpendheid: "middel"
+      - instrument: "onteigening (Ch. 11)"
+        karakter: "gedwongen eigendomsovergang"
+        ingrijpendheid: "zwaar"
+    proportionaliteit: "Ch. 11 alleen als Ch. 9 en Ch. 10 niet volstaan"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    criteria_triade:
+      observatie: "Art. 11.5 stelt DRIE cumulatieve criteria centraal"
+      implicatie: "Alle criteria moeten getoetst worden, art. 11.6-11.11 werken uit"
+
+    ultimum_remedium_versterkt:
+      observatie: "Art. 11.7-11.10 kennen specifieke subsidiariteitstoetsen"
+      implicatie: "Bij openbare orde/drugs/leefbaarheid: eerst Woningwet-bevoegdheden"
+
+    termijnen_symmetrie:
+      observatie: "3-jaar-termijn keert terug in urgentie EN teruglevering"
+      implicatie: "Art. 11.11 en 11.21 zijn spiegelbeelden"
+
+    zelfrealisatie_met_sanctie:
+      observatie: "Art. 11.7 lid 2-3 koppelt recht aan plicht"
+      implicatie: "Zelfrealisatierecht vervalt bij niet-nakoming binnen 3 jaar"
+
+    zuiverende_werking:
+      observatie: "Art. 11.18 lid 1 bepaalt eigendom 'vrij van alle lasten en rechten'"
+      implicatie: "Uitzondering alleen voor erfdienstbaarheden (lid 3)"
+
+  schema_verbeteringen:
+    - "Toevoegen: ultimum_remedium als logica-type"
+    - "Toevoegen: subsidiariteitstoets voor externe wetten"
+    - "Toevoegen: termijnen_systeem als artikel-overstijgende analyse"

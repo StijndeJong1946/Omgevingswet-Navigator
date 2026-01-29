@@ -1,0 +1,510 @@
+# Afdeling 16.7 - Beslistermijn, bekendmaking, inwerkingtreding en beroep
+# V2 Atomic Extraction
+# Artikelen 16.77-16.90
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: "16.7"
+titel: "Beslistermijn, bekendmaking, inwerkingtreding en beroep"
+bron_path: "/Hoofdstuk16/Afdeling16.7"
+
+paragrafen:
+  - nummer: "16.7.1"
+    titel: "Beslistermijn"
+  - nummer: "16.7.2"
+    titel: "Bekendmaking en inwerkingtreding"
+  - nummer: "16.7.3"
+    titel: "Beroep"
+
+artikelen:
+
+  # ---------------------------------------------------------------------------
+  # § 16.7.1 - Beslistermijn
+  # ---------------------------------------------------------------------------
+  artikel_16.77:
+    nummer: "16.77"
+    titel: "(opschorting beslistermijn)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.1/Artikel16.77"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.1"
+
+    structuur:
+      volledige_tekst: "Als een beslissing op een aanvraag om een besluit op grond van deze wet of een besluit tot wijziging daarvan niet kan worden genomen dan nadat is voldaan aan een internationaalrechtelijke verplichting, wordt de termijn voor het nemen van dat besluit opgeschort tot de voor die verplichting geldende procedure is afgerond."
+
+    logica:
+      type: opschorting
+      norm: "Beslistermijn OPGESCHORT bij internationaalrechtelijke verplichting"
+      trigger: "voldoen aan internationaalrechtelijke verplichting vereist"
+      einde: "procedure internationaalrechtelijke verplichting afgerond"
+      voorbeelden:
+        - "Espoo-consultatie"
+        - "EU-notificatie"
+
+  artikel_16.77a:
+    nummer: "16.77a"
+    titel: "(opschorting beslistermijn Natura 2000-activiteit bij compenserende maatregelen)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.1/Artikel16.77a"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.1"
+
+    structuur:
+      volledige_tekst: "Als een beslissing op een aanvraag om een omgevingsvergunning voor een Natura 2000-activiteit niet kan worden genomen dan nadat de aanvrager de aanvraag heeft aangevuld met gegevens die nodig zijn om te beoordelen of is voldaan aan artikel 6, vierde lid, van de habitatrichtlijn, wordt de termijn voor het nemen van dat besluit opgeschort tot de dag waarop de aanvraag is aangevuld of de daarvoor gestelde termijn ongebruikt is verstreken."
+
+    logica:
+      type: opschorting
+      norm: "Beslistermijn OPGESCHORT bij aanvulling nodig voor Habitatrichtlijn art. 6 lid 4"
+      trigger: "gegevens compenserende maatregelen ontbreken"
+      einde: "aanvulling ontvangen OF gestelde termijn verstreken"
+
+    externe_refs:
+      - naar: "Habitatrichtlijn"
+        wet: "92/43/EEG"
+        artikel: "6 lid 4"
+        context: "compenserende maatregelen bij significante effecten"
+
+  artikel_16.77aa:
+    nummer: "16.77aa"
+    titel: null
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.1/Artikel16.77aa"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.1"
+
+    structuur:
+      volledige_tekst: "Als toepassing wordt gegeven aan artikel 13.20, vijfde lid, wordt op een verzoek om een eindafrekening uiterlijk beslist op een in het omgevingsplan, de omgevingsvergunning, bedoeld in artikel 13.14, derde lid, onder a, of het projectbesluit bepaald tijdstip."
+
+    logica:
+      type: termijn
+      norm: "Beslistermijn eindafrekening conform omgevingsplan/vergunning/projectbesluit"
+      context: "kostenverhaal eindafrekening"
+
+  # ---------------------------------------------------------------------------
+  # § 16.7.2 - Bekendmaking en inwerkingtreding
+  # ---------------------------------------------------------------------------
+  artikel_16.77b:
+    nummer: "16.77b"
+    titel: "(bekendmaking omgevingsplan, omgevingsvisie en programma)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b/Lid1"
+        structuur:
+          aanhef: "Een omgevingsplan wordt niet eerder bekendgemaakt dan nadat twee weken zijn verstreken sinds de dag waarop het omgevingsplan is vastgesteld, tenzij:"
+          onderdelen:
+            a:
+              tekst: "gedeputeerde staten over het ontwerp van het omgevingsplan geen zienswijzen naar voren hebben gebracht,"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b/Lid1/Onderdeela"
+            b:
+              tekst: "ten opzichte van het ontwerp van het omgevingsplan geen wijzigingen zijn aangebracht, of"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b/Lid1/Onderdeelb"
+            c:
+              tekst: "gedeputeerde staten hebben bepaald dat het omgevingsplan eerder ter inzage mag worden gelegd."
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b/Lid1/Onderdeelc"
+        logica:
+          type: wachttermijn
+          norm: "2 weken wachttermijn voor bekendmaking omgevingsplan"
+          ratio: "GS tijd geven voor reactieve aanwijzing (art. 16.21)"
+          uitzonderingen:
+            - "geen GS-zienswijzen"
+            - "geen wijzigingen t.o.v. ontwerp"
+            - "GS toestemming eerdere bekendmaking"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.77b/Lid2"
+        structuur:
+          volledige_tekst: "Artikel 3:42 van de Algemene wet bestuursrecht is van overeenkomstige toepassing op een omgevingsvisie en een programma als bedoeld in de paragrafen 3.2.2 tot en met 3.2.4."
+        logica:
+          type: schakelbepaling
+          norm: "Awb 3:42 bekendmaking van toepassing op omgevingsvisie/programma"
+
+  artikel_16.78:
+    nummer: "16.78"
+    titel: "(inwerkingtreding omgevingsplan en projectbesluit)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78/Lid1"
+        structuur:
+          volledige_tekst: "Een omgevingsplan treedt in werking met ingang van de dag waarop vier weken zijn verstreken sinds de dag waarop het besluit is bekendgemaakt, tenzij bij het besluit een later tijdstip is bepaald."
+        logica:
+          type: termijn
+          norm: "Omgevingsplan: inwerkingtreding 4 weken na bekendmaking"
+          afwijking_mogelijk: "later tijdstip kan worden bepaald"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78/Lid2"
+        structuur:
+          volledige_tekst: "Een besluit als bedoeld in artikel 16.21 treedt tegelijk in werking met het omgevingsplan waarop het betrekking heeft."
+        logica:
+          type: koppeling
+          norm: "Reactieve aanwijzing treedt tegelijk in werking met omgevingsplan"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78/Lid3"
+        structuur:
+          volledige_tekst: "Een projectbesluit treedt in werking met ingang van de dag waarop vier weken zijn verstreken sinds de dag waarop het besluit is bekendgemaakt. Als eerdere inwerkingtreding volgens het bevoegd gezag vanwege spoedeisende omstandigheden nodig is, kan het bevoegd gezag bepalen dat het projectbesluit eerder in werking treedt."
+        logica:
+          type: termijn
+          norm: "Projectbesluit: inwerkingtreding 4 weken na bekendmaking"
+          afwijking_mogelijk: "eerder bij spoedeisende omstandigheden"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78/Lid4"
+        structuur:
+          volledige_tekst: "In afwijking van het derde lid treedt een projectbesluit van het dagelijks bestuur van het waterschap in werking met ingang van de dag waarop vier weken zijn verstreken sinds de dag waarop het besluit over goedkeuring is bekendgemaakt."
+        logica:
+          type: afwijking
+          norm: "Waterschap-projectbesluit: 4 weken na goedkeuringsbesluit GS"
+
+      5:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.78/Lid5"
+        structuur:
+          volledige_tekst: "Een besluit tot vaststelling van geluidproductieplafonds als omgevingswaarden als bedoeld in de artikelen 2.12a, eerste lid, 2.13a, eerste lid, en 2.15, tweede lid, treedt in werking met ingang van de dag waarop vier weken zijn verstreken sinds de dag waarop het besluit is bekendgemaakt. Als eerdere inwerkingtreding volgens het bevoegd gezag vanwege spoedeisende omstandigheden nodig is, kan het bevoegd gezag bepalen dat het besluit eerder in werking treedt."
+        logica:
+          type: termijn
+          norm: "Geluidproductieplafonds: 4 weken na bekendmaking"
+
+  artikel_16.79:
+    nummer: "16.79"
+    titel: "(inwerkingtreding omgevingsvergunning)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid1"
+        structuur:
+          aanhef: "Een omgevingsvergunning treedt in werking met ingang van de dag na de dag waarop:"
+          onderdelen:
+            a:
+              tekst: "het besluit is bekendgemaakt, of"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid1/Onderdeela"
+            b:
+              tekst: "als het besluit is voorbereid met toepassing van afdeling 3.4 van de Algemene wet bestuursrecht: het besluit overeenkomstig artikel 3:44, eerste lid, onder a, van die wet ter inzage is gelegd."
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid1/Onderdeelb"
+        logica:
+          type: hoofdregel
+          norm: "Omgevingsvergunning: dag na bekendmaking/terinzagelegging"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid2"
+        structuur:
+          aanhef: "In afwijking van het eerste lid bepaalt het bevoegd gezag in de omgevingsvergunning dat die in werking treedt met ingang van de dag waarop vier weken zijn verstreken sinds de dag van bekendmaking of terinzagelegging als naar zijn oordeel:"
+          onderdelen:
+            a:
+              tekst: "het verrichten van de activiteit die de omgevingsvergunning mogelijk maakt binnen die vier weken kan leiden tot een wijziging van een bestaande toestand die niet kan worden hersteld, en"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid2/Onderdeela"
+            b:
+              tekst: "de regels over het verlenen van de omgevingsvergunning ertoe strekken die bestaande toestand te beschermen."
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid2/Onderdeelb"
+        logica:
+          type: verplichting
+          norm: "4 weken uitgestelde inwerkingtreding VERPLICHT bij onomkeerbare effecten"
+          conditie: "onomkeerbare wijziging binnen 4 weken + beschermende regels"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid3"
+        structuur:
+          volledige_tekst: "Bij algemene maatregel van bestuur kunnen gevallen van activiteiten worden aangewezen, waarin het bevoegd gezag in ieder geval toepassing geeft aan het tweede lid."
+        logica:
+          type: delegatie
+          norm: "AMvB kan verplichte gevallen uitgestelde inwerkingtreding aanwijzen"
+
+      4:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid4"
+        structuur:
+          volledige_tekst: "Als binnen de termijn, bedoeld in het tweede lid, bij de bevoegde rechter een verzoek om voorlopige voorziening is gedaan, treedt de omgevingsvergunning niet in werking voordat op het verzoek is beslist. Belanghebbenden die door de opschorting rechtstreeks in hun belang worden getroffen, kunnen de voorzieningenrechter verzoeken de opschorting op te heffen of te wijzigen."
+        logica:
+          type: schorsing
+          norm: "Voorlopige voorziening-verzoek SCHORST inwerkingtreding"
+          tegenwicht: "opheffing/wijziging opschorting mogelijk"
+
+      5:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid5"
+        structuur:
+          volledige_tekst: "Als het eerder in werking treden van een omgevingsvergunning volgens het bevoegd gezag vanwege spoedeisende omstandigheden nodig is, kan het in afwijking van het tweede lid bepalen dat het besluit eerder in werking treedt en het vierde lid niet van toepassing is."
+        logica:
+          type: uitzondering
+          norm: "Eerder inwerkingtreding mogelijk bij spoedeisende omstandigheden"
+          consequentie: "automatische schorsing niet van toepassing"
+
+      6:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.79/Lid6"
+        structuur:
+          volledige_tekst: "Dit artikel is van overeenkomstige toepassing op een besluit tot wijziging van de voorschriften van een omgevingsvergunning of tot intrekking van een omgevingsvergunning."
+        logica:
+          type: uitbreiding
+          norm: "Zelfde regels voor vergunningwijziging en intrekking"
+
+  artikel_16.80:
+    nummer: "16.80"
+    titel: "(aanvullende inwerkingtredingsbepaling vanwege Kernenergiewet)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.80"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.2"
+
+    structuur:
+      volledige_tekst: "Onverminderd artikel 16.79 treedt een omgevingsvergunning voor een bouwactiviteit of een omgevingsplanactiviteit bestaande uit een bouwactiviteit of het in stand houden van een bouwwerk, als die activiteit ook is aan te merken als het oprichten of wijzigen van een inrichting waarvoor een vergunning als bedoeld in artikel 15, aanhef en onder b, van de Kernenergiewet is vereist, niet eerder in werking dan nadat laatstbedoelde vergunning in werking is getreden."
+
+    logica:
+      type: aanvullende_beperking
+      norm: "Omgevingsvergunning bouw wacht op Kernenergiewet-vergunning"
+      ratio: "Nucleaire veiligheid gaat voor"
+
+  artikel_16.82a:
+    nummer: "16.82a"
+    titel: "(inschrijving en ingaan voorkeursrecht)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.82a"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.2"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.82a/Lid1"
+        structuur:
+          volledige_tekst: "Nadat een voorkeursrechtbeschikking is bekendgemaakt, kan de beschikking binnen vier dagen worden ingeschreven in de openbare registers."
+        logica:
+          type: termijn
+          norm: "Voorkeursrecht: inschrijving binnen 4 dagen na bekendmaking"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.82a/Lid2"
+        structuur:
+          volledige_tekst: "Het voorkeursrecht gaat in op het tijdstip waarop de beschikking is ingeschreven."
+        logica:
+          type: constitutief
+          norm: "Voorkeursrecht geldt pas na inschrijving"
+
+  # ---------------------------------------------------------------------------
+  # § 16.7.3 - Beroep
+  # ---------------------------------------------------------------------------
+  artikel_16.83:
+    nummer: "16.83"
+    titel: "(ondergeschikte wijzigingen aangevochten besluit)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.83"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    structuur:
+      volledige_tekst: "Als tegen een besluit dat is voorbereid met toepassing van afdeling 3.4 van de Algemene wet bestuursrecht beroep aanhangig is, kan die afdeling, voor zover niet in strijd met internationaalrechtelijke verplichtingen, buiten toepassing worden gelaten op de voorbereiding van een besluit tot wijziging van dat besluit, als het gaat om een wijziging van ondergeschikte aard."
+
+    logica:
+      type: uitzondering
+      norm: "Awb 3.4 NIET vereist voor ondergeschikte wijziging tijdens beroep"
+      conditie: "wijziging ondergeschikte aard + geen strijd internationaalrecht"
+
+  artikel_16.85:
+    nummer: "16.85"
+    titel: "(bundeling beroep)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.85"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.85/Lid1"
+        structuur:
+          volledige_tekst: "Voor de mogelijkheid van beroep wordt een besluit tot het verlenen van een ontheffing op grond van artikel 2.32 geacht deel uit te maken van het besluit waarover de regel waarvan ontheffing is verzocht, is gesteld."
+        logica:
+          type: processuele_concentratie
+          norm: "Ontheffing-besluit volgt hoofdbesluit voor beroep"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.85/Lid2"
+        structuur:
+          aanhef: "Voor de mogelijkheid van beroep wordt:"
+          onderdelen:
+            a:
+              tekst: "een instructie, gegeven op grond van artikel 2.33 of 2.34, en"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.85/Lid2/Onderdeela"
+            b:
+              tekst: "een besluit over instemming op grond van artikel 16.16,"
+              bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.85/Lid2/Onderdeelb"
+          afsluiting: "geacht deel uit te maken van het besluit waarop dat besluit betrekking heeft."
+        logica:
+          type: processuele_concentratie
+          norm: "Instructie en instemming volgen hoofdbesluit voor beroep"
+
+  artikel_16.86:
+    nummer: "16.86"
+    titel: "(beroepsgronden bij een projectbesluit of een uitvoeringsbesluit daarvan)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.86"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.86/Lid1"
+        structuur:
+          volledige_tekst: "Bij het beroep tegen een projectbesluit en tegen besluiten ter uitvoering van een projectbesluit kunnen geen gronden worden aangevoerd na afloop van de termijn voor het instellen van beroep."
+        logica:
+          type: beperking
+          norm: "GEEN aanvulling beroepsgronden na beroepstermijn"
+          ratio: "Procesefficiëntie grote projecten"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.86/Lid2"
+        structuur:
+          volledige_tekst: "Bij het beroep tegen een besluit tot uitvoering van een projectbesluit kunnen geen gronden worden aangevoerd die betrekking hebben op het projectbesluit waarop dat besluit berust."
+        logica:
+          type: beperking
+          norm: "Uitvoeringsbesluit-beroep: GEEN gronden tegen onderliggend projectbesluit"
+          ratio: "Projectbesluit al apart aangevochten kunnen worden"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.86/Lid3"
+        structuur:
+          volledige_tekst: "In afwijking van artikel 6:6 van de Algemene wet bestuursrecht wordt het beroep tegen een projectbesluit of tegen een besluit ter uitvoering van een projectbesluit niet-ontvankelijk verklaard als niet is voldaan aan artikel 6:5, eerste lid, onder d, van die wet, tenzij bij de bekendmaking van het besluit niet is voldaan aan artikel 16.71, derde lid, en redelijkerwijs niet kan worden geoordeeld dat de indiener van het beroepschrift in verzuim is geweest."
+        logica:
+          type: sanctie
+          norm: "Beroep projectbesluit niet-ontvankelijk bij ontbreken gronden"
+          uitzondering: "als bekendmaking niet correct was (16.71 lid 3)"
+
+  artikel_16.87:
+    nummer: "16.87"
+    titel: "(rechterlijke beslistermijn bij projectprocedure)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.87"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.87/Lid1"
+        structuur:
+          volledige_tekst: "Op beroepen tegen een projectbesluit of tegen een besluit over goedkeuring als bedoeld in artikel 16.72 beslist de Afdeling bestuursrechtspraak van de Raad van State binnen zes maanden na ontvangst van het verweerschrift."
+        logica:
+          type: termijn
+          norm: "ABRvS: uitspraak binnen 6 maanden na verweerschrift"
+          ratio: "Versnelde afdoening grote projecten"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.87/Lid2"
+        structuur:
+          volledige_tekst: "In bijzondere omstandigheden kan de Afdeling de in het eerste lid genoemde termijn met ten hoogste drie maanden verlengen."
+        logica:
+          type: uitzondering
+          norm: "Verlenging max 3 maanden bij bijzondere omstandigheden"
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.87/Lid3"
+        structuur:
+          volledige_tekst: "Op beroepen tegen een besluit ter uitvoering van een projectbesluit waarop op grond van artikel 16.7 afdeling 3.5 van de Algemene wet bestuursrecht van toepassing is, beslist de Afdeling binnen zes maanden na ontvangst van de verweerschriften."
+        logica:
+          type: termijn
+          norm: "Gecoördineerde uitvoeringsbesluiten: 6 maanden na verweerschriften"
+
+  artikel_16.88:
+    nummer: "16.88"
+    titel: "(beroep tegen besluit tot tijdelijk in gebruik geven, ruilbesluit en besluit geldelijke regelingen)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.88"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.88/Lid1"
+        structuur:
+          volledige_tekst: "Tegen een besluit tot het tijdelijk in gebruik geven als bedoeld in artikel 12.21, eerste lid, een ruilbesluit en een besluit geldelijke regelingen kunnen belanghebbenden door indiening van een verzoek als bedoeld in artikel 261 van het Wetboek van Burgerlijke rechtsvordering in beroep komen bij de rechtbank binnen het rechtsgebied waarvan gedeputeerde staten hun zetel hebben. De artikelen 6:2, 6:7 tot en met 6:20 en 6:22 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
+        logica:
+          type: rechtsmiddel
+          norm: "Beroep bij burgerlijke rechter voor landinrichtingsbesluiten"
+          procedure: "verzoekschrift ex art. 261 Rv"
+          bevoegd: "rechtbank waar GS zetel hebben"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.88/Lid2"
+        structuur:
+          volledige_tekst: "Het verzoekschrift wordt door de belanghebbende of zijn gemachtigde ondertekend."
+
+      3:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.88/Lid3"
+        logica:
+          type: procedure
+          norm: "GS stuurt stukken naar griffier bij beroep"
+
+  artikel_16.90:
+    nummer: "16.90"
+    titel: "(eindbeschikking, hoger beroep en cassatie)"
+    bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.90"
+    inwerking: "2024-01-01"
+    paragraaf: "16.7.3"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.90/Lid1"
+        structuur:
+          volledige_tekst: "Tegen een beschikking van de rechtbank over een besluit tot het tijdelijk in gebruik geven als bedoeld in artikel 12.21, eerste lid, kan geen hoger beroep of beroep in cassatie worden ingesteld."
+        logica:
+          type: beperking
+          norm: "GEEN hoger beroep/cassatie tegen beschikking tijdelijk gebruik"
+
+      2:
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.3/Artikel16.90/Lid2"
+        structuur:
+          volledige_tekst: "Tegen een beschikking van de rechtbank over het ruilbesluit of het besluit geldelijke regelingen kan geen hoger beroep worden ingesteld. Voor de belanghebbende die voor de rechtbank is verschenen en voor gedeputeerde staten staat beroep in cassatie open op grond van de artikelen 426 tot en met 429 van het Wetboek van Burgerlijke Rechtsvordering."
+        logica:
+          type: beperking
+          norm: "Ruilbesluit: GEEN hoger beroep, WEL cassatie"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 14
+    leden_count: 28
+    paragrafen_count: 3
+
+  patronen:
+    inwerkingtredingsregime:
+      beschrijving: "Gedifferentieerd inwerkingtredingsregime per besluittype"
+      evidence:
+        - "omgevingsvergunning: dag na bekendmaking (art. 16.79)"
+        - "omgevingsplan: 4 weken na bekendmaking (art. 16.78)"
+        - "projectbesluit: 4 weken na bekendmaking (art. 16.78)"
+
+    uitgestelde_inwerkingtreding:
+      beschrijving: "Verplichte 4-weken termijn bij onomkeerbare effecten"
+      evidence: ["art. 16.79 lid 2"]
+      ratio: "Rechtsbescherming bij onomkeerbare wijzigingen"
+
+    versnelde_afdoening_projectbesluiten:
+      beschrijving: "Procesversnelling bij grote projecten"
+      evidence:
+        - "geen aanvulling gronden na beroepstermijn (art. 16.86)"
+        - "6 maanden rechterlijke beslistermijn (art. 16.87)"
+
+    bundeling_beroep:
+      beschrijving: "Accessoire besluiten volgen hoofdbesluit voor beroep"
+      evidence: ["art. 16.85"]
+
+  kritieke_verwijzingen:
+    - naar: "Awb afdeling 3.4"
+      context: "UOV procedure"
+    - naar: "art. 16.21"
+      context: "reactieve aanwijzing"
+    - naar: "art. 16.71"
+      context: "projectbesluit procedure"
+    - naar: "Habitatrichtlijn art. 6 lid 4"
+      context: "compenserende maatregelen"
+
+  routes:
+    entry_points:
+      - artikel: "16.79"
+        vraag: "Wanneer treedt een omgevingsvergunning in werking?"
+      - artikel: "16.78"
+        vraag: "Wanneer treedt een omgevingsplan in werking?"
+      - artikel: "16.86"
+        vraag: "Welke beperkingen gelden bij beroep tegen projectbesluit?"
+    exit_points:
+      - naar: "Awb bezwaar/beroep"
+        context: "rechtsbescherming"
+      - naar: "ABRvS"
+        context: "hoger beroep omgevingsbesluiten"

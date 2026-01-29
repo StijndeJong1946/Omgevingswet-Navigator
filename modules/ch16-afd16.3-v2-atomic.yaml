@@ -1,0 +1,803 @@
+# Afdeling 16.3 - Totstandkomingsprocedures
+# V2 Atomic Extraction
+# Artikelen 16.22-16.33l
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 16.3
+titel: "Totstandkomingsprocedures"
+bron_path: "/Hoofdstuk16/Afdeling16.3"
+
+# =============================================================================
+# PARAGRAAF 16.3.1: TOEPASSING AFDELING 3.4 AWB
+# =============================================================================
+paragraaf_16.3.1:
+  nummer: "16.3.1"
+  titel: "Toepassing afdeling 3.4 Algemene wet bestuursrecht"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1"
+
+  artikelen:
+
+    artikel_16.22:
+      nummer: "16.22"
+      titel: "(toepassing paragraaf 16.3.1)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.22"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Deze paragraaf is van toepassing als bij of krachtens deze wet is bepaald dat afdeling 3.4 van de Algemene wet bestuursrecht van toepassing is."
+
+      logica:
+        type: definitie
+        norm: "Toepassingsbereik paragraaf 16.3.1"
+        kernbegrip: "uniforme openbare voorbereidingsprocedure"
+
+      externe_refs:
+        - naar: "BWBR0005537"
+          wet: "Awb"
+          artikel: "afdeling 3.4"
+
+    artikel_16.23:
+      nummer: "16.23"
+      titel: "(kring inspraakgerechtigden)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.23"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.23/Lid1"
+          structuur:
+            volledige_tekst: "Zienswijzen kunnen naar voren worden gebracht door een ieder."
+          logica:
+            type: machtiging
+            norm: "IEDEREEN mag zienswijze indienen"
+            kernbegrip: "actio popularis"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.23/Lid2"
+          structuur:
+            volledige_tekst: "In afwijking van het eerste lid kunnen zienswijzen over een gedoogplichtbeschikking alleen naar voren worden gebracht door belanghebbenden en door de besturen van de gemeenten, de waterschappen en de provincies waarin de onroerende zaak gelegen is of naastgelegen gemeenten, waterschappen en provincies."
+          logica:
+            type: uitzondering
+            norm: "Gedoogplicht: alleen belanghebbenden + gebiedsbesturen"
+            conditie:
+              type: in_afwijking_van
+              tekst: "in afwijking van het eerste lid"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.23/Lid3"
+          structuur:
+            volledige_tekst: "In afwijking van het eerste lid kunnen zienswijzen over een onteigeningsbeschikking naar voren worden gebracht door belanghebbenden."
+          logica:
+            type: uitzondering
+            norm: "Onteigening: alleen belanghebbenden"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.23 bepaalt WIE zienswijzen mag indienen.
+
+          Lid 1: HOOFDREGEL - een ieder (actio popularis)
+          Lid 2: UITZONDERING gedoogplicht - alleen belanghebbenden + gebiedsbesturen
+          Lid 3: UITZONDERING onteigening - alleen belanghebbenden
+
+          KERN: Ruime inspraak als hoofdregel, beperkt bij ingrijpende beschikkingen.
+
+    artikel_16.24:
+      nummer: "16.24"
+      titel: "(intrekking of wijziging)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.24"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.24/Lid1"
+          structuur:
+            volledige_tekst: "Tenzij het gaat om een bij algemene maatregel van bestuur aangewezen geval of besluit, zijn de paragrafen 16.3.1a tot en met 16.3.9 en de artikelen 16.40, eerste lid, 16.50, eerste lid, 16.70 en 16.71 van overeenkomstige toepassing op een wijziging of intrekking van de daarin genoemde besluiten of andere rechtsfiguren of documenten."
+          logica:
+            type: verplichting
+            norm: "Wijziging/intrekking: zelfde procedure als vaststelling"
+            conditie:
+              type: tenzij
+              tekst: "tenzij AMvB-aangewezen geval"
+            default: "procedure van toepassing"
+            uitzondering: "AMvB kan uitsluiten"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1/Artikel16.24/Lid2"
+          structuur:
+            volledige_tekst: "Een bestuursorgaan kan afdeling 3.4 van de Algemene wet bestuursrecht buiten toepassing laten als het gaat om een wijziging die alleen ziet op het herstel van een kennelijke verschrijving."
+          logica:
+            type: machtiging
+            norm: "Kennelijke verschrijving: procedure KAN achterwege blijven"
+
+# =============================================================================
+# PARAGRAAF 16.3.1a: GELUIDPRODUCTIEPLAFONDS
+# =============================================================================
+paragraaf_16.3.1a:
+  nummer: "16.3.1a"
+  titel: "Geluidproductieplafonds"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1a"
+
+  artikelen:
+    artikel_16.24a:
+      nummer: "16.24a"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.1a/Artikel16.24a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een besluit tot vaststelling van geluidproductieplafonds als omgevingswaarden als bedoeld in de artikelen 2.12a, eerste lid, 2.13a, eerste lid, en 2.15, tweede lid, in bij algemene maatregel van bestuur aangewezen gevallen."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op geluidproductieplafonds"
+        conditie:
+          type: indien
+          tekst: "in bij AMvB aangewezen gevallen"
+
+      interne_refs:
+        - naar: "artikel 2.12a"
+          type: verwijzing
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12a"
+        - naar: "artikel 2.13a"
+          type: verwijzing
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a"
+
+# =============================================================================
+# PARAGRAAF 16.3.2: ZWEMLOCATIES
+# =============================================================================
+paragraaf_16.3.2:
+  nummer: "16.3.2"
+  titel: "Zwemlocaties"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2"
+
+  artikelen:
+    artikel_16.25:
+      nummer: "16.25"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2/Artikel16.25"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van de aanwijzing van zwemlocaties."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op aanwijzing zwemlocaties"
+
+# =============================================================================
+# PARAGRAAF 16.3.2a: NATURA 2000-GEBIEDEN
+# =============================================================================
+paragraaf_16.3.2a:
+  nummer: "16.3.2a"
+  titel: "Natura 2000-gebieden"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2a"
+
+  artikelen:
+    artikel_16.25a:
+      nummer: "16.25a"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2a/Artikel16.25a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2a/Artikel16.25a/Lid1"
+          structuur:
+            volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een aanwijzing van een Natura 2000-gebied of een bijzonder nationaal natuurgebied."
+          logica:
+            type: verplichting
+            norm: "Awb 3.4 van toepassing op Natura 2000-aanwijzing"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.2a/Artikel16.25a/Lid2"
+          structuur:
+            volledige_tekst: "Een bestuursorgaan kan afdeling 3.4 van de Algemene wet bestuursrecht, voor zover niet in strijd met internationaalrechtelijke verplichtingen, buiten toepassing laten bij de voorbereiding van een aanwijzing als bedoeld in het eerste lid, als het gaat om een wijziging van ondergeschikte aard die niet leidt tot grotere nadelige gevolgen voor het milieu."
+          logica:
+            type: machtiging
+            norm: "Ondergeschikte wijziging: procedure KAN achterwege"
+            conditie:
+              type: voor_zover
+              tekst: "voor zover niet in strijd met internationaalrechtelijke verplichtingen"
+
+# =============================================================================
+# PARAGRAAF 16.3.3: OMGEVINGSVISIE
+# =============================================================================
+paragraaf_16.3.3:
+  nummer: "16.3.3"
+  titel: "Omgevingsvisie"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.3"
+
+  artikelen:
+    artikel_16.26:
+      nummer: "16.26"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.3/Artikel16.26"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een omgevingsvisie."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op omgevingsvisie"
+
+# =============================================================================
+# PARAGRAAF 16.3.4: PROGRAMMA'S
+# =============================================================================
+paragraaf_16.3.4:
+  nummer: "16.3.4"
+  titel: "Programma's"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4"
+
+  artikelen:
+    artikel_16.27:
+      nummer: "16.27"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.27"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.27/Lid1"
+          structuur:
+            volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een programma als bedoeld in de paragrafen 3.2.2 tot en met 3.2.4 en de documenten die voor het opstellen van een programma afzonderlijk worden vastgesteld."
+          logica:
+            type: verplichting
+            norm: "Awb 3.4 van toepassing op programma's"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.27/Lid2"
+          structuur:
+            volledige_tekst: "Een bestuursorgaan kan afdeling 3.4 van de Algemene wet bestuursrecht, voor zover niet in strijd met internationaalrechtelijke verplichtingen, buiten toepassing laten bij de voorbereiding van een programma of document als bedoeld in het eerste lid, als het gaat om een wijziging van ondergeschikte aard die niet leidt tot grotere nadelige gevolgen voor het milieu en die wijziging niet ziet op een in dat programma opgenomen beschrijving van een activiteit als gevolg waarvan de activiteit is toegestaan."
+          logica:
+            type: machtiging
+            norm: "Ondergeschikte wijziging: procedure KAN achterwege"
+            kernbegrip: "vereenvoudigde procedure"
+
+    artikel_16.28:
+      nummer: "16.28"
+      titel: "(voorbereiding stroomgebiedsbeheerplan en overstromingsrisicobeheerplan)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid1"
+          structuur:
+            aanhef: "Onze Minister van Infrastructuur en Waterstaat legt ter inzage:"
+            onderdelen:
+              a:
+                tekst: "een tijdschema en werkprogramma voor het opstellen van een stroomgebiedsbeheerplan, ten minste drie jaar voor het begin van de periode waarop het plan betrekking heeft,"
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid1/Onderdeela"
+              b:
+                tekst: "een tussentijds overzicht van belangrijke waterbeheerkwesties die zijn geconstateerd in de stroomgebiedsdistricten Rijn, Maas, Schelde en Eems, ten minste twee jaar voor het begin van de periode waarop het stroomgebiedsbeheerplan betrekking heeft,"
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid1/Onderdeelb"
+              c:
+                tekst: "het ontwerp van een stroomgebiedsbeheerplan, ten minste een jaar voor het begin van de periode waarop het plan betrekking heeft,"
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid1/Onderdeelc"
+              d:
+                tekst: "het ontwerp van een overstromingsrisicobeheerplan, ten minste een jaar voor het begin van de periode waarop het plan betrekking heeft."
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid1/Onderdeeld"
+          logica:
+            type: verplichting
+            norm: "Minister LEGT TER INZAGE volgens gefaseerd tijdschema"
+            kernbegrip: "KRW/ROR-procedure"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.4/Artikel16.28/Lid2"
+          structuur:
+            volledige_tekst: "Voor documenten als bedoeld in het eerste lid, onder a en b, en het ontwerp, bedoeld in het eerste lid, onder c en d, bedraagt de termijn voor het naar voren brengen van zienswijzen zes maanden."
+          logica:
+            type: verplichting
+            norm: "Zienswijzentermijn: 6 MAANDEN"
+            termijn: "6 maanden"
+            kernbegrip: "verlengde inspraaktermijn"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.28 implementeert EU-waterrichtlijnen (KRW, ROR).
+
+          Gefaseerde procedure:
+          - 3 jaar voor planperiode: tijdschema + werkprogramma
+          - 2 jaar voor planperiode: waterbeheerkwesties
+          - 1 jaar voor planperiode: ontwerp-plannen
+
+          Bijzonder: 6 maanden zienswijzentermijn (ipv standaard 6 weken).
+
+# =============================================================================
+# PARAGRAAF 16.3.5: OMGEVINGSPLAN, WATERSCHAPSVERORDENING, OMGEVINGSVERORDENING
+# =============================================================================
+paragraaf_16.3.5:
+  nummer: "16.3.5"
+  titel: "Omgevingsplan, waterschapsverordening en omgevingsverordening"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5"
+
+  artikelen:
+    artikel_16.29:
+      nummer: "16.29"
+      titel: "(kennisgeving voornemen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.29"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Van het voornemen om een omgevingsplan vast te stellen wordt kennisgegeven op de in artikel 12 van de Bekendmakingswet bepaalde wijze."
+
+      logica:
+        type: verplichting
+        norm: "Kennisgeving voornemen omgevingsplan"
+        kernbegrip: "vroegtijdige participatie"
+
+      externe_refs:
+        - naar: "BWBR0004287"
+          wet: "Bekendmakingswet"
+          artikel: "12"
+
+    artikel_16.30:
+      nummer: "16.30"
+      titel: "(toepassing Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.30"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.30/Lid1"
+          structuur:
+            volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een omgevingsplan."
+          logica:
+            type: verplichting
+            norm: "Awb 3.4 van toepassing op omgevingsplan"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.30/Lid2"
+          structuur:
+            volledige_tekst: "In afwijking van artikel 3:1, eerste lid, aanhef en onder b, van de Algemene wet bestuursrecht zijn de artikelen 3:43 tot en met 3:45 en afdeling 3.7 van die wet van toepassing op een omgevingsplan."
+          logica:
+            type: uitzondering
+            norm: "Awb rechtsbescherming + beleidsregels toepasselijk op omgevingsplan"
+            conditie:
+              type: in_afwijking_van
+              tekst: "in afwijking van artikel 3:1 lid 1 Awb"
+            kernbegrip: "omgevingsplan als besluit"
+
+    artikel_16.31:
+      nummer: "16.31"
+      titel: "(zienswijzen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.31"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Zienswijzen kunnen geen betrekking hebben op het deel van het ontwerp van een omgevingsplan dat zijn grondslag vindt in een omgevingsvergunning voor een buitenplanse omgevingsplanactiviteit."
+
+      logica:
+        type: verbod
+        norm: "Geen zienswijzen over buitenplanse vergunning-delen"
+        kernbegrip: "res judicata"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.31 voorkomt DUBBELE inspraak.
+
+          Als een buitenplanse omgevingsvergunning (BOPA) is verleend en
+          vervolgens in het omgevingsplan wordt opgenomen, kan over dat
+          deel geen zienswijze meer worden ingediend.
+
+          Reden: over de BOPA is al inspraak geweest.
+
+    artikel_16.32:
+      nummer: "16.32"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5/Artikel16.32"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een waterschapsverordening en een omgevingsverordening."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op waterschaps-/omgevingsverordening"
+
+# =============================================================================
+# PARAGRAAF 16.3.5a: PEILBESLUIT
+# =============================================================================
+paragraaf_16.3.5a:
+  nummer: "16.3.5a"
+  titel: "Peilbesluit"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5a"
+
+  artikelen:
+    artikel_16.32a:
+      nummer: "16.32a"
+      titel: "(toepassing afdeling 3.4 Awb)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.5a/Artikel16.32a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een peilbesluit."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op peilbesluit"
+
+# =============================================================================
+# PARAGRAAF 16.3.6: VOORKEURSRECHTBESCHIKKING
+# =============================================================================
+paragraaf_16.3.6:
+  nummer: "16.3.6"
+  titel: "Voorkeursrechtbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.6"
+
+  artikelen:
+    artikel_16.32b:
+      nummer: "16.32b"
+      titel: "(kennisgeving en terinzagelegging voorkeursrechtbeschikking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.6/Artikel16.32b"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Het bestuursorgaan geeft kennis van de terinzagelegging van de voorkeursrechtbeschikking en de op de beschikking betrekking hebbende stukken op de in artikel 12 van de Bekendmakingswet bepaalde wijze. De ten behoeve van de terinzagelegging aan te wijzen locatie, bedoeld in artikel 13, eerste lid, van de Bekendmakingswet, is gelegen binnen de gemeente of gemeenten waarin de onroerende zaak ligt."
+
+      logica:
+        type: verplichting
+        norm: "Kennisgeving + terinzagelegging binnen betrokken gemeente(n)"
+
+    artikel_16.32c:
+      nummer: "16.32c"
+      titel: "(bezwaar)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.6/Artikel16.32c"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.6/Artikel16.32c/Lid1"
+          structuur:
+            volledige_tekst: "Als bezwaar aanhangig is tegen een voorkeursrechtbeschikking van het college van burgemeester en wethouders en die beschikking vervalt omdat voor de onroerende zaak een voorkeursrechtbeschikking van de gemeenteraad in werking is getreden, wordt het bezwaar geacht te zijn gericht tegen de voorkeursrechtbeschikking van de gemeenteraad."
+          logica:
+            type: machtiging
+            norm: "Bezwaar converteert bij overgang B&W → raad"
+            kernbegrip: "continuïteit rechtsbescherming"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.6/Artikel16.32c/Lid2"
+          structuur:
+            volledige_tekst: "Het eerste lid is van overeenkomstige toepassing als het bezwaar is gericht tegen een voorkeursrechtbeschikking van gedeputeerde staten en die beschikking vervalt omdat voor de onroerende zaak een voorkeursrechtbeschikking van provinciale staten in werking is getreden."
+          logica:
+            type: machtiging
+            norm: "Idem voor GS → PS"
+
+# =============================================================================
+# PARAGRAAF 16.3.7: GEDOOGPLICHTBESCHIKKING
+# =============================================================================
+paragraaf_16.3.7:
+  nummer: "16.3.7"
+  titel: "Gedoogplichtbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7"
+
+  artikelen:
+    artikel_16.33:
+      nummer: "16.33"
+      titel: "(toepassing afdeling 3.4 Awb en bekendmaking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33"
+      inwerking: "2026-01-01"  # Let op: latere inwerkingtreding!
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33/Lid1"
+          structuur:
+            volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een gedoogplichtbeschikking."
+          logica:
+            type: verplichting
+            norm: "Awb 3.4 van toepassing op gedoogplichtbeschikking"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33/Lid2"
+          structuur:
+            volledige_tekst: "De verplichting tot gedogen gaat niet eerder in dan vier dagen na de dag waarop de gedoogplichtbeschikking is bekendgemaakt."
+          logica:
+            type: verplichting
+            norm: "Inwerkingtreding: 4 dagen na bekendmaking"
+            termijn: "4 dagen"
+            kernbegrip: "adempauze"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33/Lid3"
+          structuur:
+            volledige_tekst: "Het eerste lid is niet van toepassing op de voorbereiding van een gedoogplichtbeschikking als bedoeld in de artikelen 10.16 en 10.17, eerste lid, en tweede lid, onder a."
+          logica:
+            type: uitzondering
+            norm: "Bepaalde gedoogplichten: GEEN Awb 3.4"
+
+        4:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33/Lid4"
+          structuur:
+            volledige_tekst: "Het eerste en tweede lid zijn niet van toepassing op de voorbereiding van een gedoogplichtbeschikking als bedoeld in de artikelen 10.19, 10.19a en 10.21a vanwege spoedeisende omstandigheden."
+          logica:
+            type: uitzondering
+            norm: "Spoedeisend: GEEN procedure + direct inwerking"
+            kernbegrip: "spoedeisende gedoogplicht"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 16.33 bevat BESCHERMENDE bepalingen.
+
+          Lid 1: Uniforme openbare voorbereiding (Awb 3.4)
+          Lid 2: 4 dagen "adempauze" na bekendmaking
+          Lid 3-4: Uitzonderingen voor specifieke/spoedeisende gevallen
+
+          LET OP: Inwerkingtreding 2026-01-01 (later dan rest wet)!
+
+    artikel_16.33a:
+      nummer: "16.33a"
+      titel: "(geen coördinatie met andere besluiten)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.7/Artikel16.33a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Artikel 3:20, aanhef en onder b, van de Algemene wet bestuursrecht en artikel 16.87 zijn niet van toepassing op een gedoogplichtbeschikking."
+
+      logica:
+        type: uitzondering
+        norm: "Gedoogplicht: GEEN coördinatie met andere besluiten"
+        kernbegrip: "zelfstandige procedure"
+
+# =============================================================================
+# PARAGRAAF 16.3.8: ONTEIGENINGSBESCHIKKING
+# =============================================================================
+paragraaf_16.3.8:
+  nummer: "16.3.8"
+  titel: "Onteigeningsbeschikking"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8"
+
+  artikelen:
+    artikel_16.33b:
+      nummer: "16.33b"
+      titel: "(voorbereiding onteigeningsbeschikking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33b"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een onteigeningsbeschikking."
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op onteigeningsbeschikking"
+
+    artikel_16.33c:
+      nummer: "16.33c"
+      titel: "(toezending ontwerponteigeningsbeschikking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33c"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Als een belanghebbende is overleden, buiten het Koninkrijk woont of geen bekende woonplaats heeft, wordt het ontwerp van de onteigeningsbeschikking ook toegezonden aan de erfgenaam, gevolmachtigde of bewindvoerder van de belanghebbende, tenzij er redelijkerwijs geen erfgenaam, gevolmachtigde of bewindvoerder bekend kan zijn voor het bestuursorgaan."
+
+      logica:
+        type: verplichting
+        norm: "Toezending aan erfgenaam/gevolmachtigde bij bijzondere situaties"
+        kernbegrip: "bereik rechtsbescherming"
+
+    artikel_16.33d:
+      nummer: "16.33d"
+      titel: "(terinzagelegging en bekendmaking onteigeningsbeschikking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid1"
+          structuur:
+            volledige_tekst: "De terinzagelegging van de ontwerponteigeningsbeschikking vindt plaats binnen de gemeente of gemeenten waarin de onroerende zaak ligt. De kosten van de terinzagelegging en de kennisgeving komen voor rekening van de onteigenaar."
+          logica:
+            type: verplichting
+            norm: "Terinzagelegging in betrokken gemeente(n), kosten voor onteigenaar"
+
+        2:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid2"
+          structuur:
+            aanhef: "Bij de bekendmaking en de kennisgeving van de onteigeningsbeschikking vermeldt het bestuursorgaan:"
+            onderdelen:
+              a:
+                tekst: "welke rechtbank het zal verzoeken de onteigeningsbeschikking te bekrachtigen,"
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid2/Onderdeela"
+              b:
+                tekst: "dat belanghebbenden binnen zes weken na de dag waarop de beschikking ter inzage is gelegd, bij die rechtbank schriftelijk bedenkingen kunnen inbrengen tegen de beschikking,"
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid2/Onderdeelb"
+              c:
+                tekst: "dat de beschikking in werking treedt met ingang van de dag na die waarop de uitspraak waarbij zij is bekrachtigd, op de voorgeschreven wijze is bekendgemaakt."
+                bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid2/Onderdeelc"
+          logica:
+            type: verplichting
+            norm: "Bekendmaking met vermelding rechtbank + bedenkingentermijn"
+            termijn: "6 weken"
+            kernbegrip: "rechterlijke bekrachtiging"
+
+        3:
+          bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33d/Lid3"
+          structuur:
+            volledige_tekst: "Als een belanghebbende is overleden, buiten het Koninkrijk woont of geen bekende woonplaats heeft, wordt de onteigeningsbeschikking ook gezonden aan de erfgenaam, gevolmachtigde of bewindvoerder van de belanghebbende, tenzij er redelijkerwijs geen erfgenaam, gevolmachtigde of bewindvoerder bekend kan zijn voor het bestuursorgaan."
+
+    artikel_16.33e:
+      nummer: "16.33e"
+      titel: "(inwerkingtreding onteigeningsbeschikking)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.8/Artikel16.33e"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Een onteigeningsbeschikking treedt in werking met ingang van de dag na die waarop de uitspraak waarbij zij is bekrachtigd, ter inzage is gelegd."
+
+      logica:
+        type: verplichting
+        norm: "Inwerkingtreding: na rechterlijke bekrachtiging"
+        kernbegrip: "rechterlijke toetsing vereist"
+
+      logica_samenvatting:
+        narrative: |
+          Onteigeningsprocedure onder Omgevingswet:
+
+          1. Ontwerp + terinzagelegging (Awb 3.4)
+          2. Vaststelling onteigeningsbeschikking
+          3. Bedenkingen bij rechtbank (6 weken)
+          4. Rechterlijke bekrachtiging
+          5. Inwerkingtreding na bekrachtiging
+
+          KERN: Rechter moet beschikking bekrachtigen.
+          Dit is een CONSTITUTIONELE waarborg (art. 14 Grondwet).
+
+# =============================================================================
+# PARAGRAAF 16.3.9: LANDINRICHTING
+# =============================================================================
+paragraaf_16.3.9:
+  nummer: "16.3.9"
+  titel: "Landinrichting"
+  bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9"
+
+  artikelen:
+    artikel_16.33f:
+      nummer: "16.33f"
+      titel: "(toepassing afdeling 3.4 Awb op inrichtingsbesluit)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33f"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          structuur:
+            volledige_tekst: "Afdeling 3.4 van de Algemene wet bestuursrecht is van toepassing op de voorbereiding van een inrichtingsbesluit."
+          logica:
+            type: verplichting
+            norm: "Awb 3.4 van toepassing op inrichtingsbesluit"
+
+        2:
+          structuur:
+            volledige_tekst: "In het inrichtingsbesluit wordt aangegeven hoe de in artikel 12.11 bedoelde openbare lichamen en rechtspersonen, voor zover deze de eigendom, het beheer of het onderhoud hadden voorafgaand aan de landinrichting, bij de voorbereiding van het ontwerp van het inrichtingsbesluit zijn betrokken en wat de resultaten daarvan zijn."
+          logica:
+            type: verplichting
+            norm: "Inrichtingsbesluit vermeldt betrokkenheid eigenaren"
+
+    artikel_16.33g:
+      nummer: "16.33g"
+      titel: "(toepassing afdeling 3.4 Awb op besluit tot tijdelijk in gebruik geven)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33g"
+      inwerking: "2024-01-01"
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op tijdelijk-in-gebruik-besluit"
+
+    artikel_16.33h:
+      nummer: "16.33h"
+      titel: "(toepassing afdeling 3.4 Awb op ruilbesluit)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33h"
+      inwerking: "2024-01-01"
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op ruilbesluit"
+
+    artikel_16.33i:
+      nummer: "16.33i"
+      titel: "(toepassing afdeling 3.4 Awb op besluit geldelijke regelingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33i"
+      inwerking: "2024-01-01"
+
+      logica:
+        type: verplichting
+        norm: "Awb 3.4 van toepassing op besluit geldelijke regelingen"
+
+    artikel_16.33j:
+      nummer: "16.33j"
+      titel: "(vaststelling besluit geldelijke regelingen na gelijktijdige terinzagelegging met ruilbesluit)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33j"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Als bij gelijktijdige terinzagelegging van het ontwerp van het ruilbesluit en het ontwerp van het besluit geldelijke regelingen op grond van artikel 12.38, derde lid, zienswijzen naar voren zijn gebracht, stellen gedeputeerde staten het besluit geldelijke regelingen vast nadat het ruilbesluit onherroepelijk is geworden."
+
+      logica:
+        type: verplichting
+        norm: "Geldelijke regelingen: vaststelling NA onherroepelijk ruilbesluit"
+        kernbegrip: "volgordelijkheid"
+
+    artikel_16.33k:
+      nummer: "16.33k"
+      titel: "(gewijzigd ontwerp besluit geldelijke regelingen)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33k"
+      inwerking: "2024-01-01"
+
+      logica:
+        type: verplichting
+        norm: "Gewijzigd ontwerp bij afwijkend onherroepelijk ruilbesluit"
+
+    artikel_16.33l:
+      nummer: "16.33l"
+      titel: "(beroep inrichtingsbesluit bij toedeling buiten herverkavelingsblok)"
+      bron_path: "/Hoofdstuk16/Afdeling16.3/Paragraaf16.3.9/Artikel16.33l"
+      inwerking: "2024-01-01"
+
+      logica:
+        type: verplichting
+        norm: "GS doen mededeling uitspraak beroep aan Kadaster"
+        kernbegrip: "actualisering openbare registers"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 24
+    paragrafen: 11
+    actieve_artikelen: 24
+
+  patronen:
+    awb_3.4_als_standaard:
+      beschrijving: "Uniforme openbare voorbereidingsprocedure (Awb 3.4) als standaard voor belangrijke besluiten"
+      evidence: ["art. 16.22-16.33l"]
+      besluiten:
+        - omgevingsvisie
+        - programma's
+        - omgevingsplan
+        - waterschapsverordening
+        - omgevingsverordening
+        - peilbesluit
+        - gedoogplichtbeschikking
+        - onteigeningsbeschikking
+        - landinrichtingsbesluiten
+
+    actio_popularis:
+      beschrijving: "Een ieder mag zienswijze indienen als hoofdregel"
+      evidence: ["art. 16.23 lid 1"]
+      uitzondering: "gedoogplicht en onteigening: alleen belanghebbenden"
+
+    rechterlijke_bekrachtiging:
+      beschrijving: "Onteigening vereist bekrachtiging door rechtbank"
+      evidence: ["art. 16.33d, 16.33e"]
+      kernbegrip: "grondwettelijke waarborg"
+
+    ondergeschikte_wijzigingen:
+      beschrijving: "Vereenvoudigde procedure mogelijk bij ondergeschikte wijzigingen"
+      evidence: ["art. 16.25a lid 2", "art. 16.27 lid 2"]
+
+    internationale_verplichtingen:
+      beschrijving: "EU-recht begrenst procedurele versoepelingen"
+      evidence: ["art. 16.25a lid 2", "art. 16.27 lid 2", "art. 16.28"]
+
+  kritieke_verwijzingen:
+    - awb_3.4: "Alle procedures bouwen voort op Awb afdeling 3.4"
+    - bekendmakingswet: "Kennisgeving via Bekendmakingswet"
+    - grondwet_14: "Onteigening: rechterlijke bekrachtiging (art. 14 Gw)"
+
+  routes:
+    entry_points:
+      - artikel: "16.22-16.23"
+        vraag: "Welke procedure geldt en wie mag inspreken?"
+      - artikel: "16.30"
+        vraag: "Hoe wordt een omgevingsplan vastgesteld?"
+      - artikel: "16.33b-16.33e"
+        vraag: "Hoe verloopt de onteigeningsprocedure?"
+    exit_points:
+      - naar: "Awb afdeling 3.4"
+        context: "uniforme openbare voorbereiding"
+      - naar: "Bekendmakingswet"
+        context: "kennisgeving en terinzagelegging"
+      - naar: "Hoofdstuk 10-12"
+        context: "gedoogplichten, onteigening, landinrichting"

@@ -1,0 +1,687 @@
+# Chapter 17: Adviesorganen en adviseurs - V2 Atomic Extraction
+# Schema: v2
+# Source: BWBR0037885 (Omgevingswet)
+# Extracted: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk:
+  nummer: 17
+  titel: "Adviesorganen en adviseurs"
+  bron_path: "/Hoofdstuk17"
+  inwerking: "2024-01-01"
+
+  structuur:
+    afdelingen:
+      - nummer: "17.1"
+        titel: "Adviesorganen op rijksniveau"
+        paragrafen:
+          - "§ 17.1.1 Algemene bepalingen (17.1-17.4)"
+          - "§ 17.1.2 Adviesorganen (17.5-17.6)"
+      - nummer: "17.2"
+        titel: "Adviesorganen op gemeentelijk niveau"
+        paragrafen:
+          - "§ 17.2.1 Algemene bepalingen (17.7-17.8)"
+          - "§ 17.2.2 Verplichte gemeentelijke adviesorganen (17.9)"
+      - nummer: "17.3"
+        titel: "Adviseurs"
+        artikelen: "17.10"
+
+---
+
+# AFDELING 17.1: ADVIESORGANEN OP RIJKSNIVEAU
+
+## § 17.1.1 Algemene bepalingen
+
+artikel_17.1:
+  nummer: "17.1"
+  titel: "(toepassing)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.1"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Deze paragraaf is van toepassing op de op grond van deze afdeling ingestelde adviesorganen."
+      logica:
+        type: "bepaling"
+        norm: "Paragraaf 17.1.1 is van toepassing op adviesorganen ingesteld op grond van afdeling 17.1"
+        scope: "rijksadviesorganen"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "toepassingsbereik paragraaf 17.1.1"
+    subject: "adviesorganen op rijksniveau"
+
+---
+
+artikel_17.2:
+  nummer: "17.2"
+  titel: "(samenstelling, benoeming leden, werkwijze en ondersteuning adviesorganen)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.2"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.2/Lid1"
+      structuur:
+        volledige_tekst: "Onze Minister van Infrastructuur en Waterstaat of Onze Minister die het aangaat benoemt en ontslaat de voorzitter en leden van een adviesorgaan. De voorzitter en leden kunnen voorts zelf ontslag nemen door schriftelijke kennisgeving aan de betrokken minister."
+      logica:
+        type: "machtiging"
+        norm: "Minister benoemt en ontslaat voorzitter en leden adviesorgaan"
+        bevoegd_gezag: "Minister van I&W of Minister die het aangaat"
+        uitzondering: "Eigen ontslagname door schriftelijke kennisgeving"
+
+    2:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.2/Lid2"
+      structuur:
+        volledige_tekst: "De artikelen 11, tweede lid, 12, 15, 16, 19 tot en met 21 en 29 van de Kaderwet adviescolleges zijn van overeenkomstige toepassing op adviesorganen."
+      logica:
+        type: "verwijzing"
+        norm: "Kaderwet adviescolleges van overeenkomstige toepassing"
+        mechanisme: "schakelbepalingen"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "samenstelling en werkwijze adviesorganen"
+    subject: "rijksadviesorganen"
+    bevoegd_gezag: "rijk"
+
+  externe_refs:
+    - naar: "BWBR0008159"
+      wet: "Kaderwet adviescolleges"
+      artikelen: ["11 lid 2", "12", "15", "16", "19-21", "29"]
+      context: "van overeenkomstige toepassing"
+
+---
+
+artikel_17.3:
+  nummer: "17.3"
+  titel: "(nadere regels)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.3"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen nadere regels worden gesteld over de samenstelling, inrichting en werkwijze van een adviesorgaan."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan nadere regels stellen over adviesorganen"
+        conditie:
+          type: "facultatief"
+          tekst: "kunnen"
+          effect: "discretionaire bevoegdheid"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "nadere regels samenstelling/inrichting/werkwijze"
+    subject: "adviesorganen"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "nader te bepalen"
+      voor: "samenstelling, inrichting en werkwijze adviesorgaan"
+      mechanisme: "facultatieve delegatie"
+
+---
+
+artikel_17.4:
+  nummer: "17.4"
+  titel: "(reglement van orde)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.4"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Als toepassing is gegeven aan artikel 21 van de Kaderwet adviescolleges, zendt het adviesorgaan het reglement aan Onze Minister van Infrastructuur en Waterstaat of Onze Minister die het aangaat."
+      logica:
+        type: "verplichting"
+        norm: "Adviesorgaan zendt reglement aan Minister"
+        conditie:
+          type: "indien"
+          tekst: "Als toepassing is gegeven aan artikel 21 van de Kaderwet adviescolleges"
+          effect: "toezending reglement vereist"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "toezending reglement van orde"
+    subject: "adviesorgaan"
+    bevoegd_gezag: "Minister van I&W"
+
+  externe_refs:
+    - naar: "BWBR0008159"
+      wet: "Kaderwet adviescolleges"
+      artikel: "21"
+      context: "voorwaarde voor toezending reglement"
+
+---
+
+## § 17.1.2 Adviesorganen
+
+artikel_17.5:
+  nummer: "17.5"
+  titel: "(instelling Commissie voor de milieueffectrapportage)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid1"
+      structuur:
+        volledige_tekst: "Er is een Commissie voor de milieueffectrapportage die tot taak heeft het advies, bedoeld in de artikelen 16.39 en 16.47, uit te brengen."
+      logica:
+        type: "instelling"
+        norm: "Commissie voor de milieueffectrapportage bestaat"
+        taak: "advies ex art. 16.39 en 16.47 uitbrengen"
+
+    2:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid2"
+      structuur:
+        aanhef: "De taak, bedoeld in het eerste lid, wordt alleen uitgeoefend door personen die niet rechtstreeks betrokken zijn, zullen zijn, of zijn geweest bij:"
+        onderdelen:
+          a:
+            tekst: "een plan of programma als bedoeld in artikel 16.34, bij de voorbereiding waarvan het milieueffectrapport wordt of zou moeten worden gemaakt,"
+            bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid2/Onderdeela"
+          b:
+            tekst: "een besluit voor een project als bedoeld in artikel 16.43, bij de voorbereiding waarvan het milieueffectrapport wordt of zou moeten worden gemaakt, of"
+            bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid2/Onderdeelb"
+          c:
+            tekst: "een voorgenomen activiteit, alsmede van de in beschouwing te nemen redelijke alternatieven daarvoor, bij de voorbereiding waarvan het milieueffectrapport wordt of zou moeten worden gemaakt."
+            bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid2/Onderdeelc"
+      logica:
+        type: "verbod"
+        norm: "Betrokken personen mogen MER-taak niet uitoefenen"
+        mechanisme: "onafhankelijkheidseis"
+        limitatief: true
+
+    3:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid3"
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur worden nadere regels gesteld over de Commissie voor de milieueffectrapportage."
+      logica:
+        type: "delegatie"
+        norm: "AMvB stelt nadere regels over MER-commissie"
+        conditie:
+          type: "verplicht"
+          tekst: "worden gesteld"
+          effect: "verplichte delegatie"
+
+    4:
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5/Lid4"
+      structuur:
+        volledige_tekst: "In afwijking van artikel 17.2, tweede lid, zijn de artikelen 15, vijfde lid, en 20 van de Kaderwet adviescolleges niet van toepassing op de Commissie voor de milieueffectrapportage."
+      logica:
+        type: "uitzondering"
+        norm: "Kaderwet art. 15 lid 5 en 20 niet van toepassing op MER-commissie"
+        conditie:
+          type: "in_afwijking_van"
+          tekst: "In afwijking van artikel 17.2, tweede lid"
+          effect: "derogatie"
+
+  functie:
+    werkwoord: "stelt in"
+    object: "Commissie voor de milieueffectrapportage"
+    subject: "wet"
+    bevoegd_gezag: "rijk"
+
+  interne_refs:
+    - naar: "artikel 16.39"
+      type: "grondslag"
+      context: "taak advies plan-MER"
+      bron_path: "/Hoofdstuk16/Afdeling16.4/Paragraaf16.4.1/Artikel16.39"
+    - naar: "artikel 16.47"
+      type: "grondslag"
+      context: "taak advies project-MER"
+      bron_path: "/Hoofdstuk16/Afdeling16.4/Paragraaf16.4.2/Artikel16.47"
+    - naar: "artikel 16.34"
+      type: "verwijzing"
+      context: "plan of programma voor plan-MER"
+      bron_path: "/Hoofdstuk16/Afdeling16.4/Paragraaf16.4.1/Artikel16.34"
+    - naar: "artikel 16.43"
+      type: "verwijzing"
+      context: "besluit voor project-MER"
+      bron_path: "/Hoofdstuk16/Afdeling16.4/Paragraaf16.4.2/Artikel16.43"
+    - naar: "artikel 17.2"
+      type: "begrenzing"
+      context: "afwijking van lid 2"
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.1/Artikel17.2"
+
+  externe_refs:
+    - naar: "BWBR0008159"
+      wet: "Kaderwet adviescolleges"
+      artikelen: ["15 lid 5", "20"]
+      context: "niet van toepassing op MER-commissie"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "Omgevingsbesluit"
+      voor: "nadere regels Commissie milieueffectrapportage"
+      mechanisme: "verplichte delegatie"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 17.5 stelt de Commissie voor de milieueffectrapportage in, met als
+      taak het adviseren over MER's (plan-MER en project-MER). Lid 2 bevat
+      een strenge onafhankelijkheidseis: personen die betrokken zijn (waren/zullen zijn)
+      bij het plan, project of activiteit mogen niet meewerken aan het advies.
+      Dit is een limitatieve opsomming. Lid 4 derrogeert aan de algemene regel
+      van art. 17.2 lid 2 voor wat betreft bepaalde Kaderwet-bepalingen.
+
+---
+
+artikel_17.5a:
+  nummer: "17.5a"
+  titel: "(instelling wetenschappelijke autoriteit CITES)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5a"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Er is een wetenschappelijke autoriteit CITES, die fungeert als wetenschappelijke autoriteit als bedoeld in artikel 13, tweede lid, van de cites-basisverordening."
+      logica:
+        type: "instelling"
+        norm: "Wetenschappelijke autoriteit CITES bestaat"
+        taak: "functie ex CITES-basisverordening art. 13 lid 2"
+
+  functie:
+    werkwoord: "stelt in"
+    object: "wetenschappelijke autoriteit CITES"
+    subject: "wet"
+    bevoegd_gezag: "rijk"
+
+  externe_refs:
+    - naar: "CITES-basisverordening"
+      wet: "EU-verordening"
+      artikel: "13 lid 2"
+      context: "wetenschappelijke autoriteit"
+
+---
+
+artikel_17.6:
+  nummer: "17.6"
+  titel: "(grondslag voor instelling overige adviesorganen)"
+  bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.6"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen adviesorganen worden ingesteld met een in de maatregel omschreven adviserende taak op het terrein van de fysieke leefomgeving, anders dan de taak, bedoeld in artikel 17.5."
+      logica:
+        type: "delegatie"
+        norm: "AMvB kan overige adviesorganen instellen"
+        conditie:
+          type: "facultatief"
+          tekst: "kunnen"
+          effect: "discretionaire bevoegdheid"
+        uitzondering: "anders dan MER-commissie taak"
+
+  functie:
+    werkwoord: "delegeert"
+    object: "instelling overige adviesorganen"
+    subject: "wet"
+
+  interne_refs:
+    - naar: "artikel 17.5"
+      type: "begrenzing"
+      context: "MER-commissie taak uitgezonderd"
+      bron_path: "/Hoofdstuk17/Afdeling17.1/Paragraaf17.1.2/Artikel17.5"
+
+  delegeert:
+    - type: "bij AMvB"
+      naar: "nader te bepalen"
+      voor: "instelling adviesorganen fysieke leefomgeving"
+      mechanisme: "facultatieve delegatie"
+      beperking: "niet MER-taak"
+
+---
+
+# AFDELING 17.2: ADVIESORGANEN OP GEMEENTELIJK NIVEAU
+
+## § 17.2.1 Algemene bepalingen
+
+artikel_17.7:
+  nummer: "17.7"
+  titel: "(leden adviesorgaan)"
+  bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.1/Artikel17.7"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.1/Artikel17.7/Lid1"
+      structuur:
+        volledige_tekst: "De gemeenteraad stelt het aantal leden en de benoemingstermijn vast van een op grond van deze afdeling ingesteld gemeentelijk adviesorgaan."
+      logica:
+        type: "machtiging"
+        norm: "Gemeenteraad stelt aantal leden en benoemingstermijn vast"
+        bevoegd_gezag: "gemeente"
+
+    2:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.1/Artikel17.7/Lid2"
+      structuur:
+        volledige_tekst: "De gemeenteraad benoemt en ontslaat de leden van een gemeentelijk adviesorgaan."
+      logica:
+        type: "machtiging"
+        norm: "Gemeenteraad benoemt en ontslaat leden"
+        bevoegd_gezag: "gemeente"
+
+  functie:
+    werkwoord: "bepaalt"
+    object: "samenstelling gemeentelijk adviesorgaan"
+    subject: "gemeentelijk adviesorgaan"
+    bevoegd_gezag: "gemeente"
+
+---
+
+artikel_17.8:
+  nummer: "17.8"
+  titel: "(eisen aan leden)"
+  bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.1/Artikel17.8"
+  inwerking: "2024-01-01"
+
+  leden:
+    geen_leden:
+      structuur:
+        volledige_tekst: "De leden van het gemeentebestuur zijn geen lid van een gemeentelijk adviesorgaan."
+      logica:
+        type: "verbod"
+        norm: "Gemeentebestuursleden mogen geen lid zijn van gemeentelijk adviesorgaan"
+        mechanisme: "incompatibiliteitsregel"
+
+  functie:
+    werkwoord: "verbiedt"
+    object: "lidmaatschap gemeentebestuursleden in adviesorgaan"
+    subject: "gemeentebestuur"
+
+---
+
+## § 17.2.2 Verplichte gemeentelijke adviesorganen
+
+artikel_17.9:
+  nummer: "17.9"
+  titel: "(gemeentelijke adviescommissie)"
+  bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid1"
+      structuur:
+        volledige_tekst: "De gemeenteraad stelt een commissie in die in ieder geval tot taak heeft te adviseren over de aanvragen om een omgevingsvergunning voor een rijksmonumentenactiviteit met betrekking tot een monument. Binnen deze commissie zijn enkele leden deskundig op het gebied van de monumentenzorg, die in ieder geval worden betrokken bij de advisering over een rijksmonumentenactiviteit."
+      logica:
+        type: "verplichting"
+        norm: "Gemeenteraad moet adviescommissie instellen"
+        minimum_taak: "advisering rijksmonumentenactiviteit"
+        vereiste: "deskundige leden monumentenzorg"
+        conditie:
+          type: "in_ieder_geval"
+          tekst: "in ieder geval"
+          effect: "minimum vereiste"
+
+    2:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid2"
+      structuur:
+        volledige_tekst: "Naast de gevallen waarin de commissie op grond van artikel 16.15, eerste of tweede lid, als adviseur wordt aangewezen, kan het college van burgemeester en wethouders de commissie advies vragen over het ontwikkelen van beleid voor de kwaliteit van de fysieke leefomgeving."
+      logica:
+        type: "machtiging"
+        norm: "College kan commissie advies vragen over beleidsontwikkeling"
+        conditie:
+          type: "facultatief"
+          tekst: "kan"
+          effect: "discretionaire bevoegdheid"
+
+    3:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid3"
+      structuur:
+        volledige_tekst: "De commissie baseert haar advies, voor zover van toepassing, op de omgevingsvisie, het omgevingsplan en de beleidsregels, bedoeld in artikel 4.19. Bij een advies over een rijksmonumentenactiviteit neemt de commissie de uitgangspunten, bedoeld in artikel 5.22, in acht."
+      logica:
+        type: "verplichting"
+        norm: "Commissie baseert advies op beleidskader"
+        grondslagen:
+          - omgevingsvisie
+          - omgevingsplan
+          - beleidsregels ex art. 4.19
+        extra_bij_rijksmonumenten: "uitgangspunten ex art. 5.22"
+
+    4:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid4"
+      structuur:
+        volledige_tekst: "De adviezen van de commissie zijn deugdelijk gemotiveerd en worden schriftelijk openbaar gemaakt."
+      logica:
+        type: "verplichting"
+        norm: "Adviezen zijn gemotiveerd en openbaar"
+        vereisten:
+          - deugdelijke_motivering
+          - schriftelijke_openbaarmaking
+
+    5:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid5"
+      structuur:
+        volledige_tekst: "De door de commissie gehouden vergaderingen zijn openbaar. Een vergadering of een gedeelte daarvan is niet openbaar in gevallen als bedoeld in artikel 5.1, eerste lid, van de Wet open overheid en in gevallen waarin het belang van openbaarheid niet opweegt tegen de in artikel 5.1, tweede lid, van die wet genoemde belangen."
+      logica:
+        type: "bepaling"
+        norm: "Vergaderingen zijn openbaar"
+        default: "openbaar"
+        uitzondering: "Woo-uitzonderingen"
+
+    6:
+      bron_path: "/Hoofdstuk17/Afdeling17.2/Paragraaf17.2.2/Artikel17.9/Lid6"
+      structuur:
+        volledige_tekst: "De commissie zendt de gemeenteraad elk jaar een verslag over de door haar verrichte werkzaamheden."
+      logica:
+        type: "verplichting"
+        norm: "Commissie zendt jaarverslag aan gemeenteraad"
+        periodiciteit: "jaarlijks"
+
+  functie:
+    werkwoord: "verplicht"
+    object: "instelling adviescommissie met deskundigen"
+    subject: "gemeenteraad"
+    bevoegd_gezag: "gemeente"
+
+  interne_refs:
+    - naar: "artikel 16.15"
+      type: "verwijzing"
+      context: "aanwijzing als adviseur"
+      bron_path: "/Hoofdstuk16/Afdeling16.2/Paragraaf16.2.3/Artikel16.15"
+    - naar: "artikel 4.19"
+      type: "verwijzing"
+      context: "beleidsregels welstand"
+      bron_path: "/Hoofdstuk4/Afdeling4.3/Paragraaf4.3.1/Artikel4.19"
+    - naar: "artikel 5.22"
+      type: "verwijzing"
+      context: "uitgangspunten rijksmonumentenactiviteit"
+      bron_path: "/Hoofdstuk5/Afdeling5.1/Paragraaf5.1.3/Artikel5.22"
+
+  externe_refs:
+    - naar: "BWBR0045754"
+      wet: "Wet open overheid"
+      artikel: "5.1"
+      context: "uitzonderingen openbaarheid vergaderingen"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 17.9 bevat de verplichte gemeentelijke adviescommissie (welstands-/
+      monumentencommissie). Deze commissie heeft een minimum-taak (advisering
+      rijksmonumentenactiviteit) maar kan uitgebreid worden. Lid 1 vereist
+      deskundige leden monumentenzorg. De commissie moet advies baseren op
+      het bestaande beleidskader (omgevingsvisie, omgevingsplan, beleidsregels).
+      Transparantie is centraal: adviezen zijn gemotiveerd en openbaar,
+      vergaderingen zijn openbaar (met Woo-uitzonderingen), en jaarlijkse
+      verantwoording aan de gemeenteraad.
+
+---
+
+# AFDELING 17.3: ADVISEURS
+
+artikel_17.10:
+  nummer: "17.10"
+  titel: "(advisering over beroepen door StAB)"
+  bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10"
+  inwerking: "2024-01-01"
+
+  leden:
+    1:
+      bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10/Lid1"
+      structuur:
+        volledige_tekst: "Er is een Stichting Advisering Bestuursrechtspraak voor Milieu en Ruimtelijke Ordening."
+      logica:
+        type: "instelling"
+        norm: "StAB bestaat"
+
+    2:
+      bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10/Lid2"
+      structuur:
+        aanhef: "De stichting heeft tot taak aan de bestuursrechter op diens verzoek op onpartijdige en onafhankelijke wijze deskundigenbericht uit te brengen over:"
+        onderdelen:
+          a:
+            tekst: "beroepen tegen besluiten op grond van deze wet,"
+            bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10/Lid2/Onderdeela"
+          b:
+            tekst: "beroepen tegen besluiten op grond van andere wetten, als het gaat om een onderwerp dat samenhangt met de fysieke leefomgeving of activiteiten met gevolgen voor de fysieke leefomgeving."
+            bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10/Lid2/Onderdeelb"
+      logica:
+        type: "machtiging"
+        norm: "StAB brengt deskundigenbericht uit aan bestuursrechter"
+        taakgever: "bestuursrechter"
+        voorwaarde: "op verzoek"
+        kenmerken:
+          - onpartijdig
+          - onafhankelijk
+
+    3:
+      bron_path: "/Hoofdstuk17/Afdeling17.3/Artikel17.10/Lid3"
+      structuur:
+        volledige_tekst: "De personen die deel uitmaken van de organen van de stichting en het personeel van de stichting vervullen geen functies en betrekkingen waarvan de uitoefening ongewenst is in verband met de handhaving van de onpartijdigheid en onafhankelijkheid van de stichting of het vertrouwen daarin."
+      logica:
+        type: "verbod"
+        norm: "Incompatibiliteitsregel voor StAB-personeel"
+        mechanisme: "onafhankelijkheidseis"
+
+  functie:
+    werkwoord: "stelt in"
+    object: "Stichting Advisering Bestuursrechtspraak (StAB)"
+    subject: "wet"
+
+  logica_samenvatting:
+    narrative: |
+      Art. 17.10 regelt de StAB (Stichting Advisering Bestuursrechtspraak).
+      Dit is geen adviesorgaan in de zin van afdeling 17.1/17.2, maar een
+      onafhankelijke stichting die op verzoek van de bestuursrechter
+      deskundigenberichten uitbrengt. De taak is breed: alle Omgevingswet-
+      besluiten én besluiten onder andere wetten die met de fysieke
+      leefomgeving samenhangen. Lid 3 bevat een strenge incompatibiliteitsregel
+      om onpartijdigheid en onafhankelijkheid te waarborgen.
+
+---
+
+# HOOFDSTUK-ANALYSE
+
+paragraaf_analyse:
+  structuur:
+    artikelen_count: 11
+    totaal_leden: 17
+    afdelingen_count: 3
+
+  patronen:
+    drie_niveau_advies:
+      beschrijving: "Drielaags adviesstructuur: rijk (17.1) - gemeente (17.2) - rechter (17.3)"
+      evidence: ["afd 17.1", "afd 17.2", "afd 17.3"]
+
+    onafhankelijkheidseis:
+      beschrijving: "Consistente eis van onafhankelijkheid bij alle adviesorganen"
+      evidence:
+        - "art. 17.5 lid 2 (MER-commissie: geen betrokkenheid bij plan/project)"
+        - "art. 17.8 (gemeentelijk: geen gemeentebestuursleden)"
+        - "art. 17.10 lid 3 (StAB: incompatibiliteitsregel)"
+
+    kaderwet_verwijzing:
+      beschrijving: "Schakelbepalingen naar Kaderwet adviescolleges voor rijksniveau"
+      evidence: ["art. 17.2 lid 2", "art. 17.4", "art. 17.5 lid 4"]
+
+    transparantie_vereiste:
+      beschrijving: "Openbaarheid en motivering van adviezen"
+      evidence: ["art. 17.9 lid 4", "art. 17.9 lid 5", "art. 17.9 lid 6"]
+
+    minimum_plus:
+      beschrijving: "'In ieder geval' als minimum met uitbreidingsmogelijkheid"
+      evidence: ["art. 17.9 lid 1 (minimumtaak commissie)", "art. 17.9 lid 2 (uitbreiding taak)"]
+
+  relaties:
+    intern:
+      - van: "art. 17.5"
+        naar: "art. 16.39, 16.47"
+        type: "grondslag"
+        context: "MER-adviestaak"
+      - van: "art. 17.9"
+        naar: "art. 16.15"
+        type: "verwijzing"
+        context: "aanwijzing als adviseur"
+      - van: "art. 17.9"
+        naar: "art. 5.22"
+        type: "verwijzing"
+        context: "beoordelingskader rijksmonumenten"
+      - van: "art. 17.5 lid 4"
+        naar: "art. 17.2 lid 2"
+        type: "derogatie"
+        context: "afwijking Kaderwet-toepassing"
+
+    extern:
+      - naar: "Kaderwet adviescolleges"
+        context: "algemeen kader rijksadviesorganen"
+      - naar: "CITES-basisverordening"
+        context: "wetenschappelijke autoriteit CITES"
+      - naar: "Wet open overheid"
+        context: "uitzonderingen openbaarheid"
+
+  routes:
+    entry_points:
+      - artikel: "17.5"
+        vraag: "Wie adviseert over milieueffectrapporten?"
+      - artikel: "17.9"
+        vraag: "Welke commissie adviseert over welstand/monumenten?"
+      - artikel: "17.10"
+        vraag: "Wie geeft deskundigenbericht aan de bestuursrechter?"
+    exit_points:
+      - naar: "hoofdstuk 16"
+        context: "MER-procedure (art. 16.34-16.47)"
+      - naar: "hoofdstuk 5"
+        context: "beoordeling rijksmonumentenactiviteit (art. 5.22)"
+
+  actoren:
+    - actor: "Minister van I&W"
+      rol: "benoemt leden rijksadviesorganen"
+    - actor: "gemeenteraad"
+      rol: "benoemt leden gemeentelijke commissie, ontvangt jaarverslag"
+    - actor: "college van B&W"
+      rol: "kan aanvullend advies vragen"
+    - actor: "bestuursrechter"
+      rol: "taakgever StAB"
+    - actor: "Commissie voor de milieueffectrapportage"
+      rol: "adviseert over MER"
+    - actor: "gemeentelijke adviescommissie"
+      rol: "adviseert over welstand/monumenten"
+    - actor: "StAB"
+      rol: "deskundigenbericht aan rechter"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    drielaags_adviesstelsel:
+      observatie: "Omgevingswet kent drie advieslagen: rijk (MER, CITES), gemeente (welstand/monumenten), rechter (StAB)"
+      implicatie: "Navigatievraag 'wie adviseert?' vereist laag-identificatie"
+
+    onafhankelijkheid_als_kernprincipe:
+      observatie: "Alle adviesorganen hebben specifieke onafhankelijkheidseisen"
+      implicatie: "Bij vragen over samenstelling adviesorgaan altijd ook incompatibiliteitsregels checken"
+
+    minimum_plus_patroon:
+      observatie: "'In ieder geval' creëert minimum dat uitgebreid kan worden"
+      implicatie: "Gemeentelijke commissie kan meer taken hebben dan wettelijk verplicht"
+
+  schema_verbeteringen:
+    - "Incompatibiliteitsregels verdienen eigen veld in actor-schema"
+    - "Schakelbepalingen naar andere wetten structureel vastleggen"

@@ -1,0 +1,985 @@
+# Chapter 12: Bijzondere instrumenten voor het inrichten van gebieden - V2 Atomic Extraction
+# Schema version: v2
+# Extraction date: 2026-01-29
+# Source: BWBR0037885 (Omgevingswet)
+# Articles: 12.1-12.47
+
+schema_version: 2
+bron: BWBR0037885
+
+---
+hoofdstuk_12:
+  nummer: "12"
+  titel: "Bijzondere instrumenten voor het inrichten van gebieden"
+  bron_path: "/Hoofdstuk12"
+  inwerking: "2024-01-01"
+
+  # =============================================================================
+  # AFDELING 12.1: ALGEMENE BEPALINGEN
+  # =============================================================================
+  afdeling_12.1:
+    nummer: "12.1"
+    titel: "Algemene bepalingen"
+    bron_path: "/Hoofdstuk12/Afdeling12.1"
+
+    paragraaf_12.1.1:
+      nummer: "12.1.1"
+      titel: "Begripsbepalingen en toepassingsbereik"
+      bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1"
+
+      artikel_12.1:
+        nummer: "12.1"
+        titel: "(begripsbepalingen)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.1"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.1"
+            structuur:
+              aanhef: "In dit hoofdstuk en de daarop berustende bepalingen wordt verstaan onder rechthebbende:"
+              onderdelen:
+                a:
+                  tekst: "eigenaar en degene aan wie een beperkt recht toebehoort waaraan een onroerende zaak is onderworpen,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.1/Onderdeela"
+                b:
+                  tekst: "huurder van een onroerende zaak, of"
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.1/Onderdeelb"
+                c:
+                  tekst: "schuldeiser van een verbintenis die ten aanzien van een onroerende zaak een verplichting als bedoeld in artikel 252 van Boek 6 van het Burgerlijk Wetboek inhoudt."
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.1/Onderdeelc"
+
+            logica:
+              type: "definitie"
+              norm: "Definitie 'rechthebbende' voor hoofdstuk 12"
+              ruime_definitie: true
+              omvat:
+                - "eigenaar"
+                - "beperkt gerechtigde"
+                - "huurder"
+                - "schuldeiser kwalitatieve verplichting"
+
+        functie:
+          werkwoord: "definieert"
+          object: "rechthebbende"
+          subject: "kring van betrokkenen bij landinrichting"
+
+        externe_refs:
+          - naar: "BWBR0005289"
+            wet: "Burgerlijk Wetboek Boek 6"
+            artikel: "252"
+            context: "kwalitatieve verplichting"
+            type: "verwijzing"
+
+      artikel_12.2:
+        nummer: "12.2"
+        titel: "(positie zakelijk gerechtigden)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.2"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.1/Artikel12.2"
+            structuur:
+              volledige_tekst: "Dit hoofdstuk en de daarop berustende bepalingen die eigenaren betreffen, zijn van overeenkomstige toepassing op opstallers, erfpachters, beklemde meiers, vruchtgebruikers, houders van een recht van gebruik of bewoning van een onroerende zaak, en appartementseigenaren."
+
+            logica:
+              type: "gelijkstelling"
+              norm: "Zakelijk gerechtigden gelijkgesteld met eigenaren"
+              gelijkgesteld_aan_eigenaar:
+                - "opstallers"
+                - "erfpachters"
+                - "beklemde meiers"
+                - "vruchtgebruikers"
+                - "houders recht van gebruik/bewoning"
+                - "appartementseigenaren"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "gelijkstelling"
+          subject: "zakelijk gerechtigden"
+
+    paragraaf_12.1.2:
+      nummer: "12.1.2"
+      titel: "Algemene bepalingen voor landinrichting"
+      bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2"
+
+      artikel_12.3:
+        nummer: "12.3"
+        titel: "(landinrichting)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid1"
+            structuur:
+              volledige_tekst: "Landinrichting strekt tot verbetering van de inrichting van het landelijk gebied in overeenstemming met de functies die aan de betrokken locaties zijn toegedeeld."
+
+            logica:
+              type: "definitie"
+              norm: "Doel van landinrichting"
+              doel: "verbetering inrichting landelijk gebied"
+              functiegebonden: "conform toegedeelde functies"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid2"
+            structuur:
+              aanhef: "Bij landinrichting kunnen de volgende maatregelen en voorzieningen worden getroffen:"
+              onderdelen:
+                a:
+                  tekst: "het wijzigen van het stelsel van wegen of waterstaatswerken,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid2/Onderdeela"
+                b:
+                  tekst: "aanleg, ontwikkeling, behoud, beheer of herstel van gebieden van belang uit een oogpunt van natuurbescherming of landschapsbehoud of van elementen van landschappelijke, recreatieve, aardkundige of natuurwetenschappelijke waarde, of cultureel erfgoed, en"
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid2/Onderdeelb"
+                c:
+                  tekst: "andere maatregelen of voorzieningen van openbaar nut."
+                  bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid2/Onderdeelc"
+
+            logica:
+              type: "machtiging"
+              norm: "Maatregelen en voorzieningen bij landinrichting"
+              niet_limitatief: true  # "kunnen" + "andere maatregelen"
+              categorieën:
+                - "infrastructuur (wegen, waterstaatswerken)"
+                - "natuur en landschap"
+                - "andere voorzieningen van openbaar nut"
+
+          3:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid3"
+            structuur:
+              volledige_tekst: "Bij landinrichting kan worden voorzien in de toedeling van eigendom, het beheer en het onderhoud van voorzieningen van openbaar nut."
+
+            logica:
+              type: "machtiging"
+              norm: "Toedeling eigendom/beheer/onderhoud mogelijk"
+
+          4:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.3/Lid4"
+            structuur:
+              volledige_tekst: "Herverkaveling kan deel uitmaken van landinrichting, waarbij korting als bedoeld in artikel 12.29 kan worden toegepast als het nodig is de eigendom van onroerende zaken te verwerven."
+
+            logica:
+              type: "machtiging"
+              norm: "Herverkaveling als onderdeel van landinrichting"
+              korting_mogelijk: true
+              korting_doel: "eigendomsverwerving"
+
+        functie:
+          werkwoord: "definieert"
+          object: "landinrichting"
+          subject: "inhoud en reikwijdte"
+
+        interne_refs:
+          - naar: "artikel 12.29"
+            type: "verwijzing"
+            context: "korting"
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29"
+
+      artikel_12.4:
+        nummer: "12.4"
+        titel: "(bevoegdheid tot landinrichting)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.4"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.4/Lid1"
+            structuur:
+              volledige_tekst: "Bevoegdheden over landinrichting kunnen worden uitgeoefend door gedeputeerde staten van de provincie waarin het in te richten gebied geheel of grotendeels ligt."
+
+            logica:
+              type: "machtiging"
+              norm: "GS is bevoegd gezag voor landinrichting"
+              bevoegd_gezag: "gedeputeerde staten"
+              territorialiteit: "provincie waarin gebied grotendeels ligt"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.4/Lid2"
+            structuur:
+              volledige_tekst: "Artikel 3, eerste lid, onderdeel r, van de Kadasterwet is van toepassing."
+
+            logica:
+              type: "verwijzing"
+              norm: "Kadasterwet-verplichting van toepassing"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "bevoegdheid landinrichting"
+          subject: "gedeputeerde staten"
+          bevoegd_gezag: "provincie"
+
+        externe_refs:
+          - naar: "BWBR0004541"
+            wet: "Kadasterwet"
+            artikel: "3, eerste lid, onderdeel r"
+            context: "toepassing"
+            type: "verwijzing"
+
+      artikel_12.5:
+        nummer: "12.5"
+        titel: "(locaties die ook een militaire functie vervullen)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.5"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.5"
+            structuur:
+              volledige_tekst: "Zonder toestemming van Onze Minister van Defensie wordt geen wijziging gebracht in de staat en werking van locaties die ook een functie voor de landsverdediging vervullen."
+
+            logica:
+              type: "verbod"
+              norm: "Militaire locaties: toestemming Defensie vereist"
+              conditie:
+                type: "tenzij"
+                tekst: "toestemming Minister van Defensie"
+                effect: "wijziging staat en werking toegestaan"
+              default: "geen wijziging"
+
+        functie:
+          werkwoord: "verbiedt"
+          object: "wijziging militaire locaties"
+          subject: "bescherming defensiebelangen"
+
+        actoren:
+          - actor: "Minister van Defensie"
+            rol: "toestemmingverlener"
+
+      artikel_12.6:
+        nummer: "12.6"
+        titel: "(raming kosten herverkaveling en aandeel voor gezamenlijke eigenaren)"
+        bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.6"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.1/Paragraaf12.1.2/Artikel12.6"
+            structuur:
+              volledige_tekst: "Als herverkaveling deel uitmaakt van de landinrichting, wordt een zo nauwkeurig mogelijke raming gemaakt van de kosten daarvan en van het aandeel van die kosten dat ten laste zal worden gebracht van de gezamenlijke eigenaren in het te herverkavelen blok."
+
+            logica:
+              type: "verplichting"
+              norm: "Kostenraming herverkaveling verplicht"
+              conditie:
+                type: "indien"
+                tekst: "herverkaveling deel uitmaakt van landinrichting"
+              inhoud:
+                - "raming kosten"
+                - "aandeel eigenaren"
+
+        functie:
+          werkwoord: "verplicht"
+          object: "kostenraming"
+          subject: "transparantie kostenverdeling"
+
+  # =============================================================================
+  # AFDELING 12.2: INRICHTINGSBESLUIT
+  # =============================================================================
+  afdeling_12.2:
+    nummer: "12.2"
+    titel: "Inrichtingsbesluit"
+    bron_path: "/Hoofdstuk12/Afdeling12.2"
+
+    paragraaf_12.2.1:
+      nummer: "12.2.1"
+      titel: "Inrichtingsbesluit"
+      bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1"
+
+      artikel_12.7:
+        nummer: "12.7"
+        titel: "(vaststellen inrichtingsbesluit)"
+        bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.7"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.7"
+            structuur:
+              aanhef: "Een inrichtingsbesluit wordt gelijktijdig met het inrichtingsprogramma vastgesteld, als bij de landinrichting:"
+              onderdelen:
+                a:
+                  tekst: "eigendom, beheer of onderhoud van voorzieningen van openbaar nut worden toegedeeld,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.7/Onderdeela"
+                b:
+                  tekst: "herverkaveling of korting wordt toegepast."
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.7/Onderdeelb"
+
+            logica:
+              type: "verplichting"
+              norm: "Inrichtingsbesluit gelijktijdig met programma"
+              conditie:
+                type: "indien"
+                tekst: "toedeling of herverkaveling/korting plaatsvindt"
+              gelijktijdigheid: "met inrichtingsprogramma"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "vaststelling inrichtingsbesluit"
+          subject: "procedurele vereiste"
+
+      artikel_12.8:
+        nummer: "12.8"
+        titel: "(inhoud inrichtingsbesluit)"
+        bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid1"
+            structuur:
+              aanhef: "Een inrichtingsbesluit voorziet, voor zover van toepassing, in:"
+              onderdelen:
+                a:
+                  tekst: "de toedeling van eigendom van wegen of waterstaatswerken,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid1/Onderdeela"
+                b:
+                  tekst: "de toedeling van het beheer en het onderhoud van openbare wegen,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid1/Onderdeelb"
+                c:
+                  tekst: "de toedeling van eigendom, het beheer en het onderhoud van gebieden van belang uit een oogpunt van natuurbescherming of landschapsbehoud of van elementen van landschappelijke, recreatieve, aardkundige of natuurwetenschappelijke waarde, of cultureel erfgoed, en"
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid1/Onderdeelc"
+                d:
+                  tekst: "de toedeling van eigendom, het beheer en het onderhoud van andere voorzieningen van openbaar nut."
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid1/Onderdeeld"
+
+            logica:
+              type: "bepaling"
+              norm: "Inhoud inrichtingsbesluit"
+              facultatief: "voor zover van toepassing"
+              toedeling_categorieën:
+                - "eigendom wegen/waterstaatswerken"
+                - "beheer/onderhoud openbare wegen"
+                - "natuur/landschap/erfgoed"
+                - "andere voorzieningen openbaar nut"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid2"
+            structuur:
+              volledige_tekst: "Als herverkaveling deel uitmaakt van de landinrichting, bevat het inrichtingsbesluit een verbeelding waarop de begrenzing van het herverkavelingsblok zo nauwkeurig mogelijk is aangegeven."
+
+            logica:
+              type: "verplichting"
+              norm: "Verbeelding herverkavelingsblok verplicht bij herverkaveling"
+
+          3:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.8/Lid3"
+            structuur:
+              volledige_tekst: "Als het nodig is om de eigendom van onroerende zaken te verwerven voor de verwezenlijking van maatregelen en voorzieningen van openbaar nut, bevat het inrichtingsbesluit een aanduiding van die maatregelen en voorzieningen en bepaalt het dat daarvoor korting kan worden toegepast."
+
+            logica:
+              type: "verplichting"
+              norm: "Aanduiding korting-maatregelen in besluit"
+              conditie:
+                type: "indien"
+                tekst: "eigendomsverwerving nodig voor openbaar nut"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "inhoud inrichtingsbesluit"
+          subject: "toedeling en korting"
+
+      artikel_12.9:
+        nummer: "12.9"
+        titel: "(inhoud inrichtingsbesluit: openbaarheid van wegen)"
+        bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.9"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.9/Lid1"
+            structuur:
+              volledige_tekst: "In afwijking van de artikelen 8 en 9 van de Wegenwet kan in een inrichtingsbesluit worden bepaald dat een openbare weg aan het openbaar verkeer wordt onttrokken."
+
+            logica:
+              type: "machtiging"
+              norm: "Lex specialis voor onttrekking wegen"
+              afwijking_van: "art. 8 en 9 Wegenwet"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.9/Lid2"
+            structuur:
+              volledige_tekst: "In afwijking van de artikelen 4 en 5 van de Wegenwet kan in een inrichtingsbesluit worden bepaald dat een weg voor het openbaar verkeer wordt opengesteld."
+
+            logica:
+              type: "machtiging"
+              norm: "Lex specialis voor openstelling wegen"
+              afwijking_van: "art. 4 en 5 Wegenwet"
+
+          3:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.9/Lid3"
+            structuur:
+              volledige_tekst: "De onttrekking aan en openstelling voor het openbaar verkeer gaan in op een tijdstip dat in het inrichtingsbesluit wordt bepaald."
+
+            logica:
+              type: "bepaling"
+              norm: "Inwerkingtreding in inrichtingsbesluit"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "openbaarheid wegen"
+          subject: "lex specialis t.o.v. Wegenwet"
+
+        externe_refs:
+          - naar: "BWBR0001948"
+            wet: "Wegenwet"
+            artikel: "4, 5, 8, 9"
+            context: "afwijking"
+            type: "lex specialis"
+
+      artikel_12.10:
+        nummer: "12.10"
+        titel: "(bestaande rechten en gebruikstoestand)"
+        bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.10"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.10/Lid1"
+            structuur:
+              aanhef: "Bij landinrichting wordt geen wijziging gebracht in de rechten en de gebruikstoestand van:"
+              onderdelen:
+                a:
+                  tekst: "begraafplaatsen, crematoria en bewaarplaatsen als bedoeld in de artikelen 23, 49 en 62, eerste lid, onder c, van de Wet op de lijkbezorging,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.10/Lid1/Onderdeela"
+                b:
+                  tekst: "gesloten begraafplaatsen en graven of grafkelders als bedoeld in artikel 85 van de Wet op de lijkbezorging, binnen de termijnen, bedoeld in artikel 46, tweede en derde lid, van die wet en anders dan op de wijze, omschreven in artikel 46, derde lid, van die wet."
+                  bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.10/Lid1/Onderdeelb"
+
+            logica:
+              type: "verbod"
+              norm: "Absolute bescherming begraafplaatsen"
+              beschermde_objecten:
+                - "begraafplaatsen"
+                - "crematoria"
+                - "bewaarplaatsen"
+                - "gesloten begraafplaatsen en graven"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.2/Paragraaf12.2.1/Artikel12.10/Lid2"
+            structuur:
+              volledige_tekst: "Zonder toestemming van de eigenaar wordt geen wijziging gebracht in zijn rechten ten aanzien van gebouwen."
+
+            logica:
+              type: "verbod"
+              norm: "Gebouwen: toestemming eigenaar vereist"
+              conditie:
+                type: "tenzij"
+                tekst: "toestemming eigenaar"
+              eigenaarsbescherming: true
+
+        functie:
+          werkwoord: "beschermt"
+          object: "bijzondere objecten en gebouwen"
+          subject: "uitzonderingen op landinrichting"
+
+        externe_refs:
+          - naar: "BWBR0005009"
+            wet: "Wet op de lijkbezorging"
+            artikel: "23, 46, 49, 62, 85"
+            context: "bescherming begraafplaatsen"
+            type: "verwijzing"
+
+  # =============================================================================
+  # AFDELING 12.4: HERVERKAVELING (Key section)
+  # =============================================================================
+  afdeling_12.4:
+    nummer: "12.4"
+    titel: "Herverkaveling"
+    bron_path: "/Hoofdstuk12/Afdeling12.4"
+
+    paragraaf_12.4.1:
+      nummer: "12.4.1"
+      titel: "Algemene bepalingen"
+      bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.1"
+
+      artikel_12.20:
+        nummer: "12.20"
+        titel: "(bevoegd gezag)"
+        bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.1/Artikel12.20"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.1/Artikel12.20"
+            structuur:
+              volledige_tekst: "Voor de toepassing van deze afdeling zijn gedeputeerde staten van de provincie waarin het herverkavelingsblok geheel of grotendeels ligt het bevoegd gezag."
+
+            logica:
+              type: "bepaling"
+              norm: "GS is bevoegd gezag voor herverkaveling"
+              bevoegd_gezag: "gedeputeerde staten"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "bevoegd gezag herverkaveling"
+          bevoegd_gezag: "provincie"
+
+    paragraaf_12.4.2:
+      nummer: "12.4.2"
+      titel: "Het ruilbesluit"
+      bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2"
+
+      artikel_12.22:
+        nummer: "12.22"
+        titel: "(vaststellen ruilbesluit)"
+        bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.22"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.22/Lid1"
+            structuur:
+              volledige_tekst: "Voor elk herverkavelingsblok wordt een ruilbesluit vastgesteld."
+
+            logica:
+              type: "verplichting"
+              norm: "Ruilbesluit verplicht per herverkavelingsblok"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.22/Lid2"
+            structuur:
+              aanhef: "Het ruilbesluit bevat:"
+              onderdelen:
+                a:
+                  tekst: "een lijst van rechthebbenden, en"
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.22/Lid2/Onderdeela"
+                b:
+                  tekst: "bepalingen over kavels en rechten."
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.22/Lid2/Onderdeelb"
+
+            logica:
+              type: "verplichting"
+              norm: "Verplichte inhoud ruilbesluit"
+              inhoud:
+                - "lijst van rechthebbenden"
+                - "bepalingen kavels en rechten"
+
+        functie:
+          werkwoord: "verplicht"
+          object: "ruilbesluit"
+          subject: "herverkaveling"
+
+      artikel_12.26:
+        nummer: "12.26"
+        titel: "(aanspraak eigenaar: aard, hoedanigheid en gebruiksmogelijkheden)"
+        bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.26"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.26/Lid1"
+            structuur:
+              volledige_tekst: "Bij de toewijzing van rechten op kavels heeft elke eigenaar aanspraak op verkrijging van een recht van dezelfde aard als hij had op de in een herverkavelingsblok liggende onroerende zaken."
+
+            logica:
+              type: "recht"
+              norm: "Eigenaar behoudt recht van dezelfde aard"
+              eigenaarsbescherming: true
+              aard_behoud: true
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.26/Lid2"
+            structuur:
+              volledige_tekst: "Voor zover het belang van de landinrichting zich hiertegen niet verzet, wordt aan elke eigenaar een recht toegewezen voor onroerende zaken van gelijke hoedanigheid en met gelijkwaardige gebruiksmogelijkheden als de onroerende zaken die door hem zijn ingebracht."
+
+            logica:
+              type: "recht"
+              norm: "Eigenaar krijgt gelijkwaardige kavels"
+              conditie:
+                type: "voor_zover"
+                tekst: "belang van landinrichting zich niet verzet"
+              hoedanigheid_behoud: true
+              gebruiksmogelijkheden_behoud: true
+
+          3:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.26/Lid3"
+            structuur:
+              volledige_tekst: "Bij regeling van Onze Minister voor Natuur en Stikstof worden nadere regels gesteld over de in het tweede lid bedoelde gelijke hoedanigheid en gelijkwaardige gebruiksmogelijkheden."
+
+            logica:
+              type: "delegatie"
+              norm: "Nadere regels bij ministeriële regeling"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "aanspraak eigenaar bij herverkaveling"
+          subject: "eigenaarsbescherming"
+
+        delegeert:
+          - type: "bij ministeriële regeling"
+            naar: "Minister voor Natuur en Stikstof"
+            voor: "nadere regels gelijke hoedanigheid"
+
+      artikel_12.29:
+        nummer: "12.29"
+        titel: "(korting)"
+        bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29"
+            structuur:
+              aanhef: "Als herverkaveling deel uitmaakt van de landinrichting, wordt bij elk herverkavelingsblok de totale oppervlakte van alle bij de herverkaveling betrokken percelen tot een maximum van vijf procent verminderd met de oppervlakte van alle in het herverkavelingsblok opgenomen percelen:"
+              onderdelen:
+                a:
+                  tekst: "die in het belang van de herverkaveling nodig is voor het tot stand brengen of verbeteren van openbare wegen en waterstaatswerken,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29/Onderdeela"
+                b:
+                  tekst: "die nodig is voor de aanleg van voorzieningen die met de openbare wegen en waterstaatswerken, bedoeld onder a, samenhangen,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29/Onderdeelb"
+                c:
+                  tekst: "die nodig is voor de verwezenlijking van maatregelen en voorzieningen voor gebieden die van belang zijn uit een oogpunt van natuurbescherming of landschapsbehoud, en voor elementen van landschappelijke, recreatieve, aardkundige of natuurwetenschappelijke waarde, of cultureel erfgoed,"
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29/Onderdeelc"
+                d:
+                  tekst: "die bestemd is voor andere maatregelen en voorzieningen van openbaar nut."
+                  bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29/Onderdeeld"
+
+            logica:
+              type: "machtiging"
+              norm: "Korting tot max 5% voor openbaar nut"
+              maximum: "5%"
+              doelen:
+                - "wegen en waterstaatswerken"
+                - "samenhangende voorzieningen"
+                - "natuur/landschap/erfgoed"
+                - "andere openbaar nut"
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "korting"
+          subject: "eigendomsverwerving voor openbaar nut"
+
+        logica_samenvatting:
+          narrative: |
+            Art. 12.29 is de KERN van de kortingsregeling:
+            - Max 5% van totale oppervlakte kan "afgekort" worden
+            - Gaat naar openbaar nut (wegen, natuur, etc.)
+            - Eigenaren leveren proportioneel in
+            - Vervangt dure onteigening door collectieve bijdrage
+
+      artikel_12.30:
+        nummer: "12.30"
+        titel: "(aanspraak eigenaar: oppervlakte)"
+        bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.30"
+        inwerking: "2024-01-01"
+
+        leden:
+          1:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.30/Lid1"
+            structuur:
+              volledige_tekst: "Bij de toewijzing van rechten op kavels heeft elke eigenaar aanspraak op een oppervlakte in kavels die gelijk is aan de oppervlakte van de door hem ingebrachte percelen. Deze oppervlakte wordt verminderd met het percentage waarmee de totale oppervlakte van alle in het herverkavelingsblok opgenomen percelen op grond van artikel 12.29 is verminderd."
+
+            logica:
+              type: "recht"
+              norm: "Eigenaar krijgt gelijke oppervlakte minus korting"
+              proportionaliteit: true
+              korting_verdeling: "procentueel gelijk"
+
+          2:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.30/Lid2"
+            structuur:
+              volledige_tekst: "De totale oppervlakte, bedoeld in het eerste lid, tweede zin, is de oppervlakte van alle in het herverkavelingsblok opgenomen percelen, verminderd met de oppervlakte van de onroerende zaken die in een onteigeningsbeschikking voor onteigening zijn aangewezen."
+
+            logica:
+              type: "bepaling"
+              norm: "Onteigende percelen tellen niet mee voor korting"
+              geen_dubbele_last: true
+
+          3:
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.30/Lid3"
+            structuur:
+              volledige_tekst: "Het bevoegd gezag kan van het eerste lid afwijken als toepassing van dat lid in de weg zou staan aan de totstandkoming van een behoorlijke herverkaveling. Als geen overeenstemming is bereikt met de eigenaar en degene die op de onroerende zaak een recht van hypotheek of grondrente heeft, kan deze afwijking ten hoogste vijf procent bedragen van de oppervlakte waarop de eigenaar op grond van het eerste lid aanspraak heeft. De toepassing van deze afwijking in samenhang met de toepassing van artikel 12.29 leidt niet tot een toewijzing van een oppervlakte die meer dan vijf procent kleiner is dan de oppervlakte van de door de eigenaar ingebrachte kavels."
+
+            logica:
+              type: "machtiging"
+              norm: "Afwijking tot max 5% bij behoorlijke herverkaveling"
+              conditie:
+                type: "indien"
+                tekst: "behoorlijke herverkaveling anders niet mogelijk"
+              maximum_afwijking: "5%"
+              cumulatief_maximum: "totaal max 5% kleiner dan inbreng"
+              eigenaarsbescherming: true
+
+        functie:
+          werkwoord: "bepaalt"
+          object: "oppervlakte-aanspraak"
+          subject: "eigenaar bij herverkaveling"
+
+        interne_refs:
+          - naar: "artikel 12.29"
+            type: "verwijzing"
+            context: "korting"
+            bron_path: "/Hoofdstuk12/Afdeling12.4/Paragraaf12.4.2/Artikel12.29"
+
+  # =============================================================================
+  # AFDELING 12.6: KAVELRUIL
+  # =============================================================================
+  afdeling_12.6:
+    nummer: "12.6"
+    titel: "Kavelruil"
+    bron_path: "/Hoofdstuk12/Afdeling12.6"
+
+    artikel_12.44:
+      nummer: "12.44"
+      titel: "(kavelruilovereenkomst)"
+      bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.44"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.44/Lid1"
+          structuur:
+            volledige_tekst: "Een kavelruilovereenkomst is een overeenkomst waarbij drie of meer eigenaren zich verbinden bepaalde, hun toebehorende onroerende zaken samen te voegen, de aldus gegeven massa op een bepaalde wijze te verkavelen en onder elkaar bij notariële kavelruilakte te verdelen, die schriftelijk wordt aangegaan en in de openbare registers wordt ingeschreven. Titel 7 van Boek 3 van het Burgerlijk Wetboek is niet van toepassing op de bedoelde massa."
+
+          logica:
+            type: "definitie"
+            norm: "Definitie kavelruilovereenkomst"
+            kenmerken:
+              - "drie of meer eigenaren"
+              - "samenvoegen onroerende zaken"
+              - "verkavelen en verdelen"
+              - "notariële akte"
+              - "inschrijving openbare registers"
+            uitsluiting: "Titel 7 Boek 3 BW niet van toepassing"
+            vrijwillig: true
+
+        2:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.44/Lid2"
+          structuur:
+            volledige_tekst: "Aan een kavelruilovereenkomst kunnen ook partijen deelnemen die tegen inbreng van een geldsom onroerende zaken bedingen of tegen inbreng van onroerende zaken een geldsom bedingen. Overeenkomsten waaraan drie partijen deelnemen, worden alleen als kavelruil aangemerkt als alle partijen onroerende zaken inbrengen en ten hoogste een van hen daartegen alleen een geldsom bedingt."
+
+          logica:
+            type: "bepaling"
+            norm: "Geldsom-partijen toegestaan onder voorwaarden"
+            minimum_eigenaren_met_grond: "bij drie partijen: allen inbreng, max 1 alleen geld"
+
+        3:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.44/Lid3"
+          structuur:
+            volledige_tekst: "Als een kavelruilovereenkomst onroerende zaken omvat waarop hypotheken, conservatoire beslagen of executoriale beslagen rusten, is de overeenkomst alleen rechtsgeldig als zij ook door de hypotheekhouders of beslagleggers is medeondertekend."
+
+          logica:
+            type: "verplichting"
+            norm: "Medeondertekening beperkt gerechtigden vereist"
+            medeondertekening_vereist:
+              - "hypotheekhouders"
+              - "beslagleggers"
+
+        4:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.44/Lid4"
+          structuur:
+            volledige_tekst: "Een kavelruilakte wordt ondertekend door hen die daarvoor bij de kavelruilovereenkomst bevoegd worden verklaard en wordt ingeschreven in de openbare registers."
+
+          logica:
+            type: "bepaling"
+            norm: "Ondertekening en inschrijving kavelruilakte"
+            publiciteit: "openbare registers"
+
+      functie:
+        werkwoord: "definieert"
+        object: "kavelruil"
+        subject: "vrijwillige herverkaveling"
+
+      externe_refs:
+        - naar: "BWBR0005291"
+          wet: "Burgerlijk Wetboek Boek 3"
+          artikel: "Titel 7"
+          context: "niet van toepassing"
+          type: "uitsluiting"
+
+    artikel_12.47:
+      nummer: "12.47"
+      titel: "(kavelruil landelijk gebied)"
+      bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid1"
+          structuur:
+            volledige_tekst: "Een kavelruil landelijk gebied is een kavelruilovereenkomst die strekt tot verbetering van een gebied in overeenstemming met de functies die aan de betrokken locaties zijn toegedeeld."
+
+          logica:
+            type: "definitie"
+            norm: "Kavelruil landelijk gebied: functiegericht"
+            doel: "verbetering gebied conform functies"
+
+        2:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2"
+          structuur:
+            aanhef: "De kavelruilovereenkomst voor kavelruil landelijk gebied heeft geen betrekking op:"
+            onderdelen:
+              a:
+                tekst: "kavels die deel uitmaken van een ruimtelijk aaneengesloten of functioneel verbonden samenstel van kavels:"
+                bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeela"
+                sub_onderdelen:
+                  1:
+                    tekst: "dat in gebruik is voor wonen, met inbegrip van verblijfsrecreatie, niet-agrarische bedrijvigheid en sociaal-culturele voorzieningen, stedelijk groen en infrastructuur,"
+                    bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeela/Onderdeel1"
+                  2:
+                    tekst: "waar op grond van de functies die aan de betrokken locaties zijn toegedeeld een gebruik als bedoeld onder 1° mogelijk is,"
+                    bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeela/Onderdeel2"
+                  3:
+                    tekst: "waarvoor volgens een ontwerpbesluit tot vaststelling van een omgevingsplan of een projectbesluit een gebruik als bedoeld onder 1° mogelijk zal worden gemaakt,"
+                    bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeela/Onderdeel3"
+              b:
+                tekst: "kavels waar ontgronding plaatsvindt, tenzij die volgens de voorschriften die zijn verbonden aan de omgevingsvergunning voor de ontgrondingsactiviteit na de ontgronding geschikt worden gemaakt voor landbouwdoeleinden, kleinschalige recreatie of de ontwikkeling van natuur, of"
+                bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeelb"
+              c:
+                tekst: "de beperkte rechten met betrekking tot de kavels, bedoeld onder a en b."
+                bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid2/Onderdeelc"
+
+          logica:
+            type: "begrenzing"
+            norm: "Uitsluiting stedelijke kavels en ontgrondingslocaties"
+            uitgesloten:
+              - "stedelijke kavels (wonen, bedrijven, etc.)"
+              - "toekomstige stedelijke kavels"
+              - "ontgrondingslocaties (tenzij terugkeer landelijk)"
+
+        3:
+          bron_path: "/Hoofdstuk12/Afdeling12.6/Artikel12.47/Lid3"
+          structuur:
+            volledige_tekst: "Een bedrijfsverplaatsing, waarbij de gronden van het achtergelaten bedrijf worden gebruikt om onroerende zaken samen te voegen en de gegeven massa op een bepaalde wijze te verkavelen, kan worden opgenomen in een kavelruilovereenkomst voor kavelruil landelijk gebied."
+
+          logica:
+            type: "machtiging"
+            norm: "Bedrijfsverplaatsing mogelijk binnen kavelruil"
+            flexibiliteit: true
+
+      functie:
+        werkwoord: "definieert"
+        object: "kavelruil landelijk gebied"
+        subject: "afbakening stedelijk/landelijk"
+
+# =============================================================================
+# HOOFDSTUK ANALYSE
+# =============================================================================
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 6
+    paragrafen_count: 10
+    artikelen_count: 47
+    totaal_leden: 80+
+
+  kern_instrumenten:
+    landinrichting:
+      beschrijving: "Verbetering inrichting landelijk gebied"
+      bevoegd_gezag: "gedeputeerde staten"
+      instrumenten:
+        - "inrichtingsprogramma"
+        - "inrichtingsbesluit"
+      kan_bevatten: "herverkaveling"
+
+    herverkaveling:
+      beschrijving: "Eigendomsherordening binnen blok"
+      kern_besluiten:
+        - "ruilbesluit (12.22)"
+        - "besluit geldelijke regelingen (12.36)"
+      korting_max: "5%"
+      eigenaarsbescherming:
+        - "recht zelfde aard (12.26 lid 1)"
+        - "gelijke hoedanigheid (12.26 lid 2)"
+        - "proportionele korting (12.30)"
+
+    kavelruil:
+      beschrijving: "Vrijwillige verkaveling"
+      karakter: "privaatrechtelijk"
+      vereisten:
+        - "drie of meer eigenaren"
+        - "notariële akte"
+        - "inschrijving openbare registers"
+      variant:
+        kavelruil_landelijk_gebied:
+          uitsluiting: "stedelijke kavels"
+
+  patronen:
+    vrijwillig_vs_gedwongen:
+      beschrijving: "Kavelruil (vrijwillig) vs Herverkaveling (van bovenaf)"
+      evidence: ["afd. 12.4", "afd. 12.6"]
+
+    eigenaarsbescherming_triade:
+      beschrijving: "Drie-voudige bescherming eigenaren"
+      elementen:
+        - "recht zelfde aard"
+        - "gelijke hoedanigheid"
+        - "max 5% korting"
+
+    provincie_centraal:
+      beschrijving: "GS is bevoegd gezag voor landinrichting"
+      evidence: ["art. 12.4", "art. 12.20"]
+
+    absolute_uitzonderingen:
+      beschrijving: "Sommige objecten zijn uitgesloten"
+      objecten:
+        - "begraafplaatsen"
+        - "militaire locaties"
+        - "gebouwen zonder toestemming"
+
+  relaties:
+    intern:
+      - van: "art. 12.29 (korting)"
+        naar: "art. 12.30 (oppervlakte-aanspraak)"
+        type: "uitwerking"
+      - van: "art. 12.22 (ruilbesluit)"
+        naar: "art. 12.36 (besluit geldelijke regelingen)"
+        type: "volgorde"
+    extern:
+      - naar: "Wegenwet"
+        context: "lex specialis voor wegenonttrekking/openstelling"
+      - naar: "Wet op de lijkbezorging"
+        context: "bescherming begraafplaatsen"
+      - naar: "Kadasterwet"
+        context: "registratie"
+      - naar: "BW Boek 3 Titel 7"
+        context: "uitsluiting bij kavelruil"
+
+  routes:
+    entry_points:
+      - artikel: "12.3"
+        vraag: "Wat is landinrichting?"
+      - artikel: "12.4"
+        vraag: "Wie is bevoegd voor landinrichting?"
+      - artikel: "12.29"
+        vraag: "Wat is korting en hoeveel mag het zijn?"
+      - artikel: "12.44"
+        vraag: "Hoe werkt kavelruil?"
+    exit_points:
+      - naar: "Ch. 10 (gedoogplichten)"
+        context: "art. 10.10c-10.10g gedoogplichten landinrichting"
+      - naar: "Ch. 13 (financiën)"
+        context: "kostenverdeling"
+      - naar: "Ch. 16 (procedures)"
+        context: "procedures landinrichting"
+
+  verhouding_grondbeleid:
+    positie: "Lichter dan onteigening, zwaarder dan gedoogplicht"
+    karakter: "Collectieve herordening eigendom"
+    geen_eigendomsontneming: "Ruil, niet afname"
+    kostendeling: "Korting als alternatief voor onteigening"
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    korting_5_procent_regel:
+      observatie: "Art. 12.29: max 5% korting voor openbaar nut"
+      implicatie: "Alternatief voor dure onteigening"
+
+    vrijwillig_vs_van_bovenaf:
+      observatie: "Kavelruil (vrijwillig) vs herverkaveling (van bovenaf)"
+      implicatie: "Verschillende instrumenten voor verschillende situaties"
+
+    provincie_als_regisseur:
+      observatie: "GS is consistent bevoegd gezag voor landinrichting"
+      implicatie: "Provinciaal instrument"
+
+    absolute_grenzen:
+      observatie: "Begraafplaatsen en militaire locaties absoluut beschermd"
+      implicatie: "Geen flexibiliteit voor deze objecten"
+
+  schema_verbeteringen:
+    - "Toevoegen: korting_max als numerieke waarde"
+    - "Toevoegen: vrijwillig/gedwongen als karakter"
+    - "Toevoegen: absolute_uitsluiting als logica-type"

@@ -1,0 +1,1537 @@
+# Afdeling 2.5 - Doorwerking van beleid
+# V2 Atomic Extraction
+# Artikelen 2.22-2.37
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 2.5
+titel: "Doorwerking van beleid"
+bron_path: "/Hoofdstuk2/Afdeling2.5"
+
+# =============================================================================
+# PARAGRAAF 2.5.1: DOORWERKING VAN BELEID DOOR INSTRUCTIEREGELS
+# =============================================================================
+
+paragraaf_2.5.1:
+  nummer: "2.5.1"
+  titel: "Doorwerking van beleid door instructieregels"
+  bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1"
+
+  artikelen:
+
+    # =========================================================================
+    # ARTIKEL 2.22 - GRONDSLAG INSTRUCTIEREGELS PROVINCIE
+    # =========================================================================
+    artikel_2.22:
+      nummer: "2.22"
+      titel: "(grondslag instructieregels provincie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.22"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.22/Lid1"
+          structuur:
+            volledige_tekst: "Provinciale staten stellen met het oog op een evenwichtige toedeling van functies aan locaties en met inachtneming van de grenzen van artikel 2.3, tweede lid, regels over de uitoefening van taken of bevoegdheden door bestuursorganen van een gemeente of een waterschap waarvan het beheergebied geheel of grotendeels in de betrokken provincie is gelegen."
+          logica:
+            type: verplichting
+            norm: "Provinciale staten MOETEN instructieregels stellen"
+            subject: "provinciale staten"
+            object: "regels over uitoefening taken/bevoegdheden"
+            adressaat: "bestuursorganen gemeente/waterschap"
+            conditie:
+              type: doelgebonden
+              tekst: "met het oog op een evenwichtige toedeling van functies aan locaties"
+            begrenzing: "met inachtneming van artikel 2.3, tweede lid"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.22/Lid2"
+          structuur:
+            volledige_tekst: "Regels als bedoeld in het eerste lid kunnen alleen worden gesteld over het omgevingsplan, bedoeld in artikel 4.2, eerste lid, een projectbesluit of de waterschapsverordening, bedoeld in artikel 2.5."
+          logica:
+            type: begrenzing
+            norm: "Instructieregels kunnen ALLEEN gaan over specifieke instrumenten"
+            conditie:
+              type: beperking
+              tekst: "alleen over"
+            instrumenten:
+              - omgevingsplan (art. 4.2 lid 1)
+              - projectbesluit
+              - waterschapsverordening (art. 2.5)
+
+      functie:
+        werkwoord: verplicht
+        subject: "provinciale staten"
+        object: "instructieregels voor gemeenten/waterschappen"
+
+      interne_refs:
+        - naar: "artikel 2.3"
+          type: begrenzing
+          context: "met inachtneming van de grenzen van artikel 2.3, tweede lid"
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+        - naar: "artikel 4.2"
+          type: verwijzing
+          context: "het omgevingsplan, bedoeld in artikel 4.2, eerste lid"
+          bron_path: "/Hoofdstuk4/Afdeling4.1/Paragraaf4.1.1/Artikel4.2"
+        - naar: "artikel 2.5"
+          type: verwijzing
+          context: "de waterschapsverordening, bedoeld in artikel 2.5"
+          bron_path: "/Hoofdstuk2/Afdeling2.2/Artikel2.5"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.22 is de GRONDSLAG voor provinciale instructieregels.
+          Lid 1: VERPLICHTING voor PS om instructieregels te stellen (doelgebonden)
+          Lid 2: BEGRENZING - alleen over omgevingsplan, projectbesluit, waterschapsverordening
+
+          Let op: dit is een MUST (stellen) niet een MAY - provincie is verplicht
+          om beleid door te laten werken naar gemeente/waterschap.
+
+    # =========================================================================
+    # ARTIKEL 2.23 - INHOUD INSTRUCTIEREGELS PROVINCIE
+    # =========================================================================
+    artikel_2.23:
+      nummer: "2.23"
+      titel: "(inhoud instructieregels provincie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid1"
+          structuur:
+            aanhef: "Op grond van artikel 2.22, eerste lid, worden regels gesteld over het stellen van regels in:"
+            onderdelen:
+              a:
+                tekst: "het omgevingsplan ter uitvoering van een programma als bedoeld in artikel 3.4, 3.5, 3.6, 3.7, 3.8, 3.9 of 3.10,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid1/Onderdeela"
+              b:
+                tekst: "de waterschapsverordening over het beheer van watersystemen, voor zover dit niet doelmatig is op het niveau van de omgevingsverordening."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN worden gesteld over deze onderwerpen"
+            onderwerpen:
+              - omgevingsplan ter uitvoering programma's (art. 3.4-3.10)
+              - waterschapsverordening over watersysteembeheer
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid2"
+          structuur:
+            volledige_tekst: "De regels zijn alleen gericht tot het daarbij aangegeven bestuursorgaan. De regels worden uitsluitend gesteld ter verwezenlijking of bescherming van een provinciaal belang."
+          logica:
+            type: begrenzing
+            norm: "Regels alleen gericht tot specifiek bestuursorgaan EN alleen voor provinciaal belang"
+            begrenzingen:
+              - "alleen gericht tot daarbij aangegeven bestuursorgaan"
+              - "uitsluitend ter verwezenlijking/bescherming provinciaal belang"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid3"
+          structuur:
+            aanhef: "De regels kunnen inhouden:"
+            onderdelen:
+              a:
+                tekst: "een opdracht tot het vaststellen van een besluit met een bepaalde strekking of bepaalde inhoud,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid3/Onderdeela"
+              b:
+                tekst: "een inhoudelijke norm waaraan een besluit moet voldoen,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid3/Onderdeelb"
+              c:
+                tekst: "een termijn waarbinnen gevolg moet worden gegeven aan de regel."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid3/Onderdeelc"
+          logica:
+            type: machtiging
+            norm: "Instructieregels KUNNEN deze vormen aannemen"
+            vormen:
+              - opdracht tot vaststellen besluit
+              - inhoudelijke norm
+              - termijn
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid4"
+          structuur:
+            aanhef: "De regels kunnen niet inhouden:"
+            onderdelen:
+              a:
+                tekst: "een verplichting tot het vaststellen, wijzigen of intrekken van een besluit over een individuele activiteit of over activiteiten op een bepaalde locatie, of"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid4/Onderdeela"
+              b:
+                tekst: "een verbod tot het vaststellen, wijzigen of intrekken van een besluit."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.23/Lid4/Onderdeelb"
+          logica:
+            type: verbod
+            norm: "Instructieregels MOGEN NIET individueel of verbiedend zijn"
+            verboden:
+              - verplichting over individuele activiteit/locatie
+              - verbod tot vaststellen/wijzigen/intrekken besluit
+
+      functie:
+        werkwoord: bepaalt
+        subject: "provinciale staten"
+        object: "inhoud van instructieregels"
+
+      interne_refs:
+        - naar: "artikel 2.22"
+          type: grondslag
+          context: "Op grond van artikel 2.22, eerste lid"
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.22"
+        - naar: "artikel 3.4-3.10"
+          type: verwijzing
+          context: "ter uitvoering van een programma als bedoeld in artikel 3.4, 3.5, 3.6, 3.7, 3.8, 3.9 of 3.10"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.23 bepaalt de INHOUD van provinciale instructieregels.
+          Lid 1: Verplichte onderwerpen (omgevingsplan, waterschapsverordening)
+          Lid 2: BEGRENZING (specifiek bestuursorgaan, provinciaal belang)
+          Lid 3: VORMEN die instructieregels kunnen aannemen
+          Lid 4: VERBODEN inhoud (geen individuele opdrachten, geen verboden)
+
+          KRITIEK PATROON: instructieregels zijn ALGEMEEN niet INDIVIDUEEL.
+          Voor individuele sturing: gebruik INSTRUCTIE (art. 2.33).
+
+    # =========================================================================
+    # ARTIKEL 2.24 - GRONDSLAG INSTRUCTIEREGELS RIJK
+    # =========================================================================
+    artikel_2.24:
+      nummer: "2.24"
+      titel: "(grondslag instructieregels Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid1"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur worden met het oog op een evenwichtige toedeling van functies aan locaties en met inachtneming van de grenzen van artikel 2.3, derde lid, regels gesteld over de uitoefening van taken of bevoegdheden door bestuursorganen van een provincie, een gemeente of een waterschap."
+          logica:
+            type: verplichting
+            norm: "Bij AMvB MOETEN instructieregels worden gesteld"
+            subject: "Rijk (bij AMvB)"
+            object: "regels over uitoefening taken/bevoegdheden"
+            adressaat: "bestuursorganen provincie/gemeente/waterschap"
+            conditie:
+              type: doelgebonden
+              tekst: "met het oog op een evenwichtige toedeling van functies aan locaties"
+            begrenzing: "met inachtneming van artikel 2.3, derde lid"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2"
+          structuur:
+            aanhef: "Regels als bedoeld in het eerste lid kunnen alleen worden gesteld over:"
+            onderdelen:
+              a:
+                tekst: "de omgevingsverordening, bedoeld in artikel 2.6, eerste lid,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeela"
+              b:
+                tekst: "het omgevingsplan, bedoeld in artikel 4.2, eerste lid,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeelb"
+              c:
+                tekst: "de waterschapsverordening, bedoeld in artikel 2.5,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeelc"
+              d:
+                tekst: "een projectbesluit,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeeld"
+              e:
+                tekst: "een legger, een peilbesluit of een andere beslissing, voor zover de regels over die beslissing bij of krachtens deze wet of de Waterschapswet worden gesteld,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeele"
+              f:
+                tekst: "een besluit tot vaststelling van omgevingswaarden als bedoeld in artikel 2.10, eerste lid, onder a, artikel 2.12, eerste en tweede lid, artikel 2.12a, artikel 2.13, tweede lid, of artikel 2.15, eerste lid, onder a."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.24/Lid2/Onderdeelf"
+          logica:
+            type: begrenzing
+            norm: "Rijksinstructieregels kunnen ALLEEN gaan over specifieke instrumenten"
+            instrumenten:
+              - omgevingsverordening (art. 2.6 lid 1)
+              - omgevingsplan (art. 4.2 lid 1)
+              - waterschapsverordening (art. 2.5)
+              - projectbesluit
+              - legger, peilbesluit, andere beslissingen
+              - besluit vaststelling omgevingswaarden
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk (bij AMvB)"
+        object: "instructieregels voor provincie/gemeente/waterschap"
+        delegatie: "bij algemene maatregel van bestuur"
+
+      interne_refs:
+        - naar: "artikel 2.3"
+          type: begrenzing
+          context: "met inachtneming van de grenzen van artikel 2.3, derde lid"
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+        - naar: "artikel 2.6"
+          type: verwijzing
+          context: "de omgevingsverordening, bedoeld in artikel 2.6, eerste lid"
+        - naar: "artikel 4.2"
+          type: verwijzing
+          context: "het omgevingsplan, bedoeld in artikel 4.2, eerste lid"
+        - naar: "artikel 2.5"
+          type: verwijzing
+          context: "de waterschapsverordening, bedoeld in artikel 2.5"
+
+      delegeert:
+        - type: "bij AMvB"
+          naar: "Besluit kwaliteit leefomgeving (Bkl)"
+          voor: "rijksinstructieregels"
+          actor: "Rijk"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.24 is de GRONDSLAG voor rijksinstructieregels.
+          Parallel aan art. 2.22 (provincie) maar dan voor Rijk niveau.
+          Lid 1: VERPLICHTING (bij AMvB)
+          Lid 2: BEGRENZING - bredere scope dan provincie (ook omgevingsverordening)
+
+          HIËRARCHIE: Rijk → provincie → gemeente/waterschap
+          Via AMvB (Bkl) stelt Rijk regels die doorwerken naar alle niveaus.
+
+    # =========================================================================
+    # ARTIKEL 2.25 - INHOUD INSTRUCTIEREGELS RIJK
+    # =========================================================================
+    artikel_2.25:
+      nummer: "2.25"
+      titel: "(inhoud instructieregels Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid1"
+          structuur:
+            aanhef: "Op grond van artikel 2.24, eerste lid, worden in ieder geval regels gesteld over het stellen van regels in:"
+            onderdelen:
+              a:
+                tekst: "de omgevingsverordening, het omgevingsplan of het projectbesluit over de volgende onderwerpen:"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid1/Onderdeela"
+                sub_onderdelen:
+                  1:
+                    tekst: "de kwaliteit van de buitenlucht,"
+                  2:
+                    tekst: "het beschermen van de bodem,"
+                  3:
+                    tekst: "het beheer van watersystemen,"
+                  4:
+                    tekst: "het waarborgen van de veiligheid,"
+                  5:
+                    tekst: "het beschermen tegen geluid afkomstig van wegen en spoorwegen,"
+                  6:
+                    tekst: "het beschermen tegen geluid afkomstig van industrieterreinen,"
+                  7:
+                    tekst: "de bescherming van erfgoed,"
+                  8:
+                    tekst: "het beschermen van de gezondheid,"
+                  9:
+                    tekst: "de bescherming van werelderfgoed,"
+                  10:
+                    tekst: "de uitoefening van activiteiten met betrekking tot het winnen van delfstoffen,"
+                  11:
+                    tekst: "energievoorziening,"
+                  12:
+                    tekst: "telecommunicatie,"
+                  13:
+                    tekst: "natuur."
+              b:
+                tekst: "de waterschapsverordening over het beheer van watersystemen."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Regels MOETEN in ieder geval worden gesteld over deze onderwerpen"
+            onderwerpen_lijst:
+              - kwaliteit buitenlucht
+              - beschermen bodem
+              - beheer watersystemen
+              - waarborgen veiligheid
+              - beschermen tegen geluid (wegen/spoorwegen)
+              - beschermen tegen geluid (industrieterreinen)
+              - bescherming erfgoed
+              - beschermen gezondheid
+              - bescherming werelderfgoed
+              - winnen delfstoffen
+              - energievoorziening
+              - telecommunicatie
+              - natuur
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid2"
+          structuur:
+            volledige_tekst: "De regels zijn alleen gericht tot het daarbij aangegeven bestuursorgaan. De regels worden uitsluitend gesteld ter verwezenlijking of bescherming van een nationaal belang."
+          logica:
+            type: begrenzing
+            norm: "Regels alleen voor specifiek bestuursorgaan EN alleen nationaal belang"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid3"
+          structuur:
+            volledige_tekst: "De regels kunnen de inhoud bevatten, bedoeld in artikel 2.23, derde lid."
+          logica:
+            type: verwijzing
+            norm: "Dezelfde vormen als provinciale instructieregels"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid4"
+          structuur:
+            volledige_tekst: "De regels kunnen niet de inhoud bevatten, bedoeld in artikel 2.23, vierde lid."
+          logica:
+            type: verbod
+            norm: "Dezelfde verboden als provinciale instructieregels"
+
+        5:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid5"
+          structuur:
+            volledige_tekst: "Onder een regel over het stellen van regels wordt mede verstaan een regel over het opnemen of niet opnemen van regels of een functie-aanduiding voor een locatie."
+          logica:
+            type: definitie
+            norm: "Uitbreiding begrip 'regel over stellen regels'"
+
+        6:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.25/Lid6"
+          structuur:
+            volledige_tekst: "Bij een regel kan worden bepaald dat bij omgevingsverordening van de regel kan worden afgeweken of dat bij omgevingsverordening nadere regels worden of kunnen worden gesteld."
+          logica:
+            type: machtiging
+            norm: "Rijk KAN afwijkingsmogelijkheid via omgevingsverordening toestaan"
+            delegatie_richting: "Rijk → provincie (afwijking)"
+
+      functie:
+        werkwoord: bepaalt
+        subject: "Rijk"
+        object: "inhoud van rijksinstructieregels"
+
+      interne_refs:
+        - naar: "artikel 2.24"
+          type: grondslag
+          context: "Op grond van artikel 2.24, eerste lid"
+        - naar: "artikel 2.23"
+          type: verwijzing
+          context: "de inhoud bevatten, bedoeld in artikel 2.23, derde lid / vierde lid"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.25 bepaalt de INHOUD van rijksinstructieregels.
+          Lid 1: VERPLICHTE onderwerpen (13 categorieën voor omgevingsverordening/plan/projectbesluit)
+          Lid 2: BEGRENZING (specifiek bestuursorgaan, nationaal belang)
+          Lid 3-4: VERWIJZING naar vormen/verboden art. 2.23
+          Lid 5: DEFINITIE-uitbreiding
+          Lid 6: AFWIJKINGSMOGELIJKHEID via omgevingsverordening
+
+          KRITIEK: lid 6 creëert TENZIJ-patroon:
+          Rijksregel geldt TENZIJ bij omgevingsverordening afwijking is toegestaan.
+
+    # =========================================================================
+    # ARTIKEL 2.26 - VERPLICHTE INSTRUCTIEREGELS RIJK CULTUREEL ERFGOED
+    # =========================================================================
+    artikel_2.26:
+      nummer: "2.26"
+      titel: "(verplichte instructieregels Rijk bescherming cultureel erfgoed)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.26"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.26/Lid1"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het behoud van cultureel erfgoed in ieder geval gesteld over de bescherming van rijksmonumenten."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN in ieder geval gaan over bescherming rijksmonumenten"
+            doel: "behoud van cultureel erfgoed"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.26/Lid2"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het behoud van cultureel erfgoed in ieder geval gesteld over de bescherming van rijksbeschermde stads- en dorpsgezichten."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over bescherming rijksbeschermde stads-/dorpsgezichten"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.26/Lid3"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het behoud van cultureel erfgoed in ieder geval gesteld over de bescherming van voorbeschermde rijksmonumenten en voorbeschermde stads- en dorpsgezichten, waaronder in ieder geval over het verbinden van een voorschrift aan een omgevingsvergunning ter voorkoming of beperking van schade aan een voorbeschermd rijksmonument of voorbeschermd stads- of dorpsgezicht."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over voorbeschermde monumenten/gezichten"
+            inclusief: "voorschrift omgevingsvergunning"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over cultureel erfgoed"
+        domein: "cultureel erfgoed"
+
+      interne_refs:
+        - naar: "artikel 2.24"
+          type: grondslag
+          context: "Regels op grond van artikel 2.24"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.26 specificeert VERPLICHTE instructieregels voor cultureel erfgoed:
+          - rijksmonumenten
+          - rijksbeschermde stads-/dorpsgezichten
+          - voorbeschermde monumenten/gezichten
+
+          Dit is SECTORSPECIFIEKE uitwerking van art. 2.24/2.25.
+
+    # =========================================================================
+    # ARTIKEL 2.27 - VERPLICHTE INSTRUCTIEREGELS RIJK EXTERNE VEILIGHEID
+    # =========================================================================
+    artikel_2.27:
+      nummer: "2.27"
+      titel: "(verplichte instructieregels Rijk externe veiligheid)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27/Lid1"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het waarborgen van de veiligheid in ieder geval gesteld over de aandachtsgebieden, bedoeld in de artikelen 5.12 tot en met 5.16 van het Besluit kwaliteit leefomgeving, voor zover die regels voor die aandachtsgebieden nodig zijn, voor besluiten over het toelaten of beperken van activiteiten in die gebieden."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over aandachtsgebieden externe veiligheid"
+            doel: "waarborgen van de veiligheid"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27/Lid2"
+          structuur:
+            aanhef: "De regels gaan in ieder geval over:"
+            onderdelen:
+              a:
+                tekst: "brand- en explosieaandachtsgebieden en het groepsrisico bij Brzo-inrichtingen,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27/Lid2/Onderdeela"
+              b:
+                tekst: "brandaandachtsgebieden, explosieaandachtsgebieden en gifwolkaandachtsgebieden,"
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27/Lid2/Onderdeelb"
+              c:
+                tekst: "het voorschrijven van maatregelen met het oog op de bescherming tegen de gevolgen van een zwaar ongeval met gevaarlijke stoffen."
+                bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.27/Lid2/Onderdeelc"
+          logica:
+            type: verplichting
+            norm: "Instructieregels gaan IN IEDER GEVAL over genoemde aandachtsgebieden"
+            onderwerpen:
+              - brand-/explosieaandachtsgebieden
+              - Brzo-inrichtingen groepsrisico
+              - gifwolkaandachtsgebieden
+              - maatregelen tegen zware ongevallen
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over externe veiligheid"
+        domein: "externe veiligheid"
+
+      externe_refs:
+        - naar: "BWBR0045003"
+          wet: "Besluit kwaliteit leefomgeving"
+          artikel: "5.12-5.16"
+          context: "de aandachtsgebieden, bedoeld in de artikelen 5.12 tot en met 5.16 van het Besluit kwaliteit leefomgeving"
+
+    # =========================================================================
+    # ARTIKEL 2.28 - VERPLICHTE INSTRUCTIEREGELS RIJK WERELDERFGOED
+    # =========================================================================
+    artikel_2.28:
+      nummer: "2.28"
+      titel: "(verplichte instructieregels Rijk werelderfgoed)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.28"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het behoud van cultureel erfgoed in ieder geval gesteld over de bescherming van werelderfgoed."
+
+      logica:
+        type: verplichting
+        norm: "Instructieregels MOETEN gaan over bescherming werelderfgoed"
+        doel: "behoud van cultureel erfgoed"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over werelderfgoed"
+        domein: "werelderfgoed"
+
+    # =========================================================================
+    # ARTIKEL 2.29 - VERPLICHTE INSTRUCTIEREGELS RIJK LUCHTHAVENS
+    # =========================================================================
+    artikel_2.29:
+      nummer: "2.29"
+      titel: "(verplichte instructieregels Rijk luchthavens)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29/Lid1"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden in ieder geval gesteld over omgevingsplannen en projectbesluiten met het oog op het waarborgen van de veiligheid en het beschermen van de gezondheid rond luchthavens, het behoeden van de staat en werking van luchthavens en een evenwichtige toedeling van functies aan locaties in de directe omgeving daarvan. De regels worden in ieder geval gesteld ter uitvoering van het verdrag van Chicago."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over luchthavens"
+            doelen:
+              - waarborgen veiligheid
+              - beschermen gezondheid rond luchthavens
+              - behoeden staat/werking luchthavens
+              - evenwichtige toedeling functies
+            internationaal: "ter uitvoering verdrag van Chicago"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29/Lid2"
+          structuur:
+            aanhef: "De regels gaan in ieder geval over:"
+            onderdelen:
+              a:
+                tekst: "het in het omgevingsplan of projectbesluit opnemen van het luchthavengebied behorend bij:"
+                sub_onderdelen:
+                  1:
+                    tekst: "de luchthaven Schiphol,"
+                  2:
+                    tekst: "de overige burgerluchthavens van nationale betekenis waarvoor een luchthavenbesluit geldt,"
+                  3:
+                    tekst: "de militaire luchthavens waarvoor een luchthavenbesluit geldt,"
+              b:
+                tekst: "de functie en activiteiten binnen het luchthavengebied, bedoeld onder a, voor zover die regels nodig zijn voor het gebruik van het gebied als luchthaven,"
+              c:
+                tekst: "het in het omgevingsplan of projectbesluit opnemen van het beperkingengebied behorend bij de luchthavens, bedoeld onder a, en het beperkingengebied, bedoeld in artikel 8a.54 in samenhang met artikel 8a.55 van de Wet luchtvaart, behorend bij buitenlandse luchthavens,"
+              d:
+                tekst: "de beperkingen voor de functie en activiteiten binnen het beperkingengebied, bedoeld onder c, voor zover die regels nodig zijn met het oog op de vliegveiligheid of in verband met het externe veiligheidsrisico en het geluid veroorzaakt door het luchthavenluchtverkeer."
+          logica:
+            type: verplichting
+            norm: "Regels IN IEDER GEVAL over luchthavengebied en beperkingengebied"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29/Lid3"
+          structuur:
+            volledige_tekst: "In afwijking van artikel 2.25, eerste en derde lid, kunnen de regels over burgerluchthavens van regionale betekenis waarvoor een luchthavenbesluit geldt ook een opdracht bevatten tot het in het luchthavenbesluit overnemen van die regels of het in het luchthavenbesluit stellen van nadere regels."
+          logica:
+            type: uitzondering
+            conditie:
+              type: in_afwijking_van
+              tekst: "In afwijking van artikel 2.25, eerste en derde lid"
+            norm: "Regionale burgerluchthavens: ook opdracht via luchthavenbesluit"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29/Lid4"
+          structuur:
+            volledige_tekst: "Dit artikel is tot een bij koninklijk besluit te bepalen tijdstip niet van toepassing."
+          logica:
+            type: temporele_beperking
+            norm: "Artikel NOG NIET van toepassing (wacht op KB)"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over luchthavens"
+        domein: "luchthavens"
+
+      externe_refs:
+        - naar: "BWBR0005555"
+          wet: "Wet luchtvaart"
+          artikel: "8a.54, 8a.55"
+          context: "beperkingengebied buitenlandse luchthavens"
+
+    # =========================================================================
+    # ARTIKEL 2.29a - VERPLICHTE INSTRUCTIEREGELS RIJK GELUIDPRODUCTIEPLAFONDS
+    # =========================================================================
+    artikel_2.29a:
+      nummer: "2.29a"
+      titel: "(verplichte instructieregels Rijk geluidproductieplafonds)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.29a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Regels op grond van artikel 2.24 worden in ieder geval gesteld over besluiten tot vaststelling van geluidproductieplafonds als omgevingswaarden met het oog op het beschermen van de gezondheid."
+
+      logica:
+        type: verplichting
+        norm: "Instructieregels MOETEN gaan over geluidproductieplafonds"
+        doel: "beschermen van de gezondheid"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over geluidproductieplafonds"
+        domein: "geluid"
+
+    # =========================================================================
+    # ARTIKEL 2.30 - VERPLICHTE INSTRUCTIEREGELS RIJK ZWEMLOCATIES
+    # =========================================================================
+    artikel_2.30:
+      nummer: "2.30"
+      titel: "(verplichte instructieregels Rijk zwemlocaties)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.30"
+      inwerking: "2024-01-01"
+
+      structuur:
+        aanhef: "Regels op grond van artikel 2.24 worden met het oog op het waarborgen van de veiligheid en het beschermen van de gezondheid in ieder geval gesteld over:"
+        onderdelen:
+          a:
+            tekst: "de aanwijzing van zwemlocaties ter uitvoering van de zwemwaterrichtlijn,"
+            bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.30/Onderdeela"
+          b:
+            tekst: "de uitoefening van de taken voor zwemlocaties, bedoeld in artikel 2.18, eerste lid, onder d, onder 3°, en de bevoegdheid, bedoeld in artikel 2.38,"
+            bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.30/Onderdeelb"
+          c:
+            tekst: "de vaststelling door gedeputeerde staten van het badseizoen, bedoeld in artikel 2, onder 6, van de zwemwaterrichtlijn."
+            bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.30/Onderdeelc"
+
+      logica:
+        type: verplichting
+        norm: "Instructieregels MOETEN gaan over zwemlocaties"
+        doelen:
+          - waarborgen veiligheid
+          - beschermen gezondheid
+        eu_uitvoering: "zwemwaterrichtlijn"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over zwemlocaties"
+        domein: "zwemlocaties"
+
+    # =========================================================================
+    # ARTIKEL 2.31 - VERPLICHTE INSTRUCTIEREGELS RIJK STEDELIJK AFVALWATER
+    # =========================================================================
+    artikel_2.31:
+      nummer: "2.31"
+      titel: "(verplichte instructieregels Rijk stedelijk afvalwater)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31/Lid1"
+          structuur:
+            volledige_tekst: "Regels op grond van artikel 2.24 worden met het oog op het beschermen van de gezondheid en het beheer van watersystemen in ieder geval gesteld over het ontwerp, de bouw en het onderhoud van openbare vuilwaterriolen."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over openbare vuilwaterriolen"
+            doelen:
+              - beschermen gezondheid
+              - beheer watersystemen
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31/Lid2"
+          structuur:
+            volledige_tekst: "De regels worden in ieder geval gesteld ter uitvoering van de richtlijn stedelijk afvalwater."
+          logica:
+            type: verplichting
+            norm: "Regels ter uitvoering EU-richtlijn"
+            eu_uitvoering: "richtlijn stedelijk afvalwater"
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over stedelijk afvalwater"
+        domein: "afvalwater"
+
+    # =========================================================================
+    # ARTIKEL 2.31a - VERPLICHTE INSTRUCTIEREGELS RIJK NATUUR
+    # =========================================================================
+    artikel_2.31a:
+      nummer: "2.31a"
+      titel: "(verplichte instructieregels Rijk natuurgebieden, flora en fauna)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31a/Lid1"
+          structuur:
+            aanhef: "Regels op grond van artikel 2.24 worden met het oog op de bescherming, het herstel en de ontwikkeling van natuur en landschap in ieder geval gesteld over:"
+            onderdelen:
+              a:
+                tekst: "het behoud of herstel van de staat van instandhouding van diersoorten, plantensoorten, biotopen en habitats om te voldoen aan internationaalrechtelijke verplichtingen,"
+              b:
+                tekst: "de aanwijzing, de instandhoudingsdoelstellingen en de bescherming van Natura 2000-gebieden,"
+              c:
+                tekst: "de aanwijzing, de instandhoudingsdoelstellingen en de bescherming van bijzondere nationale natuurgebieden, voor zover noodzakelijk ter uitvoering van de vogelrichtlijn en de habitatrichtlijn,"
+              d:
+                tekst: "de aanwijzing en bescherming van gebieden, behorende tot het natuurnetwerk Nederland, voor zover noodzakelijk om te voldoen aan internationaalrechtelijke verplichtingen,"
+              e:
+                tekst: "de aanwijzing van nationale parken,"
+              f:
+                tekst: "de vaststelling door bestuursorganen van plannen als bedoeld in artikel 6, derde lid, van de habitatrichtlijn."
+          logica:
+            type: verplichting
+            norm: "Instructieregels MOETEN gaan over natuur/landschap"
+            doelen:
+              - bescherming natuur/landschap
+              - herstel natuur/landschap
+              - ontwikkeling natuur/landschap
+            onderwerpen:
+              - soorten (dier/plant)
+              - Natura 2000-gebieden
+              - bijzondere nationale natuurgebieden
+              - natuurnetwerk Nederland
+              - nationale parken
+            eu_uitvoering: "vogelrichtlijn, habitatrichtlijn"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.31a/Lid2"
+          structuur:
+            aanhef: "Regels als bedoeld in artikel 2.25, eerste lid, aanhef en onder a, onder 13°, kunnen met het oog op de bescherming, het herstel en de ontwikkeling van natuur of met het oog op andere maatschappelijke behoeften worden gesteld over:"
+            onderdelen:
+              a:
+                tekst: "het registreren van stikstofdepositieruimte,"
+              b:
+                tekst: "het reserveren en toedelen van stikstofdepositieruimte voor Natura 2000-activiteiten."
+          logica:
+            type: machtiging
+            norm: "Regels KUNNEN worden gesteld over stikstofdepositie"
+            stikstof_specifiek:
+              - registreren stikstofdepositieruimte
+              - reserveren/toedelen voor N2000-activiteiten
+
+      functie:
+        werkwoord: verplicht
+        subject: "Rijk"
+        object: "instructieregels over natuur"
+        domein: "natuur en landschap"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.31a is cruciaal voor natuurbescherming.
+          Lid 1: VERPLICHTE instructieregels (Natura 2000, soorten, etc.)
+          Lid 2: MACHTIGING voor stikstofregels (politiek zeer relevant!)
+
+          Opvallend: lid 2 is KAN, lid 1 is MOET.
+          Stikstofdepositieruimte is facultatief in de wet.
+
+    # =========================================================================
+    # ARTIKEL 2.32 - ONTHEFFING INSTRUCTIEREGELS
+    # =========================================================================
+    artikel_2.32:
+      nummer: "2.32"
+      titel: "(ontheffing instructieregels)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid1"
+          structuur:
+            volledige_tekst: "Bij een regel op grond van artikel 2.22 kan worden bepaald dat gedeputeerde staten, op verzoek van een bestuursorgaan van een gemeente of waterschap, ontheffing kunnen verlenen van die regel."
+          logica:
+            type: machtiging
+            norm: "Provinciale instructieregel KAN ontheffingsmogelijkheid bevatten"
+            ontheffingverlener: "gedeputeerde staten"
+            aanvrager: "gemeente/waterschap"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid2"
+          structuur:
+            volledige_tekst: "Bij een regel op grond van artikel 2.24, eerste lid, kan worden bepaald dat Onze Minister die het aangaat, op verzoek van een bestuursorgaan van een gemeente, waterschap of provincie, ontheffing kan verlenen van die regel. Bij de regel kan worden bepaald dat voor het besluit tot het verlenen van een ontheffing overeenstemming is vereist met Onze Minister die het aangaat of Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties."
+          logica:
+            type: machtiging
+            norm: "Rijksinstructieregel KAN ontheffingsmogelijkheid bevatten"
+            ontheffingverlener: "Minister"
+            aanvrager: "gemeente/waterschap/provincie"
+            optioneel: "overeenstemming met andere minister"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid3"
+          structuur:
+            volledige_tekst: "Bij een regel op grond van artikel 2.24, eerste lid, kan worden bepaald dat gedeputeerde staten, op verzoek van een bestuursorgaan van een gemeente of waterschap, ontheffing kunnen verlenen van die regel, als de aanwijzing of begrenzing van een locatie waarop die regel ziet, wordt bepaald in een besluit van een bestuursorgaan van de provincie."
+          logica:
+            type: machtiging
+            norm: "Rijksinstructieregel KAN GS-ontheffing bij provinciale locatiebepaling"
+            conditie:
+              type: indien
+              tekst: "als de aanwijzing of begrenzing van een locatie wordt bepaald in een provinciaal besluit"
+            ontheffingverlener: "gedeputeerde staten"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid4"
+          structuur:
+            volledige_tekst: "Als bij een regel als bedoeld in artikel 2.25, zesde lid, is bepaald dat bij omgevingsverordening van een regel kan worden afgeweken of nadere regels worden of kunnen worden gesteld, kan daarbij ook worden bepaald dat gedeputeerde staten op verzoek van een bestuursorgaan van een gemeente of waterschap ontheffing kunnen verlenen van die regel of nadere regels."
+          logica:
+            type: machtiging
+            norm: "Bij afwijkingsmogelijkheid ook ontheffingsmogelijkheid"
+            keten: "Rijk → omgevingsverordening → GS-ontheffing"
+
+        5:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid5"
+          structuur:
+            volledige_tekst: "Een ontheffing wordt alleen verleend als de uitoefening van de taak of bevoegdheid waarvoor ontheffing wordt gevraagd onevenredig wordt belemmerd in verhouding tot het belang dat wordt gediend met de regel waarvan ontheffing is gevraagd."
+          logica:
+            type: normering
+            norm: "Ontheffingscriterium: ONEVENREDIGE BELEMMERING"
+            toetsing: "evenredigheidstoets"
+            afweging: "taak/bevoegdheid vs. belang achter regel"
+
+        6:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.1/Artikel2.32/Lid6"
+          structuur:
+            volledige_tekst: "Aan een ontheffing kunnen voorschriften worden verbonden. In de ontheffing kan worden bepaald dat deze geldt voor een daarbij gestelde termijn."
+          logica:
+            type: machtiging
+            norm: "Ontheffing KAN voorschriften/termijn bevatten"
+
+      functie:
+        werkwoord: machtigt
+        subject: "regelgever (provincie/Rijk)"
+        object: "ontheffingsmogelijkheid in instructieregels"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.32 creëert ONTHEFFINGSMECHANISME voor instructieregels.
+
+          PATROON: DEFAULT instructieregel geldt, TENZIJ ontheffing verleend.
+
+          Lid 1: provinciale instructieregels → GS-ontheffing
+          Lid 2: rijksinstructieregels → Minister-ontheffing
+          Lid 3: rijks + provinciale locatie → GS-ontheffing
+          Lid 4: bij afwijkingsmogelijkheid → ook ontheffingsmogelijkheid
+
+          KRITIEK lid 5: evenredigheidstoets als ENIGE ontheffingsgrond.
+          Dit is STRENG: alleen bij onevenredige belemmering.
+
+# =============================================================================
+# PARAGRAAF 2.5.2: DOORWERKING VAN BELEID DOOR INSTRUCTIES
+# =============================================================================
+
+paragraaf_2.5.2:
+  nummer: "2.5.2"
+  titel: "Doorwerking van beleid door instructies"
+  bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2"
+
+  artikelen:
+
+    # =========================================================================
+    # ARTIKEL 2.33 - GRONDSLAG INSTRUCTIE PROVINCIE
+    # =========================================================================
+    artikel_2.33:
+      nummer: "2.33"
+      titel: "(grondslag instructie provincie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33/Lid1"
+          structuur:
+            volledige_tekst: "Gedeputeerde staten kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, de gemeenteraad of het waterschapsbestuur waarvan het beheergebied geheel of grotendeels in de betrokken provincie is gelegen een instructie geven over de uitoefening van een taak of bevoegdheid."
+          logica:
+            type: machtiging
+            norm: "GS KUNNEN instructie geven"
+            subject: "gedeputeerde staten"
+            adressaat: "gemeenteraad/waterschapsbestuur"
+            begrenzing: "met inachtneming van artikel 2.3, tweede lid"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33/Lid2"
+          structuur:
+            aanhef: "Een instructie kan alleen worden gegeven aan:"
+            onderdelen:
+              a:
+                tekst: "de gemeenteraad over het stellen van regels in een omgevingsplan als bedoeld in artikel 4.2, eerste lid, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties,"
+              b:
+                tekst: "het waterschapsbestuur, als dat nodig is voor een doelmatige beheersing van het geluid afkomstig van wegen als bedoeld in artikel 2.17, eerste lid, onder c,"
+              c:
+                tekst: "het waterschapsbestuur, als dat nodig is voor een samenhangend en doelmatig regionaal waterbeheer,"
+              d:
+                tekst: "het dagelijks bestuur van het waterschap over een projectbesluit, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties."
+          logica:
+            type: begrenzing
+            norm: "Instructie ALLEEN voor specifieke gevallen"
+            gevallen:
+              - gemeenteraad + omgevingsplan (evenwichtige toedeling)
+              - waterschap + geluidbeheersing
+              - waterschap + waterbeheer
+              - waterschap-DB + projectbesluit
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33/Lid3"
+          structuur:
+            volledige_tekst: "Op het geven van een instructie is artikel 2.23, tweede en vierde lid, van overeenkomstige toepassing."
+          logica:
+            type: verwijzing
+            norm: "Begrenzingen art. 2.23 lid 2 en 4 van toepassing"
+            effect: "provinciaal belang + geen individuele opdracht/verbod"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.33/Lid4"
+          structuur:
+            aanhef: "Een instructie kan niet worden gegeven als toepassing kan worden gegeven aan:"
+            onderdelen:
+              a:
+                tekst: "artikel 124, 124a of 273a van de Gemeentewet, of"
+              b:
+                tekst: "artikel 156, eerste lid, van de Waterschapswet."
+          logica:
+            type: subsidiariteit
+            norm: "Instructie NIET als regulier toezicht mogelijk is"
+            voorrang:
+              - Gemeentewet art. 124, 124a, 273a
+              - Waterschapswet art. 156 lid 1
+
+      functie:
+        werkwoord: machtigt
+        subject: "gedeputeerde staten"
+        object: "instructie aan gemeente/waterschap"
+
+      externe_refs:
+        - naar: "BWBR0005416"
+          wet: "Gemeentewet"
+          artikel: "124, 124a, 273a"
+        - naar: "BWBR0005108"
+          wet: "Waterschapswet"
+          artikel: "156"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.33 is de GRONDSLAG voor provinciale INSTRUCTIES.
+
+          ONDERSCHEID instructieregels vs instructies:
+          - Instructieregels (§ 2.5.1): ALGEMEEN, in verordening
+          - Instructies (§ 2.5.2): INDIVIDUEEL, concreet geval
+
+          Lid 1: MACHTIGING (GS kunnen)
+          Lid 2: LIMITATIEVE gevallen (4 situaties)
+          Lid 3: Begrenzingen art. 2.23 van toepassing
+          Lid 4: SUBSIDIARITEIT - niet als Gemeentewet/Waterschapswet werkt
+
+          KRITIEK: instructie is INDIVIDUEEL sturingsinstrument.
+          Art. 2.23 lid 4 verbiedt dit voor instructieREGELS maar
+          art. 2.33 MACHTIGT dit voor individuele instructies.
+
+    # =========================================================================
+    # ARTIKEL 2.34 - GRONDSLAG INSTRUCTIE RIJK
+    # =========================================================================
+    artikel_2.34:
+      nummer: "2.34"
+      titel: "(grondslag instructie Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid1"
+          structuur:
+            volledige_tekst: "Onze Minister die het aangaat, in overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, kan, met inachtneming van de grenzen van artikel 2.3, derde lid, een instructie geven aan het provinciebestuur, het gemeentebestuur of het waterschapsbestuur over de uitoefening van een taak of bevoegdheid."
+          logica:
+            type: machtiging
+            norm: "Minister KAN instructie geven"
+            subject: "Minister (in overeenstemming met BZK)"
+            adressaat: "provinciebestuur/gemeentebestuur/waterschapsbestuur"
+            begrenzing: "met inachtneming van artikel 2.3, derde lid"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid2"
+          structuur:
+            aanhef: "Een instructie kan alleen worden gegeven aan:"
+            onderdelen:
+              a:
+                tekst: "provinciale staten over het stellen van regels in een omgevingsverordening als bedoeld in artikel 2.22 of 4.1, eerste lid, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties,"
+              b:
+                tekst: "gedeputeerde staten over een projectbesluit, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties,"
+              c:
+                tekst: "provinciale staten over een besluit tot vaststelling van geluidproductieplafonds als omgevingswaarden rondom industrieterreinen waarop zich voorzieningen voor defensie bevinden, als toepassing is gegeven aan artikel 2.12a, eerste lid,"
+              d:
+                tekst: "de gemeenteraad over het stellen van regels in een omgevingsplan als bedoeld in artikel 4.2, eerste lid, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties,"
+              e:
+                tekst: "het dagelijks bestuur van het waterschap over een projectbesluit, als dat nodig is met het oog op een evenwichtige toedeling van functies aan locaties."
+          logica:
+            type: begrenzing
+            norm: "Instructie ALLEEN voor specifieke gevallen"
+            gevallen:
+              - PS + omgevingsverordening
+              - GS + projectbesluit
+              - PS + geluidproductieplafonds defensie
+              - gemeenteraad + omgevingsplan
+              - waterschap-DB + projectbesluit
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid3"
+          structuur:
+            volledige_tekst: "In aanvulling op het tweede lid kan Onze Minister van Infrastructuur en Waterstaat een instructie geven aan het provinciebestuur of het waterschapsbestuur over de uitoefening van een taak of bevoegdheid op het gebied van het beheer van watersystemen of het waterketenbeheer, als dat nodig is voor een samenhangend en doelmatig waterbeheer."
+          logica:
+            type: aanvulling
+            norm: "Minister I&W kan EXTRA instructie geven voor waterbeheer"
+            adressaat: "provinciebestuur/waterschapsbestuur"
+            doel: "samenhangend en doelmatig waterbeheer"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid4"
+          structuur:
+            volledige_tekst: "In aanvulling op het tweede lid kan Onze Minister van Onderwijs, Cultuur en Wetenschap, in overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, een instructie geven aan de gemeenteraad tot het in het omgevingsplan voor een locatie opnemen van de functie-aanduiding rijksbeschermd stads- of dorpsgezicht en tot het daarbij bepalen dat wordt voorzien in het beschermen van het stads- of dorpsgezicht, als dat nodig is voor het behoud van cultureel erfgoed."
+          logica:
+            type: aanvulling
+            norm: "Minister OCW kan instructie geven voor rijksbeschermde gezichten"
+            adressaat: "gemeenteraad"
+            doel: "behoud cultureel erfgoed"
+
+        5:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid5"
+          structuur:
+            volledige_tekst: "Op het geven van een instructie is artikel 2.25, tweede en vierde lid, van overeenkomstige toepassing."
+          logica:
+            type: verwijzing
+            norm: "Begrenzingen art. 2.25 lid 2 en 4 van toepassing"
+
+        6:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.34/Lid6"
+          structuur:
+            aanhef: "Een instructie kan niet worden gegeven als toepassing kan worden gegeven aan:"
+            onderdelen:
+              a:
+                tekst: "artikel 124a, 124b of 268 van de Gemeentewet,"
+              b:
+                tekst: "artikel 121 of 261 van de Provinciewet, of"
+              c:
+                tekst: "de Wet Naleving Europese regelgeving publieke entiteiten."
+          logica:
+            type: subsidiariteit
+            norm: "Instructie NIET als regulier toezicht mogelijk is"
+            voorrang:
+              - Gemeentewet art. 124a, 124b, 268
+              - Provinciewet art. 121, 261
+              - Wet Naleving Europese regelgeving publieke entiteiten
+
+      functie:
+        werkwoord: machtigt
+        subject: "Minister"
+        object: "instructie aan provincie/gemeente/waterschap"
+
+      externe_refs:
+        - naar: "BWBR0005416"
+          wet: "Gemeentewet"
+          artikel: "124a, 124b, 268"
+        - naar: "BWBR0005645"
+          wet: "Provinciewet"
+          artikel: "121, 261"
+        - naar: "BWBR0031640"
+          wet: "Wet Naleving Europese regelgeving publieke entiteiten"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.34 is de GRONDSLAG voor rijksinstructies.
+          Parallel aan art. 2.33 maar dan voor Rijksniveau.
+
+          Lid 1: MACHTIGING (Minister in overeenstemming met BZK)
+          Lid 2: LIMITATIEVE gevallen
+          Lid 3: AANVULLING - I&W voor waterbeheer
+          Lid 4: AANVULLING - OCW voor erfgoed
+          Lid 5: Begrenzingen art. 2.25 van toepassing
+          Lid 6: SUBSIDIARITEIT - niet als organieke wetten werken
+
+          BEREIK: Rijk kan ALLE niveaus (provincie, gemeente, waterschap) instrueren.
+
+    # =========================================================================
+    # ARTIKEL 2.35 - TOEPASSING INSTRUCTIE
+    # =========================================================================
+    artikel_2.35:
+      nummer: "2.35"
+      titel: "(toepassing instructie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.35"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.35/Lid1"
+          structuur:
+            volledige_tekst: "Een instructie kan niet worden gegeven als deze is bedoeld voor herhaalde uitvoering door verschillende bestuursorganen."
+          logica:
+            type: verbod
+            norm: "Instructie NIET voor herhaalde/algemene toepassing"
+            reden: "Dan moet het een instructieREGEL zijn"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.2/Artikel2.35/Lid2"
+          structuur:
+            volledige_tekst: "Een instructie met het oog op een belang als bedoeld in artikel 2.3, tweede lid, onder a, of derde lid, onder a, kan alleen worden gegeven als het belang is aangegeven in een door een bestuursorgaan van de provincie of het Rijk openbaar gemaakt document."
+          logica:
+            type: voorwaarde
+            norm: "Belang moet in openbaar document zijn aangegeven"
+            conditie:
+              type: indien
+              tekst: "met het oog op een belang als bedoeld in artikel 2.3"
+            vereiste: "openbaar gemaakt document van provincie/Rijk"
+
+      functie:
+        werkwoord: begrenst
+        subject: "wet"
+        object: "toepassing instructies"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.35 stelt AANVULLENDE begrenzingen voor instructies.
+
+          Lid 1: GEEN herhaalde toepassing (→ gebruik dan instructieregels)
+          Lid 2: Belang moet OPENBAAR zijn gemaakt (transparantie-eis)
+
+          Dit bevestigt onderscheid:
+          - Instructieregels: ALGEMEEN, vooraf vastgelegd
+          - Instructies: INDIVIDUEEL, voor specifiek geval
+
+# =============================================================================
+# PARAGRAAF 2.5.3: INDEPLAATSTREDING EN VERNIETIGING WATERSCHAPSBESLISSINGEN
+# =============================================================================
+
+paragraaf_2.5.3:
+  nummer: "2.5.3"
+  titel: "Indeplaatstreding en vernietiging waterschapsbeslissingen"
+  bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3"
+
+  artikelen:
+
+    # =========================================================================
+    # ARTIKEL 2.36 - BEVOEGDHEID TOT INDEPLAATSTREDING
+    # =========================================================================
+    artikel_2.36:
+      nummer: "2.36"
+      titel: "(bevoegdheid tot indeplaatstreding)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.36"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.36/Lid1"
+          structuur:
+            aanhef: "Gedeputeerde staten kunnen namens het waterschapsbestuur en ten laste van het waterschap voorzien in het gevorderde als het waterschapsbestuur:"
+            onderdelen:
+              a:
+                tekst: "niet binnen de daarvoor gestelde termijn uitvoering geeft aan een instructie op grond van artikel 2.33 of 12.18,"
+              b:
+                tekst: "een bij of krachtens afdeling 18.3 gevorderde beslissing niet of niet naar behoren neemt of een bij of krachtens die afdeling gevorderde handeling niet of niet naar behoren verricht."
+          logica:
+            type: machtiging
+            norm: "GS KUNNEN in de plaats treden van waterschap"
+            voorwaarden:
+              - geen uitvoering instructie binnen termijn
+              - geen/gebrekkige handhavingsbeslissing of -handeling
+            effect: "namens EN ten laste van waterschap"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.36/Lid2"
+          structuur:
+            aanhef: "Onze Minister die het aangaat kan namens het waterschapsbestuur en ten laste van het waterschap voorzien in het gevorderde als het waterschapsbestuur:"
+            onderdelen:
+              a:
+                tekst: "niet binnen de daarvoor gestelde termijn uitvoering geeft aan een instructie op grond van artikel 2.34,"
+              b:
+                tekst: "een bij of krachtens hoofdstuk 18 gevorderde beslissing niet of niet naar behoren neemt of een bij of krachtens hoofdstuk 18 gevorderde handeling niet of niet naar behoren verricht,"
+              c:
+                tekst: "niet of niet naar behoren uitvoering geeft aan een op grond van afdeling 20.5 opgedragen taak."
+          logica:
+            type: machtiging
+            norm: "Minister KAN in de plaats treden van waterschap"
+            voorwaarden:
+              - geen uitvoering rijksinstructie binnen termijn
+              - geen/gebrekkige handhavingsbeslissing/-handeling (hoofdstuk 18)
+              - geen/gebrekkige uitvoering taak (afdeling 20.5)
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.36/Lid3"
+          structuur:
+            volledige_tekst: "Op de uitoefening van de bevoegdheid, bedoeld in het tweede lid, zijn de artikelen 121, tweede en vierde lid, en 121a tot en met 121e van de Provinciewet van overeenkomstige toepassing."
+          logica:
+            type: verwijzing
+            norm: "Provinciewet-procedure van toepassing"
+
+      functie:
+        werkwoord: machtigt
+        subject: "GS / Minister"
+        object: "indeplaatstreding bij waterschap"
+
+      externe_refs:
+        - naar: "BWBR0005645"
+          wet: "Provinciewet"
+          artikel: "121, 121a-121e"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.36 creëert INDEPLAATSTREDING als ultimum remedium.
+
+          Dit is INTERBESTUURLIJK TOEZICHT - zwaarste interventie.
+
+          Lid 1: GS treden in de plaats van waterschap (provinciale instructies)
+          Lid 2: Minister treedt in de plaats van waterschap (rijksinstructies)
+
+          EFFECT: besluit wordt genomen NAMENS en TEN LASTE VAN waterschap.
+          Waterschap blijft formeel verantwoordelijk maar verliest feitelijke zeggenschap.
+
+    # =========================================================================
+    # ARTIKEL 2.37 - VERNIETIGING WATERSCHAPSBESLISSINGEN
+    # =========================================================================
+    artikel_2.37:
+      nummer: "2.37"
+      titel: "(vernietiging waterschapsbeslissingen door het Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.37"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.37/Lid1"
+          structuur:
+            aanhef: "Een besluit of een niet-schriftelijke beslissing gericht op enig rechtsgevolg van het waterschapsbestuur kan bij koninklijk besluit worden vernietigd als het besluit of de beslissing is genomen in strijd met:"
+            onderdelen:
+              a:
+                tekst: "een regel op grond van artikel 2.24 of een instructie op grond van artikel 2.34,"
+              b:
+                tekst: "het bepaalde bij of krachtens hoofdstuk 18."
+          logica:
+            type: machtiging
+            norm: "Koninklijk besluit KAN waterschapsbesluit vernietigen"
+            gronden:
+              - strijd met rijksinstructieregel (art. 2.24)
+              - strijd met rijksinstructie (art. 2.34)
+              - strijd met handhavingsregels (hoofdstuk 18)
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.5/Paragraaf2.5.3/Artikel2.37/Lid2"
+          structuur:
+            volledige_tekst: "Op een vernietiging zijn de artikelen 266 tot en met 274a van de Provinciewet van overeenkomstige toepassing. Op de vernietiging van een niet-schriftelijke beslissing gericht op enig rechtsgevolg zijn de afdelingen 10.2.2 en 10.2.3 van de Algemene wet bestuursrecht van overeenkomstige toepassing."
+          logica:
+            type: verwijzing
+            norm: "Provinciewet/Awb-procedure van toepassing"
+
+      functie:
+        werkwoord: machtigt
+        subject: "Kroon (koninklijk besluit)"
+        object: "vernietiging waterschapsbesluit"
+
+      externe_refs:
+        - naar: "BWBR0005645"
+          wet: "Provinciewet"
+          artikel: "266-274a"
+        - naar: "BWBR0005537"
+          wet: "Algemene wet bestuursrecht"
+          afdeling: "10.2.2, 10.2.3"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.37 creëert SPONTANE VERNIETIGING als instrument.
+
+          Dit is REPRESSIEF toezicht - achteraf ingrijpen.
+
+          Let op: alleen WATERSCHAPSBESLUITEN, niet gemeente/provincie.
+          Voor die wordt verwezen naar Gemeentewet/Provinciewet.
+
+          Gronden:
+          - Strijd met rijksinstructieregels
+          - Strijd met rijksinstructies
+          - Strijd met handhavingsregels (hoofdstuk 18)
+
+# =============================================================================
+# AFDELING-ANALYSE
+# =============================================================================
+
+afdeling_analyse:
+
+  structuur:
+    paragrafen: 3
+    artikelen: 16  # 2.22-2.32, 2.33-2.35, 2.36-2.37
+
+  kern_patronen:
+
+    instructieregels_vs_instructies:
+      beschrijving: |
+        KRITIEK ONDERSCHEID in afdeling 2.5:
+
+        § 2.5.1 INSTRUCTIEREGELS:
+        - ALGEMEEN karakter
+        - In verordening/AMvB vastgelegd
+        - Vooraf bepaald
+        - Meerdere bestuursorganen
+        - Art. 2.23 lid 4: GEEN individuele opdrachten
+
+        § 2.5.2 INSTRUCTIES:
+        - INDIVIDUEEL karakter
+        - Concreet besluit
+        - Voor specifiek geval
+        - Eén bestuursorgaan
+        - Art. 2.35 lid 1: GEEN herhaalde toepassing
+
+      evidence:
+        - art. 2.22-2.25 (instructieregels algemeen)
+        - art. 2.33-2.35 (instructies individueel)
+
+    hiërarchie_doorwerking:
+      beschrijving: |
+        Afdeling 2.5 implementeert de SUBSIDIARITEITSTRAP uit art. 2.3:
+
+        Rijk → provincie → gemeente/waterschap
+
+        Via twee mechanismen:
+        1. INSTRUCTIEREGELS (algemeen, vooraf)
+        2. INSTRUCTIES (individueel, achteraf)
+
+        Plus twee SANCTIE-mechanismen:
+        3. INDEPLAATSTREDING (art. 2.36)
+        4. VERNIETIGING (art. 2.37)
+
+      evidence:
+        - art. 2.22 + 2.24 (grondslag instructieregels)
+        - art. 2.33 + 2.34 (grondslag instructies)
+        - art. 2.36 + 2.37 (sancties)
+
+    verplichte_vs_facultatieve_onderwerpen:
+      beschrijving: |
+        Sommige instructieregels zijn VERPLICHT, andere FACULTATIEF.
+
+        VERPLICHT (art. 2.26-2.31a):
+        - Cultureel erfgoed
+        - Externe veiligheid
+        - Werelderfgoed
+        - Luchthavens
+        - Geluidproductieplafonds
+        - Zwemlocaties
+        - Stedelijk afvalwater
+        - Natuur
+
+        FACULTATIEF (art. 2.25):
+        - 13 categorieën in lid 1 onder a
+
+      evidence:
+        - art. 2.25 lid 1 ("in ieder geval")
+        - art. 2.26-2.31a (specifieke verplichtingen)
+
+    ontheffing_en_afwijking:
+      beschrijving: |
+        Afdeling 2.5 bevat FLEXIBILITEIT-mechanismen:
+
+        1. AFWIJKING via omgevingsverordening (art. 2.25 lid 6)
+        2. ONTHEFFING van instructieregels (art. 2.32)
+
+        Beide zijn TENZIJ-patronen:
+        Regel geldt TENZIJ afwijking/ontheffing.
+
+        Ontheffingscriterium (art. 2.32 lid 5):
+        "onevenredig belemmerd" - EVENREDIGHEIDSTOETS
+
+      evidence:
+        - art. 2.25 lid 6 (afwijking)
+        - art. 2.32 (ontheffing)
+
+  relaties:
+    intern:
+      - van: "art. 2.22-2.25"
+        naar: "art. 2.3"
+        type: "begrenzing"
+        context: "instructieregels binnen subsidiariteitsgrenzen"
+      - van: "art. 2.33-2.34"
+        naar: "art. 2.3"
+        type: "begrenzing"
+        context: "instructies binnen subsidiariteitsgrenzen"
+      - van: "art. 2.22/2.24"
+        naar: "art. 4.1/4.2"
+        type: "doorwerking"
+        context: "instructieregels werken door in omgevingsverordening/omgevingsplan"
+      - van: "art. 2.36-2.37"
+        naar: "hoofdstuk 18"
+        type: "handhaving"
+        context: "interbestuurlijk toezicht voor handhavingsregels"
+
+    extern:
+      - naar: "Besluit kwaliteit leefomgeving"
+        context: "uitwerking rijksinstructieregels"
+      - naar: "Gemeentewet/Provinciewet/Waterschapswet"
+        context: "organiek toezicht als voorrang (subsidiariteit)"
+
+  routes:
+    entry_points:
+      - artikel: "2.22"
+        vraag: "Hoe werkt provinciaal beleid door naar gemeenten?"
+      - artikel: "2.24"
+        vraag: "Hoe werkt rijksbeleid door naar lagere overheden?"
+      - artikel: "2.33"
+        vraag: "Kan de provincie een gemeente een aanwijzing geven?"
+      - artikel: "2.32"
+        vraag: "Is er ontheffing mogelijk van instructieregels?"
+    exit_points:
+      - naar: "Bkl"
+        context: "concrete rijksinstructieregels"
+      - naar: "hoofdstuk 4"
+        context: "omgevingsverordening/omgevingsplan als geadresseerde"
+      - naar: "hoofdstuk 18"
+        context: "handhaving bij niet-naleving"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+
+  nieuwe_inzichten:
+
+    instructieregels_vs_instructies_onderscheid:
+      observatie: |
+        Afdeling 2.5 maakt cruciaal onderscheid tussen:
+        - INSTRUCTIEREGELS (§ 2.5.1): algemeen, vooraf, in verordening
+        - INSTRUCTIES (§ 2.5.2): individueel, achteraf, concreet besluit
+
+        Dit bepaalt welk instrument wanneer mag worden gebruikt.
+      implicatie: |
+        Navigator moet dit onderscheid expliciet maken.
+        Vraag "kan provincie gemeente dwingen?" leidt naar BEIDE mogelijkheden.
+
+    doorwerking_hiërarchie:
+      observatie: |
+        Beleidsdoorwerking verloopt via vaste trap:
+        Rijk (art. 2.24) → provincie (art. 2.22) → gemeente/waterschap
+
+        Begrenzingen komen uit art. 2.3 (subsidiariteit).
+      implicatie: |
+        Art. 2.3 is HUB voor zowel bevoegdheden (Afd 2.1) als doorwerking (Afd 2.5).
+        Cross-link noodzakelijk.
+
+    interbestuurlijk_toezicht_trap:
+      observatie: |
+        § 2.5.3 creëert escalatieladder:
+        1. Instructie (zacht)
+        2. Indeplaatstreding (hard)
+        3. Vernietiging (ultimum remedium)
+
+        Subsidiariteit bepaalt welke stap toegestaan is.
+      implicatie: |
+        Navigator moet escalatieladder tonen bij vraag over dwangmiddelen.
+
+    sectorspecifieke_verplichtingen:
+      observatie: |
+        Art. 2.26-2.31a bevatten VERPLICHTE instructieregels per sector:
+        - Erfgoed (2.26)
+        - Veiligheid (2.27)
+        - Werelderfgoed (2.28)
+        - Luchthavens (2.29)
+        - Geluid (2.29a)
+        - Zwemlocaties (2.30)
+        - Afvalwater (2.31)
+        - Natuur (2.31a)
+
+        Dit zijn ENTRY POINTS voor sectorspecifieke vragen.
+      implicatie: |
+        Sectorale navigator-routes kunnen direct naar deze artikelen linken.
+
+  schema_verbeteringen:
+    - "Toevoegen: onderscheid_type: 'instructieregel' | 'instructie' voor doorwerkingsinstrumenten"
+    - "Toevoegen: escalatie_niveau: 'instructie' | 'indeplaatstreding' | 'vernietiging' voor interbestuurlijk toezicht"
+    - "Toevoegen: sectorale_verplichting: boolean voor art. 2.26-2.31a type artikelen"
+
+# =============================================================================
+# CH2 ↔ CH4/CH5 PARALLEL
+# =============================================================================
+
+cross_chapter_parallel:
+  beschrijving: |
+    Afdeling 2.5 heeft PARALLELLEN met Ch4 en Ch5:
+
+    Ch2 Afd 2.5 (Doorwerking)   ↔   Ch4 Afd 4.1 (Regels)   ↔   Ch5 § 5.1.1 (Vergunningen)
+    ─────────────────────────────────────────────────────────────────────────────────────
+    Instructieregels stellen         Algemene regels            Vergunningplicht
+    Art. 2.22/2.24 (grondslag)       Art. 4.1/4.2 (grondslag)   Art. 5.1 (grondslag)
+    Art. 2.23/2.25 (inhoud)          Art. 4.3 (inhoud)          Art. 5.1 lid 1-2 (inhoud)
+    Art. 2.32 (ontheffing)           -                          Art. 5.1 TENZIJ
+
+    GEMEENSCHAPPELIJK PATROON:
+    Grondslag → Inhoud → Flexibiliteit (ontheffing/tenzij)
+
+  implicatie: |
+    De Omgevingswet heeft consistente structuur:
+    Hoofdstuk → Afdeling → Paragraaf volgt steeds:
+    1. GRONDSLAG (wie mag wat)
+    2. INHOUD (wat precies)
+    3. FLEXIBILITEIT (uitzonderingen)

@@ -1,0 +1,443 @@
+# Afdeling 2.4 - Toedeling van taken en aanwijzing van locaties
+# V2 Atomic Extraction
+# Artikelen 2.16-2.21a
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 2.4
+titel: "Toedeling van taken en aanwijzing van locaties"
+bron_path: "/Hoofdstuk2/Afdeling2.4"
+
+# =============================================================================
+# PARAGRAAF 2.4.1: TOEDELING SPECIFIEKE TAKEN
+# =============================================================================
+paragraaf_2.4.1:
+  nummer: "2.4.1"
+  titel: "Toedeling van specifieke taken aan gemeenten, waterschappen, provincies en Rijk"
+  bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1"
+
+  artikelen:
+
+    artikel_2.16:
+      nummer: "2.16"
+      titel: "(gemeentelijke taken voor de fysieke leefomgeving)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1"
+          structuur:
+            aanhef: "Bij het gemeentebestuur berusten, naast de elders in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de fysieke leefomgeving, de volgende taken:"
+            onderdelen:
+              a:
+                tekst: "op het gebied van het beheer van watersystemen en waterketenbeheer:"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela"
+                sub_onderdelen:
+                  1:
+                    tekst: "de doelmatige inzameling van afvloeiend hemelwater, voor zover de houder het afvloeiend hemelwater redelijkerwijs niet op of in de bodem of een oppervlaktewaterlichaam kan brengen, en het transport en de verwerking daarvan"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela/Onderdeel1"
+                    kernbegrip: "hemelwater"
+                  2:
+                    tekst: "het treffen van maatregelen in het openbaar gemeentelijke gebied om structureel nadelige gevolgen van de grondwaterstand voor de op grond van deze wet aan de fysieke leefomgeving toegedeelde functies zoveel mogelijk te voorkomen of te beperken"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela/Onderdeel2"
+                    kernbegrip: "grondwater openbaar gebied"
+                  3:
+                    tekst: "de inzameling en het transport van stedelijk afvalwater"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela/Onderdeel3"
+                    kernbegrip: "riolering"
+                  4:
+                    tekst: "het beheer van watersystemen, voor zover toegedeeld bij omgevingsverordening of ministeriële regeling"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela/Onderdeel4"
+                  5:
+                    tekst: "de zuivering van stedelijk afvalwater, in gevallen waarin toepassing is gegeven aan artikel 2.17, derde lid"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeela/Onderdeel5"
+              b:
+                tekst: "het behoeden van de staat en werking van openbare wegen, voor zover niet in beheer bij een waterschap, een provincie of het Rijk, voor nadelige gevolgen van activiteiten op of rond die wegen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeelb"
+                kernbegrip: "gemeentelijke wegen"
+              c:
+                tekst: "de beheersing van geluid afkomstig van wegen in beheer bij de gemeente, lokale spoorwegen en industrieterreinen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid1/Onderdeelc"
+                kernbegrip: "gemeentelijk geluidbeheer"
+          logica:
+            type: taaktoedeling
+            norm: "Deze taken BERUSTEN bij gemeente"
+            kerngebieden:
+              - "water (hemelwater, grondwater, riolering)"
+              - "wegen (gemeentelijk)"
+              - "geluid (gemeentelijk niveau)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid2"
+          structuur:
+            aanhef: "Op grond van het eerste lid, onder a, onder 3°, wordt stedelijk afvalwater ingezameld en getransporteerd naar een zuiveringtechnisch werk als dat vrijkomt:"
+            onderdelen:
+              a:
+                tekst: "op de percelen, gelegen binnen een bebouwde kom van waaruit stedelijk afvalwater met een vervuilingswaarde van ten minste tweeduizend inwonerequivalenten als bedoeld in de richtlijn stedelijk afvalwater wordt geloosd, door middel van een openbaar vuilwaterriool"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid2/Onderdeela"
+              b:
+                tekst: "op andere percelen, voor zover dit doelmatig kan worden uitgevoerd door middel van een openbaar vuilwaterriool"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid2/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Rioleringsplicht bij bepaalde drempel"
+            drempel: "2000 inwonerequivalenten"
+            eu_grondslag: "richtlijn stedelijk afvalwater"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.16/Lid3"
+          structuur:
+            volledige_tekst: "In plaats van een openbaar vuilwaterriool en een zuiveringtechnisch werk kunnen andere passende systemen in beheer bij een gemeente, een waterschap of een rechtspersoon die door een gemeente of waterschap met het beheer is belast, worden toegepast, als daarmee hetzelfde niveau van het beschermen van het milieu wordt bereikt."
+          logica:
+            type: machtiging
+            norm: "Alternatieve systemen toegestaan bij gelijkwaardig beschermingsniveau"
+
+    artikel_2.17:
+      nummer: "2.17"
+      titel: "(waterschapstaken voor de fysieke leefomgeving)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1"
+          structuur:
+            aanhef: "Bij het waterschapsbestuur berusten, naast de elders in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de fysieke leefomgeving, de volgende taken:"
+            onderdelen:
+              a:
+                tekst: "op het gebied van het beheer van watersystemen en het waterketenbeheer"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1/Onderdeela"
+                sub_onderdelen:
+                  1:
+                    tekst: "het beheer van watersystemen, voor zover aan het waterschap toegedeeld"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1/Onderdeela/Onderdeel1"
+                  2:
+                    tekst: "de zuivering van stedelijk afvalwater in een zuiveringtechnisch werk"
+                    bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1/Onderdeela/Onderdeel2"
+              b:
+                tekst: "het behoeden van de staat en werking van openbare wegen voor zover bij provinciale verordening toegedeeld"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1/Onderdeelb"
+              c:
+                tekst: "de beheersing van geluid afkomstig van wegen als bedoeld onder b"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid1/Onderdeelc"
+          logica:
+            type: taaktoedeling
+            norm: "Deze taken BERUSTEN bij waterschap"
+            kerngebieden:
+              - "watersystemen (regionale wateren)"
+              - "zuivering stedelijk afvalwater"
+              - "wegen (indien toegedeeld)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid2"
+          structuur:
+            volledige_tekst: "Het waterschapsbestuur kan een andere rechtspersoon belasten met de exploitatie van een zuiveringtechnisch werk."
+          logica:
+            type: machtiging
+            norm: "Waterschap KAN uitbesteden aan andere rechtspersoon"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.17/Lid3"
+          structuur:
+            volledige_tekst: "Het waterschapsbestuur en het gemeentebestuur kunnen, in afwijking van het eerste lid, bij gezamenlijk besluit bepalen dat de zuiveringstaak tot de taak van de gemeente behoort, als dat doelmatiger is voor de zuivering van het stedelijk afvalwater."
+          logica:
+            type: machtiging
+            norm: "Gezamenlijk besluit KAN zuiveringstaak naar gemeente overdragen"
+            conditie:
+              type: indien
+              tekst: "als dat doelmatiger is"
+
+    artikel_2.18:
+      nummer: "2.18"
+      titel: "(provinciale taken voor de fysieke leefomgeving)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1"
+          structuur:
+            aanhef: "Bij het provinciebestuur berusten, naast de elders in deze wet en op grond van andere wetten aan dat bestuur toegedeelde taken voor de fysieke leefomgeving, de volgende taken:"
+            onderdelen:
+              a:
+                tekst: "de gebiedsgerichte coördinatie van de uitoefening van taken en bevoegdheden door gemeenten en waterschappen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeela"
+              b:
+                tekst: "het voorkomen of beperken van geluid in stiltegebieden"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeelb"
+              c:
+                tekst: "het beschermen van de kwaliteit van het grondwater in grondwaterbeschermingsgebieden"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeelc"
+              d:
+                tekst: "op het gebied van het beheer van watersystemen en het zwemwaterbeheer"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeeld"
+              e:
+                tekst: "het behoeden van de staat en werking van provinciale infrastructuur"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeele"
+              f:
+                tekst: "de beheersing van geluid afkomstig van provinciale wegen en lokale spoorwegen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeelf"
+              g:
+                tekst: "op het gebied van natuur: behoud soorten, Natura 2000-maatregelen, invasieve soorten"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid1/Onderdeelg"
+          logica:
+            type: taaktoedeling
+            norm: "Deze taken BERUSTEN bij provincie"
+            kerngebieden:
+              - "coördinatie gemeente/waterschap"
+              - "stiltegebieden"
+              - "grondwaterbescherming"
+              - "zwemwater"
+              - "provinciale infrastructuur"
+              - "natuur (soorten, Natura 2000, invasieve soorten)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid2"
+          structuur:
+            volledige_tekst: "Bij provinciale verordening wordt het beheer van regionale wateren toegedeeld aan waterschappen. Bij omgevingsverordening kan het beheer ook aan andere openbare lichamen worden toegedeeld."
+          logica:
+            type: verplichting
+            norm: "Provincie MOET beheer regionale wateren toedelen"
+            default: "toedeling aan waterschappen"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.18/Lid3"
+          structuur:
+            volledige_tekst: "In afwijking van het eerste lid berust de taak voor lokale spoorweginfrastructuur in vervoerregio's bij het dagelijks bestuur van het openbaar lichaam."
+          logica:
+            type: uitzondering
+            norm: "Vervoerregio's hebben eigen bevoegdheid lokale spoorwegen"
+
+    artikel_2.19:
+      nummer: "2.19"
+      titel: "(rijkstaken voor de fysieke leefomgeving)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid1"
+          structuur:
+            volledige_tekst: "Bij Onze Minister die het aangaat berusten, naast de elders in deze wet en op grond van andere wetten aan het Rijk toegedeelde taken voor de fysieke leefomgeving, de in het tweede tot en met vijfde lid genoemde taken."
+          logica:
+            type: taaktoedeling
+            norm: "Rijkstaken berusten bij betrokken minister"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid2"
+          structuur:
+            aanhef: "De volgende taken voor watersystemen berusten bij Onze Minister van Infrastructuur en Waterstaat:"
+            onderdelen:
+              a:
+                tekst: "het beheer van rijkswateren"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid2/Onderdeela"
+              b:
+                tekst: "het voorkomen of tegengaan van landwaartse verplaatsing van de kustlijn"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid2/Onderdeelb"
+              c:
+                tekst: "het houden van toezicht op het beheer van primaire waterkeringen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid2/Onderdeelc"
+              d:
+                tekst: "het tot stand brengen en beschikbaar stellen van technische leidraden voor primaire waterkeringen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid2/Onderdeeld"
+          logica:
+            type: taaktoedeling
+            norm: "Watertaken bij Minister IenW"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid3"
+          structuur:
+            aanhef: "De volgende taken voor infrastructuur berusten bij:"
+            onderdelen:
+              a:
+                tekst: "Minister IenW: rijkswegen, Schiphol, hoofdspoorwegen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid3/Onderdeela"
+              b:
+                tekst: "Minister IenW: geluid rijkswegen en hoofdspoorwegen"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid3/Onderdeelb"
+              c:
+                tekst: "Minister Defensie: militaire infrastructuur"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid3/Onderdeelc"
+          logica:
+            type: taaktoedeling
+            norm: "Infrastructuurtaken verdeeld over ministers"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid4"
+          structuur:
+            volledige_tekst: "Bij Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties berust de taak van het houden van toezicht op de uitoefening van taken door een waterschap voor het digitaal stelsel."
+          logica:
+            type: taaktoedeling
+            norm: "Minister BZK: toezicht digitaal stelsel"
+
+        5:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid5"
+          structuur:
+            aanhef: "De volgende taken op het gebied van natuur berusten bij:"
+            onderdelen:
+              a:
+                tekst: "Minister voor Natuur en Stikstof: Natura 2000-maatregelen voor bijzondere nationale natuurgebieden, rode lijsten, invasieve soorten"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid5/Onderdeela"
+              b:
+                tekst: "aangewezen minister: Natura 2000-maatregelen voor rijkswateren, militaire terreinen, rijksgebieden"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.1/Artikel2.19/Lid5/Onderdeelb"
+          logica:
+            type: taaktoedeling
+            norm: "Natuurtaken bij Minister voor Natuur en Stikstof"
+
+# =============================================================================
+# PARAGRAAF 2.4.2: AANWIJZING VAN LOCATIES
+# =============================================================================
+paragraaf_2.4.2:
+  nummer: "2.4.2"
+  titel: "Aanwijzing van locaties"
+  bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2"
+
+  artikelen:
+
+    artikel_2.20:
+      nummer: "2.20"
+      titel: "(aanwijzing en begrenzing van rijkswateren)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.20"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.20/Lid1"
+          structuur:
+            volledige_tekst: "Bij algemene maatregel van bestuur worden de waterkeringen en oppervlaktewaterlichamen of onderdelen daarvan aangewezen die behoren tot de rijkswateren."
+          logica:
+            type: verplichting
+            norm: "AMvB MOET rijkswateren aanwijzen"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.20/Lid2"
+          structuur:
+            volledige_tekst: "Bij ministeriële regeling worden de waterkeringen en oppervlaktewaterlichamen of onderdelen daarvan die behoren tot de rijkswateren geometrisch begrensd."
+          logica:
+            type: verplichting
+            norm: "Ministeriële regeling MOET geometrisch begrenzen"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.20/Lid3"
+          structuur:
+            volledige_tekst: "Bij ministeriële regeling kunnen rijkswateren worden aangewezen waarvan het beheer, in afwijking van het eerste lid, geheel of gedeeltelijk berust bij daarbij aangegeven niet tot het Rijk behorende openbare lichamen."
+          logica:
+            type: machtiging
+            norm: "Beheer KAN worden overgedragen aan ander openbaar lichaam"
+
+    artikel_2.21:
+      nummer: "2.21"
+      titel: "(grondslag aanwijzing en begrenzing van andere locaties)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21/Lid1"
+          structuur:
+            volledige_tekst: "Bij ministeriële regeling kunnen voor de toepassing van deze wet andere locaties worden aangewezen en geometrisch begrensd."
+          logica:
+            type: machtiging
+            norm: "Ministeriële regeling KAN andere locaties aanwijzen"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21/Lid2"
+          structuur:
+            aanhef: "Op grond van het eerste lid worden in ieder geval de volgende locaties aangewezen:"
+            onderdelen:
+              a:
+                tekst: "de Nederlandse delen van de stroomgebiedsdistricten Rijn, Maas, Schelde en Eems"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21/Lid2/Onderdeela"
+              b:
+                tekst: "de zones en agglomeraties voor luchtkwaliteit en geluid"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21/Lid2/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "In ieder geval stroomgebieden en luchtkwaliteitszones aanwijzen"
+
+    artikel_2.21a:
+      nummer: "2.21a"
+      titel: "(aanwijzing en begrenzing van beperkingengebieden)"
+      bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid1"
+          structuur:
+            aanhef: "Op grond van artikel 2.21, eerste lid, worden in ieder geval aangewezen en geometrisch begrensd de beperkingengebieden met betrekking tot:"
+            onderdelen:
+              a:
+                tekst: "wegen in beheer bij het Rijk"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid1/Onderdeela"
+              b:
+                tekst: "waterstaatswerken in beheer bij het Rijk"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid1/Onderdeelb"
+              c:
+                tekst: "hoofdspoorweginfrastructuur"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid1/Onderdeelc"
+              d:
+                tekst: "installaties in een waterstaatswerk, anders dan mijnbouwinstallaties"
+                bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid1/Onderdeeld"
+          logica:
+            type: verplichting
+            norm: "Beperkingengebieden MOETEN worden aangewezen"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid2"
+          structuur:
+            volledige_tekst: "Zolang geen toepassing is gegeven aan het eerste lid, bestaan de beperkingengebieden uit de locatie van het werk of object waarvoor het beperkingengebied wordt aangewezen en de locaties die binnen een bij algemene maatregel van bestuur bepaalde afstand rond dat werk of object liggen."
+          logica:
+            type: overgangsrecht
+            norm: "Fallback: AMvB bepaalt afstand rond werk/object"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.4/Paragraaf2.4.2/Artikel2.21a/Lid3"
+          structuur:
+            volledige_tekst: "Het beperkingengebied met betrekking tot een mijnbouwinstallatie in een waterstaatswerk bestaat uit de mijnbouwinstallatie en de locaties die binnen een bij algemene maatregel van bestuur, in overeenstemming met artikel 2, onder 26, van de richtlijn offshore veiligheid, bepaalde afstand rond die installatie liggen."
+          logica:
+            type: norm
+            norm: "Mijnbouwinstallaties: afstand conform EU-richtlijn"
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 7
+    paragrafen: 2
+    totaal_leden: 17
+
+  patronen:
+    bestuurslaag_takenpakket:
+      beschrijving: "Elk bestuurslaag heeft specifiek takenpakket voor fysieke leefomgeving"
+      evidence: ["art. 2.16 (gemeente)", "art. 2.17 (waterschap)", "art. 2.18 (provincie)", "art. 2.19 (Rijk)"]
+
+    water_als_rode_draad:
+      beschrijving: "Watertaken verdeeld over alle bestuurslagen met specifieke rollen"
+      evidence: ["gemeente: riolering", "waterschap: zuivering/beheer", "provincie: coördinatie", "Rijk: rijkswateren"]
+
+    locatie_aanwijzing_hierarchie:
+      beschrijving: "Rijkswateren via AMvB, andere locaties via ministeriële regeling"
+      evidence: ["art. 2.20", "art. 2.21", "art. 2.21a"]
+
+  kritieke_verwijzingen:
+    - art_2.16: "Gemeentelijke zorgplichten (hemelwater, riolering)"
+    - art_2.17_lid_3: "Flexibiliteit zuiveringstaak gemeente/waterschap"
+    - art_2.18_lid_1_g: "Provinciale natuurtaak (Natura 2000)"
+    - art_2.19_lid_5: "Rijksnatuur via Minister voor Natuur en Stikstof"
+
+  routes:
+    entry_points:
+      - artikel: "2.16"
+        vraag: "Welke taken heeft de gemeente?"
+      - artikel: "2.19"
+        vraag: "Welke taken heeft het Rijk?"
+    exit_points:
+      - naar: "Hoofdstuk 18"
+        context: "handhaving van deze taken"
+      - naar: "Hoofdstuk 5"
+        context: "vergunningen voor activiteiten die raken aan deze taken"

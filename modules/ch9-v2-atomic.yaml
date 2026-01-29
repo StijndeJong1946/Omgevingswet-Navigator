@@ -1,0 +1,1057 @@
+# =============================================================================
+# CHAPTER 9: VOORKEURSRECHT - V2 ATOMIC EXTRACTION
+# =============================================================================
+# Source: Omgevingswet (BWBR0037885)
+# Scope: Art. 9.1 - 9.22
+# Schema: v2 (lid-level logica, bron_path, conditie typing)
+# Extracted: 2026-01-29
+# =============================================================================
+
+schema_version: 2
+bron: BWBR0037885
+
+hoofdstuk_9:
+  nummer: "9"
+  titel: "Voorkeursrecht"
+  bron_path: "/Hoofdstuk9"
+  inwerking: "2024-01-01"
+
+  structuur:
+    - afdeling: "9.1"
+      titel: "Vestiging en gelding van een voorkeursrecht"
+      artikelen: ["9.1", "9.2", "9.3", "9.4", "9.5"]
+    - afdeling: "9.2"
+      titel: "Vervreemding na vestiging van een voorkeursrecht"
+      paragrafen:
+        - nummer: "9.2.1"
+          titel: "Bevoegd gezag"
+          artikelen: ["9.6"]
+        - nummer: "9.2.2"
+          titel: "Hoofdregel en uitzonderingen daarop"
+          artikelen: ["9.7", "9.8", "9.9", "9.10"]
+        - nummer: "9.2.3"
+          titel: "Vervreemding aan gemeente, provincie of Staat"
+          artikelen: ["9.12", "9.13", "9.14"]
+        - nummer: "9.2.4"
+          titel: "Gerechtelijke procedure"
+          artikelen: ["9.15", "9.16", "9.17", "9.18", "9.19"]
+        - nummer: "9.2.5"
+          titel: "Notariële akte tot levering"
+          artikelen: ["9.20", "9.21"]
+        - nummer: "9.2.6"
+          titel: "Nietigheid van rechtshandelingen"
+          artikelen: ["9.22"]
+
+# =============================================================================
+# AFDELING 9.1: VESTIGING EN GELDING
+# =============================================================================
+
+afdeling_9_1:
+  nummer: "9.1"
+  titel: "Vestiging en gelding van een voorkeursrecht"
+  bron_path: "/Hoofdstuk9/Afdeling9.1"
+  inwerking: "2024-01-01"
+
+  artikel_9_1:
+    nummer: "9.1"
+    titel: "(grondslag en bevoegdheid vestiging voorkeursrecht op naam van gemeente, provincie of Staat)"
+    bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid1"
+        structuur:
+          aanhef: "De gemeenteraad, provinciale staten of Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties kunnen bij voorkeursrechtbeschikking op een onroerende zaak een gemeentelijk, provinciaal of nationaal voorkeursrecht vestigen, voor zover die zaak deel uitmaakt van een locatie waaraan:"
+          onderdelen:
+            a:
+              tekst: "in het omgevingsplan een niet-agrarische functie is toegedeeld en waarvan het gebruik afwijkt van die functie,"
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid1/Onderdeela"
+            b:
+              tekst: "in een gemeentelijke, een provinciale respectievelijk de nationale omgevingsvisie of in een programma een niet-agrarische functie of moderniseringslocatie is toegedacht en waarvan het gebruik afwijkt van die functie en de functie niet is toegedeeld in een omgevingsplan,"
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid1/Onderdeelb"
+            c:
+              tekst: "in de voorkeursrechtbeschikking een niet-agrarische functie of moderniseringslocatie wordt toegedacht en waarvan het gebruik afwijkt van die functie en de functie niet is toegedacht in een gemeentelijke, een provinciale respectievelijk de nationale omgevingsvisie of een programma en niet is toegedeeld in een omgevingsplan."
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid1/Onderdeelc"
+        logica:
+          type: "machtiging"
+          norm: "vestiging voorkeursrecht op drie grondslagen"
+          bevoegde_organen:
+            gemeente: "gemeenteraad"
+            provincie: "provinciale staten"
+            rijk: "Minister BZK"
+          grondslagen:
+            a:
+              grondslag: "omgevingsplan"
+              vereiste: "niet-agrarische functie toegedeeld + afwijkend gebruik"
+              planologisch_niveau: "hoogste"
+            b:
+              grondslag: "omgevingsvisie of programma"
+              vereiste: "functie toegedacht + afwijkend gebruik + niet in omgevingsplan"
+              planologisch_niveau: "midden"
+            c:
+              grondslag: "voorkeursrechtbeschikking zelf"
+              vereiste: "functie toegedacht + niet in visie/programma/plan"
+              planologisch_niveau: "laagste"
+          critical_insight: "Hiërarchie grondslagen: plan > visie/programma > beschikking"
+
+      2:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid2"
+        structuur:
+          volledige_tekst: "Voorafgaand aan de vestiging van een voorkeursrecht op grond van het eerste lid kunnen het college van burgemeester en wethouders en gedeputeerde staten bij voorkeursrechtbeschikking op een onroerende zaak een gemeentelijk of provinciaal voorkeursrecht vestigen, voor zover die zaak deel uitmaakt van een locatie waaraan in die beschikking een niet-agrarische functie of moderniseringslocatie wordt toegedacht en waarvan het gebruik afwijkt van die functie."
+        logica:
+          type: "machtiging"
+          norm: "voorlopig voorkeursrecht"
+          bevoegde_organen:
+            gemeente: "B&W"
+            provincie: "GS"
+            rijk: "niet beschikbaar"
+          doel: "snelle vestiging voorafgaand aan definitief besluit"
+          critical_insight: "Dagelijks bestuur kan vooruitlopen op raad/staten"
+
+      3:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid3"
+        structuur:
+          volledige_tekst: "Een provinciaal voorkeursrecht kan alleen worden gevestigd met het oog op een provinciaal belang."
+        logica:
+          type: "begrenzing"
+          norm: "subsidiariteitstoets provincie"
+          conditie:
+            type: "voor_zover"
+            tekst: "met het oog op een provinciaal belang"
+            effect: "provinciaal voorkeursrecht vereist provinciaal belang"
+
+      4:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.1/Lid4"
+        structuur:
+          volledige_tekst: "Een nationaal voorkeursrecht kan alleen worden gevestigd met het oog op een nationaal belang."
+        logica:
+          type: "begrenzing"
+          norm: "subsidiariteitstoets Rijk"
+          conditie:
+            type: "voor_zover"
+            tekst: "met het oog op een nationaal belang"
+            effect: "nationaal voorkeursrecht vereist nationaal belang"
+
+    functie:
+      werkwoord: "machtigt"
+      object: "vestiging voorkeursrecht"
+      subject: "gemeenteraad, PS, Minister BZK"
+      bevoegd_gezag: ["gemeente", "provincie", "rijk"]
+
+    logica_samenvatting:
+      narrative: |
+        Art. 9.1 regelt de VESTIGING van voorkeursrechten.
+
+        DRIE GRONDSLAGEN (lid 1 a-c) in afnemende planologische verankering:
+        a. Omgevingsplan: functie TOEGEDEELD (sterkste basis)
+        b. Visie/programma: functie TOEGEDACHT
+        c. Beschikking zelf: functie TOEGEDACHT (zwakste basis)
+
+        VOORLOPIG VOORKEURSRECHT (lid 2):
+        - B&W/GS kunnen vooruitlopen
+        - Geen Rijksvariant!
+
+        SUBSIDIARITEIT (lid 3-4):
+        - Provincie: alleen provinciaal belang
+        - Rijk: alleen nationaal belang
+        - Gemeente: geen expliciete belang-eis (default bevoegd)
+
+  artikel_9_2:
+    nummer: "9.2"
+    titel: "(exclusiviteit voorkeursrecht)"
+    bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2/Lid1"
+        structuur:
+          volledige_tekst: "Op een onroerende zaak waarop een provinciaal voorkeursrecht is gevestigd, kan geen gemeentelijk voorkeursrecht worden gevestigd."
+        logica:
+          type: "verbod"
+          norm: "blokkade gemeentelijk bij provinciaal"
+          hiërarchie: "provincie > gemeente"
+
+      2:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2/Lid2"
+        structuur:
+          volledige_tekst: "Op een onroerende zaak waarop een nationaal voorkeursrecht is gevestigd, kan geen gemeentelijk of provinciaal voorkeursrecht worden gevestigd."
+        logica:
+          type: "verbod"
+          norm: "blokkade gemeente/provincie bij nationaal"
+          hiërarchie: "Rijk > provincie > gemeente"
+
+      3:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2/Lid3"
+        structuur:
+          volledige_tekst: "Een gemeentelijk voorkeursrecht vervalt op het tijdstip waarop voor de onroerende zaak een provinciaal of nationaal voorkeursrecht ingaat."
+        logica:
+          type: "definitie"
+          norm: "automatisch verval bij hoger voorkeursrecht"
+          trigger: "inwerkingtreding hoger niveau"
+
+      4:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2/Lid4"
+        structuur:
+          volledige_tekst: "In afwijking van het derde lid blijft een gemeentelijk voorkeursrecht buiten toepassing gedurende de tijd dat op de onroerende zaak een door gedeputeerde staten op grond van artikel 9.1, tweede lid, gevestigd voorkeursrecht rust."
+        logica:
+          type: "definitie"
+          norm: "schorsing bij voorlopig provinciaal"
+          conditie:
+            type: "in_afwijking_van"
+            tekst: "In afwijking van het derde lid"
+            effect: "bij voorlopig GS-voorkeursrecht: geen verval, wel schorsing"
+          critical_insight: "Voorlopig provinciaal schorst alleen, definitief doet vervallen"
+
+      5:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.2/Lid5"
+        structuur:
+          volledige_tekst: "Een provinciaal voorkeursrecht vervalt op het tijdstip waarop voor de onroerende zaak een nationaal voorkeursrecht ingaat."
+        logica:
+          type: "definitie"
+          norm: "verval provinciaal bij nationaal"
+          trigger: "inwerkingtreding nationaal"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "exclusiviteit en hiërarchie"
+      subject: "voorkeursrechten"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 9.2 regelt de EXCLUSIVITEIT van voorkeursrechten.
+
+        HIËRARCHIE: Rijk > Provincie > Gemeente
+
+        BLOKKADE (lid 1-2):
+        - Hoger niveau voorkomt vestiging lager niveau
+        - Niet andersom
+
+        VERVAL (lid 3, 5):
+        - Hoger niveau doet lager niveau automatisch vervallen
+
+        UITZONDERING (lid 4):
+        - VOORLOPIG GS-recht schorst alleen, doet niet vervallen
+        - Na afloop voorlopig: gemeentelijk herleeft
+
+  artikel_9_3:
+    nummer: "9.3"
+    titel: "(vestigen nieuw voorkeursrecht)"
+    bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.3"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.3/Lid1"
+        structuur:
+          volledige_tekst: "Op een onroerende zaak kan niet binnen twee jaar na de intrekking of het vervallen van een voorkeursrecht door hetzelfde bestuursorgaan opnieuw een voorkeursrecht worden gevestigd op dezelfde grondslag."
+        logica:
+          type: "verbod"
+          norm: "cooldown-periode hervestiging"
+          duur: "2 jaar"
+          scope: "zelfde bestuursorgaan + zelfde grondslag"
+
+      2:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.3/Lid2"
+        structuur:
+          volledige_tekst: "Het eerste lid is niet van toepassing op een voorkeursrecht dat niet in de openbare registers is ingeschreven binnen de in artikel 16.82a bedoelde termijn."
+        logica:
+          type: "definitie"
+          norm: "uitzondering cooldown bij niet-inschrijving"
+          conditie:
+            type: "tenzij"
+            tekst: "niet van toepassing op voorkeursrecht niet tijdig ingeschreven"
+            effect: "geen cooldown als voorkeursrecht verviel door procedurele fout"
+
+    functie:
+      werkwoord: "verbiedt"
+      object: "herhaalde vestiging"
+      subject: "bestuursorgaan"
+
+    interne_refs:
+      - naar: "artikel 16.82a"
+        type: "verwijzing"
+        context: "termijn inschrijving openbare registers"
+        bron_path: "/Hoofdstuk16/Afdeling16.7/Paragraaf16.7.2/Artikel16.82a"
+
+  artikel_9_4:
+    nummer: "9.4"
+    titel: "(geldingsduur voorkeursrecht)"
+    bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid1"
+        structuur:
+          aanhef: "Een voorkeursrecht vervalt:"
+          onderdelen:
+            a:
+              tekst: "bij een voorkeursrecht als bedoeld in artikel 9.1, eerste lid, onder c: drie jaar na het ingaan ervan, tenzij voor dat tijdstip de functie waarvoor het voorkeursrecht is gevestigd, is toegedacht in een omgevingsvisie of een programma of is toegedeeld in het omgevingsplan,"
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid1/Onderdeela"
+            b:
+              tekst: "bij een voorkeursrecht als bedoeld in artikel 9.1, eerste lid, onder b: drie jaar na het ingaan ervan, tenzij voor dat tijdstip de functie waarvoor het voorkeursrecht is gevestigd, is toegedeeld in het omgevingsplan,"
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid1/Onderdeelb"
+            c:
+              tekst: "bij een voorkeursrecht als bedoeld in artikel 9.1, eerste lid, onder a: vijf jaar na het ingaan ervan of, als die termijn met toepassing van het tweede lid is verlengd, aan het einde van de verlengde termijn."
+              bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid1/Onderdeelc"
+        logica:
+          type: "definitie"
+          norm: "geldingsduur per grondslag"
+          termijnen:
+            c_beschikking:
+              basis: "3 jaar"
+              verlenging: "naar visie/programma/plan binnen termijn"
+            b_visie_programma:
+              basis: "3 jaar"
+              verlenging: "naar plan binnen termijn"
+            a_omgevingsplan:
+              basis: "5 jaar"
+              verlenging: "+5 jaar (lid 2)"
+          critical_insight: "Sterkere grondslag = langere geldingsduur"
+
+      2:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid2"
+        structuur:
+          volledige_tekst: "Een bestuursorgaan dat een voorkeursrecht als bedoeld in artikel 9.1, eerste lid, onder a, heeft gevestigd, kan besluiten de termijn, bedoeld in het eerste lid, onder c, eenmaal met ten hoogste vijf jaar te verlengen."
+        logica:
+          type: "machtiging"
+          norm: "verlenging termijn omgevingsplan-gebaseerd"
+          maximum: "5 + 5 = 10 jaar"
+          frequentie: "eenmaal"
+
+      3:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid3"
+        structuur:
+          volledige_tekst: "Een voorkeursrecht als bedoeld in artikel 9.1, tweede lid, vervalt drie maanden na het ingaan ervan of, als dat eerder is, op het tijdstip dat een voorkeursrecht als bedoeld in artikel 9.1, eerste lid, ingaat."
+        logica:
+          type: "definitie"
+          norm: "korte duur voorlopig voorkeursrecht"
+          duur: "3 maanden"
+          verval: "of eerder bij vestiging definitief"
+
+      4:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.4/Lid4"
+        structuur:
+          volledige_tekst: "Als een omgevingsplan wordt vernietigd, blijft een voorkeursrecht dat is gebaseerd op dat omgevingsplan gelden tot twee jaar na de vernietiging, tenzij het voorkeursrecht eerder wordt ingetrokken. Als binnen die termijn in het omgevingsplan de grondslag voor het voorkeursrecht wordt hersteld, heeft het voorkeursrecht de geldingsduur die het direct voorafgaand aan de vernietiging had."
+        logica:
+          type: "definitie"
+          norm: "doorwerking bij planvernietiging"
+          overlevingsduur: "2 jaar na vernietiging"
+          herstel: "als grondslag hersteld binnen 2 jaar → oorspronkelijke duur"
+
+    functie:
+      werkwoord: "bepaalt"
+      object: "geldingsduur"
+      subject: "voorkeursrecht"
+
+    logica_samenvatting:
+      narrative: |
+        Art. 9.4 regelt de GELDINGSDUUR van voorkeursrechten.
+
+        TERMIJNEN:
+        | Grondslag | Basis | Maximaal |
+        |-----------|-------|----------|
+        | Beschikking (c) | 3 jaar | → 3 jaar of upgrade naar b/a |
+        | Visie/programma (b) | 3 jaar | → 3 jaar of upgrade naar a |
+        | Omgevingsplan (a) | 5 jaar | → 10 jaar (5+5) |
+        | Voorlopig (lid 2) | 3 maanden | → definitief neemt over |
+
+        OVERLEVING bij vernietiging: 2 jaar reddingsboei
+
+  artikel_9_5:
+    nummer: "9.5"
+    titel: "(intrekking en verval van voorkeursrecht of vernietiging van voorkeursrechtbeschikking)"
+    bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.5"
+    inwerking: "2024-01-01"
+
+    leden:
+      1:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.5/Lid1"
+        structuur:
+          volledige_tekst: "Als een voorkeursrecht niet meer voldoet aan de eisen gesteld in artikel 9.1, eerste en tweede lid, of als de voorkeursrechtbeschikking niet binnen de in artikel 16.82a genoemde termijn in de openbare registers is ingeschreven, trekt het bestuursorgaan dat het gevestigd heeft het voorkeursrecht onverwijld in."
+        logica:
+          type: "verplichting"
+          norm: "verplichte intrekking"
+          triggers:
+            - "niet meer voldoen aan 9.1"
+            - "niet tijdig ingeschreven (16.82a)"
+          termijn: "onverwijld"
+
+      2:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.5/Lid2"
+        structuur:
+          volledige_tekst: "Het bestuursorgaan draagt er zorg voor dat een ingetrokken of vervallen voorkeursrecht of een voorkeursrecht waarvan de voorkeursrechtbeschikking is vernietigd, onverwijld wordt doorgehaald in de openbare registers."
+        logica:
+          type: "verplichting"
+          norm: "doorhaling in registers"
+          termijn: "onverwijld"
+
+      3:
+        bron_path: "/Hoofdstuk9/Afdeling9.1/Artikel9.5/Lid3"
+        structuur:
+          volledige_tekst: "Het bestuursorgaan doet van de intrekking of het vervallen van een voorkeursrecht of van de vernietiging van een voorkeursrechtbeschikking mededeling aan de eigenaren van en de beperkt gerechtigden op de onroerende zaak."
+        logica:
+          type: "verplichting"
+          norm: "kennisgeving aan rechthebbenden"
+
+    functie:
+      werkwoord: "verplicht"
+      object: "intrekking en administratie"
+      subject: "bestuursorgaan"
+
+# =============================================================================
+# AFDELING 9.2: VERVREEMDING NA VESTIGING
+# =============================================================================
+
+afdeling_9_2:
+  nummer: "9.2"
+  titel: "Vervreemding na vestiging van een voorkeursrecht"
+  bron_path: "/Hoofdstuk9/Afdeling9.2"
+  inwerking: "2024-01-01"
+
+  paragraaf_9_2_1:
+    nummer: "9.2.1"
+    titel: "Bevoegd gezag"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1"
+
+    artikel_9_6:
+      nummer: "9.6"
+      titel: "(bevoegd gezag)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1/Artikel9.6"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1/Artikel9.6"
+          structuur:
+            aanhef: "Als bevoegd gezag als bedoeld in deze afdeling worden aangewezen:"
+            onderdelen:
+              a:
+                tekst: "het college van burgemeester en wethouders voor een gemeentelijk voorkeursrecht,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1/Artikel9.6/Onderdeela"
+              b:
+                tekst: "gedeputeerde staten voor een provinciaal voorkeursrecht,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1/Artikel9.6/Onderdeelb"
+              c:
+                tekst: "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties voor een nationaal voorkeursrecht."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.1/Artikel9.6/Onderdeelc"
+          logica:
+            type: "definitie"
+            norm: "bevoegd gezag per niveau"
+            toewijzing:
+              gemeente: "B&W"
+              provincie: "GS"
+              rijk: "Minister BZK"
+            critical_insight: "Uitvoering door dagelijks bestuur, niet raad/staten"
+
+  paragraaf_9_2_2:
+    nummer: "9.2.2"
+    titel: "Hoofdregel en uitzonderingen daarop"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2"
+
+    artikel_9_7:
+      nummer: "9.7"
+      titel: "(hoofdregel bij vervreemding)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.7"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.7"
+          structuur:
+            volledige_tekst: "Een vervreemder gaat niet over tot vervreemding dan nadat hij de rechtspersoon op wiens naam het voorkeursrecht is gevestigd in overeenstemming met paragraaf 9.2.3 in de gelegenheid heeft gesteld het goed te verkrijgen."
+          logica:
+            type: "verbod"
+            norm: "aanbiedingsplicht"
+            procedure: "§ 9.2.3"
+            critical_insight: "HOOFDREGEL: eerst aanbieden aan overheid"
+
+      functie:
+        werkwoord: "verbiedt"
+        object: "vervreemding zonder aanbieding"
+        subject: "vervreemder"
+
+    artikel_9_8:
+      nummer: "9.8"
+      titel: "(uitzonderingen op hoofdregel)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8"
+          structuur:
+            aanhef: "Artikel 9.7 is niet van toepassing op vervreemding:"
+            onderdelen:
+              a:
+                tekst: "aan de echtgenoot of de geregistreerd partner, aan bloed- of aanverwanten in de rechte lijn of in de zijlijn tot in de tweede graad of aan een pleegkind dat duurzaam als een eigen kind is onderhouden en opgevoed,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeela"
+              b:
+                tekst: "vanwege de verdeling van een gemeenschap als bedoeld in artikel 166 van Boek 3 van het Burgerlijk Wetboek,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeelb"
+              c:
+                tekst: "vanwege een uiterste wilsbeschikking,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeelc"
+              d:
+                tekst: "vanwege een overeenkomst met een gemeente, een waterschap, een provincie, de Staat of een door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties aan te wijzen publiekrechtelijk lichaam of in het algemeen belang werkzame rechtspersoon,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeeld"
+              e:
+                tekst: "vanwege een verkoop op grond van een wettelijke bepaling, een rechterlijk bevel of een executoriale verkoop, waarbij geldt dat de voorzieningenrechter bij een onderhandse executoriale verkoop als bedoeld in artikel 268, tweede lid, van Boek 3 van het Burgerlijk Wetboek niet beslist over het verzoek tot onderhandse verkoop zolang de rechtspersoon op wiens naam het voorkeursrecht is gevestigd niet in de gelegenheid is gesteld om, gelet op het gunstiger bod, een bod te doen, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeele"
+              f:
+                tekst: "vanwege een overeenkomst over een onroerende zaak waarop een voorkeursrecht is gevestigd als bedoeld in artikel 9.1, eerste lid, onder c, of tweede lid, aangegaan met een pachter die op die zaak op het tijdstip van inwerkingtreding van de voorkeursrechtbeschikking een voorkeursrecht had als bedoeld in artikel 378 van Boek 7 van het Burgerlijk Wetboek."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.8/Onderdeelf"
+          logica:
+            type: "definitie"
+            norm: "categorische uitzonderingen"
+            uitzonderingen:
+              familie: "echtgenoot, partner, bloed-/aanverwanten tot 2e graad, pleegkind"
+              gemeenschap: "boedelverdeling"
+              erfrecht: "testament"
+              overheid: "verkoop aan overheid of aangewezen rechtspersoon"
+              gedwongen: "executie, rechterlijk bevel"
+              pachter: "bestaand voorkeursrecht pachter"
+
+      functie:
+        werkwoord: "definieert"
+        object: "uitzonderingen op aanbiedingsplicht"
+        subject: "wet"
+
+    artikel_9_9:
+      nummer: "9.9"
+      titel: "(uitzondering op hoofdregel bij vervreemding vanwege een gesloten overeenkomst)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid1"
+          structuur:
+            aanhef: "Artikel 9.7 is niet van toepassing op de vervreemding vanwege een overeenkomst over de onroerende zaak of een overeenkomst die een plicht bevat voor de vervreemder over de onroerende zaak, voor zover:"
+            onderdelen:
+              a:
+                tekst: "de vervreemding plaatsvindt aan een in die overeenkomst bij naam genoemde partij en tegen een in die overeenkomst bepaalde of volgens die overeenkomst bepaalbare prijs,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid1/Onderdeela"
+              b:
+                tekst: "de overeenkomst is ingeschreven in de openbare registers voordat de voorkeursrechtbeschikking is bekendgemaakt, en"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid1/Onderdeelb"
+              c:
+                tekst: "de vervreemding plaatsvindt binnen zes maanden na de dag van inschrijving van de overeenkomst in de openbare registers."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid1/Onderdeelc"
+          logica:
+            type: "definitie"
+            norm: "bestaande overeenkomst uitzondering"
+            cummulatieve_vereisten:
+              - "benoemde partij + bepaalde/bepaalbare prijs"
+              - "ingeschreven VOOR bekendmaking beschikking"
+              - "levering binnen 6 maanden na inschrijving"
+            critical_insight: "Bescherming eerder gesloten deals"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid2"
+          structuur:
+            volledige_tekst: "Een overeenkomst als bedoeld in het eerste lid kan worden ingeschreven in de openbare registers als deze is vervat in een akte."
+          logica:
+            type: "definitie"
+            norm: "akteeis voor inschrijving"
+
+        3:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.9/Lid3"
+          structuur:
+            volledige_tekst: "Het eerste lid is gedurende een periode van drie jaar eenmaal van toepassing op een vervreemding vanwege een overeenkomst over een bepaalde onroerende zaak of een gedeelte daarvan en op de daarin met name genoemde vervreemder of de verkrijger waarmee de overeenkomst is gesloten. Deze periode begint op de dag en het tijdstip van eerste inschrijving van de overeenkomst in de openbare registers."
+          logica:
+            type: "begrenzing"
+            norm: "eenmaligheid binnen 3 jaar"
+            anti_misbruik: "voorkomt herhaald gebruik zelfde overeenkomst"
+
+    artikel_9_10:
+      nummer: "9.10"
+      titel: "(uitzondering op hoofdregel bij vervreemding vanwege gewichtige redenen)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.10"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.2/Artikel9.10"
+          structuur:
+            volledige_tekst: "Artikel 9.7 is niet van toepassing op de vervreemding als het bevoegd gezag daartoe op verzoek van de vervreemder op grond van door die vervreemder aannemelijk gemaakte gewichtige redenen heeft besloten. Het bevoegd gezag kan daarbij beperkingen opleggen."
+          logica:
+            type: "machtiging"
+            norm: "gewichtige redenen uitzondering"
+            vereisten:
+              - "verzoek vervreemder"
+              - "aannemelijk gemaakte gewichtige redenen"
+              - "besluit bevoegd gezag"
+            bevoegdheid: "BG kan beperkingen opleggen"
+            critical_insight: "Hardheidsclausule - discretionaire bevoegdheid BG"
+
+  paragraaf_9_2_3:
+    nummer: "9.2.3"
+    titel: "Vervreemding aan gemeente, provincie of Staat"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3"
+
+    artikel_9_12:
+      nummer: "9.12"
+      titel: "(uitnodiging tot onderhandeling over vervreemding)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.12"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.12/Lid1"
+          structuur:
+            volledige_tekst: "Als de vervreemder het voornemen heeft tot vervreemding over te gaan en artikel 9.7 van toepassing is, nodigt hij het bevoegd gezag uit in onderhandeling te treden over vervreemding aan de gemeente, de provincie of de Staat tegen nader overeen te komen voorwaarden."
+          logica:
+            type: "verplichting"
+            norm: "uitnodiging tot onderhandeling"
+            trigger: "voornemen tot vervreemding + art. 9.7 van toepassing"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.12/Lid2"
+          structuur:
+            volledige_tekst: "Als de voorgenomen vervreemding betrekking heeft op onroerende zaken waarop voor een deel een voorkeursrecht is gevestigd maar die een samenhangend geheel vormen, kan de vervreemder, onverminderd afdeling 11 van titel 5 van Boek 7 van het Burgerlijk Wetboek, als voorwaarde stellen dat dit geheel van onroerende zaken in de vervreemding wordt betrokken."
+          logica:
+            type: "machtiging"
+            norm: "samenhangend geheel voorwaarde"
+            recht_vervreemder: "alles of niets bij samenhangend geheel"
+
+        3:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.12/Lid3"
+          structuur:
+            volledige_tekst: "Als de onroerende zaken als onderdeel van een onderneming worden geëxploiteerd, kan de vervreemder als voorwaarde stellen dat de onderneming in de vervreemding wordt betrokken."
+          logica:
+            type: "machtiging"
+            norm: "onderneming als geheel"
+            recht_vervreemder: "onderneming meenemen"
+
+        4:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.12/Lid4"
+          structuur:
+            volledige_tekst: "Als artikel 9.2, derde of vijfde lid, van toepassing is en er al een uitnodiging tot onderhandeling aan het college van burgemeester en wethouders of gedeputeerde staten is gedaan, wordt die uitnodiging aangemerkt als een uitnodiging aan gedeputeerde staten of Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties."
+          logica:
+            type: "definitie"
+            norm: "overdracht uitnodiging bij hoger recht"
+            situatie: "als gemeente/provincie vervalt door hoger niveau"
+
+    artikel_9_13:
+      nummer: "9.13"
+      titel: "(beslistermijn voor besluit over bereidheid tot verkrijging)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.13"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.13"
+          structuur:
+            volledige_tekst: "Het bevoegd gezag beslist binnen zes weken na ontvangst van de uitnodiging of de gemeente, de provincie respectievelijk de Staat in beginsel bereid is het goed tegen nader overeen te komen voorwaarden te kopen of op grond van een andere titel te verkrijgen."
+          logica:
+            type: "verplichting"
+            norm: "beslistermijn bereidheid"
+            termijn: "6 weken"
+            beslissing: "bereidheid tot koop (ja/nee)"
+
+    artikel_9_14:
+      nummer: "9.14"
+      titel: "(rechtsgevolg ontbreken bereidheid of overschrijding van beslistermijn)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid1"
+          structuur:
+            aanhef: "De vervreemder mag, nadat hij de uitnodiging heeft gedaan, overgaan tot vervreemding van het in de uitnodiging vermelde goed aan derden gedurende een periode van drie jaar:"
+            onderdelen:
+              a:
+                tekst: "vanaf de dag waarop het bevoegd gezag heeft beslist dat het niet bereid is het goed te kopen of op grond van een andere titel te verkrijgen, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid1/Onderdeela"
+              b:
+                tekst: "na afloop van de in artikel 9.13 bedoelde termijn als het bevoegd gezag binnen die termijn geen beslissing heeft genomen."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid1/Onderdeelb"
+          logica:
+            type: "machtiging"
+            norm: "vrije vervreemding na weigering"
+            duur: "3 jaar"
+            triggers:
+              - "negatief besluit"
+              - "termijnoverschrijding (6 weken)"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid2"
+          structuur:
+            aanhef: "In afwijking van het eerste lid geldt voor een voorkeursrecht dat ten minste gedurende een periode van vijf jaar is gebaseerd op een omgevingsplan en waarvoor de uitnodiging is gedaan, dat dit vervalt:"
+            onderdelen:
+              a:
+                tekst: "met ingang van de dag na die waarop het bevoegd gezag heeft beslist dat het niet bereid is het goed te kopen of op grond van een andere titel te verkrijgen, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid2/Onderdeela"
+              b:
+                tekst: "na afloop van de in artikel 9.13 bedoelde termijn als het bevoegd gezag binnen die termijn geen beslissing heeft genomen."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.3/Artikel9.14/Lid2/Onderdeelb"
+          logica:
+            type: "definitie"
+            norm: "verval bij 5+ jaar omgevingsplan-gebaseerd"
+            conditie:
+              type: "in_afwijking_van"
+              tekst: "In afwijking van het eerste lid"
+              effect: "bij 5+ jaar plan-basis: verval ipv 3 jaar venster"
+            critical_insight: "Langdurig recht zonder koop → verval na weigering"
+
+  paragraaf_9_2_4:
+    nummer: "9.2.4"
+    titel: "Gerechtelijke procedure tot vaststelling van de prijs of tot overdracht van het goed"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4"
+
+    artikel_9_15:
+      nummer: "9.15"
+      titel: "(toepassingsbereik)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.15"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.15"
+          structuur:
+            volledige_tekst: "Deze paragraaf is van toepassing op een goed waarvoor een uitnodiging als bedoeld in artikel 9.12, eerste lid, is gedaan."
+          logica:
+            type: "definitie"
+            norm: "scope paragraaf"
+            voorwaarde: "uitnodiging gedaan"
+
+    artikel_9_16:
+      nummer: "9.16"
+      titel: "(verzoek om gerechtelijke procedure tot vaststelling van de prijs)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.16"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.16/Lid1"
+          structuur:
+            volledige_tekst: "Als het bevoegd gezag in beginsel bereid is het goed te kopen of op grond van een andere titel te verkrijgen en er tussen de vervreemder en het bevoegd gezag wordt onderhandeld over de vervreemdingsvoorwaarden, kan de vervreemder het bevoegd gezag verzoeken om binnen vier weken na dat verzoek de rechtbank te verzoeken een oordeel over de prijs te geven."
+          logica:
+            type: "machtiging"
+            norm: "prijsprocedure bij impasse"
+            trigger: "onderhandeling loopt maar prijs impasse"
+            termijn: "BG moet binnen 4 weken naar rechtbank"
+            recht_vervreemder: "kan procedure afdwingen"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.16/Lid2"
+          structuur:
+            volledige_tekst: "Bij het verzoek van het bevoegd gezag aan de rechtbank wordt een afschrift van het verzoek van de vervreemder gevoegd."
+          logica:
+            type: "verplichting"
+            norm: "voegen verzoek vervreemder"
+
+    artikel_9_17:
+      nummer: "9.17"
+      titel: "(rechtsgevolg niet indienen of intrekken verzoek)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid1"
+          structuur:
+            aanhef: "De vervreemder mag tot vervreemding aan derden overgaan gedurende een periode van drie jaar vanaf het moment dat:"
+            onderdelen:
+              a:
+                tekst: "de termijn, bedoeld in artikel 9.16, eerste lid, is verstreken zonder dat het bevoegd gezag een verzoek bij de rechtbank heeft ingediend,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid1/Onderdeela"
+              b:
+                tekst: "de gerechtelijke procedure tussentijds is beëindigd door het intrekken van het verzoek door het bevoegd gezag."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid1/Onderdeelb"
+          logica:
+            type: "machtiging"
+            norm: "vrije vervreemding bij procedurefalen BG"
+            duur: "3 jaar"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid2"
+          structuur:
+            aanhef: "Een voorkeursrecht dat ten minste gedurende een periode van vijf jaar is gebaseerd op een omgevingsplan en waarvoor het goed waarop het betrekking heeft is aangeboden aan het bevoegd gezag, vervalt met ingang van de dag nadat:"
+            onderdelen:
+              a:
+                tekst: "de termijn, bedoeld in artikel 9.16, eerste lid, is verstreken zonder dat het bevoegd gezag een verzoek bij de rechtbank heeft ingediend, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid2/Onderdeela"
+              b:
+                tekst: "de gerechtelijke procedure tussentijds is beëindigd door intrekking van het verzoek door het bevoegd gezag."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.17/Lid2/Onderdeelb"
+          logica:
+            type: "definitie"
+            norm: "verval bij procedurefalen bij 5+ jaar plan"
+
+    artikel_9_18:
+      nummer: "9.18"
+      titel: "(verzoek om gerechtelijke procedure tot overdracht van het goed)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18/Lid1"
+          structuur:
+            volledige_tekst: "De vervreemder kan de rechtbank verzoeken te bepalen dat de rechtspersoon op wiens naam het voorkeursrecht is gevestigd, vanwege bijzondere persoonlijke omstandigheden van de vervreemder gehouden is medewerking te verlenen aan de overdracht van het goed tegen een door de rechtbank vast te stellen prijs."
+          logica:
+            type: "machtiging"
+            norm: "gedwongen verkoop bij persoonlijke omstandigheden"
+            recht_vervreemder: "kan overheid dwingen tot koop"
+            voorwaarde: "bijzondere persoonlijke omstandigheden"
+            critical_insight: "Eigenaar kan overheid DWINGEN te kopen"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18/Lid2"
+          structuur:
+            aanhef: "Het verzoek wordt ingediend binnen twee maanden na de dag waarop:"
+            onderdelen:
+              a:
+                tekst: "het bevoegd gezag heeft beslist geen verzoek in te dienen als bedoeld in artikel 9.16, eerste lid,"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18/Lid2/Onderdeela"
+              b:
+                tekst: "de termijn, bedoeld in artikel 9.16, eerste lid, is overschreden zonder dat het bevoegd gezag een beslissing heeft genomen, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18/Lid2/Onderdeelb"
+              c:
+                tekst: "de intrekking van het verzoek bij de griffie is ontvangen."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.18/Lid2/Onderdeelc"
+          logica:
+            type: "verplichting"
+            norm: "termijn voor gedwongen koop verzoek"
+            termijn: "2 maanden"
+
+    artikel_9_19:
+      nummer: "9.19"
+      titel: "(rechtsgevolg afwijzing verzoek tot overdracht)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.19"
+      inwerking: "2024-01-01"
+
+      leden:
+        geen_leden:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.4/Artikel9.19"
+          structuur:
+            volledige_tekst: "De vervreemder mag tot vervreemding aan derden overgaan gedurende een periode van drie jaar na het onherroepelijk worden van de rechterlijke beschikking waarbij het verzoek, bedoeld in artikel 9.18, eerste lid, is afgewezen."
+          logica:
+            type: "machtiging"
+            norm: "vrije vervreemding na afwijzing gedwongen koop"
+            duur: "3 jaar na onherroepelijke afwijzing"
+
+  paragraaf_9_2_5:
+    nummer: "9.2.5"
+    titel: "Notariële akte tot levering van de onroerende zaak"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5"
+
+    artikel_9_20:
+      nummer: "9.20"
+      titel: "(notariële akte tot levering)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.20"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.20/Lid1"
+          structuur:
+            volledige_tekst: "Het bevoegd gezag verleent medewerking aan de totstandkoming van een notariële akte tot levering van het goed tegen betaling aan de vervreemder van de in de beschikking, bedoeld in artikel 16.123, eerste lid, bepaalde prijs als de vervreemder binnen een periode van drie maanden na de dag van het onherroepelijk worden van de beschikking schriftelijk aan het bevoegd gezag verzoekt om die medewerking."
+          logica:
+            type: "verplichting"
+            norm: "medewerking bij vastgestelde prijs"
+            termijn: "verzoek binnen 3 maanden na onherroepelijk"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.20/Lid2"
+          structuur:
+            volledige_tekst: "Het eerste lid is van overeenkomstige toepassing als sprake is van een beschikking als bedoeld in artikel 16.123, tweede lid, voor zover bij die beschikking het verzoek is toegewezen."
+          logica:
+            type: "definitie"
+            norm: "ook bij gedwongen koop"
+
+        3:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.20/Lid3"
+          structuur:
+            volledige_tekst: "Het bevoegd gezag dat het voorkeursrecht heeft gevestigd, draagt er zorg voor dat na levering van de onroerende zaak het voorkeursrecht, voor zover het ziet op die zaak, wordt doorgehaald in de openbare registers."
+          logica:
+            type: "verplichting"
+            norm: "doorhaling na levering"
+
+    artikel_9_21:
+      nummer: "9.21"
+      titel: "(inschrijving notariële akte tot levering)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.21"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.21/Lid1"
+          structuur:
+            aanhef: "Inschrijving in de openbare registers van een akte tot vervreemding anders dan aan een gemeente, een provincie of de Staat vindt alleen plaats als op of bij het in te schrijven stuk een notariële verklaring is opgenomen, die inhoudt dat:"
+            onderdelen:
+              a:
+                tekst: "op de onroerende zaak geen voorkeursrecht is gevestigd, of"
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.21/Lid1/Onderdeela"
+              b:
+                tekst: "de vervreemding niet in strijd is met dit hoofdstuk en de daarop rustende bepalingen."
+                bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.21/Lid1/Onderdeelb"
+          logica:
+            type: "verplichting"
+            norm: "notariële verklaring vereist"
+            doel: "poortwachter bij kadaster"
+            critical_insight: "Notaris controleert voorkeursrecht-compliance"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.5/Artikel9.21/Lid2"
+          structuur:
+            volledige_tekst: "Voor de toepassing van het eerste lid wordt met de daar bedoelde notariële verklaring gelijkgesteld een verklaring van een persoon als bedoeld in artikel 91 van de Overgangswet nieuw Burgerlijk Wetboek, die in overeenstemming met het daar bepaalde een onderhandse akte tot levering heeft opgesteld."
+          logica:
+            type: "definitie"
+            norm: "gelijkstelling onderhandse akte"
+
+  paragraaf_9_2_6:
+    nummer: "9.2.6"
+    titel: "Nietigheid van rechtshandelingen in strijd met voorkeursrecht"
+    bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.6"
+
+    artikel_9_22:
+      nummer: "9.22"
+      titel: "(nietigheid van rechtshandelingen in strijd met voorkeursrecht)"
+      bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.6/Artikel9.22"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.6/Artikel9.22/Lid1"
+          structuur:
+            volledige_tekst: "Een gemeente, een provincie of de Staat kan de nietigheid inroepen van rechtshandelingen die zijn verricht met de kennelijke strekking afbreuk te doen aan een op haar of zijn naam gevestigd voorkeursrecht."
+          logica:
+            type: "machtiging"
+            norm: "nietigverklaring frauduleuze transacties"
+            drempel: "kennelijke strekking afbreuk te doen"
+            critical_insight: "Anti-ontwijkingsinstrument"
+
+        2:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.6/Artikel9.22/Lid2"
+          structuur:
+            volledige_tekst: "Een verzoek tot nietigverklaring wordt gedaan bij de rechtbank binnen het rechtsgebied waar de onroerende zaak geheel of grotendeels ligt binnen acht weken nadat de gemeente, de provincie of de Staat een afschrift heeft ontvangen van de akte waarin de rechtshandeling is vervat."
+          logica:
+            type: "verplichting"
+            norm: "termijn nietigverklaring"
+            termijn: "8 weken na ontvangst akte"
+            forum: "rechtbank waar zaak ligt"
+
+        3:
+          bron_path: "/Hoofdstuk9/Afdeling9.2/Paragraaf9.2.6/Artikel9.22/Lid3"
+          structuur:
+            volledige_tekst: "Het verzoek tot nietigverklaring is niet-ontvankelijk als de indiener schriftelijk heeft ingestemd met de rechtshandeling."
+          logica:
+            type: "begrenzing"
+            norm: "geen nietigheid na instemming"
+            estopped: "eerder ingestemd = geen vernietiging"
+
+# =============================================================================
+# HOOFDSTUK-LEVEL ANALYSE
+# =============================================================================
+
+hoofdstuk_analyse:
+  structuur:
+    afdelingen_count: 2
+    artikelen_count: 22
+
+  patronen:
+    hiërarchie_drie_niveaus:
+      beschrijving: "Gemeente < Provincie < Staat in voorkeursrecht"
+      evidence: ["art. 9.2"]
+      implicatie: "Hoger niveau wint altijd, exclusiviteitsregel"
+
+    grondslag_hiërarchie:
+      beschrijving: "Plan > Visie/Programma > Beschikking als basis"
+      evidence: ["art. 9.1", "art. 9.4"]
+      implicatie: "Sterkere grondslag = langere geldingsduur"
+
+    termijnen_structuur:
+      beschrijving: |
+        Geldingsduur:
+        - Beschikking: 3 jaar (kan upgraden)
+        - Visie/programma: 3 jaar (kan upgraden naar plan)
+        - Omgevingsplan: 5 jaar (+5 jaar verlenging = 10 jaar max)
+        - Voorlopig: 3 maanden
+      evidence: ["art. 9.4"]
+
+    procedure_als_bescherming:
+      beschrijving: "Vervreemder heeft sterke processuele rechten"
+      elementen:
+        - "kan prijs door rechtbank laten vaststellen (9.16)"
+        - "kan overheid dwingen tot koop bij persoonlijke omstandigheden (9.18)"
+        - "vrije vervreemding na weigering/termijnoverschrijding (9.14, 9.17)"
+      evidence: ["art. 9.16", "art. 9.18", "art. 9.14"]
+
+    anti_misbruik:
+      beschrijving: "Meerdere mechanismen tegen ontwijking"
+      elementen:
+        - "nietigheid frauduleuze transacties (9.22)"
+        - "notariële verklaring als poortwachter (9.21)"
+        - "cooldown 2 jaar na verval (9.3)"
+      evidence: ["art. 9.22", "art. 9.21", "art. 9.3"]
+
+  relaties:
+    intern:
+      - van: "art. 9.1"
+        naar: "art. 9.4"
+        type: "grondslag → geldingsduur"
+      - van: "art. 9.7"
+        naar: "art. 9.8-9.10"
+        type: "hoofdregel → uitzonderingen"
+      - van: "art. 9.12"
+        naar: "art. 9.13-9.14"
+        type: "procedure → termijnen → gevolgen"
+    extern:
+      - naar: "art. 16.82a"
+        context: "inschrijvingstermijn kadaster"
+      - naar: "art. 16.123"
+        context: "prijsvaststelling rechtbank"
+
+  routes:
+    entry_points:
+      - artikel: "9.1"
+        vraag: "Kan ik een voorkeursrecht vestigen?"
+      - artikel: "9.7"
+        vraag: "Mag ik mijn grond verkopen?"
+      - artikel: "9.8"
+        vraag: "Gelden er uitzonderingen op de aanbiedingsplicht?"
+
+    exit_points:
+      - naar: "Hoofdstuk 16"
+        context: "procedures inschrijving en prijsvaststelling"
+      - naar: "Kadaster"
+        context: "openbare registers"
+
+# =============================================================================
+# MAPPING GUIDE UPDATE
+# =============================================================================
+
+mapping_guide_update:
+  nieuwe_inzichten:
+    voorkeursrecht_als_grondbeleid:
+      observatie: |
+        Voorkeursrecht is eerste instrument actief grondbeleid.
+        Stapsgewijze versterking: beschikking → visie → plan
+      implicatie: |
+        Navigator moet grondbeleid-route integreren met planologie.
+
+    eigenaarsbescherming:
+      observatie: |
+        Vervreemder heeft sterke rechten:
+        - Kan prijs laten vaststellen
+        - Kan gedwongen verkoop afdwingen
+        - Vrij na weigering/termijnoverschrijding
+      implicatie: |
+        Voorkeursrecht is geen onteigening - eigenaar behoudt keuze.
+
+    termijnstructuur_complex:
+      observatie: |
+        Complexe matrix van termijnen, verlenging, verval, cooldown.
+        Geldingsduur afhankelijk van grondslag EN procedurele stappen.
+      implicatie: |
+        Navigator moet termijnberekening ondersteunen.
+
+  schema_verbeteringen:
+    - "Toegevoegd: grondslag_hiërarchie voor planologische instrumenten"
+    - "Toegevoegd: eigenaarsbescherming patronen"

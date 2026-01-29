@@ -1,0 +1,587 @@
+# Afdeling 2.3 - Omgevingswaarden
+# V2 Atomic Extraction
+# Artikelen 2.9-2.15a
+# Extraction date: 2026-01-29
+
+schema_version: 2
+bron: BWBR0037885
+afdeling: 2.3
+titel: "Omgevingswaarden"
+bron_path: "/Hoofdstuk2/Afdeling2.3"
+
+# =============================================================================
+# PARAGRAAF 2.3.1: ALGEMENE BEPALINGEN
+# =============================================================================
+paragraaf_2.3.1:
+  nummer: "2.3.1"
+  titel: "Algemene bepalingen"
+  bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1"
+
+  artikelen:
+
+    artikel_2.9:
+      nummer: "2.9"
+      titel: "(omgevingswaarden)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid1"
+          structuur:
+            volledige_tekst: "Op grond van deze afdeling worden omgevingswaarden vastgesteld met het oog op de doelen van de wet."
+          logica:
+            type: verplichting
+            norm: "Omgevingswaarden MOETEN worden vastgesteld met het oog op wetsdoelen"
+            koppeling: "art. 1.3 (doelen wet)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid2"
+          structuur:
+            aanhef: "Een omgevingswaarde bepaalt voor de fysieke leefomgeving of een onderdeel daarvan:"
+            onderdelen:
+              a:
+                tekst: "de gewenste staat of kwaliteit"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid2/Onderdeela"
+              b:
+                tekst: "de toelaatbare belasting door activiteiten"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid2/Onderdeelb"
+              c:
+                tekst: "de toelaatbare concentratie of depositie van stoffen"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid2/Onderdeelc"
+          logica:
+            type: definitie
+            norm: "Drieledige definitie omgevingswaarde"
+            typen:
+              - "staat/kwaliteit (output-gericht)"
+              - "belasting (input-gericht)"
+              - "concentratie/depositie (stoffen-specifiek)"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.9/Lid3"
+          structuur:
+            volledige_tekst: "Een omgevingswaarde wordt uitgedrukt in meetbare of berekenbare eenheden of anderszins in objectieve termen."
+          logica:
+            type: verplichting
+            norm: "Omgevingswaarde MOET objectief meetbaar zijn"
+            kernbegrip: "objectiveringsvereiste"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.9 DEFINIEERT het begrip omgevingswaarde.
+
+          Drie typen (lid 2):
+          a) gewenste staat/kwaliteit
+          b) toelaatbare belasting
+          c) toelaatbare concentratie/depositie
+
+          Vereiste: objectief meetbaar (lid 3)
+          Doel: gekoppeld aan wetsdoelen (lid 1)
+
+    artikel_2.10:
+      nummer: "2.10"
+      titel: "(aard, termijn en locaties van omgevingswaarden en onderbouwing)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid1"
+          structuur:
+            aanhef: "Bij de vaststelling van een omgevingswaarde wordt bepaald:"
+            onderdelen:
+              a:
+                tekst: "of deze waarde een resultaatverplichting, inspanningsverplichting of andere, daarbij te omschrijven verplichting met zich brengt"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid1/Onderdeela"
+              b:
+                tekst: "de locaties waarop de omgevingswaarde van toepassing is"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Bij vaststelling MOET aard en locatie worden bepaald"
+            onderscheid:
+              resultaatverplichting: "waarde MOET bereikt worden"
+              inspanningsverplichting: "INZET om waarde te bereiken"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid2"
+          structuur:
+            volledige_tekst: "Bij de vaststelling van een omgevingswaarde kan een termijn worden gesteld waarbinnen aan de verplichting, bedoeld in het eerste lid, onder a, moet zijn voldaan."
+          logica:
+            type: machtiging
+            norm: "Termijn KAN worden gesteld"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid3"
+          structuur:
+            volledige_tekst: "Bij de vaststelling van een omgevingswaarde wordt onderbouwd welke taken en bevoegdheden op grond van deze of een andere wet in ieder geval worden ingezet om de omgevingswaarde te verwezenlijken."
+          logica:
+            type: verplichting
+            norm: "Onderbouwing inzet taken/bevoegdheden VERPLICHT"
+            kernbegrip: "instrumentele onderbouwing"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.1/Artikel2.10/Lid4"
+          structuur:
+            volledige_tekst: "In afwijking van het eerste lid, aanhef en onder a, en het tweede lid kunnen bij algemene maatregel van bestuur regels worden gesteld over de aard en de termijn als de omgevingswaarde een geluidproductieplafond is."
+          logica:
+            type: delegatie
+            norm: "AMvB KAN afwijken voor geluidproductieplafonds"
+            conditie:
+              type: in_afwijking_van
+              tekst: "in afwijking van het eerste lid, aanhef en onder a, en het tweede lid"
+
+# =============================================================================
+# PARAGRAAF 2.3.2: OMGEVINGSWAARDEN GEMEENTE
+# =============================================================================
+paragraaf_2.3.2:
+  nummer: "2.3.2"
+  titel: "Omgevingswaarden gemeente"
+  bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.2"
+
+  artikelen:
+
+    artikel_2.11:
+      nummer: "2.11"
+      titel: "(omgevingswaarden gemeente)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.2/Artikel2.11"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.2/Artikel2.11/Lid1"
+          structuur:
+            volledige_tekst: "Bij omgevingsplan kunnen omgevingswaarden worden vastgesteld."
+          logica:
+            type: machtiging
+            norm: "Gemeente KAN omgevingswaarden vaststellen"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.2/Artikel2.11/Lid2"
+          structuur:
+            volledige_tekst: "Bij omgevingsplan kunnen geen omgevingswaarden worden vastgesteld in aanvulling op of in afwijking van omgevingswaarden die bij omgevingsverordening, bij algemene maatregel van bestuur, bij besluit als bedoeld in artikel 2.12a, eerste lid, 2.13a, eerste lid, of 2.15, tweede lid, of in deze wet zijn vastgesteld, tenzij bij de omgevingsverordening, de maatregel, het besluit of, als omgevingswaarden in deze wet zijn vastgesteld, bij algemene maatregel van bestuur anders is bepaald."
+          logica:
+            type: begrenzing
+            norm: "Geen gemeentelijke omgevingswaarden in aanvulling/afwijking van hogere"
+            conditie:
+              type: tenzij
+              tekst: "tenzij anders is bepaald"
+            hierarchie: "gemeente ondergeschikt aan provincie/Rijk/wet"
+
+      interne_refs:
+        - naar: "artikel 2.12a"
+          type: verwijzing
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12a"
+        - naar: "artikel 2.13a"
+          type: verwijzing
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a"
+        - naar: "artikel 2.15"
+          type: verwijzing
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15"
+
+    artikel_2.11a:
+      nummer: "2.11a"
+      titel: "(verplichte omgevingswaarden gemeente voor geluidproductie industrieterreinen)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.2/Artikel2.11a"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Bij omgevingsplan worden in ieder geval als omgevingswaarden geluidproductieplafonds vastgesteld rondom industrieterreinen waar bij algemene maatregel van bestuur aangewezen activiteiten kunnen worden verricht die in aanzienlijke mate geluid kunnen veroorzaken."
+
+      logica:
+        type: verplichting
+        norm: "Gemeente MOET geluidproductieplafonds vaststellen voor aangewezen industrieterreinen"
+        conditie:
+          type: in_ieder_geval
+          tekst: "in ieder geval"
+        scope: "industrieterreinen met AMvB-aangewezen activiteiten"
+
+# =============================================================================
+# PARAGRAAF 2.3.3: OMGEVINGSWAARDEN PROVINCIE
+# =============================================================================
+paragraaf_2.3.3:
+  nummer: "2.3.3"
+  titel: "Omgevingswaarden provincie"
+  bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3"
+
+  artikelen:
+
+    artikel_2.12:
+      nummer: "2.12"
+      titel: "(omgevingswaarden provincie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12/Lid1"
+          structuur:
+            volledige_tekst: "Bij omgevingsverordening kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, omgevingswaarden worden vastgesteld."
+          logica:
+            type: machtiging
+            norm: "Provincie KAN omgevingswaarden vaststellen"
+            begrenzing: "met inachtneming van art. 2.3 lid 2 (subsidiariteit)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12/Lid2"
+          structuur:
+            volledige_tekst: "Bij omgevingsverordening kunnen geen omgevingswaarden worden vastgesteld in aanvulling op of in afwijking van omgevingswaarden die bij algemene maatregel van bestuur, bij besluit als bedoeld in artikel 2.15, tweede lid, of in deze wet zijn vastgesteld, tenzij bij de maatregel, het besluit of, als omgevingswaarden in deze wet zijn vastgesteld, bij algemene maatregel van bestuur anders is bepaald."
+          logica:
+            type: begrenzing
+            norm: "Geen provinciale omgevingswaarden in aanvulling/afwijking van Rijk/wet"
+            conditie:
+              type: tenzij
+              tekst: "tenzij anders is bepaald"
+
+      interne_refs:
+        - naar: "artikel 2.3"
+          type: begrenzing
+          context: "grenzen van artikel 2.3, tweede lid"
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+    artikel_2.12a:
+      nummer: "2.12a"
+      titel: "(omgevingswaarden provincie voor geluidproductie industrieterreinen)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12a/Lid1"
+          structuur:
+            volledige_tekst: "Bij omgevingsverordening kunnen, met inachtneming van de grenzen van artikel 2.3, tweede lid, industrieterreinen worden aangewezen waarvoor provinciale staten bij besluit als omgevingswaarden geluidproductieplafonds vaststellen."
+          logica:
+            type: machtiging
+            norm: "Provincie KAN industrieterreinen aanwijzen voor provinciale geluidproductieplafonds"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.12a/Lid2"
+          structuur:
+            volledige_tekst: "Provinciale staten kunnen de bevoegdheid tot het bij besluit als omgevingswaarden vaststellen van geluidproductieplafonds delegeren aan gedeputeerde staten."
+          logica:
+            type: machtiging
+            norm: "PS KUNNEN delegeren aan GS"
+
+    artikel_2.13:
+      nummer: "2.13"
+      titel: "(verplichte omgevingswaarden provincie voor watersystemen)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13/Lid1"
+          structuur:
+            aanhef: "Bij omgevingsverordening worden met het oog op het waarborgen van de veiligheid en het voorkomen of beperken van wateroverlast in ieder geval omgevingswaarden vastgesteld voor:"
+            onderdelen:
+              a:
+                tekst: "de veiligheid van bij de verordening aangewezen andere dan primaire waterkeringen, voor zover die niet bij het Rijk in beheer zijn"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13/Lid1/Onderdeela"
+              b:
+                tekst: "de gemiddelde kans op overstroming per jaar van bij de verordening aangewezen gebieden met het oog op de bergings- en afvoercapaciteit waarop regionale wateren moeten zijn ingericht"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Provincie MOET omgevingswaarden vaststellen voor waterveiligheid"
+            conditie:
+              type: in_ieder_geval
+              tekst: "in ieder geval"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13/Lid2"
+          structuur:
+            volledige_tekst: "Bij of krachtens de verordening worden voor de toepassing van het eerste lid, onder a, voor daarbij aan te geven locaties nadere regels gesteld over de vaststelling van het waterkerend vermogen van de daar bedoelde waterkeringen."
+          logica:
+            type: verplichting
+            norm: "Nadere regels MOETEN worden gesteld over waterkerend vermogen"
+
+    artikel_2.13a:
+      nummer: "2.13a"
+      titel: "(verplichte omgevingswaarden provincie voor geluidproductie wegen en lokale spoorwegen)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a/Lid1"
+          structuur:
+            aanhef: "Provinciale staten stellen bij besluit als omgevingswaarden geluidproductieplafonds vast aan weerszijden van bij omgevingsverordening aangewezen:"
+            onderdelen:
+              a:
+                tekst: "wegen in beheer bij de provincie"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a/Lid1/Onderdeela"
+              b:
+                tekst: "lokale spoorwegen, voor zover gelegen buiten de gebieden die op grond van artikel 20, derde lid, van de Wet personenvervoer 2000 zijn aangewezen"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a/Lid1/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "PS MOETEN geluidproductieplafonds vaststellen"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.3/Artikel2.13a/Lid2"
+          structuur:
+            volledige_tekst: "Provinciale staten kunnen deze bevoegdheid delegeren aan gedeputeerde staten."
+          logica:
+            type: machtiging
+            norm: "PS KUNNEN delegeren aan GS"
+
+      externe_refs:
+        - naar: "BWBR0011470"
+          wet: "Wet personenvervoer 2000"
+          artikel: "20, derde lid"
+
+# =============================================================================
+# PARAGRAAF 2.3.4: OMGEVINGSWAARDEN RIJK
+# =============================================================================
+paragraaf_2.3.4:
+  nummer: "2.3.4"
+  titel: "Omgevingswaarden Rijk"
+  bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4"
+
+  artikelen:
+
+    artikel_2.14:
+      nummer: "2.14"
+      titel: "(omgevingswaarden Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.14"
+      inwerking: "2024-01-01"
+
+      structuur:
+        volledige_tekst: "Bij algemene maatregel van bestuur kunnen, met inachtneming van de grenzen van artikel 2.3, derde lid, omgevingswaarden worden vastgesteld."
+
+      logica:
+        type: machtiging
+        norm: "AMvB KAN omgevingswaarden vaststellen"
+        begrenzing: "met inachtneming van art. 2.3 lid 3 (subsidiariteit)"
+
+      interne_refs:
+        - naar: "artikel 2.3"
+          type: begrenzing
+          bron_path: "/Hoofdstuk2/Afdeling2.1/Artikel2.3"
+
+    artikel_2.15:
+      nummer: "2.15"
+      titel: "(verplichte omgevingswaarden Rijk)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1"
+          structuur:
+            aanhef: "Bij algemene maatregel van bestuur worden met het oog op het waarborgen van de veiligheid, het beschermen van de gezondheid, het beschermen van het milieu en het beheer van natuurlijke hulpbronnen in ieder geval omgevingswaarden vastgesteld voor:"
+            onderdelen:
+              a:
+                tekst: "de kwaliteit van de buitenlucht, waaronder de concentraties van verontreinigende stoffen in de buitenlucht, ook in verband met de blootstelling van de mens aan die stoffen, ter uitvoering van de richtlijn luchtkwaliteit en de richtlijn gevaarlijke stoffen in de lucht"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1/Onderdeela"
+              b:
+                tekst: "de chemische en ecologische kwaliteit van oppervlaktewaterlichamen en de chemische kwaliteit en kwantitatieve toestand van grondwaterlichamen, ter uitvoering van de kaderrichtlijn water, de grondwaterrichtlijn en de richtlijn prioritaire stoffen"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1/Onderdeelb"
+              c:
+                tekst: "de kwaliteit van zwemwater, ter uitvoering van de zwemwaterrichtlijn"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1/Onderdeelc"
+              d:
+                tekst: "de veiligheid van primaire waterkeringen"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1/Onderdeeld"
+              e:
+                tekst: "de veiligheid van andere dan primaire waterkeringen, voor zover die in beheer zijn bij het Rijk"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid1/Onderdeele"
+          logica:
+            type: verplichting
+            norm: "AMvB MOET omgevingswaarden vaststellen voor deze onderwerpen"
+            eu_grondslag:
+              - "richtlijn luchtkwaliteit"
+              - "richtlijn gevaarlijke stoffen lucht"
+              - "kaderrichtlijn water"
+              - "grondwaterrichtlijn"
+              - "richtlijn prioritaire stoffen"
+              - "zwemwaterrichtlijn"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid2"
+          structuur:
+            aanhef: "Onze Minister van Infrastructuur en Waterstaat stelt bij besluit als omgevingswaarden geluidproductieplafonds vast aan weerszijden van bij ministeriële regeling aangewezen:"
+            onderdelen:
+              a:
+                tekst: "wegen in beheer bij het Rijk"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid2/Onderdeela"
+              b:
+                tekst: "hoofdspoorwegen"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid2/Onderdeelb"
+          logica:
+            type: verplichting
+            norm: "Minister IenW MOET geluidproductieplafonds vaststellen"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid3"
+          structuur:
+            aanhef: "Als uitgangspunt voor het vaststellen van de omgevingswaarden, bedoeld in het eerste lid, aanhef en onder d, geldt ten minste een beschermingsniveau waarmee in 2050 de kans om te overlijden als gevolg van een overstroming achter de primaire waterkering niet groter is dan 1 op 100.000 per jaar. Een hoger beschermingsniveau wordt geboden op plaatsen waar sprake kan zijn van:"
+            onderdelen:
+              a:
+                tekst: "grote groepen dodelijke slachtoffers"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid3/Onderdeela"
+              b:
+                tekst: "substantiële economische schade"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid3/Onderdeelb"
+              c:
+                tekst: "ernstige schade door uitval van vitale en kwetsbare infrastructuur van nationaal belang"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid3/Onderdeelc"
+          logica:
+            type: norm
+            norm: "Basisnorm waterveiligheid: sterftekans ≤ 1:100.000 per jaar in 2050"
+            kernbegrip: "overstromingsrisico-benadering"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid4"
+          structuur:
+            aanhef: "Voor de toepassing van het eerste lid, aanhef en onder d, worden bij ministeriële regeling:"
+            onderdelen:
+              a:
+                tekst: "voor daarbij aan te geven locaties nadere regels gesteld over het bepalen van de overstromingskans of de faalkans van de primaire waterkering"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid4/Onderdeela"
+              b:
+                tekst: "de locaties begrensd waarop de omgevingswaarden van toepassing zijn"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid4/Onderdeelb"
+          logica:
+            type: delegatie
+            norm: "Ministeriële regeling stelt nadere regels waterveiligheid"
+
+        5:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid5"
+          structuur:
+            aanhef: "Voor de toepassing van het eerste lid, aanhef en onder e, worden bij ministeriële regeling:"
+            onderdelen:
+              a:
+                tekst: "voor daarbij aan te geven locaties nadere regels gesteld over het bepalen van de hydraulische belasting en de sterkte van de andere dan primaire waterkeringen, voor zover die in beheer zijn bij het Rijk"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid5/Onderdeela"
+              b:
+                tekst: "de locaties begrensd waarop de omgevingswaarden van toepassing zijn"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid5/Onderdeelb"
+          logica:
+            type: delegatie
+            norm: "Ministeriële regeling voor andere waterkeringen Rijk"
+
+        6:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15/Lid6"
+          structuur:
+            volledige_tekst: "De nadere regels, bedoeld in het vierde lid, onder a, worden voor primaire waterkeringen steeds na ten hoogste twaalf jaar herzien."
+          logica:
+            type: verplichting
+            norm: "Herziening nadere regels VERPLICHT elke 12 jaar"
+
+    artikel_2.15a:
+      nummer: "2.15a"
+      titel: "(omgevingswaarden stikstofdepositie)"
+      bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a"
+      inwerking: "2024-01-01"
+
+      leden:
+        1:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid1"
+          structuur:
+            aanhef: "Het percentage van het areaal van de voor stikstof gevoelige habitats in Natura 2000-gebieden waarop de depositie van stikstof niet groter is dan de hoeveelheid in mol per hectare per jaar waarboven verslechtering van de kwaliteit van die habitats niet op voorhand is uit te sluiten, bedraagt:"
+            onderdelen:
+              a:
+                tekst: "in 2025: ten minste 40%"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid1/Onderdeela"
+              b:
+                tekst: "in 2030: ten minste 50%"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid1/Onderdeelb"
+              c:
+                tekst: "in 2035: ten minste 74%"
+                bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid1/Onderdeelc"
+          logica:
+            type: norm
+            norm: "Stikstof reductiedoelen in wet verankerd"
+            doelen:
+              2025: "40% onder KDW"
+              2030: "50% onder KDW"
+              2035: "74% onder KDW"
+            kernbegrip: "kritische depositiewaarde (KDW)"
+
+        2:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid2"
+          structuur:
+            volledige_tekst: "De in het eerste lid bedoelde omgevingswaarden zijn resultaatsverplichtingen."
+          logica:
+            type: kwalificatie
+            norm: "Stikstof doelen zijn RESULTAATSVERPLICHTINGEN"
+            kernbegrip: "harde verplichting - moet worden gehaald"
+
+        3:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid3"
+          structuur:
+            volledige_tekst: "In ieder geval in 2028 wordt bezien of met het programma kan worden voldaan aan de omgevingswaarde voor 2035."
+          logica:
+            type: verplichting
+            norm: "Verplichte evaluatie in 2028"
+
+        4:
+          bron_path: "/Hoofdstuk2/Afdeling2.3/Paragraaf2.3.4/Artikel2.15a/Lid4"
+          structuur:
+            volledige_tekst: "Uiterlijk in 2033 en vervolgens steeds uiterlijk twee jaar voor het verstrijken van de termijn waarbinnen aan de omgevingswaarde, bedoeld in het eerste lid, onder c, moet zijn voldaan, dient de regering een voorstel van wet in tot wijziging van het eerste lid ten behoeve van de vaststelling van de omgevingswaarde voor de volgende periode, zodat de depositie op termijn wordt verminderd tot een niveau dat nodig is voor een gunstige staat van instandhouding van de betrokken natuurlijke habitats en soorten op landelijk niveau."
+          logica:
+            type: verplichting
+            norm: "Regering MOET uiterlijk 2033 wetsvoorstel indienen voor volgende periode"
+            einddoel: "gunstige staat van instandhouding"
+
+      logica_samenvatting:
+        narrative: |
+          Art. 2.15a is de STIKSTOFWET - meest politiek geladen artikel.
+
+          Lid 1: HARDE DOELEN
+          - 2025: 40% areaal onder KDW
+          - 2030: 50% areaal onder KDW
+          - 2035: 74% areaal onder KDW
+
+          Lid 2: RESULTAATVERPLICHTING - geen inspanning, maar resultaat
+
+          Lid 3-4: EVALUATIE EN OPVOLGING
+          - 2028: verplichte evaluatie
+          - 2033: wetsvoorstel volgende periode
+
+          KRITISCH: Dit artikel is de wettelijke verankering van de stikstofaanpak.
+          Uitwerking via programma (art. 3.9) en vergunningplicht (Natura 2000-activiteit).
+
+# =============================================================================
+# AFDELING ANALYSE
+# =============================================================================
+afdeling_analyse:
+  structuur:
+    artikelen_count: 11
+    paragrafen: 4
+    totaal_leden: 23
+
+  patronen:
+    bestuurslaag_hierarchie:
+      beschrijving: "Omgevingswaarden volgen subsidiariteitsladder: gemeente < provincie < Rijk"
+      evidence: ["par. 2.3.2", "par. 2.3.3", "par. 2.3.4"]
+
+    eu_implementatie:
+      beschrijving: "Veel verplichte omgevingswaarden implementeren EU-richtlijnen"
+      evidence: ["art. 2.15 lid 1"]
+
+    geluid_speciaal_regime:
+      beschrijving: "Geluidproductieplafonds hebben eigen regime met delegatiemogelijkheden"
+      evidence: ["art. 2.10 lid 4", "art. 2.11a", "art. 2.12a", "art. 2.13a", "art. 2.15 lid 2"]
+
+    stikstof_resultaatsverplichting:
+      beschrijving: "Stikstof doelen zijn uniek als wettelijk verankerde resultaatsverplichtingen"
+      evidence: ["art. 2.15a lid 2"]
+
+  kritieke_verwijzingen:
+    - art_2.15a: "Grondslag stikstofbeleid en Natura 2000-vergunningen"
+    - art_2.15_lid_3: "Waterveiligheidsnormen (1:100.000 sterftekans)"
+    - art_2.11_lid_2: "Hierarchie gemeente-provincie-Rijk voor omgevingswaarden"
+
+  routes:
+    entry_points:
+      - artikel: "2.9"
+        vraag: "Wat is een omgevingswaarde?"
+      - artikel: "2.15a"
+        vraag: "Wat zijn de stikstof doelen?"
+    exit_points:
+      - naar: "art. 3.9 (programma)"
+        context: "maatregelen om omgevingswaarden te halen"
+      - naar: "Hoofdstuk 5"
+        context: "vergunningplicht bij dreigende overschrijding"
